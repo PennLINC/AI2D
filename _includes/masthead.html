@@ -4,7 +4,7 @@
     <div class="container d-flex justify-content-between">
         <a class="navbar-brand" href="{{ site.baseurl }}/">
             {% unless logo_path == empty %}
-                <a class="site-logo" href="{{ site.baseurl }}/"><img src="{{ logo_path | relative_url }}" alt="{{ site.masthead_title | default: site.title }}"></a>
+                <a class="site-logo" href="{{ site.baseurl }}/"><img src="{{ logo_path | absolute_url }}" alt="{{ site.masthead_title | default: site.title }}"></a>
             {% endunless %}
         </a>
 
