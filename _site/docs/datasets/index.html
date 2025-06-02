@@ -1,0 +1,567 @@
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.24.0 by Michael Rose
+  Copyright 2013-2020 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
+-->
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8">
+
+<!-- begin _includes/seo.html --><title>Datasets in RBC - RBC</title>
+<meta name="description" content="The official website for the Reproducible Brain Charts project.">
+
+
+
+<meta property="og:type" content="website">
+<meta property="og:locale" content="en_US">
+<meta property="og:site_name" content="RBC">
+<meta property="og:title" content="Datasets in RBC">
+<meta property="og:url" content="http://localhost:4000/docs/datasets/">
+
+
+  <meta property="og:description" content="The official website for the Reproducible Brain Charts project.">
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+
+<link rel="canonical" href="http://localhost:4000/docs/datasets/">
+
+
+
+
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    
+      "@type": "Person",
+      "name": "RBC",
+      "url": "http://localhost:4000/"
+    
+  }
+</script>
+
+
+
+
+
+
+
+<!-- end _includes/seo.html -->
+
+
+
+  <link href="/feed.xml" type="application/atom+xml" rel="alternate" title="RBC Feed">
+
+
+<!-- https://t.co/dKP3o1e -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="stylesheet" href="/assets/css/custom.css">
+<link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css">
+<!-- Fonts via Google -->
+<link href="https://fonts.googleapis.com/css?family=Lato:300italic,700italic,300,700" rel="stylesheet" type="text/css"/>
+
+
+
+    <!-- start custom head snippets -->
+
+<!-- insert favicons. use https://realfavicongenerator.net/ -->
+
+<!-- end custom head snippets -->
+
+  </head>
+
+  <body class="layout--archive">
+    <nav class="skip-links">
+  <ul>
+    <li><a href="#site-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
+    <li><a href="#main" class="screen-reader-shortcut">Skip to content</a></li>
+    <li><a href="#footer" class="screen-reader-shortcut">Skip to footer</a></li>
+  </ul>
+</nav>
+
+    
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top" role="navigation">
+    <div class="container d-flex justify-content-between">
+        <a class="navbar-brand" href="#">
+            
+                <a class="site-logo" href="/"><img src="/assets/images/logos/upenn_ai2d_logo.png" alt="RBC"></a>
+            
+        </a>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarToggler">
+            <ul class="navbar-nav ml-auto">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" id="navbarDropdown-Studies" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Studies
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown-Studies">
+                                
+                                    <a class="nav-link dropdown-item" href="/docs/datasets">Overview</a>
+                                
+                                
+                                    <a class="nav-link dropdown-item" href="/docs/datasets/BHRC">BHRC</a>
+                                
+                                    <a class="nav-link dropdown-item" href="/docs/datasets/dCCNP">dCCNP</a>
+                                
+                                    <a class="nav-link dropdown-item" href="/docs/datasets/HBN">HBN</a>
+                                
+                                    <a class="nav-link dropdown-item" href="/docs/datasets/NKI">NKI</a>
+                                
+                                    <a class="nav-link dropdown-item" href="/docs/datasets/PNC">PNC</a>
+                                
+                            </div>
+                        </li>
+                    
+                
+                        <li class="nav-item">
+                            <a class="nav-link" href="/docs/phenotypes">Psychiatry</a>
+                        </li>
+                    
+                
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" id="navbarDropdown-Imaging" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Imaging
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown-Imaging">
+                                
+                                    <a class="nav-link dropdown-item" href="/docs/imaging">Overview</a>
+                                
+                                
+                                    <a class="nav-link dropdown-item" href="/docs/imaging/image_acquisition">Image Acquisition</a>
+                                
+                                    <a class="nav-link dropdown-item" href="/docs/imaging/image_curation">Image Curation</a>
+                                
+                                    <a class="nav-link dropdown-item" href="/docs/imaging/image_processing">Image Processing</a>
+                                
+                                    <a class="nav-link dropdown-item" href="/docs/imaging/image_harmonization">Image Harmonization</a>
+                                
+                                    <a class="nav-link dropdown-item" href="/docs/imaging/image_structural_qa">Structural Image Quality</a>
+                                
+                                    <a class="nav-link dropdown-item" href="/docs/imaging/image_functional_qa">Functional Image Quality</a>
+                                
+                            </div>
+                        </li>
+                    
+                
+                        <li class="nav-item">
+                            <a class="nav-link" href="/docs/team">Team</a>
+                        </li>
+                    
+                
+                        <li class="nav-item">
+                            <a class="nav-link" href="/docs/community/publications">Publications</a>
+                        </li>
+                    
+                
+                        <li class="nav-item">
+                            <a class="nav-link" href="/docs/blog/index">News</a>
+                        </li>
+                    
+                
+                        <li class="nav-item">
+                            <a class="nav-link" href="/docs/get_data"><em style="font-style:normal; font-weight:bold; color:#a594d1;"> Get Data </em></a>
+                        </li>
+                    
+                
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+    <div class="initial-content">
+      
+
+
+
+<div id="main" role="main">
+  
+
+
+  <div class="archive">
+    <br/>
+<h1> Overview </h1>
+
+<body>
+Version 1.0 of RBC includes n=6346 participants ages 5-85 (n=2869 females) drawn from 5 major studies of brain development that included structural and functional neuroimaging.
+These studies were conducted in North America, China, and Brazil; see below for details regarding each dataset.
+
+
+<div style="text-align: center;">
+  <img src="/assets/images/misc/hist1.png" style="width: auto; height: 20vw;" />
+  <img src="/assets/images/misc/dist1.png" style="width: auto; height: 20vw;" />
+</div>
+
+<hr/>
+
+
+
+
+
+<table align="center"; width=1250px>
+  <thead>
+    <tr>
+      <th>Dataset</th>
+      <th>Institution</th>
+      <th>Number of Sites</th>
+      <th>PI</th>
+      <th>Sample Size</th>
+      <th>Number of Sessions</th>
+      <th>Average age</th>
+      <th>Structural MRI Sessions</th>
+      <th>Functional MRI Sessions</th>
+    </tr>
+  </thead>
+  <tbody>
+    
+      <tr>
+        <td><a href="https://www.sciencedirect.com/science/article/pii/S1878929321001109">Developmental Chinese Color Nest Project</a></td>
+        <td>
+          
+            Beijing Normal University
+          
+        </td>
+        <td>
+          
+            1
+          
+        </td>
+        <td>
+          
+            Xi-Nian Zuo
+          
+        </td>
+        <td>
+          
+            195
+            
+          
+        </td>
+        <td>
+          
+            195
+          
+        </td>
+        <td>
+          
+            11.9
+          
+        </td>
+        <td>
+          
+            195
+            
+          
+        </td>
+        <td>
+          
+            195
+            
+          
+        </td>
+        <td>
+          
+            195
+            
+          
+        </td>
+      </tr>
+    
+      <tr>
+        <td><a href="https://www.med.upenn.edu/bbl/philadelphianeurodevelopmentalcohort.html">Philadelphia Neurodevelopmental Cohort</a></td>
+        <td>
+          
+            University of Pennsylvania
+          
+        </td>
+        <td>
+          
+            1
+          
+        </td>
+        <td>
+          
+            Raquel Gur
+          
+        </td>
+        <td>
+          
+            1601
+            
+          
+        </td>
+        <td>
+          
+            1601
+          
+        </td>
+        <td>
+          
+            14.9
+          
+        </td>
+        <td>
+          
+            1601
+            
+          
+        </td>
+        <td>
+          
+            1561
+            
+          
+        </td>
+        <td>
+          
+            1601
+            
+          
+        </td>
+      </tr>
+    
+      <tr>
+        <td><a href="http://fcon_1000.projects.nitrc.org/indi/enhanced/">Rockland Sample</a></td>
+        <td>
+          
+            Nathan Kline Institute
+          
+        </td>
+        <td>
+          
+            1
+          
+        </td>
+        <td>
+          
+            Michael Milham<br>Stan Colcombe
+          
+        </td>
+        <td>
+          
+            1329
+            
+          
+        </td>
+        <td>
+          
+            2306
+          
+        </td>
+        <td>
+          
+            36.6
+          
+        </td>
+        <td>
+          
+            2271
+            
+          
+        </td>
+        <td>
+          
+            2268
+            
+          
+        </td>
+        <td>
+          
+            2306
+            
+          
+        </td>
+      </tr>
+    
+      <tr>
+        <td><a href="https://healthybrainnetwork.org/">Healthy Brain Network</a></td>
+        <td>
+          
+            Child Mind Institute
+          
+        </td>
+        <td>
+          
+            4
+          
+        </td>
+        <td>
+          
+            Michael Milham
+          
+        </td>
+        <td>
+          
+            2611
+            
+          
+        </td>
+        <td>
+          
+            2611
+          
+        </td>
+        <td>
+          
+            10.4
+          
+        </td>
+        <td>
+          
+            2565
+            
+          
+        </td>
+        <td>
+          
+            2487
+            
+          
+        </td>
+        <td>
+          
+            2611
+            
+          
+        </td>
+      </tr>
+    
+      <tr>
+        <td><a href="https://osf.io/ktz5h/">Brazil High Risk Cohort</a></td>
+        <td>
+          
+            National Institute of Developmental Psychiatry for Children and Adolescents (INCT-CNPq), São Paulo, Brazil; Federal University of Rio Grande do Sul, Porto Alegre, Brazil.
+          
+        </td>
+        <td>
+          
+            2
+          
+        </td>
+        <td>
+          
+            Giovanni Abrahão Salum Jr.<br>Pedro Mario Pan Neto
+          
+        </td>
+        <td>
+          
+            610
+            
+          
+        </td>
+        <td>
+          
+            907
+          
+        </td>
+        <td>
+          
+            9.8
+          
+        </td>
+        <td>
+          
+            904
+            
+          
+        </td>
+        <td>
+          
+            821
+            
+          
+        </td>
+        <td>
+          
+            907
+            
+          
+        </td>
+      </tr>
+    
+    <tr>
+      <td colspan="4">Total</td>
+      <td>6346</td>
+      <td> 7620</td>
+      <td></td>
+      <td>7536</td>
+      <td>7332</td>
+    </tr>
+  </tbody>
+</table>
+
+A notebook summarizing RBC demographics can be found <a href="/assets/sanity_checks_RBC_demographics.html">here</a>!
+</body>
+  </div>
+</div>
+    </div>
+
+    
+
+    <div id="footer" class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+<div class="page__footer fixed-bottom">
+  <div class="container">
+      <div class="row">
+          <div class="col-6 text-left">
+              Visit the <a href="https://ai2d.med.upenn.edu/">AI2D Website</a>
+          </div>
+          <div class="col-6 text-right">
+              <a href="/sitemap/">Sitemap</a> |
+              <a href="/docs/community/get_support/">Get Support</a>
+          </div>
+      </div>
+  </div>
+</div>
+
+      </footer>
+    </div>
+
+    
+  <script src="/assets/js/main.min.js"></script>
+
+
+
+
+
+
+
+
+
+
+  </body>
+</html>

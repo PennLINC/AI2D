@@ -1,0 +1,634 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2025-05-30T13:29:38-04:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">RBC</title><subtitle>The official website for the Reproducible Brain Charts project.</subtitle><author><name>{&quot;links&quot;=&gt;[{&quot;label&quot;=&gt;&quot;Email&quot;, &quot;icon&quot;=&gt;&quot;fas fa-fw fa-envelope-square&quot;}, {&quot;label&quot;=&gt;&quot;Website&quot;, &quot;icon&quot;=&gt;&quot;fas fa-fw fa-link&quot;}, {&quot;label&quot;=&gt;&quot;Twitter&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-twitter-square&quot;}, {&quot;label&quot;=&gt;&quot;Facebook&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-facebook-square&quot;}, {&quot;label&quot;=&gt;&quot;GitHub&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-github&quot;}, {&quot;label&quot;=&gt;&quot;Instagram&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-instagram&quot;}]}</name></author><entry><title type="html">Welcome to RBC</title><link href="http://localhost:4000/docs/blog/satterthwaite-first/" rel="alternate" type="text/html" title="Welcome to RBC" /><published>2024-06-13T00:00:00-04:00</published><updated>2024-06-13T00:00:00-04:00</updated><id>http://localhost:4000/docs/blog/satterthwaite-first</id><content type="html" xml:base="http://localhost:4000/docs/blog/satterthwaite-first/"><![CDATA[<p>We are all just SO excited about the public data release of Reproducible Brain Charts initiative.
+RBC is the product of nearly 5 years of sustained effort.
+Our goal?
+To create a well-curated, fully reproducible, super-open data resource to accelerate studies of the developing brain.</p>
+
+<p>It turns out that this was a lot more complicated that we initially realized!
+RBC required learning, building, and updating a lot of new tools along the way (e.g., CPAC, CuBIDS, DataLad/BABS, etc).
+Given all this, we hope that this helps investigators not recreate the wheel (preprocessing! QA!), move faster, and do better science.</p>
+
+<p>Run into issues?
+Click the “Get Support” link in the footer and reach out to us on NeuroStars; be sure to use the <code class="language-plaintext highlighter-rouge">rbc</code> tag to make sure we find it.
+We genuinely welcome your feedback and will strive to make RBC as user-friendly as possible moving forward.
+In this <code class="language-plaintext highlighter-rouge">News</code> section we will highlight updates to and uses of RBC – so please just reach out to Ted (sattertt at upenn dot edu) directly if you want us to highlight your work using RBC here.</p>
+
+<p>Thanks for checking it out + have fun with the data!!!</p>
+
+<p>-Ted, Mike, and the RBC team</p>]]></content><author><name>Ted Satterthwaite</name></author><category term="docs" /><category term="blog" /><summary type="html"><![CDATA[We are all just SO excited about the public data release of Reproducible Brain Charts initiative. RBC is the product of nearly 5 years of sustained effort. Our goal? To create a well-curated, fully reproducible, super-open data resource to accelerate studies of the developing brain.]]></summary></entry><entry><title type="html">Brazil High Risk Cohort</title><link href="http://localhost:4000/docs/datasets/BHRC/" rel="alternate" type="text/html" title="Brazil High Risk Cohort" /><published>2023-01-01T00:00:00-05:00</published><updated>2023-01-01T00:00:00-05:00</updated><id>http://localhost:4000/docs/datasets/BHRC</id><content type="html" xml:base="http://localhost:4000/docs/datasets/BHRC/"><![CDATA[<div style="text-align: left;">
+     <img src="/assets/images/logos/BHRC.png" style="width: auto; height: 10vw;" />
+     <!-- <img src="/assets/images/team/placeholder-user.png" style="width: auto; height: 10vw;" /> -->
+</div>
+
+<h3 id="about-the-dataset">About the dataset</h3>
+<p><br />
+<a href="https://osf.io/ktz5h/">https://osf.io/ktz5h/</a>
+<br />
+<a href="https://www.conexaomentesdofuturo.com.br/">https://www.conexaomentesdofuturo.com.br/</a></p>
+
+<p><em>PI</em>
+<br />
+Giovanni Abrahão Salum Jr.
+<br />
+Pedro Mario Pan Neto</p>
+
+<p><em>Funding</em>
+<br />
+573974/2008‐0, 2008/57896‐8, CNPq, FAPESP, Coordenação de Aperfeiçoamento de Pessoal de Nível Superior,Fundação de Amparo a Pesquisa do Estado do Rio Grande do Sul, CAPES, FAPERGS, 302463/2011‐9</p>
+
+<p><em>Citation</em>
+<br />
+Salum GA, Gadelha A, Pan PM, Moriyama TS, Graeff-Martins AS, Tamanaha AC, Alvarenga P, Valle Krieger F, Fleitlich-Bilyk B, Jackowski A, Sato JR, Brietzke E, Polanczyk GV, Brentani H, de Jesus Mari J, Do Rosário MC, Manfro GG, Bressan RA, Mercadante MT, Miguel EC, Rohde LA. High risk cohort study for psychiatric disorders in childhood: rationale, design, methods and preliminary results. Int J Methods Psychiatr Res. 2015 Mar;24(1):58-73. doi: 10.1002/mpr.1459. Epub 2014 Dec 3. PMID: 25469819; PMCID: PMC6878239.</p>
+
+<p><br /></p>
+<div class="table" align="center">
+<table style="text-align: center;
+width:44%; font-size:90%; border: 1px solid black">
+<tr><th style="font-weight:normal">Average age</th><th style="font-weight:normal">9.8</th><th style="font-weight:normal"></th></tr>
+<tr><th style="font-weight:normal">% Female</th><th style="font-weight:normal">40</th><th style="font-weight:normal"></th></tr>
+<tr><th style="font-weight:normal">Mean Overall Psychopathology (mean)</th><th style="font-weight:normal">-0.48</th><th style="font-weight:normal"></th></tr>
+<tr><th style="font-weight:normal">Mean Overall Psychopathology (SD)</th><th style="font-weight:normal">0.88</th><th style="font-weight:normal"></th></tr>
+<tr><th style="font-weight:normal">% Right Handed:</th><th style="font-weight:normal">87</th><th style="font-weight:normal"></th></tr>
+<table>
+
+<br />
+<br />
+
+
+<div style="text-align: center;">
+     <img src="/assets/images/datasets/BHRC_Flowchart.png" width="80%" height="auto" />
+</div>
+
+</table></table></div>]]></content><author><name>{&quot;links&quot;=&gt;[{&quot;label&quot;=&gt;&quot;Email&quot;, &quot;icon&quot;=&gt;&quot;fas fa-fw fa-envelope-square&quot;}, {&quot;label&quot;=&gt;&quot;Website&quot;, &quot;icon&quot;=&gt;&quot;fas fa-fw fa-link&quot;}, {&quot;label&quot;=&gt;&quot;Twitter&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-twitter-square&quot;}, {&quot;label&quot;=&gt;&quot;Facebook&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-facebook-square&quot;}, {&quot;label&quot;=&gt;&quot;GitHub&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-github&quot;}, {&quot;label&quot;=&gt;&quot;Instagram&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-instagram&quot;}]}</name></author><category term="docs" /><category term="datasets" /><summary type="html"><![CDATA[BHRC]]></summary></entry><entry><title type="html">Healthy Brain Network</title><link href="http://localhost:4000/docs/datasets/HBN/" rel="alternate" type="text/html" title="Healthy Brain Network" /><published>2023-01-01T00:00:00-05:00</published><updated>2023-01-01T00:00:00-05:00</updated><id>http://localhost:4000/docs/datasets/HBN</id><content type="html" xml:base="http://localhost:4000/docs/datasets/HBN/"><![CDATA[<div style="text-align: left;">
+     <img src="/assets/images/logos/child_mind_institute.png" style="width: auto; height: 10vw;" />
+</div>
+
+<h3 id="about-the-dataset">About the dataset</h3>
+<p><a href="https://healthybrainnetwork.org/">https://healthybrainnetwork.org/</a></p>
+
+<p><em>PI</em>
+<br />
+Michael Milham</p>
+
+<p><em>Funding</em>
+<br />
+The Healthy Brain Network, Lee Alexander, Robert Allard, Lisa Bilotti Foundation, Inc., Margaret Billoti, Christopher Boles, Brooklyn Nets, Agapi and Bruce Burkhard, Randolph Cowen and Phyllis Green, Elizabeth and David DePaolo, Charlotte Ford, Valesca Guerrand-Hermes, Sarah and Geoffrey Gund, George Hall, Joseph Healey and Elaine Thomas, Hearst Foundations, Eve and Ross Joffe, Anton and Robin Katz, Rachael and Marshall Levine, Ke Li, Jessica Lupovici, Javier Macaya, Christine and Richard Mack, Susan Miller and Byron Grote, John and Amy Phelan, Linnea and George Roberts, Jim and Linda Robinson Foundation, Inc, Caren and Barry Roseman, Zibby Schwarzmaln, David Shapiro and Abby Pogrebin, Stavros Niarchos Foundation, Nicholas Van Dusen, David Wolkoff and Stephanie Winston Wolkoff, Donors to the Brant Art Auction of 2012, Randolph Cowen and Phyllis Green Scholarship</p>
+
+<p><em>Citation</em>
+<br />
+Alexander LM, Escalera J, Ai L, Andreotti C, Febre K, Mangone A, Vega-Potler N, Langer N, Alexander A, Kovacs M, Litke S, O’Hagan B, Andersen J, Bronstein B, Bui A, Bushey M, Butler H, Castagna V, Camacho N, Chan E, Citera D, Clucas J, Cohen S, Dufek S, Eaves M, Fradera B, Gardner J, Grant-Villegas N, Green G, Gregory C, Hart E, Harris S, Horton M, Kahn D, Kabotyanski K, Karmel B, Kelly SP, Kleinman K, Koo B, Kramer E, Lennon E, Lord C, Mantello G, Margolis A, Merikangas KR, Milham J, Minniti G, Neuhaus R, Levine A, Osman Y, Parra LC, Pugh KR, Racanello A, Restrepo A, Saltzman T, Septimus B, Tobe R, Waltz R, Williams A, Yeo A, Castellanos FX, Klein A, Paus T, Leventhal BL, Craddock RC, Koplewicz HS, Milham MP. An open resource for transdiagnostic research in pediatric mental health and learning disorders. Sci Data. 2017 Dec 19;4:170181. doi: 10.1038/sdata.2017.181. PMID: 29257126; PMCID: PMC5735921.</p>
+
+<p><br /></p>
+<div class="table" align="center">
+<table style="text-align: center;
+width:44%; font-size:90%; border: 1px solid black">
+<tr><th style="font-weight:normal">Average age</th><th style="font-weight:normal">10.4</th><th style="font-weight:normal"></th></tr>
+<tr><th style="font-weight:normal">% Female</th><th style="font-weight:normal">33</th><th style="font-weight:normal"></th></tr>
+<tr><th style="font-weight:normal">Mean Overall Psychopathology (mean)</th><th style="font-weight:normal">0.22</th><th style="font-weight:normal"></th></tr>
+<tr><th style="font-weight:normal">Mean Overall Psychopathology (SD)</th><th style="font-weight:normal">0.96</th><th style="font-weight:normal"></th></tr>
+<tr><th style="font-weight:normal">% Right Handed:</th><th style="font-weight:normal">82</th><th style="font-weight:normal"></th></tr>
+<table>
+
+<br />
+<br />
+
+<div style="text-align: center;">
+     <img src="/assets/images/datasets/HBN_Flowchart.png" width="80%" height="auto" />
+</div>
+
+</table></table></div>]]></content><author><name>{&quot;links&quot;=&gt;[{&quot;label&quot;=&gt;&quot;Email&quot;, &quot;icon&quot;=&gt;&quot;fas fa-fw fa-envelope-square&quot;}, {&quot;label&quot;=&gt;&quot;Website&quot;, &quot;icon&quot;=&gt;&quot;fas fa-fw fa-link&quot;}, {&quot;label&quot;=&gt;&quot;Twitter&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-twitter-square&quot;}, {&quot;label&quot;=&gt;&quot;Facebook&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-facebook-square&quot;}, {&quot;label&quot;=&gt;&quot;GitHub&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-github&quot;}, {&quot;label&quot;=&gt;&quot;Instagram&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-instagram&quot;}]}</name></author><category term="docs" /><category term="datasets" /><summary type="html"><![CDATA[HBN]]></summary></entry><entry><title type="html">Rockland Sample</title><link href="http://localhost:4000/docs/datasets/NKI/" rel="alternate" type="text/html" title="Rockland Sample" /><published>2023-01-01T00:00:00-05:00</published><updated>2023-01-01T00:00:00-05:00</updated><id>http://localhost:4000/docs/datasets/NKI</id><content type="html" xml:base="http://localhost:4000/docs/datasets/NKI/"><![CDATA[<div style="text-align: left;">
+     <img src="/assets/images/logos/NKI.png" style="width: auto; height: 10vw;" />
+</div>
+
+<h3 id="about-the-dataset">About the dataset</h3>
+<p><a href="http://fcon_1000.projects.nitrc.org/indi/enhanced/">http://fcon_1000.projects.nitrc.org/indi/enhanced/</a></p>
+
+<p><em>PI</em>
+<br />
+Michael Milham
+<br />
+Stan Colcombe</p>
+
+<p><em>Funding</em>
+<br />
+R01MH094639-01, New York State Office of Mental Health and Research Foundation for Mental Hygiene, 1FDN2012-1, Center for the Developing Brain at the Child Mind Institute, R01MH081218, R01MH083246, R21MH084126, NKI Center for Advanced Brain Imaging (CABI), Brain Research Foundation (Chicago, IL), Stavros Niarchos Foundation</p>
+
+<p><em>Citation</em>
+<br />
+Tobe RH, MacKay-Brandt A, Lim R, Kramer M, Breland MM, Tu L, Tian Y, Trautman KD, Hu C, Sangoi R, Alexander L, Gabbay V, Castellanos FX, Leventhal BL, Craddock RC, Colcombe SJ, Franco AR, Milham MP. A longitudinal resource for studying connectome development and its psychiatric associations during childhood. Sci Data. 2022 Jun 14;9(1):300. doi: 10.1038/s41597-022-01329-y. PMID: 35701428; PMCID: PMC9197863.</p>
+
+<p><br /></p>
+<div class="table" align="center">
+<table style="text-align: center;
+width:44%; font-size:90%; border: 1px solid black">
+<tr><th style="font-weight:normal">Average age</th><th style="font-weight:normal">36.5</th><th style="font-weight:normal"></th></tr>
+<tr><th style="font-weight:normal">% Female</th><th style="font-weight:normal">59</th><th style="font-weight:normal"></th></tr>
+<tr><th style="font-weight:normal">Mean Overall Psychopathology (mean)</th><th style="font-weight:normal">-0.48</th><th style="font-weight:normal"></th></tr>
+<tr><th style="font-weight:normal">Mean Overall Psychopathology (SD)</th><th style="font-weight:normal">0.88</th><th style="font-weight:normal"></th></tr>
+<tr><th style="font-weight:normal">% Right Handed:</th><th style="font-weight:normal">87</th><th style="font-weight:normal"></th></tr>
+<table>
+
+<br />
+<br />
+<div style="text-align: center;">
+     <img src="/assets/images/datasets/NKI_Flowchart.png" width="80%" height="auto" />
+</div>
+</table></table></div>]]></content><author><name>{&quot;links&quot;=&gt;[{&quot;label&quot;=&gt;&quot;Email&quot;, &quot;icon&quot;=&gt;&quot;fas fa-fw fa-envelope-square&quot;}, {&quot;label&quot;=&gt;&quot;Website&quot;, &quot;icon&quot;=&gt;&quot;fas fa-fw fa-link&quot;}, {&quot;label&quot;=&gt;&quot;Twitter&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-twitter-square&quot;}, {&quot;label&quot;=&gt;&quot;Facebook&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-facebook-square&quot;}, {&quot;label&quot;=&gt;&quot;GitHub&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-github&quot;}, {&quot;label&quot;=&gt;&quot;Instagram&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-instagram&quot;}]}</name></author><category term="docs" /><category term="datasets" /><summary type="html"><![CDATA[NKI Sample]]></summary></entry><entry><title type="html">Philadelphia Neurodevelopmental Cohort</title><link href="http://localhost:4000/docs/datasets/PNC/" rel="alternate" type="text/html" title="Philadelphia Neurodevelopmental Cohort" /><published>2023-01-01T00:00:00-05:00</published><updated>2023-01-01T00:00:00-05:00</updated><id>http://localhost:4000/docs/datasets/PNC</id><content type="html" xml:base="http://localhost:4000/docs/datasets/PNC/"><![CDATA[<div style="text-align: left;">
+     <img src="/assets/images/logos/university_of_pennsylvania.png" style="width: auto; height: 10vw;" />
+     <img src="/assets/images/logos/CHOP.png" style="width: auto; height: 10vw;" />
+</div>
+
+<h3 id="about-the-dataset">About the dataset</h3>
+<p><a href="https://www.med.upenn.edu/bbl/philadelphianeurodevelopmentalcohort.html">https://www.med.upenn.edu/bbl/philadelphianeurodevelopmentalcohort.html</a></p>
+
+<p><em>PI</em>
+<br />
+Raquel Gur</p>
+
+<p><em>Funding</em>
+<br />
+RC2MH089983, RC2MH089924</p>
+
+<p><em>Citations</em>
+<br /></p>
+<ol>
+  <li>Satterthwaite TD, Elliott MA, Ruparel K, Loughead J, Prabhakaran K, Calkins ME, Hopson R, Jackson C, Keefe J, Riley M, Mentch FD, Sleiman P, Verma R, Davatzikos C, Hakonarson H, Gur RC, Gur RE. Neuroimaging of the Philadelphia neurodevelopmental cohort. Neuroimage. 2014 Feb 1;86:544-53. doi: 10.1016/j.neuroimage.2013.07.064. Epub 2013 Aug 3. PMID: 23921101; PMCID: PMC3947233.</li>
+  <li>Satterthwaite TD, Connolly JJ, Ruparel K, Calkins ME, Jackson C, Elliott MA, Roalf DR, Hopson R, Prabhakaran K, Behr M, Qiu H, Mentch FD, Chiavacci R, Sleiman PMA, Gur RC, Hakonarson H, Gur RE. The Philadelphia Neurodevelopmental Cohort: A publicly available resource for the study of normal and abnormal brain development in youth. NeuroImage. 2016 Jan 1 ;124:1115–9.</li>
+</ol>
+
+<p><br /></p>
+<div class="table" align="center">
+<table style="text-align: center;
+width:44%; font-size:90%; border: 1px solid black">
+<tr><th style="font-weight:normal">Average age</th><th style="font-weight:normal">14.9</th><th style="font-weight:normal"></th></tr>
+<tr><th style="font-weight:normal">% Female</th><th style="font-weight:normal">52</th><th style="font-weight:normal"></th></tr>
+<tr><th style="font-weight:normal">Mean Overall Psychopathology (mean)</th><th style="font-weight:normal">-0.45</th><th style="font-weight:normal"></th></tr>
+<tr><th style="font-weight:normal">Mean Overall Psychopathology (SD)</th><th style="font-weight:normal">0.94</th><th style="font-weight:normal"></th></tr>
+<tr><th style="font-weight:normal">% Right Handed:</th><th style="font-weight:normal">84</th><th style="font-weight:normal"></th></tr>
+<table>
+
+<br />
+<br />
+
+<div style="text-align: center;">
+     <img src="/assets/images/datasets/PNC_Flowchart.png" width="80%" height="auto" />
+</div>
+</table></table></div>]]></content><author><name>{&quot;links&quot;=&gt;[{&quot;label&quot;=&gt;&quot;Email&quot;, &quot;icon&quot;=&gt;&quot;fas fa-fw fa-envelope-square&quot;}, {&quot;label&quot;=&gt;&quot;Website&quot;, &quot;icon&quot;=&gt;&quot;fas fa-fw fa-link&quot;}, {&quot;label&quot;=&gt;&quot;Twitter&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-twitter-square&quot;}, {&quot;label&quot;=&gt;&quot;Facebook&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-facebook-square&quot;}, {&quot;label&quot;=&gt;&quot;GitHub&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-github&quot;}, {&quot;label&quot;=&gt;&quot;Instagram&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-instagram&quot;}]}</name></author><category term="docs" /><category term="datasets" /><summary type="html"><![CDATA[PNC]]></summary></entry><entry><title type="html">Developmental Chinese Color Nest Project</title><link href="http://localhost:4000/docs/datasets/dCCNP/" rel="alternate" type="text/html" title="Developmental Chinese Color Nest Project" /><published>2023-01-01T00:00:00-05:00</published><updated>2023-01-01T00:00:00-05:00</updated><id>http://localhost:4000/docs/datasets/dCCNP</id><content type="html" xml:base="http://localhost:4000/docs/datasets/dCCNP/"><![CDATA[<div style="text-align: left;">
+     <img src="/assets/images/logos/beijing_normal_university.png" style="width: auto; height: 10vw;" />
+</div>
+
+<h3 id="about-the-dataset">About the dataset</h3>
+<p><a href="https://www.sciencedirect.com/science/article/pii/S1878929321001109">https://www.sciencedirect.com/science/article/pii/S1878929321001109</a></p>
+
+<p><em>PI</em>
+<br />
+Xi-Nian Zuo</p>
+
+<p><em>Funding</em>
+<br />
+Start-up Funds for Leading Talents - Beijing Normal University, 2019B030335001, NBSDC-DB-15, Z161100002616023, Z181100001518003, 20&amp;ZD296, 153111KYSB20160020, 201621, 2015CB351702, 8122010801, KSZD-EW-TZ-002, 2015CB351702</p>
+
+<p><em>Citation</em>
+<br />
+Liu S, Wang YS, Zhang Q, Zhou Q, Cao LZ, Jiang C, Zhang Z, Yang N, Dong Q, Zuo XN; Chinese Color Nest Consortium. Chinese Color Nest Project : An accelerated longitudinal brain-mind cohort. Dev Cogn Neurosci. 2021 Dec;52:101020. doi: 10.1016/j.dcn.2021.101020. Epub 2021 Oct 11. PMID: 34653938; PMCID: PMC8517840.</p>
+
+<p><br /></p>
+<div class="table" align="center">
+<table style="text-align: center;
+width:44%; font-size:90%; border: 1px solid black">
+<tr><th style="font-weight:normal">Average age</th><th style="font-weight:normal">11.9</th><th style="font-weight:normal"></th></tr>
+<tr><th style="font-weight:normal">% Female</th><th style="font-weight:normal">52</th><th style="font-weight:normal"></th></tr>
+<tr><th style="font-weight:normal">Mean Overall Psychopathology (mean)</th><th style="font-weight:normal">-0.45</th><th style="font-weight:normal"></th></tr>
+<tr><th style="font-weight:normal">Mean Overall Psychopathology (SD)</th><th style="font-weight:normal">0.82</th><th style="font-weight:normal"></th></tr>
+<tr><th style="font-weight:normal">% Right Handed:</th><th style="font-weight:normal">95</th><th style="font-weight:normal"></th></tr>
+<table>
+
+<br />
+<br />
+
+<div style="text-align: center;">
+     <img src="/assets/images/datasets/CCNP_Flowchart.png" width="80%" height="auto" />
+</div>
+
+</table></table></div>]]></content><author><name>{&quot;links&quot;=&gt;[{&quot;label&quot;=&gt;&quot;Email&quot;, &quot;icon&quot;=&gt;&quot;fas fa-fw fa-envelope-square&quot;}, {&quot;label&quot;=&gt;&quot;Website&quot;, &quot;icon&quot;=&gt;&quot;fas fa-fw fa-link&quot;}, {&quot;label&quot;=&gt;&quot;Twitter&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-twitter-square&quot;}, {&quot;label&quot;=&gt;&quot;Facebook&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-facebook-square&quot;}, {&quot;label&quot;=&gt;&quot;GitHub&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-github&quot;}, {&quot;label&quot;=&gt;&quot;Instagram&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-instagram&quot;}]}</name></author><category term="docs" /><category term="datasets" /><summary type="html"><![CDATA[dCCNP]]></summary></entry><entry><title type="html">Structural Data Quality Assurance</title><link href="http://localhost:4000/docs/imaging/image_structural_qa/" rel="alternate" type="text/html" title="Structural Data Quality Assurance" /><published>2020-01-01T00:00:00-05:00</published><updated>2020-01-01T00:00:00-05:00</updated><id>http://localhost:4000/docs/imaging/image_structural_qa</id><content type="html" xml:base="http://localhost:4000/docs/imaging/image_structural_qa/"><![CDATA[<p>To achieve consistent quality ratings across all studies in RBC, every image was manually evaluated by 2-5 expert raters using Swipes for Science (<a href="https://pubmed.ncbi.nlm.nih.gov/31139070/">Keshavan et al., 2019</a>). These ratings allowed us to assign each image a score of “Pass”, “Artifact”, or “Fail”. In addition to these manual ratings, we provide the Euler number, a measure calculated by FreeSurfer that quantifies the number of surface holes. In prior work, the Euler number (<a href="https://pubmed.ncbi.nlm.nih.gov/29278774/">Rosen et al., 2018</a>) has shown to be an accurate, fully-automated measure of data quality; it captures variation in data quality within the coarse categories provided by manual ratings.</p>
+
+<div style="text-align: center;">
+     <img src="/assets/images/misc/Figure_T1-QA_v2.png" width="70%" height="auto" />
+</div>]]></content><author><name>{&quot;links&quot;=&gt;[{&quot;label&quot;=&gt;&quot;Email&quot;, &quot;icon&quot;=&gt;&quot;fas fa-fw fa-envelope-square&quot;}, {&quot;label&quot;=&gt;&quot;Website&quot;, &quot;icon&quot;=&gt;&quot;fas fa-fw fa-link&quot;}, {&quot;label&quot;=&gt;&quot;Twitter&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-twitter-square&quot;}, {&quot;label&quot;=&gt;&quot;Facebook&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-facebook-square&quot;}, {&quot;label&quot;=&gt;&quot;GitHub&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-github&quot;}, {&quot;label&quot;=&gt;&quot;Instagram&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-instagram&quot;}]}</name></author><category term="docs" /><category term="imaging" /><summary type="html"><![CDATA[Structural Data Quality Assurance]]></summary></entry><entry><title type="html">Publications</title><link href="http://localhost:4000/docs/community/publications/" rel="alternate" type="text/html" title="Publications" /><published>2020-01-01T00:00:00-05:00</published><updated>2020-01-01T00:00:00-05:00</updated><id>http://localhost:4000/docs/community/publications</id><content type="html" xml:base="http://localhost:4000/docs/community/publications/"><![CDATA[<h3 id="how-to-cite-rbc-data">How to Cite RBC Data</h3>
+
+<p><em>All Studies Using RBC Data Should Cite</em>:</p>
+
+<p>Shafiei G, Esper NB, Hoffmann MS, Ai L, Chen AA, Cluce J, Covitz S, Giavasis S, Lane C, Mehta K, Moore TM, Salo T, Tapera TM, Calkins ME, Colcombe S, Davatzikos C, Gur RE, Gur RC, Pan PM, Jackowski AP, Rokem A, Rohde LA, Shinohara RT, Tottenham N, Zuo XN, Cieslak M, Franco AR, Kiar G, Salum GA, Milham MP, Satterthwaite TD. Reproducible Brain Charts: An open data resource for mapping brain development and its associations with mental health. bioRxiv 2025.02.24.639850; doi: https://doi.org/10.1101/2025.02.24.639850</p>
+
+<h3 id="core-publications">Core Publications</h3>
+
+<ul>
+<li>Shafiei G, Esper NB, Hoffmann MS, Ai L, Chen AA, Cluce J, Covitz S, Giavasis S, Lane C, Mehta K, Moore TM, Salo T, Tapera TM, Calkins ME, Colcombe S, Davatzikos C, Gur RE, Gur RC, Pan PM, Jackowski AP, Rokem A, Rohde LA, Shinohara RT, Tottenham N, Zuo XN, Cieslak M, Franco AR, Kiar G, Salum GA, Milham MP, Satterthwaite TD. Reproducible Brain Charts: An open data resource for mapping brain development and its associations with mental health. bioRxiv 2025.02.24.639850</li>
+<li>Covitz S, Tapera TM, Adebimpe A, Alexander-Bloch AF, Bertolero MA, Feczko E, Franco AR, Gur RE, Gur RC, Hendrickson T, Houghton A, Mehta K, Murtha K, Perrone AJ, Robert-Fitzgerald T, Schabdach JM, Shinohara RT, Vogel JW, Zhao C, Fair DA, &amp;  Satterthwaite TD. Curation of BIDS (CuBIDS): A workflow and software package for streamlining reproducible curation of large BIDS datasets. NeuroImage. 2022. 263:119609</li>
+<li>Scopel-Hoffmann M, Moore TM, Kvitko-Axelrud L, Tottenham N, Zuo X, Rohde LA, Milham MP, Satterthwaite TD, &amp;  Salum GA. Reliability and validity of bifactor models of dimensional psychopathology in youth. Journal of Psychopathology and Clinical Science. 2022. 131:407</li>
+<li>Kiar G, Clucas J, Feczko E, Goncalves M, Jarecka D, Markiewicz CJ, Halchenko YO, Hermosillo R, Li X, Miranda-Dominguez O, Ghosh S, Poldrack RA, Satterthwaite TD, Milham MP, &amp;  Fair DA. Align with the NMIND consortium for better neuroimaging. Nature Human Behaviour. 2023. 7:1027-1028</li>
+<li>Hoffmann MS, Moore TM, Axelrud LK, Tottenham N, Rohde LA, Milham MP, Satterthwaite TD, &amp;  Salum GA. Harmonizing bifactor models of psychopathology between distinct assessment instruments: Reliability, measurement invariance, and authenticity. International Journal of Methods in Psychiatric Research. 2023. 32:e1959</li>
+<li>Li X, Esper NB, Ai L, Giavasis S, Jin H, Feczko E, Xu T, Clucas J, Franco A, Heinsfeld AS, Adebimpe A, Vogelstein JT, Yan C, Esteban O, Poldrack RA, Craddock C, Fair D, Satterthwaite T, Kiar G, &amp;  Milham MP. Moving Beyond Processing and Analysis-Related Variation in Neuroscience. bioRxiv. 2024.</li>
+<li>Zhao C, Jarecka D, Covitz S, Chen Y, Eickhoff SB, Fair DA, Franco AR, Halchenko YO, Hendrickson TJ, Hoffstaedter F, Houghton A, Kiar G, Austin M, Mehta K, Milham MP, Salo T, Hanke M, Ghosh SS, Cieslak M, &amp;  Satterthwaite TD. A reproducible and generalizable software workflow for analysis of large-scale neuroimaging data collections using BIDS Apps. Imaging Neuroscience. 2024. 2:1-19</li>
+<li>Luo AC, Sydnor VJ, Pines A, Larsen B, Alexander-Bloch AF, Cieslak M, Covitz S, Chen AA, Esper NB, Feczko E, Franco AR, Gur RE, Gur RC, Houghton A, Hu F, Keller AS, Kiar G, Mehta K, Salum GA, Tapera T, Xu T, Zhao C, Salo T, Fair DA, Shinohara RT, Milham MP, &amp;  Satterthwaite TD. Functional connectivity development along the sensorimotor-association axis enhances the cortical hierarchy. Nature Communications. 2024. 15:3511</li>
+<li>Hoffmann MS, Moore TM, Axelrud LK, Tottenham N, Pan PM, Miguel EC, Rohde LA, Milham MP, Satterthwaite TD, &amp;  Salum GA. An Evaluation of Item Harmonization Strategies Between Assessment Tools of Psychopathology in Children and Adolescents. Assessment. 2024. 31:502-517</li>
+<li>Hoffmann MS, Pine DS, Georgiades K, Szatmari P, Miguel EC, Pan PM, Gadelha A, Rohde LA, Merikangas KR, Milham MP, Satterthwaite TD, &amp;  Salum GA. Comparing mental health semi-structured diagnostic interviews and symptom checklists to predict poor life outcomes: an 8-year cohort study from childhood to young adulthood in Brazil. The Lancet Global Health. 2024. 12:e79-e89</li>
+</ul>]]></content><author><name>{&quot;links&quot;=&gt;[{&quot;label&quot;=&gt;&quot;Email&quot;, &quot;icon&quot;=&gt;&quot;fas fa-fw fa-envelope-square&quot;}, {&quot;label&quot;=&gt;&quot;Website&quot;, &quot;icon&quot;=&gt;&quot;fas fa-fw fa-link&quot;}, {&quot;label&quot;=&gt;&quot;Twitter&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-twitter-square&quot;}, {&quot;label&quot;=&gt;&quot;Facebook&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-facebook-square&quot;}, {&quot;label&quot;=&gt;&quot;GitHub&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-github&quot;}, {&quot;label&quot;=&gt;&quot;Instagram&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-instagram&quot;}]}</name></author><category term="docs" /><category term="community" /><summary type="html"><![CDATA[publications]]></summary></entry><entry><title type="html">Image Acquisition</title><link href="http://localhost:4000/docs/imaging/image_acquisition/" rel="alternate" type="text/html" title="Image Acquisition" /><published>2020-01-01T00:00:00-05:00</published><updated>2020-01-01T00:00:00-05:00</updated><id>http://localhost:4000/docs/imaging/image_acquisition</id><content type="html" xml:base="http://localhost:4000/docs/imaging/image_acquisition/"><![CDATA[<h3 id="structural-mri">Structural MRI</h3>
+
+<table style="font-size: 12px;">
+    <thead>
+        <tr>
+            <th>Study</th>
+            <th>Sequence</th>
+            <th>Scanner Type</th>
+            <th>Voxel Size (mm)</th>
+            <th>Image Orientation</th>
+            <th>Parallel Reduction Factor in Plane</th>
+            <th>TR (ms)</th>
+            <th>TE (ms)</th>
+            <th>Matrix Size (voxels)</th>
+            <th>Flip Angle (deg)</th>
+            <th>Dominant Group (%)</th>
+        </tr>
+    </thead>
+    <tbody>
+        
+            <tr>
+                <td>Healthy Brain Network (HBN) - Staten Island</td>
+                <td>T1</td>
+                <td>Siemens Avanto 1.5 T</td>
+                <td>1 x 1 x 1</td>
+                <td>LAS+</td>
+                <td>2</td>
+                <td>2730</td>
+                <td>1.64</td>
+                <td>176 x 256 x 256</td>
+                <td>7</td>
+                <td>100</td>
+            </tr>
+        
+            <tr>
+                <td>Healthy Brain Network (HBN) - Rutgers University</td>
+                <td>T1</td>
+                <td>Siemens Tim Trio 3 T</td>
+                <td>0.8 x 0.8 x 0.8</td>
+                <td>LAS+</td>
+                <td>2</td>
+                <td>2500</td>
+                <td>3.15</td>
+                <td>224 x 320 x 320</td>
+                <td>8</td>
+                <td>100</td>
+            </tr>
+        
+            <tr>
+                <td>Healthy Brain Network (HBN) - Rutgers University</td>
+                <td>T2</td>
+                <td>Siemens Tim Trio 3 T</td>
+                <td>0.8 x 0.8 x 0.8</td>
+                <td>LAS+</td>
+                <td>2</td>
+                <td>3200</td>
+                <td>564</td>
+                <td>224 x 320 x 320</td>
+                <td>120</td>
+                <td>47</td>
+            </tr>
+        
+            <tr>
+                <td>Healthy Brain Network (HBN) - The City University of New York</td>
+                <td>T1</td>
+                <td>Siemens Tim Trio 3 T</td>
+                <td>1 x 1 x 1</td>
+                <td>LAS+</td>
+                <td>2</td>
+                <td>2500</td>
+                <td>2.9</td>
+                <td>176 x 256 x 256</td>
+                <td>8</td>
+                <td>94</td>
+            </tr>
+        
+            <tr>
+                <td>Healthy Brain Network (HBN) - The City University of New York</td>
+                <td>T2</td>
+                <td>Siemens Tim Trio 3 T</td>
+                <td>1 x 1 x 1</td>
+                <td>LAS+</td>
+                <td>2</td>
+                <td>3200</td>
+                <td>565</td>
+                <td>176 x 256 x 256</td>
+                <td>120</td>
+                <td>97</td>
+            </tr>
+        
+            <tr>
+                <td>Healthy Brain Network (HBN) - Citigroup Biomedical Imaging Center</td>
+                <td>T1</td>
+                <td>Siemens Tim Trio 3 T</td>
+                <td>1 x 1 x 1</td>
+                <td>LAS+</td>
+                <td>2</td>
+                <td>2500</td>
+                <td>2.88</td>
+                <td>176 x 256 x 256</td>
+                <td>8</td>
+                <td>94</td>
+            </tr>
+        
+            <tr>
+                <td>Healthy Brain Network (HBN) - Citigroup Biomedical Imaging Center</td>
+                <td>T2</td>
+                <td>Siemens Tim Trio 3 T</td>
+                <td>1 x 1 x 1</td>
+                <td>LAS+</td>
+                <td>2</td>
+                <td>3200</td>
+                <td>565</td>
+                <td>176 x 256 x 256</td>
+                <td>120</td>
+                <td>95</td>
+            </tr>
+        
+            <tr>
+                <td>Brazilian High Risk Cohort (BHRC)</td>
+                <td>T1</td>
+                <td>General Electric 1.5 T</td>
+                <td>0.94 x 0.94 x 1.2</td>
+                <td>RAS+</td>
+                <td></td>
+                <td>10.81</td>
+                <td>4.2</td>
+                <td>256 x 256 x 156</td>
+                <td>15</td>
+                <td>30</td>
+            </tr>
+        
+            <tr>
+                <td>Philadelphia Neurodevelopmental Cohort (PNC)</td>
+                <td>T1</td>
+                <td>Siemens Tim Trio 3 T</td>
+                <td>0.94 x 0.94 x 1</td>
+                <td>RAS+</td>
+                <td>2</td>
+                <td>1810</td>
+                <td>3.51</td>
+                <td>92 x 256 x 160</td>
+                <td>9</td>
+                <td>100</td>
+            </tr>
+        
+            <tr>
+                <td>Nathan Kline Institute  - Rockland Sample (NKI)</td>
+                <td>T1</td>
+                <td>Siemens Tim Trio 3 T</td>
+                <td>1 x 0.98 x 0.98</td>
+                <td>LAS+ and/or RAS+</td>
+                <td>2</td>
+                <td>1900</td>
+                <td>2.52</td>
+                <td>176 x 256 x 256</td>
+                <td>9</td>
+                <td>45</td>
+            </tr>
+        
+            <tr>
+                <td>Nathan Kline Institute  - Rockland Sample (NKI)</td>
+                <td>T2</td>
+                <td>Siemens Tim Trio 3 T</td>
+                <td>1 x 1 x 1</td>
+                <td>LAS+</td>
+                <td>2</td>
+                <td>3200</td>
+                <td>306</td>
+                <td>176 x 256 x 256</td>
+                <td>120</td>
+                <td>33</td>
+            </tr>
+        
+            <tr>
+                <td>Developmental Component of the Chinese Color Nest Project (CCNP)</td>
+                <td>T1</td>
+                <td>Siemens Tim Trio 3 T</td>
+                <td>1 x 1 x 1</td>
+                <td>RAS+</td>
+                <td></td>
+                <td>2600</td>
+                <td>3.02</td>
+                <td>176 x 256 x 256</td>
+                <td>8</td>
+                <td>97</td>
+            </tr>
+        
+    </tbody>
+</table>
+
+<h3 id="functional-mri">Functional MRI</h3>
+
+<table style="font-size: 12px;">
+    <thead>
+        <tr>
+            <th>Study</th>
+            <th>Sequence</th>
+            <th>Tasks</th>
+            <th>Total Time (min:sec)</th>
+            <th>Number of Volumes</th>
+            <th>Scanner Type</th>
+            <th>Voxel Size (mm)</th>
+            <th>TR (ms)</th>
+            <th>TE (ms)</th>
+            <th>Matrix Size (voxels)</th>
+            <th>Flip Angle (deg)</th>
+            <th>Dominant Group (%)</th>
+            <th>Field Map</th>
+        </tr>
+    </thead>
+    <tbody>
+        
+            <tr>
+                <td>Healthy Brain Network (HBN) - Staten Island</td>
+                <td>Singleband</td>
+                <td>Rest</td>
+                <td>10:09</td>
+                <td>420</td>
+                <td>Siemens Avanto 1.5 T</td>
+                <td>2.46 x 2.46 x 2.50</td>
+                <td>1450</td>
+                <td>40</td>
+                <td>78 x 78 x 54</td>
+                <td>55</td>
+                <td>92</td>
+                <td>EPI</td>
+            </tr>
+        
+            <tr>
+                <td>Healthy Brain Network (HBN) - Rutgers University</td>
+                <td>Multiband</td>
+                <td>Rest<br />Peer<br />MovieDM<br />MovieTP</td>
+                <td>28:43</td>
+                <td>2155</td>
+                <td>Siemens Tim Trio 3 T</td>
+                <td>2.43 x 2.43 x 2.40</td>
+                <td>800</td>
+                <td>30</td>
+                <td>84 x 84 x 60</td>
+                <td>31</td>
+                <td>97</td>
+                <td>EPI</td>
+            </tr>
+        
+            <tr>
+                <td>Healthy Brain Network (HBN) - The City University of New York</td>
+                <td>Multiband</td>
+                <td>Rest<br />Peer<br />MovieDM<br />MovieTP</td>
+                <td>26:56</td>
+                <td>2020</td>
+                <td>Siemens Tim Trio 3 T</td>
+                <td>2.43 x 2.43 x 2.40</td>
+                <td>800</td>
+                <td>30</td>
+                <td>84 x 84 x 60</td>
+                <td>31</td>
+                <td>97</td>
+                <td>EPI</td>
+            </tr>
+        
+            <tr>
+                <td>Healthy Brain Network (HBN) - Citigroup Biomedical Imaging Center</td>
+                <td>Multiband</td>
+                <td>Rest<br />Peer<br />MovieDM<br />MovieTP</td>
+                <td>28:43</td>
+                <td>2155</td>
+                <td>Siemens Tim Trio 3 T</td>
+                <td>2.43 x 2.43 x 2.40</td>
+                <td>800</td>
+                <td>30</td>
+                <td>84 x 84 x 60</td>
+                <td>31</td>
+                <td>86</td>
+                <td>EPI</td>
+            </tr>
+        
+            <tr>
+                <td>Brazilian High Risk Cohort (BHRC)</td>
+                <td>Singleband</td>
+                <td>Rest</td>
+                <td>18:00</td>
+                <td>540</td>
+                <td>General Electric 1.5T</td>
+                <td>1.88 x 1.88 x 4.5</td>
+                <td>2000</td>
+                <td>30</td>
+                <td>128 x 128 x 26</td>
+                <td>80</td>
+                <td>73</td>
+                <td>None</td>
+            </tr>
+        
+            <tr>
+                <td>Philadelphia Neurodevelopmental Cohort (PNC)</td>
+                <td>Singleband</td>
+                <td>Rest<br />Frac2back<br />ID-emo</td>
+                <td>4:15</td>
+                <td>565</td>
+                <td>Siemens Tim Trio 3 T</td>
+                <td>3 x 3 x 3</td>
+                <td>3000</td>
+                <td>32</td>
+                <td>64 x 64 x 46</td>
+                <td>90</td>
+                <td>93.33</td>
+                <td>GRE</td>
+            </tr>
+        
+            <tr>
+                <td>Nathan Kline Institute  - Rockland Sample (NKI)</td>
+                <td>Singleband</td>
+                <td>Rest</td>
+                <td>5:00</td>
+                <td>120</td>
+                <td>Siemens Tim Trio 3 T</td>
+                <td>3 x 3 x 3.33</td>
+                <td>2500</td>
+                <td>30</td>
+                <td>72 x 72 x 38</td>
+                <td>80</td>
+                <td>80</td>
+                <td>None</td>
+            </tr>
+        
+            <tr>
+                <td>Nathan Kline Institute  - Rockland Sample (NKI)</td>
+                <td>Multiband</td>
+                <td>Rest<br />Checkerboard</td>
+                <td>12:15</td>
+                <td>1140</td>
+                <td>Siemens Tim Trio 3 T</td>
+                <td>3 x 3 x 3</td>
+                <td>645</td>
+                <td>30</td>
+                <td>74 x 74 x 40</td>
+                <td>60</td>
+                <td>29</td>
+                <td>None</td>
+            </tr>
+        
+            <tr>
+                <td>Nathan Kline Institute  - Rockland Sample (NKI)</td>
+                <td>Multiband</td>
+                <td>Rest<br />Breathhold<br />Checkerboard</td>
+                <td>16:03</td>
+                <td>688</td>
+                <td>Siemens Tim Trio 3 T</td>
+                <td>2 x 2 x 2</td>
+                <td>1400</td>
+                <td>30</td>
+                <td>112 x 112 x 64</td>
+                <td>65</td>
+                <td>20</td>
+                <td>None</td>
+            </tr>
+        
+            <tr>
+                <td>Developmental Component of the Chinese Color Nest Project (CCNP)</td>
+                <td>Singleband</td>
+                <td>Rest</td>
+                <td>15:20</td>
+                <td>368</td>
+                <td>Siemens Tim Trio 3 T</td>
+                <td>3 x 3 x 3.33</td>
+                <td>2500</td>
+                <td>30</td>
+                <td>72 x 72 x 38</td>
+                <td>80</td>
+                <td>85</td>
+                <td>None</td>
+            </tr>
+        
+    </tbody>
+</table>]]></content><author><name>{&quot;links&quot;=&gt;[{&quot;label&quot;=&gt;&quot;Email&quot;, &quot;icon&quot;=&gt;&quot;fas fa-fw fa-envelope-square&quot;}, {&quot;label&quot;=&gt;&quot;Website&quot;, &quot;icon&quot;=&gt;&quot;fas fa-fw fa-link&quot;}, {&quot;label&quot;=&gt;&quot;Twitter&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-twitter-square&quot;}, {&quot;label&quot;=&gt;&quot;Facebook&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-facebook-square&quot;}, {&quot;label&quot;=&gt;&quot;GitHub&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-github&quot;}, {&quot;label&quot;=&gt;&quot;Instagram&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-instagram&quot;}]}</name></author><category term="docs" /><category term="imaging" /><summary type="html"><![CDATA[Image Acquisition]]></summary></entry><entry><title type="html">Image Curation</title><link href="http://localhost:4000/docs/imaging/image_curation/" rel="alternate" type="text/html" title="Image Curation" /><published>2020-01-01T00:00:00-05:00</published><updated>2020-01-01T00:00:00-05:00</updated><id>http://localhost:4000/docs/imaging/image_curation</id><content type="html" xml:base="http://localhost:4000/docs/imaging/image_curation/"><![CDATA[<p><br /></p>
+
+<div style="text-align: center;">
+    <img src="/assets/images/logos/cubids.png" width="80%" height="auto" />
+</div>
+
+<p><br /></p>
+
+<p><a href="https://cubids.readthedocs.io/en/latest/">CuBIDS</a> (Covitz et al., 2022) was used for the curation of each of the RBC datasets.
+CuBIDS is a sanity preserving workflow that summarizes the heterogeneity in a MRI BIDS dataset, helps prepare MRI datasets for preprocessing, and helps users perform metadata-based quality control on MRI BIDS data.</p>
+
+<div style="text-align: center;">
+    <img src="/assets/images/misc/cubids_workflow.png" width="80%" height="auto" />
+</div>
+
+<p>For each dataset, a CuBIDS summary was created that provides an opportunity to evaluate the data and decide how to handle heterogeneity by grouping the scans on the basis of metadata.
+You can find the link to each of the CuBIDS summaries for each study below.
+More information about how to interpret CuBIDS summaries can be found <a href="https://cubids.readthedocs.io/en/latest/">here</a>.</p>
+
+<ul>
+  <li><a href="https://github.com/ReproBrainChart/HBN_BIDS/blob/main/study-HBN_desc-CuBIDS_summary.tsv">HBN</a></li>
+  <li><a href="https://github.com/ReproBrainChart/NKI_BIDS/blob/main/study-NKI_desc-CuBIDS_summary.tsv">NKI</a></li>
+  <li><a href="https://github.com/ReproBrainChart/PNC_BIDS/blob/main/study-PNC_desc-CuBIDS_summary.tsv">PNC</a></li>
+  <li><a href="https://github.com/ReproBrainChart/CCNP_BIDS/blob/main/study-CCNP_desc-CuBIDS_summary.tsv">CCNP</a></li>
+  <li><a href="https://github.com/ReproBrainChart/BHRC_BIDS/blob/main/study-BHRC_desc-CuBIDS_summary.tsv">BHRC</a></li>
+</ul>]]></content><author><name>{&quot;links&quot;=&gt;[{&quot;label&quot;=&gt;&quot;Email&quot;, &quot;icon&quot;=&gt;&quot;fas fa-fw fa-envelope-square&quot;}, {&quot;label&quot;=&gt;&quot;Website&quot;, &quot;icon&quot;=&gt;&quot;fas fa-fw fa-link&quot;}, {&quot;label&quot;=&gt;&quot;Twitter&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-twitter-square&quot;}, {&quot;label&quot;=&gt;&quot;Facebook&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-facebook-square&quot;}, {&quot;label&quot;=&gt;&quot;GitHub&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-github&quot;}, {&quot;label&quot;=&gt;&quot;Instagram&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-instagram&quot;}]}</name></author><category term="docs" /><category term="imaging" /><summary type="html"><![CDATA[Image Curation]]></summary></entry></feed>

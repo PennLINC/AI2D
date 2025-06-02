@@ -1,0 +1,398 @@
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.24.0 by Michael Rose
+  Copyright 2013-2020 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
+-->
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8">
+
+<!-- begin _includes/seo.html --><title>Healthy Brain Network - RBC</title>
+<meta name="description" content="HBN">
+
+
+
+<meta property="og:type" content="article">
+<meta property="og:locale" content="en_US">
+<meta property="og:site_name" content="RBC">
+<meta property="og:title" content="Healthy Brain Network">
+<meta property="og:url" content="http://localhost:4000/docs/datasets/HBN/">
+
+
+  <meta property="og:description" content="HBN">
+
+
+
+
+
+
+
+  <meta property="article:published_time" content="2023-01-01T00:00:00-05:00">
+
+
+
+
+
+  
+
+  
+
+
+<link rel="canonical" href="http://localhost:4000/docs/datasets/HBN/">
+
+
+
+
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    
+      "@type": "Person",
+      "name": "RBC",
+      "url": "http://localhost:4000/"
+    
+  }
+</script>
+
+
+
+
+
+
+
+<!-- end _includes/seo.html -->
+
+
+
+  <link href="/feed.xml" type="application/atom+xml" rel="alternate" title="RBC Feed">
+
+
+<!-- https://t.co/dKP3o1e -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="stylesheet" href="/assets/css/custom.css">
+<link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css">
+<!-- Fonts via Google -->
+<link href="https://fonts.googleapis.com/css?family=Lato:300italic,700italic,300,700" rel="stylesheet" type="text/css"/>
+
+
+
+    <!-- start custom head snippets -->
+
+<!-- insert favicons. use https://realfavicongenerator.net/ -->
+
+<!-- end custom head snippets -->
+
+  </head>
+
+  <body class="layout--single">
+    <nav class="skip-links">
+  <ul>
+    <li><a href="#site-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
+    <li><a href="#main" class="screen-reader-shortcut">Skip to content</a></li>
+    <li><a href="#footer" class="screen-reader-shortcut">Skip to footer</a></li>
+  </ul>
+</nav>
+
+    
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top" role="navigation">
+    <div class="container d-flex justify-content-between">
+        <a class="navbar-brand" href="#">
+            
+                <a class="site-logo" href="/"><img src="/assets/images/logos/upenn_ai2d_logo.png" alt="RBC"></a>
+            
+        </a>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarToggler">
+            <ul class="navbar-nav ml-auto">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" id="navbarDropdown-Studies" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Studies
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown-Studies">
+                                
+                                    <a class="nav-link dropdown-item" href="/docs/datasets">Overview</a>
+                                
+                                
+                                    <a class="nav-link dropdown-item" href="/docs/datasets/BHRC">BHRC</a>
+                                
+                                    <a class="nav-link dropdown-item" href="/docs/datasets/dCCNP">dCCNP</a>
+                                
+                                    <a class="nav-link dropdown-item" href="/docs/datasets/HBN">HBN</a>
+                                
+                                    <a class="nav-link dropdown-item" href="/docs/datasets/NKI">NKI</a>
+                                
+                                    <a class="nav-link dropdown-item" href="/docs/datasets/PNC">PNC</a>
+                                
+                            </div>
+                        </li>
+                    
+                
+                        <li class="nav-item">
+                            <a class="nav-link" href="/docs/phenotypes">Psychiatry</a>
+                        </li>
+                    
+                
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" id="navbarDropdown-Imaging" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Imaging
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown-Imaging">
+                                
+                                    <a class="nav-link dropdown-item" href="/docs/imaging">Overview</a>
+                                
+                                
+                                    <a class="nav-link dropdown-item" href="/docs/imaging/image_acquisition">Image Acquisition</a>
+                                
+                                    <a class="nav-link dropdown-item" href="/docs/imaging/image_curation">Image Curation</a>
+                                
+                                    <a class="nav-link dropdown-item" href="/docs/imaging/image_processing">Image Processing</a>
+                                
+                                    <a class="nav-link dropdown-item" href="/docs/imaging/image_harmonization">Image Harmonization</a>
+                                
+                                    <a class="nav-link dropdown-item" href="/docs/imaging/image_structural_qa">Structural Image Quality</a>
+                                
+                                    <a class="nav-link dropdown-item" href="/docs/imaging/image_functional_qa">Functional Image Quality</a>
+                                
+                            </div>
+                        </li>
+                    
+                
+                        <li class="nav-item">
+                            <a class="nav-link" href="/docs/team">Team</a>
+                        </li>
+                    
+                
+                        <li class="nav-item">
+                            <a class="nav-link" href="/docs/community/publications">Publications</a>
+                        </li>
+                    
+                
+                        <li class="nav-item">
+                            <a class="nav-link" href="/docs/blog/index">News</a>
+                        </li>
+                    
+                
+                        <li class="nav-item">
+                            <a class="nav-link" href="/docs/get_data"><em style="font-style:normal; font-weight:bold; color:#a594d1;"> Get Data </em></a>
+                        </li>
+                    
+                
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+    <div class="initial-content">
+      
+
+
+
+
+<div id="main" role="main">
+  
+
+  <article class="page h-entry" itemscope itemtype="https://schema.org/CreativeWork">
+    <meta itemprop="headline" content="Healthy Brain Network">
+    <meta itemprop="description" content="HBN">
+    <meta itemprop="datePublished" content="2023-01-01T00:00:00-05:00">
+    
+
+    <div class="page__inner-wrap">
+      
+        <header>
+          <br/><h1 id="page-title" class="page__title p-name" itemprop="headline">
+            <a href="http://localhost:4000/docs/datasets/HBN/" class="u-url" itemprop="url">Healthy Brain Network
+</a>
+          </h1>
+          
+          <!--
+
+
+  <p class="page__meta">
+    
+
+    <span class="page__meta-sep"></span>
+
+    
+      
+      <span class="page__meta-date">
+        <i class="far fa-calendar-alt" aria-hidden="true"></i>
+        
+        <time datetime="2023-01-01T00:00:00-05:00">January 1, 2023</time>
+      </span>
+    
+
+    <span class="page__meta-sep"></span>
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          1 minute read
+        
+      </span>
+    
+  </p>
+
+-->
+        </header>
+      
+
+      <section class="page__content e-content" itemprop="text">
+        
+        <div style="text-align: left;">
+     <img src="/assets/images/logos/child_mind_institute.png" style="width: auto; height: 10vw;" />
+</div>
+
+<h3 id="about-the-dataset">About the dataset</h3>
+<p><a href="https://healthybrainnetwork.org/">https://healthybrainnetwork.org/</a></p>
+
+<p><em>PI</em>
+<br />
+Michael Milham</p>
+
+<p><em>Funding</em>
+<br />
+The Healthy Brain Network, Lee Alexander, Robert Allard, Lisa Bilotti Foundation, Inc., Margaret Billoti, Christopher Boles, Brooklyn Nets, Agapi and Bruce Burkhard, Randolph Cowen and Phyllis Green, Elizabeth and David DePaolo, Charlotte Ford, Valesca Guerrand-Hermes, Sarah and Geoffrey Gund, George Hall, Joseph Healey and Elaine Thomas, Hearst Foundations, Eve and Ross Joffe, Anton and Robin Katz, Rachael and Marshall Levine, Ke Li, Jessica Lupovici, Javier Macaya, Christine and Richard Mack, Susan Miller and Byron Grote, John and Amy Phelan, Linnea and George Roberts, Jim and Linda Robinson Foundation, Inc, Caren and Barry Roseman, Zibby Schwarzmaln, David Shapiro and Abby Pogrebin, Stavros Niarchos Foundation, Nicholas Van Dusen, David Wolkoff and Stephanie Winston Wolkoff, Donors to the Brant Art Auction of 2012, Randolph Cowen and Phyllis Green Scholarship</p>
+
+<p><em>Citation</em>
+<br />
+Alexander LM, Escalera J, Ai L, Andreotti C, Febre K, Mangone A, Vega-Potler N, Langer N, Alexander A, Kovacs M, Litke S, O’Hagan B, Andersen J, Bronstein B, Bui A, Bushey M, Butler H, Castagna V, Camacho N, Chan E, Citera D, Clucas J, Cohen S, Dufek S, Eaves M, Fradera B, Gardner J, Grant-Villegas N, Green G, Gregory C, Hart E, Harris S, Horton M, Kahn D, Kabotyanski K, Karmel B, Kelly SP, Kleinman K, Koo B, Kramer E, Lennon E, Lord C, Mantello G, Margolis A, Merikangas KR, Milham J, Minniti G, Neuhaus R, Levine A, Osman Y, Parra LC, Pugh KR, Racanello A, Restrepo A, Saltzman T, Septimus B, Tobe R, Waltz R, Williams A, Yeo A, Castellanos FX, Klein A, Paus T, Leventhal BL, Craddock RC, Koplewicz HS, Milham MP. An open resource for transdiagnostic research in pediatric mental health and learning disorders. Sci Data. 2017 Dec 19;4:170181. doi: 10.1038/sdata.2017.181. PMID: 29257126; PMCID: PMC5735921.</p>
+
+<p><br /></p>
+<div class="table" align="center">
+<table style="text-align: center;
+width:44%; font-size:90%; border: 1px solid black">
+<tr><th style="font-weight:normal">Average age</th><th style="font-weight:normal">10.4</th><th style="font-weight:normal"></th></tr>
+<tr><th style="font-weight:normal">% Female</th><th style="font-weight:normal">33</th><th style="font-weight:normal"></th></tr>
+<tr><th style="font-weight:normal">Mean Overall Psychopathology (mean)</th><th style="font-weight:normal">0.22</th><th style="font-weight:normal"></th></tr>
+<tr><th style="font-weight:normal">Mean Overall Psychopathology (SD)</th><th style="font-weight:normal">0.96</th><th style="font-weight:normal"></th></tr>
+<tr><th style="font-weight:normal">% Right Handed:</th><th style="font-weight:normal">82</th><th style="font-weight:normal"></th></tr>
+<table>
+
+<br />
+<br />
+
+<div style="text-align: center;">
+     <img src="/assets/images/datasets/HBN_Flowchart.png" width="80%" height="auto" />
+</div>
+
+</table></table></div>
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        <!--
+
+
+  
+
+
+  
+
+  <p class="page__taxonomy">
+    <strong><i class="fas fa-fw fa-folder-open" aria-hidden="true"></i> Categories: </strong>
+    <span itemprop="keywords">
+    
+      <a href="/categories/#datasets" class="page__taxonomy-item p-category" rel="tag">datasets</a><span class="sep">, </span>
+    
+      <a href="/categories/#docs" class="page__taxonomy-item p-category" rel="tag">docs</a>
+    
+    </span>
+  </p>
+
+-->
+        <!--
+
+  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Updated:</strong> <time class="dt-published" datetime="2023-01-01T00:00:00-05:00">January 1, 2023</time></p>
+-->
+      </footer>
+
+      
+
+      <!--
+  <nav class="pagination">
+    
+      <a href="/docs/datasets/BHRC/" class="pagination--pager" title="Brazil High Risk Cohort
+">Previous</a>
+    
+    
+      <a href="/docs/datasets/NKI/" class="pagination--pager" title="Rockland Sample
+">Next</a>
+    
+  </nav>
+-->
+    </div>
+
+    
+  </article>
+
+  
+  
+</div>
+
+    </div>
+
+    
+
+    <div id="footer" class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+<div class="page__footer fixed-bottom">
+  <div class="container">
+      <div class="row">
+          <div class="col-6 text-left">
+              Visit the <a href="https://ai2d.med.upenn.edu/">AI2D Website</a>
+          </div>
+          <div class="col-6 text-right">
+              <a href="/sitemap/">Sitemap</a> |
+              <a href="/docs/community/get_support/">Get Support</a>
+          </div>
+      </div>
+  </div>
+</div>
+
+      </footer>
+    </div>
+
+    
+  <script src="/assets/js/main.min.js"></script>
+
+
+
+
+
+
+
+
+
+
+  </body>
+</html>

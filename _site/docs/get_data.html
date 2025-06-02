@@ -1,0 +1,441 @@
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.24.0 by Michael Rose
+  Copyright 2013-2020 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
+-->
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8">
+
+<!-- begin _includes/seo.html --><title>How to Get Data - RBC</title>
+<meta name="description" content="Get Data">
+
+
+
+<meta property="og:type" content="website">
+<meta property="og:locale" content="en_US">
+<meta property="og:site_name" content="RBC">
+<meta property="og:title" content="How to Get Data">
+<meta property="og:url" content="http://localhost:4000/docs/get_data">
+
+
+  <meta property="og:description" content="Get Data">
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+
+<link rel="canonical" href="http://localhost:4000/docs/get_data">
+
+
+
+
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    
+      "@type": "Person",
+      "name": "RBC",
+      "url": "http://localhost:4000/"
+    
+  }
+</script>
+
+
+
+
+
+
+
+<!-- end _includes/seo.html -->
+
+
+
+  <link href="/feed.xml" type="application/atom+xml" rel="alternate" title="RBC Feed">
+
+
+<!-- https://t.co/dKP3o1e -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="stylesheet" href="/assets/css/custom.css">
+<link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css">
+<!-- Fonts via Google -->
+<link href="https://fonts.googleapis.com/css?family=Lato:300italic,700italic,300,700" rel="stylesheet" type="text/css"/>
+
+
+
+    <!-- start custom head snippets -->
+
+<!-- insert favicons. use https://realfavicongenerator.net/ -->
+
+<!-- end custom head snippets -->
+
+  </head>
+
+  <body class="layout--single">
+    <nav class="skip-links">
+  <ul>
+    <li><a href="#site-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
+    <li><a href="#main" class="screen-reader-shortcut">Skip to content</a></li>
+    <li><a href="#footer" class="screen-reader-shortcut">Skip to footer</a></li>
+  </ul>
+</nav>
+
+    
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top" role="navigation">
+    <div class="container d-flex justify-content-between">
+        <a class="navbar-brand" href="#">
+            
+                <a class="site-logo" href="/"><img src="/assets/images/logos/upenn_ai2d_logo.png" alt="RBC"></a>
+            
+        </a>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarToggler">
+            <ul class="navbar-nav ml-auto">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" id="navbarDropdown-Studies" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Studies
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown-Studies">
+                                
+                                    <a class="nav-link dropdown-item" href="/docs/datasets">Overview</a>
+                                
+                                
+                                    <a class="nav-link dropdown-item" href="/docs/datasets/BHRC">BHRC</a>
+                                
+                                    <a class="nav-link dropdown-item" href="/docs/datasets/dCCNP">dCCNP</a>
+                                
+                                    <a class="nav-link dropdown-item" href="/docs/datasets/HBN">HBN</a>
+                                
+                                    <a class="nav-link dropdown-item" href="/docs/datasets/NKI">NKI</a>
+                                
+                                    <a class="nav-link dropdown-item" href="/docs/datasets/PNC">PNC</a>
+                                
+                            </div>
+                        </li>
+                    
+                
+                        <li class="nav-item">
+                            <a class="nav-link" href="/docs/phenotypes">Psychiatry</a>
+                        </li>
+                    
+                
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" id="navbarDropdown-Imaging" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Imaging
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown-Imaging">
+                                
+                                    <a class="nav-link dropdown-item" href="/docs/imaging">Overview</a>
+                                
+                                
+                                    <a class="nav-link dropdown-item" href="/docs/imaging/image_acquisition">Image Acquisition</a>
+                                
+                                    <a class="nav-link dropdown-item" href="/docs/imaging/image_curation">Image Curation</a>
+                                
+                                    <a class="nav-link dropdown-item" href="/docs/imaging/image_processing">Image Processing</a>
+                                
+                                    <a class="nav-link dropdown-item" href="/docs/imaging/image_harmonization">Image Harmonization</a>
+                                
+                                    <a class="nav-link dropdown-item" href="/docs/imaging/image_structural_qa">Structural Image Quality</a>
+                                
+                                    <a class="nav-link dropdown-item" href="/docs/imaging/image_functional_qa">Functional Image Quality</a>
+                                
+                            </div>
+                        </li>
+                    
+                
+                        <li class="nav-item">
+                            <a class="nav-link" href="/docs/team">Team</a>
+                        </li>
+                    
+                
+                        <li class="nav-item">
+                            <a class="nav-link" href="/docs/community/publications">Publications</a>
+                        </li>
+                    
+                
+                        <li class="nav-item">
+                            <a class="nav-link" href="/docs/blog/index">News</a>
+                        </li>
+                    
+                
+                        <li class="nav-item">
+                            <a class="nav-link" href="/docs/get_data"><em style="font-style:normal; font-weight:bold; color:#a594d1;"> Get Data </em></a>
+                        </li>
+                    
+                
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+    <div class="initial-content">
+      
+
+
+
+
+<div id="main" role="main">
+  
+
+  <article class="page h-entry" itemscope itemtype="https://schema.org/CreativeWork">
+    <meta itemprop="headline" content="How to Get Data">
+    <meta itemprop="description" content="Get Data">
+    
+    
+
+    <div class="page__inner-wrap">
+      
+        <header>
+          <br/><h1 id="page-title" class="page__title p-name" itemprop="headline">
+            <a href="http://localhost:4000/docs/get_data" class="u-url" itemprop="url">How to Get Data
+</a>
+          </h1>
+          
+          <!--
+
+
+-->
+        </header>
+      
+
+      <section class="page__content e-content" itemprop="text">
+        
+        <h3 id="install-datalad">Install DataLad</h3>
+
+<p>RBC is accessible via <code class="language-plaintext highlighter-rouge">datalad</code>. Follow the instructions <a href="https://www.datalad.org/#install">here</a>
+to get it installed.</p>
+
+<p>Accessing RBC data via DataLad happens in two steps. You will first <code class="language-plaintext highlighter-rouge">clone</code> a RBC data
+repository from github. This will make a copy of the RBC file layout, but none of the
+actual data will be present. The next step is to <code class="language-plaintext highlighter-rouge">get</code> your data, which tells DataLad to
+download the content of specific files to your copy. Once the file content is present in
+your copy, you can use RBC data just like any other set of files.</p>
+
+<h3 id="pick-a-dataset">Pick a dataset</h3>
+
+<p>You can find each of the unprocessed BIDS MRI data, processed functional and processed structural
+derivatives in their corresponding repositories on GitHub.</p>
+
+<p>The repositories (you can find them all
+<a href="https://github.com/orgs/ReproBrainChart/repositories">here</a>) are consistently named such that:</p>
+
+<ul>
+  <li>If you’re looking for BIDS MRI, the repo will be named <code class="language-plaintext highlighter-rouge">&lt;study&gt;_BIDS</code></li>
+  <li>If you’re looking for processed functional data, the repo will be named <code class="language-plaintext highlighter-rouge">&lt;study&gt;_CPAC</code></li>
+  <li>If you’re looking for processed structural MRI, the repo will be named <code class="language-plaintext highlighter-rouge">&lt;study&gt;_FreeSurfer</code></li>
+</ul>
+
+<p>where <code class="language-plaintext highlighter-rouge">&lt;study&gt;</code> is replaced with <code class="language-plaintext highlighter-rouge">HBN</code>, <code class="language-plaintext highlighter-rouge">NKI</code>, <code class="language-plaintext highlighter-rouge">PNC</code>, <code class="language-plaintext highlighter-rouge">BHRC</code> or <code class="language-plaintext highlighter-rouge">CCNP</code>.</p>
+
+<p>Note: Participant demographics and phenotypic data are under <code class="language-plaintext highlighter-rouge">&lt;study&gt;_BIDS</code> repository for each study and are named <code class="language-plaintext highlighter-rouge">study-&lt;study&gt;_desc-participants.tsv</code>.</p>
+
+<h4 id="choose-a-qc-threshold">Choose a QC threshold</h4>
+
+<p>When you download RBC data at a specific QC threshold you can be sure that
+any file you find in your downloaded data is usable for further analysis.
+RBC releases data at 3 different QC thresholds:</p>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">complete-pass</code>: Structural and BOLD data have passed QC</li>
+  <li><code class="language-plaintext highlighter-rouge">complete-artifact</code>: Structural data can be “Pass” or “Artifact”, BOLD is “Pass”</li>
+  <li><code class="language-plaintext highlighter-rouge">warning-fail</code>: Contains all the RBC data including QC failures. This threshold
+  is not recommended and you’ll have to explain why you chose this threshold in
+  any publication resulting from it.</li>
+</ul>
+
+<h4 id="choose-a-version">Choose a version</h4>
+
+<p>Lastly, you’ll need to pick a <em>version</em> of the data to get. Each time RBC makes
+changes to the data, it will be released with a new version number. By picking
+a version number for your RBC-based study you can be sure that your input data
+will never change. The current release of RBC is <code class="language-plaintext highlighter-rouge">0.1</code>.</p>
+
+<h3 id="clone-the-data">Clone the data</h3>
+
+<p>Getting data on to your system will involve running a command like this:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>datalad clone <span class="se">\</span>
+    https://github.com/ReproBrainChart/&lt;study&gt;_&lt;content&gt;.git <span class="se">\</span>
+    <span class="nt">-b</span> &lt;qc_threshold&gt;-&lt;version&gt;
+</code></pre></div></div>
+
+<h2 id="example-walkthrough">Example walkthrough</h2>
+
+<p>Suppose I’d like to get some processed structural data from PNC. I’ve decided that I don’t
+want to include T1ws with notable artifacts, so I choose the QC threshold to be <code class="language-plaintext highlighter-rouge">complete-pass</code>.
+I’ve checked the RBC website and see that the most recent release is <code class="language-plaintext highlighter-rouge">0.1</code>. This means that
+my last argument to <code class="language-plaintext highlighter-rouge">datalad clone</code> will be <code class="language-plaintext highlighter-rouge">-b complete-pass-0.1</code>.</p>
+
+<p>From the example command in <a href="#clone-the-data">ths documentation</a> I replace <code class="language-plaintext highlighter-rouge">&lt;study&gt;</code>
+with <code class="language-plaintext highlighter-rouge">PNC</code> and <code class="language-plaintext highlighter-rouge">&lt;content&gt;</code> with <code class="language-plaintext highlighter-rouge">FreeSurfer</code>. My command would be:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>datalad clone <span class="se">\</span>
+    https://github.com/ReproBrainChart/PNC_FreeSurfer.git <span class="se">\</span>
+    <span class="nt">-b</span> complete-pass-0.1
+</code></pre></div></div>
+
+<p>I see some warnings such as these:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[INFO   ] Unable to parse git config from origin
+[INFO   ] Remote origin does not have git-annex installed; setting annex-ignore
+[INFO   ] This could be a problem with the git-annex installation on the remote. Please make sure that git-annex-shell is available in PATH when you ssh into the remote. Once you have fixed the git-annex installation, run: git annex enableremote origin
+install(ok): /home/cieslakm/data/PNC_FreeSurfer (dataset)
+</code></pre></div></div>
+
+<p>but these are ok. I now have a <code class="language-plaintext highlighter-rouge">DataLad</code> dataset with everything I need to start exploring
+RBC data.</p>
+
+<p>That command finishes surprisingly quickly: PNC
+FreeSurfer has over a thousand subjects in it! But this is normal for <code class="language-plaintext highlighter-rouge">DataLad</code>.
+(Note that cloning the processed functional data (i.e., <code class="language-plaintext highlighter-rouge">CPAC</code> files) will take
+longer as <code class="language-plaintext highlighter-rouge">CPAC</code> functional outputs include more files compared to
+<code class="language-plaintext highlighter-rouge">FreeSurfer</code>.) There is now a <code class="language-plaintext highlighter-rouge">PNC_FreeSurfer</code> directory that I can look
+around in. Since I don’t know which files I might want, I will explore this directory
+in my terminal:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span><span class="nb">cd </span>PNC_FreeSurfer/freesurfer/sub-192413932
+<span class="nv">$ </span><span class="nb">ls
+</span>sub-192413932_brainmeasures.json@  sub-192413932_fsaverage.tar.xz@
+sub-192413932_brainmeasures.tsv@   sub-192413932_fsLR_den-164k.tar.xz@
+sub-192413932_freesurfer.tar.xz@   sub-192413932_regionsurfacestats.tsv@
+</code></pre></div></div>
+
+<p>These two tsv files contain the anatomical variables in tabular form, so I’d like
+to copy these contents to my computer:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>datalad get <span class="k">*</span>.tsv
+get<span class="o">(</span>ok<span class="o">)</span>: freesurfer/sub-192413932/sub-192413932_regionsurfacestats.tsv <span class="o">(</span>file<span class="o">)</span> <span class="o">[</span>from output-storage...]
+get<span class="o">(</span>ok<span class="o">)</span>: freesurfer/sub-192413932/sub-192413932_brainmeasures.tsv <span class="o">(</span>file<span class="o">)</span> <span class="o">[</span>from output-storage...]
+action summary:
+  get <span class="o">(</span>ok: 2<span class="o">)</span>
+</code></pre></div></div>
+
+<p>Shell glob patterns can be used to get whichever files you might need.</p>
+
+<div class="alert alert-primary" role="alert">
+  <b>WARNING:</b> DO NOT attempt to `get` all the file content! These studies take up
+  a lot of disk space and you will likely run out of space unless you have a very big
+  hard drive.
+</div>
+
+<h1 id="faqs">FAQs</h1>
+
+<h4 id="running-datalad-get-appears-to-be-stuck---what-should-i-do">Running <code class="language-plaintext highlighter-rouge">datalad get</code> appears to be stuck - what should I do?</h4>
+
+<p>The first time you run <code class="language-plaintext highlighter-rouge">datalad get</code> may take 30 minutes or more to finish
+copying the file. Subsequent runs of <code class="language-plaintext highlighter-rouge">datalad get</code> will be much faster.</p>
+
+<p>Unless you see an error message when running <code class="language-plaintext highlighter-rouge">datalad get</code>, you should let
+the command run until you see something printed out.</p>
+
+<h4 id="do-i-need-a-supercomputer-to-get-this-data">Do I need a supercomputer to get this data?</h4>
+
+<p>You can clone any of these datasets to any machine with internet access,
+<a href="https://www.datalad.org/#install"><code class="language-plaintext highlighter-rouge">DataLad</code> (<code class="language-plaintext highlighter-rouge">git</code> and <code class="language-plaintext highlighter-rouge">git-annex</code>) installed</a>
+and your agreement with the License. The rest of the answer depends on what type
+of data you plan on copying to your computer:</p>
+
+<ul>
+  <li>If you plan on copying only tabular data content to your computer you will need
+at most a few free GB.</li>
+  <li>If you plan on copying 3D imaging data (e.g. ALFF, REHO) you will need hundreds of GB free.</li>
+  <li>If you plan on copying 4D denoised BOLD timeseries data you will need up to 4TB of free space.</li>
+</ul>
+
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        <!--
+
+-->
+        <!--
+-->
+      </footer>
+
+      
+
+      <!---->
+    </div>
+
+    
+  </article>
+
+  
+  
+</div>
+
+    </div>
+
+    
+
+    <div id="footer" class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+<div class="page__footer fixed-bottom">
+  <div class="container">
+      <div class="row">
+          <div class="col-6 text-left">
+              Visit the <a href="https://ai2d.med.upenn.edu/">AI2D Website</a>
+          </div>
+          <div class="col-6 text-right">
+              <a href="/sitemap/">Sitemap</a> |
+              <a href="/docs/community/get_support/">Get Support</a>
+          </div>
+      </div>
+  </div>
+</div>
+
+      </footer>
+    </div>
+
+    
+  <script src="/assets/js/main.min.js"></script>
+
+
+
+
+
+
+
+
+
+
+  </body>
+</html>
