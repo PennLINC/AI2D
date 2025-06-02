@@ -21,9 +21,9 @@ title_separator          : "-"
 subtitle                 : Reproducible Brain Charts
 name                     : RBC
 description              : "The official website for the Reproducible Brain Charts project."
-url                      : https://ReproBrainChart.github.io
-baseurl                  :
-repository               : "ReproBrainChart/ReproBrainChart.github.io"
+url                      : https://pennlincrbc.github.io
+baseurl                  : /AI2D
+repository               : "PennLINC/AI2D"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 logo                     : /assets/images/logos/upenn_ai2d_logo.png # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
 masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
