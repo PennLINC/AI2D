@@ -15,3 +15,16 @@
     color: white; /* White text */
     font-style: bold; /* Bold text */
 }
+
+.site-logo img {
+    max-height: 2rem !important;
+    width: auto !important;
+}
+
+.navbar-brand {
+    padding: 0 !important;
+}
+
+.navbar {
+    padding: 0.5rem 1rem !important;
+}
