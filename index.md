@@ -5,7 +5,7 @@ author_profile: false
 ---
 
 <div style="text-align: center;">
-     <img src="/assets/images/logos/upenn_ai2d_logo.png" style="max-width: 70%; height: auto; object-fit: contain;" alt="AI2D Logo" />
+     <img src="/AI2D/assets/images/logos/upenn_ai2d_logo.png" style="max-width: 70%; height: auto; object-fit: contain;" alt="AI2D Logo" />
 </div>
 
 <div style="padding: 30px 0;">
@@ -20,7 +20,7 @@ author_profile: false
      </ol>
      <div class="carousel-inner">
           <div class="carousel-item active">
-               <img class="d-block w-100" src="/assets/images/banners/ai2d_banner.png" alt="First slide">
+               <img class="d-block w-100" src="/AI2D/assets/images/banners/ai2d_banner.png" alt="First slide">
           </div>
      </div>
 </div>
