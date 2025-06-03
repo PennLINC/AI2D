@@ -46,7 +46,8 @@ author_profile: false
      </p>
      <p>
           Many labs are often interested in the same large, publicly available neuroimaging datasets, which can be processed using the same standardized pipelines. However, data curation and processing are frequently performed independently across labs, resulting in duplicated effort, wasted computational resources, and inefficient use of storage.
-
+     </p>
+     <p>
           AI2D Neuroimaging Data addresses these challenges by centrally curating imaging data and processing it through standardized pipelines. By providing a shared, centralized resource, AI2D streamlines efforts across participating labs, eliminating redundancy, improving consistency, and accelerating scientific discovery.
      </p>
      <br>
