@@ -18,7 +18,7 @@
 <meta property="og:locale" content="en_US">
 <meta property="og:site_name" content="RBC">
 <meta property="og:title" content="Datasets in RBC">
-<meta property="og:url" content="https://pennlincrbc.github.io/AI2D/docs/datasets/">
+<meta property="og:url" content="http://localhost:4000/AI2D/docs/datasets/">
 
 
   <meta property="og:description" content="The official website for the Reproducible Brain Charts project.">
@@ -38,7 +38,7 @@
   
 
 
-<link rel="canonical" href="https://pennlincrbc.github.io/AI2D/docs/datasets/">
+<link rel="canonical" href="http://localhost:4000/AI2D/docs/datasets/">
 
 
 
@@ -49,7 +49,7 @@
     
       "@type": "Person",
       "name": "RBC",
-      "url": "https://pennlincrbc.github.io/AI2D/"
+      "url": "http://localhost:4000/AI2D/"
     
   }
 </script>
@@ -108,7 +108,7 @@
     <div class="container d-flex justify-content-between">
         <a class="navbar-brand" href="/AI2D/">
             
-                <a class="site-logo" href="/AI2D/"><img src="/AI2D/AI2D/assets/images/logos/upenn_ai2d_logo.png" alt="RBC"></a>
+                <a class="site-logo" href="/AI2D/"><img src="/AI2D/assets/images/logos/upenn_ai2d_logo.png" alt="RBC"></a>
             
         </a>
 
@@ -126,8 +126,6 @@
                                     <a class="nav-link dropdown-item" href="/AI2D/docs/datasets">Overview</a>
                                 
                                 
-                                    <a class="nav-link dropdown-item" href="/AI2D/docs/datasets/BHRC">BHRC</a>
-                                
                                     <a class="nav-link dropdown-item" href="/AI2D/docs/datasets/dCCNP">dCCNP</a>
                                 
                                     <a class="nav-link dropdown-item" href="/AI2D/docs/datasets/HBN">HBN</a>
@@ -137,11 +135,6 @@
                                     <a class="nav-link dropdown-item" href="/AI2D/docs/datasets/PNC">PNC</a>
                                 
                             </div>
-                        </li>
-                    
-                
-                        <li class="nav-item">
-                            <a class="nav-link" href="/AI2D/docs/phenotypes">Psychiatry</a>
                         </li>
                     
                 
@@ -160,9 +153,9 @@
                                 
                                     <a class="nav-link dropdown-item" href="/AI2D/docs/imaging/image_processing">Image Processing</a>
                                 
-                                    <a class="nav-link dropdown-item" href="/AI2D/docs/imaging/image_harmonization">Image Harmonization</a>
-                                
                                     <a class="nav-link dropdown-item" href="/AI2D/docs/imaging/image_structural_qa">Structural Image Quality</a>
+                                
+                                    <a class="nav-link dropdown-item" href="/AI2D/docs/imaging/image_diffusion_qa">Diffusion Image Quality</a>
                                 
                                     <a class="nav-link dropdown-item" href="/AI2D/docs/imaging/image_functional_qa">Functional Image Quality</a>
                                 
@@ -210,14 +203,7 @@
 <h1> Overview </h1>
 
 <body>
-Version 1.0 of RBC includes n=6346 participants ages 5-85 (n=2869 females) drawn from 5 major studies of brain development that included structural and functional neuroimaging.
-These studies were conducted in North America, China, and Brazil; see below for details regarding each dataset.
-
-
-<div style="text-align: center;">
-  <img src="/assets/images/misc/hist1.png" style="width: auto; height: 20vw;" />
-  <img src="/assets/images/misc/dist1.png" style="width: auto; height: 20vw;" />
-</div>
+See below for details regarding each dataset.
 
 <hr/>
 
@@ -453,71 +439,18 @@ These studies were conducted in North America, China, and Brazil; see below for 
         </td>
       </tr>
     
-      <tr>
-        <td><a href="https://osf.io/ktz5h/">Brazil High Risk Cohort</a></td>
-        <td>
-          
-            National Institute of Developmental Psychiatry for Children and Adolescents (INCT-CNPq), São Paulo, Brazil; Federal University of Rio Grande do Sul, Porto Alegre, Brazil.
-          
-        </td>
-        <td>
-          
-            2
-          
-        </td>
-        <td>
-          
-            Giovanni Abrahão Salum Jr.<br>Pedro Mario Pan Neto
-          
-        </td>
-        <td>
-          
-            610
-            
-          
-        </td>
-        <td>
-          
-            907
-          
-        </td>
-        <td>
-          
-            9.8
-          
-        </td>
-        <td>
-          
-            904
-            
-          
-        </td>
-        <td>
-          
-            821
-            
-          
-        </td>
-        <td>
-          
-            907
-            
-          
-        </td>
-      </tr>
-    
     <tr>
       <td colspan="4">Total</td>
-      <td>6346</td>
-      <td> 7620</td>
+      <td>5736</td>
+      <td> 6713</td>
       <td></td>
-      <td>7536</td>
-      <td>7332</td>
+      <td>6632</td>
+      <td>6511</td>
     </tr>
   </tbody>
 </table>
 
-A notebook summarizing RBC demographics can be found <a href="/assets/sanity_checks_RBC_demographics.html">here</a>!
+A notebook summarizing RBC demographics can be found <a href="/AI2D/assets/sanity_checks_RBC_demographics.html">here</a>!
 </body>
   </div>
 </div>

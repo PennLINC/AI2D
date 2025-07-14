@@ -23,16 +23,16 @@ var store = [{
         "url": "/AI2D/docs/imaging/image_curation/",
         "teaser": null
       },{
+        "title": "Diffusion Data Quality Assurance",
+        "excerpt":"To achieve consistent quality ratings across all studies in RBC, every diffusion image was manually evaluated by 2-5 expert raters using Swipes for Science (Keshavan et al., 2019). These ratings allowed us to assign each image a score of “Pass”, “Artifact”, or “Fail”. In addition to these manual ratings, we...","categories": ["docs","imaging"],
+        "tags": [],
+        "url": "/AI2D/docs/imaging/image_diffusion_qa/",
+        "teaser": null
+      },{
         "title": "Functional Data Quality Assurance",
         "excerpt":"Functional image quality assurance included measures of in-scanner motion (framewise displacement) and normalization quality (correlation of functional image to template image). fMRI runs with a median FD less than or equal to 0.2 and normalized cross correlation greater than or equal to 0.8 were considered of adequate quality. We provide...","categories": ["docs","imaging"],
         "tags": [],
         "url": "/AI2D/docs/imaging/image_functional_qa/",
-        "teaser": null
-      },{
-        "title": "Image Harmonization",
-        "excerpt":"RBC provides both raw and processed neuroimaging data (structural and functional MRI) for each dataset. However, due to differences in scanners and sequences used in data collection, there is significant technical variance that requires harmonization. As such, users may want to harmonize the data across datasets and data acquisition sites....","categories": ["docs","imaging"],
-        "tags": [],
-        "url": "/AI2D/docs/imaging/image_harmonization/",
         "teaser": null
       },{
         "title": "Image Processing",
@@ -45,12 +45,6 @@ var store = [{
         "excerpt":"To achieve consistent quality ratings across all studies in RBC, every image was manually evaluated by 2-5 expert raters using Swipes for Science (Keshavan et al., 2019). These ratings allowed us to assign each image a score of “Pass”, “Artifact”, or “Fail”. In addition to these manual ratings, we provide...","categories": ["docs","imaging"],
         "tags": [],
         "url": "/AI2D/docs/imaging/image_structural_qa/",
-        "teaser": null
-      },{
-        "title": "Brazil High Risk Cohort",
-        "excerpt":"About the dataset https://osf.io/ktz5h/ https://www.conexaomentesdofuturo.com.br/ PI Giovanni Abrahão Salum Jr. Pedro Mario Pan Neto Funding 573974/2008‐0, 2008/57896‐8, CNPq, FAPESP, Coordenação de Aperfeiçoamento de Pessoal de Nível Superior,Fundação de Amparo a Pesquisa do Estado do Rio Grande do Sul, CAPES, FAPERGS, 302463/2011‐9 Citation Salum GA, Gadelha A, Pan PM, Moriyama TS,...","categories": ["docs","datasets"],
-        "tags": [],
-        "url": "/AI2D/docs/datasets/BHRC/",
         "teaser": null
       },{
         "title": "Healthy Brain Network",

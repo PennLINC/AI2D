@@ -1,1 +1,1 @@
-Sitemap: https://pennlincrbc.github.io/AI2D/sitemap.xml
+Sitemap: http://localhost:4000/AI2D/sitemap.xml
