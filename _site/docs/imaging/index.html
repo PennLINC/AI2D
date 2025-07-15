@@ -169,11 +169,6 @@
                     
                 
                         <li class="nav-item">
-                            <a class="nav-link" href="/AI2D/docs/community/publications">Publications</a>
-                        </li>
-                    
-                
-                        <li class="nav-item">
                             <a class="nav-link" href="/AI2D/docs/blog/index">News</a>
                         </li>
                     
@@ -221,13 +216,11 @@
 
       <section class="page__content e-content" itemprop="text">
         
-        <p>RBC aggregates structural (sMRI) and functional imaging (fMRI) data from five large, diverse studies of brain development
-All raw imaging data and meta-data were carefully curated to conform with the <a href="https://bids.neuroimaging.io/">Brain Imaging Data Structure (BIDS)</a> in a fully-reproducible fashion using a software that was developed for RBC – <a href="https://cubids.readthedocs.io/en/latest/">CuBIDS</a> (Covitz et al., 2022).
-Next, we adopted the <a href="https://www.nature.com/articles/s41597-022-01163-2">“FAIRly-big” strategy</a> (Wagner et al., 2022) for reproducible image processing, ensuring all preparation and analysis were accompanied by a full audit trail in <a href="https://www.datalad.org/">DataLad</a> (Halchenko et al., 2021).
+        <p>All raw imaging data and meta-data were carefully curated to conform with the <a href="https://bids.neuroimaging.io/">Brain Imaging Data Structure (BIDS)</a> in a fully-reproducible fashion using <a href="https://cubids.readthedocs.io/en/latest/">CuBIDS</a> (Covitz et al., 2022).
+Next, we adopted the <a href="https://www.nature.com/articles/s41597-022-01163-2">“FAIRly-big” framework</a> (Wagner et al., 2022) for reproducible image processing, ensuring all preparation and analysis were accompanied by a full audit trail in <a href="https://www.datalad.org/">DataLad</a> (Halchenko et al., 2021).
 Structural MRI data were processed using <a href="https://surfer.nmr.mgh.harvard.edu/">FreeSurfer</a> and <a href="https://www.nipreps.org/smriprep/">sMRIPrep</a>, yielding commonly-used measures of brain structure.
-Functional MRI data were preprocessed using <a href="https://fcp-indi.github.io/">C-PAC</a> (Craddock et al., 2013) and a dedicated configuration that was rigorously quality controlled on all RBC datasets, eventually yielding measures such as functional connectivity matrices, ReHo, and ALFF.
-Processed structural and functional data were parcellated with 16 commonly-used atlases.
-Critically, we provide fully harmonized measures of  quality control for both structural and functional images.</p>
+Functional MRI data were preprocessed using <a href="https://www.nipreps.org/fmriprep/">fMRIPrep</a> and <a href="https://xcp-d.readthedocs.io/en/latest/usage.html">XCP-D</a> (Mehta et al., 2024) and a dedicated configuration that was rigorously quality controlled on all datasets, eventually yielding measures such as functional connectivity matrices, ReHo, and ALFF.
+Processed structural and functional data were parcellated with 16 commonly-used atlases.</p>
 
         
       </section>

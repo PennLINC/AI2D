@@ -27,8 +27,6 @@ main:
       url: /docs/imaging/image_functional_qa
 - title: Team
   url: /docs/team
-- title: Publications 
-  url: /docs/community/publications
 - title: News
   url: /docs/blog/index
 - title: <em style="font-style:normal; font-weight:bold; color:#a594d1;"> Get Data </em>

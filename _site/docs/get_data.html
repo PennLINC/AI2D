@@ -9,7 +9,7 @@
   <head>
     <meta charset="utf-8">
 
-<!-- begin _includes/seo.html --><title>How to Get Data - RBC</title>
+<!-- begin _includes/seo.html --><title>How to Get Data on CUBIC - RBC</title>
 <meta name="description" content="Get Data">
 
 
@@ -17,7 +17,7 @@
 <meta property="og:type" content="website">
 <meta property="og:locale" content="en_US">
 <meta property="og:site_name" content="RBC">
-<meta property="og:title" content="How to Get Data">
+<meta property="og:title" content="How to Get Data on CUBIC">
 <meta property="og:url" content="http://localhost:4000/AI2D/docs/get_data">
 
 
@@ -169,11 +169,6 @@
                     
                 
                         <li class="nav-item">
-                            <a class="nav-link" href="/AI2D/docs/community/publications">Publications</a>
-                        </li>
-                    
-                
-                        <li class="nav-item">
                             <a class="nav-link" href="/AI2D/docs/blog/index">News</a>
                         </li>
                     
@@ -199,7 +194,7 @@
   
 
   <article class="page h-entry" itemscope itemtype="https://schema.org/CreativeWork">
-    <meta itemprop="headline" content="How to Get Data">
+    <meta itemprop="headline" content="How to Get Data on CUBIC">
     <meta itemprop="description" content="Get Data">
     
     
@@ -208,7 +203,7 @@
       
         <header>
           <br/><h1 id="page-title" class="page__title p-name" itemprop="headline">
-            <a href="http://localhost:4000/AI2D/docs/get_data" class="u-url" itemprop="url">How to Get Data
+            <a href="http://localhost:4000/AI2D/docs/get_data" class="u-url" itemprop="url">How to Get Data on CUBIC
 </a>
           </h1>
           
@@ -221,18 +216,145 @@
 
       <section class="page__content e-content" itemprop="text">
         
-        <h3 id="install-datalad">Install DataLad</h3>
+        <p>The following instruction are intended specifically to get data on CUBIC.</p>
 
-<p>RBC is accessible via <code class="language-plaintext highlighter-rouge">datalad</code>. Follow the instructions <a href="https://www.datalad.org/#install">here</a>
-to get it installed.</p>
+<h2 id="table-of-contents">Table of Contents</h2>
 
-<p>Accessing RBC data via DataLad happens in two steps. You will first <code class="language-plaintext highlighter-rouge">clone</code> a RBC data
-repository from github. This will make a copy of the RBC file layout, but none of the
-actual data will be present. The next step is to <code class="language-plaintext highlighter-rouge">get</code> your data, which tells DataLad to
-download the content of specific files to your copy. Once the file content is present in
-your copy, you can use RBC data just like any other set of files.</p>
+<ol>
+  <li><a href="#1-request-access-to-a-cubic-project">Request access to a CUBIC project</a></li>
+  <li><a href="#2-get-data-without-datalad">Get data without DataLad</a>
+    <ul>
+      <li><a href="#21-prerequisites">Prerequisites</a></li>
+      <li><a href="#22-explore-the-data-structure">Explore the Data Structure</a></li>
+      <li><a href="#23-extract-specific-data">Extract Specific Data</a></li>
+    </ul>
+  </li>
+  <li><a href="#3-get-data-with-datalad">Get data with DataLad</a>
+    <ul>
+      <li><a href="#31-install-datalad">Install DataLad</a></li>
+      <li><a href="#32-pick-a-dataset">Pick a dataset</a></li>
+      <li><a href="#33-clone-the-data">Clone the data</a></li>
+      <li><a href="#34-example-walkthrough">Example walkthrough</a></li>
+      <li><a href="#35-faqs">FAQs</a></li>
+    </ul>
+  </li>
+</ol>
 
-<h3 id="pick-a-dataset">Pick a dataset</h3>
+<hr />
+
+<h2 id="1-request-access-to-a-cubic-project">1. Request access to a CUBIC project</h2>
+
+<ol>
+  <li>Send Dr. Satterthwaite a request including the following:
+    <ul>
+      <li>The level of access, in this case, you will need <strong>read-only access</strong></li>
+      <li>The name of the user[s] to be given access (full name or login name). If you plan to store and analyze data in a CUBIC project, you should use <strong>your project username</strong>, not personal CUBIC username.</li>
+      <li>The full path to the project you need access to. You can find the project path for each study <a href="/AI2D/docs/datasets/">here</a>.</li>
+    </ul>
+  </li>
+  <li>Submit the approval from Dr. Satterthwaite — including the specified user name, project name, and type of access — as a PDF printout to help@cbica.upenn.edu.</li>
+</ol>
+
+<h2 id="2-get-data-without-datalad">2. Get data without DataLad</h2>
+
+<p>Outputs from our processing pipelines were most of the time zipped to save inodes.</p>
+
+<p>This section provides instructions in case you prefer NOT to use DataLad and instead want to unzip the output files directly into your CUBIC project directory.</p>
+
+<p><strong>Pros:</strong></p>
+<ul>
+  <li>Simple and requires no additional software</li>
+  <li>Lightweight — you extract only the files you need</li>
+</ul>
+
+<p><strong>Cons:</strong></p>
+<ul>
+  <li>Does not support data provenance tracking</li>
+</ul>
+
+<h3 id="21-prerequisites">2.1. Prerequisites</h3>
+
+<p><strong>Download the extraction script:</strong> <a href="/AI2D/scripts/unzip_files.sh">unzip_files.sh</a>. The script supports:</p>
+<ul>
+  <li>Extracting all files from zip archives</li>
+  <li>Filtering by subject list (text file with subject IDs)</li>
+  <li>Extracting specific file patterns using regex</li>
+  <li>Combining subject lists with file patterns</li>
+</ul>
+
+<p>For usage instructions, run the script with the <code class="language-plaintext highlighter-rouge">-h</code> or <code class="language-plaintext highlighter-rouge">--help</code> flag.</p>
+
+<h3 id="22-explore-the-data-structure">2.2. Explore the Data Structure</h3>
+
+<p>Before extracting data, it’s helpful to understand what files are included in the zip file. You can either:</p>
+
+<p><strong>Option A: Extract a sample participant’s data</strong></p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># Create a single subject list file (e.g., one exemplar subject)</span>
+<span class="nb">echo</span> <span class="s2">"sub-100307"</span> <span class="o">&gt;</span> single_subject.txt
+
+<span class="c"># HCP-YA XCP-D example</span>
+<span class="nv">input_dir</span><span class="o">=</span>/cbica/projects/pennlinc_hcpya/data/rbc_xcpd/DANGER
+<span class="nv">output_dir</span><span class="o">=</span>/your/cubic/project/sample
+
+bash unzip_files.sh <span class="k">${</span><span class="nv">input_dir</span><span class="k">}</span> <span class="k">${</span><span class="nv">output_dir</span><span class="k">}</span> single_subject.txt
+</code></pre></div></div>
+
+<p><strong>Option B: List contents of a zip file</strong></p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># HCP-YA XCP-D</span>
+<span class="nv">input_dir</span><span class="o">=</span>/cbica/projects/pennlinc_hcpya/data/rbc_xcpd/DANGER
+7z l <span class="k">${</span><span class="nv">input_dir</span><span class="k">}</span>/&lt;subject_id&gt;_xcpd-0.9.1.zip
+
+<span class="c"># HCP-YA QSIRecon HSVS  </span>
+<span class="nv">input_dir</span><span class="o">=</span>/cbica/projects/pennlinc_hcpya/data/qsirecon_hsvs/DANGER
+7z l <span class="k">${</span><span class="nv">input_dir</span><span class="k">}</span>/&lt;subject_id&gt;_qsirecon-1-0-0rc2.zip
+</code></pre></div></div>
+
+<h3 id="23-step-2-extract-specific-data">2.3 Step 2: Extract Specific Data</h3>
+
+<p>Once you understand the data structure, you can extract exactly what you need:</p>
+
+<p><strong>Extract specific files for selected subjects:</strong></p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># HCP-YA XCP-D: Get functional connectivity matrices</span>
+<span class="nv">input_dir</span><span class="o">=</span>/cbica/projects/pennlinc_hcpya/data/rbc_xcpd/DANGER
+<span class="nv">output_dir</span><span class="o">=</span>/your/cubic/project/xcpd-results
+<span class="nv">file_pattern</span><span class="o">=</span><span class="s2">"xcpd*/sub-*/func/sub-*_task-rest*space-fsLR_seg-Glasser_stat-pearsoncorrelation_relmat.tsv"</span>
+
+bash unzip_files.sh <span class="k">${</span><span class="nv">input_dir</span><span class="k">}</span> <span class="k">${</span><span class="nv">output_dir</span><span class="k">}</span> subject_list.txt <span class="s2">"</span><span class="k">${</span><span class="nv">file_pattern</span><span class="k">}</span><span class="s2">"</span>
+
+<span class="c"># HCP-YA QSIRecon: Get diffusion segmentation files</span>
+<span class="nv">input_dir</span><span class="o">=</span>/cbica/projects/pennlinc_hcpya/data/qsirecon_hsvs/DANGER
+<span class="nv">output_dir</span><span class="o">=</span>/your/cubic/project/qsirecon-results
+<span class="nv">file_pattern</span><span class="o">=</span><span class="s2">"qsirecon*/sub*/dwi/sub*seg-Glasser_dseg.mif.gz"</span>
+
+bash unzip_files.sh <span class="k">${</span><span class="nv">input_dir</span><span class="k">}</span> <span class="k">${</span><span class="nv">output_dir</span><span class="k">}</span> subject_list.txt <span class="s2">"</span><span class="k">${</span><span class="nv">file_pattern</span><span class="k">}</span><span class="s2">"</span>
+</code></pre></div></div>
+
+<p><strong>Extract specific files for all available subjects:</strong></p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># Omit the subject list to process all subjects</span>
+bash unzip_files.sh <span class="k">${</span><span class="nv">input_dir</span><span class="k">}</span> <span class="k">${</span><span class="nv">output_dir</span><span class="k">}</span> <span class="s2">"</span><span class="k">${</span><span class="nv">file_pattern</span><span class="k">}</span><span class="s2">"</span>
+</code></pre></div></div>
+
+<h2 id="3-get-data-with-datalad">3. Get data with DataLad</h2>
+
+<p>This section provides instructions in case you prefer to use DataLad.</p>
+
+<p><strong>Pros:</strong></p>
+<ul>
+  <li>Full data provenance tracking</li>
+</ul>
+
+<p><strong>Cons:</strong></p>
+<ul>
+  <li>Some knowledge of <code class="language-plaintext highlighter-rouge">datalad</code>, <code class="language-plaintext highlighter-rouge">git</code>, <code class="language-plaintext highlighter-rouge">git annex</code> and how to debug</li>
+</ul>
+
+<h3 id="31-install-datalad">3.1. Install DataLad</h3>
+
+<p>AI2D data is accessible via <code class="language-plaintext highlighter-rouge">datalad</code>. Follow the instructions <a href="https://www.datalad.org/#install">here</a> to get it installed.</p>
+
+<p>Accessing AI2D data via DataLad happens in two steps. You will first <code class="language-plaintext highlighter-rouge">clone</code> a AI2D data repository from github. This will make a copy of the AI2D file layout, but none of the actual data will be present. The next step is to <code class="language-plaintext highlighter-rouge">get</code> your data, which tells DataLad to download the content of specific files to your copy. Once the file content is present in your copy, you can use AI2D data just like any other set of files.</p>
+
+<h3 id="32-pick-a-dataset">3.2. Pick a dataset</h3>
 
 <p>You can find each of the unprocessed BIDS MRI data, processed functional and processed structural
 derivatives in their corresponding repositories on GitHub.</p>
@@ -252,26 +374,26 @@ derivatives in their corresponding repositories on GitHub.</p>
 
 <h4 id="choose-a-qc-threshold">Choose a QC threshold</h4>
 
-<p>When you download RBC data at a specific QC threshold you can be sure that
+<p>When you download AI2D data at a specific QC threshold you can be sure that
 any file you find in your downloaded data is usable for further analysis.
-RBC releases data at 3 different QC thresholds:</p>
+AI2D releases data at 3 different QC thresholds:</p>
 
 <ul>
   <li><code class="language-plaintext highlighter-rouge">complete-pass</code>: Structural and BOLD data have passed QC</li>
   <li><code class="language-plaintext highlighter-rouge">complete-artifact</code>: Structural data can be “Pass” or “Artifact”, BOLD is “Pass”</li>
-  <li><code class="language-plaintext highlighter-rouge">warning-fail</code>: Contains all the RBC data including QC failures. This threshold
+  <li><code class="language-plaintext highlighter-rouge">warning-fail</code>: Contains all the AI2D data including QC failures. This threshold
   is not recommended and you’ll have to explain why you chose this threshold in
   any publication resulting from it.</li>
 </ul>
 
 <h4 id="choose-a-version">Choose a version</h4>
 
-<p>Lastly, you’ll need to pick a <em>version</em> of the data to get. Each time RBC makes
+<p>Lastly, you’ll need to pick a <em>version</em> of the data to get. Each time AI2D makes
 changes to the data, it will be released with a new version number. By picking
-a version number for your RBC-based study you can be sure that your input data
-will never change. The current release of RBC is <code class="language-plaintext highlighter-rouge">0.1</code>.</p>
+a version number for your AI2D-based study you can be sure that your input data
+will never change. The current release of AI2D is <code class="language-plaintext highlighter-rouge">0.1</code>.</p>
 
-<h3 id="clone-the-data">Clone the data</h3>
+<h3 id="33-clone-the-data">3.3. Clone the data</h3>
 
 <p>Getting data on to your system will involve running a command like this:</p>
 
@@ -280,11 +402,11 @@ will never change. The current release of RBC is <code class="language-plaintext
     <span class="nt">-b</span> &lt;qc_threshold&gt;-&lt;version&gt;
 </code></pre></div></div>
 
-<h2 id="example-walkthrough">Example walkthrough</h2>
+<h3 id="34-example-walkthrough">3.4. Example walkthrough</h3>
 
 <p>Suppose I’d like to get some processed structural data from PNC. I’ve decided that I don’t
 want to include T1ws with notable artifacts, so I choose the QC threshold to be <code class="language-plaintext highlighter-rouge">complete-pass</code>.
-I’ve checked the RBC website and see that the most recent release is <code class="language-plaintext highlighter-rouge">0.1</code>. This means that
+I’ve checked the AI2D website and see that the most recent release is <code class="language-plaintext highlighter-rouge">0.1</code>. This means that
 my last argument to <code class="language-plaintext highlighter-rouge">datalad clone</code> will be <code class="language-plaintext highlighter-rouge">-b complete-pass-0.1</code>.</p>
 
 <p>From the example command in <a href="#clone-the-data">ths documentation</a> I replace <code class="language-plaintext highlighter-rouge">&lt;study&gt;</code>
@@ -303,8 +425,7 @@ with <code class="language-plaintext highlighter-rouge">PNC</code> and <code cla
 install(ok): /home/cieslakm/data/PNC_FreeSurfer (dataset)
 </code></pre></div></div>
 
-<p>but these are ok. I now have a <code class="language-plaintext highlighter-rouge">DataLad</code> dataset with everything I need to start exploring
-RBC data.</p>
+<p>but these are ok. I now have a <code class="language-plaintext highlighter-rouge">DataLad</code> dataset with everything I need to start exploring AI2D data.</p>
 
 <p>That command finishes surprisingly quickly: PNC
 FreeSurfer has over a thousand subjects in it! But this is normal for <code class="language-plaintext highlighter-rouge">DataLad</code>.
@@ -339,7 +460,7 @@ action summary:
   hard drive.
 </div>
 
-<h1 id="faqs">FAQs</h1>
+<h3 id="35-faqs">3.5. FAQs</h3>
 
 <h4 id="running-datalad-get-appears-to-be-stuck---what-should-i-do">Running <code class="language-plaintext highlighter-rouge">datalad get</code> appears to be stuck - what should I do?</h4>
 

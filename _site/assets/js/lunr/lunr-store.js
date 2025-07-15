@@ -5,12 +5,6 @@ var store = [{
         "url": "/AI2D/docs/community/get_support/",
         "teaser": null
       },{
-        "title": "Publications",
-        "excerpt":"How to Cite RBC Data All Studies Using RBC Data Should Cite: Shafiei G, Esper NB, Hoffmann MS, Ai L, Chen AA, Cluce J, Covitz S, Giavasis S, Lane C, Mehta K, Moore TM, Salo T, Tapera TM, Calkins ME, Colcombe S, Davatzikos C, Gur RE, Gur RC, Pan PM,...","categories": ["docs","community"],
-        "tags": [],
-        "url": "/AI2D/docs/community/publications/",
-        "teaser": null
-      },{
         "title": "Image Acquisition",
         "excerpt":"Structural MRI Study Sequence Scanner Type Voxel Size (mm) Image Orientation Parallel Reduction Factor in Plane TR (ms) TE (ms) Matrix Size (voxels) Flip Angle (deg) Dominant Group (%) Healthy Brain Network (HBN) - Staten Island T1 Siemens Avanto 1.5 T 1 x 1 x 1 LAS+ 2 2730 1.64...","categories": ["docs","imaging"],
         "tags": [],
