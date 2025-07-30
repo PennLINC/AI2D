@@ -4,8 +4,8 @@ title: Team RBC
 ---
 
 {% assign team = site.data.team %}
-{% assign sections = "leadership,team,contributors,alumni" | split:"," %}
-{% assign section_titles = "AI2D Leadership,AI2D Team,AI2D Contributors,AI2D Alumni" | split:"," %}
+{% assign sections = "leadership,advisory,pennlinc,aibil,contributors,alumni" | split:"," %}
+{% assign section_titles = "AI2D Leadership,AI2D Advisory Team,PennLINC Team,AIBIL Team,AI2D Contributors,AI2D Alumni" | split:"," %}
 
 {% for section in sections %}
     {% assign team_in_section = team | where:"section", section %}
