@@ -208,20 +208,19 @@
 
 <ol>
   <li><a href="#1-request-access-to-a-cubic-project">Request access to a CUBIC project</a></li>
-  <li><a href="#2-get-data-without-datalad">Get data without DataLad</a>
+  <li><a href="#2-dataset-analyzed-without-babs">Dataset analyzed without BABS</a></li>
+  <li><a href="#3-dataset-analyzed-with-babs">Dataset analyzed with BABS</a>
+3.1. <a href="#31-get-data-without-datalad">Get data without DataLad</a>
     <ul>
-      <li><a href="#21-prerequisites">Prerequisites</a></li>
-      <li><a href="#22-explore-the-data-structure">Explore the Data Structure</a></li>
-      <li><a href="#23-extract-specific-data">Extract Specific Data</a></li>
-    </ul>
-  </li>
-  <li><a href="#3-get-data-with-datalad">Get data with DataLad</a>
-    <ul>
-      <li><a href="#31-install-datalad">Install DataLad</a></li>
-      <li><a href="#32-pick-a-dataset">Pick a dataset</a></li>
-      <li><a href="#33-clone-the-data">Clone the data</a></li>
-      <li><a href="#34-example-walkthrough">Example walkthrough</a></li>
-      <li><a href="#35-faqs">FAQs</a></li>
+      <li><a href="#311-prerequisites">Prerequisites</a></li>
+      <li><a href="#312-explore-the-data-structure">Explore the Data Structure</a></li>
+      <li><a href="#313-extract-specific-data">Extract Specific Data</a>
+3.2. <a href="#32-get-data-with-datalad">Get data with DataLad</a></li>
+      <li><a href="#321-install-datalad">Install DataLad</a></li>
+      <li><a href="#322-pick-a-dataset">Pick a dataset</a></li>
+      <li><a href="#323-clone-the-data">Clone the data</a></li>
+      <li><a href="#324-example-walkthrough">Example walkthrough</a></li>
+      <li><a href="#325-faqs">FAQs</a></li>
     </ul>
   </li>
 </ol>
@@ -229,6 +228,8 @@
 <hr />
 
 <h2 id="1-request-access-to-a-cubic-project">1. Request access to a CUBIC project</h2>
+
+<p>First, check whether the dataset you are interested in is open-access or not (see example: <a href="/AI2D/docs/datasets/dCCNP/#dataset-summary">CCNP</a>). If the dataset is NOT open-access, follow these steps:</p>
 
 <ol>
   <li>Send Dr. Satterthwaite a request including the following:
@@ -241,7 +242,20 @@
   <li>Submit the approval from Dr. Satterthwaite — including the specified user name, project name, and type of access — as a PDF printout to help@cbica.upenn.edu.</li>
 </ol>
 
-<h2 id="2-get-data-without-datalad">2. Get data without DataLad</h2>
+<h4 id="check-whether-the-dataset-you-are-interested-in-was-processed-with-babs-or-not-see-example-ccnp">Check whether the dataset you are interested in was processed with <a href="/AI2D/docs/imaging/image_babs">BABS</a> or not (see example: <a href="/AI2D/docs/datasets/dCCNP/#dataset-summary">CCNP</a>).</h4>
+
+<h2 id="2-dataset-processed-without-babs">2. Dataset processed without BABS</h2>
+
+<p>If the dataset was not processed with BABS, you can copy the data as follows:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span><span class="nb">cp</span> <span class="nt">-r</span> /path/to/datasets /path/to/your/project
+</code></pre></div></div>
+
+<h2 id="3-dataset-processed-with-babs">3. Dataset processed with BABS</h2>
+
+<p>If the dataset was processed with BABS, you can get the data either <a href="#32-get-data-with-datalad">using <code class="language-plaintext highlighter-rouge">datalad</code></a> or <a href="#31-get-data-without-datalad">without it</a>, as follows.</p>
+
+<h3 id="31-get-data-without-datalad">3.1. Get data without DataLad</h3>
 
 <p>Outputs from our processing pipelines were most of the time zipped to save inodes.</p>
 
@@ -258,7 +272,9 @@
   <li>Does not support data provenance tracking</li>
 </ul>
 
-<h3 id="21-prerequisites">2.1. Prerequisites</h3>
+<h3 id="311-prerequisites">3.1.1. Prerequisites</h3>
+
+<p><strong>Know the path to the dataset’s ephemeral clones:</strong> see example <a href="/AI2D/docs/datasets/dCCNP/#data-access">CCNP</a></p>
 
 <p><strong>Download the extraction script:</strong> <a href="/AI2D/scripts/unzip_files.sh">unzip_files.sh</a>. The script supports:</p>
 <ul>
@@ -270,7 +286,7 @@
 
 <p>For usage instructions, run the script with the <code class="language-plaintext highlighter-rouge">-h</code> or <code class="language-plaintext highlighter-rouge">--help</code> flag.</p>
 
-<h3 id="22-explore-the-data-structure">2.2. Explore the Data Structure</h3>
+<h3 id="312-explore-the-data-structure">3.1.2. Explore the Data Structure</h3>
 
 <p>Before extracting data, it’s helpful to understand what files are included in the zip file. You can either:</p>
 
@@ -278,41 +294,30 @@
 <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># Create a single subject list file (e.g., one exemplar subject)</span>
 <span class="nb">echo</span> <span class="s2">"sub-100307"</span> <span class="o">&gt;</span> single_subject.txt
 
-<span class="c"># HCP-YA XCP-D example</span>
-<span class="nv">input_dir</span><span class="o">=</span>/cbica/projects/pennlinc_hcpya/data/rbc_xcpd/DANGER
-<span class="nv">output_dir</span><span class="o">=</span>/your/cubic/project/sample
+<span class="nv">input_dir</span><span class="o">=</span>/path/to/ephemeral/clone
+<span class="nv">output_dir</span><span class="o">=</span>/path/to/your/cubic/project
 
 bash unzip_files.sh <span class="k">${</span><span class="nv">input_dir</span><span class="k">}</span> <span class="k">${</span><span class="nv">output_dir</span><span class="k">}</span> single_subject.txt
 </code></pre></div></div>
 
 <p><strong>Option B: List contents of a zip file</strong></p>
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># HCP-YA XCP-D</span>
-<span class="nv">input_dir</span><span class="o">=</span>/cbica/projects/pennlinc_hcpya/data/rbc_xcpd/DANGER
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># XCP-D example</span>
+<span class="nv">input_dir</span><span class="o">=</span>/path/to/ephemeral/clone
 7z l <span class="k">${</span><span class="nv">input_dir</span><span class="k">}</span>/&lt;subject_id&gt;_xcpd-0.9.1.zip
-
-<span class="c"># HCP-YA QSIRecon HSVS  </span>
-<span class="nv">input_dir</span><span class="o">=</span>/cbica/projects/pennlinc_hcpya/data/qsirecon_hsvs/DANGER
-7z l <span class="k">${</span><span class="nv">input_dir</span><span class="k">}</span>/&lt;subject_id&gt;_qsirecon-1-0-0rc2.zip
 </code></pre></div></div>
 
-<h3 id="23-step-2-extract-specific-data">2.3 Step 2: Extract Specific Data</h3>
+<h3 id="313-extract-specific-data">3.1.3. Extract Specific Data</h3>
 
 <p>Once you understand the data structure, you can extract exactly what you need:</p>
 
 <p><strong>Extract specific files for selected subjects:</strong></p>
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># HCP-YA XCP-D: Get functional connectivity matrices</span>
-<span class="nv">input_dir</span><span class="o">=</span>/cbica/projects/pennlinc_hcpya/data/rbc_xcpd/DANGER
-<span class="nv">output_dir</span><span class="o">=</span>/your/cubic/project/xcpd-results
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># XCP-D example</span>
+<span class="nv">input_dir</span><span class="o">=</span>/path/to/ephemeral/clone
+<span class="nv">output_dir</span><span class="o">=</span>/path/to/your/cubic/project
 <span class="nv">file_pattern</span><span class="o">=</span><span class="s2">"xcpd*/sub-*/func/sub-*_task-rest*space-fsLR_seg-Glasser_stat-pearsoncorrelation_relmat.tsv"</span>
 
 bash unzip_files.sh <span class="k">${</span><span class="nv">input_dir</span><span class="k">}</span> <span class="k">${</span><span class="nv">output_dir</span><span class="k">}</span> subject_list.txt <span class="s2">"</span><span class="k">${</span><span class="nv">file_pattern</span><span class="k">}</span><span class="s2">"</span>
 
-<span class="c"># HCP-YA QSIRecon: Get diffusion segmentation files</span>
-<span class="nv">input_dir</span><span class="o">=</span>/cbica/projects/pennlinc_hcpya/data/qsirecon_hsvs/DANGER
-<span class="nv">output_dir</span><span class="o">=</span>/your/cubic/project/qsirecon-results
-<span class="nv">file_pattern</span><span class="o">=</span><span class="s2">"qsirecon*/sub*/dwi/sub*seg-Glasser_dseg.mif.gz"</span>
-
-bash unzip_files.sh <span class="k">${</span><span class="nv">input_dir</span><span class="k">}</span> <span class="k">${</span><span class="nv">output_dir</span><span class="k">}</span> subject_list.txt <span class="s2">"</span><span class="k">${</span><span class="nv">file_pattern</span><span class="k">}</span><span class="s2">"</span>
 </code></pre></div></div>
 
 <p><strong>Extract specific files for all available subjects:</strong></p>
@@ -320,7 +325,7 @@ bash unzip_files.sh <span class="k">${</span><span class="nv">input_dir</span><s
 bash unzip_files.sh <span class="k">${</span><span class="nv">input_dir</span><span class="k">}</span> <span class="k">${</span><span class="nv">output_dir</span><span class="k">}</span> <span class="s2">"</span><span class="k">${</span><span class="nv">file_pattern</span><span class="k">}</span><span class="s2">"</span>
 </code></pre></div></div>
 
-<h2 id="3-get-data-with-datalad">3. Get data with DataLad</h2>
+<h3 id="32-get-data-with-datalad">3.2. Get data with DataLad</h3>
 
 <p>This section provides instructions in case you prefer to use DataLad.</p>
 
@@ -334,142 +339,40 @@ bash unzip_files.sh <span class="k">${</span><span class="nv">input_dir</span><s
   <li>Some knowledge of <code class="language-plaintext highlighter-rouge">datalad</code>, <code class="language-plaintext highlighter-rouge">git</code>, <code class="language-plaintext highlighter-rouge">git annex</code> and how to debug</li>
 </ul>
 
-<h3 id="31-install-datalad">3.1. Install DataLad</h3>
+<h3 id="321-prerequisites">3.2.1. Prerequisites</h3>
 
-<p>AI2D data is accessible via <code class="language-plaintext highlighter-rouge">datalad</code>. Follow the instructions <a href="https://www.datalad.org/#install">here</a> to get it installed.</p>
+<p><strong>Know the path to the datalad datasets:</strong> see example <a href="/AI2D/docs/datasets/dCCNP/#data-access">CCNP</a></p>
 
-<p>Accessing AI2D data via DataLad happens in two steps. You will first <code class="language-plaintext highlighter-rouge">clone</code> a AI2D data repository from github. This will make a copy of the AI2D file layout, but none of the actual data will be present. The next step is to <code class="language-plaintext highlighter-rouge">get</code> your data, which tells DataLad to download the content of specific files to your copy. Once the file content is present in your copy, you can use AI2D data just like any other set of files.</p>
+<p><strong>Install DataLad</strong></p>
 
-<h3 id="32-pick-a-dataset">3.2. Pick a dataset</h3>
+<p>Follow the instructions <a href="https://www.datalad.org/#install">here</a> to get <code class="language-plaintext highlighter-rouge">datalad</code> installed.</p>
 
-<p>You can find each of the unprocessed BIDS MRI data, processed functional and processed structural
-derivatives in their corresponding repositories on GitHub.</p>
+<p>Accessing AI2D data via DataLad happens in two steps. You will first <code class="language-plaintext highlighter-rouge">clone</code> a AI2D data repository. This will make a copy of the AI2D file layout, but none of the actual data will be present. The next step is to <code class="language-plaintext highlighter-rouge">get</code> your data, which tells DataLad to download the content of specific files to your copy. Once the file content is present in your copy, you can use AI2D data just like any other set of files.</p>
 
-<p>The repositories (you can find them all
-<a href="https://github.com/orgs/ReproBrainChart/repositories">here</a>) are consistently named such that:</p>
-
-<ul>
-  <li>If you’re looking for BIDS MRI, the repo will be named <code class="language-plaintext highlighter-rouge">&lt;study&gt;_BIDS</code></li>
-  <li>If you’re looking for processed functional data, the repo will be named <code class="language-plaintext highlighter-rouge">&lt;study&gt;_CPAC</code></li>
-  <li>If you’re looking for processed structural MRI, the repo will be named <code class="language-plaintext highlighter-rouge">&lt;study&gt;_FreeSurfer</code></li>
-</ul>
-
-<p>where <code class="language-plaintext highlighter-rouge">&lt;study&gt;</code> is replaced with <code class="language-plaintext highlighter-rouge">HBN</code>, <code class="language-plaintext highlighter-rouge">NKI</code>, <code class="language-plaintext highlighter-rouge">PNC</code>, <code class="language-plaintext highlighter-rouge">BHRC</code> or <code class="language-plaintext highlighter-rouge">CCNP</code>.</p>
-
-<p>Note: Participant demographics and phenotypic data are under <code class="language-plaintext highlighter-rouge">&lt;study&gt;_BIDS</code> repository for each study and are named <code class="language-plaintext highlighter-rouge">study-&lt;study&gt;_desc-participants.tsv</code>.</p>
-
-<h4 id="choose-a-qc-threshold">Choose a QC threshold</h4>
-
-<p>When you download AI2D data at a specific QC threshold you can be sure that
-any file you find in your downloaded data is usable for further analysis.
-AI2D releases data at 3 different QC thresholds:</p>
-
-<ul>
-  <li><code class="language-plaintext highlighter-rouge">complete-pass</code>: Structural and BOLD data have passed QC</li>
-  <li><code class="language-plaintext highlighter-rouge">complete-artifact</code>: Structural data can be “Pass” or “Artifact”, BOLD is “Pass”</li>
-  <li><code class="language-plaintext highlighter-rouge">warning-fail</code>: Contains all the AI2D data including QC failures. This threshold
-  is not recommended and you’ll have to explain why you chose this threshold in
-  any publication resulting from it.</li>
-</ul>
-
-<h4 id="choose-a-version">Choose a version</h4>
-
-<p>Lastly, you’ll need to pick a <em>version</em> of the data to get. Each time AI2D makes
-changes to the data, it will be released with a new version number. By picking
-a version number for your AI2D-based study you can be sure that your input data
-will never change. The current release of AI2D is <code class="language-plaintext highlighter-rouge">0.1</code>.</p>
-
-<h3 id="33-clone-the-data">3.3. Clone the data</h3>
-
-<p>Getting data on to your system will involve running a command like this:</p>
+<h3 id="322-example-walkthrough">3.2.2. Example walkthrough</h3>
 
 <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>datalad clone <span class="se">\</span>
-    https://github.com/ReproBrainChart/&lt;study&gt;_&lt;content&gt;.git <span class="se">\</span>
-    <span class="nt">-b</span> &lt;qc_threshold&gt;-&lt;version&gt;
-</code></pre></div></div>
+    ria+file:///cbica/projects/pennlinc_rbc/datasets/LINC_CCNP/derivatives/xcpd-0-10-6-babs/output_ria#~data <span class="se">\</span>
+    ccnp_xcpd
 
-<h3 id="34-example-walkthrough">3.4. Example walkthrough</h3>
-
-<p>Suppose I’d like to get some processed structural data from PNC. I’ve decided that I don’t
-want to include T1ws with notable artifacts, so I choose the QC threshold to be <code class="language-plaintext highlighter-rouge">complete-pass</code>.
-I’ve checked the AI2D website and see that the most recent release is <code class="language-plaintext highlighter-rouge">0.1</code>. This means that
-my last argument to <code class="language-plaintext highlighter-rouge">datalad clone</code> will be <code class="language-plaintext highlighter-rouge">-b complete-pass-0.1</code>.</p>
-
-<p>From the example command in <a href="#clone-the-data">ths documentation</a> I replace <code class="language-plaintext highlighter-rouge">&lt;study&gt;</code>
-with <code class="language-plaintext highlighter-rouge">PNC</code> and <code class="language-plaintext highlighter-rouge">&lt;content&gt;</code> with <code class="language-plaintext highlighter-rouge">FreeSurfer</code>. My command would be:</p>
-
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>datalad clone <span class="se">\</span>
-    https://github.com/ReproBrainChart/PNC_FreeSurfer.git <span class="se">\</span>
-    <span class="nt">-b</span> complete-pass-0.1
-</code></pre></div></div>
-
-<p>I see some warnings such as these:</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[INFO   ] Unable to parse git config from origin
-[INFO   ] Remote origin does not have git-annex installed; setting annex-ignore
-[INFO   ] This could be a problem with the git-annex installation on the remote. Please make sure that git-annex-shell is available in PATH when you ssh into the remote. Once you have fixed the git-annex installation, run: git annex enableremote origin
-install(ok): /home/cieslakm/data/PNC_FreeSurfer (dataset)
-</code></pre></div></div>
-
-<p>but these are ok. I now have a <code class="language-plaintext highlighter-rouge">DataLad</code> dataset with everything I need to start exploring AI2D data.</p>
-
-<p>That command finishes surprisingly quickly: PNC
-FreeSurfer has over a thousand subjects in it! But this is normal for <code class="language-plaintext highlighter-rouge">DataLad</code>.
-(Note that cloning the processed functional data (i.e., <code class="language-plaintext highlighter-rouge">CPAC</code> files) will take
-longer as <code class="language-plaintext highlighter-rouge">CPAC</code> functional outputs include more files compared to
-<code class="language-plaintext highlighter-rouge">FreeSurfer</code>.) There is now a <code class="language-plaintext highlighter-rouge">PNC_FreeSurfer</code> directory that I can look
-around in. Since I don’t know which files I might want, I will explore this directory
-in my terminal:</p>
-
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span><span class="nb">cd </span>PNC_FreeSurfer/freesurfer/sub-192413932
-<span class="nv">$ </span><span class="nb">ls
-</span>sub-192413932_brainmeasures.json@  sub-192413932_fsaverage.tar.xz@
-sub-192413932_brainmeasures.tsv@   sub-192413932_fsLR_den-164k.tar.xz@
-sub-192413932_freesurfer.tar.xz@   sub-192413932_regionsurfacestats.tsv@
-</code></pre></div></div>
-
-<p>These two tsv files contain the anatomical variables in tabular form, so I’d like
-to copy these contents to my computer:</p>
-
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>datalad get <span class="k">*</span>.tsv
-get<span class="o">(</span>ok<span class="o">)</span>: freesurfer/sub-192413932/sub-192413932_regionsurfacestats.tsv <span class="o">(</span>file<span class="o">)</span> <span class="o">[</span>from output-storage...]
-get<span class="o">(</span>ok<span class="o">)</span>: freesurfer/sub-192413932/sub-192413932_brainmeasures.tsv <span class="o">(</span>file<span class="o">)</span> <span class="o">[</span>from output-storage...]
+<span class="o">[</span>INFO   <span class="o">]</span> Configure additional publication dependency on <span class="s2">"output-storage"</span>                                                                           
+configure-sibling<span class="o">(</span>ok<span class="o">)</span>: <span class="nb">.</span> <span class="o">(</span>sibling<span class="o">)</span>
+<span class="nb">install</span><span class="o">(</span>ok<span class="o">)</span>: /cbica/projects/pennlinc_rbc/ccnp_xcpd <span class="o">(</span>dataset<span class="o">)</span>
 action summary:
-  get <span class="o">(</span>ok: 2<span class="o">)</span>
-</code></pre></div></div>
+  configure-sibling <span class="o">(</span>ok: 1<span class="o">)</span>
+  <span class="nb">install</span> <span class="o">(</span>ok: 1<span class="o">)</span>
 
-<p>Shell glob patterns can be used to get whichever files you might need.</p>
+<span class="nv">$ </span><span class="nb">cd </span>ccnp_xcpd
+<span class="nv">$ </span>datalad get sub-colornest001_ses-1_xcpd-0-10-6.zip
+get<span class="o">(</span>ok<span class="o">)</span>: sub-colornest001_ses-1_xcpd-0-10-6.zip <span class="o">(</span>file<span class="o">)</span> <span class="o">[</span>from output-storage...]
+
+<span class="nv">$ </span>datalad drop sub-colornest001_ses-1_xcpd-0-10-6.zip
+drop<span class="o">(</span>ok<span class="o">)</span>: sub-colornest001_ses-1_xcpd-0-10-6.zip <span class="o">(</span>file<span class="o">)</span>  
+</code></pre></div></div>
 
 <div class="alert alert-primary" role="alert">
-  <b>WARNING:</b> DO NOT attempt to `get` all the file content! These studies take up
-  a lot of disk space and you will likely run out of space unless you have a very big
-  hard drive.
+  <b>WARNING:</b> These studies take up a lot of disk space. If you attempt to `get` all the file content, you will likely run out of space unless you have a very large storage.
 </div>
-
-<h3 id="35-faqs">3.5. FAQs</h3>
-
-<h4 id="running-datalad-get-appears-to-be-stuck---what-should-i-do">Running <code class="language-plaintext highlighter-rouge">datalad get</code> appears to be stuck - what should I do?</h4>
-
-<p>The first time you run <code class="language-plaintext highlighter-rouge">datalad get</code> may take 30 minutes or more to finish
-copying the file. Subsequent runs of <code class="language-plaintext highlighter-rouge">datalad get</code> will be much faster.</p>
-
-<p>Unless you see an error message when running <code class="language-plaintext highlighter-rouge">datalad get</code>, you should let
-the command run until you see something printed out.</p>
-
-<h4 id="do-i-need-a-supercomputer-to-get-this-data">Do I need a supercomputer to get this data?</h4>
-
-<p>You can clone any of these datasets to any machine with internet access,
-<a href="https://www.datalad.org/#install"><code class="language-plaintext highlighter-rouge">DataLad</code> (<code class="language-plaintext highlighter-rouge">git</code> and <code class="language-plaintext highlighter-rouge">git-annex</code>) installed</a>
-and your agreement with the License. The rest of the answer depends on what type
-of data you plan on copying to your computer:</p>
-
-<ul>
-  <li>If you plan on copying only tabular data content to your computer you will need
-at most a few free GB.</li>
-  <li>If you plan on copying 3D imaging data (e.g. ALFF, REHO) you will need hundreds of GB free.</li>
-  <li>If you plan on copying 4D denoised BOLD timeseries data you will need up to 4TB of free space.</li>
-</ul>
-
 
         
       </section>
