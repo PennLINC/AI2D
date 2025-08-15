@@ -4,9 +4,9 @@ main:
 - title: Imaging
   url: /docs/imaging
   sublinks:
-    - title: "Image Curation: CuBIDS"
+    - title: "Data Curation: CuBIDS"
       url: /docs/imaging/image_curation
-    - title: "Image Processing: BABS"
+    - title: "Data Processing: BABS"
       url: /docs/imaging/image_babs
     - title: "sMRIPrep"
       url: /docs/imaging/image_smriprep

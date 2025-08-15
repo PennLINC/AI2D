@@ -9,19 +9,19 @@
   <head>
     <meta charset="utf-8">
 
-<!-- begin _includes/seo.html --><title>Image Processing - RBC</title>
-<meta name="description" content="Image Processing">
+<!-- begin _includes/seo.html --><title>BABS: BIDS App Bootstrap - RBC</title>
+<meta name="description" content="BABS">
 
 
 
 <meta property="og:type" content="article">
 <meta property="og:locale" content="en_US">
 <meta property="og:site_name" content="RBC">
-<meta property="og:title" content="Image Processing">
+<meta property="og:title" content="BABS: BIDS App Bootstrap">
 <meta property="og:url" content="http://localhost:4000/AI2D/docs/imaging/image_babs/">
 
 
-  <meta property="og:description" content="Image Processing">
+  <meta property="og:description" content="BABS">
 
 
 
@@ -79,7 +79,7 @@
 <!-- For all browsers -->
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 <link rel="stylesheet" href="/AI2D/assets/css/main.css">
-<link rel="stylesheet" href="/assets/css/custom.css">
+<link rel="stylesheet" href="/AI2D/assets/css/custom.css">
 <link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css">
 <!-- Fonts via Google -->
@@ -130,12 +130,9 @@
                             </a>
                             <div class="dropdown-menu" aria-labelledby="navbarDropdown-Imaging">
                                 
-                                    <a class="nav-link dropdown-item" href="/AI2D/docs/imaging">Overview</a>
+                                    <a class="nav-link dropdown-item" href="/AI2D/docs/imaging/image_curation">Data Curation: CuBIDS</a>
                                 
-                                
-                                    <a class="nav-link dropdown-item" href="/AI2D/docs/imaging/image_curation">Image Curation: CuBIDS</a>
-                                
-                                    <a class="nav-link dropdown-item" href="/AI2D/docs/imaging/image_babs">Image Processing: BABS</a>
+                                    <a class="nav-link dropdown-item" href="/AI2D/docs/imaging/image_babs">Data Processing: BABS</a>
                                 
                                     <a class="nav-link dropdown-item" href="/AI2D/docs/imaging/image_smriprep">sMRIPrep</a>
                                 
@@ -182,8 +179,8 @@
   
 
   <article class="page h-entry" itemscope itemtype="https://schema.org/CreativeWork">
-    <meta itemprop="headline" content="Image Processing">
-    <meta itemprop="description" content="Image Processing">
+    <meta itemprop="headline" content="BABS: BIDS App Bootstrap">
+    <meta itemprop="description" content="BABS">
     <meta itemprop="datePublished" content="2020-01-01T00:00:00-05:00">
     
 
@@ -191,7 +188,7 @@
       
         <header>
           <br/><h1 id="page-title" class="page__title p-name" itemprop="headline">
-            <a href="http://localhost:4000/AI2D/docs/imaging/image_babs/" class="u-url" itemprop="url">Image Processing
+            <a href="http://localhost:4000/AI2D/docs/imaging/image_babs/" class="u-url" itemprop="url">BABS: BIDS App Bootstrap
 </a>
           </h1>
           
@@ -221,7 +218,7 @@
       <span class="page__meta-readtime">
         <i class="far fa-clock" aria-hidden="true"></i>
         
-          1 minute read
+          less than 1 minute read
         
       </span>
     
@@ -233,22 +230,20 @@
 
       <section class="page__content e-content" itemprop="text">
         
-        <p>The <a href="https://www.nature.com/articles/s41597-022-01163-2">“FAIRly-big” strategy</a> (Wagner et al., 2021) was adopted for reproducible image processing, ensuring all preparation and analyses were accompanied by a full audit trail in <a href="https://www.datalad.org/">Datalad</a> (Halchenko et al., 2021).
-Structural MRI data were processed using <a href="https://surfer.nmr.mgh.harvard.edu/">FreeSurfer</a> and <a href="https://www.nipreps.org/smriprep/">sMRIPrep</a>, yielding commonly used measures of brain structure
-RBC provides full FreeSurfer outputs as well as tabulated data parcellated using 35 anatomical, functional, and multimodal atlases such as Desikan Killiany, Glasser, Gordon, and multiple Schaefer parcellations.
-Specific features include commonly used measures such as regional surface area, cortical thickness, gray matter volume, folding and curvature indices, etc.
-Moreover, summary brain measures (e.g., mean and standard deviation of various measures) are provided for the whole brain and per hemisphere.
-Tabulated data are also accompanied by .json files describing each structural feature in detail.</p>
+        <div style="text-align: center;">
+     <img src="/AI2D/assets/images/misc/babs_workflow.png" width="70%" height="auto" />
+</div>
 
-<p>Functional data were processed using <a href="https://fcp-indi.github.io/docs/nightly/user/quick">C-PAC</a> -
-or Configurable Pipeline for the Analysis of Connectomes (Craddock et al., 2013).
-These steps were all carried out in <a href="https://www.datalad.org/">Datalad</a> to keep track of provenance and ensure the ultimate reproducibility for all datasets.
-Following <a href="https://www.biorxiv.org/content/10.1101/2021.12.01.470790v3.abstract">extensive benchmarking and harmonization studies</a> (Li et al., 2021), C-PAC was executed using a configuration file that was crafted specifically for RBC, which is available <a href="https://github.com/FCP-INDI/C-PAC/blob/0182f98c61cb7fbb495c8300e6a6a7991c859240/CPAC/resources/configs/pipeline_config_rbc-options.yml#L172">here</a>.
-C-PAC outputs include measures such as fully-processed functional timeseries, functional connectivity matrices, ReHo (regional homogeneity), ALFF (amplitude of low frequency fluctuation), as well as extensive measures of quality control.
-Derivatives are available in volumetric MNI space as well as in parcellated format using 16 different atlases, including Glasser and Schaefer parcellations.
-A more detailed description of the list of outputs can be obtained <a href="https://fcp-indi.github.io/docs/nightly/user/output_dir">here</a>.</p>
+<p><strong>Citation</strong>
+<br />
+Zhao, C., Jarecka, D., Covitz, S., Chen, Y., Eickhoff, S. B., Fair, D. A., … &amp; Satterthwaite, T. D. (2024). A reproducible and generalizable software workflow for analysis of large-scale neuroimaging data collections using BIDS Apps. Imaging Neuroscience, 2, 1-19. doi:10.1162/imag_a_00074.</p>
+<p style="margin: 2px 0;"></p>
+<p>Zhao, C., Chen, Y., Jarecka, D., Ghosh, S., Cieslak, M., &amp; Satterthwaite, T. D. (2024). BABS in Action: Merging Reproducibility and Scalability for Large-Scale Neuroimaging Analysis With BIDS Apps. Biological Psychiatry, 95(10), S21-S22. doi:10.1016/j.biopsych.2024.02.056.</p>
 
-<p>A repository describing all of the atlases used by C-PAC in RBC can be found <a href="https://github.com/FCP-INDI/C-PAC_templates/tree/d2913cd6d5861d9cb5ffb79aa03da18b6eb603eb/sourcedata/atlases">here</a>.</p>
+<p><br />
+Most of the AI2D datasets were processed using <strong><a href="https://pennlinc-babs.readthedocs.io/en/stable/">BABS</a></strong> (see example: <a href="/AI2D/docs/datasets/dCCNP/#dataset-summary">CCNP</a>).</p>
+
+<p><strong>BABS</strong> implements the <a href="https://www.nature.com/articles/s41597-022-01163-2">“FAIRly-big” framework</a> (Wagner et al., 2021) for reproducible image processing, ensuring all data analyses using BIDS-apps were accompanied by a full audit trail in <a href="https://www.datalad.org/">Datalad</a> (Halchenko et al., 2021).</p>
 
         
       </section>
@@ -290,7 +285,7 @@ A more detailed description of the list of outputs can be obtained <a href="http
 ">Previous</a>
     
     
-      <a href="/AI2D/docs/imaging/image_curation/" class="pagination--pager" title="Image Curation
+      <a href="/AI2D/docs/imaging/image_curation/" class="pagination--pager" title="Data Curation
 ">Next</a>
     
   </nav>

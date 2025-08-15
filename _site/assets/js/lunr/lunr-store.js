@@ -5,14 +5,14 @@ var store = [{
         "url": "/AI2D/docs/imaging/image_acquisition/",
         "teaser": null
       },{
-        "title": "Image Processing",
-        "excerpt":"The “FAIRly-big” strategy (Wagner et al., 2021) was adopted for reproducible image processing, ensuring all preparation and analyses were accompanied by a full audit trail in Datalad (Halchenko et al., 2021). Structural MRI data were processed using FreeSurfer and sMRIPrep, yielding commonly used measures of brain structure RBC provides full...","categories": ["docs","imaging"],
+        "title": "BABS: BIDS App Bootstrap",
+        "excerpt":"Citation Zhao, C., Jarecka, D., Covitz, S., Chen, Y., Eickhoff, S. B., Fair, D. A., … &amp; Satterthwaite, T. D. (2024). A reproducible and generalizable software workflow for analysis of large-scale neuroimaging data collections using BIDS Apps. Imaging Neuroscience, 2, 1-19. doi:10.1162/imag_a_00074. Zhao, C., Chen, Y., Jarecka, D., Ghosh, S.,...","categories": ["docs","imaging"],
         "tags": [],
         "url": "/AI2D/docs/imaging/image_babs/",
         "teaser": null
       },{
-        "title": "Image Curation",
-        "excerpt":"CuBIDS (Covitz et al., 2022) was used for the curation of each of the RBC datasets. CuBIDS is a sanity preserving workflow that summarizes the heterogeneity in a MRI BIDS dataset, helps prepare MRI datasets for preprocessing, and helps users perform metadata-based quality control on MRI BIDS data. For each...","categories": ["docs","imaging"],
+        "title": "Data Curation",
+        "excerpt":"Citation Covitz, S., Tapera, T. M., Adebimpe, A., Alexander-Bloch, A. F., Bertolero, M. A., Feczko, E., … &amp; Satterthwaite, T. D. (2022). Curation of BIDS (CuBIDS): A workflow and software package for streamlining reproducible curation of large BIDS datasets. NeuroImage, 263, 119609. doi:10.1016/j.neuroimage.2022.119609. CuBIDS (Covitz et al., 2022) CuBIDS is...","categories": ["docs","imaging"],
         "tags": [],
         "url": "/AI2D/docs/imaging/image_curation/",
         "teaser": null
@@ -36,13 +36,13 @@ var store = [{
         "teaser": null
       },{
         "title": "Structural Data Analysis",
-        "excerpt":"To achieve consistent quality ratings across all studies in RBC, every image was manually evaluated by 2-5 expert raters using Swipes for Science (Keshavan et al., 2019). These ratings allowed us to assign each image a score of “Pass”, “Artifact”, or “Fail”. In addition to these manual ratings, we provide...","categories": ["docs","imaging"],
+        "excerpt":"Citation (Click to expand/minimize) Abraham, Alexandre, Fabian Pedregosa, Michael Eickenberg, Philippe Gervais, Andreas Mueller, Jean Kossaifi, Alexandre Gramfort, Bertrand Thirion, and Gael Varoquaux. 2014. “Machine Learning for Neuroimaging with Scikit-Learn.” Frontiers in Neuroinformatics 8. https://doi.org/10.3389/fninf.2014.00014. Avants, B. B., C. L. Epstein, M. Grossman, and J. C. Gee. 2008. “Symmetric Diffeomorphic...","categories": ["docs","imaging"],
         "tags": [],
         "url": "/AI2D/docs/imaging/image_smriprep/",
         "teaser": null
       },{
         "title": "Functional Data Quality Assurance",
-        "excerpt":"Functional image quality assurance included measures of in-scanner motion (framewise displacement) and normalization quality (correlation of functional image to template image). fMRI runs with a median FD less than or equal to 0.2 and normalized cross correlation greater than or equal to 0.8 were considered of adequate quality. We provide...","categories": ["docs","imaging"],
+        "excerpt":"Functional data were processed using C-PAC - or Configurable Pipeline for the Analysis of Connectomes (Craddock et al., 2013). These steps were all carried out in Datalad to keep track of provenance and ensure the ultimate reproducibility for all datasets. Following extensive benchmarking and harmonization studies (Li et al., 2021),...","categories": ["docs","imaging"],
         "tags": [],
         "url": "/AI2D/docs/imaging/image_xcpd/",
         "teaser": null

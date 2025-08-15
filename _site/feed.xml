@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.3">Jekyll</generator><link href="http://localhost:4000/AI2D/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/AI2D/" rel="alternate" type="text/html" /><updated>2025-08-15T09:34:28-04:00</updated><id>http://localhost:4000/AI2D/feed.xml</id><title type="html">RBC</title><subtitle>The official website for the Reproducible Brain Charts project.</subtitle><author><name>{&quot;links&quot;=&gt;[{&quot;label&quot;=&gt;&quot;Email&quot;, &quot;icon&quot;=&gt;&quot;fas fa-fw fa-envelope-square&quot;}, {&quot;label&quot;=&gt;&quot;Website&quot;, &quot;icon&quot;=&gt;&quot;fas fa-fw fa-link&quot;}, {&quot;label&quot;=&gt;&quot;Twitter&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-twitter-square&quot;}, {&quot;label&quot;=&gt;&quot;Facebook&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-facebook-square&quot;}, {&quot;label&quot;=&gt;&quot;GitHub&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-github&quot;}, {&quot;label&quot;=&gt;&quot;Instagram&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-instagram&quot;}]}</name></author><entry><title type="html">Midnight Scan Club</title><link href="http://localhost:4000/AI2D/docs/datasets/midnight_scan_club/" rel="alternate" type="text/html" title="Midnight Scan Club" /><published>2025-08-16T00:00:00-04:00</published><updated>2025-08-16T00:00:00-04:00</updated><id>http://localhost:4000/AI2D/docs/datasets/midnight_scan_club</id><content type="html" xml:base="http://localhost:4000/AI2D/docs/datasets/midnight_scan_club/"><![CDATA[<div style="text-align: left;">
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.3">Jekyll</generator><link href="http://localhost:4000/AI2D/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/AI2D/" rel="alternate" type="text/html" /><updated>2025-08-15T11:33:38-04:00</updated><id>http://localhost:4000/AI2D/feed.xml</id><title type="html">RBC</title><subtitle>The official website for the Reproducible Brain Charts project.</subtitle><author><name>{&quot;links&quot;=&gt;[{&quot;label&quot;=&gt;&quot;Email&quot;, &quot;icon&quot;=&gt;&quot;fas fa-fw fa-envelope-square&quot;}, {&quot;label&quot;=&gt;&quot;Website&quot;, &quot;icon&quot;=&gt;&quot;fas fa-fw fa-link&quot;}, {&quot;label&quot;=&gt;&quot;Twitter&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-twitter-square&quot;}, {&quot;label&quot;=&gt;&quot;Facebook&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-facebook-square&quot;}, {&quot;label&quot;=&gt;&quot;GitHub&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-github&quot;}, {&quot;label&quot;=&gt;&quot;Instagram&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-instagram&quot;}]}</name></author><entry><title type="html">Midnight Scan Club</title><link href="http://localhost:4000/AI2D/docs/datasets/midnight_scan_club/" rel="alternate" type="text/html" title="Midnight Scan Club" /><published>2025-08-16T00:00:00-04:00</published><updated>2025-08-16T00:00:00-04:00</updated><id>http://localhost:4000/AI2D/docs/datasets/midnight_scan_club</id><content type="html" xml:base="http://localhost:4000/AI2D/docs/datasets/midnight_scan_club/"><![CDATA[<div style="text-align: left;">
      <img src="/AI2D/assets/images/logos/uc_berkeley.png" style="width: auto; height: 10vw;" />
 </div>
 
@@ -639,7 +639,7 @@ Liu S, Wang YS, Zhang Q, Zhou Q, Cao LZ, Jiang C, Zhang Z, Yang N, Dong Q, Zuo X
 
 <div class="table" align="center">
 <table style="text-align: center;
-width:60%; font-size:90%; border: 1px solid black">
+width:60%; font-size:80%; border: 1px solid black">
 <tr><th style="font-weight:bold">CUBIC Path</th><th style="font-weight:normal">/cbica/projects/pennlinc_rbc/datasets/LINC_CCNP</th><th style="font-weight:normal"></th></tr>
 <tr><th style="font-weight:bold">Open Access</th><th style="font-weight:normal">true</th><th style="font-weight:normal"></th></tr>
 <tr><th style="font-weight:bold">Sample Size</th><th style="font-weight:normal">195</th><th style="font-weight:normal"></th></tr>
@@ -655,7 +655,7 @@ width:60%; font-size:90%; border: 1px solid black">
 <h2 id="data-access">Data Access</h2>
 
 <div class="table" align="center">
-<table style="text-align: center; width:100%; font-size:90%; border: 1px solid black">
+<table style="text-align: center; width:100%; font-size:80%; border: 1px solid black">
 <tr>
 <th style="font-weight:bold; text-align: center;"></th>
 <th style="font-weight:bold; text-align: center;">Number of Sessions</th>
@@ -671,6 +671,14 @@ width:60%; font-size:90%; border: 1px solid black">
 <td style="font-weight:normal">fmriprep 24-1-1</td>
 <td style="font-weight:normal">ria+file:///cbica/projects/pennlinc_rbc/datasets/LINC_CCNP/derivatives/fmriprep_anat-24-1-1-babs/output_ria#~data</td>
 <td style="font-weight:normal">/cbica/projects/pennlinc_rbc/datasets/LINC_CCNP/derivatives/FMRIPREP_ANAT-24-1-1_zipped</td>
+</tr>
+<tr>
+<th style="font-weight:bold; text-align: center;"><a href="/AI2D/docs/imaging/image_smriprep/">FreeSurfer-Post</a></th>
+<td style="font-weight:normal">195</td>
+<td style="font-weight:normal">195</td>
+<td style="font-weight:normal">freesurfer-post 0-1-2</td>
+<td style="font-weight:normal">ria+file:///cbica/projects/pennlinc_rbc/datasets/LINC_CCNP/derivatives/freesurferpost-0-1-2-babs/output_ria#~data</td>
+<td style="font-weight:normal">/cbica/projects/pennlinc_rbc/datasets/LINC_CCNP/derivatives/FREESURFERPOST-0-1-2_zipped</td>
 </tr>
 <tr>
 <th style="font-weight:bold; text-align: center;"><a href="/AI2D/docs/imaging/image_fmriprep/">fMRIPrep</a></th>

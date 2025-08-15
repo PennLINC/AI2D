@@ -79,7 +79,7 @@
 <!-- For all browsers -->
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 <link rel="stylesheet" href="/AI2D/assets/css/main.css">
-<link rel="stylesheet" href="/assets/css/custom.css">
+<link rel="stylesheet" href="/AI2D/assets/css/custom.css">
 <link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css">
 <!-- Fonts via Google -->
@@ -130,12 +130,9 @@
                             </a>
                             <div class="dropdown-menu" aria-labelledby="navbarDropdown-Imaging">
                                 
-                                    <a class="nav-link dropdown-item" href="/AI2D/docs/imaging">Overview</a>
+                                    <a class="nav-link dropdown-item" href="/AI2D/docs/imaging/image_curation">Data Curation: CuBIDS</a>
                                 
-                                
-                                    <a class="nav-link dropdown-item" href="/AI2D/docs/imaging/image_curation">Image Curation: CuBIDS</a>
-                                
-                                    <a class="nav-link dropdown-item" href="/AI2D/docs/imaging/image_babs">Image Processing: BABS</a>
+                                    <a class="nav-link dropdown-item" href="/AI2D/docs/imaging/image_babs">Data Processing: BABS</a>
                                 
                                     <a class="nav-link dropdown-item" href="/AI2D/docs/imaging/image_smriprep">sMRIPrep</a>
                                 
@@ -221,7 +218,7 @@
       <span class="page__meta-readtime">
         <i class="far fa-clock" aria-hidden="true"></i>
         
-          less than 1 minute read
+          1 minute read
         
       </span>
     
@@ -233,7 +230,18 @@
 
       <section class="page__content e-content" itemprop="text">
         
-        <p>Functional image quality assurance included measures of in-scanner motion (framewise displacement) and normalization quality (correlation of functional image to template image). fMRI runs with a median FD less than or equal to 0.2 and normalized cross correlation greater than or equal to 0.8 were considered of adequate quality. We provide FD, normalization quality, and many other quality metrics for all scans.</p>
+        <p>Functional data were processed using <a href="https://fcp-indi.github.io/docs/nightly/user/quick">C-PAC</a> -
+or Configurable Pipeline for the Analysis of Connectomes (Craddock et al., 2013).
+These steps were all carried out in <a href="https://www.datalad.org/">Datalad</a> to keep track of provenance and ensure the ultimate reproducibility for all datasets.
+Following <a href="https://www.biorxiv.org/content/10.1101/2021.12.01.470790v3.abstract">extensive benchmarking and harmonization studies</a> (Li et al., 2021), C-PAC was executed using a configuration file that was crafted specifically for RBC, which is available <a href="https://github.com/FCP-INDI/C-PAC/blob/0182f98c61cb7fbb495c8300e6a6a7991c859240/CPAC/resources/configs/pipeline_config_rbc-options.yml#L172">here</a>.
+C-PAC outputs include measures such as fully-processed functional timeseries, functional connectivity matrices, ReHo (regional homogeneity), ALFF (amplitude of low frequency fluctuation), as well as extensive measures of quality control.
+Derivatives are available in volumetric MNI space as well as in parcellated format using 16 different atlases, including Glasser and Schaefer parcellations.
+A more detailed description of the list of outputs can be obtained <a href="https://fcp-indi.github.io/docs/nightly/user/output_dir">here</a>.</p>
+
+<p>A repository describing all of the atlases used by C-PAC in RBC can be found <a href="https://github.com/FCP-INDI/C-PAC_templates/tree/d2913cd6d5861d9cb5ffb79aa03da18b6eb603eb/sourcedata/atlases">here</a>.</p>
+
+<h2 id="quality-control">Quality Control</h2>
+<p>Functional image quality assurance included measures of in-scanner motion (framewise displacement) and normalization quality (correlation of functional image to template image). fMRI runs with a median FD less than or equal to 0.2 and normalized cross correlation greater than or equal to 0.8 were considered of adequate quality. We provide FD, normalization quality, and many other quality metrics for all scans.</p>
 
 <div style="text-align: center;">
      <img src="/assets/images/misc/Figure_Func-QA_v1.png" width="70%" height="auto" />
