@@ -205,19 +205,22 @@
 
 <ol>
   <li><a href="#1-request-access-to-a-cubic-project">Request access to a CUBIC project</a></li>
-  <li><a href="#2-dataset-analyzed-without-babs">Dataset analyzed without BABS</a></li>
-  <li><a href="#3-dataset-analyzed-with-babs">Dataset analyzed with BABS</a>
-3.1. <a href="#31-get-data-without-datalad">Get data without DataLad</a>
+  <li><a href="#2-dataset-processed-without-babs">Dataset processed without BABS</a></li>
+  <li><a href="#3-dataset-processed-with-babs">Dataset processed with BABS</a>
     <ul>
-      <li><a href="#311-prerequisites">Prerequisites</a></li>
-      <li><a href="#312-explore-the-data-structure">Explore the Data Structure</a></li>
-      <li><a href="#313-extract-specific-data">Extract Specific Data</a>
-3.2. <a href="#32-get-data-with-datalad">Get data with DataLad</a></li>
-      <li><a href="#321-install-datalad">Install DataLad</a></li>
-      <li><a href="#322-pick-a-dataset">Pick a dataset</a></li>
-      <li><a href="#323-clone-the-data">Clone the data</a></li>
-      <li><a href="#324-example-walkthrough">Example walkthrough</a></li>
-      <li><a href="#325-faqs">FAQs</a></li>
+      <li>3.1. <a href="#31-get-data-without-datalad">Get data without DataLad</a>
+        <ul>
+          <li><a href="#311-prerequisites">Prerequisites</a></li>
+          <li><a href="#312-explore-the-data-structure">Explore the Data Structure</a></li>
+          <li><a href="#313-extract-specific-data">Extract Specific Data</a></li>
+        </ul>
+      </li>
+      <li>3.2. <a href="#32-get-data-with-datalad">Get data with DataLad</a>
+        <ul>
+          <li><a href="#321-prerequisites">Prerequisites</a></li>
+          <li><a href="#322-example-walkthrough">Example walkthrough</a></li>
+        </ul>
+      </li>
     </ul>
   </li>
 </ol>
@@ -226,7 +229,9 @@
 
 <h2 id="1-request-access-to-a-cubic-project">1. Request access to a CUBIC project</h2>
 
-<p>First, check whether the dataset you are interested in is open-access or not (see example: <a href="/AI2D/docs/datasets/dCCNP/#dataset-summary">CCNP</a>). If the dataset is NOT open-access, follow these steps:</p>
+<h4 id="check-whether-the-dataset-you-are-interested-in-is-open-access-or-not-see-example-ccnp"><span style="color: #7556b7;">Check whether the dataset you are interested in is open-access or not (see example: <a href="/AI2D/docs/datasets/dCCNP/#dataset-summary">CCNP</a>).</span></h4>
+
+<p>If the dataset is NOT open-access, follow these steps:</p>
 
 <ol>
   <li>Send Dr. Satterthwaite a request including the following:
@@ -239,18 +244,18 @@
   <li>Submit the approval from Dr. Satterthwaite — including the specified user name, project name, and type of access — as a PDF printout to help@cbica.upenn.edu.</li>
 </ol>
 
-<h4 id="check-whether-the-dataset-you-are-interested-in-was-processed-with-babs-or-not-see-example-ccnp">Check whether the dataset you are interested in was processed with <a href="/AI2D/docs/imaging/image_babs">BABS</a> or not (see example: <a href="/AI2D/docs/datasets/dCCNP/#dataset-summary">CCNP</a>).</h4>
+<h4 id="check-whether-the-dataset-you-are-interested-in-was-processed-with-babs-or-not-see-example-ccnp"><span style="color: #7556b7;">Check whether the dataset you are interested in was processed with <a href="/AI2D/docs/imaging/image_babs">BABS</a> or not (see example: <a href="/AI2D/docs/datasets/dCCNP/#dataset-summary">CCNP</a>).</span></h4>
 
 <h2 id="2-dataset-processed-without-babs">2. Dataset processed without BABS</h2>
 
-<p>If the dataset was not processed with BABS, you can copy the data as follows:</p>
+<p>If the dataset was NOT processed with BABS, you can copy the data as follows:</p>
 
 <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span><span class="nb">cp</span> <span class="nt">-r</span> /path/to/datasets /path/to/your/project
 </code></pre></div></div>
 
 <h2 id="3-dataset-processed-with-babs">3. Dataset processed with BABS</h2>
 
-<p>If the dataset was processed with BABS, you can get the data either <a href="#32-get-data-with-datalad">using <code class="language-plaintext highlighter-rouge">datalad</code></a> or <a href="#31-get-data-without-datalad">without it</a>, as follows.</p>
+<p>If the dataset WAS processed with BABS, you can get the data either <a href="#32-get-data-with-datalad">using <code class="language-plaintext highlighter-rouge">datalad</code></a> or <a href="#31-get-data-without-datalad">without it</a>, as follows.</p>
 
 <h3 id="31-get-data-without-datalad">3.1. Get data without DataLad</h3>
 
@@ -300,7 +305,7 @@ bash unzip_files.sh <span class="k">${</span><span class="nv">input_dir</span><s
 <p><strong>Option B: List contents of a zip file</strong></p>
 <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># XCP-D example</span>
 <span class="nv">input_dir</span><span class="o">=</span>/path/to/ephemeral/clone
-7z l <span class="k">${</span><span class="nv">input_dir</span><span class="k">}</span>/&lt;subject_id&gt;_xcpd-0.9.1.zip
+7z l <span class="k">${</span><span class="nv">input_dir</span><span class="k">}</span>/&lt;subject_id&gt;<span class="k">*</span>.zip
 </code></pre></div></div>
 
 <h3 id="313-extract-specific-data">3.1.3. Extract Specific Data</h3>
@@ -333,7 +338,7 @@ bash unzip_files.sh <span class="k">${</span><span class="nv">input_dir</span><s
 
 <p><strong>Cons:</strong></p>
 <ul>
-  <li>Some knowledge of <code class="language-plaintext highlighter-rouge">datalad</code>, <code class="language-plaintext highlighter-rouge">git</code>, <code class="language-plaintext highlighter-rouge">git annex</code> and how to debug</li>
+  <li>Some knowledge of <code class="language-plaintext highlighter-rouge">datalad</code>, <code class="language-plaintext highlighter-rouge">git</code>, <code class="language-plaintext highlighter-rouge">git annex</code></li>
 </ul>
 
 <h3 id="321-prerequisites">3.2.1. Prerequisites</h3>

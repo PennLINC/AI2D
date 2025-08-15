@@ -11,24 +11,23 @@ The following instruction are intended specifically to get data on CUBIC.
 ## Table of Contents
 
 1. [Request access to a CUBIC project](#1-request-access-to-a-cubic-project)
-2. [Dataset analyzed without BABS](#2-dataset-analyzed-without-babs)
-3. [Dataset analyzed with BABS](#3-dataset-analyzed-with-babs)
-   3.1. [Get data without DataLad](#31-get-data-without-datalad)
-      - [Prerequisites](#311-prerequisites)
-      - [Explore the Data Structure](#312-explore-the-data-structure)
-      - [Extract Specific Data](#313-extract-specific-data)
-   3.2. [Get data with DataLad](#32-get-data-with-datalad)
-      - [Install DataLad](#321-install-datalad)
-      - [Pick a dataset](#322-pick-a-dataset)
-      - [Clone the data](#323-clone-the-data)
-      - [Example walkthrough](#324-example-walkthrough)
-      - [FAQs](#325-faqs)
+2. [Dataset processed without BABS](#2-dataset-processed-without-babs)
+3. [Dataset processed with BABS](#3-dataset-processed-with-babs)
+   - 3.1. [Get data without DataLad](#31-get-data-without-datalad)
+     - [Prerequisites](#311-prerequisites)
+     - [Explore the Data Structure](#312-explore-the-data-structure)
+     - [Extract Specific Data](#313-extract-specific-data)
+   - 3.2. [Get data with DataLad](#32-get-data-with-datalad)
+     - [Prerequisites](#321-prerequisites)
+     - [Example walkthrough](#322-example-walkthrough)
 
 ---
 
 ## 1. Request access to a CUBIC project
 
-First, check whether the dataset you are interested in is open-access or not (see example: [CCNP]({{ site.baseurl }}/docs/datasets/dCCNP/#dataset-summary)). If the dataset is NOT open-access, follow these steps:
+#### <span style="color: #7556b7;">Check whether the dataset you are interested in is open-access or not (see example: [CCNP]({{ site.baseurl }}/docs/datasets/dCCNP/#dataset-summary)).</span> 
+
+If the dataset is NOT open-access, follow these steps:
 
 1. Send Dr. Satterthwaite a request including the following:
     - The level of access, in this case, you will need **read-only access**
@@ -37,11 +36,11 @@ First, check whether the dataset you are interested in is open-access or not (se
 2. Submit the approval from Dr. Satterthwaite — including the specified user name, project name, and type of access — as a PDF printout to help@cbica.upenn.edu.
 
 
-#### Check whether the dataset you are interested in was processed with [BABS]({{  site.baseurl }}/docs/imaging/image_babs) or not (see example: [CCNP]({{ site.baseurl }}/docs/datasets/dCCNP/#dataset-summary)).
+#### <span style="color: #7556b7;">Check whether the dataset you are interested in was processed with [BABS]({{  site.baseurl }}/docs/imaging/image_babs) or not (see example: [CCNP]({{ site.baseurl }}/docs/datasets/dCCNP/#dataset-summary)).
 
 ## 2. Dataset processed without BABS
 
-If the dataset was not processed with BABS, you can copy the data as follows:
+If the dataset was NOT processed with BABS, you can copy the data as follows:
 
 ```bash
 $ cp -r /path/to/datasets /path/to/your/project
@@ -49,7 +48,7 @@ $ cp -r /path/to/datasets /path/to/your/project
 
 ## 3. Dataset processed with BABS
 
-If the dataset was processed with BABS, you can get the data either [using `datalad`](#32-get-data-with-datalad) or [without it](#31-get-data-without-datalad), as follows.
+If the dataset WAS processed with BABS, you can get the data either [using `datalad`](#32-get-data-with-datalad) or [without it](#31-get-data-without-datalad), as follows.
 
 ### 3.1. Get data without DataLad
 
@@ -95,7 +94,7 @@ bash unzip_files.sh ${input_dir} ${output_dir} single_subject.txt
 ```bash
 # XCP-D example
 input_dir=/path/to/ephemeral/clone
-7z l ${input_dir}/<subject_id>_xcpd-0.9.1.zip
+7z l ${input_dir}/<subject_id>*.zip
 ```
 
 ### 3.1.3. Extract Specific Data
@@ -127,7 +126,7 @@ This section provides instructions in case you prefer to use DataLad.
 - Full data provenance tracking
 
 **Cons:**
-- Some knowledge of `datalad`, `git`, `git annex` and how to debug  
+- Some knowledge of `datalad`, `git`, `git annex` 
 
 ### 3.2.1. Prerequisites
 

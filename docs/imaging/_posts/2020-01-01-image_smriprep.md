@@ -26,9 +26,7 @@ Ciric, R., William H. Thompson, R. Lorenz, M. Goncalves, E. MacNicol, C. J. Mark
 <p style="margin: 2px 0;"></p>
 Dale, Anders M., Bruce Fischl, and Martin I. Sereno. 1999. “Cortical Surface-Based Analysis: I. Segmentation and Surface Reconstruction.” NeuroImage 9 (2): 179–94. https://doi.org/10.1006/nimg.1998.0395.
 <p style="margin: 2px 0;"></p>
-Esteban, Oscar, Ross Blair, Christopher J. Markiewicz, Shoshana L. Berleant, Craig Moodie, Feilong Ma, Ayse Ilkay Isik, et al. 2018. “fMRIPrep 24.1.1.” Software. https://doi.org/10.5281/zenodo.852659.
-<p style="margin: 2px 0;"></p>
-Esteban, Oscar, Christopher Markiewicz, Ross W Blair, Craig Moodie, Ayse Ilkay Isik, Asier Erramuzpe Aliaga, James Kent, et al. 2019. “fMRIPrep: A Robust Preprocessing Pipeline for Functional MRI.” Nature Methods 16: 111–16. https://doi.org/10.1038/s41592-018-0235-4.
+<strong>Esteban, Oscar, Christopher Markiewicz, Ross W Blair, Craig Moodie, Ayse Ilkay Isik, Asier Erramuzpe Aliaga, James Kent, et al. 2019. “fMRIPrep: A Robust Preprocessing Pipeline for Functional MRI.” Nature Methods 16: 111–16. https://doi.org/10.1038/s41592-018-0235-4.</strong>
 <p style="margin: 2px 0;"></p>
 Evans, AC, AL Janke, DL Collins, and S Baillet. 2012. “Brain Templates and Atlases.” NeuroImage 62 (2): 911–22. https://doi.org/10.1016/j.neuroimage.2012.01.024.
 <p style="margin: 2px 0;"></p>
@@ -49,13 +47,12 @@ Zhang, Y., M. Brady, and S. Smith. 2001. "Segmentation of Brain MR Images Throug
 </details>
 
 <br>
-Structural MRI data were processed using **[fMRIPrep](https://fmriprep.org/en/stable/)** with the `--anat-only` flag, which also runs [FreeSurfer](https://surfer.nmr.mgh.harvard.edu/) and other sMRIPrep processing steps under the hoods.
+Structural MRI data were processed using **[fMRIPrep](https://fmriprep.org/en/stable/)** with the `--anat-only` flag, which run the following steps: correction for intensity non-uniformity, skull-stripping with ANTs’ brain extraction workflow, and reconstruction of cortical surfaces using [FreeSurfer](https://surfer.nmr.mgh.harvard.edu/).
 
 
-**AI2D sMRI pipeline** provides full FreeSurfer outputs as well as tabulated data (outputs from **[freesurfer-post](https://github.com/PennLINC/freesurfer-post/tree/main)**) parcellated using 35 anatomical, functional, and multimodal atlases such as Desikan Killiany, Glasser, Gordon, and multiple Schaefer parcellations.
-Specific features include commonly used measures such as regional surface area, cortical thickness, gray matter volume, folding and curvature indices, etc.
-Moreover, summary brain measures (e.g., mean and standard deviation of various measures) are provided for the whole brain and per hemisphere.
-Tabulated data are also accompanied by .json files describing each structural feature in detail.
+The **AI2D sMRI pipeline** provides full FreeSurfer outputs as well as tabulated data (outputs from **[freesurfer-post](https://github.com/PennLINC/freesurfer-post/tree/main)**) parcellated using 35 anatomical, functional, and multimodal atlases such as Desikan Killiany, Glasser, Gordon, and multiple resolutions of the Schaefer parcellation among others.
+
+Specific features include commonly used measures of brain structure such as regional surface area, cortical thickness, gray matter volume, and folding and curvature indices. Moreover, summary brain measures such as total intracranial volume, ventricle size, and mean and standard deviation of various measures (e.g., cortical thickness, surface area) are provided for the whole brain and per hemisphere. Tabulated data are also accompanied by .json files describing each structural feature in detail.
 
 ## Quality Control
 Coming soon.

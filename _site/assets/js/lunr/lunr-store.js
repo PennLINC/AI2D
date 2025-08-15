@@ -17,20 +17,20 @@ var store = [{
         "url": "/AI2D/docs/imaging/image_curation/",
         "teaser": null
       },{
-        "title": "Functional Data Quality Assurance",
-        "excerpt":"Functional image quality assurance included measures of in-scanner motion (framewise displacement) and normalization quality (correlation of functional image to template image). fMRI runs with a median FD less than or equal to 0.2 and normalized cross correlation greater than or equal to 0.8 were considered of adequate quality. We provide...","categories": ["docs","imaging"],
+        "title": "Functional Data Preprocessing",
+        "excerpt":"Citation (Click to expand/minimize) Abraham, Alexandre, Fabian Pedregosa, Michael Eickenberg, Philippe Gervais, Andreas Mueller, Jean Kossaifi, Alexandre Gramfort, Bertrand Thirion, and Gael Varoquaux. 2014. “Machine Learning for Neuroimaging with Scikit-Learn.” Frontiers in Neuroinformatics 8. https://doi.org/10.3389/fninf.2014.00014. Andersson, Jesper L. R., Stefan Skare, and John Ashburner. 2003. “How to Correct Susceptibility Distortions...","categories": ["docs","imaging"],
         "tags": [],
         "url": "/AI2D/docs/imaging/image_fmriprep/",
         "teaser": null
       },{
-        "title": "Diffusion Data Quality Assurance",
-        "excerpt":"To achieve consistent quality ratings across all studies in RBC, every diffusion image was manually evaluated by 2-5 expert raters using Swipes for Science (Keshavan et al., 2019). These ratings allowed us to assign each image a score of “Pass”, “Artifact”, or “Fail”. In addition to these manual ratings, we...","categories": ["docs","imaging"],
+        "title": "Diffusion Data Preprocessing",
+        "excerpt":"Citation (Click to expand/minimize) Abraham, Alexandre, Fabian Pedregosa, Michael Eickenberg, Philippe Gervais, Andreas Mueller, Jean Kossaifi, Alexandre Gramfort, Bertrand Thirion, and Gael Varoquaux. 2014. “Machine Learning for Neuroimaging with Scikit-Learn.” Frontiers in Neuroinformatics 8. https://doi.org/10.3389/fninf.2014.00014. Andersson, Jesper LR, Mark S Graham, Enikő Zsoldos, and Stamatios N Sotiropoulos. 2016. “Incorporating Outlier...","categories": ["docs","imaging"],
         "tags": [],
         "url": "/AI2D/docs/imaging/image_qsiprep/",
         "teaser": null
       },{
-        "title": "Diffusion Data Quality Assurance",
-        "excerpt":"To achieve consistent quality ratings across all studies in RBC, every diffusion image was manually evaluated by 2-5 expert raters using Swipes for Science (Keshavan et al., 2019). These ratings allowed us to assign each image a score of “Pass”, “Artifact”, or “Fail”. In addition to these manual ratings, we...","categories": ["docs","imaging"],
+        "title": "Diffusion Data Reconstruction",
+        "excerpt":"Citation (Click to expand/minimize) Abraham, Alexandre, Fabian Pedregosa, Michael Eickenberg, Philippe Gervais, Andreas Mueller, Jean Kossaifi, Alexandre Gramfort, Bertrand Thirion, and Gael Varoquaux. 2014. “Machine Learning for Neuroimaging with Scikit-Learn.” Frontiers in Neuroinformatics 8. https://doi.org/10.3389/fninf.2014.00014. Cieslak, Matthew, Philip A Cook, Xiaosong He, Fang-Cheng Yeh, Thijs Dhollander, Azeez Adebimpe, Geoffrey K...","categories": ["docs","imaging"],
         "tags": [],
         "url": "/AI2D/docs/imaging/image_qsirecon/",
         "teaser": null
@@ -41,8 +41,8 @@ var store = [{
         "url": "/AI2D/docs/imaging/image_smriprep/",
         "teaser": null
       },{
-        "title": "Functional Data Quality Assurance",
-        "excerpt":"Functional data were processed using C-PAC - or Configurable Pipeline for the Analysis of Connectomes (Craddock et al., 2013). These steps were all carried out in Datalad to keep track of provenance and ensure the ultimate reproducibility for all datasets. Following extensive benchmarking and harmonization studies (Li et al., 2021),...","categories": ["docs","imaging"],
+        "title": "Functional Data Analysis",
+        "excerpt":"Citation (Click to expand/minimize) Abraham, Alexandre, Fabian Pedregosa, Michael Eickenberg, Philippe Gervais, Andreas Mueller, Jean Kossaifi, Alexandre Gramfort, Bertrand Thirion, and Gaël Varoquaux. 2014. “Machine Learning for Neuroimaging with Scikit-Learn.” Frontiers in Neuroinformatics. Frontiers, 14. Avants, Brian B, Nick Tustison, Gang Song, and others. 2009. “Advanced Normalization Tools (Ants).” Insight...","categories": ["docs","imaging"],
         "tags": [],
         "url": "/AI2D/docs/imaging/image_xcpd/",
         "teaser": null
