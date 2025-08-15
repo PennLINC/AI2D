@@ -17,6 +17,7 @@ neuroimaging: "Neuroimaging protocol"
 data_source: "Data source (not sure what that means)"
 data_release_use: "Data release use"
 sample_size: 5
-fmri_count: 5
 smri_count: 5
+fmri_count: 5
+dmri_count: 5
 ---

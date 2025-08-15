@@ -1,48 +1,38 @@
 ---
 layout: archive
-title: "Datasets in RBC"
+title: "AI2D Datasets"
 ---
 
 <br/>
-<h1> Overview </h1>
+<h1> Datasets Overview </h1>
 
 <body>
-See below for details regarding each dataset.
 
 <hr/>
 
-{% assign total_sample_size = 0 %}
-{% assign total_smri_count = 0 %}
-{% assign total_fmri_count = 0 %}
+
 
 <table align="center"; width=1250px>
   <thead>
     <tr>
       <th>Dataset</th>
       <th>Institution</th>
-      <th>Number of Sites</th>
-      <th>PI</th>
+      <th>Principal Investigators</th>
+      <th>Study Page</th>
+      <th>Average Age</th>
       <th>Sample Size</th>
       <th>Number of Sessions</th>
-      <th>Average age</th>
-      <th>Structural MRI Sessions</th>
-      <th>Functional MRI Sessions</th>
+      <th>Number of Sites</th>
     </tr>
   </thead>
   <tbody>
-    {% for dataset in site.categories.datasets %}
+    {% assign dataset_posts = site.posts | where_exp: "post", "post.path contains 'datasets/_posts'" | sort: "path" %}
+    {% for dataset in dataset_posts %}
       <tr>
         <td><a href="{{ dataset.website }}">{{ dataset.title }}</a></td>
         <td>
           {% if dataset.institution %}
             {{ dataset.institution }}
-          {% else %}
-            n/a
-          {% endif %}
-        </td>
-        <td>
-          {% if dataset.num_site %}
-            {{ dataset.num_site }}
           {% else %}
             n/a
           {% endif %}
@@ -55,18 +45,26 @@ See below for details regarding each dataset.
           {% endif %}
         </td>
         <td>
-          {% if dataset.sample_size %}
-            {{ dataset.sample_size }}
-            {% assign total_sample_size = total_sample_size | plus: dataset.sample_size %}
-          {% else %}
-            n/a
-          {% endif %}
-        </td>
-        <td>
-          {% if dataset.number_of_sessions %}
-            {{ dataset.number_of_sessions }}
-          {% else %}
-            n/a
+          {% if dataset.title == "Rockland Sample" %}
+            <a href="{{ site.baseurl }}/docs/datasets/NKI">NKI</a>
+          {% elsif dataset.title == "Healthy Brain Network" %}
+            <a href="{{ site.baseurl }}/docs/datasets/HBN">HBN</a>
+          {% elsif dataset.title == "Philadelphia Neurodevelopmental Cohort" %}
+            <a href="{{ site.baseurl }}/docs/datasets/PNC">PNC</a>
+          {% elsif dataset.title == "Developmental Chinese Color Nest Project" %}
+            <a href="{{ site.baseurl }}/docs/datasets/dCCNP">CCNP</a>
+          {% elsif dataset.title == "Human Connectome Project - Young Adult" %}
+            <a href="{{ site.baseurl }}/docs/datasets/HCP-YA">HCP-YA</a>
+          {% elsif dataset.title == "28andHe" %}
+            <a href="{{ site.baseurl }}/docs/datasets/28andHe">28andHe</a>
+          {% elsif dataset.title == "28andMe" %}
+            <a href="{{ site.baseurl }}/docs/datasets/28andMe">28andMe</a>
+          {% elsif dataset.title == "cneuromod" %}
+            <a href="{{ site.baseurl }}/docs/datasets/cneuromod">cneuromod</a>
+          {% elsif dataset.title == "Midnight Scan Club" %}
+            <a href="{{ site.baseurl }}/docs/datasets/midnight_scan_club">Midnight Scan Club</a>
+          {% elsif dataset.title == "Mobile Phenomics Pilot" %}
+            <a href="{{ site.baseurl }}/docs/datasets/mobile_phenomics_pilot">Mobile Phenomics Pilot</a>
           {% endif %}
         </td>
         <td>
@@ -77,17 +75,8 @@ See below for details regarding each dataset.
           {% endif %}
         </td>
         <td>
-          {% if dataset.smri_count %}
-            {{ dataset.smri_count }}
-            {% assign total_smri_count = total_smri_count | plus: dataset.smri_count %}
-          {% else %}
-            n/a
-          {% endif %}
-        </td>
-        <td>
-          {% if dataset.fmri_count %}
-            {{ dataset.fmri_count }}
-            {% assign total_fmri_count = total_fmri_count | plus: dataset.fmri_count %}
+          {% if dataset.sample_size %}
+            {{ dataset.sample_size }}
           {% else %}
             n/a
           {% endif %}
@@ -95,23 +84,21 @@ See below for details regarding each dataset.
         <td>
           {% if dataset.number_of_sessions %}
             {{ dataset.number_of_sessions }}
-            {% assign total_number_of_sessions = total_number_of_sessions | plus: dataset.number_of_sessions %}
+          {% else %}
+            n/a
+          {% endif %}
+        </td>
+        <td>
+          {% if dataset.num_site %}
+            {{ dataset.num_site }}
           {% else %}
             n/a
           {% endif %}
         </td>
       </tr>
     {% endfor %}
-    <tr>
-      <td colspan="4">Total</td>
-      <td>{{ total_sample_size }}</td>
-      <td> {{total_number_of_sessions }}</td>
-      <td></td>
-      <td>{{ total_smri_count }}</td>
-      <td>{{ total_fmri_count }}</td>
-    </tr>
+
   </tbody>
 </table>
 
-A notebook summarizing RBC demographics can be found <a href="{{ site.baseurl }}/assets/sanity_checks_RBC_demographics.html">here</a>!
 </body>

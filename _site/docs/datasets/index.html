@@ -9,7 +9,7 @@
   <head>
     <meta charset="utf-8">
 
-<!-- begin _includes/seo.html --><title>Datasets in RBC - RBC</title>
+<!-- begin _includes/seo.html --><title>AI2D Datasets - RBC</title>
 <meta name="description" content="The official website for the Reproducible Brain Charts project.">
 
 
@@ -17,7 +17,7 @@
 <meta property="og:type" content="website">
 <meta property="og:locale" content="en_US">
 <meta property="og:site_name" content="RBC">
-<meta property="og:title" content="Datasets in RBC">
+<meta property="og:title" content="AI2D Datasets">
 <meta property="og:url" content="http://localhost:4000/AI2D/docs/datasets/">
 
 
@@ -117,24 +117,8 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarToggler">
             <ul class="navbar-nav ml-auto">
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" id="navbarDropdown-Studies" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                Studies
-                            </a>
-                            <div class="dropdown-menu" aria-labelledby="navbarDropdown-Studies">
-                                
-                                    <a class="nav-link dropdown-item" href="/AI2D/docs/datasets">Overview</a>
-                                
-                                
-                                    <a class="nav-link dropdown-item" href="/AI2D/docs/datasets/dCCNP">dCCNP</a>
-                                
-                                    <a class="nav-link dropdown-item" href="/AI2D/docs/datasets/HBN">HBN</a>
-                                
-                                    <a class="nav-link dropdown-item" href="/AI2D/docs/datasets/NKI">NKI</a>
-                                
-                                    <a class="nav-link dropdown-item" href="/AI2D/docs/datasets/PNC">PNC</a>
-                                
-                            </div>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/AI2D/docs/datasets">Datasets</a>
                         </li>
                     
                 
@@ -147,17 +131,19 @@
                                     <a class="nav-link dropdown-item" href="/AI2D/docs/imaging">Overview</a>
                                 
                                 
-                                    <a class="nav-link dropdown-item" href="/AI2D/docs/imaging/image_acquisition">Image Acquisition</a>
+                                    <a class="nav-link dropdown-item" href="/AI2D/docs/imaging/image_curation">Image Curation: CuBIDS</a>
                                 
-                                    <a class="nav-link dropdown-item" href="/AI2D/docs/imaging/image_curation">Image Curation</a>
+                                    <a class="nav-link dropdown-item" href="/AI2D/docs/imaging/image_babs">Image Processing: BABS</a>
                                 
-                                    <a class="nav-link dropdown-item" href="/AI2D/docs/imaging/image_processing">Image Processing</a>
+                                    <a class="nav-link dropdown-item" href="/AI2D/docs/imaging/image_smriprep">sMRIPrep</a>
                                 
-                                    <a class="nav-link dropdown-item" href="/AI2D/docs/imaging/image_structural_qa">Structural Image Quality</a>
+                                    <a class="nav-link dropdown-item" href="/AI2D/docs/imaging/image_fmriprep">fMRIPrep</a>
                                 
-                                    <a class="nav-link dropdown-item" href="/AI2D/docs/imaging/image_diffusion_qa">Diffusion Image Quality</a>
+                                    <a class="nav-link dropdown-item" href="/AI2D/docs/imaging/image_xcpd">XCP-D</a>
                                 
-                                    <a class="nav-link dropdown-item" href="/AI2D/docs/imaging/image_functional_qa">Functional Image Quality</a>
+                                    <a class="nav-link dropdown-item" href="/AI2D/docs/imaging/image_qsiprep">QSIPrep</a>
+                                
+                                    <a class="nav-link dropdown-item" href="/AI2D/docs/imaging/image_qsirecon">QSIRecon</a>
                                 
                             </div>
                         </li>
@@ -195,14 +181,11 @@
 
   <div class="archive">
     <br/>
-<h1> Overview </h1>
+<h1> Datasets Overview </h1>
 
 <body>
-See below for details regarding each dataset.
 
 <hr/>
-
-
 
 
 
@@ -211,66 +194,91 @@ See below for details regarding each dataset.
     <tr>
       <th>Dataset</th>
       <th>Institution</th>
-      <th>Number of Sites</th>
-      <th>PI</th>
+      <th>Principal Investigators</th>
+      <th>Study Page</th>
+      <th>Average Age</th>
       <th>Sample Size</th>
       <th>Number of Sessions</th>
-      <th>Average age</th>
-      <th>Structural MRI Sessions</th>
-      <th>Functional MRI Sessions</th>
+      <th>Number of Sites</th>
     </tr>
   </thead>
   <tbody>
     
+    
       <tr>
-        <td><a href="https://www.sciencedirect.com/science/article/pii/S1878929321001109">Developmental Chinese Color Nest Project</a></td>
+        <td><a href="https://healthybrainnetwork.org/">Healthy Brain Network</a></td>
         <td>
           
-            Beijing Normal University
+            Child Mind Institute
+          
+        </td>
+        <td>
+          
+            Michael Milham
+          
+        </td>
+        <td>
+          
+            <a href="/AI2D/docs/datasets/HBN">HBN</a>
+          
+        </td>
+        <td>
+          
+            10.4
+          
+        </td>
+        <td>
+          
+            2611
+          
+        </td>
+        <td>
+          
+            2611
+          
+        </td>
+        <td>
+          
+            4
+          
+        </td>
+      </tr>
+    
+      <tr>
+        <td><a href="https://rocklandsample.org/">Rockland Sample</a></td>
+        <td>
+          
+            Nathan Kline Institute
+          
+        </td>
+        <td>
+          
+            Michael Milham<br>Stan Colcombe
+          
+        </td>
+        <td>
+          
+            <a href="/AI2D/docs/datasets/NKI">NKI</a>
+          
+        </td>
+        <td>
+          
+            36.6
+          
+        </td>
+        <td>
+          
+            1329
+          
+        </td>
+        <td>
+          
+            2306
           
         </td>
         <td>
           
             1
-          
-        </td>
-        <td>
-          
-            Xi-Nian Zuo
-          
-        </td>
-        <td>
-          
-            195
-            
-          
-        </td>
-        <td>
-          
-            195
-          
-        </td>
-        <td>
-          
-            11.9
-          
-        </td>
-        <td>
-          
-            195
-            
-          
-        </td>
-        <td>
-          
-            195
-            
-          
-        </td>
-        <td>
-          
-            195
-            
           
         </td>
       </tr>
@@ -284,23 +292,12 @@ See below for details regarding each dataset.
         </td>
         <td>
           
-            1
-          
-        </td>
-        <td>
-          
             Raquel Gur
           
         </td>
         <td>
           
-            1601
-            
-          
-        </td>
-        <td>
-          
-            1601
+            <a href="/AI2D/docs/datasets/PNC">PNC</a>
           
         </td>
         <td>
@@ -311,28 +308,79 @@ See below for details regarding each dataset.
         <td>
           
             1601
-            
-          
-        </td>
-        <td>
-          
-            1561
-            
           
         </td>
         <td>
           
             1601
-            
+          
+        </td>
+        <td>
+          
+            1
           
         </td>
       </tr>
     
       <tr>
-        <td><a href="http://fcon_1000.projects.nitrc.org/indi/enhanced/">Rockland Sample</a></td>
+        <td><a href="https://www.sciencedirect.com/science/article/pii/S1878929321001109">Developmental Chinese Color Nest Project</a></td>
         <td>
           
-            Nathan Kline Institute
+            Beijing Normal University
+          
+        </td>
+        <td>
+          
+            Xi-Nian Zuo
+          
+        </td>
+        <td>
+          
+            <a href="/AI2D/docs/datasets/dCCNP">CCNP</a>
+          
+        </td>
+        <td>
+          
+            11.9
+          
+        </td>
+        <td>
+          
+            195
+          
+        </td>
+        <td>
+          
+            195
+          
+        </td>
+        <td>
+          
+            1
+          
+        </td>
+      </tr>
+    
+      <tr>
+        <td><a href="https://jacobs.psych.ucsb.edu/">28andHe</a></td>
+        <td>
+          
+            University of California, Santa Barbara
+          
+        </td>
+        <td>
+          
+            Emily Jacobs
+          
+        </td>
+        <td>
+          
+            <a href="/AI2D/docs/datasets/28andHe">28andHe</a>
+          
+        </td>
+        <td>
+          
+            24.0
           
         </td>
         <td>
@@ -342,110 +390,215 @@ See below for details regarding each dataset.
         </td>
         <td>
           
-            Michael Milham<br>Stan Colcombe
+            30
           
         </td>
         <td>
           
-            1329
-            
-          
-        </td>
-        <td>
-          
-            2306
-          
-        </td>
-        <td>
-          
-            36.6
-          
-        </td>
-        <td>
-          
-            2271
-            
-          
-        </td>
-        <td>
-          
-            2268
-            
-          
-        </td>
-        <td>
-          
-            2306
-            
+            1
           
         </td>
       </tr>
     
       <tr>
-        <td><a href="https://healthybrainnetwork.org/">Healthy Brain Network</a></td>
+        <td><a href="https://jacobs.psych.ucsb.edu/">28andMe</a></td>
         <td>
           
-            Child Mind Institute
+            University of California, Santa Barbara
           
         </td>
         <td>
           
-            4
+            Emily Jacobs
           
         </td>
         <td>
           
-            Michael Milham
+            <a href="/AI2D/docs/datasets/28andMe">28andMe</a>
           
         </td>
         <td>
           
-            2611
-            
+            23.0
           
         </td>
         <td>
           
-            2611
+            1
           
         </td>
         <td>
           
-            10.4
+            60
           
         </td>
         <td>
           
-            2565
-            
-          
-        </td>
-        <td>
-          
-            2487
-            
-          
-        </td>
-        <td>
-          
-            2611
-            
+            1
           
         </td>
       </tr>
     
-    <tr>
-      <td colspan="4">Total</td>
-      <td>5736</td>
-      <td> 6713</td>
-      <td></td>
-      <td>6632</td>
-      <td>6511</td>
-    </tr>
+      <tr>
+        <td><a href="https://www.humanconnectome.org/study/hcp-young-adult/overview">Human Connectome Project - Young Adult</a></td>
+        <td>
+          
+            Washington University in St. Louis
+          
+        </td>
+        <td>
+          
+            Kamil Ugurbil (UMinn)<br>David Van Essen (WashU)
+          
+        </td>
+        <td>
+          
+            <a href="/AI2D/docs/datasets/HCP-YA">HCP-YA</a>
+          
+        </td>
+        <td>
+          
+            28.8
+          
+        </td>
+        <td>
+          
+            1206
+          
+        </td>
+        <td>
+          
+            1206
+          
+        </td>
+        <td>
+          
+            1
+          
+        </td>
+      </tr>
+    
+      <tr>
+        <td><a href="https://www.cneuromod.ca/">cneuromod</a></td>
+        <td>
+          
+            Université de Montréal
+          
+        </td>
+        <td>
+          
+            Pierre Bellec
+          
+        </td>
+        <td>
+          
+            <a href="/AI2D/docs/datasets/cneuromod">cneuromod</a>
+          
+        </td>
+        <td>
+          
+            30.0
+          
+        </td>
+        <td>
+          
+            6
+          
+        </td>
+        <td>
+          
+            6
+          
+        </td>
+        <td>
+          
+            1
+          
+        </td>
+      </tr>
+    
+      <tr>
+        <td><a href="https://www.dosenlab.com/">Midnight Scan Club</a></td>
+        <td>
+          
+            Washington University in St. Louis
+          
+        </td>
+        <td>
+          
+            Nico Dosenbach
+          
+        </td>
+        <td>
+          
+            <a href="/AI2D/docs/datasets/midnight_scan_club">Midnight Scan Club</a>
+          
+        </td>
+        <td>
+          
+            24.0
+          
+        </td>
+        <td>
+          
+            10
+          
+        </td>
+        <td>
+          
+            10
+          
+        </td>
+        <td>
+          
+            1
+          
+        </td>
+      </tr>
+    
+      <tr>
+        <td><a href="https://www.ucsf.edu/">Mobile Phenomics Pilot</a></td>
+        <td>
+          
+            University of California, San Francisco
+          
+        </td>
+        <td>
+          
+            Melanie Rosen
+          
+        </td>
+        <td>
+          
+            <a href="/AI2D/docs/datasets/mobile_phenomics_pilot">Mobile Phenomics Pilot</a>
+          
+        </td>
+        <td>
+          
+            32.0
+          
+        </td>
+        <td>
+          
+            50
+          
+        </td>
+        <td>
+          
+            50
+          
+        </td>
+        <td>
+          
+            1
+          
+        </td>
+      </tr>
+    
+
   </tbody>
 </table>
 
-A notebook summarizing RBC demographics can be found <a href="/AI2D/assets/sanity_checks_RBC_demographics.html">here</a>!
 </body>
   </div>
 </div>
