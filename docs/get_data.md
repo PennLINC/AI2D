@@ -33,7 +33,7 @@ If the dataset is NOT open-access, follow these steps:
     - The level of access, in this case, you will need **read-only access**
     - The name of the user[s] to be given access (full name or login name). If you plan to store and analyze data in a CUBIC project, you should use **your project username**, not personal CUBIC username.
     - The full path to the project you need access to. You can find the project path for each study [here]({{ site.baseurl }}/docs/datasets/).
-2. Submit the approval from Dr. Satterthwaite — including the specified user name, project name, and type of access — as a PDF printout to help@cbica.upenn.edu.
+2. Submit the approval from Dr. Satterthwaite — including the specified user name, project name, and type of access — as a PDF printout to <span style="color: blue;">help@cbica.upenn.edu</span>.
 
 
 #### <span style="color: #7556b7;">Check whether the dataset you are interested in was processed with [BABS]({{  site.baseurl }}/docs/imaging/image_babs) or not (see example: [CCNP]({{ site.baseurl }}/docs/datasets/dCCNP/#dataset-summary)).

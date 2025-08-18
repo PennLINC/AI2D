@@ -15,8 +15,13 @@ details div { line-height: 1.6; }
 </div>
 
 <br/>
+<div style="margin: 10px 0;">
+<strong>Citation</strong><br/>
+Mehta, Kahini, Taylor Salo, Thomas J Madison, Azeez Adebimpe, Danielle S Bassett, Max Bertolero, Matthew Cieslak, et al. 2024. "XCP-D: A Robust Pipeline for the Post-Processing of fMRI Data." Imaging Neuroscience 2. MIT Press: 1–26. https://doi.org/10.1162/imag_a_00257.
+</div>
+
 <details style="margin: 10px 0;">
-<summary><strong>Citation (Click to expand/minimize)</strong></summary>
+<summary><strong>More citations (Click to expand/minimize)</strong></summary>
 <div style="padding: 10px 0; line-height: 1.6;">
 Abraham, Alexandre, Fabian Pedregosa, Michael Eickenberg, Philippe Gervais, Andreas Mueller, Jean Kossaifi, Alexandre Gramfort, Bertrand Thirion, and Gaël Varoquaux. 2014. “Machine Learning for Neuroimaging with Scikit-Learn.” Frontiers in Neuroinformatics. Frontiers, 14.
 <p style="margin: 2px 0;"></p>
@@ -58,8 +63,6 @@ King, Maedbh, Carlos R Hernandez-Castillo, Russell A Poldrack, Richard B Ivry, a
 <p style="margin: 2px 0;"></p>
 Marcus, Daniel S, John Harwell, Timothy Olsen, Michael Hodge, Matthew F Glasser, Fred Prior, Mark Jenkinson, Timothy Laumann, Sandra W Curtiss, and David C Van Essen. 2011. “Informatics and Data Mining Tools and Strategies for the Human Connectome Project.” Frontiers in Neuroinformatics 5. Frontiers Research Foundation: 4.
 <p style="margin: 2px 0;"></p>
-<strong>Mehta, Kahini, Taylor Salo, Thomas J Madison, Azeez Adebimpe, Danielle S Bassett, Max Bertolero, Matthew Cieslak, et al. 2024. "XCP-d: A Robust Pipeline for the Post-Processing of fMRI Data." Imaging Neuroscience 2. MIT Press: 1–26. https://doi.org/10.1162/imag_a_00257.</strong>
-<p style="margin: 2px 0;"></p>
 Najdenovska, Elena, Yasser Alemán-Gómez, Giovanni Battistella, Maxime Descoteaux, Patric Hagmann, Sebastien Jacquemont, Philippe Maeder, Jean-Philippe Thiran, Eleonora Fornari, and Meritxell Bach Cuadra. 2018. “In-Vivo Probabilistic Atlas of Human Thalamic Nuclei Based on Diffusion-Weighted Magnetic Resonance Imaging.” Scientific Data 5 (1). Nature Publishing Group: 1–11. https://doi.org/10.1038/sdata.2018.270.
 <p style="margin: 2px 0;"></p>
 Pauli, Wolfgang M, Amanda N Nili, and J Michael Tyszka. 2018. “A High-Resolution Probabilistic in Vivo Atlas of Human Subcortical Brain Nuclei.” Scientific Data 5 (1). Nature Publishing Group: 1–13. https://doi.org/10.1038/sdata.2018.63.
@@ -92,5 +95,5 @@ Preprocessed BOLD data ([fMRIPrep outputs]({{ site.baseurl }}/docs/imaging/image
 
 (coming soon/need finalize)
 
-Functional data quality assurance included measures of in-scanner motion (framewise displacement, FD) and atlas-dependent coverage (the percentage of each parcel containing valid data). fMRI runs were excluded if their median FD exceeded **Q3+3*IQR** across the sample. In addition, parcels with less than 50% coverage were excluded from analyses, and runs with more than XXX excluded parcels were excluded. We provide FD, coverage, and many other quality metrics for all scans.
+Functional data quality assurance included measures of in-scanner motion (framewise displacement, FD) and atlas-dependent coverage (the percentage of each parcel containing valid data). fMRI runs were excluded if their median FD exceeded `Q3+3*IQR` across the sample. In addition, parcels with less than 50% coverage were excluded from analyses, and runs with more than XXX excluded parcels were excluded. We provide FD, coverage, and many other quality metrics for all scans.
 

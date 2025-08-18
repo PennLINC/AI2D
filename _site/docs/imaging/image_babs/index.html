@@ -241,9 +241,9 @@ Zhao, C., Jarecka, D., Covitz, S., Chen, Y., Eickhoff, S. B., Fair, D. A., … &
 <p>Zhao, C., Chen, Y., Jarecka, D., Ghosh, S., Cieslak, M., &amp; Satterthwaite, T. D. (2024). BABS in Action: Merging Reproducibility and Scalability for Large-Scale Neuroimaging Analysis With BIDS Apps. Biological Psychiatry, 95(10), S21-S22. doi:10.1016/j.biopsych.2024.02.056.</p>
 
 <p><br />
-Most of the AI2D datasets were processed using <strong><a href="https://pennlinc-babs.readthedocs.io/en/stable/">BABS</a></strong> (see example: <a href="/AI2D/docs/datasets/dCCNP/#dataset-summary">CCNP</a>).</p>
+Most of the AI2D datasets were processed using <strong><a href="https://pennlinc-babs.readthedocs.io/en/stable/">BABS</a></strong>. Knowing whether BABS was used for a dataset is important for determining how to access the data (see example: <a href="/AI2D/docs/datasets/dCCNP/#dataset-summary">CCNP</a>).</p>
 
-<p><strong>BABS</strong> implements the <a href="https://www.nature.com/articles/s41597-022-01163-2">“FAIRly-big” framework</a> (Wagner et al., 2021) for reproducible image processing, ensuring all data analyses using BIDS-apps were accompanied by a full audit trail in <a href="https://www.datalad.org/">Datalad</a> (Halchenko et al., 2021).</p>
+<p><strong>BABS</strong> implements the <a href="https://www.nature.com/articles/s41597-022-01163-2">“FAIRly-big” framework</a> (Wagner et al., 2021) for reproducible image processing, ensuring all data analyses were accompanied by a full audit trail in <a href="https://www.datalad.org/">Datalad</a> (Halchenko et al., 2021). For AI2D datasets, if <code class="language-plaintext highlighter-rouge">BABS == true</code> in the Dataset Summary, all BIDS-apps (e.g., fMRIPrep, XCP-D) were run using BABS.</p>
 
         
       </section>

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.3">Jekyll</generator><link href="http://localhost:4000/AI2D/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/AI2D/" rel="alternate" type="text/html" /><updated>2025-08-15T14:09:23-04:00</updated><id>http://localhost:4000/AI2D/feed.xml</id><title type="html">RBC</title><subtitle>The official website for the Reproducible Brain Charts project.</subtitle><author><name>{&quot;links&quot;=&gt;[{&quot;label&quot;=&gt;&quot;Email&quot;, &quot;icon&quot;=&gt;&quot;fas fa-fw fa-envelope-square&quot;}, {&quot;label&quot;=&gt;&quot;Website&quot;, &quot;icon&quot;=&gt;&quot;fas fa-fw fa-link&quot;}, {&quot;label&quot;=&gt;&quot;Twitter&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-twitter-square&quot;}, {&quot;label&quot;=&gt;&quot;Facebook&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-facebook-square&quot;}, {&quot;label&quot;=&gt;&quot;GitHub&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-github&quot;}, {&quot;label&quot;=&gt;&quot;Instagram&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-instagram&quot;}]}</name></author><entry><title type="html">Midnight Scan Club</title><link href="http://localhost:4000/AI2D/docs/datasets/midnight_scan_club/" rel="alternate" type="text/html" title="Midnight Scan Club" /><published>2025-08-16T00:00:00-04:00</published><updated>2025-08-16T00:00:00-04:00</updated><id>http://localhost:4000/AI2D/docs/datasets/midnight_scan_club</id><content type="html" xml:base="http://localhost:4000/AI2D/docs/datasets/midnight_scan_club/"><![CDATA[<div style="text-align: left;">
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.3">Jekyll</generator><link href="http://localhost:4000/AI2D/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/AI2D/" rel="alternate" type="text/html" /><updated>2025-08-18T10:52:48-04:00</updated><id>http://localhost:4000/AI2D/feed.xml</id><title type="html">RBC</title><subtitle>The official website for the Reproducible Brain Charts project.</subtitle><author><name>{&quot;links&quot;=&gt;[{&quot;label&quot;=&gt;&quot;Email&quot;, &quot;icon&quot;=&gt;&quot;fas fa-fw fa-envelope-square&quot;}, {&quot;label&quot;=&gt;&quot;Website&quot;, &quot;icon&quot;=&gt;&quot;fas fa-fw fa-link&quot;}, {&quot;label&quot;=&gt;&quot;Twitter&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-twitter-square&quot;}, {&quot;label&quot;=&gt;&quot;Facebook&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-facebook-square&quot;}, {&quot;label&quot;=&gt;&quot;GitHub&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-github&quot;}, {&quot;label&quot;=&gt;&quot;Instagram&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-instagram&quot;}]}</name></author><entry><title type="html">Midnight Scan Club</title><link href="http://localhost:4000/AI2D/docs/datasets/midnight_scan_club/" rel="alternate" type="text/html" title="Midnight Scan Club" /><published>2025-08-16T00:00:00-04:00</published><updated>2025-08-16T00:00:00-04:00</updated><id>http://localhost:4000/AI2D/docs/datasets/midnight_scan_club</id><content type="html" xml:base="http://localhost:4000/AI2D/docs/datasets/midnight_scan_club/"><![CDATA[<div style="text-align: left;">
      <img src="/AI2D/assets/images/logos/uc_berkeley.png" style="width: auto; height: 10vw;" />
 </div>
 
@@ -193,14 +193,15 @@ NIH Blueprint for Neuroscience Research</p>
 <div class="table" align="center">
 <table style="text-align: center;
 width:63%; font-size:90%; border: 1px solid black">
-<tr><th style="font-weight:bold">CUBIC Path</th><th style="font-weight:normal">/cbica/projects/pennlinc_rbc/datasets/HCP-YA</th><th style="font-weight:normal"></th></tr>
+<tr><th style="font-weight:bold">CUBIC Path</th><th style="font-weight:normal">/cbica/projects/pennlinc_hcpya/data</th><th style="font-weight:normal"></th></tr>
+<tr><th style="font-weight:bold">Open Access</th><th style="font-weight:normal">false</th><th style="font-weight:normal"></th></tr>
 <tr><th style="font-weight:bold">Sample Size</th><th style="font-weight:normal">1206</th><th style="font-weight:normal"></th></tr>
 <tr><th style="font-weight:bold">Number of Sessions</th><th style="font-weight:normal">1206</th><th style="font-weight:normal"></th></tr>
-<tr><th style="font-weight:bold"><a href="/AI2D/docs/imaging/image_curation/">CuBIDS</a></th><th style="font-weight:normal"><a href="https://pennlinc.github.io/HCP-YA_CUBIDS/">Complete</a></th><th style="font-weight:normal"></th></tr>
-<tr><th style="font-weight:bold"><a href="/AI2D/docs/imaging/image_babs/">BABS</a></th><th style="font-weight:normal">Complete</th><th style="font-weight:normal"></th></tr>
-<tr><th style="font-weight:bold">Average age</th><th style="font-weight:normal">28.8</th><th style="font-weight:normal"></th></tr>
-<tr><th style="font-weight:bold">% Female</th><th style="font-weight:normal">54</th><th style="font-weight:normal"></th></tr>
-<tr><th style="font-weight:bold">% Right Handed</th><th style="font-weight:normal">89</th><th style="font-weight:normal"></th></tr>
+<tr><th style="font-weight:bold"><a href="/AI2D/docs/imaging/image_curation/">CuBIDS</a></th><th style="font-weight:normal">false</th><th style="font-weight:normal"></th></tr>
+<tr><th style="font-weight:bold"><a href="/AI2D/docs/imaging/image_babs/">BABS</a></th><th style="font-weight:normal">Yes (FAIRly big)</th><th style="font-weight:normal"></th></tr>
+<tr><th style="font-weight:bold">Average age</th><th style="font-weight:normal">restricted data (range 22-35)</th><th style="font-weight:normal"></th></tr>
+<tr><th style="font-weight:bold">% Female</th><th style="font-weight:normal">restricted data</th><th style="font-weight:normal"></th></tr>
+<tr><th style="font-weight:bold">% Right Handed</th><th style="font-weight:normal">restricted data</th><th style="font-weight:normal"></th></tr>
 </table>
 </div>
 
@@ -208,6 +209,10 @@ width:63%; font-size:90%; border: 1px solid black">
 <br /></p>
 
 <h2 id="data-access">Data Access</h2>
+
+<p>The <code class="language-plaintext highlighter-rouge">pennlinc_hcpya</code> project on CUBIC is not open-access data. Access requires proof of ConnectomeDB registration and acceptance of the HCP open data terms (send email to <span style="color: blue;">Tien.Tong@PennMedicine.upenn.edu</span>).</p>
+
+<p><code class="language-plaintext highlighter-rouge">QSIRecon</code> was run on the minimally preprocessed data, which were downloaded on the fly and removed upon completion of the QSIRecon job.</p>
 
 <div class="table" align="center">
 <table style="text-align: center; width:100%; font-size:90%; border: 1px solid black">
@@ -220,30 +225,34 @@ width:63%; font-size:90%; border: 1px solid black">
 <th style="font-weight:bold; text-align: center;">Ephemeral Clone</th>
 </tr>
 <tr>
-<th style="font-weight:bold; text-align: center;"><a href="/AI2D/docs/imaging/image_qsiprep/">qSIPrep</a></th>
+<th style="font-weight:bold; text-align: center;"><a href="/AI2D/docs/imaging/image_xcpd/">XCP-D</a></th>
 <td style="font-weight:normal">1206</td>
-<td style="font-weight:normal">1206</td>
-<td style="font-weight:normal">qsiprep 0-19-1</td>
-<td style="font-weight:normal">/cbica/projects/pennlinc_rbc/datasets/HCP-YA/qsiprep-0-19-1-babs/output_ria#~data</td>
-<td style="font-weight:normal">/cbica/projects/pennlinc_rbc/datasets/HCP-YA/QSIPREP-0-19-1_zipped</td>
+<td style="font-weight:normal">1096</td>
+<td style="font-weight:normal">xcpd 0-9-1</td>
+<td style="font-weight:normal">ria+file:///cbica/projects/pennlinc_hcpya/data/rbc_xcpd/output_ria#~data</td>
+<td style="font-weight:normal">/cbica/projects/pennlinc_hcpya/data/rbc_xcpd/DANGER</td>
 </tr>
 <tr>
-<th style="font-weight:bold; text-align: center;"><a href="/AI2D/docs/imaging/image_qsirecon/">qSIRecon</a></th>
+<th style="font-weight:bold; text-align: center;"><a href="/AI2D/docs/imaging/image_qsirecon/">QSIRecon - Bundle Stats</a></th>
 <td style="font-weight:normal">1206</td>
+<td style="font-weight:normal">1064</td>
+<td style="font-weight:normal">qsirecon 1-0-0rc2</td>
+<td style="font-weight:normal">ria+file:///cbica/projects/pennlinc_hcpya/data/qsirecon/output_ria#~data</td>
+<td style="font-weight:normal">/cbica/projects/pennlinc_hcpya/data/qsirecon/DANGER</td>
+</tr>
+<tr>
+<th style="font-weight:bold; text-align: center;"><a href="/AI2D/docs/imaging/image_qsiprep/">QSIRecon - HSVS Matrix</a></th>
 <td style="font-weight:normal">1206</td>
-<td style="font-weight:normal">qsirecon 0-19-1</td>
-<td style="font-weight:normal">/cbica/projects/pennlinc_rbc/datasets/HCP-YA/qsirecon-0-19-1-babs/output_ria#~data</td>
-<td style="font-weight:normal">/cbica/projects/pennlinc_rbc/datasets/HCP-YA/QSIRECON-0-19-1_zipped</td>
+<td style="font-weight:normal">1064</td>
+<td style="font-weight:normal">qsirecon 1-0-0rc2</td>
+<td style="font-weight:normal">ria+file:///cbica/projects/pennlinc_hcpya/data/qsirecon_hsvs/output_ria#~data</td>
+<td style="font-weight:normal">/cbica/projects/pennlinc_hcpya/data/qsirecon_hsvs/DANGER</td>
 </tr>
 </table>
 </div>
 
 <p><br />
-<br /></p>
-
-<div style="text-align: center;">
-     <img src="/AI2D/assets/images/datasets/HCP_Flowchart.png" width="80%" height="auto" />
-</div>]]></content><author><name>{&quot;links&quot;=&gt;[{&quot;label&quot;=&gt;&quot;Email&quot;, &quot;icon&quot;=&gt;&quot;fas fa-fw fa-envelope-square&quot;}, {&quot;label&quot;=&gt;&quot;Website&quot;, &quot;icon&quot;=&gt;&quot;fas fa-fw fa-link&quot;}, {&quot;label&quot;=&gt;&quot;Twitter&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-twitter-square&quot;}, {&quot;label&quot;=&gt;&quot;Facebook&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-facebook-square&quot;}, {&quot;label&quot;=&gt;&quot;GitHub&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-github&quot;}, {&quot;label&quot;=&gt;&quot;Instagram&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-instagram&quot;}]}</name></author><category term="docs" /><category term="datasets" /><summary type="html"><![CDATA[HCP-YA]]></summary></entry><entry><title type="html">28andMe</title><link href="http://localhost:4000/AI2D/docs/datasets/28andMe/" rel="alternate" type="text/html" title="28andMe" /><published>2025-08-16T00:00:00-04:00</published><updated>2025-08-16T00:00:00-04:00</updated><id>http://localhost:4000/AI2D/docs/datasets/28andMe</id><content type="html" xml:base="http://localhost:4000/AI2D/docs/datasets/28andMe/"><![CDATA[<div style="text-align: left;">
+<br /></p>]]></content><author><name>{&quot;links&quot;=&gt;[{&quot;label&quot;=&gt;&quot;Email&quot;, &quot;icon&quot;=&gt;&quot;fas fa-fw fa-envelope-square&quot;}, {&quot;label&quot;=&gt;&quot;Website&quot;, &quot;icon&quot;=&gt;&quot;fas fa-fw fa-link&quot;}, {&quot;label&quot;=&gt;&quot;Twitter&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-twitter-square&quot;}, {&quot;label&quot;=&gt;&quot;Facebook&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-facebook-square&quot;}, {&quot;label&quot;=&gt;&quot;GitHub&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-github&quot;}, {&quot;label&quot;=&gt;&quot;Instagram&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-instagram&quot;}]}</name></author><category term="docs" /><category term="datasets" /><summary type="html"><![CDATA[HCP-YA]]></summary></entry><entry><title type="html">28andMe</title><link href="http://localhost:4000/AI2D/docs/datasets/28andMe/" rel="alternate" type="text/html" title="28andMe" /><published>2025-08-16T00:00:00-04:00</published><updated>2025-08-16T00:00:00-04:00</updated><id>http://localhost:4000/AI2D/docs/datasets/28andMe</id><content type="html" xml:base="http://localhost:4000/AI2D/docs/datasets/28andMe/"><![CDATA[<div style="text-align: left;">
      <img src="/AI2D/assets/images/logos/28andme.png" style="width: auto; height: 10vw;" />
 </div>
 
@@ -473,11 +482,11 @@ Tobe RH, MacKay-Brandt A, Lim R, Kramer M, Breland MM, Tu L, Tian Y, Trautman KD
 <div class="table" align="center">
 <table style="text-align: center;
 width:63%; font-size:90%; border: 1px solid black">
-<tr><th style="font-weight:bold">CUBIC Path</th><th style="font-weight:normal">/cbica/projects/pennlinc_rbc/datasets/NKI</th><th style="font-weight:normal"></th></tr>
+<tr><th style="font-weight:bold">CUBIC Path</th><th style="font-weight:normal">/cbica/projects/pennlinc_rbc/datasets/LINC_NKI</th><th style="font-weight:normal"></th></tr>
 <tr><th style="font-weight:bold">Sample Size</th><th style="font-weight:normal">1329</th><th style="font-weight:normal"></th></tr>
 <tr><th style="font-weight:bold">Number of Sessions</th><th style="font-weight:normal">2306</th><th style="font-weight:normal"></th></tr>
-<tr><th style="font-weight:bold"><a href="/AI2D/docs/imaging/image_curation/">CuBIDS</a></th><th style="font-weight:normal"><a href="https://pennlinc.github.io/NKI_CUBIDS/">Complete</a></th><th style="font-weight:normal"></th></tr>
-<tr><th style="font-weight:bold"><a href="/AI2D/docs/imaging/image_babs/">BABS</a></th><th style="font-weight:normal">Complete</th><th style="font-weight:normal"></th></tr>
+<tr><th style="font-weight:bold"><a href="/AI2D/docs/imaging/image_curation/">CuBIDS</a></th><th style="font-weight:normal"><a href="https://github.com/ReproBrainChart/NKI_BIDS/blob/main/study-NKI_desc-CuBIDS_summary.tsv">true</a></th><th style="font-weight:normal"></th></tr>
+<tr><th style="font-weight:bold"><a href="/AI2D/docs/imaging/image_babs/">BABS</a></th><th style="font-weight:normal">true</th><th style="font-weight:normal"></th></tr>
 <tr><th style="font-weight:bold">Average age</th><th style="font-weight:normal">36.6</th><th style="font-weight:normal"></th></tr>
 <tr><th style="font-weight:bold">% Female</th><th style="font-weight:normal">59</th><th style="font-weight:normal"></th></tr>
 <tr><th style="font-weight:bold">% Right Handed:</th><th style="font-weight:normal">87</th><th style="font-weight:normal"></th></tr>
@@ -502,36 +511,48 @@ width:63%; font-size:90%; border: 1px solid black">
 <tr>
 <th style="font-weight:bold; text-align: center;"><a href="/AI2D/docs/imaging/image_smriprep/">sMRIPrep</a></th>
 <td style="font-weight:normal">2271</td>
-<td style="font-weight:normal">2271</td>
-<td style="font-weight:normal">smriprep 24-1-1</td>
-<td style="font-weight:normal">/cbica/projects/pennlinc_rbc/datasets/NKI/fmriprep_anat-24-1-1-babs/output_ria#~data</td>
-<td style="font-weight:normal">/cbica/projects/pennlinc_rbc/datasets/NKI/FMRIPREP_ANAT-24-1-1_zipped</td>
+<td style="font-weight:normal">2263</td>
+<td style="font-weight:normal">fmriprep 24-1-1</td>
+<td style="font-weight:normal">ria+file:///cbica/projects/pennlinc_rbc/datasets/LINC_NKI/derivatives/fmriprep_anat-24-1-1-babs/output_ria#~data</td>
+<td style="font-weight:normal">/cbica/projects/pennlinc_rbc/datasets/LINC_NKI/derivatives/FMRIPREP_ANAT-24-1-1_zipped</td>
 </tr>
 <tr>
 <th style="font-weight:bold; text-align: center;"><a href="/AI2D/docs/imaging/image_fmriprep/">fMRIPrep</a></th>
 <td style="font-weight:normal">2268</td>
-<td style="font-weight:normal">2268</td>
+<td style="font-weight:normal">2260</td>
 <td style="font-weight:normal">fmriprep 24-1-1</td>
-<td style="font-weight:normal">/cbica/projects/pennlinc_rbc/datasets/NKI/fmriprep_func-24-1-1-babs/output_ria#~data</td>
-<td style="font-weight:normal">/cbica/projects/pennlinc_rbc/datasets/NKI/FMRIPREP_FUNC-24-1-1_zipped</td>
+<td style="font-weight:normal">ria+file:///cbica/projects/pennlinc_rbc/datasets/LINC_NKI/derivatives/fmriprep_func-24-1-1-babs/output_ria#~data</td>
+<td style="font-weight:normal">/cbica/projects/pennlinc_rbc/datasets/LINC_NKI/derivatives/FMRIPREP_FUNC-24-1-1_zipped</td>
 </tr>
 <tr>
 <th style="font-weight:bold; text-align: center;"><a href="/AI2D/docs/imaging/image_xcpd/">XCP-D</a></th>
 <td style="font-weight:normal">2268</td>
-<td style="font-weight:normal">2268</td>
+<td style="font-weight:normal">2260</td>
 <td style="font-weight:normal">xcpd 0-10-6</td>
-<td style="font-weight:normal">/cbica/projects/pennlinc_rbc/datasets/NKI/xcpd-0-10-6-babs/output_ria#~data</td>
-<td style="font-weight:normal">/cbica/projects/pennlinc_rbc/datasets/NKI/XCPD-0-10-6_zipped</td>
+<td style="font-weight:normal">ria+file:///cbica/projects/pennlinc_rbc/datasets/LINC_NKI/derivatives/xcpd-0-10-6-babs/output_ria#~data</td>
+<td style="font-weight:normal">/cbica/projects/pennlinc_rbc/datasets/LINC_NKI/derivatives/XCPD-0-10-6_zipped</td>
+</tr>
+<tr>
+<th style="font-weight:bold; text-align: center;"><a href="/AI2D/docs/imaging/image_qsirecon/">QSIPrep</a></th>
+<td style="font-weight:normal">2152</td>
+<td style="font-weight:normal">2148</td>
+<td style="font-weight:normal">qsiprep 1-0-0</td>
+<td style="font-weight:normal">ria+file:///cbica/projects/pennlinc_rbc/datasets/LINC_NKI/derivatives/qsiprep-1-0-0-babs/output_ria#~data</td>
+<td style="font-weight:normal">/cbica/projects/pennlinc_rbc/datasets/LINC_NKI/derivatives/QSIPREP-1-0-0_zipped</td>
+</tr>
+<tr>
+<th style="font-weight:bold; text-align: center;"><a href="/AI2D/docs/imaging/image_qsirecon/">QSIRecon - Bundle Stats</a></th>
+<td style="font-weight:normal">2152</td>
+<td style="font-weight:normal">2143</td>
+<td style="font-weight:normal">qsirecon 1-1-0</td>
+<td style="font-weight:normal">ria+file:///cbica/projects/pennlinc_rbc/datasets/LINC_NKI/derivatives/qsirecon-1-1-0_bundle-stats_babs/output_ria#~data</td>
+<td style="font-weight:normal">/cbica/projects/pennlinc_rbc/datasets/LINC_NKI/derivatives/QSIRECON-1-1-0_BUNDLE-STATS_zipped</td>
 </tr>
 </table>
 </div>
 
 <p><br />
-<br /></p>
-
-<div style="text-align: center;">
-     <img src="/AI2D/assets/images/datasets/NKI_Flowchart.png" width="80%" height="auto" />
-</div>]]></content><author><name>{&quot;links&quot;=&gt;[{&quot;label&quot;=&gt;&quot;Email&quot;, &quot;icon&quot;=&gt;&quot;fas fa-fw fa-envelope-square&quot;}, {&quot;label&quot;=&gt;&quot;Website&quot;, &quot;icon&quot;=&gt;&quot;fas fa-fw fa-link&quot;}, {&quot;label&quot;=&gt;&quot;Twitter&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-twitter-square&quot;}, {&quot;label&quot;=&gt;&quot;Facebook&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-facebook-square&quot;}, {&quot;label&quot;=&gt;&quot;GitHub&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-github&quot;}, {&quot;label&quot;=&gt;&quot;Instagram&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-instagram&quot;}]}</name></author><category term="docs" /><category term="datasets" /><summary type="html"><![CDATA[NKI Sample]]></summary></entry><entry><title type="html">Philadelphia Neurodevelopmental Cohort</title><link href="http://localhost:4000/AI2D/docs/datasets/PNC/" rel="alternate" type="text/html" title="Philadelphia Neurodevelopmental Cohort" /><published>2025-08-15T00:00:00-04:00</published><updated>2025-08-15T00:00:00-04:00</updated><id>http://localhost:4000/AI2D/docs/datasets/PNC</id><content type="html" xml:base="http://localhost:4000/AI2D/docs/datasets/PNC/"><![CDATA[<div style="text-align: left;">
+<br /></p>]]></content><author><name>{&quot;links&quot;=&gt;[{&quot;label&quot;=&gt;&quot;Email&quot;, &quot;icon&quot;=&gt;&quot;fas fa-fw fa-envelope-square&quot;}, {&quot;label&quot;=&gt;&quot;Website&quot;, &quot;icon&quot;=&gt;&quot;fas fa-fw fa-link&quot;}, {&quot;label&quot;=&gt;&quot;Twitter&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-twitter-square&quot;}, {&quot;label&quot;=&gt;&quot;Facebook&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-facebook-square&quot;}, {&quot;label&quot;=&gt;&quot;GitHub&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-github&quot;}, {&quot;label&quot;=&gt;&quot;Instagram&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-instagram&quot;}]}</name></author><category term="docs" /><category term="datasets" /><summary type="html"><![CDATA[NKI Sample]]></summary></entry><entry><title type="html">Philadelphia Neurodevelopmental Cohort</title><link href="http://localhost:4000/AI2D/docs/datasets/PNC/" rel="alternate" type="text/html" title="Philadelphia Neurodevelopmental Cohort" /><published>2025-08-15T00:00:00-04:00</published><updated>2025-08-15T00:00:00-04:00</updated><id>http://localhost:4000/AI2D/docs/datasets/PNC</id><content type="html" xml:base="http://localhost:4000/AI2D/docs/datasets/PNC/"><![CDATA[<div style="text-align: left;">
      <img src="/AI2D/assets/images/logos/university_of_pennsylvania.png" style="width: auto; height: 10vw;" />
      <img src="/AI2D/assets/images/logos/CHOP.png" style="width: auto; height: 10vw;" />
 </div>
@@ -558,11 +579,11 @@ RC2MH089983, RC2MH089924</p>
 <div class="table" align="center">
 <table style="text-align: center;
 width:63%; font-size:90%; border: 1px solid black">
-<tr><th style="font-weight:bold">CUBIC Path</th><th style="font-weight:normal">/cbica/projects/pennlinc_rbc/datasets/PNC</th><th style="font-weight:normal"></th></tr>
+<tr><th style="font-weight:bold">CUBIC Path</th><th style="font-weight:normal">/cbica/projects/pennlinc_rbc/datasets/LINC_PNC</th><th style="font-weight:normal"></th></tr>
 <tr><th style="font-weight:bold">Sample Size</th><th style="font-weight:normal">1601</th><th style="font-weight:normal"></th></tr>
 <tr><th style="font-weight:bold">Number of Sessions</th><th style="font-weight:normal">1601</th><th style="font-weight:normal"></th></tr>
-<tr><th style="font-weight:bold"><a href="/AI2D/docs/imaging/image_curation/">CuBIDS</a></th><th style="font-weight:normal"><a href="https://pennlinc.github.io/PNC_CUBIDS/">Complete</a></th><th style="font-weight:normal"></th></tr>
-<tr><th style="font-weight:bold"><a href="/AI2D/docs/imaging/image_babs/">BABS</a></th><th style="font-weight:normal">Complete</th><th style="font-weight:normal"></th></tr>
+<tr><th style="font-weight:bold"><a href="/AI2D/docs/imaging/image_curation/">CuBIDS</a></th><th style="font-weight:normal"><a href="https://github.com/ReproBrainChart/PNC_BIDS/blob/main/study-PNC_desc-CuBIDS_summary.tsv">true</a></th><th style="font-weight:normal"></th></tr>
+<tr><th style="font-weight:bold"><a href="/AI2D/docs/imaging/image_babs/">BABS</a></th><th style="font-weight:normal">true</th><th style="font-weight:normal"></th></tr>
 <tr><th style="font-weight:bold">Average age</th><th style="font-weight:normal">14.9</th><th style="font-weight:normal"></th></tr>
 <tr><th style="font-weight:bold">% Female</th><th style="font-weight:normal">52</th><th style="font-weight:normal"></th></tr>
 <tr><th style="font-weight:bold">% Right Handed:</th><th style="font-weight:normal">84</th><th style="font-weight:normal"></th></tr>
@@ -587,36 +608,48 @@ width:63%; font-size:90%; border: 1px solid black">
 <tr>
 <th style="font-weight:bold; text-align: center;"><a href="/AI2D/docs/imaging/image_smriprep/">sMRIPrep</a></th>
 <td style="font-weight:normal">1601</td>
-<td style="font-weight:normal">1601</td>
-<td style="font-weight:normal">smriprep 24-1-1</td>
-<td style="font-weight:normal">/cbica/projects/pennlinc_rbc/datasets/PNC/fmriprep_anat-24-1-1-babs/output_ria#~data</td>
-<td style="font-weight:normal">/cbica/projects/pennlinc_rbc/datasets/PNC/FMRIPREP_ANAT-24-1-1_zipped</td>
+<td style="font-weight:normal">1599</td>
+<td style="font-weight:normal">fmriprep 25-0-0</td>
+<td style="font-weight:normal">ria+file:///cbica/projects/pennlinc_rbc/datasets/LINC_PNC/derivatives/fmriprep_anat-25-0-0-babs/output_ria#~data</td>
+<td style="font-weight:normal">/cbica/projects/pennlinc_rbc/datasets/LINC_PNC/derivatives/FMRIPREP_ANAT-25-0-0_zipped</td>
 </tr>
 <tr>
 <th style="font-weight:bold; text-align: center;"><a href="/AI2D/docs/imaging/image_fmriprep/">fMRIPrep</a></th>
 <td style="font-weight:normal">1561</td>
 <td style="font-weight:normal">1561</td>
-<td style="font-weight:normal">fmriprep 24-1-1</td>
-<td style="font-weight:normal">/cbica/projects/pennlinc_rbc/datasets/PNC/fmriprep_func-24-1-1-babs/output_ria#~data</td>
-<td style="font-weight:normal">/cbica/projects/pennlinc_rbc/datasets/PNC/FMRIPREP_FUNC-24-1-1_zipped</td>
+<td style="font-weight:normal">fmriprep 25-0-0</td>
+<td style="font-weight:normal">ria+file:///cbica/projects/pennlinc_rbc/datasets/LINC_PNC/derivatives/fmriprep_func-25-0-0-babs/output_ria#~data</td>
+<td style="font-weight:normal">/cbica/projects/pennlinc_rbc/datasets/LINC_PNC/derivatives/FMRIPREP_FUNC-25-0-0_zipped</td>
 </tr>
 <tr>
 <th style="font-weight:bold; text-align: center;"><a href="/AI2D/docs/imaging/image_xcpd/">XCP-D</a></th>
 <td style="font-weight:normal">1561</td>
 <td style="font-weight:normal">1561</td>
 <td style="font-weight:normal">xcpd 0-10-6</td>
-<td style="font-weight:normal">/cbica/projects/pennlinc_rbc/datasets/PNC/xcpd-0-10-6-babs/output_ria#~data</td>
-<td style="font-weight:normal">/cbica/projects/pennlinc_rbc/datasets/PNC/XCPD-0-10-6_zipped</td>
+<td style="font-weight:normal">ria+file:///cbica/projects/pennlinc_rbc/datasets/LINC_PNC/derivatives/xcpd-0-10-6-babs/output_ria#~data</td>
+<td style="font-weight:normal">/cbica/projects/pennlinc_rbc/datasets/LINC_PNC/derivatives/XCPD-0-10-6_zipped</td>
+</tr>
+<tr>
+<th style="font-weight:bold; text-align: center;"><a href="/AI2D/docs/imaging/image_qsirecon/">QSIPrep</a></th>
+<td style="font-weight:normal">1409</td>
+<td style="font-weight:normal">1406</td>
+<td style="font-weight:normal">qsiprep 1-0-0rc1</td>
+<td style="font-weight:normal">ria+file:///cbica/projects/pennlinc_rbc/datasets/LINC_PNC/derivatives/qsiprep-1-0-0rc1-babs/output_ria#~data</td>
+<td style="font-weight:normal">/cbica/projects/pennlinc_rbc/datasets/LINC_PNC/derivatives/QSIPREP-1-0-0rc1_zipped</td>
+</tr>
+<tr>
+<th style="font-weight:bold; text-align: center;"><a href="/AI2D/docs/imaging/image_qsirecon/">QSIRecon - Bundle Stats</a></th>
+<td style="font-weight:normal">1409</td>
+<td style="font-weight:normal">1406</td>
+<td style="font-weight:normal">qsirecon 1-1-0</td>
+<td style="font-weight:normal">ria+file:///cbica/projects/pennlinc_rbc/datasets/LINC_PNC/derivatives/qsirecon-1-1-0_bundle-stats_babs/output_ria#~data</td>
+<td style="font-weight:normal">/cbica/projects/pennlinc_rbc/datasets/LINC_PNC/derivatives/QSIRECON-1-1-0_BUNDLE-STATS_zipped</td>
 </tr>
 </table>
 </div>
 
 <p><br />
-<br /></p>
-
-<div style="text-align: center;">
-     <img src="/AI2D/assets/images/datasets/PNC_Flowchart.png" width="80%" height="auto" />
-</div>]]></content><author><name>{&quot;links&quot;=&gt;[{&quot;label&quot;=&gt;&quot;Email&quot;, &quot;icon&quot;=&gt;&quot;fas fa-fw fa-envelope-square&quot;}, {&quot;label&quot;=&gt;&quot;Website&quot;, &quot;icon&quot;=&gt;&quot;fas fa-fw fa-link&quot;}, {&quot;label&quot;=&gt;&quot;Twitter&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-twitter-square&quot;}, {&quot;label&quot;=&gt;&quot;Facebook&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-facebook-square&quot;}, {&quot;label&quot;=&gt;&quot;GitHub&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-github&quot;}, {&quot;label&quot;=&gt;&quot;Instagram&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-instagram&quot;}]}</name></author><category term="docs" /><category term="datasets" /><summary type="html"><![CDATA[PNC]]></summary></entry><entry><title type="html">Developmental Chinese Color Nest Project</title><link href="http://localhost:4000/AI2D/docs/datasets/dCCNP/" rel="alternate" type="text/html" title="Developmental Chinese Color Nest Project" /><published>2025-08-15T00:00:00-04:00</published><updated>2025-08-15T00:00:00-04:00</updated><id>http://localhost:4000/AI2D/docs/datasets/dCCNP</id><content type="html" xml:base="http://localhost:4000/AI2D/docs/datasets/dCCNP/"><![CDATA[<div style="text-align: left;">
+<br /></p>]]></content><author><name>{&quot;links&quot;=&gt;[{&quot;label&quot;=&gt;&quot;Email&quot;, &quot;icon&quot;=&gt;&quot;fas fa-fw fa-envelope-square&quot;}, {&quot;label&quot;=&gt;&quot;Website&quot;, &quot;icon&quot;=&gt;&quot;fas fa-fw fa-link&quot;}, {&quot;label&quot;=&gt;&quot;Twitter&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-twitter-square&quot;}, {&quot;label&quot;=&gt;&quot;Facebook&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-facebook-square&quot;}, {&quot;label&quot;=&gt;&quot;GitHub&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-github&quot;}, {&quot;label&quot;=&gt;&quot;Instagram&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-instagram&quot;}]}</name></author><category term="docs" /><category term="datasets" /><summary type="html"><![CDATA[PNC]]></summary></entry><entry><title type="html">Developmental Chinese Color Nest Project</title><link href="http://localhost:4000/AI2D/docs/datasets/dCCNP/" rel="alternate" type="text/html" title="Developmental Chinese Color Nest Project" /><published>2025-08-15T00:00:00-04:00</published><updated>2025-08-15T00:00:00-04:00</updated><id>http://localhost:4000/AI2D/docs/datasets/dCCNP</id><content type="html" xml:base="http://localhost:4000/AI2D/docs/datasets/dCCNP/"><![CDATA[<div style="text-align: left;">
      <img src="/AI2D/assets/images/logos/beijing_normal_university.png" style="width: auto; height: 10vw;" />
 </div>
 

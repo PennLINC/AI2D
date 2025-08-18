@@ -18,31 +18,31 @@ var store = [{
         "teaser": null
       },{
         "title": "Functional Data Preprocessing",
-        "excerpt":"Citation (Click to expand/minimize) Abraham, Alexandre, Fabian Pedregosa, Michael Eickenberg, Philippe Gervais, Andreas Mueller, Jean Kossaifi, Alexandre Gramfort, Bertrand Thirion, and Gael Varoquaux. 2014. “Machine Learning for Neuroimaging with Scikit-Learn.” Frontiers in Neuroinformatics 8. https://doi.org/10.3389/fninf.2014.00014. Andersson, Jesper L. R., Stefan Skare, and John Ashburner. 2003. “How to Correct Susceptibility Distortions...","categories": ["docs","imaging"],
+        "excerpt":"Citation Esteban, Oscar, Christopher Markiewicz, Ross W Blair, Craig Moodie, Ayse Ilkay Isik, Asier Erramuzpe Aliaga, James Kent, et al. 2019. “fMRIPrep: A Robust Preprocessing Pipeline for Functional MRI.” Nature Methods 16: 111–16. https://doi.org/10.1038/s41592-018-0235-4. More citations (Click to expand/minimize) Abraham, Alexandre, Fabian Pedregosa, Michael Eickenberg, Philippe Gervais, Andreas Mueller, Jean...","categories": ["docs","imaging"],
         "tags": [],
         "url": "/AI2D/docs/imaging/image_fmriprep/",
         "teaser": null
       },{
         "title": "Diffusion Data Preprocessing",
-        "excerpt":"Citation (Click to expand/minimize) Abraham, Alexandre, Fabian Pedregosa, Michael Eickenberg, Philippe Gervais, Andreas Mueller, Jean Kossaifi, Alexandre Gramfort, Bertrand Thirion, and Gael Varoquaux. 2014. “Machine Learning for Neuroimaging with Scikit-Learn.” Frontiers in Neuroinformatics 8. https://doi.org/10.3389/fninf.2014.00014. Andersson, Jesper LR, Mark S Graham, Enikő Zsoldos, and Stamatios N Sotiropoulos. 2016. “Incorporating Outlier...","categories": ["docs","imaging"],
+        "excerpt":"Citation Cieslak, Matthew, Philip A Cook, Xiaosong He, Fang-Cheng Yeh, Thijs Dhollander, Azeez Adebimpe, Geoffrey K Aguirre, et al. 2021. “QSIPrep: An Integrative Platform for Preprocessing and Reconstructing Diffusion Mri Data.” Nature Methods 18 (7). Nature Publishing Group US New York: 775–78. https://doi.org/10.1038/s41592-021-01185-5. More citations (Click to expand/minimize) Abraham, Alexandre,...","categories": ["docs","imaging"],
         "tags": [],
         "url": "/AI2D/docs/imaging/image_qsiprep/",
         "teaser": null
       },{
         "title": "Diffusion Data Reconstruction",
-        "excerpt":"Citation (Click to expand/minimize) Abraham, Alexandre, Fabian Pedregosa, Michael Eickenberg, Philippe Gervais, Andreas Mueller, Jean Kossaifi, Alexandre Gramfort, Bertrand Thirion, and Gael Varoquaux. 2014. “Machine Learning for Neuroimaging with Scikit-Learn.” Frontiers in Neuroinformatics 8. https://doi.org/10.3389/fninf.2014.00014. Cieslak, Matthew, Philip A Cook, Xiaosong He, Fang-Cheng Yeh, Thijs Dhollander, Azeez Adebimpe, Geoffrey K...","categories": ["docs","imaging"],
+        "excerpt":"Citation Cieslak, Matthew, Philip A Cook, Xiaosong He, Fang-Cheng Yeh, Thijs Dhollander, Azeez Adebimpe, Geoffrey K Aguirre, et al. 2021. “QSIPrep: An Integrative Platform for Preprocessing and Reconstructing Diffusion Mri Data.” Nature Methods 18 (7). Nature Publishing Group US New York: 775–78. https://doi.org/10.1038/s41592-021-01185-5. More citations (Click to expand/minimize) Abraham, Alexandre,...","categories": ["docs","imaging"],
         "tags": [],
         "url": "/AI2D/docs/imaging/image_qsirecon/",
         "teaser": null
       },{
         "title": "Structural Data Analysis",
-        "excerpt":"Citation (Click to expand/minimize) Abraham, Alexandre, Fabian Pedregosa, Michael Eickenberg, Philippe Gervais, Andreas Mueller, Jean Kossaifi, Alexandre Gramfort, Bertrand Thirion, and Gael Varoquaux. 2014. “Machine Learning for Neuroimaging with Scikit-Learn.” Frontiers in Neuroinformatics 8. https://doi.org/10.3389/fninf.2014.00014. Avants, B. B., C. L. Epstein, M. Grossman, and J. C. Gee. 2008. “Symmetric Diffeomorphic...","categories": ["docs","imaging"],
+        "excerpt":"Citation Esteban, Oscar, Christopher Markiewicz, Ross W Blair, Craig Moodie, Ayse Ilkay Isik, Asier Erramuzpe Aliaga, James Kent, et al. 2019. \"fMRIPrep: A Robust Preprocessing Pipeline for Functional MRI.\" Nature Methods 16: 111–16. https://doi.org/10.1038/s41592-018-0235-4. More citations (Click to expand/minimize) Abraham, Alexandre, Fabian Pedregosa, Michael Eickenberg, Philippe Gervais, Andreas Mueller, Jean...","categories": ["docs","imaging"],
         "tags": [],
         "url": "/AI2D/docs/imaging/image_smriprep/",
         "teaser": null
       },{
         "title": "Functional Data Analysis",
-        "excerpt":"Citation (Click to expand/minimize) Abraham, Alexandre, Fabian Pedregosa, Michael Eickenberg, Philippe Gervais, Andreas Mueller, Jean Kossaifi, Alexandre Gramfort, Bertrand Thirion, and Gaël Varoquaux. 2014. “Machine Learning for Neuroimaging with Scikit-Learn.” Frontiers in Neuroinformatics. Frontiers, 14. Avants, Brian B, Nick Tustison, Gang Song, and others. 2009. “Advanced Normalization Tools (Ants).” Insight...","categories": ["docs","imaging"],
+        "excerpt":"Citation Mehta, Kahini, Taylor Salo, Thomas J Madison, Azeez Adebimpe, Danielle S Bassett, Max Bertolero, Matthew Cieslak, et al. 2024. \"XCP-D: A Robust Pipeline for the Post-Processing of fMRI Data.\" Imaging Neuroscience 2. MIT Press: 1–26. https://doi.org/10.1162/imag_a_00257. More citations (Click to expand/minimize) Abraham, Alexandre, Fabian Pedregosa, Michael Eickenberg, Philippe Gervais,...","categories": ["docs","imaging"],
         "tags": [],
         "url": "/AI2D/docs/imaging/image_xcpd/",
         "teaser": null

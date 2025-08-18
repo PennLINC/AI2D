@@ -24,7 +24,8 @@ Covitz, S., Tapera, T. M., Adebimpe, A., Alexander-Bloch, A. F., Bertolero, M. A
 **[CuBIDS](https://cubids.readthedocs.io/en/latest/)** (Covitz et al., 2022) 
 CuBIDS is a sanity preserving workflow that summarizes the heterogeneity in a MRI BIDS dataset, helps prepare MRI datasets for preprocessing, and helps users perform metadata-based quality control on MRI BIDS data.
 
-CuBIDS was run for each dataset in the [Reproducible Brain Chart (RBC)](https://reprobrainchart.github.io/). A CuBIDS summary was created that provides an opportunity to evaluate the data and decide how to handle heterogeneity by grouping the scans on the basis of metadata.
+CuBIDS was run for each dataset in the [Reproducible Brain Chart (RBC) study](https://reprobrainchart.github.io/): HBN, NKI, PNC, CCNP. A CuBIDS summary was created that provides an opportunity to evaluate the data and decide how to handle heterogeneity by grouping the scans on the basis of metadata.
+
 You can find the link to each of the CuBIDS summaries for each study below.
 More information about how to interpret CuBIDS summaries can be found [here](https://cubids.readthedocs.io/en/latest/).
 

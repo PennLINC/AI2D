@@ -15,8 +15,13 @@ details div { line-height: 1.6; }
 </div>
 
 <br/>
+<div style="margin: 10px 0;">
+<strong>Citation</strong><br/>
+Cieslak, Matthew, Philip A Cook, Xiaosong He, Fang-Cheng Yeh, Thijs Dhollander, Azeez Adebimpe, Geoffrey K Aguirre, et al. 2021. “QSIPrep: An Integrative Platform for Preprocessing and Reconstructing Diffusion Mri Data.” Nature Methods 18 (7). Nature Publishing Group US New York: 775–78. https://doi.org/10.1038/s41592-021-01185-5.
+</div>
+
 <details style="margin: 10px 0;">
-<summary><strong>Citation (Click to expand/minimize)</strong></summary>
+<summary><strong>More citations (Click to expand/minimize)</strong></summary>
 <div style="padding: 10px 0; line-height: 1.6;">
 Abraham, Alexandre, Fabian Pedregosa, Michael Eickenberg, Philippe Gervais, Andreas Mueller, Jean Kossaifi, Alexandre Gramfort, Bertrand Thirion, and Gael Varoquaux. 2014. “Machine Learning for Neuroimaging with Scikit-Learn.” Frontiers in Neuroinformatics 8. https://doi.org/10.3389/fninf.2014.00014.
 <p style="margin: 2px 0;"></p>
@@ -27,8 +32,6 @@ Andersson, Jesper LR, and Stamatios N Sotiropoulos. 2016. “An Integrated Appro
 Billot, Benjamin, Douglas N Greve, Oula Puonti, Axel Thielscher, Koen Van Leemput, Bruce Fischl, Adrian V Dalca, Juan Eugenio Iglesias, and others. 2023. “SynthSeg: Segmentation of Brain Mri Scans of Any Contrast and Resolution Without Retraining.” Medical Image Analysis 86. Elsevier: 102789.
 <p style="margin: 2px 0;"></p>
 Billot, Benjamin, Colin Magdamo, You Cheng, Steven E Arnold, Sudeshna Das, and Juan Eugenio Iglesias. 2023. “Robust Machine Learning Segmentation for Large-Scale Analysis of Heterogeneous Clinical Brain Mri Datasets.” Proceedings of the National Academy of Sciences 120 (9). National Acad Sciences: e2216399120.
-<p style="margin: 2px 0;"></p>
-<strong>Cieslak, Matthew, Philip A Cook, Xiaosong He, Fang-Cheng Yeh, Thijs Dhollander, Azeez Adebimpe, Geoffrey K Aguirre, et al. 2021. “QSIPrep: An Integrative Platform for Preprocessing and Reconstructing Diffusion Mri Data.” Nature Methods 18 (7). Nature Publishing Group US New York: 775–78. https://doi.org/10.1038/s41592-021-01185-5.</strong>
 <p style="margin: 2px 0;"></p>
 Cordero-Grande, Lucilio, Daan Christiaens, Jana Hutter, Anthony N Price, and Jo V Hajnal. 2019. “Complex Diffusion-Weighted Image Estimation via Matrix Recovery Under General Noise Models.” Neuroimage 200. Elsevier: 391–404. https://doi.org/10.1016/j.neuroimage.2019.06.039.
 <p style="margin: 2px 0;"></p>
@@ -72,7 +75,7 @@ QSIPrep outputs several quality assurance metrics, including:
 - `mean_fd`: Mean framewise displacement (FD) reflecting average head motion during the scan
 
 Outliers detections (for exclusion): 
-- greater than Q3+3xIQR (`t1_num_bad_slices`, `mean_fd`)
-- less than Q1-3xIQR(`t1_neighbor_corr`, `t1_dwi_contrast`, `t1_dice_distance`)
-- For each dMRI run, count the number of metrics flagged as outliers (possible range: 0–5).
-- Exclude runs if outliers_sum > XXX.
+- greater than `Q3+3*IQR` (for `t1_num_bad_slices`, `mean_fd`)
+- less than `Q1-3*IQR`(for `t1_neighbor_corr`, `t1_dwi_contrast`, `t1_dice_distance`)
+- For each dMRI run, count the number of metrics flagged as outliers (`outliers_sum`, possible range: 0–5).
+- All AI2D data processed with QSIPrep include this dMRI QC, and users may filter low-quality data using `outliers_sum`.

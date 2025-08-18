@@ -259,14 +259,15 @@ NIH Blueprint for Neuroscience Research</p>
 <div class="table" align="center">
 <table style="text-align: center;
 width:63%; font-size:90%; border: 1px solid black">
-<tr><th style="font-weight:bold">CUBIC Path</th><th style="font-weight:normal">/cbica/projects/pennlinc_rbc/datasets/HCP-YA</th><th style="font-weight:normal"></th></tr>
+<tr><th style="font-weight:bold">CUBIC Path</th><th style="font-weight:normal">/cbica/projects/pennlinc_hcpya/data</th><th style="font-weight:normal"></th></tr>
+<tr><th style="font-weight:bold">Open Access</th><th style="font-weight:normal">false</th><th style="font-weight:normal"></th></tr>
 <tr><th style="font-weight:bold">Sample Size</th><th style="font-weight:normal">1206</th><th style="font-weight:normal"></th></tr>
 <tr><th style="font-weight:bold">Number of Sessions</th><th style="font-weight:normal">1206</th><th style="font-weight:normal"></th></tr>
-<tr><th style="font-weight:bold"><a href="/AI2D/docs/imaging/image_curation/">CuBIDS</a></th><th style="font-weight:normal"><a href="https://pennlinc.github.io/HCP-YA_CUBIDS/">Complete</a></th><th style="font-weight:normal"></th></tr>
-<tr><th style="font-weight:bold"><a href="/AI2D/docs/imaging/image_babs/">BABS</a></th><th style="font-weight:normal">Complete</th><th style="font-weight:normal"></th></tr>
-<tr><th style="font-weight:bold">Average age</th><th style="font-weight:normal">28.8</th><th style="font-weight:normal"></th></tr>
-<tr><th style="font-weight:bold">% Female</th><th style="font-weight:normal">54</th><th style="font-weight:normal"></th></tr>
-<tr><th style="font-weight:bold">% Right Handed</th><th style="font-weight:normal">89</th><th style="font-weight:normal"></th></tr>
+<tr><th style="font-weight:bold"><a href="/AI2D/docs/imaging/image_curation/">CuBIDS</a></th><th style="font-weight:normal">false</th><th style="font-weight:normal"></th></tr>
+<tr><th style="font-weight:bold"><a href="/AI2D/docs/imaging/image_babs/">BABS</a></th><th style="font-weight:normal">Yes (FAIRly big)</th><th style="font-weight:normal"></th></tr>
+<tr><th style="font-weight:bold">Average age</th><th style="font-weight:normal">restricted data (range 22-35)</th><th style="font-weight:normal"></th></tr>
+<tr><th style="font-weight:bold">% Female</th><th style="font-weight:normal">restricted data</th><th style="font-weight:normal"></th></tr>
+<tr><th style="font-weight:bold">% Right Handed</th><th style="font-weight:normal">restricted data</th><th style="font-weight:normal"></th></tr>
 </table>
 </div>
 
@@ -274,6 +275,10 @@ width:63%; font-size:90%; border: 1px solid black">
 <br /></p>
 
 <h2 id="data-access">Data Access</h2>
+
+<p>The <code class="language-plaintext highlighter-rouge">pennlinc_hcpya</code> project on CUBIC is not open-access data. Access requires proof of ConnectomeDB registration and acceptance of the HCP open data terms (send email to <span style="color: blue;">Tien.Tong@PennMedicine.upenn.edu</span>).</p>
+
+<p><code class="language-plaintext highlighter-rouge">QSIRecon</code> was run on the minimally preprocessed data, which were downloaded on the fly and removed upon completion of the QSIRecon job.</p>
 
 <div class="table" align="center">
 <table style="text-align: center; width:100%; font-size:90%; border: 1px solid black">
@@ -286,30 +291,34 @@ width:63%; font-size:90%; border: 1px solid black">
 <th style="font-weight:bold; text-align: center;">Ephemeral Clone</th>
 </tr>
 <tr>
-<th style="font-weight:bold; text-align: center;"><a href="/AI2D/docs/imaging/image_qsiprep/">qSIPrep</a></th>
+<th style="font-weight:bold; text-align: center;"><a href="/AI2D/docs/imaging/image_xcpd/">XCP-D</a></th>
 <td style="font-weight:normal">1206</td>
-<td style="font-weight:normal">1206</td>
-<td style="font-weight:normal">qsiprep 0-19-1</td>
-<td style="font-weight:normal">/cbica/projects/pennlinc_rbc/datasets/HCP-YA/qsiprep-0-19-1-babs/output_ria#~data</td>
-<td style="font-weight:normal">/cbica/projects/pennlinc_rbc/datasets/HCP-YA/QSIPREP-0-19-1_zipped</td>
+<td style="font-weight:normal">1096</td>
+<td style="font-weight:normal">xcpd 0-9-1</td>
+<td style="font-weight:normal">ria+file:///cbica/projects/pennlinc_hcpya/data/rbc_xcpd/output_ria#~data</td>
+<td style="font-weight:normal">/cbica/projects/pennlinc_hcpya/data/rbc_xcpd/DANGER</td>
 </tr>
 <tr>
-<th style="font-weight:bold; text-align: center;"><a href="/AI2D/docs/imaging/image_qsirecon/">qSIRecon</a></th>
+<th style="font-weight:bold; text-align: center;"><a href="/AI2D/docs/imaging/image_qsirecon/">QSIRecon - Bundle Stats</a></th>
 <td style="font-weight:normal">1206</td>
+<td style="font-weight:normal">1064</td>
+<td style="font-weight:normal">qsirecon 1-0-0rc2</td>
+<td style="font-weight:normal">ria+file:///cbica/projects/pennlinc_hcpya/data/qsirecon/output_ria#~data</td>
+<td style="font-weight:normal">/cbica/projects/pennlinc_hcpya/data/qsirecon/DANGER</td>
+</tr>
+<tr>
+<th style="font-weight:bold; text-align: center;"><a href="/AI2D/docs/imaging/image_qsiprep/">QSIRecon - HSVS Matrix</a></th>
 <td style="font-weight:normal">1206</td>
-<td style="font-weight:normal">qsirecon 0-19-1</td>
-<td style="font-weight:normal">/cbica/projects/pennlinc_rbc/datasets/HCP-YA/qsirecon-0-19-1-babs/output_ria#~data</td>
-<td style="font-weight:normal">/cbica/projects/pennlinc_rbc/datasets/HCP-YA/QSIRECON-0-19-1_zipped</td>
+<td style="font-weight:normal">1064</td>
+<td style="font-weight:normal">qsirecon 1-0-0rc2</td>
+<td style="font-weight:normal">ria+file:///cbica/projects/pennlinc_hcpya/data/qsirecon_hsvs/output_ria#~data</td>
+<td style="font-weight:normal">/cbica/projects/pennlinc_hcpya/data/qsirecon_hsvs/DANGER</td>
 </tr>
 </table>
 </div>
 
 <p><br />
 <br /></p>
-
-<div style="text-align: center;">
-     <img src="/AI2D/assets/images/datasets/HCP_Flowchart.png" width="80%" height="auto" />
-</div>
 
         
       </section>

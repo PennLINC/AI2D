@@ -17,7 +17,7 @@ Zhao, C., Chen, Y., Jarecka, D., Ghosh, S., Cieslak, M., & Satterthwaite, T. D. 
 
 
 <br>
-Most of the AI2D datasets were processed using **[BABS](https://pennlinc-babs.readthedocs.io/en/stable/)** (see example: [CCNP]({{ site.baseurl }}/docs/datasets/dCCNP/#dataset-summary)).
+Most of the AI2D datasets were processed using **[BABS](https://pennlinc-babs.readthedocs.io/en/stable/)**. Knowing whether BABS was used for a dataset is important for determining how to access the data (see example: [CCNP]({{ site.baseurl }}/docs/datasets/dCCNP/#dataset-summary)).
 
 
-**BABS** implements the [“FAIRly-big” framework](https://www.nature.com/articles/s41597-022-01163-2) (Wagner et al., 2021) for reproducible image processing, ensuring all data analyses using BIDS-apps were accompanied by a full audit trail in [Datalad](https://www.datalad.org/) (Halchenko et al., 2021).
+**BABS** implements the [“FAIRly-big” framework](https://www.nature.com/articles/s41597-022-01163-2) (Wagner et al., 2021) for reproducible image processing, ensuring all data analyses were accompanied by a full audit trail in [Datalad](https://www.datalad.org/) (Halchenko et al., 2021). For AI2D datasets, if `BABS == true` in the Dataset Summary, all BIDS-apps (e.g., fMRIPrep, XCP-D) were run using BABS.

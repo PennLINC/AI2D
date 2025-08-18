@@ -15,12 +15,15 @@ details div { line-height: 1.6; }
 </div>
 
 <br/>
+<div style="margin: 10px 0;">
+<strong>Citation</strong><br/>
+Cieslak, Matthew, Philip A Cook, Xiaosong He, Fang-Cheng Yeh, Thijs Dhollander, Azeez Adebimpe, Geoffrey K Aguirre, et al. 2021. “QSIPrep: An Integrative Platform for Preprocessing and Reconstructing Diffusion Mri Data.” Nature Methods 18 (7). Nature Publishing Group US New York: 775–78. https://doi.org/10.1038/s41592-021-01185-5.
+</div>
+
 <details style="margin: 10px 0;">
-<summary><strong>Citation (Click to expand/minimize)</strong></summary>
+<summary><strong>More citations (Click to expand/minimize)</strong></summary>
 <div style="padding: 10px 0; line-height: 1.6;">
 Abraham, Alexandre, Fabian Pedregosa, Michael Eickenberg, Philippe Gervais, Andreas Mueller, Jean Kossaifi, Alexandre Gramfort, Bertrand Thirion, and Gael Varoquaux. 2014. “Machine Learning for Neuroimaging with Scikit-Learn.” Frontiers in Neuroinformatics 8. https://doi.org/10.3389/fninf.2014.00014.
-<p style="margin: 2px 0;"></p>
-<strong>Cieslak, Matthew, Philip A Cook, Xiaosong He, Fang-Cheng Yeh, Thijs Dhollander, Azeez Adebimpe, Geoffrey K Aguirre, et al. 2021. “QSIPrep: An Integrative Platform for Preprocessing and Reconstructing Diffusion Mri Data.” Nature Methods 18 (7). Nature Publishing Group US New York: 775–78. https://doi.org/10.1038/s41592-021-01185-5.</strong>
 <p style="margin: 2px 0;"></p>
 Dhollander, Thijs, David Raffelt, and Alan Connelly. 2016. “Unsupervised 3-Tissue Response Function Estimation from Single-Shell or Multi-Shell Diffusion Mr Data Without a Co-Registered T1 Image.” In ISMRM Workshop on Breaking the Barriers of Diffusion Mri, 5:5.
 <p style="margin: 2px 0;"></p>
