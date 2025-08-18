@@ -18,7 +18,7 @@ minimal_mistakes_skin    : "rbc" # "air", "aqua", "contrast", "dark", "dirt", "n
 locale                   : "en-US"
 title                    : AI2D
 title_separator          : "-"
-subtitle                 : Reproducible Brain Charts
+subtitle                 : AI2D
 name                     : AI2D
 description              : "Website showcasing AI2D neuroimaing datasets."
 url                      : https://pennlinc.github.io/AI2D
