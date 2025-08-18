@@ -1,23 +1,21 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.3">Jekyll</generator><link href="http://localhost:4000/AI2D/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/AI2D/" rel="alternate" type="text/html" /><updated>2025-08-18T10:52:48-04:00</updated><id>http://localhost:4000/AI2D/feed.xml</id><title type="html">RBC</title><subtitle>The official website for the Reproducible Brain Charts project.</subtitle><author><name>{&quot;links&quot;=&gt;[{&quot;label&quot;=&gt;&quot;Email&quot;, &quot;icon&quot;=&gt;&quot;fas fa-fw fa-envelope-square&quot;}, {&quot;label&quot;=&gt;&quot;Website&quot;, &quot;icon&quot;=&gt;&quot;fas fa-fw fa-link&quot;}, {&quot;label&quot;=&gt;&quot;Twitter&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-twitter-square&quot;}, {&quot;label&quot;=&gt;&quot;Facebook&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-facebook-square&quot;}, {&quot;label&quot;=&gt;&quot;GitHub&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-github&quot;}, {&quot;label&quot;=&gt;&quot;Instagram&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-instagram&quot;}]}</name></author><entry><title type="html">Midnight Scan Club</title><link href="http://localhost:4000/AI2D/docs/datasets/midnight_scan_club/" rel="alternate" type="text/html" title="Midnight Scan Club" /><published>2025-08-16T00:00:00-04:00</published><updated>2025-08-16T00:00:00-04:00</updated><id>http://localhost:4000/AI2D/docs/datasets/midnight_scan_club</id><content type="html" xml:base="http://localhost:4000/AI2D/docs/datasets/midnight_scan_club/"><![CDATA[<div style="text-align: left;">
-     <img src="/AI2D/assets/images/logos/uc_berkeley.png" style="width: auto; height: 10vw;" />
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.3">Jekyll</generator><link href="http://localhost:4000/AI2D/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/AI2D/" rel="alternate" type="text/html" /><updated>2025-08-18T12:37:03-04:00</updated><id>http://localhost:4000/AI2D/feed.xml</id><title type="html">RBC</title><subtitle>The official website for the Reproducible Brain Charts project.</subtitle><author><name>{&quot;links&quot;=&gt;[{&quot;label&quot;=&gt;&quot;Email&quot;, &quot;icon&quot;=&gt;&quot;fas fa-fw fa-envelope-square&quot;}, {&quot;label&quot;=&gt;&quot;Website&quot;, &quot;icon&quot;=&gt;&quot;fas fa-fw fa-link&quot;}, {&quot;label&quot;=&gt;&quot;Twitter&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-twitter-square&quot;}, {&quot;label&quot;=&gt;&quot;Facebook&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-facebook-square&quot;}, {&quot;label&quot;=&gt;&quot;GitHub&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-github&quot;}, {&quot;label&quot;=&gt;&quot;Instagram&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-instagram&quot;}]}</name></author><entry><title type="html">Midnight Scan Club</title><link href="http://localhost:4000/AI2D/docs/datasets/midnight_scan_club/" rel="alternate" type="text/html" title="Midnight Scan Club" /><published>2025-08-16T00:00:00-04:00</published><updated>2025-08-16T00:00:00-04:00</updated><id>http://localhost:4000/AI2D/docs/datasets/midnight_scan_club</id><content type="html" xml:base="http://localhost:4000/AI2D/docs/datasets/midnight_scan_club/"><![CDATA[<div style="text-align: left;">
+     <img src="/AI2D/assets/images/logos/WashU.png" style="width: auto; height: 10vw;" />
 </div>
 
 <h3 id="about-the-dataset">About the dataset</h3>
-<p><a href="https://gallantlab.org/">https://gallantlab.org/</a></p>
+<p><a href="https://openneuro.org/datasets/ds000224/versions/1.0.1">https://openneuro.org/datasets/ds000224/versions/1.0.1</a></p>
 
 <p><em>PI</em>
 <br />
-Jack Gallant</p>
+Nico U.F. Dosenbach</p>
 
 <p><em>Funding</em>
 <br />
 NIH, NSF</p>
 
 <p><em>Citations</em>
-<br /></p>
-<ol>
-  <li>Huth AG, de Heer WA, Griffiths TL, Theunissen FE, Gallant JL. Natural speech reveals the semantic maps that tile human cerebral cortex. Nature. 2016 Apr 28;532(7600):453-8. doi: 10.1038/nature17637. PMID: 27121839; PMCID: PMC4852309.</li>
-</ol>
+<br />
+Gordon, E. M., Laumann, T. O., Gilmore, A. W., Newbold, D. J., Greene, D. J., Berg, J. J., … &amp; Dosenbach, N. U. (2017). Precision functional mapping of individual human brains. Neuron, 95(4), 791-807.</p>
 
 <p><br /></p>
 <div class="table" align="center">
@@ -26,67 +24,25 @@ width:63%; font-size:90%; border: 1px solid black">
 <tr><th style="font-weight:bold">CUBIC Path</th><th style="font-weight:normal">/cbica/projects/pennlinc_rbc/datasets/midnight_scan_club</th><th style="font-weight:normal"></th></tr>
 <tr><th style="font-weight:bold">Sample Size</th><th style="font-weight:normal">10</th><th style="font-weight:normal"></th></tr>
 <tr><th style="font-weight:bold">Number of Sessions</th><th style="font-weight:normal">10</th><th style="font-weight:normal"></th></tr>
-<tr><th style="font-weight:bold"><a href="/AI2D/docs/imaging/image_curation/">CuBIDS</a></th><th style="font-weight:normal">Complete</th><th style="font-weight:normal"></th></tr>
-<tr><th style="font-weight:bold"><a href="/AI2D/docs/imaging/image_babs/">BABS</a></th><th style="font-weight:normal">Complete</th><th style="font-weight:normal"></th></tr>
-<tr><th style="font-weight:bold">Average age</th><th style="font-weight:normal">24.0</th><th style="font-weight:normal"></th></tr>
-<tr><th style="font-weight:bold">% Female</th><th style="font-weight:normal">45</th><th style="font-weight:normal"></th></tr>
-<tr><th style="font-weight:bold">% Right Handed</th><th style="font-weight:normal">87</th><th style="font-weight:normal"></th></tr>
+<tr><th style="font-weight:bold"><a href="/AI2D/docs/imaging/image_curation/">CuBIDS</a></th><th style="font-weight:normal">false</th><th style="font-weight:normal"></th></tr>
+<tr><th style="font-weight:bold"><a href="/AI2D/docs/imaging/image_babs/">BABS</a></th><th style="font-weight:normal">false</th><th style="font-weight:normal"></th></tr>
+<tr><th style="font-weight:bold">Age</th><th style="font-weight:normal">29.1</th><th style="font-weight:normal"></th></tr>
+<tr><th style="font-weight:bold">% Female</th><th style="font-weight:normal">50</th><th style="font-weight:normal"></th></tr>
+<tr><th style="font-weight:bold">% Right Handed</th><th style="font-weight:normal">100</th><th style="font-weight:normal"></th></tr>
+<tr><th style="font-weight:bold"><a href="/AI2D/docs/imaging/image_fmriprep/">fMRIPrep</a></th><th style="font-weight:normal">/cbica/projects/open-datasets/datasets/midnight_scan_club/derivatives/fmriprep-24.0.0</th><th style="font-weight:normal"></th></tr>
+<tr><th style="font-weight:bold"><a href="/AI2D/docs/imaging/image_xcpd">XCP-D</a></th><th style="font-weight:normal">/cbica/projects/open-datasets/datasets/midnight_scan_club/derivatives/xcp_d-0.7.5</th><th style="font-weight:normal"></th></tr>
 </table>
 </div>
 
 <p><br />
-<br /></p>
-
-<h2 id="data-access">Data Access</h2>
-
-<div class="table" align="center">
-<table style="text-align: center; width:100%; font-size:90%; border: 1px solid black">
-<tr>
-<th style="font-weight:bold; text-align: center;"></th>
-<th style="font-weight:bold; text-align: center;">Number of Sessions</th>
-<th style="font-weight:bold; text-align: center;">Completed</th>
-<th style="font-weight:bold; text-align: center;">Software Version</th>
-<th style="font-weight:bold; text-align: center;">Datalad Dataset</th>
-<th style="font-weight:bold; text-align: center;">Ephemeral Clone</th>
-</tr>
-<tr>
-<th style="font-weight:bold; text-align: center;"><a href="/AI2D/docs/imaging/image_smriprep/">sMRIPrep</a></th>
-<td style="font-weight:normal">10</td>
-<td style="font-weight:normal">10</td>
-<td style="font-weight:normal">smriprep 24-1-1</td>
-<td style="font-weight:normal">/cbica/projects/pennlinc_rbc/datasets/midnight_scan_club/fmriprep_anat-24-1-1-babs/output_ria#~data</td>
-<td style="font-weight:normal">/cbica/projects/pennlinc_rbc/datasets/midnight_scan_club/FMRIPREP_ANAT-24-1-1_zipped</td>
-</tr>
-<tr>
-<th style="font-weight:bold; text-align: center;"><a href="/AI2D/docs/imaging/image_fmriprep/">fMRIPrep</a></th>
-<td style="font-weight:normal">10</td>
-<td style="font-weight:normal">10</td>
-<td style="font-weight:normal">fmriprep 24-1-1</td>
-<td style="font-weight:normal">/cbica/projects/pennlinc_rbc/datasets/midnight_scan_club/fmriprep_func-24-1-1-babs/output_ria#~data</td>
-<td style="font-weight:normal">/cbica/projects/pennlinc_rbc/datasets/midnight_scan_club/FMRIPREP_FUNC-24-1-1_zipped</td>
-</tr>
-<tr>
-<th style="font-weight:bold; text-align: center;"><a href="/AI2D/docs/imaging/image_xcpd/">XCP-D</a></th>
-<td style="font-weight:normal">10</td>
-<td style="font-weight:normal">10</td>
-<td style="font-weight:normal">xcpd 0-10-6</td>
-<td style="font-weight:normal">/cbica/projects/pennlinc_rbc/datasets/midnight_scan_club/xcpd-0-10-6-babs/output_ria#~data</td>
-<td style="font-weight:normal">/cbica/projects/pennlinc_rbc/datasets/midnight_scan_club/XCPD-0-10-6_zipped</td>
-</tr>
-</table>
-</div>
-
-<p><br />
-<br /></p>
-
-<div style="text-align: center;">
-     <img src="/AI2D/assets/images/datasets/midnight_scan_club_Flowchart.png" width="80%" height="auto" />
-</div>]]></content><author><name>{&quot;links&quot;=&gt;[{&quot;label&quot;=&gt;&quot;Email&quot;, &quot;icon&quot;=&gt;&quot;fas fa-fw fa-envelope-square&quot;}, {&quot;label&quot;=&gt;&quot;Website&quot;, &quot;icon&quot;=&gt;&quot;fas fa-fw fa-link&quot;}, {&quot;label&quot;=&gt;&quot;Twitter&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-twitter-square&quot;}, {&quot;label&quot;=&gt;&quot;Facebook&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-facebook-square&quot;}, {&quot;label&quot;=&gt;&quot;GitHub&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-github&quot;}, {&quot;label&quot;=&gt;&quot;Instagram&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-instagram&quot;}]}</name></author><category term="docs" /><category term="datasets" /><summary type="html"><![CDATA[midnight_scan_club]]></summary></entry><entry><title type="html">cneuromod</title><link href="http://localhost:4000/AI2D/docs/datasets/cneuromod/" rel="alternate" type="text/html" title="cneuromod" /><published>2025-08-16T00:00:00-04:00</published><updated>2025-08-16T00:00:00-04:00</updated><id>http://localhost:4000/AI2D/docs/datasets/cneuromod</id><content type="html" xml:base="http://localhost:4000/AI2D/docs/datasets/cneuromod/"><![CDATA[<div style="text-align: left;">
-     <img src="/AI2D/assets/images/logos/universite_de_montreal.png" style="width: auto; height: 10vw;" />
+<br /></p>]]></content><author><name>{&quot;links&quot;=&gt;[{&quot;label&quot;=&gt;&quot;Email&quot;, &quot;icon&quot;=&gt;&quot;fas fa-fw fa-envelope-square&quot;}, {&quot;label&quot;=&gt;&quot;Website&quot;, &quot;icon&quot;=&gt;&quot;fas fa-fw fa-link&quot;}, {&quot;label&quot;=&gt;&quot;Twitter&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-twitter-square&quot;}, {&quot;label&quot;=&gt;&quot;Facebook&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-facebook-square&quot;}, {&quot;label&quot;=&gt;&quot;GitHub&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-github&quot;}, {&quot;label&quot;=&gt;&quot;Instagram&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-instagram&quot;}]}</name></author><category term="docs" /><category term="datasets" /><summary type="html"><![CDATA[midnight_scan_club]]></summary></entry><entry><title type="html">Neural Modelling</title><link href="http://localhost:4000/AI2D/docs/datasets/cneuromod/" rel="alternate" type="text/html" title="Neural Modelling" /><published>2025-08-16T00:00:00-04:00</published><updated>2025-08-16T00:00:00-04:00</updated><id>http://localhost:4000/AI2D/docs/datasets/cneuromod</id><content type="html" xml:base="http://localhost:4000/AI2D/docs/datasets/cneuromod/"><![CDATA[<div style="text-align: left;">
+     <img src="/AI2D/assets/images/logos/cneuromod.png" style="width: auto; height: 10vw;" />
 </div>
 
 <h3 id="about-the-dataset">About the dataset</h3>
-<p><a href="https://www.cneuromod.ca/">https://www.cneuromod.ca/</a></p>
+<p><a href="https://www.cneuromod.ca/">https://www.cneuromod.ca/</a><br />
+<a href="https://www.cneuromod.ca/gallery/datasets/">https://www.cneuromod.ca/gallery/datasets/</a> <br />
+<a href="https://docs.cneuromod.ca/en/latest/index.htm">https://docs.cneuromod.ca/en/latest/index.htm</a></p>
 
 <p><em>PI</em>
 <br />
@@ -94,77 +50,38 @@ Pierre Bellec</p>
 
 <p><em>Funding</em>
 <br />
-Canadian Institutes of Health Research (CIHR)</p>
+The Courtois NeuroMod project was made possible by a donation from the Courtois foundation. These funds are administered by the Fondation Institut Gériatrie Montréal (FIGM) at Centre de Recherche de l’institut Universitaire de Gériatrie de Montréal, part of CIUSSS du Centre-Sud-de-l’île-de-Montréal, as well as University of Montreal. The team has grown to include individuals from various institutions, and an up-to-date list of contributors can be found in the documentation.</p>
 
 <p><em>Citations</em>
-<br /></p>
-<ol>
-  <li>Bellec P, et al. The CNeuromod dataset: a comprehensive multimodal dataset for neuroimaging research. Scientific Data. 2020;7(1):1-12.</li>
-</ol>
+<br />
+Julie Boyle, Basile Pinsard, Valentina Borghesani, Francois Paugam, Elizabeth DuPre, and Pierre Bellec. The courtois neuromod project: quality assessment of the initial data release (2020). In 2023 Conference on Cognitive Computational Neuroscience, pages 2023–1602, 2023.</p>
+
+<p>St-Laurent, M., Pinsard, B., Contier, O., Seeliger, K., Borghesani, V., Boyle, J., … &amp; Hebart, M. (2023). cneuromod-things: a large-scale fMRI dataset for task-and data-driven assessment of object representation and visual memory recognition in the human brain. Journal of Vision, 23(9), 5424-5424.</p>
 
 <p><br /></p>
 <div class="table" align="center">
 <table style="text-align: center;
 width:63%; font-size:90%; border: 1px solid black">
-<tr><th style="font-weight:bold">CUBIC Path</th><th style="font-weight:normal">/cbica/projects/pennlinc_rbc/datasets/cneuromod</th><th style="font-weight:normal"></th></tr>
-<tr><th style="font-weight:bold">Sample Size</th><th style="font-weight:normal">6</th><th style="font-weight:normal"></th></tr>
-<tr><th style="font-weight:bold">Number of Sessions</th><th style="font-weight:normal">6</th><th style="font-weight:normal"></th></tr>
-<tr><th style="font-weight:bold"><a href="/AI2D/docs/imaging/image_curation/">CuBIDS</a></th><th style="font-weight:normal">Complete</th><th style="font-weight:normal"></th></tr>
-<tr><th style="font-weight:bold"><a href="/AI2D/docs/imaging/image_babs/">BABS</a></th><th style="font-weight:normal">Complete</th><th style="font-weight:normal"></th></tr>
-<tr><th style="font-weight:bold">Average age</th><th style="font-weight:normal">30.0</th><th style="font-weight:normal"></th></tr>
-<tr><th style="font-weight:bold">% Female</th><th style="font-weight:normal">52</th><th style="font-weight:normal"></th></tr>
-<tr><th style="font-weight:bold">% Right Handed</th><th style="font-weight:normal">88</th><th style="font-weight:normal"></th></tr>
+<tr><th style="font-weight:bold">CUBIC Path</th><th style="font-weight:normal">/cbica/projects/open-datasets/datasets/cneuromod</th><th style="font-weight:normal"></th></tr>
+<tr><th style="font-weight:bold">Sample Size</th><th style="font-weight:normal">varied across multiple sub-datasets</th><th style="font-weight:normal"></th></tr>
+<tr><th style="font-weight:bold">Number of Sessions</th><th style="font-weight:normal">varied across multiple sub-datasets</th><th style="font-weight:normal"></th></tr>
+<tr><th style="font-weight:bold"><a href="/AI2D/docs/imaging/image_curation/">CuBIDS</a></th><th style="font-weight:normal">false</th><th style="font-weight:normal"></th></tr>
+<tr><th style="font-weight:bold"><a href="/AI2D/docs/imaging/image_babs/">BABS</a></th><th style="font-weight:normal">false</th><th style="font-weight:normal"></th></tr>
+<tr><th style="font-weight:bold">Average age</th><th style="font-weight:normal">varied across multiple sub-datasets</th><th style="font-weight:normal"></th></tr>
+<tr><th style="font-weight:bold">Available preprocessed data</th><th style="font-weight:normal">For the following datasets:<br />
+• friends<br />
+• harrypotter<br />
+• hcptrt<br />
+• movie10<br />
+• shinobi<br /><br />
+<a href="https://www.cneuromod.ca/gallery/datasets/">Click here</a> for information on each dataset</th><th style="font-weight:normal"></th></tr>
+<tr><th style="font-weight:bold"><a href="/AI2D/docs/imaging/image_smriprep/">sMRIPrep</a></th><th style="font-weight:normal">/cbica/projects/open-datasets/datasets/cneuromod/cneuromod.processed/smriprep</th><th style="font-weight:normal"></th></tr>
+<tr><th style="font-weight:bold"><a href="/AI2D/docs/imaging/image_fmriprep/">fMRIPrep</a></th><th style="font-weight:normal">/cbica/projects/open-datasets/datasets/cneuromod/cneuromod.processed/fmriprep</th><th style="font-weight:normal"></th></tr>
 </table>
 </div>
 
 <p><br />
-<br /></p>
-
-<h2 id="data-access">Data Access</h2>
-
-<div class="table" align="center">
-<table style="text-align: center; width:100%; font-size:90%; border: 1px solid black">
-<tr>
-<th style="font-weight:bold; text-align: center;"></th>
-<th style="font-weight:bold; text-align: center;">Number of Sessions</th>
-<th style="font-weight:bold; text-align: center;">Completed</th>
-<th style="font-weight:bold; text-align: center;">Software Version</th>
-<th style="font-weight:bold; text-align: center;">Datalad Dataset</th>
-<th style="font-weight:bold; text-align: center;">Ephemeral Clone</th>
-</tr>
-<tr>
-<th style="font-weight:bold; text-align: center;"><a href="/AI2D/docs/imaging/image_smriprep/">sMRIPrep</a></th>
-<td style="font-weight:normal">6</td>
-<td style="font-weight:normal">6</td>
-<td style="font-weight:normal">smriprep 24-1-1</td>
-<td style="font-weight:normal">/cbica/projects/pennlinc_rbc/datasets/cneuromod/fmriprep_anat-24-1-1-babs/output_ria#~data</td>
-<td style="font-weight:normal">/cbica/projects/pennlinc_rbc/datasets/cneuromod/FMRIPREP_ANAT-24-1-1_zipped</td>
-</tr>
-<tr>
-<th style="font-weight:bold; text-align: center;"><a href="/AI2D/docs/imaging/image_fmriprep/">fMRIPrep</a></th>
-<td style="font-weight:normal">6</td>
-<td style="font-weight:normal">6</td>
-<td style="font-weight:normal">fmriprep 24-1-1</td>
-<td style="font-weight:normal">/cbica/projects/pennlinc_rbc/datasets/cneuromod/fmriprep_func-24-1-1-babs/output_ria#~data</td>
-<td style="font-weight:normal">/cbica/projects/pennlinc_rbc/datasets/cneuromod/FMRIPREP_FUNC-24-1-1_zipped</td>
-</tr>
-<tr>
-<th style="font-weight:bold; text-align: center;"><a href="/AI2D/docs/imaging/image_xcpd/">XCP-D</a></th>
-<td style="font-weight:normal">6</td>
-<td style="font-weight:normal">6</td>
-<td style="font-weight:normal">xcpd 0-10-6</td>
-<td style="font-weight:normal">/cbica/projects/pennlinc_rbc/datasets/cneuromod/xcpd-0-10-6-babs/output_ria#~data</td>
-<td style="font-weight:normal">/cbica/projects/pennlinc_rbc/datasets/cneuromod/XCPD-0-10-6_zipped</td>
-</tr>
-</table>
-</div>
-
-<p><br />
-<br /></p>
-
-<div style="text-align: center;">
-     <img src="/AI2D/assets/images/datasets/cneuromod_Flowchart.png" width="80%" height="auto" />
-</div>]]></content><author><name>{&quot;links&quot;=&gt;[{&quot;label&quot;=&gt;&quot;Email&quot;, &quot;icon&quot;=&gt;&quot;fas fa-fw fa-envelope-square&quot;}, {&quot;label&quot;=&gt;&quot;Website&quot;, &quot;icon&quot;=&gt;&quot;fas fa-fw fa-link&quot;}, {&quot;label&quot;=&gt;&quot;Twitter&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-twitter-square&quot;}, {&quot;label&quot;=&gt;&quot;Facebook&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-facebook-square&quot;}, {&quot;label&quot;=&gt;&quot;GitHub&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-github&quot;}, {&quot;label&quot;=&gt;&quot;Instagram&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-instagram&quot;}]}</name></author><category term="docs" /><category term="datasets" /><summary type="html"><![CDATA[cneuromod]]></summary></entry><entry><title type="html">Human Connectome Project - Young Adult</title><link href="http://localhost:4000/AI2D/docs/datasets/HCP-YA/" rel="alternate" type="text/html" title="Human Connectome Project - Young Adult" /><published>2025-08-16T00:00:00-04:00</published><updated>2025-08-16T00:00:00-04:00</updated><id>http://localhost:4000/AI2D/docs/datasets/HCP-YA</id><content type="html" xml:base="http://localhost:4000/AI2D/docs/datasets/HCP-YA/"><![CDATA[<div style="text-align: left;">
+<br /></p>]]></content><author><name>{&quot;links&quot;=&gt;[{&quot;label&quot;=&gt;&quot;Email&quot;, &quot;icon&quot;=&gt;&quot;fas fa-fw fa-envelope-square&quot;}, {&quot;label&quot;=&gt;&quot;Website&quot;, &quot;icon&quot;=&gt;&quot;fas fa-fw fa-link&quot;}, {&quot;label&quot;=&gt;&quot;Twitter&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-twitter-square&quot;}, {&quot;label&quot;=&gt;&quot;Facebook&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-facebook-square&quot;}, {&quot;label&quot;=&gt;&quot;GitHub&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-github&quot;}, {&quot;label&quot;=&gt;&quot;Instagram&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-instagram&quot;}]}</name></author><category term="docs" /><category term="datasets" /><summary type="html"><![CDATA[cneuromod]]></summary></entry><entry><title type="html">Human Connectome Project - Young Adult</title><link href="http://localhost:4000/AI2D/docs/datasets/HCP-YA/" rel="alternate" type="text/html" title="Human Connectome Project - Young Adult" /><published>2025-08-16T00:00:00-04:00</published><updated>2025-08-16T00:00:00-04:00</updated><id>http://localhost:4000/AI2D/docs/datasets/HCP-YA</id><content type="html" xml:base="http://localhost:4000/AI2D/docs/datasets/HCP-YA/"><![CDATA[<div style="text-align: left;">
      <img src="/AI2D/assets/images/logos/ccf.png" style="width: auto; height: 10vw;" />
 </div>
 
@@ -253,204 +170,136 @@ width:63%; font-size:90%; border: 1px solid black">
 
 <p><br />
 <br /></p>]]></content><author><name>{&quot;links&quot;=&gt;[{&quot;label&quot;=&gt;&quot;Email&quot;, &quot;icon&quot;=&gt;&quot;fas fa-fw fa-envelope-square&quot;}, {&quot;label&quot;=&gt;&quot;Website&quot;, &quot;icon&quot;=&gt;&quot;fas fa-fw fa-link&quot;}, {&quot;label&quot;=&gt;&quot;Twitter&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-twitter-square&quot;}, {&quot;label&quot;=&gt;&quot;Facebook&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-facebook-square&quot;}, {&quot;label&quot;=&gt;&quot;GitHub&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-github&quot;}, {&quot;label&quot;=&gt;&quot;Instagram&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-instagram&quot;}]}</name></author><category term="docs" /><category term="datasets" /><summary type="html"><![CDATA[HCP-YA]]></summary></entry><entry><title type="html">28andMe</title><link href="http://localhost:4000/AI2D/docs/datasets/28andMe/" rel="alternate" type="text/html" title="28andMe" /><published>2025-08-16T00:00:00-04:00</published><updated>2025-08-16T00:00:00-04:00</updated><id>http://localhost:4000/AI2D/docs/datasets/28andMe</id><content type="html" xml:base="http://localhost:4000/AI2D/docs/datasets/28andMe/"><![CDATA[<div style="text-align: left;">
-     <img src="/AI2D/assets/images/logos/28andme.png" style="width: auto; height: 10vw;" />
+     <img src="/AI2D/assets/images/logos/UCSB.png" style="width: auto; height: 10vw;" />
 </div>
 
 <h3 id="about-the-dataset">About the dataset</h3>
-<p><a href="https://www.28andme.com/">https://www.28andme.com/</a></p>
+<p><a href="https://openneuro.org/datasets/ds002674/versions/1.0.6">https://openneuro.org/datasets/ds002674/versions/1.0.6</a></p>
 
 <p><em>PI</em>
 <br />
-Anne Wojcicki</p>
+Emily Jacobs</p>
 
 <p><em>Funding</em>
 <br />
-Private funding</p>
+Brain and Behavior Research Foundation<br />
+California Nanosystems Institute<br />
+Institute for Collaborative Biotechnologies through US Army Research Office W911NF-19-D-0001<br />
+Rutherford B. Fett Fund</p>
 
 <p><em>Citations</em>
-<br /></p>
-<ol>
-  <li>23andMe Research Team, et al. Large-scale genome-wide association analysis of bipolar disorder identifies a new susceptibility locus near ODZ4. Nat Genet. 2011 Sep 18;43(10):977-83. doi: 10.1038/ng.943. PMID: 21926972; PMCID: PMC3184297.</li>
-</ol>
+<br />
+Pritschet L., Taylor C., Santander T., Jacobs E.G. (2021) Applying dense-sampling methods to reveal dynamic endocrine modulation of the nervous system. Current Opinions in Behavioral Science. Special Issue on Deep Imaging, edited by: Caterina Gratton and Rodrigo Braga.</p>
+
+<p>Pritschet L., Santander T., Taylor C., Layher E., Yu S., Miller M.B., Grafton S.T., Jacobs E.G. (2020) Functional reorganization of brain networks across the human menstrual cycle. NeuroImage.</p>
+
+<p>Taylor C., Pritschet L., Olsen R., Layher E., Santander T., Grafton S.T., Jacobs E.G. (2020) Progesterone shapes medial temporal lobe volume across the human menstrual cycle. NeuroImage.</p>
+
+<p>Fitzgerald M., Pritschet L., Santander T., Grafton S.T., Jacobs E.G. (2021) Cerebellar network organization across the human menstrual cycle. Scientific Reports</p>
+
+<p>Mueller J., Pritschet L., Santander T., Taylor C., Grafton S.T. *Jacobs E.G., *Carlson J.M. (2021) Dynamic community detection reveals transient reorganization of functional brain network subcommunities across a female menstrual cycle. Network Neuroscience *Co-senior authors</p>
 
 <p><br /></p>
 <div class="table" align="center">
 <table style="text-align: center;
 width:63%; font-size:90%; border: 1px solid black">
+<tr><th style="font-weight:bold">CUBIC Path</th><th style="font-weight:normal">/cbica/projects/open-datasets/datasets/28andMe</th><th style="font-weight:normal"></th></tr>
 <tr><th style="font-weight:bold">Sample Size</th><th style="font-weight:normal">1</th><th style="font-weight:normal"></th></tr>
 <tr><th style="font-weight:bold">Number of Sessions</th><th style="font-weight:normal">60</th><th style="font-weight:normal"></th></tr>
-<tr><th style="font-weight:bold">Average age</th><th style="font-weight:normal">23.0</th><th style="font-weight:normal"></th></tr>
-<tr><th style="font-weight:bold">% Female</th><th style="font-weight:normal">65</th><th style="font-weight:normal"></th></tr>
-<tr><th style="font-weight:bold">Age Range</th><th style="font-weight:normal">18-80</th><th style="font-weight:normal"></th></tr>
-<tr><th style="font-weight:bold">Data Type</th><th style="font-weight:normal">Genetic</th><th style="font-weight:normal"></th></tr>
+<tr><th style="font-weight:bold"><a href="/AI2D/docs/imaging/image_curation/">CuBIDS</a></th><th style="font-weight:normal">false</th><th style="font-weight:normal"></th></tr>
+<tr><th style="font-weight:bold"><a href="/AI2D/docs/imaging/image_babs/">BABS</a></th><th style="font-weight:normal">false</th><th style="font-weight:normal"></th></tr>
+<tr><th style="font-weight:bold">Age</th><th style="font-weight:normal">23 (sessions 1-30, 2018), 24 (sessions 31-60, 2019)</th><th style="font-weight:normal"></th></tr>
+<tr><th style="font-weight:bold">% Female</th><th style="font-weight:normal">100</th><th style="font-weight:normal"></th></tr>
+<tr><th style="font-weight:bold">% Right Handed</th><th style="font-weight:normal">100</th><th style="font-weight:normal"></th></tr>
+<tr><th style="font-weight:bold"><a href="/AI2D/docs/imaging/image_fmriprep/">fMRIPrep</a></th><th style="font-weight:normal">v25-0-0: /cbica/projects/open-datasets/datasets/28andMe/derivatives/fmriprep</th><th style="font-weight:normal"></th></tr>
 </table>
 </div>
 
 <p><br />
-<br /></p>
-
-<div style="text-align: center;">
-     <img src="/AI2D/assets/images/datasets/28andMe_Flowchart.png" width="80%" height="auto" />
-</div>]]></content><author><name>{&quot;links&quot;=&gt;[{&quot;label&quot;=&gt;&quot;Email&quot;, &quot;icon&quot;=&gt;&quot;fas fa-fw fa-envelope-square&quot;}, {&quot;label&quot;=&gt;&quot;Website&quot;, &quot;icon&quot;=&gt;&quot;fas fa-fw fa-link&quot;}, {&quot;label&quot;=&gt;&quot;Twitter&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-twitter-square&quot;}, {&quot;label&quot;=&gt;&quot;Facebook&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-facebook-square&quot;}, {&quot;label&quot;=&gt;&quot;GitHub&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-github&quot;}, {&quot;label&quot;=&gt;&quot;Instagram&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-instagram&quot;}]}</name></author><category term="docs" /><category term="datasets" /><summary type="html"><![CDATA[28andMe]]></summary></entry><entry><title type="html">28andHe</title><link href="http://localhost:4000/AI2D/docs/datasets/28andHe/" rel="alternate" type="text/html" title="28andHe" /><published>2025-08-16T00:00:00-04:00</published><updated>2025-08-16T00:00:00-04:00</updated><id>http://localhost:4000/AI2D/docs/datasets/28andHe</id><content type="html" xml:base="http://localhost:4000/AI2D/docs/datasets/28andHe/"><![CDATA[<div style="text-align: left;">
-     <img src="/AI2D/assets/images/logos/uc_berkeley.png" style="width: auto; height: 10vw;" />
+<br /></p>]]></content><author><name>{&quot;links&quot;=&gt;[{&quot;label&quot;=&gt;&quot;Email&quot;, &quot;icon&quot;=&gt;&quot;fas fa-fw fa-envelope-square&quot;}, {&quot;label&quot;=&gt;&quot;Website&quot;, &quot;icon&quot;=&gt;&quot;fas fa-fw fa-link&quot;}, {&quot;label&quot;=&gt;&quot;Twitter&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-twitter-square&quot;}, {&quot;label&quot;=&gt;&quot;Facebook&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-facebook-square&quot;}, {&quot;label&quot;=&gt;&quot;GitHub&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-github&quot;}, {&quot;label&quot;=&gt;&quot;Instagram&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-instagram&quot;}]}</name></author><category term="docs" /><category term="datasets" /><summary type="html"><![CDATA[28andMe]]></summary></entry><entry><title type="html">28andHe</title><link href="http://localhost:4000/AI2D/docs/datasets/28andHe/" rel="alternate" type="text/html" title="28andHe" /><published>2025-08-16T00:00:00-04:00</published><updated>2025-08-16T00:00:00-04:00</updated><id>http://localhost:4000/AI2D/docs/datasets/28andHe</id><content type="html" xml:base="http://localhost:4000/AI2D/docs/datasets/28andHe/"><![CDATA[<div style="text-align: left;">
+     <img src="/AI2D/assets/images/logos/UCSB.png" style="width: auto; height: 10vw;" />
 </div>
 
 <h3 id="about-the-dataset">About the dataset</h3>
-<p><a href="https://gallantlab.org/">https://gallantlab.org/</a></p>
+<p><a href="https://openneuro.org/datasets/ds005115/versions/1.2.0">https://openneuro.org/datasets/ds005115/versions/1.2.0</a></p>
 
 <p><em>PI</em>
 <br />
-Jack Gallant</p>
+Emily Jacobs</p>
 
 <p><em>Funding</em>
 <br />
-NIH, NSF</p>
+Ann S. Bowers Women’s Brain Health Initiative<br />
+UC Academic Senate<br />
+National Institutes of Health AG063843</p>
 
 <p><em>Citations</em>
 <br /></p>
 <ol>
-  <li>Huth AG, de Heer WA, Griffiths TL, Theunissen FE, Gallant JL. Natural speech reveals the semantic maps that tile human cerebral cortex. Nature. 2016 Apr 28;532(7600):453-8. doi: 10.1038/nature17637. PMID: 27121839; PMCID: PMC4852309.</li>
+  <li>
+    <p>Grotzinger, H., Pritschet, L., Shapturenka, P., Santander, T., Murata, E. M., &amp; Jacobs, E. G. (2024). Diurnal fluctuations in steroid hormones tied to variation in intrinsic functional connectivity in a densely sampled male. Journal of Neuroscience, 44(22).</p>
+  </li>
+  <li>
+    <p>Murata, E. M., Pritschet, L., Grotzinger, H., Taylor, C. M., &amp; Jacobs, E. G. (2024). Circadian Rhythms Tied to Changes in Brain Morphology in a Densely Sampled Male. Journal of Neuroscience, 44(38).</p>
+  </li>
 </ol>
 
 <p><br /></p>
 <div class="table" align="center">
 <table style="text-align: center;
 width:63%; font-size:90%; border: 1px solid black">
-<tr><th style="font-weight:bold">CUBIC Path</th><th style="font-weight:normal">/cbica/projects/pennlinc_rbc/datasets/28andHe</th><th style="font-weight:normal"></th></tr>
+<tr><th style="font-weight:bold">CUBIC Path</th><th style="font-weight:normal">/cbica/projects/open-datasets/datasets/28andHe</th><th style="font-weight:normal"></th></tr>
 <tr><th style="font-weight:bold">Sample Size</th><th style="font-weight:normal">1</th><th style="font-weight:normal"></th></tr>
-<tr><th style="font-weight:bold">Number of Sessions</th><th style="font-weight:normal">30</th><th style="font-weight:normal"></th></tr>
-<tr><th style="font-weight:bold"><a href="/AI2D/docs/imaging/image_curation/">CuBIDS</a></th><th style="font-weight:normal">Complete</th><th style="font-weight:normal"></th></tr>
-<tr><th style="font-weight:bold"><a href="/AI2D/docs/imaging/image_babs/">BABS</a></th><th style="font-weight:normal">Complete</th><th style="font-weight:normal"></th></tr>
-<tr><th style="font-weight:bold">Average age</th><th style="font-weight:normal">24.0</th><th style="font-weight:normal"></th></tr>
-<tr><th style="font-weight:bold">% Female</th><th style="font-weight:normal">48</th><th style="font-weight:normal"></th></tr>
-<tr><th style="font-weight:bold">% Right Handed</th><th style="font-weight:normal">85</th><th style="font-weight:normal"></th></tr>
+<tr><th style="font-weight:bold">Number of Sessions</th><th style="font-weight:normal">40</th><th style="font-weight:normal"></th></tr>
+<tr><th style="font-weight:bold"><a href="/AI2D/docs/imaging/image_curation/">CuBIDS</a></th><th style="font-weight:normal">false</th><th style="font-weight:normal"></th></tr>
+<tr><th style="font-weight:bold"><a href="/AI2D/docs/imaging/image_babs/">BABS</a></th><th style="font-weight:normal">false</th><th style="font-weight:normal"></th></tr>
+<tr><th style="font-weight:bold">Age</th><th style="font-weight:normal">26</th><th style="font-weight:normal"></th></tr>
+<tr><th style="font-weight:bold">% Female</th><th style="font-weight:normal">0</th><th style="font-weight:normal"></th></tr>
+<tr><th style="font-weight:bold">% Right Handed</th><th style="font-weight:normal">100</th><th style="font-weight:normal"></th></tr>
+<tr><th style="font-weight:bold"><a href="/AI2D/docs/imaging/image_fmriprep/">fMRIPrep</a></th><th style="font-weight:normal">v25-0-0: /cbica/projects/open-datasets/datasets/28andHe/derivatives/fmriprep</th><th style="font-weight:normal"></th></tr>
 </table>
 </div>
 
 <p><br />
-<br /></p>
-
-<h2 id="data-access">Data Access</h2>
-
-<div class="table" align="center">
-<table style="text-align: center; width:100%; font-size:90%; border: 1px solid black">
-<tr>
-<th style="font-weight:bold; text-align: center;"></th>
-<th style="font-weight:bold; text-align: center;">Number of Sessions</th>
-<th style="font-weight:bold; text-align: center;">Completed</th>
-<th style="font-weight:bold; text-align: center;">Software Version</th>
-<th style="font-weight:bold; text-align: center;">Datalad Dataset</th>
-<th style="font-weight:bold; text-align: center;">Ephemeral Clone</th>
-</tr>
-<tr>
-<th style="font-weight:bold; text-align: center;"><a href="/AI2D/docs/imaging/image_smriprep/">sMRIPrep</a></th>
-<td style="font-weight:normal">30</td>
-<td style="font-weight:normal">30</td>
-<td style="font-weight:normal">smriprep 24-1-1</td>
-<td style="font-weight:normal">/cbica/projects/pennlinc_rbc/datasets/28andHe/fmriprep_anat-24-1-1-babs/output_ria#~data</td>
-<td style="font-weight:normal">/cbica/projects/pennlinc_rbc/datasets/28andHe/FMRIPREP_ANAT-24-1-1_zipped</td>
-</tr>
-<tr>
-<th style="font-weight:bold; text-align: center;"><a href="/AI2D/docs/imaging/image_fmriprep/">fMRIPrep</a></th>
-<td style="font-weight:normal">30</td>
-<td style="font-weight:normal">30</td>
-<td style="font-weight:normal">fmriprep 24-1-1</td>
-<td style="font-weight:normal">/cbica/projects/pennlinc_rbc/datasets/28andHe/fmriprep_func-24-1-1-babs/output_ria#~data</td>
-<td style="font-weight:normal">/cbica/projects/pennlinc_rbc/datasets/28andHe/FMRIPREP_FUNC-24-1-1_zipped</td>
-</tr>
-<tr>
-<th style="font-weight:bold; text-align: center;"><a href="/AI2D/docs/imaging/image_xcpd/">XCP-D</a></th>
-<td style="font-weight:normal">30</td>
-<td style="font-weight:normal">30</td>
-<td style="font-weight:normal">xcpd 0-10-6</td>
-<td style="font-weight:normal">/cbica/projects/pennlinc_rbc/datasets/28andHe/xcpd-0-10-6-babs/output_ria#~data</td>
-<td style="font-weight:normal">/cbica/projects/pennlinc_rbc/datasets/28andHe/XCPD-0-10-6_zipped</td>
-</tr>
-</table>
-</div>
-
-<p><br />
-<br /></p>
-
-<div style="text-align: center;">
-     <img src="/AI2D/assets/images/datasets/28andHe_Flowchart.png" width="80%" height="auto" />
-</div>]]></content><author><name>{&quot;links&quot;=&gt;[{&quot;label&quot;=&gt;&quot;Email&quot;, &quot;icon&quot;=&gt;&quot;fas fa-fw fa-envelope-square&quot;}, {&quot;label&quot;=&gt;&quot;Website&quot;, &quot;icon&quot;=&gt;&quot;fas fa-fw fa-link&quot;}, {&quot;label&quot;=&gt;&quot;Twitter&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-twitter-square&quot;}, {&quot;label&quot;=&gt;&quot;Facebook&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-facebook-square&quot;}, {&quot;label&quot;=&gt;&quot;GitHub&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-github&quot;}, {&quot;label&quot;=&gt;&quot;Instagram&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-instagram&quot;}]}</name></author><category term="docs" /><category term="datasets" /><summary type="html"><![CDATA[28andHe]]></summary></entry><entry><title type="html">Mobile Phenomics Pilot</title><link href="http://localhost:4000/AI2D/docs/datasets/mobile_phenomics_pilot/" rel="alternate" type="text/html" title="Mobile Phenomics Pilot" /><published>2025-08-16T00:00:00-04:00</published><updated>2025-08-16T00:00:00-04:00</updated><id>http://localhost:4000/AI2D/docs/datasets/mobile_phenomics_pilot</id><content type="html" xml:base="http://localhost:4000/AI2D/docs/datasets/mobile_phenomics_pilot/"><![CDATA[<div style="text-align: left;">
-     <img src="/AI2D/assets/images/logos/ucsf.png" style="width: auto; height: 10vw;" />
+<br /></p>]]></content><author><name>{&quot;links&quot;=&gt;[{&quot;label&quot;=&gt;&quot;Email&quot;, &quot;icon&quot;=&gt;&quot;fas fa-fw fa-envelope-square&quot;}, {&quot;label&quot;=&gt;&quot;Website&quot;, &quot;icon&quot;=&gt;&quot;fas fa-fw fa-link&quot;}, {&quot;label&quot;=&gt;&quot;Twitter&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-twitter-square&quot;}, {&quot;label&quot;=&gt;&quot;Facebook&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-facebook-square&quot;}, {&quot;label&quot;=&gt;&quot;GitHub&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-github&quot;}, {&quot;label&quot;=&gt;&quot;Instagram&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-instagram&quot;}]}</name></author><category term="docs" /><category term="datasets" /><summary type="html"><![CDATA[28andHe]]></summary></entry><entry><title type="html">Single-echo/multi-echo comparison pilot</title><link href="http://localhost:4000/AI2D/docs/datasets/mobile_phenomics_pilot/" rel="alternate" type="text/html" title="Single-echo/multi-echo comparison pilot" /><published>2025-08-16T00:00:00-04:00</published><updated>2025-08-16T00:00:00-04:00</updated><id>http://localhost:4000/AI2D/docs/datasets/mobile_phenomics_pilot</id><content type="html" xml:base="http://localhost:4000/AI2D/docs/datasets/mobile_phenomics_pilot/"><![CDATA[<div style="text-align: left;">
+     <img src="/AI2D/assets/images/logos/university_of_pennsylvania.png" style="width: auto; height: 10vw;" />
 </div>
 
 <h3 id="about-the-dataset">About the dataset</h3>
-<p><a href="https://www.ucsf.edu/">https://www.ucsf.edu/</a></p>
+<p><a href="https://openneuro.org/datasets/ds005250/versions/1.1.5">https://openneuro.org/datasets/ds005250/versions/1.1.5</a></p>
 
 <p><em>PI</em>
 <br />
-Tom Neylan</p>
+Theodore D. Satterthwaite</p>
 
 <p><em>Funding</em>
 <br />
-NIH</p>
+AE Foundation<br />
+Penn-CHOP Lifespan Brain Institute<br />
+NIMH R01MH113550</p>
 
 <p><em>Citations</em>
-<br /></p>
-<ol>
-  <li>Neylan TC, et al. Mobile phenomics: using mobile devices to collect real-time data on sleep, mood, and cognitive function. Transl Psychiatry. 2019;9(1):1-10.</li>
-</ol>
+<br />
+Taylor Salo and M. Dylan Tisdall and Lia Brodrick and Adam Czernuszenko and David R. Roalf and Sage Rush-Goebel and Nicholas Wellman and Matthew Cieslak and Theodore D. Satterthwaite (2024). Single-echo/multi-echo comparison pilot. OpenNeuro. [Dataset] doi: doi:10.18112/openneuro.ds005250.v1.1.5</p>
 
 <p><br /></p>
 <div class="table" align="center">
 <table style="text-align: center;
 width:63%; font-size:90%; border: 1px solid black">
 <tr><th style="font-weight:bold">CUBIC Path</th><th style="font-weight:normal">/cbica/projects/pennlinc_rbc/datasets/mobile_phenomics_pilot</th><th style="font-weight:normal"></th></tr>
-<tr><th style="font-weight:bold">Sample Size</th><th style="font-weight:normal">50</th><th style="font-weight:normal"></th></tr>
-<tr><th style="font-weight:bold">Number of Sessions</th><th style="font-weight:normal">50</th><th style="font-weight:normal"></th></tr>
-<tr><th style="font-weight:bold"><a href="/AI2D/docs/imaging/image_curation/">CuBIDS</a></th><th style="font-weight:normal">N/A (Mobile/Behavioral Data)</th><th style="font-weight:normal"></th></tr>
-<tr><th style="font-weight:bold"><a href="/AI2D/docs/imaging/image_babs/">BABS</a></th><th style="font-weight:normal">N/A (Mobile/Behavioral Data)</th><th style="font-weight:normal"></th></tr>
-<tr><th style="font-weight:bold">Average age</th><th style="font-weight:normal">32.0</th><th style="font-weight:normal"></th></tr>
-<tr><th style="font-weight:bold">% Female</th><th style="font-weight:normal">52</th><th style="font-weight:normal"></th></tr>
-<tr><th style="font-weight:bold">% Right Handed:</th><th style="font-weight:normal">95</th><th style="font-weight:normal"></th></tr>
+<tr><th style="font-weight:bold">Sample Size</th><th style="font-weight:normal">8</th><th style="font-weight:normal"></th></tr>
+<tr><th style="font-weight:bold">Number of Sessions</th><th style="font-weight:normal">17</th><th style="font-weight:normal"></th></tr>
+<tr><th style="font-weight:bold"><a href="/AI2D/docs/imaging/image_curation/">CuBIDS</a></th><th style="font-weight:normal">false</th><th style="font-weight:normal"></th></tr>
+<tr><th style="font-weight:bold"><a href="/AI2D/docs/imaging/image_babs/">BABS</a></th><th style="font-weight:normal">false</th><th style="font-weight:normal"></th></tr>
+<tr><th style="font-weight:bold">Average age</th><th style="font-weight:normal">24.5</th><th style="font-weight:normal"></th></tr>
+<tr><th style="font-weight:bold">% Female</th><th style="font-weight:normal">50</th><th style="font-weight:normal"></th></tr>
+<tr><th style="font-weight:bold">% Right Handed</th><th style="font-weight:normal">???</th><th style="font-weight:normal"></th></tr>
+<tr><th style="font-weight:bold"><a href="/AI2D/docs/imaging/image_fmriprep/">fMRIPrep</a></th><th style="font-weight:normal">/cbica/projects/open-datasets/datasets/mobile_phenomics_pilot/derivatives/fmriprep-24.0.1</th><th style="font-weight:normal"></th></tr>
 </table>
 </div>
 
 <p><br />
-<br /></p>
-
-<h2 id="data-access">Data Access</h2>
-
-<div class="table" align="center">
-<table style="text-align: center; width:100%; font-size:90%; border: 1px solid black">
-<tr>
-<th style="font-weight:bold; text-align: center;"></th>
-<th style="font-weight:bold; text-align: center;">Number of Sessions</th>
-<th style="font-weight:bold; text-align: center;">Completed</th>
-<th style="font-weight:bold; text-align: center;">Software Version</th>
-<th style="font-weight:bold; text-align: center;">Datalad Dataset</th>
-<th style="font-weight:bold; text-align: center;">Ephemeral Clone</th>
-</tr>
-<tr>
-<th style="font-weight:bold; text-align: center;"><a href="/AI2D/docs/imaging/image_smriprep/">sMRIPrep</a></th>
-<td style="font-weight:normal">n/a</td>
-<td style="font-weight:normal">n/a</td>
-<td style="font-weight:normal">n/a</td>
-<td style="font-weight:normal">n/a</td>
-<td style="font-weight:normal">n/a</td>
-</tr>
-<tr>
-<th style="font-weight:bold; text-align: center;"><a href="/AI2D/docs/imaging/image_fmriprep/">fMRIPrep</a></th>
-<td style="font-weight:normal">n/a</td>
-<td style="font-weight:normal">n/a</td>
-<td style="font-weight:normal">n/a</td>
-<td style="font-weight:normal">n/a</td>
-<td style="font-weight:normal">n/a</td>
-</tr>
-<tr>
-<th style="font-weight:bold; text-align: center;"><a href="/AI2D/docs/imaging/image_xcpd/">XCP-D</a></th>
-<td style="font-weight:normal">n/a</td>
-<td style="font-weight:normal">n/a</td>
-<td style="font-weight:normal">n/a</td>
-<td style="font-weight:normal">n/a</td>
-<td style="font-weight:normal">n/a</td>
-</tr>
-</table>
-</div>]]></content><author><name>{&quot;links&quot;=&gt;[{&quot;label&quot;=&gt;&quot;Email&quot;, &quot;icon&quot;=&gt;&quot;fas fa-fw fa-envelope-square&quot;}, {&quot;label&quot;=&gt;&quot;Website&quot;, &quot;icon&quot;=&gt;&quot;fas fa-fw fa-link&quot;}, {&quot;label&quot;=&gt;&quot;Twitter&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-twitter-square&quot;}, {&quot;label&quot;=&gt;&quot;Facebook&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-facebook-square&quot;}, {&quot;label&quot;=&gt;&quot;GitHub&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-github&quot;}, {&quot;label&quot;=&gt;&quot;Instagram&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-instagram&quot;}]}</name></author><category term="docs" /><category term="datasets" /><summary type="html"><![CDATA[mobile_phenomics_pilot]]></summary></entry><entry><title type="html">Get Support</title><link href="http://localhost:4000/AI2D/docs/community/get_support/" rel="alternate" type="text/html" title="Get Support" /><published>2025-08-15T00:00:00-04:00</published><updated>2025-08-15T00:00:00-04:00</updated><id>http://localhost:4000/AI2D/docs/community/get_support</id><content type="html" xml:base="http://localhost:4000/AI2D/docs/community/get_support/"><![CDATA[<p>If you have a question about working with AI2D data,
+<br /></p>]]></content><author><name>{&quot;links&quot;=&gt;[{&quot;label&quot;=&gt;&quot;Email&quot;, &quot;icon&quot;=&gt;&quot;fas fa-fw fa-envelope-square&quot;}, {&quot;label&quot;=&gt;&quot;Website&quot;, &quot;icon&quot;=&gt;&quot;fas fa-fw fa-link&quot;}, {&quot;label&quot;=&gt;&quot;Twitter&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-twitter-square&quot;}, {&quot;label&quot;=&gt;&quot;Facebook&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-facebook-square&quot;}, {&quot;label&quot;=&gt;&quot;GitHub&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-github&quot;}, {&quot;label&quot;=&gt;&quot;Instagram&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-instagram&quot;}]}</name></author><category term="docs" /><category term="datasets" /><summary type="html"><![CDATA[mobile_phenomics_pilot]]></summary></entry><entry><title type="html">Get Support</title><link href="http://localhost:4000/AI2D/docs/community/get_support/" rel="alternate" type="text/html" title="Get Support" /><published>2025-08-15T00:00:00-04:00</published><updated>2025-08-15T00:00:00-04:00</updated><id>http://localhost:4000/AI2D/docs/community/get_support</id><content type="html" xml:base="http://localhost:4000/AI2D/docs/community/get_support/"><![CDATA[<p>If you have a question about working with AI2D data,
 please <a href="https://github.com/PennLINC/AI2D/issues/new">open an issue</a>.
 The AI2D maintainers will be notified about the new post and will respond when they’re able.</p>
 

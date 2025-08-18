@@ -78,13 +78,13 @@ var store = [{
         "teaser": null
       },{
         "title": "28andHe",
-        "excerpt":"About the dataset https://gallantlab.org/ PI Jack Gallant Funding NIH, NSF Citations Huth AG, de Heer WA, Griffiths TL, Theunissen FE, Gallant JL. Natural speech reveals the semantic maps that tile human cerebral cortex. Nature. 2016 Apr 28;532(7600):453-8. doi: 10.1038/nature17637. PMID: 27121839; PMCID: PMC4852309. CUBIC Path/cbica/projects/pennlinc_rbc/datasets/28andHe Sample Size1 Number of Sessions30...","categories": ["docs","datasets"],
+        "excerpt":"About the dataset https://openneuro.org/datasets/ds005115/versions/1.2.0 PI Emily Jacobs Funding Ann S. Bowers Women’s Brain Health Initiative UC Academic Senate National Institutes of Health AG063843 Citations Grotzinger, H., Pritschet, L., Shapturenka, P., Santander, T., Murata, E. M., &amp; Jacobs, E. G. (2024). Diurnal fluctuations in steroid hormones tied to variation in intrinsic...","categories": ["docs","datasets"],
         "tags": [],
         "url": "/AI2D/docs/datasets/28andHe/",
         "teaser": null
       },{
         "title": "28andMe",
-        "excerpt":"About the dataset https://www.28andme.com/ PI Anne Wojcicki Funding Private funding Citations 23andMe Research Team, et al. Large-scale genome-wide association analysis of bipolar disorder identifies a new susceptibility locus near ODZ4. Nat Genet. 2011 Sep 18;43(10):977-83. doi: 10.1038/ng.943. PMID: 21926972; PMCID: PMC3184297. Sample Size1 Number of Sessions60 Average age23.0 % Female65...","categories": ["docs","datasets"],
+        "excerpt":"About the dataset https://openneuro.org/datasets/ds002674/versions/1.0.6 PI Emily Jacobs Funding Brain and Behavior Research Foundation California Nanosystems Institute Institute for Collaborative Biotechnologies through US Army Research Office W911NF-19-D-0001 Rutherford B. Fett Fund Citations Pritschet L., Taylor C., Santander T., Jacobs E.G. (2021) Applying dense-sampling methods to reveal dynamic endocrine modulation of the...","categories": ["docs","datasets"],
         "tags": [],
         "url": "/AI2D/docs/datasets/28andMe/",
         "teaser": null
@@ -95,20 +95,20 @@ var store = [{
         "url": "/AI2D/docs/datasets/HCP-YA/",
         "teaser": null
       },{
-        "title": "cneuromod",
-        "excerpt":"About the dataset https://www.cneuromod.ca/ PI Pierre Bellec Funding Canadian Institutes of Health Research (CIHR) Citations Bellec P, et al. The CNeuromod dataset: a comprehensive multimodal dataset for neuroimaging research. Scientific Data. 2020;7(1):1-12. CUBIC Path/cbica/projects/pennlinc_rbc/datasets/cneuromod Sample Size6 Number of Sessions6 CuBIDSComplete BABSComplete Average age30.0 % Female52 % Right Handed88 Data Access...","categories": ["docs","datasets"],
+        "title": "Neural Modelling",
+        "excerpt":"About the dataset https://www.cneuromod.ca/ https://www.cneuromod.ca/gallery/datasets/ https://docs.cneuromod.ca/en/latest/index.htm PI Pierre Bellec Funding The Courtois NeuroMod project was made possible by a donation from the Courtois foundation. These funds are administered by the Fondation Institut Gériatrie Montréal (FIGM) at Centre de Recherche de l’institut Universitaire de Gériatrie de Montréal, part of CIUSSS du...","categories": ["docs","datasets"],
         "tags": [],
         "url": "/AI2D/docs/datasets/cneuromod/",
         "teaser": null
       },{
         "title": "Midnight Scan Club",
-        "excerpt":"About the dataset https://gallantlab.org/ PI Jack Gallant Funding NIH, NSF Citations Huth AG, de Heer WA, Griffiths TL, Theunissen FE, Gallant JL. Natural speech reveals the semantic maps that tile human cerebral cortex. Nature. 2016 Apr 28;532(7600):453-8. doi: 10.1038/nature17637. PMID: 27121839; PMCID: PMC4852309. CUBIC Path/cbica/projects/pennlinc_rbc/datasets/midnight_scan_club Sample Size10 Number of Sessions10...","categories": ["docs","datasets"],
+        "excerpt":"About the dataset https://openneuro.org/datasets/ds000224/versions/1.0.1 PI Nico U.F. Dosenbach Funding NIH, NSF Citations Gordon, E. M., Laumann, T. O., Gilmore, A. W., Newbold, D. J., Greene, D. J., Berg, J. J., … &amp; Dosenbach, N. U. (2017). Precision functional mapping of individual human brains. Neuron, 95(4), 791-807. CUBIC Path/cbica/projects/pennlinc_rbc/datasets/midnight_scan_club Sample Size10...","categories": ["docs","datasets"],
         "tags": [],
         "url": "/AI2D/docs/datasets/midnight_scan_club/",
         "teaser": null
       },{
-        "title": "Mobile Phenomics Pilot",
-        "excerpt":"About the dataset https://www.ucsf.edu/ PI Tom Neylan Funding NIH Citations Neylan TC, et al. Mobile phenomics: using mobile devices to collect real-time data on sleep, mood, and cognitive function. Transl Psychiatry. 2019;9(1):1-10. CUBIC Path/cbica/projects/pennlinc_rbc/datasets/mobile_phenomics_pilot Sample Size50 Number of Sessions50 CuBIDSN/A (Mobile/Behavioral Data) BABSN/A (Mobile/Behavioral Data) Average age32.0 % Female52 %...","categories": ["docs","datasets"],
+        "title": "Single-echo/multi-echo comparison pilot",
+        "excerpt":"About the dataset https://openneuro.org/datasets/ds005250/versions/1.1.5 PI Theodore D. Satterthwaite Funding AE Foundation Penn-CHOP Lifespan Brain Institute NIMH R01MH113550 Citations Taylor Salo and M. Dylan Tisdall and Lia Brodrick and Adam Czernuszenko and David R. Roalf and Sage Rush-Goebel and Nicholas Wellman and Matthew Cieslak and Theodore D. Satterthwaite (2024). Single-echo/multi-echo comparison...","categories": ["docs","datasets"],
         "tags": [],
         "url": "/AI2D/docs/datasets/mobile_phenomics_pilot/",
         "teaser": null
