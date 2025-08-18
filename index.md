@@ -1,6 +1,6 @@
 ---
 layout: home
-title: "Reproducible Brain Charts"
+title: "AI2D"
 author_profile: false
 ---
 
