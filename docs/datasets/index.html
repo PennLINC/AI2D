@@ -22,7 +22,6 @@ title: "AI2D Datasets"
       <th>Average Age</th>
       <th>Sample Size</th>
       <th>Number of Sessions</th>
-      <th>Number of Sites</th>
     </tr>
   </thead>
   <tbody>
@@ -84,13 +83,6 @@ title: "AI2D Datasets"
         <td>
           {% if dataset.number_of_sessions %}
             {{ dataset.number_of_sessions }}
-          {% else %}
-            n/a
-          {% endif %}
-        </td>
-        <td>
-          {% if dataset.num_site %}
-            {{ dataset.num_site }}
           {% else %}
             n/a
           {% endif %}
