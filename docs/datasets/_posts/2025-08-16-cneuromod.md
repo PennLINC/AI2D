@@ -6,7 +6,7 @@ categories: datasets
 
 # Information for sidebar
 site: Université de Montréal
-pi: Pierre Bellec
+pi: Lune Bellec
 website: https://www.cneuromod.ca/
 funding:
 publications:
@@ -62,7 +62,7 @@ qsirecon_ephe: n/a
 
 *PI*
 <br>
-Pierre Bellec
+Lune Bellec
 
 *Funding*
 <br>
@@ -70,7 +70,7 @@ The Courtois NeuroMod project was made possible by a donation from the Courtois 
 
 *Citations*
 <br>
-Julie Boyle, Basile Pinsard, Valentina Borghesani, Francois Paugam, Elizabeth DuPre, and Pierre Bellec. The courtois neuromod project: quality assessment of the initial data release (2020). In 2023 Conference on Cognitive Computational Neuroscience, pages 2023–1602, 2023.
+Julie Boyle, Basile Pinsard, Valentina Borghesani, Francois Paugam, Elizabeth DuPre, and Lune Bellec. The courtois neuromod project: quality assessment of the initial data release (2020). In 2023 Conference on Cognitive Computational Neuroscience, pages 2023–1602, 2023.
 
 St-Laurent, M., Pinsard, B., Contier, O., Seeliger, K., Borghesani, V., Boyle, J., ... & Hebart, M. (2023). cneuromod-things: a large-scale fMRI dataset for task-and data-driven assessment of object representation and visual memory recognition in the human brain. Journal of Vision, 23(9), 5424-5424.
 

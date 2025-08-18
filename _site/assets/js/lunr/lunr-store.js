@@ -96,7 +96,7 @@ var store = [{
         "teaser": null
       },{
         "title": "Neural Modelling",
-        "excerpt":"About the dataset https://www.cneuromod.ca/ https://www.cneuromod.ca/gallery/datasets/ https://docs.cneuromod.ca/en/latest/index.htm PI Pierre Bellec Funding The Courtois NeuroMod project was made possible by a donation from the Courtois foundation. These funds are administered by the Fondation Institut Gériatrie Montréal (FIGM) at Centre de Recherche de l’institut Universitaire de Gériatrie de Montréal, part of CIUSSS du...","categories": ["docs","datasets"],
+        "excerpt":"About the dataset https://www.cneuromod.ca/ https://www.cneuromod.ca/gallery/datasets/ https://docs.cneuromod.ca/en/latest/index.htm PI Lune Bellec Funding The Courtois NeuroMod project was made possible by a donation from the Courtois foundation. These funds are administered by the Fondation Institut Gériatrie Montréal (FIGM) at Centre de Recherche de l’institut Universitaire de Gériatrie de Montréal, part of CIUSSS du...","categories": ["docs","datasets"],
         "tags": [],
         "url": "/AI2D/docs/datasets/cneuromod/",
         "teaser": null
