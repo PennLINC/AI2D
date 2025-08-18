@@ -16,12 +16,12 @@ minimal_mistakes_skin    : "rbc" # "air", "aqua", "contrast", "dark", "dirt", "n
 
 # Site Settings
 locale                   : "en-US"
-title                    : RBC
+title                    : AI2D
 title_separator          : "-"
 subtitle                 : Reproducible Brain Charts
-name                     : RBC
-description              : "The official website for the Reproducible Brain Charts project."
-url                      : https://pennlincrbc.github.io
+name                     : AI2D
+description              : "Website showcasing AI2D neuroimaing datasets."
+url                      : https://pennlinc.github.io/AI2D
 baseurl                  : /AI2D
 repository               : "PennLINC/AI2D"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
