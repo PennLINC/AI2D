@@ -1,6 +1,6 @@
 ---
 layout: home
-title: "AI2D"
+title: "AI2D | PennLINC | Shared Data Resources"
 author_profile: false
 ---
 
@@ -36,19 +36,16 @@ author_profile: false
           </b>
      </p>
      <p>
-          The AI2D Center was formed in 2022, bringing together a community of faculty, trainees and staff working in the broader field of AI and Biomedical Data Science, as it applies to the field of Integrated Diagnostics, i.e. the synthesis of diverse and complementary types of biomarkers contributing to precision diagnostic.
+          The <a href="https://ai2d.med.upenn.edu/">AI2D Center</a> was founded by <a href="https://www.med.upenn.edu/cbica/christos/">Christos Davatzikos</a> in 2022. AI2D brings together a rich community of faculty, trainees and staff working in the broader field of AI and Biomedical Data Science, as it applies to the field of Integrated Diagnostics. Together we accelerate the synthesis of diverse and complementary biomarkers for precision diagnostics.
      </p>
      <br>
      <p style="display:flex;">
           <b>
-               AI2D Neuroimaging Data
+               Shared AI2D Neuroimaging Data Resources
           </b>
      </p>
      <p>
-          Many labs are often interested in the same large, publicly available neuroimaging datasets, which can be processed using the same standardized pipelines. However, data curation and processing are frequently performed independently across labs, resulting in duplicated effort, wasted computational resources, and inefficient use of storage.
-     </p>
-     <p>
-          AI2D Neuroimaging Data addresses these challenges by centrally curating imaging data and processing it through standardized pipelines. By providing a shared, centralized resource, AI2D streamlines efforts across participating labs, eliminating redundancy and improving consistency.
+          Many labs at Penn use the same large, publicly available neuroimaging datasets. Historically, each lab downloaded, processed, and maintained their own version of the data – resulting in duplicated efforts, wasted computational resources, and inefficient use of storage. The shared neuroimaging data resources provided by AI2D addresses these challenges by providing centralized access to many of the largest and most commonly used neuroimaging datasets. All datasets are curated, processed, and shared using a standardized workflow that includes widely-used tools developed by AI2D labs including <a href="https://www.pennlinc.io/">PennLINC</a> and <a href="https://aibil.med.upenn.edu/">AIBIL</a>. The result? Larger scale, lower cost, and faster progress.
      </p>
 </p>
 
