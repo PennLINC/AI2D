@@ -1,17 +1,18 @@
 ---
 title: "Single-echo/multi-echo comparison pilot"
-excerpt: "mobile_phenomics_pilot"
+excerpt: "Mobile Phenomics Pilot"
 layout: single
 categories: datasets
 
 # Information for sidebar
 site: University of Pennsylvania
 pi: Theodore D. Satterthwaite
-website: https://openneuro.org/datasets/ds005250/versions/1.1.5
+website: "/AI2D/docs/datasets/mobile_phenomics_pilot"
 funding: NIH
 publications:
 recruitment:
-age: 24.5
+age_avg: 24.5
+age_range:
 num_site: 1
 institution: University of Pennsylvania
 number_of_sessions: 17

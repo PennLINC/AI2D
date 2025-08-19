@@ -7,21 +7,22 @@ categories: datasets
 # Information for sidebar
 site: Université de Montréal
 pi: Lune Bellec
-website: https://www.cneuromod.ca/
+website: "/AI2D/docs/datasets/cneuromod"
 funding:
 publications:
 recruitment:
-age: varied across multiple sub-datasets
+age_avg: variable
+age_range:
 num_site: 1
 institution: Université de Montréal, Centre intégré universitaire de santé et de services sociaux du Centre-Sud-de-l'Île-de-Montréal
-number_of_sessions: varied across multiple sub-datasets
+number_of_sessions: variable
 inclusion:
 exclusion:
 phenotyping:
 neuroimaging:
 data_source:
 data_release_use:
-sample_size: varied across multiple sub-datasets
+sample_size: variable
 cubic_path: /cbica/projects/open-datasets/datasets/cneuromod
 cubids: No
 babs: No

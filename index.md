@@ -1,14 +1,14 @@
 ---
 layout: home
-title: "AI2D | PennLINC | Shared Data Resources"
+title: "AI2D &#124; PennLINC &#124; Shared Data Resources"
 author_profile: false
 ---
 
 <div style="text-align: center;">
-     <img src="/AI2D/assets/images/logos/upenn_ai2d_logo.png" style="max-width: 70%; height: auto; object-fit: contain;" alt="AI2D Logo" />
+     <img src="/AI2D/assets/images/logos/ai2d_pennlinc_logo.png" style="max-width: 70%; height: auto; object-fit: contain;" alt="AI2D-PennLINC Logo" />
 </div>
 
-<div style="padding: 30px 0;">
+<div style="padding: 10px 0;">
      <hr>
 </div>
 

@@ -17,7 +17,7 @@ minimal_mistakes_skin    : "rbc" # "air", "aqua", "contrast", "dark", "dirt", "n
 # Site Settings
 locale                   : "en-US"
 title                    : "AI2D | PennLINC | Shared Data Resources"
-title_separator          : "-"
+title_separator          : "|"
 subtitle                 : AI2D
 name                     : AI2D
 description              : "AI2D Shared Data Resources"
@@ -25,7 +25,7 @@ url                      : https://pennlinc.github.io/AI2D
 baseurl                  : /AI2D
 repository               : "PennLINC/AI2D"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
-logo                     : /AI2D/assets/images/logos/upenn_ai2d_logo.png # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
+logo                     : /AI2D/assets/images/logos/ai2d_pennlinc_logo.png # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
 masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
 # breadcrumbs            : false # true, false (default)
 words_per_minute         : 200

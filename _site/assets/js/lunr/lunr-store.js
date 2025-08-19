@@ -59,7 +59,7 @@ var store = [{
         "url": "/AI2D/docs/datasets/HBN/",
         "teaser": null
       },{
-        "title": "Rockland Sample",
+        "title": "NKI Rockland Sample",
         "excerpt":"About the dataset https://rocklandsample.org PI Michael Milham Stan Colcombe Funding R01MH094639-01, New York State Office of Mental Health and Research Foundation for Mental Hygiene, 1FDN2012-1, Center for the Developing Brain at the Child Mind Institute, R01MH081218, R01MH083246, R21MH084126, NKI Center for Advanced Brain Imaging (CABI), Brain Research Foundation (Chicago, IL),...","categories": ["docs","datasets"],
         "tags": [],
         "url": "/AI2D/docs/datasets/NKI/",

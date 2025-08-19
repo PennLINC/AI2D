@@ -1,6 +1,6 @@
 ---
 layout: archive
-title: "AI2D SharedNeuroimaging Datasets"
+title: "AI2D &#124; PennLINC &#124; Shared Data Resources"
 ---
 
 <br/>
@@ -18,8 +18,8 @@ title: "AI2D SharedNeuroimaging Datasets"
       <th>Dataset</th>
       <th>Institution</th>
       <th>Principal Investigators</th>
-      <th>Study Page</th>
-      <th>Average Age</th>
+      <th>T1w</th>
+      <th>Age Range (y)</th>
       <th>Sample Size</th>
       <th>Number of Sessions</th>
     </tr>
@@ -43,32 +43,10 @@ title: "AI2D SharedNeuroimaging Datasets"
             n/a
           {% endif %}
         </td>
+        <td>✅</td>
         <td>
-          {% if dataset.title == "Rockland Sample" %}
-            <a href="{{ site.baseurl }}/docs/datasets/NKI">NKI</a>
-          {% elsif dataset.title == "Healthy Brain Network" %}
-            <a href="{{ site.baseurl }}/docs/datasets/HBN">HBN</a>
-          {% elsif dataset.title == "Philadelphia Neurodevelopmental Cohort" %}
-            <a href="{{ site.baseurl }}/docs/datasets/PNC">PNC</a>
-          {% elsif dataset.title == "Developmental Chinese Color Nest Project" %}
-            <a href="{{ site.baseurl }}/docs/datasets/dCCNP">CCNP</a>
-          {% elsif dataset.title == "Human Connectome Project - Young Adult" %}
-            <a href="{{ site.baseurl }}/docs/datasets/HCP-YA">HCP-YA</a>
-          {% elsif dataset.title == "28andHe" %}
-            <a href="{{ site.baseurl }}/docs/datasets/28andHe">28andHe</a>
-          {% elsif dataset.title == "28andMe" %}
-            <a href="{{ site.baseurl }}/docs/datasets/28andMe">28andMe</a>
-          {% elsif dataset.title == "Neural Modelling" %}
-            <a href="{{ site.baseurl }}/docs/datasets/cneuromod">cneuromod</a>
-          {% elsif dataset.title == "Midnight Scan Club" %}
-            <a href="{{ site.baseurl }}/docs/datasets/midnight_scan_club">Midnight Scan Club</a>
-          {% elsif dataset.title == "Single-echo/multi-echo comparison pilot" %}
-            <a href="{{ site.baseurl }}/docs/datasets/mobile_phenomics_pilot">Mobile Phenomics Pilot</a>
-          {% endif %}
-        </td>
-        <td>
-          {% if dataset.age %}
-            {{ dataset.age }}
+          {% if dataset.age_range %}
+            {{ dataset.age_range }}
           {% else %}
             n/a
           {% endif %}

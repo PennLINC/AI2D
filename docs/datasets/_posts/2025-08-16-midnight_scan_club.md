@@ -1,17 +1,18 @@
 ---
 title: "Midnight Scan Club"
-excerpt: "midnight_scan_club"
+excerpt: "Midnight Scan Club"
 layout: single
 categories: datasets
 
 # Information for sidebar
 site: Washington University in St. Louis
 pi: Nico Dosenbach
-website: https://openneuro.org/datasets/ds000224/versions/1.0.1
+website: "/AI2D/docs/datasets/midnight_scan_club"
 funding:
 publications:
 recruitment:
-age: 29.1
+age_avg: 29.1
+age_range:
 num_site: 1
 institution: Washington University in St. Louis
 inclusion:
