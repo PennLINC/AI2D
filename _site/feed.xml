@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.3">Jekyll</generator><link href="http://localhost:4000/AI2D/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/AI2D/" rel="alternate" type="text/html" /><updated>2025-08-22T12:42:31-04:00</updated><id>http://localhost:4000/AI2D/feed.xml</id><title type="html">AI2D | PennLINC | Shared Data Resources</title><subtitle>AI2D Shared Data Resources</subtitle><author><name>{&quot;links&quot;=&gt;[{&quot;label&quot;=&gt;&quot;Email&quot;, &quot;icon&quot;=&gt;&quot;fas fa-fw fa-envelope-square&quot;}, {&quot;label&quot;=&gt;&quot;Website&quot;, &quot;icon&quot;=&gt;&quot;fas fa-fw fa-link&quot;}, {&quot;label&quot;=&gt;&quot;Twitter&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-twitter-square&quot;}, {&quot;label&quot;=&gt;&quot;Facebook&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-facebook-square&quot;}, {&quot;label&quot;=&gt;&quot;GitHub&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-github&quot;}, {&quot;label&quot;=&gt;&quot;Instagram&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-instagram&quot;}]}</name></author><entry><title type="html">Midnight Scan Club</title><link href="http://localhost:4000/AI2D/docs/datasets/midnight_scan_club/" rel="alternate" type="text/html" title="Midnight Scan Club" /><published>2025-08-16T00:00:00-04:00</published><updated>2025-08-16T00:00:00-04:00</updated><id>http://localhost:4000/AI2D/docs/datasets/midnight_scan_club</id><content type="html" xml:base="http://localhost:4000/AI2D/docs/datasets/midnight_scan_club/"><![CDATA[<div style="text-align: left;">
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.3">Jekyll</generator><link href="http://localhost:4000/AI2D/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/AI2D/" rel="alternate" type="text/html" /><updated>2025-08-22T13:16:54-04:00</updated><id>http://localhost:4000/AI2D/feed.xml</id><title type="html">AI2D | PennLINC | Shared Data Resources</title><subtitle>AI2D Shared Data Resources</subtitle><author><name>{&quot;links&quot;=&gt;[{&quot;label&quot;=&gt;&quot;Email&quot;, &quot;icon&quot;=&gt;&quot;fas fa-fw fa-envelope-square&quot;}, {&quot;label&quot;=&gt;&quot;Website&quot;, &quot;icon&quot;=&gt;&quot;fas fa-fw fa-link&quot;}, {&quot;label&quot;=&gt;&quot;Twitter&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-twitter-square&quot;}, {&quot;label&quot;=&gt;&quot;Facebook&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-facebook-square&quot;}, {&quot;label&quot;=&gt;&quot;GitHub&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-github&quot;}, {&quot;label&quot;=&gt;&quot;Instagram&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-instagram&quot;}]}</name></author><entry><title type="html">Midnight Scan Club</title><link href="http://localhost:4000/AI2D/docs/datasets/midnight_scan_club/" rel="alternate" type="text/html" title="Midnight Scan Club" /><published>2025-08-16T00:00:00-04:00</published><updated>2025-08-16T00:00:00-04:00</updated><id>http://localhost:4000/AI2D/docs/datasets/midnight_scan_club</id><content type="html" xml:base="http://localhost:4000/AI2D/docs/datasets/midnight_scan_club/"><![CDATA[<div style="text-align: left;">
      <img src="/AI2D/assets/images/logos/WashU.png" style="width: auto; height: 10vw;" />
 </div>
 
@@ -594,19 +594,19 @@ Beijing Normal University</p>
 <div class="table" align="center">
 <table style="text-align: center;
 width:100%; font-size:90%; border: 1px solid black">
-<tr><th style="font-weight:bold">Data Descriptor Paper</th><th style="font-weight:normal"><a href="https://doi.org/10.1016/j.dcn.2021.101020">https://doi.org/10.1016/j.dcn.2021.101020</a></th><th style="font-weight:normal"></th></tr>
-<tr><th style="font-weight:bold">CUBIC Project</th><th style="font-weight:normal"><span style="color: blue;">pennlinc_rbc</span></th><th style="font-weight:normal"></th></tr>
-<tr><th style="font-weight:bold">DUA</th><th style="font-weight:normal">None</th><th style="font-weight:normal"></th></tr>
-<tr><th style="font-weight:bold">Sample Size</th><th style="font-weight:normal">195</th><th style="font-weight:normal"></th></tr>
-<tr><th style="font-weight:bold">Number of Sessions</th><th style="font-weight:normal">195</th><th style="font-weight:normal"></th></tr>
-<tr><th style="font-weight:bold"><a href="/AI2D/docs/imaging/image_curation/">CuBIDS</a></th><th style="font-weight:normal"><a href="https://github.com/ReproBrainChart/CCNP_BIDS/blob/main/study-CCNP_desc-CuBIDS_summary.tsv">v1.0.5</a></th><th style="font-weight:normal"></th></tr>
-<tr><th style="font-weight:bold"><a href="/AI2D/docs/imaging/image_babs/">BABS</a></th><th style="font-weight:normal">true</th><th style="font-weight:normal"></th></tr>
-<tr><th style="font-weight:bold">Available Demographics</th><th style="font-weight:normal"><a href="https://github.com/ReproBrainChart/CCNP_BIDS/blob/main/study-CCNP_desc-participants.json">https://github.com/ReproBrainChart/CCNP_BIDS/blob/main/study-CCNP_desc-participants.json</a></th><th style="font-weight:normal"></th></tr>
-<tr><th style="font-weight:bold">Average age</th><th style="font-weight:normal">11.9</th><th style="font-weight:normal"></th></tr>
-<tr><th style="font-weight:bold">% Female</th><th style="font-weight:normal">52</th><th style="font-weight:normal"></th></tr>
-<tr><th style="font-weight:bold">% Right Handed</th><th style="font-weight:normal">95</th><th style="font-weight:normal"></th></tr>
-<tr><th style="font-weight:bold">BIDS Datalad Dataset</th><th style="font-weight:normal"><code>ria+file:///cbica/projects/pennlinc_rbc/datasets/LINC_CCNP/BIDS</code></th><th style="font-weight:normal"></th></tr>
-<tr><th style="font-weight:bold"><a href="/AI2D/docs/imaging/image_smriprep/">sMRIPrep</a> v24-1-1<br /><span style="font-weight:normal; font-size: 0.8em;">(195 completed sessions out of 195)</span></th><th style="font-weight:normal">
+<tr><th style="font-weight:bold; width: 250px;">Data Descriptor Paper</th><th style="font-weight:normal"><a href="https://doi.org/10.1016/j.dcn.2021.101020">https://doi.org/10.1016/j.dcn.2021.101020</a></th><th style="font-weight:normal"></th></tr>
+<tr><th style="font-weight:bold; width: 250px;">CUBIC Project</th><th style="font-weight:normal"><span style="color: blue;">pennlinc_rbc</span></th><th style="font-weight:normal"></th></tr>
+<tr><th style="font-weight:bold; width: 250px;">DUA</th><th style="font-weight:normal">None</th><th style="font-weight:normal"></th></tr>
+<tr><th style="font-weight:bold; width: 250px;">Sample Size</th><th style="font-weight:normal">195</th><th style="font-weight:normal"></th></tr>
+<tr><th style="font-weight:bold; width: 250px;">Number of Sessions</th><th style="font-weight:normal">195</th><th style="font-weight:normal"></th></tr>
+<tr><th style="font-weight:bold; width: 250px;"><a href="/AI2D/docs/imaging/image_curation/">CuBIDS</a></th><th style="font-weight:normal"><a href="https://github.com/ReproBrainChart/CCNP_BIDS/blob/main/study-CCNP_desc-CuBIDS_summary.tsv">v1.0.5</a></th><th style="font-weight:normal"></th></tr>
+<tr><th style="font-weight:bold; width: 250px;"><a href="/AI2D/docs/imaging/image_babs/">BABS</a></th><th style="font-weight:normal">true</th><th style="font-weight:normal"></th></tr>
+<tr><th style="font-weight:bold; width: 250px;">Available Demographics</th><th style="font-weight:normal"><a href="https://github.com/ReproBrainChart/CCNP_BIDS/blob/main/study-CCNP_desc-participants.json">https://github.com/ReproBrainChart/CCNP_BIDS/blob/main/study-CCNP_desc-participants.json</a></th><th style="font-weight:normal"></th></tr>
+<tr><th style="font-weight:bold; width: 250px;">Average age</th><th style="font-weight:normal">11.9</th><th style="font-weight:normal"></th></tr>
+<tr><th style="font-weight:bold; width: 250px;">% Female</th><th style="font-weight:normal">52</th><th style="font-weight:normal"></th></tr>
+<tr><th style="font-weight:bold; width: 250px;">% Right Handed</th><th style="font-weight:normal">95</th><th style="font-weight:normal"></th></tr>
+<tr><th style="font-weight:bold; width: 250px;">BIDS Datalad Dataset</th><th style="font-weight:normal"><code>ria+file:///cbica/projects/pennlinc_rbc/datasets/LINC_CCNP/BIDS</code></th><th style="font-weight:normal"></th></tr>
+<tr><th style="font-weight:bold; width: 250px;"><a href="/AI2D/docs/imaging/image_smriprep/">sMRIPrep</a> v24-1-1<br /><span style="font-weight:normal; font-size: 0.8em;">(195 completed sessions out of 195)</span></th><th style="font-weight:normal">
   <div class="tab-container">
     <div class="tab-buttons">
       <button class="tab-button active" onclick="showTab('smriprep-dl')">Datalad Dataset</button>
@@ -616,7 +616,7 @@ width:100%; font-size:90%; border: 1px solid black">
     <div id="smriprep-ephe" class="tab-content">/cbica/projects/pennlinc_rbc/datasets/LINC_CCNP/derivatives/FMRIPREP_ANAT-24-1-1_zipped</div>
   </div>
 </th><th style="font-weight:normal"></th></tr>
-<tr><th style="font-weight:bold"><a href="/AI2D/docs/imaging/image_smriprep/">FreeSurfer-Post</a> v0-1-2<br /><span style="font-weight:normal; font-size: 0.8em;">(195 completed sessions out of 195)</span></th><th style="font-weight:normal">
+<tr><th style="font-weight:bold; width: 250px;"><a href="/AI2D/docs/imaging/image_smriprep/">FreeSurfer-Post</a> v0-1-2<br /><span style="font-weight:normal; font-size: 0.8em;">(195 completed sessions out of 195)</span></th><th style="font-weight:normal">
   <div class="tab-container">
     <div class="tab-buttons">
       <button class="tab-button active" onclick="showTab('freesurferpost-dl')">Datalad Dataset</button>
@@ -626,7 +626,7 @@ width:100%; font-size:90%; border: 1px solid black">
     <div id="freesurferpost-ephe" class="tab-content">/cbica/projects/pennlinc_rbc/datasets/LINC_CCNP/derivatives/FREESURFERPOST-0-1-2_zipped</div>
   </div>
 </th><th style="font-weight:normal"></th></tr>
-<tr><th style="font-weight:bold"><a href="/AI2D/docs/imaging/image_fmriprep/">fMRIPrep</a> v24-1-1<br /><span style="font-weight:normal; font-size: 0.8em;">(195 completed sessions out of 195)</span></th><th style="font-weight:normal">
+<tr><th style="font-weight:bold; width: 250px;"><a href="/AI2D/docs/imaging/image_fmriprep/">fMRIPrep</a> v24-1-1<br /><span style="font-weight:normal; font-size: 0.8em;">(195 completed sessions out of 195)</span></th><th style="font-weight:normal">
   <div class="tab-container">
     <div class="tab-buttons">
       <button class="tab-button active" onclick="showTab('fmriprep-dl')">Datalad Dataset</button>
@@ -636,7 +636,7 @@ width:100%; font-size:90%; border: 1px solid black">
     <div id="fmriprep-ephe" class="tab-content">/cbica/projects/pennlinc_rbc/datasets/LINC_CCNP/derivatives/FMRIPREP_FUNC-24-1-1_zipped</div>
   </div>
 </th><th style="font-weight:normal"></th></tr>
-<tr><th style="font-weight:bold"><a href="/AI2D/docs/imaging/image_xcpd/">XCP-D</a> v0-10-6<br /><span style="font-weight:normal; font-size: 0.8em;">(195 completed sessions out of 195)</span></th><th style="font-weight:normal">
+<tr><th style="font-weight:bold; width: 250px;"><a href="/AI2D/docs/imaging/image_xcpd/">XCP-D</a> v0-10-6<br /><span style="font-weight:normal; font-size: 0.8em;">(195 completed sessions out of 195)</span></th><th style="font-weight:normal">
   <div class="tab-container">
     <div class="tab-buttons">
       <button class="tab-button active" onclick="showTab('xcpd-dl')">Datalad Dataset</button>
@@ -664,7 +664,7 @@ width:100%; font-size:90%; border: 1px solid black">
   border: 1px solid #ccc;
   padding: 5px 10px;
   cursor: pointer;
-  font-size: 12px;
+  font-size: 14px;
   margin-right: 2px;
 }
 
@@ -679,7 +679,7 @@ width:100%; font-size:90%; border: 1px solid black">
   padding: 5px;
   background-color: #f9f9f9;
   border: 1px solid #ddd;
-  font-size: 11px;
+  font-size: 14px;
   word-break: break-all;
 }
 
