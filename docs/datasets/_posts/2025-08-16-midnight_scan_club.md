@@ -26,6 +26,13 @@ number_of_sessions: 10
 cubic_path: /cbica/projects/pennlinc_rbc/datasets/midnight_scan_club
 cubids: No
 babs: No
+t1w: Yes
+fmri:
+dmri:
+fmap:
+dua: None
+dua_restrict:
+
 ---
 <div style="text-align: left;">
      <img src="{{ site.baseurl }}/assets/images/logos/WashU.png" style="width: auto; height: 10vw;" />
@@ -37,14 +44,6 @@ babs: No
 *PI*
 <br>
 Nico U.F. Dosenbach
-
-*Funding*
-<br>
-NIH, NSF
-
-*Citations*
-<br>
-Gordon, E. M., Laumann, T. O., Gilmore, A. W., Newbold, D. J., Greene, D. J., Berg, J. J., ... & Dosenbach, N. U. (2017). Precision functional mapping of individual human brains. Neuron, 95(4), 791-807.
 
 <br>
 <div class=table align='center'>
@@ -65,3 +64,11 @@ width:63%; font-size:90%; border: 1px solid black">
 
 <br>
 <br>
+
+*Funding*
+<br>
+NIH, NSF
+
+*Citations*
+<br>
+Gordon, E. M., Laumann, T. O., Gilmore, A. W., Newbold, D. J., Greene, D. J., Berg, J. J., ... & Dosenbach, N. U. (2017). Precision functional mapping of individual human brains. Neuron, 95(4), 791-807.

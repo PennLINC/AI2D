@@ -218,7 +218,7 @@
       <span class="page__meta-readtime">
         <i class="far fa-clock" aria-hidden="true"></i>
         
-          less than 1 minute read
+          1 minute read
         
       </span>
     
@@ -235,11 +235,137 @@
 </div>
 
 <h3 id="about-the-dataset">About the dataset</h3>
-<p><a href="https://www.sciencedirect.com/science/article/pii/S1878929321001109">https://www.sciencedirect.com/science/article/pii/S1878929321001109</a></p>
 
 <p><em>PI</em>
 <br />
 Xi-Nian Zuo</p>
+
+<p><em>Institution</em>
+<br />
+Beijing Normal University</p>
+
+<p>This is the neuroimaging dataset for the developmental component of the <a href="https://doi.org/10.1016/j.dcn.2021.101020">Chinese Color Nest Project (CCNP)</a>. CCNP was established to create normative charts for brain structure and function across the human lifespan, and link age-related changes in brain imaging measures to psychological assessments of behavior, cognition, and emotion using an accelerated longitudinal design. CCNP has acquired data with three repeated measurements from 2013 to 2017 in Southwest University, Chongqing, China.</p>
+
+<p>This version of the dataset was curated at the University of Pennsylvania by the Lifespan Informatics and Neuroimaging Center (PennLINC) as part of the <a href="https://reprobrainchart.github.io/">Reproducible Brain Chart (RBC)</a> Initiative.</p>
+
+<div class="table" align="center">
+<table style="text-align: center;
+width:100%; font-size:90%; border: 1px solid black">
+<tr><th style="font-weight:bold">Data Descriptor Paper</th><th style="font-weight:normal"><a href="https://doi.org/10.1016/j.dcn.2021.101020">https://doi.org/10.1016/j.dcn.2021.101020</a></th><th style="font-weight:normal"></th></tr>
+<tr><th style="font-weight:bold">CUBIC Project</th><th style="font-weight:normal"><span style="color: blue;">pennlinc_rbc</span></th><th style="font-weight:normal"></th></tr>
+<tr><th style="font-weight:bold">DUA</th><th style="font-weight:normal">None</th><th style="font-weight:normal"></th></tr>
+<tr><th style="font-weight:bold">Sample Size</th><th style="font-weight:normal">195</th><th style="font-weight:normal"></th></tr>
+<tr><th style="font-weight:bold">Number of Sessions</th><th style="font-weight:normal">195</th><th style="font-weight:normal"></th></tr>
+<tr><th style="font-weight:bold"><a href="/AI2D/docs/imaging/image_curation/">CuBIDS</a></th><th style="font-weight:normal"><a href="https://github.com/ReproBrainChart/CCNP_BIDS/blob/main/study-CCNP_desc-CuBIDS_summary.tsv">v1.0.5</a></th><th style="font-weight:normal"></th></tr>
+<tr><th style="font-weight:bold"><a href="/AI2D/docs/imaging/image_babs/">BABS</a></th><th style="font-weight:normal">true</th><th style="font-weight:normal"></th></tr>
+<tr><th style="font-weight:bold">Average age</th><th style="font-weight:normal">11.9</th><th style="font-weight:normal"></th></tr>
+<tr><th style="font-weight:bold">% Female</th><th style="font-weight:normal">52</th><th style="font-weight:normal"></th></tr>
+<tr><th style="font-weight:bold">% Right Handed</th><th style="font-weight:normal">95</th><th style="font-weight:normal"></th></tr>
+<tr><th style="font-weight:bold"><a href="/AI2D/docs/imaging/image_smriprep/">sMRIPrep</a> 24-1-1<br /><span style="font-weight:normal; font-size: 0.9em;">(195 completed sessions out of 195)</span></th><th style="font-weight:normal">
+  <div class="tab-container">
+    <div class="tab-buttons">
+      <button class="tab-button active" onclick="showTab('smriprep-dl')">Datalad Dataset</button>
+      <button class="tab-button" onclick="showTab('smriprep-ephe')">Ephemeral Clone</button>
+    </div>
+    <div id="smriprep-dl" class="tab-content active">ria+file:///cbica/projects/pennlinc_rbc/datasets/LINC_CCNP/derivatives/fmriprep_anat-24-1-1-babs/output_ria#~data</div>
+    <div id="smriprep-ephe" class="tab-content">/cbica/projects/pennlinc_rbc/datasets/LINC_CCNP/derivatives/FMRIPREP_ANAT-24-1-1_zipped</div>
+  </div>
+</th><th style="font-weight:normal"></th></tr>
+<tr><th style="font-weight:bold"><a href="/AI2D/docs/imaging/image_smriprep/">FreeSurfer-Post</a> 0-1-2<br /><span style="font-weight:normal; font-size: 0.9em;">(195 completed sessions out of 195)</span></th><th style="font-weight:normal">
+  <div class="tab-container">
+    <div class="tab-buttons">
+      <button class="tab-button active" onclick="showTab('freesurferpost-dl')">Datalad Dataset</button>
+      <button class="tab-button" onclick="showTab('freesurferpost-ephe')">Ephemeral Clone</button>
+    </div>
+    <div id="freesurferpost-dl" class="tab-content active">ria+file:///cbica/projects/pennlinc_rbc/datasets/LINC_CCNP/derivatives/freesurferpost-0-1-2-babs/output_ria#~data</div>
+    <div id="freesurferpost-ephe" class="tab-content">/cbica/projects/pennlinc_rbc/datasets/LINC_CCNP/derivatives/FREESURFERPOST-0-1-2_zipped</div>
+  </div>
+</th><th style="font-weight:normal"></th></tr>
+<tr><th style="font-weight:bold"><a href="/AI2D/docs/imaging/image_fmriprep/">fMRIPrep</a> 24-1-1<br /><span style="font-weight:normal; font-size: 0.9em;">(195 completed sessions out of 195)</span></th><th style="font-weight:normal">
+  <div class="tab-container">
+    <div class="tab-buttons">
+      <button class="tab-button active" onclick="showTab('fmriprep-dl')">Datalad Dataset</button>
+      <button class="tab-button" onclick="showTab('fmriprep-ephe')">Ephemeral Clone</button>
+    </div>
+    <div id="fmriprep-dl" class="tab-content active">ria+file:///cbica/projects/pennlinc_rbc/datasets/LINC_CCNP/derivatives/fmriprep_func-24-1-1-babs/output_ria#~data</div>
+    <div id="fmriprep-ephe" class="tab-content">/cbica/projects/pennlinc_rbc/datasets/LINC_CCNP/derivatives/FMRIPREP_FUNC-24-1-1_zipped</div>
+  </div>
+</th><th style="font-weight:normal"></th></tr>
+<tr><th style="font-weight:bold"><a href="/AI2D/docs/imaging/image_xcpd/">XCP-D</a> 0-10-6<br /><span style="font-weight:normal; font-size: 0.9em;">(195 completed sessions out of 195)</span></th><th style="font-weight:normal">
+  <div class="tab-container">
+    <div class="tab-buttons">
+      <button class="tab-button active" onclick="showTab('xcpd-dl')">Datalad Dataset</button>
+      <button class="tab-button" onclick="showTab('xcpd-ephe')">Ephemeral Clone</button>
+    </div>
+    <div id="xcpd-dl" class="tab-content active">ria+file:///cbica/projects/pennlinc_rbc/datasets/LINC_CCNP/derivatives/xcpd-0-10-6-babs/output_ria#~data</div>
+    <div id="xcpd-ephe" class="tab-content">/cbica/projects/pennlinc_rbc/datasets/LINC_CCNP/derivatives/XCPD-0-10-6_zipped</div>
+  </div>
+</th><th style="font-weight:normal"></th></tr>
+</table>
+</div>
+
+<style>
+.tab-container {
+  width: 100%;
+}
+
+.tab-buttons {
+  display: flex;
+  margin-bottom: 5px;
+}
+
+.tab-button {
+  background-color: #f1f1f1;
+  border: 1px solid #ccc;
+  padding: 5px 10px;
+  cursor: pointer;
+  font-size: 12px;
+  margin-right: 2px;
+}
+
+.tab-button.active {
+  background-color: #007bff;
+  color: white;
+  border-color: #007bff;
+}
+
+.tab-content {
+  display: none;
+  padding: 5px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  font-size: 11px;
+  word-break: break-all;
+}
+
+.tab-content.active {
+  display: block;
+}
+</style>
+
+<script>
+function showTab(tabName) {
+  // Hide all tab contents
+  var tabContents = document.getElementsByClassName('tab-content');
+  for (var i = 0; i < tabContents.length; i++) {
+    tabContents[i].classList.remove('active');
+  }
+  
+  // Remove active class from all tab buttons
+  var tabButtons = document.getElementsByClassName('tab-button');
+  for (var i = 0; i < tabButtons.length; i++) {
+    tabButtons[i].classList.remove('active');
+  }
+  
+  // Show the selected tab content
+  document.getElementById(tabName).classList.add('active');
+  
+  // Add active class to the clicked button
+  event.target.classList.add('active');
+}
+</script>
+
+<p><br /></p>
 
 <p><em>Funding</em>
 <br />
@@ -248,71 +374,6 @@ Start-up Funds for Leading Talents - Beijing Normal University, 2019B030335001, 
 <p><em>Citation</em>
 <br />
 Liu S, Wang YS, Zhang Q, Zhou Q, Cao LZ, Jiang C, Zhang Z, Yang N, Dong Q, Zuo XN; Chinese Color Nest Consortium. Chinese Color Nest Project : An accelerated longitudinal brain-mind cohort. Dev Cogn Neurosci. 2021 Dec;52:101020. doi: 10.1016/j.dcn.2021.101020. Epub 2021 Oct 11. PMID: 34653938; PMCID: PMC8517840.</p>
-
-<h2 id="dataset-summary">Dataset Summary</h2>
-
-<div class="table" align="center">
-<table style="text-align: center;
-width:60%; font-size:80%; border: 1px solid black">
-<tr><th style="font-weight:bold">CUBIC Path</th><th style="font-weight:normal">/cbica/projects/pennlinc_rbc/datasets/LINC_CCNP</th><th style="font-weight:normal"></th></tr>
-<tr><th style="font-weight:bold">Open Access</th><th style="font-weight:normal">true</th><th style="font-weight:normal"></th></tr>
-<tr><th style="font-weight:bold">Sample Size</th><th style="font-weight:normal">195</th><th style="font-weight:normal"></th></tr>
-<tr><th style="font-weight:bold">Number of Sessions</th><th style="font-weight:normal">195</th><th style="font-weight:normal"></th></tr>
-<tr><th style="font-weight:bold"><a href="/AI2D/docs/imaging/image_curation/">CuBIDS</a></th><th style="font-weight:normal"><a href="https://github.com/ReproBrainChart/CCNP_BIDS/blob/main/study-CCNP_desc-CuBIDS_summary.tsv">true</a></th><th style="font-weight:normal"></th></tr>
-<tr><th style="font-weight:bold"><a href="/AI2D/docs/imaging/image_babs/">BABS</a></th><th style="font-weight:normal">true</th><th style="font-weight:normal"></th></tr>
-<tr><th style="font-weight:bold">Average age</th><th style="font-weight:normal"></th><th style="font-weight:normal"></th></tr>
-<tr><th style="font-weight:bold">% Female</th><th style="font-weight:normal">52</th><th style="font-weight:normal"></th></tr>
-<tr><th style="font-weight:bold">% Right Handed:</th><th style="font-weight:normal">95</th><th style="font-weight:normal"></th></tr>
-</table>
-</div>
-
-<h2 id="data-access">Data Access</h2>
-
-<div class="table" align="center">
-<table style="text-align: center; width:100%; font-size:80%; border: 1px solid black">
-<tr>
-<th style="font-weight:bold; text-align: center;"></th>
-<th style="font-weight:bold; text-align: center;">Number of Sessions</th>
-<th style="font-weight:bold; text-align: center;">Completed</th>
-<th style="font-weight:bold; text-align: center;">Software Version</th>
-<th style="font-weight:bold; text-align: center;">Datalad Dataset</th>
-<th style="font-weight:bold; text-align: center;">Ephemeral Clone</th>
-</tr>
-<tr>
-<th style="font-weight:bold; text-align: center;"><a href="/AI2D/docs/imaging/image_smriprep/">sMRIPrep</a></th>
-<td style="font-weight:normal">195</td>
-<td style="font-weight:normal">195</td>
-<td style="font-weight:normal">fmriprep 24-1-1</td>
-<td style="font-weight:normal">ria+file:///cbica/projects/pennlinc_rbc/datasets/LINC_CCNP/derivatives/fmriprep_anat-24-1-1-babs/output_ria#~data</td>
-<td style="font-weight:normal">/cbica/projects/pennlinc_rbc/datasets/LINC_CCNP/derivatives/FMRIPREP_ANAT-24-1-1_zipped</td>
-</tr>
-<tr>
-<th style="font-weight:bold; text-align: center;"><a href="/AI2D/docs/imaging/image_smriprep/">FreeSurfer-Post</a></th>
-<td style="font-weight:normal">195</td>
-<td style="font-weight:normal">195</td>
-<td style="font-weight:normal">freesurfer-post 0-1-2</td>
-<td style="font-weight:normal">ria+file:///cbica/projects/pennlinc_rbc/datasets/LINC_CCNP/derivatives/freesurferpost-0-1-2-babs/output_ria#~data</td>
-<td style="font-weight:normal">/cbica/projects/pennlinc_rbc/datasets/LINC_CCNP/derivatives/FREESURFERPOST-0-1-2_zipped</td>
-</tr>
-<tr>
-<th style="font-weight:bold; text-align: center;"><a href="/AI2D/docs/imaging/image_fmriprep/">fMRIPrep</a></th>
-<td style="font-weight:normal">195</td>
-<td style="font-weight:normal">195</td>
-<td style="font-weight:normal">fmriprep 24-1-1</td>
-<td style="font-weight:normal">ria+file:///cbica/projects/pennlinc_rbc/datasets/LINC_CCNP/derivatives/fmriprep_func-24-1-1-babs/output_ria#~data</td>
-<td style="font-weight:normal">/cbica/projects/pennlinc_rbc/datasets/LINC_CCNP/derivatives/FMRIPREP_FUNC-24-1-1_zipped</td>
-</tr>
-<tr>
-<th style="font-weight:bold; text-align: center;"><a href="/AI2D/docs/imaging/image_xcpd/">XCP-D</a></th>
-<td style="font-weight:normal">195</td>
-<td style="font-weight:normal">195</td>
-<td style="font-weight:normal">xcpd 0-10-6</td>
-<td style="font-weight:normal">ria+file:///cbica/projects/pennlinc_rbc/datasets/LINC_CCNP/derivatives/xcpd-0-10-6-babs/output_ria#~data</td>
-<td style="font-weight:normal">/cbica/projects/pennlinc_rbc/datasets/LINC_CCNP/derivatives/XCPD-0-10-6_zipped</td>
-</tr>
-</table>
-</div>
-
 
         
       </section>

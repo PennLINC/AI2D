@@ -218,7 +218,7 @@
       <span class="page__meta-readtime">
         <i class="far fa-clock" aria-hidden="true"></i>
         
-          less than 1 minute read
+          1 minute read
         
       </span>
     
@@ -245,6 +245,126 @@ Kamil Ugurbil (UMinn)
 <br />
 David Van Essen (WashU)</p>
 
+<p>The HCP (a.k.a. “original” or main HCP, HCP Young Adult, HCP-YA) is mapping the healthy human connectome by collecting and freely distributing neuroimaging and behavioral data on 1,200 normal young adults, aged 22-35.</p>
+
+<p>The project was carried out in two phases by a consortium of over 100 investigators and staff at 10 institutions. In Phase I (years 1–2, Fall 2010–Spring 2012), data acquisition and analysis methods were optimized, including refinements to pulse sequences and key preprocessing steps. In Phase II (years 3 – 5, Summer 2012–Fall 2015), neuroimaging and behavioral data were acquired from 1,200 healthy adults recruited from ~300 families of twins and their non twin siblings.</p>
+
+<p>The <code class="language-plaintext highlighter-rouge">pennlinc_hcpya</code> project on CUBIC is not open-access data. Access requires proof of ConnectomeDB registration and acceptance of the HCP open data terms (send email to <span style="color: blue;">Tien.Tong@PennMedicine.upenn.edu</span>).</p>
+
+<p><strong>The <code class="language-plaintext highlighter-rouge">pennlinc_hcpya</code> project on CUBIC only contained <code class="language-plaintext highlighter-rouge">QSIRecon</code> outputs</strong>, which was run on the minimally preprocessed data, which were downloaded on the fly and removed upon completion of the QSIRecon job.</p>
+
+<p><br /></p>
+<div class="table" align="center">
+<table style="text-align: center;
+width:100%; font-size:90%; border: 1px solid black">
+<tr><th style="font-weight:bold">Data Descriptor Paper</th><th style="font-weight:normal"><a href=""></a></th><th style="font-weight:normal"></th></tr>
+<tr><th style="font-weight:bold">CUBIC Project</th><th style="font-weight:normal"><span style="color: blue;">pennlinc_hcpya</span></th><th style="font-weight:normal"></th></tr>
+<tr><th style="font-weight:bold">DUA</th><th style="font-weight:normal"><a href="https://www.humanconnectome.org/study/hcp-young-adult/document/wu-minn-hcp-consortium-open-access-data-use-terms">DUA</a></th><th style="font-weight:normal"></th></tr>
+<tr><th style="font-weight:bold">Data Use Restrictions</th><th style="font-weight:normal"><a href="https://www.humanconnectome.org/study/hcp-young-adult/document/wu-minn-hcp-consortium-open-access-data-use-terms">DUA</a>, <a href="https://www.humanconnectome.org/study/hcp-young-adult/document/quick-reference-open-access-vs-restricted-data">Open-access vs. Restricted data</a></th><th style="font-weight:normal"></th></tr>
+<tr><th style="font-weight:bold">Sample Size</th><th style="font-weight:normal">1206</th><th style="font-weight:normal"></th></tr>
+<tr><th style="font-weight:bold">Number of Sessions</th><th style="font-weight:normal">1206</th><th style="font-weight:normal"></th></tr>
+<tr><th style="font-weight:bold"><a href="/AI2D/docs/imaging/image_curation/">CuBIDS</a></th><th style="font-weight:normal">false</th><th style="font-weight:normal"></th></tr>
+<tr><th style="font-weight:bold"><a href="/AI2D/docs/imaging/image_babs/">BABS</a></th><th style="font-weight:normal">Yes (FAIRly big)</th><th style="font-weight:normal"></th></tr>
+<tr><th style="font-weight:bold">Average age</th><th style="font-weight:normal">28.8</th><th style="font-weight:normal"></th></tr>
+<tr><th style="font-weight:bold">% Female</th><th style="font-weight:normal">54.4</th><th style="font-weight:normal"></th></tr>
+<tr><th style="font-weight:bold">% Right Handed</th><th style="font-weight:normal">84.9</th><th style="font-weight:normal"></th></tr>
+<tr><th style="font-weight:bold"><a href="/AI2D/docs/imaging/image_xcpd/">XCP-D</a> v0-9-1<br /><span style="font-weight:normal; font-size: 0.9em;">(1096 completed sessions out of 1206)</span></th><th style="font-weight:normal">
+  <div class="tab-container">
+    <div class="tab-buttons">
+      <button class="tab-button active" onclick="showTab('xcpd-dl')">Datalad Dataset</button>
+      <button class="tab-button" onclick="showTab('xcpd-ephe')">Ephemeral Clone</button>
+    </div>
+    <div id="xcpd-dl" class="tab-content active">ria+file:///cbica/projects/pennlinc_hcpya/data/rbc_xcpd/output_ria#~data</div>
+    <div id="xcpd-ephe" class="tab-content">/cbica/projects/pennlinc_hcpya/data/rbc_xcpd/DANGER</div>
+  </div>
+</th><th style="font-weight:normal"></th></tr>
+<tr><th style="font-weight:bold"><a href="/AI2D/docs/imaging/image_qsirecon/">QSIRecon - Bundle Stats</a> v1-0-0rc2<br /><span style="font-weight:normal; font-size: 0.9em;">(1064 completed sessions out of 1206)</span></th><th style="font-weight:normal">
+  <div class="tab-container">
+    <div class="tab-buttons">
+      <button class="tab-button active" onclick="showTab('qsirecon-dl')">Datalad Dataset</button>
+      <button class="tab-button" onclick="showTab('qsirecon-ephe')">Ephemeral Clone</button>
+    </div>
+    <div id="qsirecon-dl" class="tab-content active">ria+file:///cbica/projects/pennlinc_hcpya/data/qsirecon/output_ria#~data</div>
+    <div id="qsirecon-ephe" class="tab-content">/cbica/projects/pennlinc_hcpya/data/qsirecon/DANGER</div>
+  </div>
+</th><th style="font-weight:normal"></th></tr>
+<tr><th style="font-weight:bold"><a href="/AI2D/docs/imaging/image_qsiprep/">QSIRecon - HSVS Matrix</a> v1-0-0rc2<br /><span style="font-weight:normal; font-size: 0.9em;">(1064 completed sessions out of 1206)</span></th><th style="font-weight:normal">
+  <div class="tab-container">
+    <div class="tab-buttons">
+      <button class="tab-button active" onclick="showTab('qsirecon-hsvs-dl')">Datalad Dataset</button>
+      <button class="tab-button" onclick="showTab('qsirecon-hsvs-ephe')">Ephemeral Clone</button>
+    </div>
+    <div id="qsirecon-hsvs-dl" class="tab-content active">ria+file:///cbica/projects/pennlinc_hcpya/data/qsirecon_hsvs/output_ria#~data</div>
+    <div id="qsirecon-hsvs-ephe" class="tab-content">/cbica/projects/pennlinc_hcpya/data/qsirecon_hsvs/DANGER</div>
+  </div>
+</th><th style="font-weight:normal"></th></tr>
+</table>
+</div>
+
+<style>
+.tab-container {
+  width: 100%;
+}
+
+.tab-buttons {
+  display: flex;
+  margin-bottom: 5px;
+}
+
+.tab-button {
+  background-color: #f1f1f1;
+  border: 1px solid #ccc;
+  padding: 5px 10px;
+  cursor: pointer;
+  font-size: 12px;
+  margin-right: 2px;
+}
+
+.tab-button.active {
+  background-color: #007bff;
+  color: white;
+  border-color: #007bff;
+}
+
+.tab-content {
+  display: none;
+  padding: 5px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  font-size: 11px;
+  word-break: break-all;
+}
+
+.tab-content.active {
+  display: block;
+}
+</style>
+
+<script>
+function showTab(tabName) {
+  // Hide all tab contents
+  var tabContents = document.getElementsByClassName('tab-content');
+  for (var i = 0; i < tabContents.length; i++) {
+    tabContents[i].classList.remove('active');
+  }
+  
+  // Remove active class from all tab buttons
+  var tabButtons = document.getElementsByClassName('tab-button');
+  for (var i = 0; i < tabButtons.length; i++) {
+    tabButtons[i].classList.remove('active');
+  }
+  
+  // Show the selected tab content
+  document.getElementById(tabName).classList.add('active');
+  
+  // Add active class to the clicked button
+  event.target.classList.add('active');
+}
+</script>
+
+<p><br />
+<br /></p>
+
 <p><em>Funding</em>
 <br />
 NIH Blueprint for Neuroscience Research</p>
@@ -254,71 +374,6 @@ NIH Blueprint for Neuroscience Research</p>
 <ol>
   <li>Van Essen DC, Smith SM, Barch DM, Behrens TE, Yacoub E, Ugurbil K; WU-Minn HCP Consortium. The WU-Minn Human Connectome Project: an overview. Neuroimage. 2013 Oct 15;80:62-79. doi: 10.1016/j.neuroimage.2013.05.041. Epub 2013 May 25. PMID: 23702424; PMCID: PMC3724347.</li>
 </ol>
-
-<p><br /></p>
-<div class="table" align="center">
-<table style="text-align: center;
-width:63%; font-size:90%; border: 1px solid black">
-<tr><th style="font-weight:bold">CUBIC Path</th><th style="font-weight:normal">/cbica/projects/pennlinc_hcpya/data</th><th style="font-weight:normal"></th></tr>
-<tr><th style="font-weight:bold">Open Access</th><th style="font-weight:normal">false</th><th style="font-weight:normal"></th></tr>
-<tr><th style="font-weight:bold">Sample Size</th><th style="font-weight:normal">1206</th><th style="font-weight:normal"></th></tr>
-<tr><th style="font-weight:bold">Number of Sessions</th><th style="font-weight:normal">1206</th><th style="font-weight:normal"></th></tr>
-<tr><th style="font-weight:bold"><a href="/AI2D/docs/imaging/image_curation/">CuBIDS</a></th><th style="font-weight:normal">false</th><th style="font-weight:normal"></th></tr>
-<tr><th style="font-weight:bold"><a href="/AI2D/docs/imaging/image_babs/">BABS</a></th><th style="font-weight:normal">Yes (FAIRly big)</th><th style="font-weight:normal"></th></tr>
-<tr><th style="font-weight:bold">Average age</th><th style="font-weight:normal"></th><th style="font-weight:normal"></th></tr>
-<tr><th style="font-weight:bold">% Female</th><th style="font-weight:normal">restricted data</th><th style="font-weight:normal"></th></tr>
-<tr><th style="font-weight:bold">% Right Handed</th><th style="font-weight:normal">restricted data</th><th style="font-weight:normal"></th></tr>
-</table>
-</div>
-
-<p><br />
-<br /></p>
-
-<h2 id="data-access">Data Access</h2>
-
-<p>The <code class="language-plaintext highlighter-rouge">pennlinc_hcpya</code> project on CUBIC is not open-access data. Access requires proof of ConnectomeDB registration and acceptance of the HCP open data terms (send email to <span style="color: blue;">Tien.Tong@PennMedicine.upenn.edu</span>).</p>
-
-<p><code class="language-plaintext highlighter-rouge">QSIRecon</code> was run on the minimally preprocessed data, which were downloaded on the fly and removed upon completion of the QSIRecon job.</p>
-
-<div class="table" align="center">
-<table style="text-align: center; width:100%; font-size:90%; border: 1px solid black">
-<tr>
-<th style="font-weight:bold; text-align: center;"></th>
-<th style="font-weight:bold; text-align: center;">Number of Sessions</th>
-<th style="font-weight:bold; text-align: center;">Completed</th>
-<th style="font-weight:bold; text-align: center;">Software Version</th>
-<th style="font-weight:bold; text-align: center;">Datalad Dataset</th>
-<th style="font-weight:bold; text-align: center;">Ephemeral Clone</th>
-</tr>
-<tr>
-<th style="font-weight:bold; text-align: center;"><a href="/AI2D/docs/imaging/image_xcpd/">XCP-D</a></th>
-<td style="font-weight:normal">1206</td>
-<td style="font-weight:normal">1096</td>
-<td style="font-weight:normal">xcpd 0-9-1</td>
-<td style="font-weight:normal">ria+file:///cbica/projects/pennlinc_hcpya/data/rbc_xcpd/output_ria#~data</td>
-<td style="font-weight:normal">/cbica/projects/pennlinc_hcpya/data/rbc_xcpd/DANGER</td>
-</tr>
-<tr>
-<th style="font-weight:bold; text-align: center;"><a href="/AI2D/docs/imaging/image_qsirecon/">QSIRecon - Bundle Stats</a></th>
-<td style="font-weight:normal">1206</td>
-<td style="font-weight:normal">1064</td>
-<td style="font-weight:normal">qsirecon 1-0-0rc2</td>
-<td style="font-weight:normal">ria+file:///cbica/projects/pennlinc_hcpya/data/qsirecon/output_ria#~data</td>
-<td style="font-weight:normal">/cbica/projects/pennlinc_hcpya/data/qsirecon/DANGER</td>
-</tr>
-<tr>
-<th style="font-weight:bold; text-align: center;"><a href="/AI2D/docs/imaging/image_qsiprep/">QSIRecon - HSVS Matrix</a></th>
-<td style="font-weight:normal">1206</td>
-<td style="font-weight:normal">1064</td>
-<td style="font-weight:normal">qsirecon 1-0-0rc2</td>
-<td style="font-weight:normal">ria+file:///cbica/projects/pennlinc_hcpya/data/qsirecon_hsvs/output_ria#~data</td>
-<td style="font-weight:normal">/cbica/projects/pennlinc_hcpya/data/qsirecon_hsvs/DANGER</td>
-</tr>
-</table>
-</div>
-
-<p><br />
-<br /></p>
 
         
       </section>

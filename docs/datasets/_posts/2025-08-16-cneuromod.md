@@ -12,7 +12,7 @@ funding:
 publications:
 recruitment:
 age_avg: variable
-age_range:
+age_range: variable
 num_site: 1
 institution: Université de Montréal, Centre intégré universitaire de santé et de services sociaux du Centre-Sud-de-l'Île-de-Montréal
 number_of_sessions: variable
@@ -26,6 +26,12 @@ sample_size: variable
 cubic_path: /cbica/projects/open-datasets/datasets/cneuromod
 cubids: No
 babs: No
+t1w: Yes
+fmri: Yes
+dmri: No
+fmap:
+dua: None
+dua_restrict:
 smriprep_session: 6
 fmriprep_session: 6
 xcpd_session: 6
@@ -65,16 +71,6 @@ qsirecon_ephe: n/a
 <br>
 Lune Bellec
 
-*Funding*
-<br>
-The Courtois NeuroMod project was made possible by a donation from the Courtois foundation. These funds are administered by the Fondation Institut Gériatrie Montréal (FIGM) at Centre de Recherche de l’institut Universitaire de Gériatrie de Montréal, part of CIUSSS du Centre-Sud-de-l’île-de-Montréal, as well as University of Montreal. The team has grown to include individuals from various institutions, and an up-to-date list of contributors can be found in the documentation.
-
-*Citations*
-<br>
-Julie Boyle, Basile Pinsard, Valentina Borghesani, Francois Paugam, Elizabeth DuPre, and Lune Bellec. The courtois neuromod project: quality assessment of the initial data release (2020). In 2023 Conference on Cognitive Computational Neuroscience, pages 2023–1602, 2023.
-
-St-Laurent, M., Pinsard, B., Contier, O., Seeliger, K., Borghesani, V., Boyle, J., ... & Hebart, M. (2023). cneuromod-things: a large-scale fMRI dataset for task-and data-driven assessment of object representation and visual memory recognition in the human brain. Journal of Vision, 23(9), 5424-5424.
-
 <br>
 <div class=table align='center'>
 <table style="text-align: center;
@@ -99,3 +95,13 @@ width:63%; font-size:90%; border: 1px solid black">
 
 <br>
 <br>
+
+*Funding*
+<br>
+The Courtois NeuroMod project was made possible by a donation from the Courtois foundation. These funds are administered by the Fondation Institut Gériatrie Montréal (FIGM) at Centre de Recherche de l’institut Universitaire de Gériatrie de Montréal, part of CIUSSS du Centre-Sud-de-l’île-de-Montréal, as well as University of Montreal. The team has grown to include individuals from various institutions, and an up-to-date list of contributors can be found in the documentation.
+
+*Citations*
+<br>
+Julie Boyle, Basile Pinsard, Valentina Borghesani, Francois Paugam, Elizabeth DuPre, and Lune Bellec. The courtois neuromod project: quality assessment of the initial data release (2020). In 2023 Conference on Cognitive Computational Neuroscience, pages 2023–1602, 2023.
+
+St-Laurent, M., Pinsard, B., Contier, O., Seeliger, K., Borghesani, V., Boyle, J., ... & Hebart, M. (2023). cneuromod-things: a large-scale fMRI dataset for task-and data-driven assessment of object representation and visual memory recognition in the human brain. Journal of Vision, 23(9), 5424-5424.

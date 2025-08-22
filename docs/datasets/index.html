@@ -10,65 +10,141 @@ title: "AI2D &#124; PennLINC &#124; Shared Data Resources"
 
 <hr/>
 
-
-
-<table align="center"; width=1290px>
-  <thead>
-    <tr>
-      <th>Dataset</th>
-      <th>Institution</th>
-      <th>Principal Investigators</th>
-      <th>T1w</th>
-      <th>Age Range (y)</th>
-      <th>Sample Size</th>
-      <th>Number of Sessions</th>
-    </tr>
-  </thead>
-  <tbody>
-    {% assign dataset_posts = site.posts | where_exp: "post", "post.path contains 'datasets/_posts'" | sort: "path" %}
-    {% for dataset in dataset_posts %}
+<div style="display: flex; justify-content: center; width: 100%;">
+  <table style="width: 1290px; border-collapse: collapse; margin: 0 auto;">
+    <thead>
       <tr>
-        <td><a href="{{ dataset.website }}">{{ dataset.title }}</a></td>
-        <td>
-          {% if dataset.institution %}
-            {{ dataset.institution }}
-          {% else %}
-            n/a
-          {% endif %}
-        </td>
-        <td>
-          {% if dataset.pi %}
-            {{ dataset.pi }}
-          {% else %}
-            n/a
-          {% endif %}
-        </td>
-        <td>✅</td>
-        <td>
-          {% if dataset.age_range %}
-            {{ dataset.age_range }}
-          {% else %}
-            n/a
-          {% endif %}
-        </td>
-        <td>
-          {% if dataset.sample_size %}
-            {{ dataset.sample_size }}
-          {% else %}
-            n/a
-          {% endif %}
-        </td>
-        <td>
-          {% if dataset.number_of_sessions %}
-            {{ dataset.number_of_sessions }}
-          {% else %}
-            n/a
-          {% endif %}
-        </td>
+        <th rowspan="2" style="border: 1px solid black; padding: 8px;">Dataset</th>
+        <th rowspan="2" style="border: 1px solid black; padding: 8px; text-align: center;">Age Range (y)</th>
+        <th rowspan="2" style="border: 1px solid black; padding: 8px; text-align: center;">Sample Size</th>
+        <th rowspan="2" style="border: 1px solid black; padding: 8px; text-align: center;">Number of Sessions</th>
+        <th rowspan="2" style="border: 1px solid black; padding: 8px; text-align: center;">DUA</th>
+        <th colspan="4" style="text-align: center; border: 1px solid black; padding: 8px;">Raw</th>
+        <th colspan="5" style="text-align: center; border: 1px solid black; padding: 8px;">Processed</th>
       </tr>
-    {% endfor %}
+      <tr>
+        <th style="border: 1px solid black; padding: 8px; text-align: center;">T1w</th>
+        <th style="border: 1px solid black; padding: 8px; text-align: center;">fMRI</th>
+        <th style="border: 1px solid black; padding: 8px; text-align: center;">dMRI</th>
+        <th style="border: 1px solid black; padding: 8px; text-align: center;">fmap</th>
+        <th style="border: 1px solid black; padding: 8px; text-align: center;">FreeSurfer</th>
+        <th style="border: 1px solid black; padding: 8px; text-align: center;"><a href="{{ site.baseurl }}/docs/imaging/image_fmriprep/" style="text-decoration: none;">fMRIPrep</a></th>
+        <th style="border: 1px solid black; padding: 8px; text-align: center;"><a href="{{ site.baseurl }}/docs/imaging/image_xcpd/" style="text-decoration: none;">XCP&#8209;D</a></th>
+        <th style="border: 1px solid black; padding: 8px; text-align: center;"><a href="{{ site.baseurl }}/docs/imaging/image_qsiprep/" style="text-decoration: none;">QSIPrep</a></th>
+        <th style="border: 1px solid black; padding: 8px; text-align: center;"><a href="{{ site.baseurl }}/docs/imaging/image_qsirecon/" style="text-decoration: none;">QSIRecon</a></th>
+      </tr>
+    </thead>
+    <tbody>
+      {% assign dataset_posts = site.posts | where_exp: "post", "post.path contains 'datasets/_posts'" | sort: "path" %}
+      {% for dataset in dataset_posts %}
+        <tr>
+          <td style="border: 1px solid black; padding: 8px;"><a href="{{ dataset.website }}">{{ dataset.title }}</a></td>
+          <td style="border: 1px solid black; padding: 8px; text-align: center;">
+            {% if dataset.age_range %}
+              {{ dataset.age_range }}
+            {% else %}
+              n/a
+            {% endif %}
+          </td>
+          <td style="border: 1px solid black; padding: 8px; text-align: center;">
+            {% if dataset.sample_size %}
+              {{ dataset.sample_size }}
+            {% else %}
+              n/a
+            {% endif %}
+          </td>
+          <td style="border: 1px solid black; padding: 8px; text-align: center;">
+            {% if dataset.number_of_sessions %}
+              {{ dataset.number_of_sessions }}
+            {% else %}
+              n/a
+            {% endif %}
+          </td>
+          <td style="border: 1px solid black; padding: 8px; text-align: center;">
+            {% if dataset.dua and dataset.dua != "None" and dataset.dua != "n/a" %}
+              <a href="{{ dataset.dua }}">DUA</a>
+            {% elsif dataset.dua == "None" %}
+              None
+            {% else %}
+              n/a
+            {% endif %}
+          </td>
+          <td style="border: 1px solid black; padding: 8px; text-align: center;">
+            {% if dataset.t1w == true %}
+              ✅
+            {% elsif dataset.t1w == false %}
+              ❌
+            {% else %}
+              n/a
+            {% endif %}
+          </td>
+          <td style="border: 1px solid black; padding: 8px; text-align: center;">
+            {% if dataset.fmri == true %}
+              ✅
+            {% elsif dataset.fmri == false %}
+              ❌
+            {% else %}
+              n/a
+            {% endif %}
+          </td>
+          <td style="border: 1px solid black; padding: 8px; text-align: center;">
+            {% if dataset.dmri == true %}
+              ✅
+            {% elsif dataset.dmri == false %}
+              ❌
+            {% else %}
+              n/a
+            {% endif %}
+          </td>
+          <td style="border: 1px solid black; padding: 8px; text-align: center;">
+            {% if dataset.fmap == true %}
+              ✅
+            {% elsif dataset.fmap == false %}
+              ❌
+            {% else %}
+              n/a
+            {% endif %}
+          </td>
+          <td style="border: 1px solid black; padding: 8px; text-align: center;">
+            {% if dataset.smriprep_session and dataset.smriprep_session != "n/a" and dataset.smriprep_session != "" %}
+              ✅
+            {% else %}
+              ❌
+            {% endif %}
+          </td>
+          <td style="border: 1px solid black; padding: 8px; text-align: center;">
+            {% if dataset.fmriprep_session and dataset.fmriprep_session != "n/a" and dataset.fmriprep_session != "" %}
+              ✅
+            {% else %}
+              ❌
+            {% endif %}
+          </td>
+          <td style="border: 1px solid black; padding: 8px; text-align: center;">
+            {% if dataset.xcpd_session and dataset.xcpd_session != "n/a" and dataset.xcpd_session != "" %}
+              ✅
+            {% else %}
+              ❌
+            {% endif %}
+          </td>
+          <td style="border: 1px solid black; padding: 8px; text-align: center;">
+            {% if dataset.qsiprep_session and dataset.qsiprep_session != "n/a" and dataset.qsiprep_session != "" %}
+              ✅
+            {% else %}
+              ❌
+            {% endif %}
+          </td>
+          <td style="border: 1px solid black; padding: 8px; text-align: center;">
+            {% if dataset.qsirecon_session and dataset.qsirecon_session != "n/a" and dataset.qsirecon_session != "" %}
+              ✅
+            {% else %}
+              ❌
+            {% endif %}
+          </td>
+        </tr>
+      {% endfor %}
 
-  </tbody>
-</table>
+    </tbody>
+  </table>
+</div>
 
 </body>

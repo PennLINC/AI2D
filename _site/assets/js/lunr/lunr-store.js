@@ -54,61 +54,61 @@ var store = [{
         "teaser": null
       },{
         "title": "Healthy Brain Network",
-        "excerpt":"About the dataset https://healthybrainnetwork.org/ PI Michael Milham Funding The Healthy Brain Network, Lee Alexander, Robert Allard, Lisa Bilotti Foundation, Inc., Margaret Billoti, Christopher Boles, Brooklyn Nets, Agapi and Bruce Burkhard, Randolph Cowen and Phyllis Green, Elizabeth and David DePaolo, Charlotte Ford, Valesca Guerrand-Hermes, Sarah and Geoffrey Gund, George Hall, Joseph...","categories": ["docs","datasets"],
+        "excerpt":"About the dataset https://healthybrainnetwork.org/ PI Michael Milham CUBIC Path/cbica/projects/pennlinc_rbc/datasets/LINC_HBN Sample Size3887 Number of Sessions3887 CuBIDStrue BABStrue Average age10.3 % Female36 % Right Handed:82 Data Access Number of Sessions Completed Software Version Datalad Dataset Ephemeral Clone sMRIPrep 3887 3736 fmriprep 25-0-0 ria+file:///cbica/projects/pennlinc_rbc/datasets/LINC_HBN/derivatives/fmriprep_anat-25-0-0-babs/output_ria#~data /cbica/projects/pennlinc_rbc/datasets/LINC_HBN/derivatives/FMRIPREP_ANAT-25-0-0_zipped fMRIPrep 3789 3596 fmriprep 25-0-0 ria+file:///cbica/projects/pennlinc_rbc/datasets/LINC_HBN/derivatives/fmriprep_func-25-0-0-babs/output_ria#~data /cbica/projects/pennlinc_rbc/datasets/LINC_HBN/derivatives/FMRIPREP_FUNC-25-0-0_zipped XCP-D...","categories": ["docs","datasets"],
         "tags": [],
         "url": "/AI2D/docs/datasets/HBN/",
         "teaser": null
       },{
         "title": "NKI Rockland Sample",
-        "excerpt":"About the dataset https://rocklandsample.org PI Michael Milham Stan Colcombe Funding R01MH094639-01, New York State Office of Mental Health and Research Foundation for Mental Hygiene, 1FDN2012-1, Center for the Developing Brain at the Child Mind Institute, R01MH081218, R01MH083246, R21MH084126, NKI Center for Advanced Brain Imaging (CABI), Brain Research Foundation (Chicago, IL),...","categories": ["docs","datasets"],
+        "excerpt":"About the dataset https://rocklandsample.org PI Michael Milham Stan Colcombe Institution Beijing Normal University This is the neuroimaging dataset for the Nathan Klein Institue Rockland Sample. The NKI Rockland Sample Initiative is a landmark research program aiming to map the brain, understand how it develops and changes over the course of...","categories": ["docs","datasets"],
         "tags": [],
         "url": "/AI2D/docs/datasets/NKI/",
         "teaser": null
       },{
         "title": "Philadelphia Neurodevelopmental Cohort",
-        "excerpt":"About the dataset https://www.med.upenn.edu/bbl/philadelphianeurodevelopmentalcohort.html PI Raquel Gur Funding RC2MH089983, RC2MH089924 Citations Satterthwaite TD, Elliott MA, Ruparel K, Loughead J, Prabhakaran K, Calkins ME, Hopson R, Jackson C, Keefe J, Riley M, Mentch FD, Sleiman P, Verma R, Davatzikos C, Hakonarson H, Gur RC, Gur RE. Neuroimaging of the Philadelphia neurodevelopmental...","categories": ["docs","datasets"],
+        "excerpt":"About the dataset https://www.med.upenn.edu/bbl/philadelphianeurodevelopmentalcohort.html PI Raquel Gur Institution University of Pennsylvania The Philadelphia Neurodevelopmental Cohort (PNC) is a large-scale study of child development that combines neuroimaging, diverse clinical and cognitive phenotypes, and genomics. Data from this rich resource is now publicly available through the Database of Genotypes and Phenotypes (dbGaP)....","categories": ["docs","datasets"],
         "tags": [],
         "url": "/AI2D/docs/datasets/PNC/",
         "teaser": null
       },{
         "title": "Developmental Chinese Color Nest Project",
-        "excerpt":"About the dataset https://www.sciencedirect.com/science/article/pii/S1878929321001109 PI Xi-Nian Zuo Funding Start-up Funds for Leading Talents - Beijing Normal University, 2019B030335001, NBSDC-DB-15, Z161100002616023, Z181100001518003, 20&amp;ZD296, 153111KYSB20160020, 201621, 2015CB351702, 8122010801, KSZD-EW-TZ-002, 2015CB351702 Citation Liu S, Wang YS, Zhang Q, Zhou Q, Cao LZ, Jiang C, Zhang Z, Yang N, Dong Q, Zuo XN; Chinese...","categories": ["docs","datasets"],
+        "excerpt":"About the dataset PI Xi-Nian Zuo Institution Beijing Normal University This is the neuroimaging dataset for the developmental component of the Chinese Color Nest Project (CCNP). CCNP was established to create normative charts for brain structure and function across the human lifespan, and link age-related changes in brain imaging measures...","categories": ["docs","datasets"],
         "tags": [],
         "url": "/AI2D/docs/datasets/dCCNP/",
         "teaser": null
       },{
         "title": "28andHe",
-        "excerpt":"About the dataset https://openneuro.org/datasets/ds005115/versions/1.2.0 PI Emily Jacobs Funding Ann S. Bowers Women’s Brain Health Initiative UC Academic Senate National Institutes of Health AG063843 Citations Grotzinger, H., Pritschet, L., Shapturenka, P., Santander, T., Murata, E. M., &amp; Jacobs, E. G. (2024). Diurnal fluctuations in steroid hormones tied to variation in intrinsic...","categories": ["docs","datasets"],
+        "excerpt":"About the dataset https://openneuro.org/datasets/ds005115/versions/1.2.0 PI Emily Jacobs CUBIC Path/cbica/projects/open-datasets/datasets/28andHe Sample Size1 Number of Sessions40 CuBIDSfalse BABSfalse Age % Female0 % Right Handed100 fMRIPrepv25-0-0: /cbica/projects/open-datasets/datasets/28andHe/derivatives/fmriprep Funding Ann S. Bowers Women’s Brain Health Initiative UC Academic Senate National Institutes of Health AG063843 Citations Grotzinger, H., Pritschet, L., Shapturenka, P., Santander, T., Murata,...","categories": ["docs","datasets"],
         "tags": [],
         "url": "/AI2D/docs/datasets/28andHe/",
         "teaser": null
       },{
         "title": "28andMe",
-        "excerpt":"About the dataset https://openneuro.org/datasets/ds002674/versions/1.0.6 PI Emily Jacobs Funding Brain and Behavior Research Foundation California Nanosystems Institute Institute for Collaborative Biotechnologies through US Army Research Office W911NF-19-D-0001 Rutherford B. Fett Fund Citations Pritschet L., Taylor C., Santander T., Jacobs E.G. (2021) Applying dense-sampling methods to reveal dynamic endocrine modulation of the...","categories": ["docs","datasets"],
+        "excerpt":"About the dataset https://openneuro.org/datasets/ds002674/versions/1.0.6 PI Emily Jacobs CUBIC Path/cbica/projects/open-datasets/datasets/28andMe Sample Size1 Number of Sessions60 CuBIDSfalse BABSfalse Age % Female100 % Right Handed100 fMRIPrepv25-0-0: /cbica/projects/open-datasets/datasets/28andMe/derivatives/fmriprep Funding Brain and Behavior Research Foundation California Nanosystems Institute Institute for Collaborative Biotechnologies through US Army Research Office W911NF-19-D-0001 Rutherford B. Fett Fund Citations Pritschet L.,...","categories": ["docs","datasets"],
         "tags": [],
         "url": "/AI2D/docs/datasets/28andMe/",
         "teaser": null
       },{
         "title": "Human Connectome Project - Young Adult",
-        "excerpt":"About the dataset https://www.humanconnectome.org/study/hcp-young-adult https://www.humanconnectome.org/study/hcp-young-adult/overview/ PI Kamil Ugurbil (UMinn) David Van Essen (WashU) Funding NIH Blueprint for Neuroscience Research Citations Van Essen DC, Smith SM, Barch DM, Behrens TE, Yacoub E, Ugurbil K; WU-Minn HCP Consortium. The WU-Minn Human Connectome Project: an overview. Neuroimage. 2013 Oct 15;80:62-79. doi: 10.1016/j.neuroimage.2013.05.041. Epub...","categories": ["docs","datasets"],
+        "excerpt":"About the dataset https://www.humanconnectome.org/study/hcp-young-adult https://www.humanconnectome.org/study/hcp-young-adult/overview/ PI Kamil Ugurbil (UMinn) David Van Essen (WashU) The HCP (a.k.a. “original” or main HCP, HCP Young Adult, HCP-YA) is mapping the healthy human connectome by collecting and freely distributing neuroimaging and behavioral data on 1,200 normal young adults, aged 22-35. The project was carried...","categories": ["docs","datasets"],
         "tags": [],
         "url": "/AI2D/docs/datasets/HCP-YA/",
         "teaser": null
       },{
         "title": "Neural Modelling",
-        "excerpt":"About the dataset https://www.cneuromod.ca/ https://www.cneuromod.ca/gallery/datasets/ https://docs.cneuromod.ca/en/latest/index.htm PI Lune Bellec Funding The Courtois NeuroMod project was made possible by a donation from the Courtois foundation. These funds are administered by the Fondation Institut Gériatrie Montréal (FIGM) at Centre de Recherche de l’institut Universitaire de Gériatrie de Montréal, part of CIUSSS du...","categories": ["docs","datasets"],
+        "excerpt":"About the dataset https://www.cneuromod.ca/ https://www.cneuromod.ca/gallery/datasets/ https://docs.cneuromod.ca/en/latest/index.htm PI Lune Bellec CUBIC Path/cbica/projects/open-datasets/datasets/cneuromod Sample Sizevariable Number of Sessionsvariable CuBIDSfalse BABSfalse Average age Available preprocessed dataFor the following datasets: • friends • harrypotter • hcptrt • movie10 • shinobi Click here for information on each dataset sMRIPrep/cbica/projects/open-datasets/datasets/cneuromod/cneuromod.processed/smriprep fMRIPrep/cbica/projects/open-datasets/datasets/cneuromod/cneuromod.processed/fmriprep Funding The Courtois NeuroMod project...","categories": ["docs","datasets"],
         "tags": [],
         "url": "/AI2D/docs/datasets/cneuromod/",
         "teaser": null
       },{
         "title": "Midnight Scan Club",
-        "excerpt":"About the dataset https://openneuro.org/datasets/ds000224/versions/1.0.1 PI Nico U.F. Dosenbach Funding NIH, NSF Citations Gordon, E. M., Laumann, T. O., Gilmore, A. W., Newbold, D. J., Greene, D. J., Berg, J. J., … &amp; Dosenbach, N. U. (2017). Precision functional mapping of individual human brains. Neuron, 95(4), 791-807. CUBIC Path/cbica/projects/pennlinc_rbc/datasets/midnight_scan_club Sample Size10...","categories": ["docs","datasets"],
+        "excerpt":"About the dataset https://openneuro.org/datasets/ds000224/versions/1.0.1 PI Nico U.F. Dosenbach CUBIC Path/cbica/projects/pennlinc_rbc/datasets/midnight_scan_club Sample Size10 Number of Sessions10 CuBIDSfalse BABSfalse Age % Female50 % Right Handed100 fMRIPrep/cbica/projects/open-datasets/datasets/midnight_scan_club/derivatives/fmriprep-24.0.0 XCP-D/cbica/projects/open-datasets/datasets/midnight_scan_club/derivatives/xcp_d-0.7.5 Funding NIH, NSF Citations Gordon, E. M., Laumann, T. O., Gilmore, A. W., Newbold, D. J., Greene, D. J., Berg, J. J., … &amp; Dosenbach,...","categories": ["docs","datasets"],
         "tags": [],
         "url": "/AI2D/docs/datasets/midnight_scan_club/",
         "teaser": null
       },{
         "title": "Single-echo/multi-echo comparison pilot",
-        "excerpt":"About the dataset https://openneuro.org/datasets/ds005250/versions/1.1.5 PI Theodore D. Satterthwaite Funding AE Foundation Penn-CHOP Lifespan Brain Institute NIMH R01MH113550 Citations Taylor Salo and M. Dylan Tisdall and Lia Brodrick and Adam Czernuszenko and David R. Roalf and Sage Rush-Goebel and Nicholas Wellman and Matthew Cieslak and Theodore D. Satterthwaite (2024). Single-echo/multi-echo comparison...","categories": ["docs","datasets"],
+        "excerpt":"About the dataset https://openneuro.org/datasets/ds005250/versions/1.1.5 PI Theodore D. Satterthwaite CUBIC Path/cbica/projects/pennlinc_rbc/datasets/mobile_phenomics_pilot Sample Size8 Number of Sessions17 CuBIDSfalse BABSfalse Average age % Female50 % Right Handed??? fMRIPrep/cbica/projects/open-datasets/datasets/mobile_phenomics_pilot/derivatives/fmriprep-24.0.1 Funding AE Foundation Penn-CHOP Lifespan Brain Institute NIMH R01MH113550 Citations Taylor Salo and M. Dylan Tisdall and Lia Brodrick and Adam Czernuszenko and David R....","categories": ["docs","datasets"],
         "tags": [],
         "url": "/AI2D/docs/datasets/mobile_phenomics_pilot/",
         "teaser": null
