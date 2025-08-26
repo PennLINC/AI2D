@@ -9,8 +9,8 @@ title: "AI2D &#124; PennLINC &#124; Shared Data Resources"
 <style>
 .datasets-table {
   width: 100%;
-  max-width: 1400px;
-  margin: 2rem auto;
+  max-width: 100%;
+  margin: 2rem auto 0 auto;
   border-radius: 12px;
   overflow: hidden;
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
@@ -20,14 +20,22 @@ title: "AI2D &#124; PennLINC &#124; Shared Data Resources"
 }
 
 .datasets-table-container {
-  overflow: auto;
+  overflow: hidden;
   border-radius: 12px;
+  margin: 0;
+  padding: 0;
 }
 
 .datasets-table table {
   border-collapse: separate;
   border-spacing: 0;
   width: 100%;
+  table-layout: auto;
+  border: 2px solid #e8eaff;
+  border-radius: 10px;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
 }
 
 .datasets-table thead {
@@ -43,9 +51,10 @@ title: "AI2D &#124; PennLINC &#124; Shared Data Resources"
   text-align: center;
   font-weight: 600;
   font-size: 14px;
-  border: none;
+  border: 1px solid #e8eaff;
   position: relative;
-  white-space: nowrap;
+  white-space: normal;
+  word-wrap: break-word;
 }
 
 .datasets-table th:first-child {
@@ -53,7 +62,6 @@ title: "AI2D &#124; PennLINC &#124; Shared Data Resources"
   position: sticky;
   left: 0;
   z-index: 20;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
 }
 
 .datasets-table th a {
@@ -80,10 +88,11 @@ title: "AI2D &#124; PennLINC &#124; Shared Data Resources"
 .datasets-table td {
   padding: 16px 12px;
   text-align: center;
-  border: none;
+  border: 1px solid #e8eaff;
   font-size: 14px;
   color: #333;
-  white-space: nowrap;
+  white-space: normal;
+  word-wrap: break-word;
 }
 
 .datasets-table td:first-child {
@@ -148,10 +157,6 @@ title: "AI2D &#124; PennLINC &#124; Shared Data Resources"
 }
 </style>
 
-<body>
-
-<hr/>
-
 <div class="datasets-table">
   <div class="datasets-table-container">
     <table>
@@ -177,7 +182,7 @@ title: "AI2D &#124; PennLINC &#124; Shared Data Resources"
         </tr>
       </thead>
       <tbody>
-        {% assign dataset_posts = site.posts | where_exp: "post", "post.path contains 'datasets/_posts'" | sort: "path" %}
+        {% assign dataset_posts = site.posts | where_exp: "post", "post.path contains 'datasets/_posts'" | sort: "title" %}
         {% for dataset in dataset_posts %}
           <tr>
             <td><a href="{{ dataset.website }}">{{ dataset.title }}</a></td>
@@ -279,5 +284,3 @@ title: "AI2D &#124; PennLINC &#124; Shared Data Resources"
     </table>
   </div>
 </div>
-
-</body>

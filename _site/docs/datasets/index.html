@@ -183,8 +183,8 @@
 <style>
 .datasets-table {
   width: 100%;
-  max-width: 1400px;
-  margin: 2rem auto;
+  max-width: 100%;
+  margin: 2rem auto 0 auto;
   border-radius: 12px;
   overflow: hidden;
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
@@ -194,14 +194,22 @@
 }
 
 .datasets-table-container {
-  overflow: auto;
+  overflow: hidden;
   border-radius: 12px;
+  margin: 0;
+  padding: 0;
 }
 
 .datasets-table table {
   border-collapse: separate;
   border-spacing: 0;
   width: 100%;
+  table-layout: auto;
+  border: 2px solid #e8eaff;
+  border-radius: 10px;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
 }
 
 .datasets-table thead {
@@ -217,9 +225,10 @@
   text-align: center;
   font-weight: 600;
   font-size: 14px;
-  border: none;
+  border: 1px solid #e8eaff;
   position: relative;
-  white-space: nowrap;
+  white-space: normal;
+  word-wrap: break-word;
 }
 
 .datasets-table th:first-child {
@@ -227,7 +236,6 @@
   position: sticky;
   left: 0;
   z-index: 20;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
 }
 
 .datasets-table th a {
@@ -254,10 +262,11 @@
 .datasets-table td {
   padding: 16px 12px;
   text-align: center;
-  border: none;
+  border: 1px solid #e8eaff;
   font-size: 14px;
   color: #333;
-  white-space: nowrap;
+  white-space: normal;
+  word-wrap: break-word;
 }
 
 .datasets-table td:first-child {
@@ -322,10 +331,6 @@
 }
 </style>
 
-<body>
-
-<hr/>
-
 <div class="datasets-table">
   <div class="datasets-table-container">
     <table>
@@ -352,262 +357,6 @@
       </thead>
       <tbody>
         
-        
-          <tr>
-            <td><a href="/AI2D/docs/datasets/HBN">Healthy Brain Network</a></td>
-            <td>
-              
-                n/a
-              
-            </td>
-            <td>
-              
-                3887
-              
-            </td>
-            <td>
-              
-                3887
-              
-            </td>
-            <td>
-              
-                <span class="status-icon status-success">✅</span>
-              
-            </td>
-            <td>
-              
-                <span class="status-icon status-success">✅</span>
-              
-            </td>
-            <td>
-              
-                <span class="status-icon status-success">✅</span>
-              
-            </td>
-            <td>
-              
-                <span class="status-icon status-success">✅</span>
-              
-            </td>
-            <td>
-              
-                <span class="status-icon status-success">✅</span>
-              
-            </td>
-            <td>
-              
-                <span class="status-icon status-success">✅</span>
-              
-            </td>
-            <td>
-              
-                <span class="status-icon status-success">✅</span>
-              
-            </td>
-            <td>
-              
-                <span class="status-icon status-success">✅</span>
-              
-            </td>
-            <td>
-              
-                <span class="status-icon status-success">✅</span>
-              
-            </td>
-          </tr>
-        
-          <tr>
-            <td><a href="/AI2D/docs/datasets/NKI">NKI Rockland Sample</a></td>
-            <td>
-              
-                n/a
-              
-            </td>
-            <td>
-              
-                1329
-              
-            </td>
-            <td>
-              
-                2306
-              
-            </td>
-            <td>
-              
-                <span class="status-icon status-success">✅</span>
-              
-            </td>
-            <td>
-              
-                <span class="status-icon status-success">✅</span>
-              
-            </td>
-            <td>
-              
-                <span class="status-icon status-success">✅</span>
-              
-            </td>
-            <td>
-              
-                <span class="status-icon status-error">❌</span>
-              
-            </td>
-            <td>
-              
-                <span class="status-icon status-success">✅</span>
-              
-            </td>
-            <td>
-              
-                <span class="status-icon status-success">✅</span>
-              
-            </td>
-            <td>
-              
-                <span class="status-icon status-success">✅</span>
-              
-            </td>
-            <td>
-              
-                <span class="status-icon status-success">✅</span>
-              
-            </td>
-            <td>
-              
-                <span class="status-icon status-success">✅</span>
-              
-            </td>
-          </tr>
-        
-          <tr>
-            <td><a href="/AI2D/docs/datasets/PNC">Philadelphia Neurodevelopmental Cohort</a></td>
-            <td>
-              
-                n/a
-              
-            </td>
-            <td>
-              
-                1601
-              
-            </td>
-            <td>
-              
-                1601
-              
-            </td>
-            <td>
-              
-                <span class="status-icon status-success">✅</span>
-              
-            </td>
-            <td>
-              
-                <span class="status-icon status-success">✅</span>
-              
-            </td>
-            <td>
-              
-                <span class="status-icon status-success">✅</span>
-              
-            </td>
-            <td>
-              
-                <span class="status-icon status-success">✅</span>
-              
-            </td>
-            <td>
-              
-                <span class="status-icon status-success">✅</span>
-              
-            </td>
-            <td>
-              
-                <span class="status-icon status-success">✅</span>
-              
-            </td>
-            <td>
-              
-                <span class="status-icon status-success">✅</span>
-              
-            </td>
-            <td>
-              
-                <span class="status-icon status-success">✅</span>
-              
-            </td>
-            <td>
-              
-                <span class="status-icon status-success">✅</span>
-              
-            </td>
-          </tr>
-        
-          <tr>
-            <td><a href="/AI2D/docs/datasets/dCCNP">Developmental Chinese Color Nest Project</a></td>
-            <td>
-              
-                n/a
-              
-            </td>
-            <td>
-              
-                195
-              
-            </td>
-            <td>
-              
-                195
-              
-            </td>
-            <td>
-              
-                <span class="status-icon status-success">✅</span>
-              
-            </td>
-            <td>
-              
-                <span class="status-icon status-success">✅</span>
-              
-            </td>
-            <td>
-              
-                <span class="status-icon status-error">❌</span>
-              
-            </td>
-            <td>
-              
-                <span class="status-icon status-error">❌</span>
-              
-            </td>
-            <td>
-              
-                <span class="status-icon status-success">✅</span>
-              
-            </td>
-            <td>
-              
-                <span class="status-icon status-success">✅</span>
-              
-            </td>
-            <td>
-              
-                <span class="status-icon status-success">✅</span>
-              
-            </td>
-            <td>
-              
-                <span class="status-icon status-error">❌</span>
-              
-            </td>
-            <td>
-              
-                <span class="status-icon status-error">❌</span>
-              
-            </td>
-          </tr>
         
           <tr>
             <td><a href="/AI2D/docs/datasets/28andHe">28andHe</a></td>
@@ -738,6 +487,134 @@
           </tr>
         
           <tr>
+            <td><a href="/AI2D/docs/datasets/dCCNP">Developmental Chinese Color Nest Project</a></td>
+            <td>
+              
+                n/a
+              
+            </td>
+            <td>
+              
+                195
+              
+            </td>
+            <td>
+              
+                195
+              
+            </td>
+            <td>
+              
+                <span class="status-icon status-success">✅</span>
+              
+            </td>
+            <td>
+              
+                <span class="status-icon status-success">✅</span>
+              
+            </td>
+            <td>
+              
+                <span class="status-icon status-error">❌</span>
+              
+            </td>
+            <td>
+              
+                <span class="status-icon status-error">❌</span>
+              
+            </td>
+            <td>
+              
+                <span class="status-icon status-success">✅</span>
+              
+            </td>
+            <td>
+              
+                <span class="status-icon status-success">✅</span>
+              
+            </td>
+            <td>
+              
+                <span class="status-icon status-success">✅</span>
+              
+            </td>
+            <td>
+              
+                <span class="status-icon status-error">❌</span>
+              
+            </td>
+            <td>
+              
+                <span class="status-icon status-error">❌</span>
+              
+            </td>
+          </tr>
+        
+          <tr>
+            <td><a href="/AI2D/docs/datasets/HBN">Healthy Brain Network</a></td>
+            <td>
+              
+                n/a
+              
+            </td>
+            <td>
+              
+                3887
+              
+            </td>
+            <td>
+              
+                3887
+              
+            </td>
+            <td>
+              
+                <span class="status-icon status-success">✅</span>
+              
+            </td>
+            <td>
+              
+                <span class="status-icon status-success">✅</span>
+              
+            </td>
+            <td>
+              
+                <span class="status-icon status-success">✅</span>
+              
+            </td>
+            <td>
+              
+                <span class="status-icon status-success">✅</span>
+              
+            </td>
+            <td>
+              
+                <span class="status-icon status-success">✅</span>
+              
+            </td>
+            <td>
+              
+                <span class="status-icon status-success">✅</span>
+              
+            </td>
+            <td>
+              
+                <span class="status-icon status-success">✅</span>
+              
+            </td>
+            <td>
+              
+                <span class="status-icon status-success">✅</span>
+              
+            </td>
+            <td>
+              
+                <span class="status-icon status-success">✅</span>
+              
+            </td>
+          </tr>
+        
+          <tr>
             <td><a href="/AI2D/docs/datasets/HCP-YA">Human Connectome Project - Young Adult</a></td>
             <td>
               
@@ -792,6 +669,134 @@
             <td>
               
                 <span class="status-icon status-error">❌</span>
+              
+            </td>
+            <td>
+              
+                <span class="status-icon status-success">✅</span>
+              
+            </td>
+          </tr>
+        
+          <tr>
+            <td><a href="/AI2D/docs/datasets/midnight_scan_club">Midnight Scan Club</a></td>
+            <td>
+              
+                n/a
+              
+            </td>
+            <td>
+              
+                10
+              
+            </td>
+            <td>
+              
+                10
+              
+            </td>
+            <td>
+              
+                <span class="status-icon status-success">✅</span>
+              
+            </td>
+            <td>
+              
+                <span class="status-icon status-na">—</span>
+              
+            </td>
+            <td>
+              
+                <span class="status-icon status-na">—</span>
+              
+            </td>
+            <td>
+              
+                <span class="status-icon status-na">—</span>
+              
+            </td>
+            <td>
+              
+                <span class="status-icon status-error">❌</span>
+              
+            </td>
+            <td>
+              
+                <span class="status-icon status-error">❌</span>
+              
+            </td>
+            <td>
+              
+                <span class="status-icon status-error">❌</span>
+              
+            </td>
+            <td>
+              
+                <span class="status-icon status-error">❌</span>
+              
+            </td>
+            <td>
+              
+                <span class="status-icon status-error">❌</span>
+              
+            </td>
+          </tr>
+        
+          <tr>
+            <td><a href="/AI2D/docs/datasets/NKI">NKI Rockland Sample</a></td>
+            <td>
+              
+                n/a
+              
+            </td>
+            <td>
+              
+                1329
+              
+            </td>
+            <td>
+              
+                2306
+              
+            </td>
+            <td>
+              
+                <span class="status-icon status-success">✅</span>
+              
+            </td>
+            <td>
+              
+                <span class="status-icon status-success">✅</span>
+              
+            </td>
+            <td>
+              
+                <span class="status-icon status-success">✅</span>
+              
+            </td>
+            <td>
+              
+                <span class="status-icon status-error">❌</span>
+              
+            </td>
+            <td>
+              
+                <span class="status-icon status-success">✅</span>
+              
+            </td>
+            <td>
+              
+                <span class="status-icon status-success">✅</span>
+              
+            </td>
+            <td>
+              
+                <span class="status-icon status-success">✅</span>
+              
+            </td>
+            <td>
+              
+                <span class="status-icon status-success">✅</span>
               
             </td>
             <td>
@@ -866,7 +871,7 @@
           </tr>
         
           <tr>
-            <td><a href="/AI2D/docs/datasets/midnight_scan_club">Midnight Scan Club</a></td>
+            <td><a href="/AI2D/docs/datasets/PNC">Philadelphia Neurodevelopmental Cohort</a></td>
             <td>
               
                 n/a
@@ -874,12 +879,12 @@
             </td>
             <td>
               
-                10
+                1601
               
             </td>
             <td>
               
-                10
+                1601
               
             </td>
             <td>
@@ -889,42 +894,42 @@
             </td>
             <td>
               
-                <span class="status-icon status-na">—</span>
+                <span class="status-icon status-success">✅</span>
               
             </td>
             <td>
               
-                <span class="status-icon status-na">—</span>
+                <span class="status-icon status-success">✅</span>
               
             </td>
             <td>
               
-                <span class="status-icon status-na">—</span>
+                <span class="status-icon status-success">✅</span>
               
             </td>
             <td>
               
-                <span class="status-icon status-error">❌</span>
+                <span class="status-icon status-success">✅</span>
               
             </td>
             <td>
               
-                <span class="status-icon status-error">❌</span>
+                <span class="status-icon status-success">✅</span>
               
             </td>
             <td>
               
-                <span class="status-icon status-error">❌</span>
+                <span class="status-icon status-success">✅</span>
               
             </td>
             <td>
               
-                <span class="status-icon status-error">❌</span>
+                <span class="status-icon status-success">✅</span>
               
             </td>
             <td>
               
-                <span class="status-icon status-error">❌</span>
+                <span class="status-icon status-success">✅</span>
               
             </td>
           </tr>
@@ -997,8 +1002,6 @@
     </table>
   </div>
 </div>
-
-</body>
   </div>
 </div>
     </div>

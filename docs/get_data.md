@@ -25,15 +25,21 @@ The following instruction are intended specifically to get data on CUBIC.
 
 ## 1. Request access to a CUBIC project
 
-#### <span style="color: #7556b7;">Check whether the dataset you are interested in is open-access or not (see example: [CCNP]({{ site.baseurl }}/docs/datasets/dCCNP/#dataset-summary)).</span> 
+Check the `CUBIC Project` section on the Dataset Page to determine which CUBIC project you need to request access to for the dataset of interest ([list of available datasets]({{ site.baseurl }}/docs/datasets)).
 
-If the dataset is NOT open-access, follow these steps:
+Follow these steps:
 
 1. Send Dr. Satterthwaite a request including the following:
     - The level of access, in this case, you will need **read-only access**
     - The name of the user[s] to be given access (full name or login name). If you plan to store and analyze data in a CUBIC project, you should use **your project username**, not personal CUBIC username.
     - The full path to the project you need access to. You can find the project path for each study [here]({{ site.baseurl }}/docs/datasets/).
 2. Submit the approval from Dr. Satterthwaite — including the specified user name, project name, and type of access — as a PDF printout to <span style="color: blue;">help@cbica.upenn.edu</span>.
+
+#### <span style="color: #7556b7;">Check the `DUA` section on the Dataset Page to determine whether the dataset you are interested in is open access (see example: [CCNP]({{ site.baseurl }}/docs/datasets/dCCNP/#dataset-summary)).</span> 
+
+If the dataset is NOT open-access, 
+
+
 
 
 #### <span style="color: #7556b7;">Check whether the dataset you are interested in was processed with [BABS]({{  site.baseurl }}/docs/imaging/image_babs) or not (see example: [CCNP]({{ site.baseurl }}/docs/datasets/dCCNP/#dataset-summary)).

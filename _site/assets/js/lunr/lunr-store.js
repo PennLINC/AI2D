@@ -72,7 +72,7 @@ var store = [{
         "teaser": null
       },{
         "title": "Developmental Chinese Color Nest Project",
-        "excerpt":"About the dataset PI Xi-Nian Zuo Institution Beijing Normal University This is the neuroimaging dataset for the developmental component of the Chinese Color Nest Project (CCNP). CCNP was established to create normative charts for brain structure and function across the human lifespan, and link age-related changes in brain imaging measures...","categories": ["docs","datasets"],
+        "excerpt":"About the dataset This is the neuroimaging dataset for the developmental component of the Chinese Color Nest Project (CCNP). CCNP was established to create normative charts for brain structure and function across the human lifespan, and link age-related changes in brain imaging measures to psychological assessments of behavior, cognition, and...","categories": ["docs","datasets"],
         "tags": [],
         "url": "/AI2D/docs/datasets/dCCNP/",
         "teaser": null

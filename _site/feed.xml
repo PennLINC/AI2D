@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.3">Jekyll</generator><link href="http://localhost:4000/AI2D/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/AI2D/" rel="alternate" type="text/html" /><updated>2025-08-22T13:16:54-04:00</updated><id>http://localhost:4000/AI2D/feed.xml</id><title type="html">AI2D | PennLINC | Shared Data Resources</title><subtitle>AI2D Shared Data Resources</subtitle><author><name>{&quot;links&quot;=&gt;[{&quot;label&quot;=&gt;&quot;Email&quot;, &quot;icon&quot;=&gt;&quot;fas fa-fw fa-envelope-square&quot;}, {&quot;label&quot;=&gt;&quot;Website&quot;, &quot;icon&quot;=&gt;&quot;fas fa-fw fa-link&quot;}, {&quot;label&quot;=&gt;&quot;Twitter&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-twitter-square&quot;}, {&quot;label&quot;=&gt;&quot;Facebook&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-facebook-square&quot;}, {&quot;label&quot;=&gt;&quot;GitHub&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-github&quot;}, {&quot;label&quot;=&gt;&quot;Instagram&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-instagram&quot;}]}</name></author><entry><title type="html">Midnight Scan Club</title><link href="http://localhost:4000/AI2D/docs/datasets/midnight_scan_club/" rel="alternate" type="text/html" title="Midnight Scan Club" /><published>2025-08-16T00:00:00-04:00</published><updated>2025-08-16T00:00:00-04:00</updated><id>http://localhost:4000/AI2D/docs/datasets/midnight_scan_club</id><content type="html" xml:base="http://localhost:4000/AI2D/docs/datasets/midnight_scan_club/"><![CDATA[<div style="text-align: left;">
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.3">Jekyll</generator><link href="http://localhost:4000/AI2D/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/AI2D/" rel="alternate" type="text/html" /><updated>2025-08-26T14:39:35-04:00</updated><id>http://localhost:4000/AI2D/feed.xml</id><title type="html">AI2D | PennLINC | Shared Data Resources</title><subtitle>AI2D Shared Data Resources</subtitle><author><name>{&quot;links&quot;=&gt;[{&quot;label&quot;=&gt;&quot;Email&quot;, &quot;icon&quot;=&gt;&quot;fas fa-fw fa-envelope-square&quot;}, {&quot;label&quot;=&gt;&quot;Website&quot;, &quot;icon&quot;=&gt;&quot;fas fa-fw fa-link&quot;}, {&quot;label&quot;=&gt;&quot;Twitter&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-twitter-square&quot;}, {&quot;label&quot;=&gt;&quot;Facebook&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-facebook-square&quot;}, {&quot;label&quot;=&gt;&quot;GitHub&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-github&quot;}, {&quot;label&quot;=&gt;&quot;Instagram&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-instagram&quot;}]}</name></author><entry><title type="html">Midnight Scan Club</title><link href="http://localhost:4000/AI2D/docs/datasets/midnight_scan_club/" rel="alternate" type="text/html" title="Midnight Scan Club" /><published>2025-08-16T00:00:00-04:00</published><updated>2025-08-16T00:00:00-04:00</updated><id>http://localhost:4000/AI2D/docs/datasets/midnight_scan_club</id><content type="html" xml:base="http://localhost:4000/AI2D/docs/datasets/midnight_scan_club/"><![CDATA[<div style="text-align: left;">
      <img src="/AI2D/assets/images/logos/WashU.png" style="width: auto; height: 10vw;" />
 </div>
 
@@ -579,71 +579,106 @@ RC2MH089983, RC2MH089924</p>
 
 <h3 id="about-the-dataset">About the dataset</h3>
 
-<p><em>PI</em>
-<br />
-Xi-Nian Zuo</p>
-
-<p><em>Institution</em>
-<br />
-Beijing Normal University</p>
-
 <p>This is the neuroimaging dataset for the developmental component of the <a href="https://doi.org/10.1016/j.dcn.2021.101020">Chinese Color Nest Project (CCNP)</a>. CCNP was established to create normative charts for brain structure and function across the human lifespan, and link age-related changes in brain imaging measures to psychological assessments of behavior, cognition, and emotion using an accelerated longitudinal design. CCNP has acquired data with three repeated measurements from 2013 to 2017 in Southwest University, Chongqing, China.</p>
 
 <p>This version of the dataset was curated at the University of Pennsylvania by the Lifespan Informatics and Neuroimaging Center (PennLINC) as part of the <a href="https://reprobrainchart.github.io/">Reproducible Brain Chart (RBC)</a> Initiative.</p>
 
 <div class="table" align="center">
 <table style="text-align: center;
-width:100%; font-size:90%; border: 1px solid black">
+width:100%; font-size: 18px; border: 1px solid black">
+<tr><th style="font-weight:bold; width: 250px;">PI</th><th style="font-weight:normal">Xi-Nian Zuo</th><th style="font-weight:normal"></th></tr>
+<tr><th style="font-weight:bold; width: 250px;">Institution</th><th style="font-weight:normal">Beijing Normal University</th><th style="font-weight:normal"></th></tr>
+<tr><th style="font-weight:bold; width: 250px;">Study Website</th><th style="font-weight:normal"><a href="https://www.scidb.cn/en/detail?dataSetId=c81f0e90a51b4cfca348ce4da6ca734e">Chinese Color Nest Project</a></th><th style="font-weight:normal"></th></tr>
 <tr><th style="font-weight:bold; width: 250px;">Data Descriptor Paper</th><th style="font-weight:normal"><a href="https://doi.org/10.1016/j.dcn.2021.101020">https://doi.org/10.1016/j.dcn.2021.101020</a></th><th style="font-weight:normal"></th></tr>
 <tr><th style="font-weight:bold; width: 250px;">CUBIC Project</th><th style="font-weight:normal"><span style="color: blue;">pennlinc_rbc</span></th><th style="font-weight:normal"></th></tr>
 <tr><th style="font-weight:bold; width: 250px;">DUA</th><th style="font-weight:normal">None</th><th style="font-weight:normal"></th></tr>
 <tr><th style="font-weight:bold; width: 250px;">Sample Size</th><th style="font-weight:normal">195</th><th style="font-weight:normal"></th></tr>
 <tr><th style="font-weight:bold; width: 250px;">Number of Sessions</th><th style="font-weight:normal">195</th><th style="font-weight:normal"></th></tr>
 <tr><th style="font-weight:bold; width: 250px;"><a href="/AI2D/docs/imaging/image_curation/">CuBIDS</a></th><th style="font-weight:normal"><a href="https://github.com/ReproBrainChart/CCNP_BIDS/blob/main/study-CCNP_desc-CuBIDS_summary.tsv">v1.0.5</a></th><th style="font-weight:normal"></th></tr>
-<tr><th style="font-weight:bold; width: 250px;"><a href="/AI2D/docs/imaging/image_babs/">BABS</a></th><th style="font-weight:normal">true</th><th style="font-weight:normal"></th></tr>
-<tr><th style="font-weight:bold; width: 250px;">Available Demographics</th><th style="font-weight:normal"><a href="https://github.com/ReproBrainChart/CCNP_BIDS/blob/main/study-CCNP_desc-participants.json">https://github.com/ReproBrainChart/CCNP_BIDS/blob/main/study-CCNP_desc-participants.json</a></th><th style="font-weight:normal"></th></tr>
-<tr><th style="font-weight:bold; width: 250px;">Average age</th><th style="font-weight:normal">11.9</th><th style="font-weight:normal"></th></tr>
+<tr><th style="font-weight:bold; width: 250px;"><a href="/AI2D/docs/imaging/image_babs/">BABS</a></th><th style="font-weight:normal">v0.0.9.dev30+gfa8f813</th><th style="font-weight:normal"></th></tr>
+<tr><th style="font-weight:bold; width: 250px;">Demographics</th><th style="font-weight:normal"><a href="https://github.com/ReproBrainChart/CCNP_BIDS/blob/main/study-CCNP_desc-participants.json">https://github.com/ReproBrainChart/CCNP_BIDS/blob/main/study-CCNP_desc-participants.json</a></th><th style="font-weight:normal"></th></tr>
+<tr><th style="font-weight:bold; width: 250px;">Average Age (y)</th><th style="font-weight:normal">11.9</th><th style="font-weight:normal"></th></tr>
 <tr><th style="font-weight:bold; width: 250px;">% Female</th><th style="font-weight:normal">52</th><th style="font-weight:normal"></th></tr>
 <tr><th style="font-weight:bold; width: 250px;">% Right Handed</th><th style="font-weight:normal">95</th><th style="font-weight:normal"></th></tr>
-<tr><th style="font-weight:bold; width: 250px;">BIDS Datalad Dataset</th><th style="font-weight:normal"><code>ria+file:///cbica/projects/pennlinc_rbc/datasets/LINC_CCNP/BIDS</code></th><th style="font-weight:normal"></th></tr>
-<tr><th style="font-weight:bold; width: 250px;"><a href="/AI2D/docs/imaging/image_smriprep/">sMRIPrep</a> v24-1-1<br /><span style="font-weight:normal; font-size: 0.8em;">(195 completed sessions out of 195)</span></th><th style="font-weight:normal">
+<tr><th style="font-weight:bold; width: 250px;"><a href="https://handbook.datalad.org/en/latest/intro/philosophy.html">BIDS Datalad Dataset</a></th><th style="font-weight:normal"><code>ria+file:///cbica/projects/pennlinc_rbc/datasets/LINC_CCNP/BIDS</code></th><th style="font-weight:normal"></th></tr>
+<tr><th style="font-weight:bold; width: 250px;"><a href="/AI2D/docs/imaging/image_smriprep/">sMRIPrep</a> v24-1-1<br /><span style="font-weight:normal;">(195/195 complete)</span></th><th style="font-weight:normal">
   <div class="tab-container">
     <div class="tab-buttons">
       <button class="tab-button active" onclick="showTab('smriprep-dl')">Datalad Dataset</button>
       <button class="tab-button" onclick="showTab('smriprep-ephe')">Ephemeral Clone</button>
     </div>
-    <div id="smriprep-dl" class="tab-content active">ria+file:///cbica/projects/pennlinc_rbc/datasets/LINC_CCNP/derivatives/fmriprep_anat-24-1-1-babs/output_ria#~data</div>
-    <div id="smriprep-ephe" class="tab-content">/cbica/projects/pennlinc_rbc/datasets/LINC_CCNP/derivatives/FMRIPREP_ANAT-24-1-1_zipped</div>
+    <div id="smriprep-dl" class="tab-content active">
+      <div class="copy-container">
+        <span class="copy-text"><code>ria+file:///cbica/projects/pennlinc_rbc/datasets/LINC_CCNP/derivatives/fmriprep_anat-24-1-1-babs/output_ria#~data</code></span>
+        <button class="copy-button" onclick="copyToClipboard('smriprep-dl')">Copy</button>
+      </div>
+    </div>
+    <div id="smriprep-ephe" class="tab-content">
+      <div class="copy-container">
+        <span class="copy-text"><code>/cbica/projects/pennlinc_rbc/datasets/LINC_CCNP/derivatives/FMRIPREP_ANAT-24-1-1_zipped</code></span>
+        <button class="copy-button" onclick="copyToClipboard('smriprep-ephe')">Copy</button>
+      </div>
+    </div>
   </div>
 </th><th style="font-weight:normal"></th></tr>
-<tr><th style="font-weight:bold; width: 250px;"><a href="/AI2D/docs/imaging/image_smriprep/">FreeSurfer-Post</a> v0-1-2<br /><span style="font-weight:normal; font-size: 0.8em;">(195 completed sessions out of 195)</span></th><th style="font-weight:normal">
+<tr><th style="font-weight:bold; width: 250px;"><a href="/AI2D/docs/imaging/image_smriprep/">FreeSurfer-Post</a> v0-1-2<br /><span style="font-weight:normal;">(195/195 complete)</span></th><th style="font-weight:normal">
   <div class="tab-container">
     <div class="tab-buttons">
       <button class="tab-button active" onclick="showTab('freesurferpost-dl')">Datalad Dataset</button>
       <button class="tab-button" onclick="showTab('freesurferpost-ephe')">Ephemeral Clone</button>
     </div>
-    <div id="freesurferpost-dl" class="tab-content active">ria+file:///cbica/projects/pennlinc_rbc/datasets/LINC_CCNP/derivatives/freesurferpost-0-1-2-babs/output_ria#~data</div>
-    <div id="freesurferpost-ephe" class="tab-content">/cbica/projects/pennlinc_rbc/datasets/LINC_CCNP/derivatives/FREESURFERPOST-0-1-2_zipped</div>
+    <div id="freesurferpost-dl" class="tab-content active">
+      <div class="copy-container">
+        <span class="copy-text"><code>ria+file:///cbica/projects/pennlinc_rbc/datasets/LINC_CCNP/derivatives/freesurferpost-0-1-2-babs/output_ria#~data</code></span>
+        <button class="copy-button" onclick="copyToClipboard('freesurferpost-dl')">Copy</button>
+      </div>
+    </div>
+    <div id="freesurferpost-ephe" class="tab-content">
+      <div class="copy-container">
+        <span class="copy-text"><code>/cbica/projects/pennlinc_rbc/datasets/LINC_CCNP/derivatives/FREESURFERPOST-0-1-2_zipped</code></span>
+        <button class="copy-button" onclick="copyToClipboard('freesurferpost-ephe')">Copy</button>
+      </div>
+    </div>
   </div>
 </th><th style="font-weight:normal"></th></tr>
-<tr><th style="font-weight:bold; width: 250px;"><a href="/AI2D/docs/imaging/image_fmriprep/">fMRIPrep</a> v24-1-1<br /><span style="font-weight:normal; font-size: 0.8em;">(195 completed sessions out of 195)</span></th><th style="font-weight:normal">
+<tr><th style="font-weight:bold; width: 250px;"><a href="/AI2D/docs/imaging/image_fmriprep/">fMRIPrep</a> v24-1-1<br /><span style="font-weight:normal;">(195/195 complete)</span></th><th style="font-weight:normal">
   <div class="tab-container">
     <div class="tab-buttons">
       <button class="tab-button active" onclick="showTab('fmriprep-dl')">Datalad Dataset</button>
       <button class="tab-button" onclick="showTab('fmriprep-ephe')">Ephemeral Clone</button>
     </div>
-    <div id="fmriprep-dl" class="tab-content active">ria+file:///cbica/projects/pennlinc_rbc/datasets/LINC_CCNP/derivatives/fmriprep_func-24-1-1-babs/output_ria#~data</div>
-    <div id="fmriprep-ephe" class="tab-content">/cbica/projects/pennlinc_rbc/datasets/LINC_CCNP/derivatives/FMRIPREP_FUNC-24-1-1_zipped</div>
+    <div id="fmriprep-dl" class="tab-content active">
+      <div class="copy-container">
+        <span class="copy-text"><code>ria+file:///cbica/projects/pennlinc_rbc/datasets/LINC_CCNP/derivatives/fmriprep_func-24-1-1-babs/output_ria#~data</code></span>
+        <button class="copy-button" onclick="copyToClipboard('fmriprep-dl')">Copy</button>
+      </div>
+    </div>
+    <div id="fmriprep-ephe" class="tab-content">
+      <div class="copy-container">
+        <span class="copy-text"><code>/cbica/projects/pennlinc_rbc/datasets/LINC_CCNP/derivatives/FMRIPREP_FUNC-24-1-1_zipped</code></span>
+        <button class="copy-button" onclick="copyToClipboard('fmriprep-ephe')">Copy</button>
+      </div>
+    </div>
   </div>
 </th><th style="font-weight:normal"></th></tr>
-<tr><th style="font-weight:bold; width: 250px;"><a href="/AI2D/docs/imaging/image_xcpd/">XCP-D</a> v0-10-6<br /><span style="font-weight:normal; font-size: 0.8em;">(195 completed sessions out of 195)</span></th><th style="font-weight:normal">
+<tr><th style="font-weight:bold; width: 250px;"><a href="/AI2D/docs/imaging/image_xcpd/">XCP-D</a> v0-10-6<br /><span style="font-weight:normal;">(195/195 complete)</span></th><th style="font-weight:normal">
   <div class="tab-container">
     <div class="tab-buttons">
       <button class="tab-button active" onclick="showTab('xcpd-dl')">Datalad Dataset</button>
       <button class="tab-button" onclick="showTab('xcpd-ephe')">Ephemeral Clone</button>
     </div>
-    <div id="xcpd-dl" class="tab-content active">ria+file:///cbica/projects/pennlinc_rbc/datasets/LINC_CCNP/derivatives/xcpd-0-10-6-babs/output_ria#~data</div>
-    <div id="xcpd-ephe" class="tab-content">/cbica/projects/pennlinc_rbc/datasets/LINC_CCNP/derivatives/XCPD-0-10-6_zipped</div>
+    <div id="xcpd-dl" class="tab-content active">
+      <div class="copy-container">
+        <span class="copy-text"><code>ria+file:///cbica/projects/pennlinc_rbc/datasets/LINC_CCNP/derivatives/xcpd-0-10-6-babs/output_ria#~data</code></span>
+        <button class="copy-button" onclick="copyToClipboard('xcpd-dl')">Copy</button>
+      </div>
+    </div>
+    <div id="xcpd-ephe" class="tab-content">
+      <div class="copy-container">
+        <span class="copy-text"><code>/cbica/projects/pennlinc_rbc/datasets/LINC_CCNP/derivatives/XCPD-0-10-6_zipped</code></span>
+        <button class="copy-button" onclick="copyToClipboard('xcpd-ephe')">Copy</button>
+      </div>
+    </div>
   </div>
 </th><th style="font-weight:normal"></th></tr>
 </table>
@@ -664,14 +699,14 @@ width:100%; font-size:90%; border: 1px solid black">
   border: 1px solid #ccc;
   padding: 5px 10px;
   cursor: pointer;
-  font-size: 14px;
+  font-size: 18px;
   margin-right: 2px;
 }
 
 .tab-button.active {
-  background-color: #007bff;
+  background-color:rgb(108, 110, 220);
   color: white;
-  border-color: #007bff;
+  border-color: rgb(108, 110, 220);
 }
 
 .tab-content {
@@ -679,17 +714,51 @@ width:100%; font-size:90%; border: 1px solid black">
   padding: 5px;
   background-color: #f9f9f9;
   border: 1px solid #ddd;
-  font-size: 14px;
   word-break: break-all;
 }
 
 .tab-content.active {
   display: block;
 }
+
+.copy-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.copy-text {
+  flex: 1;
+  word-break: break-all;
+}
+
+.copy-button {
+  background-color: rgb(108, 110, 220);
+  color: white;
+  border: none;
+  padding: 4px 8px;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 18px;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.copy-button:hover {
+  background-color: rgb(104, 106, 235);
+}
+
+.copy-button:active {
+  background-color: rgb(84, 86, 215);
+}
 </style>
 
 <script>
 function showTab(tabName) {
+  // Determine which tab type was clicked (datalad or ephemeral)
+  var tabType = tabName.includes('-dl') ? 'datalad' : 'ephemeral';
+  
   // Hide all tab contents
   var tabContents = document.getElementsByClassName('tab-content');
   for (var i = 0; i < tabContents.length; i++) {
@@ -702,11 +771,56 @@ function showTab(tabName) {
     tabButtons[i].classList.remove('active');
   }
   
-  // Show the selected tab content
-  document.getElementById(tabName).classList.add('active');
+  // Show the appropriate tab content for all rows based on the clicked tab type
+  if (tabType === 'datalad') {
+    // Show all datalad contents and activate all datalad buttons
+    var dataladContents = document.querySelectorAll('[id$="-dl"]');
+    var dataladButtons = document.querySelectorAll('[onclick*="-dl"]');
+    
+    dataladContents.forEach(function(content) {
+      content.classList.add('active');
+    });
+    
+    dataladButtons.forEach(function(button) {
+      button.classList.add('active');
+    });
+  } else {
+    // Show all ephemeral contents and activate all ephemeral buttons
+    var ephemeralContents = document.querySelectorAll('[id$="-ephe"]');
+    var ephemeralButtons = document.querySelectorAll('[onclick*="-ephe"]');
+    
+    ephemeralContents.forEach(function(content) {
+      content.classList.add('active');
+    });
+    
+    ephemeralButtons.forEach(function(button) {
+      button.classList.add('active');
+    });
+  }
+}
+
+function copyToClipboard(elementId) {
+  var element = document.getElementById(elementId);
+  var textToCopy = element.querySelector('.copy-text').textContent;
   
-  // Add active class to the clicked button
-  event.target.classList.add('active');
+  // Create a temporary textarea element to copy the text
+  var textarea = document.createElement('textarea');
+  textarea.value = textToCopy;
+  document.body.appendChild(textarea);
+  textarea.select();
+  document.execCommand('copy');
+  document.body.removeChild(textarea);
+  
+  // Visual feedback - change button text temporarily
+  var button = element.querySelector('.copy-button');
+  var originalText = button.textContent;
+  button.textContent = 'Copied!';
+  button.style.backgroundColor = '#28a745';
+  
+  setTimeout(function() {
+    button.textContent = originalText;
+    button.style.backgroundColor = 'rgb(108, 110, 220)';
+  }, 1000);
 }
 </script>
 
