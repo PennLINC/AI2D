@@ -26,9 +26,9 @@ The following instruction are intended specifically to get data on CUBIC.
 
 ## 1. Request access to a CUBIC project
 
-<span style="color: #7556b7;">🌟 **Check the `CUBIC Project` section on the Dataset Page to identify which CUBIC project you need to request access to** ([list of available datasets]({{ site.baseurl }}/docs/datasets)).</span>
+<span style="color: #7556b7;">🌟 **Check the `CUBIC Project` section on the dataset-specific page to identify which CUBIC project you need to request access to** (Dataset-specific links listed [here]({{ site.baseurl }}/docs/datasets)).</span>
 
-<span style="color: #7556b7;">🌟 **Check the `DUA` section on the Dataset Page and obtain the appropriate DUA** ([list of available datasets]({{ site.baseurl }}/docs/datasets)).</span> 
+<span style="color: #7556b7;">🌟 **Check the `DUA` section on the dataset-specific page and obtain the appropriate DUA** (Dataset-specific links listed [here]({{ site.baseurl }}/docs/datasets)).</span> 
 
 Then, follow these steps:
 
@@ -39,7 +39,7 @@ Then, follow these steps:
 2. Submit the DUA (if required) and Dr. Satterthwaite’s approval (PDF) — specifying access level, requesting users/project users, and the full project path — to <span style="color: blue;">help@cbica.upenn.edu</span>.
 
 
-<span style="color: #7556b7;">🌟 **Once you have access to the project, check the `BABS` section on the Dataset Page to determine whether the dataset was processed with [BABS]({{  site.baseurl }}/docs/imaging/image_babs)** ([list of available datasets]({{ site.baseurl }}/docs/datasets)).</span>
+<span style="color: #7556b7;">🌟 **Once you have access to the project, check the `BABS` section on the dataset-specific page to determine whether the dataset was processed with [BABS]({{  site.baseurl }}/docs/imaging/image_babs)** (Dataset-specific links listed [here]({{ site.baseurl }}/docs/datasets)).</span>
 
 ## 2. Dataset processed without BABS
 

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.3">Jekyll</generator><link href="http://localhost:4000/AI2D/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/AI2D/" rel="alternate" type="text/html" /><updated>2025-08-27T11:25:28-04:00</updated><id>http://localhost:4000/AI2D/feed.xml</id><title type="html">AI2D | PennLINC | Shared Data Resources</title><subtitle>AI2D Shared Data Resources</subtitle><author><name>{&quot;links&quot;=&gt;[{&quot;label&quot;=&gt;&quot;Email&quot;, &quot;icon&quot;=&gt;&quot;fas fa-fw fa-envelope-square&quot;}, {&quot;label&quot;=&gt;&quot;Website&quot;, &quot;icon&quot;=&gt;&quot;fas fa-fw fa-link&quot;}, {&quot;label&quot;=&gt;&quot;Twitter&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-twitter-square&quot;}, {&quot;label&quot;=&gt;&quot;Facebook&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-facebook-square&quot;}, {&quot;label&quot;=&gt;&quot;GitHub&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-github&quot;}, {&quot;label&quot;=&gt;&quot;Instagram&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-instagram&quot;}]}</name></author><entry><title type="html">Midnight Scan Club</title><link href="http://localhost:4000/AI2D/docs/datasets/midnight_scan_club/" rel="alternate" type="text/html" title="Midnight Scan Club" /><published>2025-08-16T00:00:00-04:00</published><updated>2025-08-16T00:00:00-04:00</updated><id>http://localhost:4000/AI2D/docs/datasets/midnight_scan_club</id><content type="html" xml:base="http://localhost:4000/AI2D/docs/datasets/midnight_scan_club/"><![CDATA[<div style="text-align: left;">
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.3">Jekyll</generator><link href="http://localhost:4000/AI2D/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/AI2D/" rel="alternate" type="text/html" /><updated>2025-08-27T16:21:16-04:00</updated><id>http://localhost:4000/AI2D/feed.xml</id><title type="html">AI2D | PennLINC | Shared Data Resources</title><subtitle>AI2D Shared Data Resources</subtitle><author><name>{&quot;links&quot;=&gt;[{&quot;label&quot;=&gt;&quot;Email&quot;, &quot;icon&quot;=&gt;&quot;fas fa-fw fa-envelope-square&quot;}, {&quot;label&quot;=&gt;&quot;Website&quot;, &quot;icon&quot;=&gt;&quot;fas fa-fw fa-link&quot;}, {&quot;label&quot;=&gt;&quot;Twitter&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-twitter-square&quot;}, {&quot;label&quot;=&gt;&quot;Facebook&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-facebook-square&quot;}, {&quot;label&quot;=&gt;&quot;GitHub&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-github&quot;}, {&quot;label&quot;=&gt;&quot;Instagram&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-instagram&quot;}]}</name></author><entry><title type="html">Midnight Scan Club</title><link href="http://localhost:4000/AI2D/docs/datasets/midnight_scan_club/" rel="alternate" type="text/html" title="Midnight Scan Club" /><published>2025-08-16T00:00:00-04:00</published><updated>2025-08-16T00:00:00-04:00</updated><id>http://localhost:4000/AI2D/docs/datasets/midnight_scan_club</id><content type="html" xml:base="http://localhost:4000/AI2D/docs/datasets/midnight_scan_club/"><![CDATA[<div style="text-align: left;">
      <img src="/AI2D/assets/images/logos/WashU.png" style="width: auto; height: 10vw;" />
 </div>
 
@@ -135,42 +135,42 @@ width:100%; font-size: 18px; border: 1px solid black">
     </div>
   </div>
 </th><th style="font-weight:normal"></th></tr>
-<tr><th style="font-weight:bold; width: 250px;"><a href="/AI2D/docs/imaging/image_smriprep/">QSIRecon Bundle Stats</a> v1-0-0rc2<br /><span style="font-weight:normal;">(1064/1206 complete)</span></th><th style="font-weight:normal">
+<tr><th style="font-weight:bold; width: 250px;"><a href="/AI2D/docs/imaging/image_qsirecon/">QSIRecon Bundle Stats</a> v1-0-0rc2<br /><span style="font-weight:normal;">(1064/1206 complete)</span></th><th style="font-weight:normal">
   <div class="tab-container">
     <div class="tab-buttons">
-      <button class="tab-button active" onclick="showTab('smriprep-dl')">Datalad Dataset</button>
-      <button class="tab-button" onclick="showTab('smriprep-ephe')">Ephemeral Clone</button>
+      <button class="tab-button active" onclick="showTab('qsirecon-bundle-dl')">Datalad Dataset</button>
+      <button class="tab-button" onclick="showTab('qsirecon-bundle-ephe')">Ephemeral Clone</button>
     </div>
-    <div id="smriprep-dl" class="tab-content active">
+    <div id="qsirecon-bundle-dl" class="tab-content active">
       <div class="copy-container">
         <span class="copy-text"><code>ria+file:///cbica/projects/pennlinc_hcpya/data/qsirecon/output_ria#~data</code></span>
-        <button class="copy-button" onclick="copyToClipboard('smriprep-dl')">Copy</button>
+        <button class="copy-button" onclick="copyToClipboard('qsirecon-bundle-dl')">Copy</button>
       </div>
     </div>
-    <div id="smriprep-ephe" class="tab-content">
+    <div id="qsirecon-bundle-ephe" class="tab-content">
       <div class="copy-container">
         <span class="copy-text"><code>/cbica/projects/pennlinc_hcpya/data/qsirecon/DANGER</code></span>
-        <button class="copy-button" onclick="copyToClipboard('smriprep-ephe')">Copy</button>
+        <button class="copy-button" onclick="copyToClipboard('qsirecon-bundle-ephe')">Copy</button>
       </div>
     </div>
   </div>
 </th><th style="font-weight:normal"></th></tr>
-<tr><th style="font-weight:bold; width: 250px;"><a href="/AI2D/docs/imaging/image_smriprep/">QSIRecon HSVS Matrix</a> v1-0-0rc2<br /><span style="font-weight:normal;">(1064/1206 complete)</span></th><th style="font-weight:normal">
+<tr><th style="font-weight:bold; width: 250px;"><a href="/AI2D/docs/imaging/image_qsirecon/">QSIRecon HSVS Matrix</a> v1-0-0rc2<br /><span style="font-weight:normal;">(1064/1206 complete)</span></th><th style="font-weight:normal">
   <div class="tab-container">
     <div class="tab-buttons">
-      <button class="tab-button active" onclick="showTab('smriprep-dl')">Datalad Dataset</button>
-      <button class="tab-button" onclick="showTab('smriprep-ephe')">Ephemeral Clone</button>
+      <button class="tab-button active" onclick="showTab('qsirecon-whole-dl')">Datalad Dataset</button>
+      <button class="tab-button" onclick="showTab('qsirecon-whole-ephe')">Ephemeral Clone</button>
     </div>
-    <div id="smriprep-dl" class="tab-content active">
+    <div id="qsirecon-whole-dl" class="tab-content active">
       <div class="copy-container">
         <span class="copy-text"><code>ria+file:///cbica/projects/pennlinc_hcpya/data/qsirecon_hsvs/output_ria#~data</code></span>
-        <button class="copy-button" onclick="copyToClipboard('smriprep-dl')">Copy</button>
+        <button class="copy-button" onclick="copyToClipboard('qsirecon-whole-dl')">Copy</button>
       </div>
     </div>
-    <div id="smriprep-ephe" class="tab-content">
+    <div id="qsirecon-whole-ephe" class="tab-content">
       <div class="copy-container">
         <span class="copy-text"><code>/cbica/projects/pennlinc_hcpya/data/qsirecon_hsvs/DANGER</code></span>
-        <button class="copy-button" onclick="copyToClipboard('smriprep-ephe')">Copy</button>
+        <button class="copy-button" onclick="copyToClipboard('qsirecon-whole-ephe')">Copy</button>
       </div>
     </div>
   </div>
