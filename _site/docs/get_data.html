@@ -229,37 +229,35 @@
 
 <h2 id="1-request-access-to-a-cubic-project">1. Request access to a CUBIC project</h2>
 
-<p>Check the <code class="language-plaintext highlighter-rouge">CUBIC Project</code> section on the Dataset Page to determine which CUBIC project you need to request access to for the dataset of interest (<a href="/AI2D/docs/datasets">list of available datasets</a>).</p>
+<p><span style="color: #7556b7;">🌟 <strong>Check the <code class="language-plaintext highlighter-rouge">CUBIC Project</code> section on the Dataset Page to identify which CUBIC project you need to request access to</strong> (<a href="/AI2D/docs/datasets">list of available datasets</a>).</span></p>
 
-<p>Follow these steps:</p>
+<p><span style="color: #7556b7;">🌟 <strong>Check the <code class="language-plaintext highlighter-rouge">DUA</code> section on the Dataset Page and obtain the appropriate DUA</strong> (<a href="/AI2D/docs/datasets">list of available datasets</a>).</span></p>
+
+<p>Then, follow these steps:</p>
 
 <ol>
   <li>Send Dr. Satterthwaite a request including the following:
     <ul>
       <li>The level of access, in this case, you will need <strong>read-only access</strong></li>
       <li>The name of the user[s] to be given access (full name or login name). If you plan to store and analyze data in a CUBIC project, you should use <strong>your project username</strong>, not personal CUBIC username.</li>
-      <li>The full path to the project you need access to. You can find the project path for each study <a href="/AI2D/docs/datasets/">here</a>.</li>
+      <li>The full path to the project you need access to, <code class="language-plaintext highlighter-rouge">/cbica/projects/&lt;project_name&gt;</code>.</li>
     </ul>
   </li>
-  <li>Submit the approval from Dr. Satterthwaite — including the specified user name, project name, and type of access — as a PDF printout to <span style="color: blue;">help@cbica.upenn.edu</span>.</li>
+  <li>Submit the DUA (if required) and Dr. Satterthwaite’s approval (PDF) — specifying access level, requesting users/project users, and the full project path — to <span style="color: blue;">help@cbica.upenn.edu</span>.</li>
 </ol>
 
-<h4 id="check-the-dua-section-on-the-dataset-page-to-determine-whether-the-dataset-you-are-interested-in-is-open-access-see-example-ccnp"><span style="color: #7556b7;">Check the <code class="language-plaintext highlighter-rouge">DUA</code> section on the Dataset Page to determine whether the dataset you are interested in is open access (see example: <a href="/AI2D/docs/datasets/dCCNP/#dataset-summary">CCNP</a>).</span></h4>
-
-<p>If the dataset is NOT open-access,</p>
-
-<h4 id="check-whether-the-dataset-you-are-interested-in-was-processed-with-babs-or-not-see-example-ccnp"><span style="color: #7556b7;">Check whether the dataset you are interested in was processed with <a href="/AI2D/docs/imaging/image_babs">BABS</a> or not (see example: <a href="/AI2D/docs/datasets/dCCNP/#dataset-summary">CCNP</a>).</span></h4>
+<p><span style="color: #7556b7;">🌟 <strong>Once you have access to the project, check the <code class="language-plaintext highlighter-rouge">BABS</code> section on the Dataset Page to determine whether the dataset was processed with <a href="/AI2D/docs/imaging/image_babs">BABS</a></strong> (<a href="/AI2D/docs/datasets">list of available datasets</a>).</span></p>
 
 <h2 id="2-dataset-processed-without-babs">2. Dataset processed without BABS</h2>
 
 <p>If the dataset was NOT processed with BABS, you can copy the data as follows:</p>
 
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span><span class="nb">cp</span> <span class="nt">-r</span> /path/to/datasets /path/to/your/project
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span><span class="nb">cp</span> <span class="nt">-r</span> /path/to/AI2D/dataset /path/to/your/project
 </code></pre></div></div>
 
 <h2 id="3-dataset-processed-with-babs">3. Dataset processed with BABS</h2>
 
-<p>If the dataset WAS processed with BABS, you can get the data either <a href="#32-get-data-with-datalad">using <code class="language-plaintext highlighter-rouge">datalad</code></a> or <a href="#31-get-data-without-datalad">without it</a>, as follows.</p>
+<p>If the dataset WAS processed with BABS, you can either <a href="#31-get-data-without-datalad">get data WITHOUT <code class="language-plaintext highlighter-rouge">datalad</code></a>, or <a href="#32-get-data-with-datalad">get data USING <code class="language-plaintext highlighter-rouge">datalad</code></a>.</p>
 
 <h3 id="31-get-data-without-datalad">3.1. Get data without DataLad</h3>
 
@@ -280,9 +278,9 @@
 
 <h3 id="311-prerequisites">3.1.1. Prerequisites</h3>
 
-<p><strong>Know the path to the dataset’s ephemeral clones:</strong> see example <a href="/AI2D/docs/datasets/dCCNP/#data-access">CCNP</a></p>
+<p><span style="color: #7556b7;">🌟 <strong>Check the Dataset Page for the paths of the ephemeral clones</strong> (<a href="/AI2D/docs/datasets">list of available datasets</a>).</span></p>
 
-<p><strong>Download the extraction script:</strong> <a href="/AI2D/scripts/unzip_files.sh">unzip_files.sh</a>. The script supports:</p>
+<p><span style="color: #7556b7;">🌟 <strong>Download the extraction script:</strong> <a href="/AI2D/scripts/unzip_files.sh">unzip_files.sh</a>.</span> The script supports:</p>
 <ul>
   <li>Extracting all files from zip archives</li>
   <li>Filtering by subject list (text file with subject IDs)</li>
@@ -333,7 +331,7 @@ bash unzip_files.sh <span class="k">${</span><span class="nv">input_dir</span><s
 
 <h3 id="32-get-data-with-datalad">3.2. Get data with DataLad</h3>
 
-<p>This section provides instructions in case you prefer to use DataLad.</p>
+<p>This section provides instructions in case you prefer to use <a href="https://handbook.datalad.org/en/latest/intro/philosophy.html">DataLad</a>.</p>
 
 <p><strong>Pros:</strong></p>
 <ul>
@@ -347,9 +345,9 @@ bash unzip_files.sh <span class="k">${</span><span class="nv">input_dir</span><s
 
 <h3 id="321-prerequisites">3.2.1. Prerequisites</h3>
 
-<p><strong>Know the path to the datalad datasets:</strong> see example <a href="/AI2D/docs/datasets/dCCNP/#data-access">CCNP</a></p>
+<p><span style="color: #7556b7;">🌟 <strong>Check the Dataset Page for the paths of the datalad datasets</strong> (<a href="/AI2D/docs/datasets">list of available datasets</a>).</span></p>
 
-<p><strong>Install DataLad</strong></p>
+<p><span style="color: #7556b7;">🌟 <strong>Install DataLad</strong></span></p>
 
 <p>Follow the instructions <a href="https://www.datalad.org/#install">here</a> to get <code class="language-plaintext highlighter-rouge">datalad</code> installed.</p>
 

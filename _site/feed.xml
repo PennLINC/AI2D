@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.3">Jekyll</generator><link href="http://localhost:4000/AI2D/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/AI2D/" rel="alternate" type="text/html" /><updated>2025-08-26T14:39:35-04:00</updated><id>http://localhost:4000/AI2D/feed.xml</id><title type="html">AI2D | PennLINC | Shared Data Resources</title><subtitle>AI2D Shared Data Resources</subtitle><author><name>{&quot;links&quot;=&gt;[{&quot;label&quot;=&gt;&quot;Email&quot;, &quot;icon&quot;=&gt;&quot;fas fa-fw fa-envelope-square&quot;}, {&quot;label&quot;=&gt;&quot;Website&quot;, &quot;icon&quot;=&gt;&quot;fas fa-fw fa-link&quot;}, {&quot;label&quot;=&gt;&quot;Twitter&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-twitter-square&quot;}, {&quot;label&quot;=&gt;&quot;Facebook&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-facebook-square&quot;}, {&quot;label&quot;=&gt;&quot;GitHub&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-github&quot;}, {&quot;label&quot;=&gt;&quot;Instagram&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-instagram&quot;}]}</name></author><entry><title type="html">Midnight Scan Club</title><link href="http://localhost:4000/AI2D/docs/datasets/midnight_scan_club/" rel="alternate" type="text/html" title="Midnight Scan Club" /><published>2025-08-16T00:00:00-04:00</published><updated>2025-08-16T00:00:00-04:00</updated><id>http://localhost:4000/AI2D/docs/datasets/midnight_scan_club</id><content type="html" xml:base="http://localhost:4000/AI2D/docs/datasets/midnight_scan_club/"><![CDATA[<div style="text-align: left;">
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.3">Jekyll</generator><link href="http://localhost:4000/AI2D/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/AI2D/" rel="alternate" type="text/html" /><updated>2025-08-27T11:01:53-04:00</updated><id>http://localhost:4000/AI2D/feed.xml</id><title type="html">AI2D | PennLINC | Shared Data Resources</title><subtitle>AI2D Shared Data Resources</subtitle><author><name>{&quot;links&quot;=&gt;[{&quot;label&quot;=&gt;&quot;Email&quot;, &quot;icon&quot;=&gt;&quot;fas fa-fw fa-envelope-square&quot;}, {&quot;label&quot;=&gt;&quot;Website&quot;, &quot;icon&quot;=&gt;&quot;fas fa-fw fa-link&quot;}, {&quot;label&quot;=&gt;&quot;Twitter&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-twitter-square&quot;}, {&quot;label&quot;=&gt;&quot;Facebook&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-facebook-square&quot;}, {&quot;label&quot;=&gt;&quot;GitHub&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-github&quot;}, {&quot;label&quot;=&gt;&quot;Instagram&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-instagram&quot;}]}</name></author><entry><title type="html">Midnight Scan Club</title><link href="http://localhost:4000/AI2D/docs/datasets/midnight_scan_club/" rel="alternate" type="text/html" title="Midnight Scan Club" /><published>2025-08-16T00:00:00-04:00</published><updated>2025-08-16T00:00:00-04:00</updated><id>http://localhost:4000/AI2D/docs/datasets/midnight_scan_club</id><content type="html" xml:base="http://localhost:4000/AI2D/docs/datasets/midnight_scan_club/"><![CDATA[<div style="text-align: left;">
      <img src="/AI2D/assets/images/logos/WashU.png" style="width: auto; height: 10vw;" />
 </div>
 
@@ -86,67 +86,93 @@ Julie Boyle, Basile Pinsard, Valentina Borghesani, Francois Paugam, Elizabeth Du
 </div>
 
 <h3 id="about-the-dataset">About the dataset</h3>
-<p><a href="https://www.humanconnectome.org/study/hcp-young-adult">https://www.humanconnectome.org/study/hcp-young-adult</a>
-<br />
-<a href="https://www.humanconnectome.org/study/hcp-young-adult/overview">https://www.humanconnectome.org/study/hcp-young-adult/overview/</a></p>
 
-<p><em>PI</em>
-<br />
-Kamil Ugurbil (UMinn)
-<br />
-David Van Essen (WashU)</p>
+<p>The <a href="https://www.humanconnectome.org/study/hcp-young-adult/overview">HCP Young Adult</a> is mapping the healthy human connectome by collecting and freely distributing neuroimaging and behavioral data on 1,200 normal young adults, aged 22–35.</p>
 
-<p>The HCP (a.k.a. “original” or main HCP, HCP Young Adult, HCP-YA) is mapping the healthy human connectome by collecting and freely distributing neuroimaging and behavioral data on 1,200 normal young adults, aged 22-35.</p>
+<p>The project was carried out in two phases by a consortium of over 100 investigators and staff at 10 institutions.</p>
 
-<p>The project was carried out in two phases by a consortium of over 100 investigators and staff at 10 institutions. In Phase I (years 1–2, Fall 2010–Spring 2012), data acquisition and analysis methods were optimized, including refinements to pulse sequences and key preprocessing steps. In Phase II (years 3 – 5, Summer 2012–Fall 2015), neuroimaging and behavioral data were acquired from 1,200 healthy adults recruited from ~300 families of twins and their non twin siblings.</p>
+<ul>
+  <li><strong>Phase I (2010–2012):</strong> optimized data acquisition and preprocessing methods, refining pulse sequences and pipelines.</li>
+  <li><strong>Phase II (2012–2015):</strong> acquired neuroimaging and behavioral data from 1,200 adults, recruited from ~300 families of twins and their non-twin siblings.</li>
+</ul>
 
-<p>The <code class="language-plaintext highlighter-rouge">pennlinc_hcpya</code> project on CUBIC is not open-access data. Access requires proof of ConnectomeDB registration and acceptance of the HCP open data terms (send email to <span style="color: blue;">Tien.Tong@PennMedicine.upenn.edu</span>).</p>
-
-<p><strong>The <code class="language-plaintext highlighter-rouge">pennlinc_hcpya</code> project on CUBIC only contained <code class="language-plaintext highlighter-rouge">QSIRecon</code> outputs</strong>, which was run on the minimally preprocessed data, which were downloaded on the fly and removed upon completion of the QSIRecon job.</p>
-
-<p><br /></p>
 <div class="table" align="center">
 <table style="text-align: center;
-width:100%; font-size:90%; border: 1px solid black">
-<tr><th style="font-weight:bold">Data Descriptor Paper</th><th style="font-weight:normal"><a href=""></a></th><th style="font-weight:normal"></th></tr>
-<tr><th style="font-weight:bold">CUBIC Project</th><th style="font-weight:normal"><span style="color: blue;">pennlinc_hcpya</span></th><th style="font-weight:normal"></th></tr>
-<tr><th style="font-weight:bold">DUA</th><th style="font-weight:normal"><a href="https://www.humanconnectome.org/study/hcp-young-adult/document/wu-minn-hcp-consortium-open-access-data-use-terms">DUA</a></th><th style="font-weight:normal"></th></tr>
-<tr><th style="font-weight:bold">Data Use Restrictions</th><th style="font-weight:normal"><a href="https://www.humanconnectome.org/study/hcp-young-adult/document/wu-minn-hcp-consortium-open-access-data-use-terms">DUA</a>, <a href="https://www.humanconnectome.org/study/hcp-young-adult/document/quick-reference-open-access-vs-restricted-data">Open-access vs. Restricted data</a></th><th style="font-weight:normal"></th></tr>
-<tr><th style="font-weight:bold">Sample Size</th><th style="font-weight:normal">1206</th><th style="font-weight:normal"></th></tr>
-<tr><th style="font-weight:bold">Number of Sessions</th><th style="font-weight:normal">1206</th><th style="font-weight:normal"></th></tr>
-<tr><th style="font-weight:bold"><a href="/AI2D/docs/imaging/image_curation/">CuBIDS</a></th><th style="font-weight:normal">false</th><th style="font-weight:normal"></th></tr>
-<tr><th style="font-weight:bold"><a href="/AI2D/docs/imaging/image_babs/">BABS</a></th><th style="font-weight:normal">Yes (FAIRly big)</th><th style="font-weight:normal"></th></tr>
-<tr><th style="font-weight:bold">Average age</th><th style="font-weight:normal">28.8</th><th style="font-weight:normal"></th></tr>
-<tr><th style="font-weight:bold">% Female</th><th style="font-weight:normal">54.4</th><th style="font-weight:normal"></th></tr>
-<tr><th style="font-weight:bold">% Right Handed</th><th style="font-weight:normal">84.9</th><th style="font-weight:normal"></th></tr>
-<tr><th style="font-weight:bold"><a href="/AI2D/docs/imaging/image_xcpd/">XCP-D</a> v0-9-1<br /><span style="font-weight:normal; font-size: 0.9em;">(1096 completed sessions out of 1206)</span></th><th style="font-weight:normal">
+width:100%; font-size: 18px; border: 1px solid black">
+<tr><th style="font-weight:bold; width: 250px;">PI</th><th style="font-weight:normal">Kamil Ugurbil (UMinn)<br />David Van Essen (WashU)</th><th style="font-weight:normal"></th></tr>
+<tr><th style="font-weight:bold; width: 250px;">Institution</th><th style="font-weight:normal">Washington University in St. Louis</th><th style="font-weight:normal"></th></tr>
+<tr><th style="font-weight:bold; width: 250px;">Study Website</th><th style="font-weight:normal"><a href="https://www.humanconnectome.org/study/hcp-young-adult">Human Connectome Project - Young Adult (HCP-YA)</a></th><th style="font-weight:normal"></th></tr>
+<tr><th style="font-weight:bold; width: 250px;">Data Descriptor Paper</th><th style="font-weight:normal"><a href="https://doi.org/10.1016/j.neuroimage.2013.05.041">https://doi.org/10.1016/j.neuroimage.2013.05.041</a></th><th style="font-weight:normal"></th></tr>
+<tr><th style="font-weight:bold; width: 250px;">CUBIC Project</th><th style="font-weight:normal"><span style="color: blue;">pennlinc_hcpya</span></th><th style="font-weight:normal"></th></tr>
+<tr><th style="font-weight:bold; width: 250px;">DUA</th><th style="font-weight:normal">The <code>pennlinc_hcpya</code> project on CUBIC contains imaging data only. Access requires proof of ConnectomeDB registration and acceptance of the <a href="https://www.humanconnectome.org/study/hcp-young-adult/document/wu-minn-hcp-consortium-open-access-data-use-terms">HCP Open Access Data Use Terms</a>. Please email this proof to <a href="mailto:Tien.Tong@PennMedicine.upenn.edu">Tien.Tong@PennMedicine.upenn.edu</a>. More details <a href="https://www.humanconnectome.org/study/hcp-young-adult/document/quick-reference-open-access-vs-restricted-data">here</a></th><th style="font-weight:normal"></th></tr>
+<tr><th style="font-weight:bold; width: 250px;">Data Use Restriction</th><th style="font-weight:normal"><a href="https://www.humanconnectome.org/study/hcp-young-adult/document/wu-minn-hcp-consortium-open-access-data-use-terms">HCP-YA Data Use Restriction</a></th><th style="font-weight:normal"></th></tr>
+<tr><th style="font-weight:bold; width: 250px;">Sample Size</th><th style="font-weight:normal">1206</th><th style="font-weight:normal"></th></tr>
+<tr><th style="font-weight:bold; width: 250px;">Number of Sessions</th><th style="font-weight:normal">1206</th><th style="font-weight:normal"></th></tr>
+<tr><th style="font-weight:bold; width: 250px;"><a href="/AI2D/docs/imaging/image_curation/">CuBIDS</a></th><th style="font-weight:normal">false</th><th style="font-weight:normal"></th></tr>
+<tr><th style="font-weight:bold; width: 250px;"><a href="/AI2D/docs/imaging/image_babs/">BABS</a></th><th style="font-weight:normal">Yes (FAIRly big)</th><th style="font-weight:normal"></th></tr>
+<tr><th style="font-weight:bold; width: 250px;">Demographics</th><th style="font-weight:normal">Restricted data. Request access <a href="https://www.humanconnectome.org/study/hcp-young-adult/document/quick-reference-open-access-vs-restricted-data">here</a></th><th style="font-weight:normal"></th></tr>
+<tr><th style="font-weight:bold; width: 250px;">Average Age (y)</th><th style="font-weight:normal">28.8</th><th style="font-weight:normal"></th></tr>
+<tr><th style="font-weight:bold; width: 250px;">% Female</th><th style="font-weight:normal">54.4</th><th style="font-weight:normal"></th></tr>
+<tr><th style="font-weight:bold; width: 250px;">% Right Handed</th><th style="font-weight:normal">84.9</th><th style="font-weight:normal"></th></tr>
+<tr><th style="font-weight:bold; width: 250px;">BIDS</th><th style="font-weight:normal"><span style="color: #666;">Raw data are not available on the <code>pennlinc_hcpya</code> project.</span></th><th style="font-weight:normal"></th></tr>
+<tr><th style="font-weight:bold; width: 250px;"><a href="/AI2D/docs/imaging/image_xcpd/">XCP-D</a> v0-9-1<br /><span style="font-weight:normal;">(1096/1206 complete)</span></th><th style="font-weight:normal">
   <div class="tab-container">
     <div class="tab-buttons">
       <button class="tab-button active" onclick="showTab('xcpd-dl')">Datalad Dataset</button>
       <button class="tab-button" onclick="showTab('xcpd-ephe')">Ephemeral Clone</button>
     </div>
-    <div id="xcpd-dl" class="tab-content active">ria+file:///cbica/projects/pennlinc_hcpya/data/rbc_xcpd/output_ria#~data</div>
-    <div id="xcpd-ephe" class="tab-content">/cbica/projects/pennlinc_hcpya/data/rbc_xcpd/DANGER</div>
+    <div id="xcpd-dl" class="tab-content active">
+      <div class="copy-container">
+        <span class="copy-text"><code>ria+file:///cbica/projects/pennlinc_hcpya/data/rbc_xcpd/output_ria#~data</code></span>
+        <button class="copy-button" onclick="copyToClipboard('xcpd-dl')">Copy</button>
+      </div>
+    </div>
+    <div id="xcpd-ephe" class="tab-content">
+      <div class="copy-container">
+        <span class="copy-text"><code>/cbica/projects/pennlinc_hcpya/data/rbc_xcpd/DANGER</code></span>
+        <button class="copy-button" onclick="copyToClipboard('xcpd-ephe')">Copy</button>
+      </div>
+    </div>
   </div>
 </th><th style="font-weight:normal"></th></tr>
-<tr><th style="font-weight:bold"><a href="/AI2D/docs/imaging/image_qsirecon/">QSIRecon - Bundle Stats</a> v1-0-0rc2<br /><span style="font-weight:normal; font-size: 0.9em;">(1064 completed sessions out of 1206)</span></th><th style="font-weight:normal">
+<tr><th style="font-weight:bold; width: 250px;"><a href="/AI2D/docs/imaging/image_smriprep/">QSIRecon Bundle Stats</a> v1-0-0rc2<br /><span style="font-weight:normal;">(1064/1206 complete)</span></th><th style="font-weight:normal">
   <div class="tab-container">
     <div class="tab-buttons">
-      <button class="tab-button active" onclick="showTab('qsirecon-dl')">Datalad Dataset</button>
-      <button class="tab-button" onclick="showTab('qsirecon-ephe')">Ephemeral Clone</button>
+      <button class="tab-button active" onclick="showTab('smriprep-dl')">Datalad Dataset</button>
+      <button class="tab-button" onclick="showTab('smriprep-ephe')">Ephemeral Clone</button>
     </div>
-    <div id="qsirecon-dl" class="tab-content active">ria+file:///cbica/projects/pennlinc_hcpya/data/qsirecon/output_ria#~data</div>
-    <div id="qsirecon-ephe" class="tab-content">/cbica/projects/pennlinc_hcpya/data/qsirecon/DANGER</div>
+    <div id="smriprep-dl" class="tab-content active">
+      <div class="copy-container">
+        <span class="copy-text"><code>ria+file:///cbica/projects/pennlinc_hcpya/data/qsirecon/output_ria#~data</code></span>
+        <button class="copy-button" onclick="copyToClipboard('smriprep-dl')">Copy</button>
+      </div>
+    </div>
+    <div id="smriprep-ephe" class="tab-content">
+      <div class="copy-container">
+        <span class="copy-text"><code>/cbica/projects/pennlinc_hcpya/data/qsirecon/DANGER</code></span>
+        <button class="copy-button" onclick="copyToClipboard('smriprep-ephe')">Copy</button>
+      </div>
+    </div>
   </div>
 </th><th style="font-weight:normal"></th></tr>
-<tr><th style="font-weight:bold"><a href="/AI2D/docs/imaging/image_qsiprep/">QSIRecon - HSVS Matrix</a> v1-0-0rc2<br /><span style="font-weight:normal; font-size: 0.9em;">(1064 completed sessions out of 1206)</span></th><th style="font-weight:normal">
+<tr><th style="font-weight:bold; width: 250px;"><a href="/AI2D/docs/imaging/image_smriprep/">QSIRecon HSVS Matrix</a> v1-0-0rc2<br /><span style="font-weight:normal;">(1064/1206 complete)</span></th><th style="font-weight:normal">
   <div class="tab-container">
     <div class="tab-buttons">
-      <button class="tab-button active" onclick="showTab('qsirecon-hsvs-dl')">Datalad Dataset</button>
-      <button class="tab-button" onclick="showTab('qsirecon-hsvs-ephe')">Ephemeral Clone</button>
+      <button class="tab-button active" onclick="showTab('smriprep-dl')">Datalad Dataset</button>
+      <button class="tab-button" onclick="showTab('smriprep-ephe')">Ephemeral Clone</button>
     </div>
-    <div id="qsirecon-hsvs-dl" class="tab-content active">ria+file:///cbica/projects/pennlinc_hcpya/data/qsirecon_hsvs/output_ria#~data</div>
-    <div id="qsirecon-hsvs-ephe" class="tab-content">/cbica/projects/pennlinc_hcpya/data/qsirecon_hsvs/DANGER</div>
+    <div id="smriprep-dl" class="tab-content active">
+      <div class="copy-container">
+        <span class="copy-text"><code>ria+file:///cbica/projects/pennlinc_hcpya/data/qsirecon_hsvs/output_ria#~data</code></span>
+        <button class="copy-button" onclick="copyToClipboard('smriprep-dl')">Copy</button>
+      </div>
+    </div>
+    <div id="smriprep-ephe" class="tab-content">
+      <div class="copy-container">
+        <span class="copy-text"><code>/cbica/projects/pennlinc_hcpya/data/qsirecon_hsvs/DANGER</code></span>
+        <button class="copy-button" onclick="copyToClipboard('smriprep-ephe')">Copy</button>
+      </div>
+    </div>
   </div>
 </th><th style="font-weight:normal"></th></tr>
 </table>
@@ -167,14 +193,14 @@ width:100%; font-size:90%; border: 1px solid black">
   border: 1px solid #ccc;
   padding: 5px 10px;
   cursor: pointer;
-  font-size: 12px;
+  font-size: 18px;
   margin-right: 2px;
 }
 
 .tab-button.active {
-  background-color: #007bff;
+  background-color:rgb(108, 110, 220);
   color: white;
-  border-color: #007bff;
+  border-color: rgb(108, 110, 220);
 }
 
 .tab-content {
@@ -182,17 +208,51 @@ width:100%; font-size:90%; border: 1px solid black">
   padding: 5px;
   background-color: #f9f9f9;
   border: 1px solid #ddd;
-  font-size: 11px;
   word-break: break-all;
 }
 
 .tab-content.active {
   display: block;
 }
+
+.copy-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.copy-text {
+  flex: 1;
+  word-break: break-all;
+}
+
+.copy-button {
+  background-color: rgb(108, 110, 220);
+  color: white;
+  border: none;
+  padding: 4px 8px;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 18px;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.copy-button:hover {
+  background-color: rgb(104, 106, 235);
+}
+
+.copy-button:active {
+  background-color: rgb(84, 86, 215);
+}
 </style>
 
 <script>
 function showTab(tabName) {
+  // Determine which tab type was clicked (datalad or ephemeral)
+  var tabType = tabName.includes('-dl') ? 'datalad' : 'ephemeral';
+  
   // Hide all tab contents
   var tabContents = document.getElementsByClassName('tab-content');
   for (var i = 0; i < tabContents.length; i++) {
@@ -205,26 +265,66 @@ function showTab(tabName) {
     tabButtons[i].classList.remove('active');
   }
   
-  // Show the selected tab content
-  document.getElementById(tabName).classList.add('active');
+  // Show the appropriate tab content for all rows based on the clicked tab type
+  if (tabType === 'datalad') {
+    // Show all datalad contents and activate all datalad buttons
+    var dataladContents = document.querySelectorAll('[id$="-dl"]');
+    var dataladButtons = document.querySelectorAll('[onclick*="-dl"]');
+    
+    dataladContents.forEach(function(content) {
+      content.classList.add('active');
+    });
+    
+    dataladButtons.forEach(function(button) {
+      button.classList.add('active');
+    });
+  } else {
+    // Show all ephemeral contents and activate all ephemeral buttons
+    var ephemeralContents = document.querySelectorAll('[id$="-ephe"]');
+    var ephemeralButtons = document.querySelectorAll('[onclick*="-ephe"]');
+    
+    ephemeralContents.forEach(function(content) {
+      content.classList.add('active');
+    });
+    
+    ephemeralButtons.forEach(function(button) {
+      button.classList.add('active');
+    });
+  }
+}
+
+function copyToClipboard(elementId) {
+  var element = document.getElementById(elementId);
+  var textToCopy = element.querySelector('.copy-text').textContent;
   
-  // Add active class to the clicked button
-  event.target.classList.add('active');
+  // Create a temporary textarea element to copy the text
+  var textarea = document.createElement('textarea');
+  textarea.value = textToCopy;
+  document.body.appendChild(textarea);
+  textarea.select();
+  document.execCommand('copy');
+  document.body.removeChild(textarea);
+  
+  // Visual feedback - change button text temporarily
+  var button = element.querySelector('.copy-button');
+  var originalText = button.textContent;
+  button.textContent = 'Copied!';
+  button.style.backgroundColor = '#28a745';
+  
+  setTimeout(function() {
+    button.textContent = originalText;
+    button.style.backgroundColor = 'rgb(108, 110, 220)';
+  }, 1000);
 }
 </script>
 
-<p><br />
-<br /></p>
+<p><br /></p>
 
-<p><em>Funding</em>
-<br />
-NIH Blueprint for Neuroscience Research</p>
+<p><em>Funding</em><br />
+National Institutes of Health</p>
 
-<p><em>Citations</em>
-<br /></p>
-<ol>
-  <li>Van Essen DC, Smith SM, Barch DM, Behrens TE, Yacoub E, Ugurbil K; WU-Minn HCP Consortium. The WU-Minn Human Connectome Project: an overview. Neuroimage. 2013 Oct 15;80:62-79. doi: 10.1016/j.neuroimage.2013.05.041. Epub 2013 May 25. PMID: 23702424; PMCID: PMC3724347.</li>
-</ol>]]></content><author><name>{&quot;links&quot;=&gt;[{&quot;label&quot;=&gt;&quot;Email&quot;, &quot;icon&quot;=&gt;&quot;fas fa-fw fa-envelope-square&quot;}, {&quot;label&quot;=&gt;&quot;Website&quot;, &quot;icon&quot;=&gt;&quot;fas fa-fw fa-link&quot;}, {&quot;label&quot;=&gt;&quot;Twitter&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-twitter-square&quot;}, {&quot;label&quot;=&gt;&quot;Facebook&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-facebook-square&quot;}, {&quot;label&quot;=&gt;&quot;GitHub&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-github&quot;}, {&quot;label&quot;=&gt;&quot;Instagram&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-instagram&quot;}]}</name></author><category term="docs" /><category term="datasets" /><summary type="html"><![CDATA[HCP-YA]]></summary></entry><entry><title type="html">28andMe</title><link href="http://localhost:4000/AI2D/docs/datasets/28andMe/" rel="alternate" type="text/html" title="28andMe" /><published>2025-08-16T00:00:00-04:00</published><updated>2025-08-16T00:00:00-04:00</updated><id>http://localhost:4000/AI2D/docs/datasets/28andMe</id><content type="html" xml:base="http://localhost:4000/AI2D/docs/datasets/28andMe/"><![CDATA[<div style="text-align: left;">
+<p><em>Citation</em><br />
+Van Essen, D. C., Smith, S. M., Barch, D. M., Behrens, T. E., Yacoub, E., Ugurbil, K., &amp; Wu-Minn HCP Consortium. (2013). The WU-Minn human connectome project: an overview. Neuroimage, 80, 62-79.</p>]]></content><author><name>{&quot;links&quot;=&gt;[{&quot;label&quot;=&gt;&quot;Email&quot;, &quot;icon&quot;=&gt;&quot;fas fa-fw fa-envelope-square&quot;}, {&quot;label&quot;=&gt;&quot;Website&quot;, &quot;icon&quot;=&gt;&quot;fas fa-fw fa-link&quot;}, {&quot;label&quot;=&gt;&quot;Twitter&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-twitter-square&quot;}, {&quot;label&quot;=&gt;&quot;Facebook&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-facebook-square&quot;}, {&quot;label&quot;=&gt;&quot;GitHub&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-github&quot;}, {&quot;label&quot;=&gt;&quot;Instagram&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-instagram&quot;}]}</name></author><category term="docs" /><category term="datasets" /><summary type="html"><![CDATA[HCP-YA]]></summary></entry><entry><title type="html">28andMe</title><link href="http://localhost:4000/AI2D/docs/datasets/28andMe/" rel="alternate" type="text/html" title="28andMe" /><published>2025-08-16T00:00:00-04:00</published><updated>2025-08-16T00:00:00-04:00</updated><id>http://localhost:4000/AI2D/docs/datasets/28andMe</id><content type="html" xml:base="http://localhost:4000/AI2D/docs/datasets/28andMe/"><![CDATA[<div style="text-align: left;">
      <img src="/AI2D/assets/images/logos/UCSB.png" style="width: auto; height: 10vw;" />
 </div>
 
@@ -592,14 +692,15 @@ width:100%; font-size: 18px; border: 1px solid black">
 <tr><th style="font-weight:bold; width: 250px;">Data Descriptor Paper</th><th style="font-weight:normal"><a href="https://doi.org/10.1016/j.dcn.2021.101020">https://doi.org/10.1016/j.dcn.2021.101020</a></th><th style="font-weight:normal"></th></tr>
 <tr><th style="font-weight:bold; width: 250px;">CUBIC Project</th><th style="font-weight:normal"><span style="color: blue;">pennlinc_rbc</span></th><th style="font-weight:normal"></th></tr>
 <tr><th style="font-weight:bold; width: 250px;">DUA</th><th style="font-weight:normal">None</th><th style="font-weight:normal"></th></tr>
+<tr><th style="font-weight:bold; width: 250px;">Data Use Restriction</th><th style="font-weight:normal"></th><th style="font-weight:normal"></th></tr>
 <tr><th style="font-weight:bold; width: 250px;">Sample Size</th><th style="font-weight:normal">195</th><th style="font-weight:normal"></th></tr>
 <tr><th style="font-weight:bold; width: 250px;">Number of Sessions</th><th style="font-weight:normal">195</th><th style="font-weight:normal"></th></tr>
 <tr><th style="font-weight:bold; width: 250px;"><a href="/AI2D/docs/imaging/image_curation/">CuBIDS</a></th><th style="font-weight:normal"><a href="https://github.com/ReproBrainChart/CCNP_BIDS/blob/main/study-CCNP_desc-CuBIDS_summary.tsv">v1.0.5</a></th><th style="font-weight:normal"></th></tr>
 <tr><th style="font-weight:bold; width: 250px;"><a href="/AI2D/docs/imaging/image_babs/">BABS</a></th><th style="font-weight:normal">v0.0.9.dev30+gfa8f813</th><th style="font-weight:normal"></th></tr>
-<tr><th style="font-weight:bold; width: 250px;">Demographics</th><th style="font-weight:normal"><a href="https://github.com/ReproBrainChart/CCNP_BIDS/blob/main/study-CCNP_desc-participants.json">https://github.com/ReproBrainChart/CCNP_BIDS/blob/main/study-CCNP_desc-participants.json</a></th><th style="font-weight:normal"></th></tr>
+<tr><th style="font-weight:bold; width: 250px;">Demographics</th><th style="font-weight:normal"><a href="https://github.com/ReproBrainChart/CCNP_BIDS/blob/main/study-CCNP_desc-participants.json">Available demographics</a></th><th style="font-weight:normal"></th></tr>
 <tr><th style="font-weight:bold; width: 250px;">Average Age (y)</th><th style="font-weight:normal">11.9</th><th style="font-weight:normal"></th></tr>
-<tr><th style="font-weight:bold; width: 250px;">% Female</th><th style="font-weight:normal">52</th><th style="font-weight:normal"></th></tr>
-<tr><th style="font-weight:bold; width: 250px;">% Right Handed</th><th style="font-weight:normal">95</th><th style="font-weight:normal"></th></tr>
+<tr><th style="font-weight:bold; width: 250px;">% Female</th><th style="font-weight:normal"></th><th style="font-weight:normal"></th></tr>
+<tr><th style="font-weight:bold; width: 250px;">% Right Handed</th><th style="font-weight:normal"></th><th style="font-weight:normal"></th></tr>
 <tr><th style="font-weight:bold; width: 250px;"><a href="https://handbook.datalad.org/en/latest/intro/philosophy.html">BIDS Datalad Dataset</a></th><th style="font-weight:normal"><code>ria+file:///cbica/projects/pennlinc_rbc/datasets/LINC_CCNP/BIDS</code></th><th style="font-weight:normal"></th></tr>
 <tr><th style="font-weight:bold; width: 250px;"><a href="/AI2D/docs/imaging/image_smriprep/">sMRIPrep</a> v24-1-1<br /><span style="font-weight:normal;">(195/195 complete)</span></th><th style="font-weight:normal">
   <div class="tab-container">

@@ -8,6 +8,7 @@ permalink: /docs/get_data
 
 The following instruction are intended specifically to get data on CUBIC.
 
+
 ## Table of Contents
 
 1. [Request access to a CUBIC project](#1-request-access-to-a-cubic-project)
@@ -25,36 +26,32 @@ The following instruction are intended specifically to get data on CUBIC.
 
 ## 1. Request access to a CUBIC project
 
-Check the `CUBIC Project` section on the Dataset Page to determine which CUBIC project you need to request access to for the dataset of interest ([list of available datasets]({{ site.baseurl }}/docs/datasets)).
+<span style="color: #7556b7;">🌟 **Check the `CUBIC Project` section on the Dataset Page to identify which CUBIC project you need to request access to** ([list of available datasets]({{ site.baseurl }}/docs/datasets)).</span>
 
-Follow these steps:
+<span style="color: #7556b7;">🌟 **Check the `DUA` section on the Dataset Page and obtain the appropriate DUA** ([list of available datasets]({{ site.baseurl }}/docs/datasets)).</span> 
+
+Then, follow these steps:
 
 1. Send Dr. Satterthwaite a request including the following:
     - The level of access, in this case, you will need **read-only access**
     - The name of the user[s] to be given access (full name or login name). If you plan to store and analyze data in a CUBIC project, you should use **your project username**, not personal CUBIC username.
-    - The full path to the project you need access to. You can find the project path for each study [here]({{ site.baseurl }}/docs/datasets/).
-2. Submit the approval from Dr. Satterthwaite — including the specified user name, project name, and type of access — as a PDF printout to <span style="color: blue;">help@cbica.upenn.edu</span>.
-
-#### <span style="color: #7556b7;">Check the `DUA` section on the Dataset Page to determine whether the dataset you are interested in is open access (see example: [CCNP]({{ site.baseurl }}/docs/datasets/dCCNP/#dataset-summary)).</span> 
-
-If the dataset is NOT open-access, 
+    - The full path to the project you need access to, `/cbica/projects/<project_name>`.
+2. Submit the DUA (if required) and Dr. Satterthwaite’s approval (PDF) — specifying access level, requesting users/project users, and the full project path — to <span style="color: blue;">help@cbica.upenn.edu</span>.
 
 
-
-
-#### <span style="color: #7556b7;">Check whether the dataset you are interested in was processed with [BABS]({{  site.baseurl }}/docs/imaging/image_babs) or not (see example: [CCNP]({{ site.baseurl }}/docs/datasets/dCCNP/#dataset-summary)).
+<span style="color: #7556b7;">🌟 **Once you have access to the project, check the `BABS` section on the Dataset Page to determine whether the dataset was processed with [BABS]({{  site.baseurl }}/docs/imaging/image_babs)** ([list of available datasets]({{ site.baseurl }}/docs/datasets)).</span>
 
 ## 2. Dataset processed without BABS
 
 If the dataset was NOT processed with BABS, you can copy the data as follows:
 
 ```bash
-$ cp -r /path/to/datasets /path/to/your/project
+$ cp -r /path/to/AI2D/dataset /path/to/your/project
 ```
 
 ## 3. Dataset processed with BABS
 
-If the dataset WAS processed with BABS, you can get the data either [using `datalad`](#32-get-data-with-datalad) or [without it](#31-get-data-without-datalad), as follows.
+If the dataset WAS processed with BABS, you can either [get data WITHOUT `datalad`](#31-get-data-without-datalad), or [get data USING `datalad`](#32-get-data-with-datalad).
 
 ### 3.1. Get data without DataLad
 
@@ -71,9 +68,9 @@ This section provides instructions in case you prefer NOT to use DataLad and ins
 
 ### 3.1.1. Prerequisites
 
-**Know the path to the dataset’s ephemeral clones:** see example [CCNP]({{ site.baseurl }}/docs/datasets/dCCNP/#data-access)
+<span style="color: #7556b7;">🌟 **Check the Dataset Page for the paths of the ephemeral clones** ([list of available datasets]({{ site.baseurl }}/docs/datasets)).</span>
 
-**Download the extraction script:** [unzip_files.sh]({{ site.baseurl }}/scripts/unzip_files.sh). The script supports:
+<span style="color: #7556b7;">🌟 **Download the extraction script:** [unzip_files.sh]({{ site.baseurl }}/scripts/unzip_files.sh).</span> The script supports:
 - Extracting all files from zip archives
 - Filtering by subject list (text file with subject IDs)
 - Extracting specific file patterns using regex
@@ -126,7 +123,7 @@ bash unzip_files.sh ${input_dir} ${output_dir} "${file_pattern}"
 
 ### 3.2. Get data with DataLad
 
-This section provides instructions in case you prefer to use DataLad.
+This section provides instructions in case you prefer to use [DataLad](https://handbook.datalad.org/en/latest/intro/philosophy.html).
 
 **Pros:**
 - Full data provenance tracking
@@ -136,9 +133,9 @@ This section provides instructions in case you prefer to use DataLad.
 
 ### 3.2.1. Prerequisites
 
-**Know the path to the datalad datasets:** see example [CCNP]({{ site.baseurl }}/docs/datasets/dCCNP/#data-access)
+<span style="color: #7556b7;">🌟 **Check the Dataset Page for the paths of the datalad datasets** ([list of available datasets]({{ site.baseurl }}/docs/datasets)).</span>
 
-**Install DataLad**
+<span style="color: #7556b7;">🌟 **Install DataLad**</span>
 
 Follow the instructions [here](https://www.datalad.org/#install) to get `datalad` installed.
 

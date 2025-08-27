@@ -90,7 +90,7 @@ var store = [{
         "teaser": null
       },{
         "title": "Human Connectome Project - Young Adult",
-        "excerpt":"About the dataset https://www.humanconnectome.org/study/hcp-young-adult https://www.humanconnectome.org/study/hcp-young-adult/overview/ PI Kamil Ugurbil (UMinn) David Van Essen (WashU) The HCP (a.k.a. “original” or main HCP, HCP Young Adult, HCP-YA) is mapping the healthy human connectome by collecting and freely distributing neuroimaging and behavioral data on 1,200 normal young adults, aged 22-35. The project was carried...","categories": ["docs","datasets"],
+        "excerpt":"About the dataset The HCP Young Adult is mapping the healthy human connectome by collecting and freely distributing neuroimaging and behavioral data on 1,200 normal young adults, aged 22–35. The project was carried out in two phases by a consortium of over 100 investigators and staff at 10 institutions. Phase...","categories": ["docs","datasets"],
         "tags": [],
         "url": "/AI2D/docs/datasets/HCP-YA/",
         "teaser": null
