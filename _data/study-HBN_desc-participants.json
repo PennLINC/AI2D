@@ -1,0 +1,65 @@
+{
+  "participant_id": {
+    "LongName": "Participant identifier"
+  },
+  "release_number": {
+    "LongName": "Release number"
+  },
+  "Bold.Sequence": {
+    "LongName": "BOLD sequence",
+    "Description": "Sequence used for functional MRI acquisition",
+    "Levels": {
+      "cmrr": "CMRR multiband sequence",
+      "abcd": "ABCD-style sequence",
+      "": "Not specified"
+    }
+  },
+  "Sex": {
+    "LongName": "Sex",
+    "Levels": {
+      "1": "Female",
+      "0": "Male"
+    }
+  },
+  "Age": {
+    "LongName": "Age",
+    "Description": "Participant age in years at the time of scan/intake",
+    "Units": "Years"
+  },
+  "EHQ_Total": {
+    "LongName": "Edinburgh Handedness Questionnaire total score",
+    "Description": "Handedness index from -100 (fully left-handed) to +100 (fully right-handed)",
+    "Categories": {
+      "Left-handedness": "Less than -40",
+      "Ambidexterity": "Between -40 and +40",
+      "Right-handedness": "Greater than +40"
+    },
+    "Reference": "https://www.physio-pedia.com/Edinburgh_Handedness_Inventory_%28EHI%29"
+  },
+  "Commercial_Use": {
+    "LongName": "Commercial use consent",
+    "Description": "Whether the participant consented to commercial use of data",
+    "Levels": {
+      "Yes": "Consent for commercial use granted",
+      "No": "Consent for commercial use not granted"
+    }
+  },
+  "Full_Pheno": {
+    "LongName": "Full phenotypic data available",
+    "Description": "Indicates whether the participant has a complete phenotypic dataset",
+    "Levels": {
+      "Yes": "Full phenotypic dataset is available",
+      "No": "Full phenotypic dataset is not available"
+    }
+  },
+  "site": {
+    "LongName": "Study site",
+    "Description": "Imaging site where participant was scanned",
+    "Levels": {
+      "si": "Staten Island site",
+      "cbic": "Citigroup Biomedical Imaging Center",
+      "cuny": "City University of New York",
+      "ru": "Rutgers University"
+    }
+  }
+}

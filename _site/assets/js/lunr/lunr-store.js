@@ -54,7 +54,7 @@ var store = [{
         "teaser": null
       },{
         "title": "Healthy Brain Network",
-        "excerpt":"About the dataset https://healthybrainnetwork.org/ PI Michael Milham CUBIC Path/cbica/projects/pennlinc_rbc/datasets/LINC_HBN Sample Size3887 Number of Sessions3887 CuBIDStrue BABStrue Average age10.3 % Female36 % Right Handed:82 Data Access Number of Sessions Completed Software Version Datalad Dataset Ephemeral Clone sMRIPrep 3887 3736 fmriprep 25-0-0 ria+file:///cbica/projects/pennlinc_rbc/datasets/LINC_HBN/derivatives/fmriprep_anat-25-0-0-babs/output_ria#~data /cbica/projects/pennlinc_rbc/datasets/LINC_HBN/derivatives/FMRIPREP_ANAT-25-0-0_zipped fMRIPrep 3789 3596 fmriprep 25-0-0 ria+file:///cbica/projects/pennlinc_rbc/datasets/LINC_HBN/derivatives/fmriprep_func-25-0-0-babs/output_ria#~data /cbica/projects/pennlinc_rbc/datasets/LINC_HBN/derivatives/FMRIPREP_FUNC-25-0-0_zipped XCP-D...","categories": ["docs","datasets"],
+        "excerpt":"About the dataset This is the neuroimaging dataset for the Healthy Brain Network (HBN). HBN is a study of childhood development collected by the Child Mind Instute located in New York, NY. HBN was collected at four New York Metropolitan Area sites. This version of the dataset was curated at...","categories": ["docs","datasets"],
         "tags": [],
         "url": "/AI2D/docs/datasets/HBN/",
         "teaser": null
