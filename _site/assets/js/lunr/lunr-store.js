@@ -60,7 +60,7 @@ var store = [{
         "teaser": null
       },{
         "title": "NKI Rockland Sample",
-        "excerpt":"About the dataset https://rocklandsample.org PI Michael Milham Stan Colcombe Institution Beijing Normal University This is the neuroimaging dataset for the Nathan Klein Institue Rockland Sample. The NKI Rockland Sample Initiative is a landmark research program aiming to map the brain, understand how it develops and changes over the course of...","categories": ["docs","datasets"],
+        "excerpt":"About the dataset This is the neuroimaging dataset for the Nathan Klein Institue Rockland Sample. The NKI Rockland Sample Initiative is a landmark research program aiming to map the brain, understand how it develops and changes over the course of life, and explore the connections between our brain and behavior....","categories": ["docs","datasets"],
         "tags": [],
         "url": "/AI2D/docs/datasets/NKI/",
         "teaser": null

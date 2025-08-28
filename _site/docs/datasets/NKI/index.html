@@ -235,97 +235,480 @@
 </div>
 
 <h3 id="about-the-dataset">About the dataset</h3>
-<p><a href="https://rocklandsample.org">https://rocklandsample.org</a></p>
-
-<p><em>PI</em>
-<br />
-Michael Milham
-<br />
-Stan Colcombe</p>
-
-<p><em>Institution</em>
-<br />
-Beijing Normal University</p>
 
 <p>This is the neuroimaging dataset for the <a href="https://doi.org/10.3389/fnins.2012.00152">Nathan Klein Institue Rockland Sample</a>. The NKI Rockland Sample Initiative is a landmark research program aiming to map the brain, understand how it develops and changes over the course of life, and explore the connections between our brain and behavior. Studies like this have the potential to change how we treat diseases from depression to Alzheimer’s.The NKI Rockland Sample is funded by the US National Institutes of Health and the NY State Office of Mental Health.</p>
 
 <p>This version of the dataset was curated at the University of Pennsylvania by the Lifespan Informatics and Neuroimaging Center (PennLINC) as part of the <a href="https://reprobrainchart.github.io/">Reproducible Brain Chart (RBC)</a> Initiative.</p>
 
+<div class="table" align="center">
+  <table style="text-align:center; width:100%; font-size:18px; border:1px solid black">
+    <tr>
+      <th style="font-weight:bold; width:250px;">PI</th>
+      <th style="font-weight:normal">Michael Milham<br />Stan Colcombe</th>
+      <th style="font-weight:normal"></th>
+    </tr>
+    <tr>
+      <th style="font-weight:bold; width:250px;">Institution</th>
+      <th style="font-weight:normal">Nathan Kline Institute</th>
+      <th style="font-weight:normal"></th>
+    </tr>
+    <tr>
+      <th style="font-weight:bold; width:250px;">Study Website</th>
+      <th style="font-weight:normal"><a href="https://rocklandsample.org/">NKI Rockland Sample</a></th>
+      <th style="font-weight:normal"></th>
+    </tr>
+    <tr>
+      <th style="font-weight:bold; width:250px;">Data Descriptor Paper</th>
+      <th style="font-weight:normal"><a href="https://doi.org/10.3389/fnins.2012.00152">https://doi.org/10.3389/fnins.2012.00152</a></th>
+      <th style="font-weight:normal"></th>
+    </tr>
+    <tr>
+      <th style="font-weight:bold; width:250px;">CUBIC Project</th>
+      <th style="font-weight:normal"><span style="color:blue;">pennlinc_rbc</span></th>
+      <th style="font-weight:normal"></th>
+    </tr>
+    <tr>
+      <th style="font-weight:bold; width:250px;">DUA</th>
+      <th style="font-weight:normal">None</th>
+      <th style="font-weight:normal"></th>
+    </tr>
+    <tr>
+      <th style="font-weight:bold; width:250px;">License</th>
+      <th style="font-weight:normal">CC BY-NC-SA</th>
+      <th style="font-weight:normal"></th>
+    </tr>
+    <tr>
+      <th style="font-weight:bold; width:250px;">Sample Size</th>
+      <th style="font-weight:normal">1329</th>
+      <th style="font-weight:normal"></th>
+    </tr>
+    <tr>
+      <th style="font-weight:bold; width:250px;">Number of Sessions</th>
+      <th style="font-weight:normal">2306</th>
+      <th style="font-weight:normal"></th>
+    </tr>
+    <tr>
+      <th style="font-weight:bold; width:250px;"><a href="/AI2D/docs/imaging/image_curation/">CuBIDS</a></th>
+      <th style="font-weight:normal">
+        
+          <a href="https://github.com/ReproBrainChart/NKI_BIDS/blob/main/study-NKI_desc-CuBIDS_summary.tsv">v1.0.5</a>
+        
+      </th>
+      <th style="font-weight:normal"></th>
+    </tr>
+    <tr>
+      <th style="font-weight:bold; width:250px;"><a href="/AI2D/docs/imaging/image_babs/">BABS</a></th>
+      <th style="font-weight:normal">v0.0.9.dev30+gfa8f813</th>
+      <th style="font-weight:normal"></th>
+    </tr>
+    <tr>
+      <th style="font-weight:bold; width:250px;">Demographics</th>
+      <th style="font-weight:normal">
+        
+          <a href="https://github.com/ReproBrainChart/NKI_BIDS/blob/main/study-NKI_desc-participants.json">View available demographics data</a>
+        
+      </th>
+      <th style="font-weight:normal"></th>
+    </tr>
+    <tr>
+      <th style="font-weight:bold; width:250px;">Average Age (y)</th>
+      <th style="font-weight:normal">36.6</th>
+      <th style="font-weight:normal"></th>
+    </tr>
+    <tr>
+      <th style="font-weight:bold; width:250px;">% Female</th>
+      <th style="font-weight:normal">59</th>
+      <th style="font-weight:normal"></th>
+    </tr>
+    <tr>
+      <th style="font-weight:bold; width:250px;">% Right Handed</th>
+      <th style="font-weight:normal">87</th>
+      <th style="font-weight:normal"></th>
+    </tr>
+    <tr>
+      <th style="font-weight:bold; width:250px;">T1w QC</th>
+      <th style="font-weight:normal">
+        
+          <a href="https://github.com/ReproBrainChart/NKI_BIDS/blob/main/study-NKI_desc-T1_qc.tsv">View T1w QC</a>
+        
+        
+          <a href="https://github.com/ReproBrainChart/NKI_BIDS/blob/main/study-NKI_desc-T1_qc.json">, View T1w QC Variables</a>
+        
+        
+          <a href="https://doi.org/10.1101/2025.02.24.639850">, View RBC Paper for T1w QC Method</a>
+        
+      </th>
+      <th style="font-weight:normal"></th>
+    </tr>
+    <tr>
+      <th style="font-weight:bold; width:250px;">BIDS Datalad Dataset</th>
+      <th style="font-weight:normal"><code>ria+file:///cbica/projects/pennlinc_rbc/datasets/LINC_NKI/BIDS</code></th>
+      <th style="font-weight:normal"></th>
+    </tr>
+
+    
+    
+      
+      
+      
+      
+      
+      <tr>
+        <th style="font-weight:bold; width:250px;">
+          
+            <a href="/AI2D/docs/imaging/image_smriprep/">sMRIprep</a>
+          
+          v24-1-1
+          
+          <br />
+          <span style="font-weight:normal;">(2263/2271 complete)</span>
+          
+        </th>
+        <th style="font-weight:normal">
+          <div class="tab-container">
+            <div class="tab-buttons">
+              <button class="tab-button active" onclick="showTab('smriprep-dl')">Datalad Dataset</button>
+              <button class="tab-button" onclick="showTab('smriprep-ephe')">Ephemeral Clone</button>
+            </div>
+            <div id="smriprep-dl" class="tab-content active">
+              <div class="copy-container">
+                <span class="copy-text"><code>ria+file:///cbica/projects/pennlinc_rbc/datasets/LINC_NKI/derivatives/fmriprep_anat-24-1-1-babs/output_ria#~data</code></span>
+                <button class="copy-button" onclick="copyToClipboard('smriprep-dl')">Copy</button>
+              </div>
+            </div>
+            <div id="smriprep-ephe" class="tab-content">
+              <div class="copy-container">
+                <span class="copy-text"><code>/cbica/projects/pennlinc_rbc/datasets/LINC_NKI/derivatives/FMRIPREP_ANAT-24-1-1_zipped</code></span>
+                <button class="copy-button" onclick="copyToClipboard('smriprep-ephe')">Copy</button>
+              </div>
+            </div>
+          </div>
+        </th>
+        <th style="font-weight:normal"></th>
+      </tr>
+    
+      
+      
+      
+      
+      
+      <tr>
+        <th style="font-weight:bold; width:250px;">
+          
+            <a href="/AI2D/docs/imaging/image_freesurferpost/">FreeSurfer-Post</a>
+          
+          v0-1-2
+          
+          <br />
+          <span style="font-weight:normal;">(2263/2271 complete)</span>
+          
+        </th>
+        <th style="font-weight:normal">
+          <div class="tab-container">
+            <div class="tab-buttons">
+              <button class="tab-button active" onclick="showTab('freesurferpost-dl')">Datalad Dataset</button>
+              <button class="tab-button" onclick="showTab('freesurferpost-ephe')">Ephemeral Clone</button>
+            </div>
+            <div id="freesurferpost-dl" class="tab-content active">
+              <div class="copy-container">
+                <span class="copy-text"><code>ria+file:///cbica/projects/pennlinc_rbc/datasets/LINC_NKI/derivatives/freesurferpost-0-1-2-babs/output_ria#~data</code></span>
+                <button class="copy-button" onclick="copyToClipboard('freesurferpost-dl')">Copy</button>
+              </div>
+            </div>
+            <div id="freesurferpost-ephe" class="tab-content">
+              <div class="copy-container">
+                <span class="copy-text"><code>/cbica/projects/pennlinc_rbc/datasets/LINC_NKI/derivatives/FREESURFERPOST-0-1-2_zipped</code></span>
+                <button class="copy-button" onclick="copyToClipboard('freesurferpost-ephe')">Copy</button>
+              </div>
+            </div>
+          </div>
+        </th>
+        <th style="font-weight:normal"></th>
+      </tr>
+    
+      
+      
+      
+      
+      
+      <tr>
+        <th style="font-weight:bold; width:250px;">
+          
+            <a href="/AI2D/docs/imaging/image_fmriprep/">fMRIprep</a>
+          
+          v24-1-1
+          
+          <br />
+          <span style="font-weight:normal;">(2260/2268 complete)</span>
+          
+        </th>
+        <th style="font-weight:normal">
+          <div class="tab-container">
+            <div class="tab-buttons">
+              <button class="tab-button active" onclick="showTab('fmriprep-dl')">Datalad Dataset</button>
+              <button class="tab-button" onclick="showTab('fmriprep-ephe')">Ephemeral Clone</button>
+            </div>
+            <div id="fmriprep-dl" class="tab-content active">
+              <div class="copy-container">
+                <span class="copy-text"><code>ria+file:///cbica/projects/pennlinc_rbc/datasets/LINC_NKI/derivatives/fmriprep_func-24-1-1-babs/output_ria#~data</code></span>
+                <button class="copy-button" onclick="copyToClipboard('fmriprep-dl')">Copy</button>
+              </div>
+            </div>
+            <div id="fmriprep-ephe" class="tab-content">
+              <div class="copy-container">
+                <span class="copy-text"><code>/cbica/projects/pennlinc_rbc/datasets/LINC_NKI/derivatives/FMRIPREP_FUNC-24-1-1_zipped</code></span>
+                <button class="copy-button" onclick="copyToClipboard('fmriprep-ephe')">Copy</button>
+              </div>
+            </div>
+          </div>
+        </th>
+        <th style="font-weight:normal"></th>
+      </tr>
+    
+      
+      
+      
+      
+      
+      <tr>
+        <th style="font-weight:bold; width:250px;">
+          
+            <a href="/AI2D/docs/imaging/image_xcpd/">XCP-D</a>
+          
+          v0-10-6
+          
+          <br />
+          <span style="font-weight:normal;">(2260/2268 complete)</span>
+          
+        </th>
+        <th style="font-weight:normal">
+          <div class="tab-container">
+            <div class="tab-buttons">
+              <button class="tab-button active" onclick="showTab('xcpd-dl')">Datalad Dataset</button>
+              <button class="tab-button" onclick="showTab('xcpd-ephe')">Ephemeral Clone</button>
+            </div>
+            <div id="xcpd-dl" class="tab-content active">
+              <div class="copy-container">
+                <span class="copy-text"><code>ria+file:///cbica/projects/pennlinc_rbc/datasets/LINC_NKI/derivatives/xcpd-0-10-6-babs/output_ria#~data</code></span>
+                <button class="copy-button" onclick="copyToClipboard('xcpd-dl')">Copy</button>
+              </div>
+            </div>
+            <div id="xcpd-ephe" class="tab-content">
+              <div class="copy-container">
+                <span class="copy-text"><code>/cbica/projects/pennlinc_rbc/datasets/LINC_NKI/derivatives/XCPD-0-10-6_zipped</code></span>
+                <button class="copy-button" onclick="copyToClipboard('xcpd-ephe')">Copy</button>
+              </div>
+            </div>
+          </div>
+        </th>
+        <th style="font-weight:normal"></th>
+      </tr>
+    
+      
+      
+      
+      
+      
+      <tr>
+        <th style="font-weight:bold; width:250px;">
+          
+            <a href="/AI2D/docs/imaging/image_qsiprep/">QSIPrep</a>
+          
+          v1-0-0
+          
+          <br />
+          <span style="font-weight:normal;">(2148/2152 complete)</span>
+          
+        </th>
+        <th style="font-weight:normal">
+          <div class="tab-container">
+            <div class="tab-buttons">
+              <button class="tab-button active" onclick="showTab('qsiprep-dl')">Datalad Dataset</button>
+              <button class="tab-button" onclick="showTab('qsiprep-ephe')">Ephemeral Clone</button>
+            </div>
+            <div id="qsiprep-dl" class="tab-content active">
+              <div class="copy-container">
+                <span class="copy-text"><code>ria+file:///cbica/projects/pennlinc_rbc/datasets/LINC_NKI/derivatives/qsiprep-1-0-0-babs/output_ria#~data</code></span>
+                <button class="copy-button" onclick="copyToClipboard('qsiprep-dl')">Copy</button>
+              </div>
+            </div>
+            <div id="qsiprep-ephe" class="tab-content">
+              <div class="copy-container">
+                <span class="copy-text"><code>/cbica/projects/pennlinc_rbc/datasets/LINC_NKI/derivatives/QSIPREP-1-0-0_zipped</code></span>
+                <button class="copy-button" onclick="copyToClipboard('qsiprep-ephe')">Copy</button>
+              </div>
+            </div>
+          </div>
+        </th>
+        <th style="font-weight:normal"></th>
+      </tr>
+    
+      
+      
+      
+      
+      
+      <tr>
+        <th style="font-weight:bold; width:250px;">
+          
+            <a href="/AI2D/docs/imaging/image_qsirecon/#bundle-stats">QSRecon (Bundle Stats)</a>
+          
+          v1-1-0
+          
+          <br />
+          <span style="font-weight:normal;">(2143/2152 complete)</span>
+          
+        </th>
+        <th style="font-weight:normal">
+          <div class="tab-container">
+            <div class="tab-buttons">
+              <button class="tab-button active" onclick="showTab('qsirecon_bundle-dl')">Datalad Dataset</button>
+              <button class="tab-button" onclick="showTab('qsirecon_bundle-ephe')">Ephemeral Clone</button>
+            </div>
+            <div id="qsirecon_bundle-dl" class="tab-content active">
+              <div class="copy-container">
+                <span class="copy-text"><code>ria+file:///cbica/projects/pennlinc_rbc/datasets/LINC_NKI/derivatives/qsirecon-1-1-0_bundle-stats_babs/output_ria#~data</code></span>
+                <button class="copy-button" onclick="copyToClipboard('qsirecon_bundle-dl')">Copy</button>
+              </div>
+            </div>
+            <div id="qsirecon_bundle-ephe" class="tab-content">
+              <div class="copy-container">
+                <span class="copy-text"><code>/cbica/projects/pennlinc_rbc/datasets/LINC_NKI/derivatives/QSIRECON-1-1-0_BUNDLE-STATS_zipped</code></span>
+                <button class="copy-button" onclick="copyToClipboard('qsirecon_bundle-ephe')">Copy</button>
+              </div>
+            </div>
+          </div>
+        </th>
+        <th style="font-weight:normal"></th>
+      </tr>
+    
+      
+      
+      
+      
+      
+      <tr>
+        <th style="font-weight:bold; width:250px;">
+          
+            <a href="/AI2D/docs/imaging/image_qsirecon/#inter-regional-tractography-and-tractometry">QSRecon (Whole Brain)</a>
+          
+          v1-1-0
+          
+          <br />
+          <span style="font-weight:normal;">(0/2152 complete)</span>
+          
+        </th>
+        <th style="font-weight:normal">
+          <div class="tab-container">
+            <div class="tab-buttons">
+              <button class="tab-button active" onclick="showTab('qsirecon_whole-dl')">Datalad Dataset</button>
+              <button class="tab-button" onclick="showTab('qsirecon_whole-ephe')">Ephemeral Clone</button>
+            </div>
+            <div id="qsirecon_whole-dl" class="tab-content active">
+              <div class="copy-container">
+                <span class="copy-text"><code>Coming Soon</code></span>
+                <button class="copy-button" onclick="copyToClipboard('qsirecon_whole-dl')">Copy</button>
+              </div>
+            </div>
+            <div id="qsirecon_whole-ephe" class="tab-content">
+              <div class="copy-container">
+                <span class="copy-text"><code>Coming Soon</code></span>
+                <button class="copy-button" onclick="copyToClipboard('qsirecon_whole-ephe')">Copy</button>
+              </div>
+            </div>
+          </div>
+        </th>
+        <th style="font-weight:normal"></th>
+      </tr>
+    
+  </table>
+</div>
+
+<style>
+.tab-container { width: 100%; }
+.tab-buttons { display: flex; margin-bottom: 5px; }
+.tab-button {
+  background-color: #f1f1f1;
+  border: 1px solid #ccc;
+  padding: 5px 10px;
+  cursor: pointer;
+  font-size: 18px;
+  margin-right: 2px;
+}
+.tab-button.active {
+  background-color: rgb(108, 110, 220);
+  color: white;
+  border-color: rgb(108, 110, 220);
+}
+.tab-content {
+  display: none;
+  padding: 5px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  word-break: break-all;
+}
+.tab-content.active { display: block; }
+.copy-container { display: flex; align-items: center; justify-content: space-between; gap: 10px; }
+.copy-text { flex: 1; word-break: break-all; }
+.copy-button {
+  background-color: rgb(108, 110, 220);
+  color: white;
+  border: none;
+  padding: 4px 8px;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 18px;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.copy-button:hover { background-color: rgb(104, 106, 235); }
+.copy-button:active { background-color: rgb(84, 86, 215); }
+</style>
+
+<script>
+function showTab(tabName) {
+  var tabType = tabName.indexOf('-dl') !== -1 ? 'datalad' : 'ephemeral';
+  var tabContents = document.getElementsByClassName('tab-content');
+  for (var i = 0; i < tabContents.length; i++) {
+    tabContents[i].classList.remove('active');
+  }
+  var tabButtons = document.getElementsByClassName('tab-button');
+  for (var j = 0; j < tabButtons.length; j++) {
+    tabButtons[j].classList.remove('active');
+  }
+  if (tabType === 'datalad') {
+    var dls = document.querySelectorAll('[id$="-dl"]');
+    var dlButtons = document.querySelectorAll('[onclick*="-dl"]');
+    dls.forEach(function(c) { c.classList.add('active'); });
+    dlButtons.forEach(function(b) { b.classList.add('active'); });
+  } else {
+    var eph = document.querySelectorAll('[id$="-ephe"]');
+    var epheButtons = document.querySelectorAll('[onclick*="-ephe"]');
+    eph.forEach(function(c) { c.classList.add('active'); });
+    epheButtons.forEach(function(b) { b.classList.add('active'); });
+  }
+}
+function copyToClipboard(elementId) {
+  var element = document.getElementById(elementId);
+  var textToCopy = element.querySelector('.copy-text').textContent;
+  var textarea = document.createElement('textarea');
+  textarea.value = textToCopy;
+  document.body.appendChild(textarea);
+  textarea.select();
+  document.execCommand('copy');
+  document.body.removeChild(textarea);
+  var button = element.querySelector('.copy-button');
+  var originalText = button.textContent;
+  button.textContent = 'Copied!';
+  button.style.backgroundColor = '#28a745';
+  setTimeout(function() {
+    button.textContent = originalText;
+    button.style.backgroundColor = 'rgb(108, 110, 220)';
+  }, 1000);
+}
+</script>
+
 <p><br /></p>
-<div class="table" align="center">
-<table style="text-align: center;
-width:63%; font-size:90%; border: 1px solid black">
-<tr><th style="font-weight:bold">CUBIC Path</th><th style="font-weight:normal">/cbica/projects/pennlinc_rbc/datasets/LINC_NKI</th><th style="font-weight:normal"></th></tr>
-<tr><th style="font-weight:bold">Sample Size</th><th style="font-weight:normal">1329</th><th style="font-weight:normal"></th></tr>
-<tr><th style="font-weight:bold">Number of Sessions</th><th style="font-weight:normal">2306</th><th style="font-weight:normal"></th></tr>
-<tr><th style="font-weight:bold"><a href="/AI2D/docs/imaging/image_curation/">CuBIDS</a></th><th style="font-weight:normal"><a href="https://github.com/ReproBrainChart/NKI_BIDS/blob/main/study-NKI_desc-CuBIDS_summary.tsv">true</a></th><th style="font-weight:normal"></th></tr>
-<tr><th style="font-weight:bold"><a href="/AI2D/docs/imaging/image_babs/">BABS</a></th><th style="font-weight:normal">true</th><th style="font-weight:normal"></th></tr>
-<tr><th style="font-weight:bold">Average age</th><th style="font-weight:normal">36.6</th><th style="font-weight:normal"></th></tr>
-<tr><th style="font-weight:bold">% Female</th><th style="font-weight:normal">59</th><th style="font-weight:normal"></th></tr>
-<tr><th style="font-weight:bold">% Right Handed:</th><th style="font-weight:normal">87</th><th style="font-weight:normal"></th></tr>
-</table>
-</div>
-
-<p><br />
-<br /></p>
-
-<h2 id="data-access">Data Access</h2>
-
-<div class="table" align="center">
-<table style="text-align: center; width:100%; font-size:90%; border: 1px solid black">
-<tr>
-<th style="font-weight:bold; text-align: center;"></th>
-<th style="font-weight:bold; text-align: center;">Number of Sessions</th>
-<th style="font-weight:bold; text-align: center;">Completed</th>
-<th style="font-weight:bold; text-align: center;">Software Version</th>
-<th style="font-weight:bold; text-align: center;">Datalad Dataset</th>
-<th style="font-weight:bold; text-align: center;">Ephemeral Clone</th>
-</tr>
-<tr>
-<th style="font-weight:bold; text-align: center;"><a href="/AI2D/docs/imaging/image_smriprep/">sMRIPrep</a></th>
-<td style="font-weight:normal">2271</td>
-<td style="font-weight:normal">2263</td>
-<td style="font-weight:normal">fmriprep 24-1-1</td>
-<td style="font-weight:normal">ria+file:///cbica/projects/pennlinc_rbc/datasets/LINC_NKI/derivatives/fmriprep_anat-24-1-1-babs/output_ria#~data</td>
-<td style="font-weight:normal">/cbica/projects/pennlinc_rbc/datasets/LINC_NKI/derivatives/FMRIPREP_ANAT-24-1-1_zipped</td>
-</tr>
-<tr>
-<th style="font-weight:bold; text-align: center;"><a href="/AI2D/docs/imaging/image_fmriprep/">fMRIPrep</a></th>
-<td style="font-weight:normal">2268</td>
-<td style="font-weight:normal">2260</td>
-<td style="font-weight:normal">fmriprep 24-1-1</td>
-<td style="font-weight:normal">ria+file:///cbica/projects/pennlinc_rbc/datasets/LINC_NKI/derivatives/fmriprep_func-24-1-1-babs/output_ria#~data</td>
-<td style="font-weight:normal">/cbica/projects/pennlinc_rbc/datasets/LINC_NKI/derivatives/FMRIPREP_FUNC-24-1-1_zipped</td>
-</tr>
-<tr>
-<th style="font-weight:bold; text-align: center;"><a href="/AI2D/docs/imaging/image_xcpd/">XCP-D</a></th>
-<td style="font-weight:normal">2268</td>
-<td style="font-weight:normal">2260</td>
-<td style="font-weight:normal">xcpd 0-10-6</td>
-<td style="font-weight:normal">ria+file:///cbica/projects/pennlinc_rbc/datasets/LINC_NKI/derivatives/xcpd-0-10-6-babs/output_ria#~data</td>
-<td style="font-weight:normal">/cbica/projects/pennlinc_rbc/datasets/LINC_NKI/derivatives/XCPD-0-10-6_zipped</td>
-</tr>
-<tr>
-<th style="font-weight:bold; text-align: center;"><a href="/AI2D/docs/imaging/image_qsirecon/">QSIPrep</a></th>
-<td style="font-weight:normal">2152</td>
-<td style="font-weight:normal">2148</td>
-<td style="font-weight:normal">qsiprep 1-0-0</td>
-<td style="font-weight:normal">ria+file:///cbica/projects/pennlinc_rbc/datasets/LINC_NKI/derivatives/qsiprep-1-0-0-babs/output_ria#~data</td>
-<td style="font-weight:normal">/cbica/projects/pennlinc_rbc/datasets/LINC_NKI/derivatives/QSIPREP-1-0-0_zipped</td>
-</tr>
-<tr>
-<th style="font-weight:bold; text-align: center;"><a href="/AI2D/docs/imaging/image_qsirecon/">QSIRecon - Bundle Stats</a></th>
-<td style="font-weight:normal">2152</td>
-<td style="font-weight:normal">2143</td>
-<td style="font-weight:normal">qsirecon 1-1-0</td>
-<td style="font-weight:normal">ria+file:///cbica/projects/pennlinc_rbc/datasets/LINC_NKI/derivatives/qsirecon-1-1-0_bundle-stats_babs/output_ria#~data</td>
-<td style="font-weight:normal">/cbica/projects/pennlinc_rbc/datasets/LINC_NKI/derivatives/QSIRECON-1-1-0_BUNDLE-STATS_zipped</td>
-</tr>
-</table>
-</div>
-
-<p><br />
-<br /></p>
 
 <p><em>Funding</em>
 <br />
