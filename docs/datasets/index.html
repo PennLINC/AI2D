@@ -244,7 +244,14 @@ title: "AI2D &#124; PennLINC &#124; Shared Data Resources"
               {% endif %}
             </td>
             <td>
+              {% assign freesurfer_available = false %}
               {% if dataset.smriprep_session and dataset.smriprep_session != "n/a" and dataset.smriprep_session != "" %}
+                {% assign freesurfer_available = true %}
+              {% endif %}
+              {% if dataset.freesurfer_session and dataset.freesurfer_session != "n/a" and dataset.freesurfer_session != "" %}
+                {% assign freesurfer_available = true %}
+              {% endif %}
+              {% if freesurfer_available %}
                 <span class="status-icon status-success">✅</span>
               {% else %}
                 <span class="status-icon status-error">❌</span>

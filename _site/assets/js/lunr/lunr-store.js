@@ -78,13 +78,13 @@ var store = [{
         "teaser": null
       },{
         "title": "28andHe",
-        "excerpt":"About the dataset https://openneuro.org/datasets/ds005115/versions/1.2.0 PI Emily Jacobs CUBIC Path/cbica/projects/open-datasets/datasets/28andHe Sample Size1 Number of Sessions40 CuBIDSfalse BABSfalse Age % Female0 % Right Handed100 fMRIPrepv25-0-0: /cbica/projects/open-datasets/datasets/28andHe/derivatives/fmriprep Funding Ann S. Bowers Women’s Brain Health Initiative UC Academic Senate National Institutes of Health AG063843 Citations Grotzinger, H., Pritschet, L., Shapturenka, P., Santander, T., Murata,...","categories": ["docs","datasets"],
+        "excerpt":"About the dataset 28andHe is a dense-sampling, deep phenotyping study to determine whether diurnal variation in steroid hormone concentrations in a male impacts large-scale brain network connectivity and whole-brain structure. Participant: The participant is a right-handed Caucasian male, aged 26 years for duration of the study. The participant had no...","categories": ["docs","datasets"],
         "tags": [],
         "url": "/AI2D/docs/datasets/28andHe/",
         "teaser": null
       },{
         "title": "28andMe",
-        "excerpt":"About the dataset https://openneuro.org/datasets/ds002674/versions/1.0.6 PI Emily Jacobs CUBIC Path/cbica/projects/open-datasets/datasets/28andMe Sample Size1 Number of Sessions60 CuBIDSfalse BABSfalse Age % Female100 % Right Handed100 fMRIPrepv25-0-0: /cbica/projects/open-datasets/datasets/28andMe/derivatives/fmriprep Funding Brain and Behavior Research Foundation California Nanosystems Institute Institute for Collaborative Biotechnologies through US Army Research Office W911NF-19-D-0001 Rutherford B. Fett Fund Citations Pritschet L.,...","categories": ["docs","datasets"],
+        "excerpt":"About the dataset Background: In this set of dense-sampling, deep phenotyping studies, we determined whether day-to-day variation in sex hormone concentrations impacts large-scale brain network connectivity. In Study 1 (sessions 1-30, 2018), the female participant was naturally cycling; in Study 2 (sessions 31-60, 2019), the participant was placed on an...","categories": ["docs","datasets"],
         "tags": [],
         "url": "/AI2D/docs/datasets/28andMe/",
         "teaser": null

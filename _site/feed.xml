@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.3">Jekyll</generator><link href="http://localhost:4000/AI2D/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/AI2D/" rel="alternate" type="text/html" /><updated>2025-08-28T13:55:41-04:00</updated><id>http://localhost:4000/AI2D/feed.xml</id><title type="html">AI2D | PennLINC | Shared Data Resources</title><subtitle>AI2D Shared Data Resources</subtitle><author><name>{&quot;links&quot;=&gt;[{&quot;label&quot;=&gt;&quot;Email&quot;, &quot;icon&quot;=&gt;&quot;fas fa-fw fa-envelope-square&quot;}, {&quot;label&quot;=&gt;&quot;Website&quot;, &quot;icon&quot;=&gt;&quot;fas fa-fw fa-link&quot;}, {&quot;label&quot;=&gt;&quot;Twitter&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-twitter-square&quot;}, {&quot;label&quot;=&gt;&quot;Facebook&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-facebook-square&quot;}, {&quot;label&quot;=&gt;&quot;GitHub&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-github&quot;}, {&quot;label&quot;=&gt;&quot;Instagram&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-instagram&quot;}]}</name></author><entry><title type="html">Midnight Scan Club</title><link href="http://localhost:4000/AI2D/docs/datasets/midnight_scan_club/" rel="alternate" type="text/html" title="Midnight Scan Club" /><published>2025-08-16T00:00:00-04:00</published><updated>2025-08-16T00:00:00-04:00</updated><id>http://localhost:4000/AI2D/docs/datasets/midnight_scan_club</id><content type="html" xml:base="http://localhost:4000/AI2D/docs/datasets/midnight_scan_club/"><![CDATA[<div style="text-align: left;">
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.3">Jekyll</generator><link href="http://localhost:4000/AI2D/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/AI2D/" rel="alternate" type="text/html" /><updated>2025-08-28T16:51:10-04:00</updated><id>http://localhost:4000/AI2D/feed.xml</id><title type="html">AI2D | PennLINC | Shared Data Resources</title><subtitle>AI2D Shared Data Resources</subtitle><author><name>{&quot;links&quot;=&gt;[{&quot;label&quot;=&gt;&quot;Email&quot;, &quot;icon&quot;=&gt;&quot;fas fa-fw fa-envelope-square&quot;}, {&quot;label&quot;=&gt;&quot;Website&quot;, &quot;icon&quot;=&gt;&quot;fas fa-fw fa-link&quot;}, {&quot;label&quot;=&gt;&quot;Twitter&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-twitter-square&quot;}, {&quot;label&quot;=&gt;&quot;Facebook&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-facebook-square&quot;}, {&quot;label&quot;=&gt;&quot;GitHub&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-github&quot;}, {&quot;label&quot;=&gt;&quot;Instagram&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-instagram&quot;}]}</name></author><entry><title type="html">Midnight Scan Club</title><link href="http://localhost:4000/AI2D/docs/datasets/midnight_scan_club/" rel="alternate" type="text/html" title="Midnight Scan Club" /><published>2025-08-16T00:00:00-04:00</published><updated>2025-08-16T00:00:00-04:00</updated><id>http://localhost:4000/AI2D/docs/datasets/midnight_scan_club</id><content type="html" xml:base="http://localhost:4000/AI2D/docs/datasets/midnight_scan_club/"><![CDATA[<div style="text-align: left;">
      <img src="/AI2D/assets/images/logos/WashU.png" style="width: auto; height: 10vw;" />
 </div>
 
@@ -329,30 +329,228 @@ Van Essen, D. C., Smith, S. M., Barch, D. M., Behrens, T. E., Yacoub, E., Ugurbi
 </div>
 
 <h3 id="about-the-dataset">About the dataset</h3>
-<p><a href="https://openneuro.org/datasets/ds002674/versions/1.0.6">https://openneuro.org/datasets/ds002674/versions/1.0.6</a></p>
 
-<p><em>PI</em>
-<br />
-Emily Jacobs</p>
+<p><strong>Background:</strong> In this set of dense-sampling, deep phenotyping studies, we determined whether day-to-day variation in sex hormone concentrations impacts large-scale brain network connectivity. In Study 1 (sessions 1-30, 2018), the female participant was naturally cycling; in Study 2 (sessions 31-60, 2019), the participant was placed on an oral hormonal contraceptive regimen.</p>
 
-<p><br /></p>
+<p><strong>Participant:</strong> The participant is a right-handed Caucasian female, aged 23 years for duration of the study 1. The participant had no history of neuropsychiatric diagnosis, endocrine disorders, or prior head trauma. She had a history of regular menstrual cycles (no missed periods, cycle occurring every 26-28 days) and had not taken hormone-based medication in the prior 12 months before the first study. The participant gave written informed consent and the study was approved by the University of California, Santa Barbara Human Subjects Committee.</p>
+
+<p><strong>Study Design:</strong> The participant underwent daily testing for 30 consecutive days. Each test session began with a daily questionnaire, followed by a time-locked collection of serum and whole blood started each day at 10:00am (±30 min), when the participant gave a blood sample. Endocrine samples were collected, at minimum, after two hours of no food or drink consumption (excluding water). The participant refrained from consuming caffeinated beverages before each test session. The MRI session lasted one hour and consisted of structural and functional MRI sequences.</p>
+
+<p><strong>Behavioral Assessments:</strong> To monitor state-dependent mood and lifestyle measures throughout the two studies, the following scales (adapted to reflect the past 24 hours) were administered each morning: Perceived Stress Scale (PSS; Cohen et al., 1983), Pittsburgh Sleep Quality Index (PSQI: Buysse et al., 1989), State-Trait Anxiety Inventory for Adults (STAI: Speillberger, 2010), and Profile of Mood States (POMS: Pollock et al., 1979). Behavioral data can be found under ‘participants.tsv’</p>
+
+<p><strong>Endocrine Procedures:</strong> A licensed phlebotomist inserted a saline-lock intravenous line into the dominant or non-dominant hand or forearm daily to evaluate hypothalamic-pituitary-gonadal axis hormones, including serum levels of gonadal hormones (17β-estradiol, progesterone and testosterone) and the pituitary gonadotropins luteinizing hormone (LH) and follicle stimulating hormone (FSH). One 10cc mL blood sample was collected in a vacutainer SST (BD Diagnostic Systems) each session. The sample clotted at room temperature for 45 min until centrifugation (2000 × g for 10 minutes) and were then aliquoted into three 1 mL microtubes. Serum samples were stored at -20°C until assayed. Serum concentrations were determined via liquid chromatography-mass spectrometry (for all steroid hormones) and immunoassay (for all gonadotropins) at the Brigham and Women’s Hospital Research Assay Core.</p>
+
 <div class="table" align="center">
-<table style="text-align: center;
-width:63%; font-size:90%; border: 1px solid black">
-<tr><th style="font-weight:bold">CUBIC Path</th><th style="font-weight:normal">/cbica/projects/open-datasets/datasets/28andMe</th><th style="font-weight:normal"></th></tr>
-<tr><th style="font-weight:bold">Sample Size</th><th style="font-weight:normal">1</th><th style="font-weight:normal"></th></tr>
-<tr><th style="font-weight:bold">Number of Sessions</th><th style="font-weight:normal">60</th><th style="font-weight:normal"></th></tr>
-<tr><th style="font-weight:bold"><a href="/AI2D/docs/imaging/image_curation/">CuBIDS</a></th><th style="font-weight:normal">false</th><th style="font-weight:normal"></th></tr>
-<tr><th style="font-weight:bold"><a href="/AI2D/docs/imaging/image_babs/">BABS</a></th><th style="font-weight:normal">false</th><th style="font-weight:normal"></th></tr>
-<tr><th style="font-weight:bold">Age</th><th style="font-weight:normal"></th><th style="font-weight:normal"></th></tr>
-<tr><th style="font-weight:bold">% Female</th><th style="font-weight:normal">100</th><th style="font-weight:normal"></th></tr>
-<tr><th style="font-weight:bold">% Right Handed</th><th style="font-weight:normal">100</th><th style="font-weight:normal"></th></tr>
-<tr><th style="font-weight:bold"><a href="/AI2D/docs/imaging/image_fmriprep/">fMRIPrep</a></th><th style="font-weight:normal">v25-0-0: /cbica/projects/open-datasets/datasets/28andMe/derivatives/fmriprep</th><th style="font-weight:normal"></th></tr>
-</table>
+  <table style="text-align:center; width:100%; font-size:18px; border:1px solid black">
+    <tr>
+      <th style="font-weight:bold; width:250px;">PI</th>
+      <th style="font-weight:normal">Emily Jacobs</th>
+      <th style="font-weight:normal"></th>
+    </tr>
+    <tr>
+      <th style="font-weight:bold; width:250px;">Institution</th>
+      <th style="font-weight:normal">University of California, Santa Barbara</th>
+      <th style="font-weight:normal"></th>
+    </tr>
+    <tr>
+      <th style="font-weight:bold; width:250px;">Study Website</th>
+      <th style="font-weight:normal"><a href="https://jacobs.psych.ucsb.edu/research/28-and-me">28andMe</a>, <a href="https://openneuro.org/datasets/ds002674/versions/1.0.6">28andMe-OpenNeuro</a></th>
+      <th style="font-weight:normal"></th>
+    </tr>
+    <tr>
+      <th style="font-weight:bold; width:250px;">Data Descriptor Paper</th>
+      <th style="font-weight:normal"><a href="https://doi.org/10.1016/j.neuroimage.2020.117091">https://doi.org/10.1016/j.neuroimage.2020.117091</a></th>
+      <th style="font-weight:normal"></th>
+    </tr>
+    <tr>
+      <th style="font-weight:bold; width:250px;">CUBIC Project</th>
+      <th style="font-weight:normal"><span style="color:blue;">open-datasets</span></th>
+      <th style="font-weight:normal"></th>
+    </tr>
+    <tr>
+      <th style="font-weight:bold; width:250px;">Sample Size</th>
+      <th style="font-weight:normal">1</th>
+      <th style="font-weight:normal"></th>
+    </tr>
+    <tr>
+      <th style="font-weight:bold; width:250px;">Number of Sessions</th>
+      <th style="font-weight:normal">60</th>
+      <th style="font-weight:normal"></th>
+    </tr>
+    <tr>
+      <th style="font-weight:bold; width:250px;"><a href="/AI2D/docs/imaging/image_curation/">CuBIDS</a></th>
+      <th style="font-weight:normal">
+        
+          false
+        
+      </th>
+      <th style="font-weight:normal"></th>
+    </tr>
+    <tr>
+      <th style="font-weight:bold; width:250px;"><a href="/AI2D/docs/imaging/image_babs/">BABS</a></th>
+      <th style="font-weight:normal">false</th>
+      <th style="font-weight:normal"></th>
+    </tr>
+    <tr>
+      <th style="font-weight:bold; width:250px;">Demographics</th>
+      <th style="font-weight:normal">
+        
+          <a href="https://openneuro.org/datasets/ds002674/versions/1.0.6/file-display/participants.tsv">View available demographics data</a>
+        
+      </th>
+      <th style="font-weight:normal"></th>
+    </tr>
+    <tr>
+      <th style="font-weight:bold; width:250px;">Average Age (y)</th>
+      <th style="font-weight:normal">23.5</th>
+      <th style="font-weight:normal"></th>
+    </tr>
+    <tr>
+      <th style="font-weight:bold; width:250px;">% Female</th>
+      <th style="font-weight:normal">100</th>
+      <th style="font-weight:normal"></th>
+    </tr>
+    <tr>
+      <th style="font-weight:bold; width:250px;">% Right Handed</th>
+      <th style="font-weight:normal">100</th>
+      <th style="font-weight:normal"></th>
+    </tr>
+    <tr>
+      <th style="font-weight:bold; width:250px;">License</th>
+      <th style="font-weight:normal">CC BY-NC-SA</th>
+      <th style="font-weight:normal"></th>
+    </tr>
+    <tr>
+      <th style="font-weight:bold; width:250px;">BIDS Dataset</th>
+      <th style="font-weight:normal">
+        <div id="bids-dataset-copy" class="copy-container">
+          <span class="copy-text"><code>/cbica/projects/open-datasets/datasets/28andMe/dset</code></span>
+          <button class="copy-button" onclick="copyToClipboard('bids-dataset-copy')">Copy</button>
+        </div>
+      </th>
+      <th style="font-weight:normal"></th>
+    </tr>
+
+         
+     
+       
+       
+       
+       
+      <tr>
+        <th style="font-weight:bold; width:250px;">
+          
+            FreeSurfer
+          
+          v7.3.2
+          
+          
+          <br />
+          <span style="font-weight:normal;">Run by fMRIPrep</span>
+          
+          <br />
+          <span style="font-weight:normal;">(60/60 complete)</span>
+          
+        </th>
+                 <th style="font-weight:normal">
+           <div id="freesurfer-path" class="copy-container">
+             <span class="copy-text"><code>/cbica/projects/open-datasets/datasets/28andMe/derivatives/fmriprep/sourcedata/freesurfer</code></span>
+             <button class="copy-button" onclick="copyToClipboard('freesurfer-path')">Copy</button>
+           </div>
+         </th>
+        <th style="font-weight:normal"></th>
+      </tr>
+    
+       
+       
+       
+       
+      <tr>
+        <th style="font-weight:bold; width:250px;">
+          
+            <a href="/AI2D/docs/imaging/image_fmriprep/">fMRIprep</a>
+          
+          v25.0.0
+          
+          
+          <br />
+          <span style="font-weight:normal;">(60/60 complete)</span>
+          
+        </th>
+                 <th style="font-weight:normal">
+           <div id="fmriprep-path" class="copy-container">
+             <span class="copy-text"><code>/cbica/projects/open-datasets/datasets/28andMe/derivatives/fmriprep</code></span>
+             <button class="copy-button" onclick="copyToClipboard('fmriprep-path')">Copy</button>
+           </div>
+         </th>
+        <th style="font-weight:normal"></th>
+      </tr>
+    
+  </table>
 </div>
 
-<p><br />
-<br /></p>
+<style>
+.copy-container { display: flex; align-items: center; justify-content: space-between; gap: 10px; }
+.copy-text { flex: 1; word-break: break-all; }
+.copy-button {
+  background-color: rgb(108, 110, 220);
+  color: white;
+  border: none;
+  padding: 4px 8px;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 18px;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.copy-button:hover { background-color: rgb(104, 106, 235); }
+.copy-button:active { background-color: rgb(84, 86, 215); }
+</style>
+
+<script>
+function showTab(tabName) {
+  var tabType = tabName.indexOf('-dl') !== -1 ? 'datalad' : 'ephemeral';
+  var tabContents = document.getElementsByClassName('tab-content');
+  for (var i = 0; i < tabContents.length; i++) {
+    tabContents[i].classList.remove('active');
+  }
+  var tabButtons = document.getElementsByClassName('tab-button');
+  for (var j = 0; j < tabButtons.length; j++) {
+    tabButtons[j].classList.remove('active');
+  }
+  if (tabType === 'datalad') {
+    var dls = document.querySelectorAll('[id$="-dl"]');
+    var dlButtons = document.querySelectorAll('[onclick*="-dl"]');
+    dls.forEach(function(c) { c.classList.add('active'); });
+    dlButtons.forEach(function(b) { b.classList.add('active'); });
+  } else {
+    var eph = document.querySelectorAll('[id$="-ephe"]');
+    var epheButtons = document.querySelectorAll('[onclick*="-ephe"]');
+    eph.forEach(function(c) { c.classList.add('active'); });
+    epheButtons.forEach(function(b) { b.classList.add('active'); });
+  }
+}
+function copyToClipboard(elementId) {
+  var element = document.getElementById(elementId);
+  var textToCopy = element.querySelector('.copy-text').textContent;
+  var textarea = document.createElement('textarea');
+  textarea.value = textToCopy;
+  document.body.appendChild(textarea);
+  textarea.select();
+  document.execCommand('copy');
+  document.body.removeChild(textarea);
+  var button = element.querySelector('.copy-button');
+  var originalText = button.textContent;
+  button.textContent = 'Copied!';
+  button.style.backgroundColor = '#28a745';
+  setTimeout(function() {
+    button.textContent = originalText;
+    button.style.backgroundColor = 'rgb(108, 110, 220)';
+  }, 1000);
+}
+</script>
+
+<p><br /></p>
 
 <p><em>Funding</em>
 <br />
@@ -363,43 +561,231 @@ Rutherford B. Fett Fund</p>
 
 <p><em>Citations</em>
 <br />
-Pritschet L., Taylor C., Santander T., Jacobs E.G. (2021) Applying dense-sampling methods to reveal dynamic endocrine modulation of the nervous system. Current Opinions in Behavioral Science. Special Issue on Deep Imaging, edited by: Caterina Gratton and Rodrigo Braga.</p>
-
-<p>Pritschet L., Santander T., Taylor C., Layher E., Yu S., Miller M.B., Grafton S.T., Jacobs E.G. (2020) Functional reorganization of brain networks across the human menstrual cycle. NeuroImage.</p>
-
-<p>Taylor C., Pritschet L., Olsen R., Layher E., Santander T., Grafton S.T., Jacobs E.G. (2020) Progesterone shapes medial temporal lobe volume across the human menstrual cycle. NeuroImage.</p>
-
-<p>Fitzgerald M., Pritschet L., Santander T., Grafton S.T., Jacobs E.G. (2021) Cerebellar network organization across the human menstrual cycle. Scientific Reports</p>
-
-<p>Mueller J., Pritschet L., Santander T., Taylor C., Grafton S.T. *Jacobs E.G., *Carlson J.M. (2021) Dynamic community detection reveals transient reorganization of functional brain network subcommunities across a female menstrual cycle. Network Neuroscience *Co-senior authors</p>]]></content><author><name>{&quot;links&quot;=&gt;[{&quot;label&quot;=&gt;&quot;Email&quot;, &quot;icon&quot;=&gt;&quot;fas fa-fw fa-envelope-square&quot;}, {&quot;label&quot;=&gt;&quot;Website&quot;, &quot;icon&quot;=&gt;&quot;fas fa-fw fa-link&quot;}, {&quot;label&quot;=&gt;&quot;Twitter&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-twitter-square&quot;}, {&quot;label&quot;=&gt;&quot;Facebook&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-facebook-square&quot;}, {&quot;label&quot;=&gt;&quot;GitHub&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-github&quot;}, {&quot;label&quot;=&gt;&quot;Instagram&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-instagram&quot;}]}</name></author><category term="docs" /><category term="datasets" /><summary type="html"><![CDATA[28andMe]]></summary></entry><entry><title type="html">28andHe</title><link href="http://localhost:4000/AI2D/docs/datasets/28andHe/" rel="alternate" type="text/html" title="28andHe" /><published>2025-08-16T00:00:00-04:00</published><updated>2025-08-16T00:00:00-04:00</updated><id>http://localhost:4000/AI2D/docs/datasets/28andHe</id><content type="html" xml:base="http://localhost:4000/AI2D/docs/datasets/28andHe/"><![CDATA[<div style="text-align: left;">
+Pritschet L., Santander T., Taylor C., Layher E., Yu S., Miller M.B., Grafton S.T., Jacobs E.G. (2020) Functional reorganization of brain networks across the human menstrual cycle. NeuroImage.</p>]]></content><author><name>{&quot;links&quot;=&gt;[{&quot;label&quot;=&gt;&quot;Email&quot;, &quot;icon&quot;=&gt;&quot;fas fa-fw fa-envelope-square&quot;}, {&quot;label&quot;=&gt;&quot;Website&quot;, &quot;icon&quot;=&gt;&quot;fas fa-fw fa-link&quot;}, {&quot;label&quot;=&gt;&quot;Twitter&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-twitter-square&quot;}, {&quot;label&quot;=&gt;&quot;Facebook&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-facebook-square&quot;}, {&quot;label&quot;=&gt;&quot;GitHub&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-github&quot;}, {&quot;label&quot;=&gt;&quot;Instagram&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-instagram&quot;}]}</name></author><category term="docs" /><category term="datasets" /><summary type="html"><![CDATA[28andMe]]></summary></entry><entry><title type="html">28andHe</title><link href="http://localhost:4000/AI2D/docs/datasets/28andHe/" rel="alternate" type="text/html" title="28andHe" /><published>2025-08-16T00:00:00-04:00</published><updated>2025-08-16T00:00:00-04:00</updated><id>http://localhost:4000/AI2D/docs/datasets/28andHe</id><content type="html" xml:base="http://localhost:4000/AI2D/docs/datasets/28andHe/"><![CDATA[<div style="text-align: left;">
      <img src="/AI2D/assets/images/logos/UCSB.png" style="width: auto; height: 10vw;" />
 </div>
 
 <h3 id="about-the-dataset">About the dataset</h3>
-<p><a href="https://openneuro.org/datasets/ds005115/versions/1.2.0">https://openneuro.org/datasets/ds005115/versions/1.2.0</a></p>
 
-<p><em>PI</em>
-<br />
-Emily Jacobs</p>
+<p><strong>28andHe</strong> is a dense-sampling, deep phenotyping study to determine whether diurnal variation in steroid hormone concentrations in a male impacts large-scale brain network connectivity and whole-brain structure.</p>
 
-<p><br /></p>
+<p><strong>Participant:</strong> The participant is a right-handed Caucasian male, aged 26 years for duration of the study. The participant had no history of neuropsychiatric diagnosis, endocrine disorders, or prior head trauma. The participant gave written informed consent and the study was approved by the University of California, Santa Barbara Human Subjects Committee.</p>
+
+<p><strong>Study Design:</strong> The participant underwent daily testing for 30 consecutive days. Sessions occurred in the morning for the first 10 days, both morning and evening for the following 10 days, and in the evenings for the last 10 days, resulting in 40 sessions total. Each test session began with a daily questionnaire, followed by endocrine sampling at 7am (morning sessions) and at 8pm (evening sessions). The participant gave a 2mL saliva sample at each session, followed by a blood sample. On days with two sessions, the participant underwent one blood draw per day per safety guidelines. Morning endocrine samples were collected after at least 8 hours of overnight fasting, and evening endocrine samples were collected following an hour and a half of abstaining from consumption of food or drink (excluding water). The participant refrained from consuming caffeinated beverages before each morning session. The MRI session lasted one hour and consisted of structural and functional MRI sequences.</p>
+
+<p><strong>Behavioral Assessments:</strong> To monitor state-dependent mood and lifestyle measures throughout the two studies, the following scales (adapted to reflect the past 24 hours) were administered each session: Perceived Stress Scale (PSS; Cohen et al., 1983), Pittsburgh Sleep Quality Index (PSQI: Buysse et al., 1989), State-Trait Anxiety Inventory for Adults (STAI: Speilberger &amp; Vagg, 1984), Profile of Mood States (POMS: Pollock et al., 1979), and Aggression Questionnaire (Buss &amp; Perry, 1992). The questionnaire for the evening sessions excluded the PSQI to avoid redundancy. Behavioral data can be found under ‘participants.tsv’</p>
+
 <div class="table" align="center">
-<table style="text-align: center;
-width:63%; font-size:90%; border: 1px solid black">
-<tr><th style="font-weight:bold">CUBIC Path</th><th style="font-weight:normal">/cbica/projects/open-datasets/datasets/28andHe</th><th style="font-weight:normal"></th></tr>
-<tr><th style="font-weight:bold">Sample Size</th><th style="font-weight:normal">1</th><th style="font-weight:normal"></th></tr>
-<tr><th style="font-weight:bold">Number of Sessions</th><th style="font-weight:normal">40</th><th style="font-weight:normal"></th></tr>
-<tr><th style="font-weight:bold"><a href="/AI2D/docs/imaging/image_curation/">CuBIDS</a></th><th style="font-weight:normal">false</th><th style="font-weight:normal"></th></tr>
-<tr><th style="font-weight:bold"><a href="/AI2D/docs/imaging/image_babs/">BABS</a></th><th style="font-weight:normal">false</th><th style="font-weight:normal"></th></tr>
-<tr><th style="font-weight:bold">Age</th><th style="font-weight:normal"></th><th style="font-weight:normal"></th></tr>
-<tr><th style="font-weight:bold">% Female</th><th style="font-weight:normal">0</th><th style="font-weight:normal"></th></tr>
-<tr><th style="font-weight:bold">% Right Handed</th><th style="font-weight:normal">100</th><th style="font-weight:normal"></th></tr>
-<tr><th style="font-weight:bold"><a href="/AI2D/docs/imaging/image_fmriprep/">fMRIPrep</a></th><th style="font-weight:normal">v25-0-0: /cbica/projects/open-datasets/datasets/28andHe/derivatives/fmriprep</th><th style="font-weight:normal"></th></tr>
-</table>
+  <table style="text-align:center; width:100%; font-size:18px; border:1px solid black">
+    <tr>
+      <th style="font-weight:bold; width:250px;">PI</th>
+      <th style="font-weight:normal">Emily Jacobs</th>
+      <th style="font-weight:normal"></th>
+    </tr>
+    <tr>
+      <th style="font-weight:bold; width:250px;">Institution</th>
+      <th style="font-weight:normal">University of California, Santa Barbara</th>
+      <th style="font-weight:normal"></th>
+    </tr>
+    <tr>
+      <th style="font-weight:bold; width:250px;">Study Website</th>
+      <th style="font-weight:normal"><a href="https://openneuro.org/datasets/ds005115/versions/1.2.0">28andHe</a></th>
+      <th style="font-weight:normal"></th>
+    </tr>
+    <tr>
+      <th style="font-weight:bold; width:250px;">Data Descriptor Paper</th>
+      <th style="font-weight:normal"><a href="https://doi.org/10.1523/JNEUROSCI.1856-23.2024">https://doi.org/10.1523/JNEUROSCI.1856-23.2024</a></th>
+      <th style="font-weight:normal"></th>
+    </tr>
+    <tr>
+      <th style="font-weight:bold; width:250px;">CUBIC Project</th>
+      <th style="font-weight:normal"><span style="color:blue;">open-datasets</span></th>
+      <th style="font-weight:normal"></th>
+    </tr>
+    <tr>
+      <th style="font-weight:bold; width:250px;">Sample Size</th>
+      <th style="font-weight:normal">1</th>
+      <th style="font-weight:normal"></th>
+    </tr>
+    <tr>
+      <th style="font-weight:bold; width:250px;">Number of Sessions</th>
+      <th style="font-weight:normal">40</th>
+      <th style="font-weight:normal"></th>
+    </tr>
+    <tr>
+      <th style="font-weight:bold; width:250px;"><a href="/AI2D/docs/imaging/image_curation/">CuBIDS</a></th>
+      <th style="font-weight:normal">
+        
+          false
+        
+      </th>
+      <th style="font-weight:normal"></th>
+    </tr>
+    <tr>
+      <th style="font-weight:bold; width:250px;"><a href="/AI2D/docs/imaging/image_babs/">BABS</a></th>
+      <th style="font-weight:normal">false</th>
+      <th style="font-weight:normal"></th>
+    </tr>
+    <tr>
+      <th style="font-weight:bold; width:250px;">Demographics</th>
+      <th style="font-weight:normal">
+        
+          <a href="https://openneuro.org/datasets/ds005115/versions/1.2.0/file-display/participants.json">View available demographics data</a>
+        
+      </th>
+      <th style="font-weight:normal"></th>
+    </tr>
+    <tr>
+      <th style="font-weight:bold; width:250px;">Average Age (y)</th>
+      <th style="font-weight:normal">26</th>
+      <th style="font-weight:normal"></th>
+    </tr>
+    <tr>
+      <th style="font-weight:bold; width:250px;">% Female</th>
+      <th style="font-weight:normal">0</th>
+      <th style="font-weight:normal"></th>
+    </tr>
+    <tr>
+      <th style="font-weight:bold; width:250px;">% Right Handed</th>
+      <th style="font-weight:normal">100</th>
+      <th style="font-weight:normal"></th>
+    </tr>
+    <tr>
+      <th style="font-weight:bold; width:250px;">License</th>
+      <th style="font-weight:normal">CC BY-NC-SA</th>
+      <th style="font-weight:normal"></th>
+    </tr>
+    <tr>
+      <th style="font-weight:bold; width:250px;">BIDS Dataset</th>
+      <th style="font-weight:normal">
+        <div id="bids-dataset-copy" class="copy-container">
+          <span class="copy-text"><code>/cbica/projects/open-datasets/datasets/28andHe/dset</code></span>
+          <button class="copy-button" onclick="copyToClipboard('bids-dataset-copy')">Copy</button>
+        </div>
+      </th>
+      <th style="font-weight:normal"></th>
+    </tr>
+
+         
+     
+       
+       
+       
+       
+      <tr>
+        <th style="font-weight:bold; width:250px;">
+          
+            FreeSurfer
+          
+          v7.3.2
+          
+          
+          <br />
+          <span style="font-weight:normal;">Run by fMRIPrep</span>
+          
+          <br />
+          <span style="font-weight:normal;">(40/40 complete)</span>
+          
+        </th>
+                 <th style="font-weight:normal">
+           <div id="freesurfer-path" class="copy-container">
+             <span class="copy-text"><code>/cbica/projects/open-datasets/datasets/28andHe/derivatives/fmriprep/sourcedata/freesurfer</code></span>
+             <button class="copy-button" onclick="copyToClipboard('freesurfer-path')">Copy</button>
+           </div>
+         </th>
+        <th style="font-weight:normal"></th>
+      </tr>
+    
+       
+       
+       
+       
+      <tr>
+        <th style="font-weight:bold; width:250px;">
+          
+            <a href="/AI2D/docs/imaging/image_fmriprep/">fMRIprep</a>
+          
+          v25-0-0
+          
+          
+          <br />
+          <span style="font-weight:normal;">(40/40 complete)</span>
+          
+        </th>
+                 <th style="font-weight:normal">
+           <div id="fmriprep-path" class="copy-container">
+             <span class="copy-text"><code>/cbica/projects/open-datasets/datasets/28andHe/derivatives/fmriprep</code></span>
+             <button class="copy-button" onclick="copyToClipboard('fmriprep-path')">Copy</button>
+           </div>
+         </th>
+        <th style="font-weight:normal"></th>
+      </tr>
+    
+  </table>
 </div>
 
-<p><br />
-<br /></p>
+<style>
+.copy-container { display: flex; align-items: center; justify-content: space-between; gap: 10px; }
+.copy-text { flex: 1; word-break: break-all; }
+.copy-button {
+  background-color: rgb(108, 110, 220);
+  color: white;
+  border: none;
+  padding: 4px 8px;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 18px;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.copy-button:hover { background-color: rgb(104, 106, 235); }
+.copy-button:active { background-color: rgb(84, 86, 215); }
+</style>
+
+<script>
+function showTab(tabName) {
+  var tabType = tabName.indexOf('-dl') !== -1 ? 'datalad' : 'ephemeral';
+  var tabContents = document.getElementsByClassName('tab-content');
+  for (var i = 0; i < tabContents.length; i++) {
+    tabContents[i].classList.remove('active');
+  }
+  var tabButtons = document.getElementsByClassName('tab-button');
+  for (var j = 0; j < tabButtons.length; j++) {
+    tabButtons[j].classList.remove('active');
+  }
+  if (tabType === 'datalad') {
+    var dls = document.querySelectorAll('[id$="-dl"]');
+    var dlButtons = document.querySelectorAll('[onclick*="-dl"]');
+    dls.forEach(function(c) { c.classList.add('active'); });
+    dlButtons.forEach(function(b) { b.classList.add('active'); });
+  } else {
+    var eph = document.querySelectorAll('[id$="-ephe"]');
+    var epheButtons = document.querySelectorAll('[onclick*="-ephe"]');
+    eph.forEach(function(c) { c.classList.add('active'); });
+    epheButtons.forEach(function(b) { b.classList.add('active'); });
+  }
+}
+function copyToClipboard(elementId) {
+  var element = document.getElementById(elementId);
+  var textToCopy = element.querySelector('.copy-text').textContent;
+  var textarea = document.createElement('textarea');
+  textarea.value = textToCopy;
+  document.body.appendChild(textarea);
+  textarea.select();
+  document.execCommand('copy');
+  document.body.removeChild(textarea);
+  var button = element.querySelector('.copy-button');
+  var originalText = button.textContent;
+  button.textContent = 'Copied!';
+  button.style.backgroundColor = '#28a745';
+  setTimeout(function() {
+    button.textContent = originalText;
+    button.style.backgroundColor = 'rgb(108, 110, 220)';
+  }, 1000);
+}
+</script>
+
+<p><br /></p>
 
 <p><em>Funding</em>
 <br />
@@ -626,7 +1012,7 @@ and the AI2D maintainers will work with you to create the blog post.</p>]]></con
       <tr>
         <th style="font-weight:bold; width:250px;">
           
-            <a href="/AI2D/docs/imaging/image_freesurferpost/">FreeSurfer-Post</a>
+            <a href="/AI2D/docs/imaging/image_smriprep/">FreeSurfer-Post</a>
           
           v0-1-2
           
@@ -1110,7 +1496,7 @@ Tobe RH, MacKay-Brandt A, Lim R, Kramer M, Breland MM, Tu L, Tian Y, Trautman KD
       <tr>
         <th style="font-weight:bold; width:250px;">
           
-            <a href="/AI2D/docs/imaging/image_freesurferpost/">FreeSurfer-Post</a>
+            <a href="/AI2D/docs/imaging/image_smriprep/">FreeSurfer-Post</a>
           
           v0-1-2
           
@@ -1584,7 +1970,7 @@ RC2MH089983, RC2MH089924</p>
     <!-- freesurferpost row -->
     <tr>
       <th style="font-weight:bold; width:250px;">
-        <a href="/AI2D/docs/imaging/image_freesurferpost/">FreeSurfer-Post</a> v0-1-2
+        <a href="/AI2D/docs/imaging/image_smriprep/">FreeSurfer-Post</a> v0-1-2
         <br />
         <span style="font-weight:normal;">(195/195 complete)</span>
       </th>
