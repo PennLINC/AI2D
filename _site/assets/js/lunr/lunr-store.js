@@ -66,7 +66,7 @@ var store = [{
         "teaser": null
       },{
         "title": "Philadelphia Neurodevelopmental Cohort",
-        "excerpt":"About the dataset https://www.med.upenn.edu/bbl/philadelphianeurodevelopmentalcohort.html PI Raquel Gur Institution University of Pennsylvania The Philadelphia Neurodevelopmental Cohort (PNC) is a large-scale study of child development that combines neuroimaging, diverse clinical and cognitive phenotypes, and genomics. Data from this rich resource is now publicly available through the Database of Genotypes and Phenotypes (dbGaP)....","categories": ["docs","datasets"],
+        "excerpt":"About the dataset This is the neuroimaging dataset for the Philadelphia Neurodevelopmental Cohort (PNC). PNC is a large-scale study of child development that combines neuroimaging, diverse clinical and cognitive phenotypes, and genomics. Data from this rich resource is now publicly available through the Database of Genotypes and Phenotypes (dbGaP). The...","categories": ["docs","datasets"],
         "tags": [],
         "url": "/AI2D/docs/datasets/PNC/",
         "teaser": null
