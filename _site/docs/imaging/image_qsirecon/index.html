@@ -279,11 +279,26 @@ Diffusion data were processed using <strong><a href="https://qsirecon.readthedoc
 
 <h2 id="bundle-stats">Bundle Stats</h2>
 
-<p>Diffusion tensors were estimated with TORTOISE, and diffusion orientation distribution functions (ODFs) were reconstructed using two approaches: generalized q-sampling imaging (GQI) in DSI Studio and single-shell three-tissue constrained spherical deconvolution (SS3T-CSD) in MRtrix3. AutoTrack tractography was applied to both GQI- and SS3T-derived reconstructions to delineate major white matter tracks. For each method, bundle-wise mean values were computed for GQI-derived scalars and tensor scalars.</p>
+<p>Diffusion tensors were estimated with TORTOISE, and diffusion orientation distribution functions (ODFs) were reconstructed using two approaches: generalized q-sampling imaging (GQI) in DSI Studio and single-shell three-tissue constrained spherical deconvolution (SS3T-CSD) in MRtrix3. AutoTrack tractography was applied to both <a href="https://qsirecon.readthedocs.io/en/latest/builtin_workflows.html#dsi-studio-autotrack"><strong>GQI</strong></a> and <a href="https://qsirecon.readthedocs.io/en/latest/builtin_workflows.html#ss3t-fod-autotrack"><strong>SS3T</strong></a> reconstructions to delineate major white matter tracks. For each method, bundle-wise mean values were computed for <a href="https://qsirecon.readthedocs.io/en/latest/builtin_workflows.html#id36">GQI and tensor scalars</a>.</p>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">--recon-spec</code> for <a href="https://github.com/PennLINC/AI2D/blob/main/_data/reconspec_singleshell_bundle-stats_v1.yaml">single-shell data</a></li>
+  <li><code class="language-plaintext highlighter-rouge">--recon-spec</code> for <a href="https://github.com/PennLINC/AI2D/blob/main/_data/reconspec_multishell_bundle-stats_v1.yaml">multi-shell data</a></li>
+</ul>
 
 <h2 id="inter-regional-tractography-and-tractometry">Inter-regional tractography and tractometry</h2>
 
 <p>Coming soon</p>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">--recon-spec</code> for <a href="https://github.com/PennLINC/AI2D/blob/main/_data/reconspec_singleshell_whole-brain_v1.yaml">single-shell data</a></li>
+  <li><code class="language-plaintext highlighter-rouge">--recon-spec</code> for <a href="https://github.com/PennLINC/AI2D/blob/main/_data/reconspec_multishell_whole-brain_v1.yaml">multi-shell data</a></li>
+</ul>
+
+<p><strong>Inter-regional tractography</strong>: Streamlines were generated using Anatomically-Constrained Tractography (ACT) with Hybrid Surface/Volume Segmentation (HSVS), and connectivity matrices were computed with <code class="language-plaintext highlighter-rouge">tck2connectome</code>.</p>
+
+<p><strong>Tractometry</strong>: tractometry was run using <a href="https://qsirecon.readthedocs.io/en/latest/builtin_workflows.html#pyafq-tractometry">pyAFQ</a>.</p>
+
 
         
       </section>

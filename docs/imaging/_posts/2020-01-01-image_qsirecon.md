@@ -55,8 +55,19 @@ Diffusion data were processed using **[QSIRecon](https://qsirecon.readthedocs.io
 
 ## Bundle Stats
 
-Diffusion tensors were estimated with TORTOISE, and diffusion orientation distribution functions (ODFs) were reconstructed using two approaches: generalized q-sampling imaging (GQI) in DSI Studio and single-shell three-tissue constrained spherical deconvolution (SS3T-CSD) in MRtrix3. AutoTrack tractography was applied to both GQI- and SS3T-derived reconstructions to delineate major white matter tracks. For each method, bundle-wise mean values were computed for GQI-derived scalars and tensor scalars.
+Diffusion tensors were estimated with TORTOISE, and diffusion orientation distribution functions (ODFs) were reconstructed using two approaches: generalized q-sampling imaging (GQI) in DSI Studio and single-shell three-tissue constrained spherical deconvolution (SS3T-CSD) in MRtrix3. AutoTrack tractography was applied to both [**GQI**](https://qsirecon.readthedocs.io/en/latest/builtin_workflows.html#dsi-studio-autotrack) and [**SS3T**](https://qsirecon.readthedocs.io/en/latest/builtin_workflows.html#ss3t-fod-autotrack) reconstructions to delineate major white matter tracks. For each method, bundle-wise mean values were computed for [GQI and tensor scalars](https://qsirecon.readthedocs.io/en/latest/builtin_workflows.html#id36).
+
+ * `--recon-spec` for [single-shell data](https://github.com/PennLINC/AI2D/blob/main/_data/reconspec_singleshell_bundle-stats_v1.yaml)
+ * `--recon-spec` for [multi-shell data](https://github.com/PennLINC/AI2D/blob/main/_data/reconspec_multishell_bundle-stats_v1.yaml)
 
 ## Inter-regional tractography and tractometry
 
 Coming soon
+
+ * `--recon-spec` for [single-shell data](https://github.com/PennLINC/AI2D/blob/main/_data/reconspec_singleshell_whole-brain_v1.yaml)
+ * `--recon-spec` for [multi-shell data](https://github.com/PennLINC/AI2D/blob/main/_data/reconspec_multishell_whole-brain_v1.yaml)
+
+**Inter-regional tractography**: Streamlines were generated using Anatomically-Constrained Tractography (ACT) with Hybrid Surface/Volume Segmentation (HSVS), and connectivity matrices were computed with `tck2connectome`.
+
+**Tractometry**: tractometry was run using [pyAFQ](https://qsirecon.readthedocs.io/en/latest/builtin_workflows.html#pyafq-tractometry).
+
