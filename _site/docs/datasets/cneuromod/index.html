@@ -218,7 +218,7 @@
       <span class="page__meta-readtime">
         <i class="far fa-clock" aria-hidden="true"></i>
         
-          less than 1 minute read
+          2 minute read
         
       </span>
     
@@ -235,38 +235,280 @@
 </div>
 
 <h3 id="about-the-dataset">About the dataset</h3>
-<p><a href="https://www.cneuromod.ca/">https://www.cneuromod.ca/</a><br />
-<a href="https://www.cneuromod.ca/gallery/datasets/">https://www.cneuromod.ca/gallery/datasets/</a> <br />
-<a href="https://docs.cneuromod.ca/en/latest/index.htm">https://docs.cneuromod.ca/en/latest/index.htm</a></p>
 
-<p><em>PI</em>
-<br />
-Lune Bellec</p>
+<p>The Courtois project on Neural Modelling (cneuromod) aims at training artificial neural networks using extensive experimental data on individual human brain activity and behaviour. Six subjects (three women, three men) were scanned weekly for five years (2018-23), with more sporadic scanning sessions still ongoing.</p>
 
-<p><br /></p>
+<p>The cneuromod dataset currently features up to <strong>200 hours</strong> of functional data per subject, including functional localizers (vision, language, memory, emotion), movies and video game play. So far functional neuroimaging data have been collected with functional magnetic resonance imaging and a variety of sensors (including electrodermal activity and occulometry). A smaller subset of data was collected with electroencephalography.</p>
+
+<p>The cneuromod project is funded by a donation of the Courtois foundation. Courtois NeuroMod data are freely shared with the scientific community to advance research at the interface of neuroscience and artificial intelligence. Four subjects have shared their data without any restriction, while access to the full sample follows a registered access model.</p>
+
+<p>An overview of the project is available on the <a href="https://www.cneuromod.ca/">cneuromod website</a> and the technical documentation of the latest release is accessible <a href="https://docs.cneuromod.ca/en/latest/">here</a>.</p>
+
 <div class="table" align="center">
-<table style="text-align: center;
-width:63%; font-size:90%; border: 1px solid black">
-<tr><th style="font-weight:bold">CUBIC Path</th><th style="font-weight:normal">/cbica/projects/open-datasets/datasets/cneuromod</th><th style="font-weight:normal"></th></tr>
-<tr><th style="font-weight:bold">Sample Size</th><th style="font-weight:normal">variable</th><th style="font-weight:normal"></th></tr>
-<tr><th style="font-weight:bold">Number of Sessions</th><th style="font-weight:normal">variable</th><th style="font-weight:normal"></th></tr>
-<tr><th style="font-weight:bold"><a href="/AI2D/docs/imaging/image_curation/">CuBIDS</a></th><th style="font-weight:normal">false</th><th style="font-weight:normal"></th></tr>
-<tr><th style="font-weight:bold"><a href="/AI2D/docs/imaging/image_babs/">BABS</a></th><th style="font-weight:normal">false</th><th style="font-weight:normal"></th></tr>
-<tr><th style="font-weight:bold">Average age</th><th style="font-weight:normal"></th><th style="font-weight:normal"></th></tr>
-<tr><th style="font-weight:bold">Available preprocessed data</th><th style="font-weight:normal">For the following datasets:<br />
-• friends<br />
-• harrypotter<br />
-• hcptrt<br />
-• movie10<br />
-• shinobi<br /><br />
-<a href="https://www.cneuromod.ca/gallery/datasets/">Click here</a> for information on each dataset</th><th style="font-weight:normal"></th></tr>
-<tr><th style="font-weight:bold"><a href="/AI2D/docs/imaging/image_smriprep/">sMRIPrep</a></th><th style="font-weight:normal">/cbica/projects/open-datasets/datasets/cneuromod/cneuromod.processed/smriprep</th><th style="font-weight:normal"></th></tr>
-<tr><th style="font-weight:bold"><a href="/AI2D/docs/imaging/image_fmriprep/">fMRIPrep</a></th><th style="font-weight:normal">/cbica/projects/open-datasets/datasets/cneuromod/cneuromod.processed/fmriprep</th><th style="font-weight:normal"></th></tr>
-</table>
+  <table style="text-align:center; width:100%; font-size:18px; border:1px solid black">
+    <tr>
+      <th style="font-weight:bold; width:250px;">PI</th>
+      <th style="font-weight:normal">Lune Bellec</th>
+      <th style="font-weight:normal"></th>
+    </tr>
+    <tr>
+      <th style="font-weight:bold; width:250px;">Institution</th>
+      <th style="font-weight:normal">Université de Montréal<br />Centre intégré universitaire de santé et de services sociaux du Centre-Sud-de-l'Île-de-Montréal</th>
+      <th style="font-weight:normal"></th>
+    </tr>
+    <tr>
+      <th style="font-weight:bold; width:250px;">Study Website</th>
+      <th style="font-weight:normal"><a href="https://www.cneuromod.ca">Neural Modelling</a></th>
+      <th style="font-weight:normal"></th>
+    </tr>
+    <tr>
+      <th style="font-weight:bold; width:250px;">Data Descriptor 1</th>
+      <th style="font-weight:normal"><a href="https://docs.cneuromod.ca/en/latest/DATASETS.html">Documentation</a></th>
+      <th style="font-weight:normal"></th>
+    </tr>
+    <tr>
+      <th style="font-weight:bold; width:250px;">Data Descriptor 2</th>
+      <th style="font-weight:normal"><a href="https://www.cneuromod.ca/gallery/datasets/">Dataset Gallery</a></th>
+      <th style="font-weight:normal"></th>
+    </tr>
+    <tr>
+      <th style="font-weight:bold; width:250px;">CUBIC Project</th>
+      <th style="font-weight:normal"><span style="color:blue;">open-datasets</span></th>
+      <th style="font-weight:normal"></th>
+    </tr>
+    <tr>
+      <th style="font-weight:bold; width:250px;">DUA</th>
+      <th style="font-weight:normal">https://docs.cneuromod.ca/en/latest/ACCESS.html</th>
+      <th style="font-weight:normal"></th>
+    </tr>
+    <tr>
+      <th style="font-weight:bold; width:250px;">License</th>
+      <th style="font-weight:normal">https://docs.cneuromod.ca/en/latest/ACCESS.html#complete-cneuromod-databank-via-data-transfer-agreement-dta</th>
+      <th style="font-weight:normal"></th>
+    </tr>
+    <tr>
+      <th style="font-weight:bold; width:250px;">Sample Size</th>
+      <th style="font-weight:normal">variable</th>
+      <th style="font-weight:normal"></th>
+    </tr>
+    <tr>
+      <th style="font-weight:bold; width:250px;">Number of Sessions</th>
+      <th style="font-weight:normal">variable</th>
+      <th style="font-weight:normal"></th>
+    </tr>
+    <tr>
+      <th style="font-weight:bold; width:250px;"><a href="/AI2D/docs/imaging/image_curation/">CuBIDS</a></th>
+      <th style="font-weight:normal">
+        
+          false
+        
+      </th>
+      <th style="font-weight:normal"></th>
+    </tr>
+    <tr>
+      <th style="font-weight:bold; width:250px;"><a href="/AI2D/docs/imaging/image_babs/">BABS</a></th>
+      <th style="font-weight:normal">false</th>
+      <th style="font-weight:normal"></th>
+    </tr>
+    <tr>
+      <th style="font-weight:bold; width:250px;">Demographics</th>
+      <th style="font-weight:normal">sex, age</th>
+      <th style="font-weight:normal"></th>
+    </tr>
+    <tr>
+      <th style="font-weight:bold; width:250px;">Average Age (y)</th>
+      <th style="font-weight:normal">variable</th>
+      <th style="font-weight:normal"></th>
+    </tr>
+    <tr>
+      <th style="font-weight:bold; width:250px;">% Female</th>
+      <th style="font-weight:normal">variable</th>
+      <th style="font-weight:normal"></th>
+    </tr>
+    <tr>
+      <th style="font-weight:bold; width:250px;">% Right Handed</th>
+      <th style="font-weight:normal">100</th>
+      <th style="font-weight:normal"></th>
+    </tr>
+    <tr>
+      <th style="font-weight:bold; width:250px;">BIDS Dataset 1</th>
+      <th style="font-weight:normal">
+        <div id="bids-dataset-copy" class="copy-container" style="border: 1px solid #6c6edc; border-radius: 3px; padding: 6px; background-color: #f8f9fa;">
+          <span class="copy-text"><code>/cbica/projects/open-datasets/datasets/cneuromod/cneuromod</code></span>
+          <button class="copy-button" onclick="copyToClipboard('bids-dataset-copy')">Copy</button>
+        </div>
+        <br />This path contains rawdata for following datasets:<br />
+        • <a href="https://docs.cneuromod.ca/en/latest/DATASETS.html#friends">friends</a><br />
+        • <a href="https://docs.cneuromod.ca/en/latest/DATASETS.html#harrypotter">harrypotter</a><br />
+        • <a href="https://docs.cneuromod.ca/en/latest/DATASETS.html#hcptrt">hcptrt</a><br />
+        • <a href="https://docs.cneuromod.ca/en/latest/DATASETS.html#movie10">movie10</a><br />
+        • <a href="https://docs.cneuromod.ca/en/latest/DATASETS.html#shinobi">shinobi</a><br />
+        • <a href="https://docs.cneuromod.ca/en/latest/DATASETS.html#shinobi-training">shinobi_training</a>
+      </th>
+      <th style="font-weight:normal"></th>
+    </tr>
+    <tr>
+      <th style="font-weight:bold; width:250px;">BIDS Dataset 2</th>
+      <th style="font-weight:normal">
+        Rawdata for the <a href="https://docs.cneuromod.ca/en/latest/DATASETS.html#floc">floc</a> dataset
+        <div id="bids-dataset2-copy" class="copy-container" style="border: 1px solid #6c6edc; border-radius: 3px; padding: 6px; background-color: #f8f9fa;">
+          <span class="copy-text"><code>/cbica/projects/open-datasets/datasets/cneuromod/floc</code></span>
+          <button class="copy-button" onclick="copyToClipboard('bids-dataset2-copy')">Copy</button>
+        </div>
+      </th>
+      <th style="font-weight:normal"></th>
+    </tr>
+    <tr>
+      <th style="font-weight:bold; width:250px;">BIDS Dataset 3</th>
+      <th style="font-weight:normal">
+        Rawdata for the <a href="https://docs.cneuromod.ca/en/latest/DATASETS.html#mario">mario</a> dataset
+        <div id="bids-dataset3-copy" class="copy-container" style="border: 1px solid #6c6edc; border-radius: 3px; padding: 6px; background-color: #f8f9fa;">
+          <span class="copy-text"><code>/cbica/projects/open-datasets/datasets/cneuromod/mario</code></span>
+          <button class="copy-button" onclick="copyToClipboard('bids-dataset3-copy')">Copy</button>
+        </div>
+      </th>
+      <th style="font-weight:normal"></th>
+    </tr>
+    <tr>
+      <th style="font-weight:bold; width:250px;">BIDS Dataset 4</th>
+      <th style="font-weight:normal">
+        Rawdata for the <a href="https://docs.cneuromod.ca/en/latest/DATASETS.html#retinotopy">retinotopy</a> dataset
+        <div id="bids-dataset4-copy" class="copy-container" style="border: 1px solid #6c6edc; border-radius: 3px; padding: 6px; background-color: #f8f9fa;">
+          <span class="copy-text"><code>/cbica/projects/open-datasets/datasets/cneuromod/retinotopy</code></span>
+          <button class="copy-button" onclick="copyToClipboard('bids-dataset4-copy')">Copy</button>
+        </div>
+      </th>
+      <th style="font-weight:normal"></th>
+    </tr>
+    <tr>
+      <th style="font-weight:bold; width:250px;">BIDS Dataset 5</th>
+      <th style="font-weight:normal">
+        Rawdata for the <a href="https://docs.cneuromod.ca/en/latest/DATASETS.html#things">things</a> dataset
+        <div id="bids-dataset5-copy" class="copy-container" style="border: 1px solid #6c6edc; border-radius: 3px; padding: 6px; background-color: #f8f9fa;">
+          <span class="copy-text"><code>/cbica/projects/open-datasets/datasets/cneuromod/things</code></span>
+          <button class="copy-button" onclick="copyToClipboard('bids-dataset5-copy')">Copy</button>
+        </div>
+      </th>
+      <th style="font-weight:normal"></th>
+    </tr>
+    <tr>
+      <th style="font-weight:bold; width:250px;">Available preprocessed data</th>
+      <th style="font-weight:normal">For the following datasets:<br />
+• <a href="https://docs.cneuromod.ca/en/latest/DATASETS.html#friends">friends</a><br />
+• <a href="https://docs.cneuromod.ca/en/latest/DATASETS.html#harrypotter">harrypotter</a><br />
+• <a href="https://docs.cneuromod.ca/en/latest/DATASETS.html#hcptrt">hcptrt</a><br />
+• <a href="https://docs.cneuromod.ca/en/latest/DATASETS.html#movie10">movie10</a><br />
+• <a href="https://docs.cneuromod.ca/en/latest/DATASETS.html#shinobi">shinobi</a></th>
+      <th style="font-weight:normal"></th>
+    </tr>
+
+         
+     
+       
+       
+       
+       
+      <tr>
+        <th style="font-weight:bold; width:250px;">
+          
+            <a href="/AI2D/docs/imaging/image_smriprep/">sMRIPrep</a>
+          
+          v20.2.1
+        </th>
+        <th style="font-weight:normal">
+           <div id="smriprep-path" class="copy-container" style="border: 1px solid #6c6edc; border-radius: 3px; padding: 6px; background-color: #f8f9fa;">
+             <span class="copy-text"><code>/cbica/projects/open-datasets/datasets/cneuromod/cneuromod.processed/smriprep</code></span>
+             <button class="copy-button" onclick="copyToClipboard('smriprep-path')">Copy</button>
+           </div>
+        </th>
+        <th style="font-weight:normal"></th>
+      </tr>
+    
+       
+       
+       
+       
+      <tr>
+        <th style="font-weight:bold; width:250px;">
+          
+            <a href="/AI2D/docs/imaging/image_fmriprep/">fMRIprep</a>
+          
+          v20.2.3
+        </th>
+        <th style="font-weight:normal">
+           <div id="fmriprep-path" class="copy-container" style="border: 1px solid #6c6edc; border-radius: 3px; padding: 6px; background-color: #f8f9fa;">
+             <span class="copy-text"><code>/cbica/projects/open-datasets/datasets/cneuromod/cneuromod.processed/fmriprep</code></span>
+             <button class="copy-button" onclick="copyToClipboard('fmriprep-path')">Copy</button>
+           </div>
+        </th>
+        <th style="font-weight:normal"></th>
+      </tr>
+    
+  </table>
 </div>
 
-<p><br />
-<br /></p>
+<style>
+.copy-container { display: flex; align-items: center; justify-content: space-between; gap: 10px; }
+.copy-text { flex: 1; word-break: break-all; }
+.copy-button {
+  background-color: rgb(108, 110, 220);
+  color: white;
+  border: none;
+  padding: 4px 8px;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 18px;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.copy-button:hover { background-color: rgb(104, 106, 235); }
+.copy-button:active { background-color: rgb(84, 86, 215); }
+</style>
+
+<script>
+function showTab(tabName) {
+  var tabType = tabName.indexOf('-dl') !== -1 ? 'datalad' : 'ephemeral';
+  var tabContents = document.getElementsByClassName('tab-content');
+  for (var i = 0; i < tabContents.length; i++) {
+    tabContents[i].classList.remove('active');
+  }
+  var tabButtons = document.getElementsByClassName('tab-button');
+  for (var j = 0; j < tabButtons.length; j++) {
+    tabButtons[j].classList.remove('active');
+  }
+  if (tabType === 'datalad') {
+    var dls = document.querySelectorAll('[id$="-dl"]');
+    var dlButtons = document.querySelectorAll('[onclick*="-dl"]');
+    dls.forEach(function(c) { c.classList.add('active'); });
+    dlButtons.forEach(function(b) { b.classList.add('active'); });
+  } else {
+    var eph = document.querySelectorAll('[id$="-ephe"]');
+    var epheButtons = document.querySelectorAll('[onclick*="-ephe"]');
+    eph.forEach(function(c) { c.classList.add('active'); });
+    epheButtons.forEach(function(b) { b.classList.add('active'); });
+  }
+}
+function copyToClipboard(elementId) {
+  var element = document.getElementById(elementId);
+  var textToCopy = element.querySelector('.copy-text').textContent;
+  var textarea = document.createElement('textarea');
+  textarea.value = textToCopy;
+  document.body.appendChild(textarea);
+  textarea.select();
+  document.execCommand('copy');
+  document.body.removeChild(textarea);
+  var button = element.querySelector('.copy-button');
+  var originalText = button.textContent;
+  button.textContent = 'Copied!';
+  button.style.backgroundColor = '#28a745';
+  setTimeout(function() {
+    button.textContent = originalText;
+    button.style.backgroundColor = 'rgb(108, 110, 220)';
+  }, 1000);
+}
+</script>
+
+<p><br /></p>
 
 <p><em>Funding</em>
 <br />

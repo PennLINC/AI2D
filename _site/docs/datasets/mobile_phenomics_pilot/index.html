@@ -218,7 +218,7 @@
       <span class="page__meta-readtime">
         <i class="far fa-clock" aria-hidden="true"></i>
         
-          less than 1 minute read
+          1 minute read
         
       </span>
     
@@ -235,30 +235,230 @@
 </div>
 
 <h3 id="about-the-dataset">About the dataset</h3>
-<p><a href="https://openneuro.org/datasets/ds005250/versions/1.1.5">https://openneuro.org/datasets/ds005250/versions/1.1.5</a></p>
 
-<p><em>PI</em>
-<br />
-Theodore D. Satterthwaite</p>
+<p>This dataset contains ABCD-protocol single-echo BOLD scans, along with complex-valued, multi-echo BOLD scans for comparison. The multi-echo BOLD protocol uses the CMRR MB-EPI sequence, and comes from collaborators at UMinn. These scans include five echoes with both magnitude and phase reconstruction.</p>
 
-<p><br /></p>
+<p>The primary goal of this dataset was to evaluate the usability of the multi-echo fMRI protocol in a larger study, via direct comparison to the ABCD fMRI protocol, as well as via test-retest reliability analyses. However, these data may be useful to others (e.g., for testing complex-valued models, applying phase regression to multi-echo data, testing multi-echo denoising methods).</p>
+
+<p>Dataset contents
+This dataset includes 8 participants, each with between 1 and 3 sessions. MR data were acquired using a 3-Tesla Siemens Prisma MRI scanner. More information about the dataset <a href="https://openneuro.org/datasets/ds005250/versions/1.1.5">here</a>.</p>
+
 <div class="table" align="center">
-<table style="text-align: center;
-width:63%; font-size:90%; border: 1px solid black">
-<tr><th style="font-weight:bold">CUBIC Path</th><th style="font-weight:normal">/cbica/projects/pennlinc_rbc/datasets/mobile_phenomics_pilot</th><th style="font-weight:normal"></th></tr>
-<tr><th style="font-weight:bold">Sample Size</th><th style="font-weight:normal">8</th><th style="font-weight:normal"></th></tr>
-<tr><th style="font-weight:bold">Number of Sessions</th><th style="font-weight:normal">17</th><th style="font-weight:normal"></th></tr>
-<tr><th style="font-weight:bold"><a href="/AI2D/docs/imaging/image_curation/">CuBIDS</a></th><th style="font-weight:normal">false</th><th style="font-weight:normal"></th></tr>
-<tr><th style="font-weight:bold"><a href="/AI2D/docs/imaging/image_babs/">BABS</a></th><th style="font-weight:normal">false</th><th style="font-weight:normal"></th></tr>
-<tr><th style="font-weight:bold">Average age</th><th style="font-weight:normal"></th><th style="font-weight:normal"></th></tr>
-<tr><th style="font-weight:bold">% Female</th><th style="font-weight:normal">50</th><th style="font-weight:normal"></th></tr>
-<tr><th style="font-weight:bold">% Right Handed</th><th style="font-weight:normal">???</th><th style="font-weight:normal"></th></tr>
-<tr><th style="font-weight:bold"><a href="/AI2D/docs/imaging/image_fmriprep/">fMRIPrep</a></th><th style="font-weight:normal">/cbica/projects/open-datasets/datasets/mobile_phenomics_pilot/derivatives/fmriprep-24.0.1</th><th style="font-weight:normal"></th></tr>
-</table>
+  <table style="text-align:center; width:100%; font-size:18px; border:1px solid black">
+    <tr>
+      <th style="font-weight:bold; width:250px;">PI</th>
+      <th style="font-weight:normal">Theodore D. Satterthwaite</th>
+      <th style="font-weight:normal"></th>
+    </tr>
+    <tr>
+      <th style="font-weight:bold; width:250px;">Institution</th>
+      <th style="font-weight:normal">University of Pennsylvania</th>
+      <th style="font-weight:normal"></th>
+    </tr>
+    <tr>
+      <th style="font-weight:bold; width:250px;">Study Website</th>
+      <th style="font-weight:normal"><a href="https://openneuro.org/datasets/ds005250/versions/1.1.5">Single-echo/multi-echo comparison pilot</a></th>
+      <th style="font-weight:normal"></th>
+    </tr>
+    <tr>
+      <th style="font-weight:bold; width:250px;">Data Descriptor</th>
+      <th style="font-weight:normal"><a href="https://openneuro.org/datasets/ds005250/versions/1.1.5">https://openneuro.org/datasets/ds005250/versions/1.1.5</a></th>
+      <th style="font-weight:normal"></th>
+    </tr>
+    <tr>
+      <th style="font-weight:bold; width:250px;">CUBIC Project</th>
+      <th style="font-weight:normal"><span style="color:blue;">open-datasets</span></th>
+      <th style="font-weight:normal"></th>
+    </tr>
+    <tr>
+      <th style="font-weight:bold; width:250px;">DUA</th>
+      <th style="font-weight:normal">None</th>
+      <th style="font-weight:normal"></th>
+    </tr>
+    <tr>
+      <th style="font-weight:bold; width:250px;">License</th>
+      <th style="font-weight:normal">CC BY-NC-SA</th>
+      <th style="font-weight:normal"></th>
+    </tr>
+    <tr>
+      <th style="font-weight:bold; width:250px;">Sample Size</th>
+      <th style="font-weight:normal">8</th>
+      <th style="font-weight:normal"></th>
+    </tr>
+    <tr>
+      <th style="font-weight:bold; width:250px;">Number of Sessions</th>
+      <th style="font-weight:normal">17</th>
+      <th style="font-weight:normal"></th>
+    </tr>
+    <tr>
+      <th style="font-weight:bold; width:250px;"><a href="/AI2D/docs/imaging/image_curation/">CuBIDS</a></th>
+      <th style="font-weight:normal">
+        
+          false
+        
+      </th>
+      <th style="font-weight:normal"></th>
+    </tr>
+    <tr>
+      <th style="font-weight:bold; width:250px;"><a href="/AI2D/docs/imaging/image_babs/">BABS</a></th>
+      <th style="font-weight:normal">false</th>
+      <th style="font-weight:normal"></th>
+    </tr>
+    <tr>
+      <th style="font-weight:bold; width:250px;">Demographics</th>
+      <th style="font-weight:normal">
+        
+          <a href="https://openneuro.org/datasets/ds005250/versions/1.1.5/file-display/participants.json">View available demographics data</a>
+        
+      </th>
+      <th style="font-weight:normal"></th>
+    </tr>
+    <tr>
+      <th style="font-weight:bold; width:250px;">Average Age (y)</th>
+      <th style="font-weight:normal">24.5</th>
+      <th style="font-weight:normal"></th>
+    </tr>
+    <tr>
+      <th style="font-weight:bold; width:250px;">% Female</th>
+      <th style="font-weight:normal">50</th>
+      <th style="font-weight:normal"></th>
+    </tr>
+    <tr>
+      <th style="font-weight:bold; width:250px;">% Right Handed</th>
+      <th style="font-weight:normal"></th>
+      <th style="font-weight:normal"></th>
+    </tr>
+    <tr>
+      <th style="font-weight:bold; width:250px;">BIDS Dataset</th>
+      <th style="font-weight:normal">
+        <div id="bids-dataset-copy" class="copy-container" style="border: 1px solid #6c6edc; border-radius: 3px; padding: 6px; background-color: #f8f9fa;">
+          <span class="copy-text"><code>/cbica/projects/open-datasets/datasets/mobile_phenomics_pilot/ds005250</code></span>
+          <button class="copy-button" onclick="copyToClipboard('bids-dataset-copy')">Copy</button>
+        </div>
+      </th>
+      <th style="font-weight:normal"></th>
+    </tr>
+
+
+         
+     
+       
+       
+       
+       
+      <tr>
+        <th style="font-weight:bold; width:250px;">
+          
+            FreeSurfer
+          
+          v7.3.2
+          
+          
+          <br />
+          <span style="font-weight:normal;"><a href="https://fmriprep.org/en/24.0.0/workflows.html#longitudinal-processing">Longitudinal pipeline</a> run by fMRIPrep</span>
+          
+          
+        </th>
+                 <th style="font-weight:normal">
+           <div id="freesurfer-path" class="copy-container" style="border: 1px solid #6c6edc; border-radius: 3px; padding: 6px; background-color: #f8f9fa;">
+             <span class="copy-text"><code>/cbica/projects/open-datasets/datasets/mobile_phenomics_pilot/derivatives/fmriprep-24.0.1/sourcedata</code></span>
+             <button class="copy-button" onclick="copyToClipboard('freesurfer-path')">Copy</button>
+           </div>
+         </th>
+        <th style="font-weight:normal"></th>
+      </tr>
+    
+       
+       
+       
+       
+      <tr>
+        <th style="font-weight:bold; width:250px;">
+          
+            <a href="/AI2D/docs/imaging/image_fmriprep/">fMRIprep</a>
+          
+          v24.0.1
+          
+          
+          <br />
+          <span style="font-weight:normal;">(17/17 complete)</span>
+          
+          
+        </th>
+                 <th style="font-weight:normal">
+           <div id="fmriprep-path" class="copy-container" style="border: 1px solid #6c6edc; border-radius: 3px; padding: 6px; background-color: #f8f9fa;">
+             <span class="copy-text"><code>/cbica/projects/open-datasets/datasets/mobile_phenomics_pilot/derivatives/fmriprep-24.0.1</code></span>
+             <button class="copy-button" onclick="copyToClipboard('fmriprep-path')">Copy</button>
+           </div>
+         </th>
+        <th style="font-weight:normal"></th>
+      </tr>
+    
+  </table>
 </div>
 
-<p><br />
-<br /></p>
+<style>
+.copy-container { display: flex; align-items: center; justify-content: space-between; gap: 10px; }
+.copy-text { flex: 1; word-break: break-all; }
+.copy-button {
+  background-color: rgb(108, 110, 220);
+  color: white;
+  border: none;
+  padding: 4px 8px;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 18px;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.copy-button:hover { background-color: rgb(104, 106, 235); }
+.copy-button:active { background-color: rgb(84, 86, 215); }
+</style>
+
+<script>
+function showTab(tabName) {
+  var tabType = tabName.indexOf('-dl') !== -1 ? 'datalad' : 'ephemeral';
+  var tabContents = document.getElementsByClassName('tab-content');
+  for (var i = 0; i < tabContents.length; i++) {
+    tabContents[i].classList.remove('active');
+  }
+  var tabButtons = document.getElementsByClassName('tab-button');
+  for (var j = 0; j < tabButtons.length; j++) {
+    tabButtons[j].classList.remove('active');
+  }
+  if (tabType === 'datalad') {
+    var dls = document.querySelectorAll('[id$="-dl"]');
+    var dlButtons = document.querySelectorAll('[onclick*="-dl"]');
+    dls.forEach(function(c) { c.classList.add('active'); });
+    dlButtons.forEach(function(b) { b.classList.add('active'); });
+  } else {
+    var eph = document.querySelectorAll('[id$="-ephe"]');
+    var epheButtons = document.querySelectorAll('[onclick*="-ephe"]');
+    eph.forEach(function(c) { c.classList.add('active'); });
+    epheButtons.forEach(function(b) { b.classList.add('active'); });
+  }
+}
+function copyToClipboard(elementId) {
+  var element = document.getElementById(elementId);
+  var textToCopy = element.querySelector('.copy-text').textContent;
+  var textarea = document.createElement('textarea');
+  textarea.value = textToCopy;
+  document.body.appendChild(textarea);
+  textarea.select();
+  document.execCommand('copy');
+  document.body.removeChild(textarea);
+  var button = element.querySelector('.copy-button');
+  var originalText = button.textContent;
+  button.textContent = 'Copied!';
+  button.style.backgroundColor = '#28a745';
+  setTimeout(function() {
+    button.textContent = originalText;
+    button.style.backgroundColor = 'rgb(108, 110, 220)';
+  }, 1000);
+}
+</script>
+
+<p><br /></p>
 
 <p><em>Funding</em>
 <br />

@@ -1,0 +1,122 @@
+anatomical: []
+name: singleshell_bundle_stats
+space: T1w
+nodes:
+# TENSOR
+-   action: estimate
+    input: qsirecon
+    name: tortoise_fullshell_tensor
+    parameters:
+        big_delta: null
+        estimate_tensor:
+            bval_cutoff: 4000
+            write_cs: true
+        estimate_tensor_separately: true
+        small_delta: null
+    qsirecon_suffix: TORTOISE_model-tensor
+    software: TORTOISE
+# GQI
+-   action: reconstruction
+    input: qsirecon
+    name: dsistudio_gqi
+    parameters:
+        method: gqi
+    qsirecon_suffix: DSIStudio
+    software: DSI Studio
+-   action: export
+    input: dsistudio_gqi
+    name: gqi_scalars
+    qsirecon_suffix: DSIStudio
+    software: DSI Studio
+-   action: autotrack_registration
+    input: dsistudio_gqi
+    name: autotrack_gqi_registration
+    # qsirecon_suffix: Don't include here - the map.gz is saved in autotrack
+    software: DSI Studio
+# AutoTrack GQI
+-   action: autotrack
+    input: dsistudio_gqi
+    name: autotrackgqi
+    parameters:
+        dsi_studio_version: chen
+        tolerance: 22,26,30
+        track_id: Association,Projection,Commissure,Cerebellum
+        track_voxel_ratio: 2.0
+        yield_rate: 1.0e-06
+    qsirecon_suffix: DSIStudio
+    software: DSI Studio
+
+### ALL OF THIS IS SS3T AutoTrack
+    # Select just one shell + b=0 for autotrack
+-   action: select_gradients
+    input: qsirecon
+    name: select_single_shell
+    parameters:
+        requested_shells:
+            - 0
+            - highest
+        bval_distance_cutoff: 100
+
+    # Do SS3T on the single-shell data
+-   action: csd
+    software: MRTrix3
+    input: select_single_shell
+    name: ss3t_csd
+    parameters:
+        fod:
+            algorithm: ss3t
+        mtnormalize: true
+        response:
+            algorithm: dhollander
+    qsirecon_suffix: SS3TAutoTrack
+
+-   action: fod_fib_merge
+    name: create_fod_fib_ss3t
+    # to include the fib file AND the map file
+    input: autotrack_gqi_registration
+    csd_input: ss3t_csd
+    # outputs include the FOD fib file and the map file is passed through
+    qsirecon_suffix: SS3TAutoTrack
+    parameters:
+        model: ss3t
+
+-   action: autotrack
+    input: create_fod_fib_ss3t
+    name: autotrack_fod_ss3t
+    parameters:
+        tolerance: 22,26,30
+        track_id: Association,Projection,Commissure,Cerebellum,CranialNerve
+        track_voxel_ratio: 2.0
+        yield_rate: 1.0e-06
+        model: ss3t
+    qsirecon_suffix: SS3TAutoTrack
+    software: DSI Studio
+
+
+# Bundle Maps
+-   action: bundle_map
+    input: autotrackgqi
+    name: bundle_means_gqi
+    scalars_from:
+    - gqi_scalars
+    - tortoise_fullshell_tensor
+    software: qsirecon
+
+-   action: bundle_map
+    input: autotrack_fod_ss3t
+    name: bundle_means_ss3t
+    scalars_from:
+    - gqi_scalars
+    - tortoise_fullshell_tensor
+    software: qsirecon
+
+# Template Map
+-   action: template_map
+    input: qsirecon
+    name: template_map
+    parameters:
+        interpolation: NearestNeighbor
+    scalars_from:
+    - gqi_scalars
+    - tortoise_fullshell_tensor
+    software: qsirecon

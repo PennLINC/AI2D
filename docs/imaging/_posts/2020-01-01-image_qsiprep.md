@@ -59,23 +59,10 @@ Veraart, Jelle, Dmitry S Novikov, Daan Christiaens, Benjamin Ades-Aron, Jan Sijb
 
 
 <br>
-Diffusion data were processed using **[QSIPrep](https://qsiprep.readthedocs.io/en/latest/)**.
+Diffusion data were preprocessed using **[QSIPrep](https://qsiprep.readthedocs.io/en/latest/)**.
 
-DWI data were denoised using the Marchenko-Pastur PCA (MP-PCA) method, followed by Gibbs ringing removal, and correction for field inhomogeneity (N4 algorithm). Motion and Eddy current distortions were corrected with FSL’s eddy. Final DWI data were resampled to ACPC space.
+Diffusion data were denoised using the Marchenko-Pastur PCA (MP-PCA) method, followed by Gibbs ringing removal, and correction for field inhomogeneity (N4). Motion and Eddy current distortions were corrected with FSL’s eddy. Final DWI data were resampled to ACPC space.
 
 ## Quality Control
 
-(coming soon/need finalize)
-
-QSIPrep outputs several quality assurance metrics, including:
-- `t1_neighbor_corr`: Neighboring DWI Correlation (NDC) of preprocessed images; a measure of signal consistency between adjacent diffusion volumes 
-- `t1_dwi_contrast`: The contrast measure for preprocessed diffusion-weighted images (indicates image intensity variability post-preprocessing).
-- `t1_num_bad_slices`:  Number of bad slices found in the preprocessed images
-- `t1_dice_distance`: Dice score between the T1-weighted brain mask and the b=0 reference brain mask (measuring spatial overlap) 
-- `mean_fd`: Mean framewise displacement (FD) reflecting average head motion during the scan
-
-Outliers detections (for exclusion): 
-- greater than `Q3+3*IQR` (for `t1_num_bad_slices`, `mean_fd`)
-- less than `Q1-3*IQR`(for `t1_neighbor_corr`, `t1_dwi_contrast`, `t1_dice_distance`)
-- For each dMRI run, count the number of metrics flagged as outliers (`outliers_sum`, possible range: 0–5).
-- All AI2D data processed with QSIPrep include this dMRI QC, and users may filter low-quality data using `outliers_sum`.
+**QSIPrep** produces `*desc-image_qc.tsv` files for QC dMRI data, more details [here](https://qsiprep.readthedocs.io/en/latest/preprocessing.html#quality-control-data).

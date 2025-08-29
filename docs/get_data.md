@@ -36,7 +36,7 @@ Then, follow these steps:
     - The level of access, in this case, you will need **read-only access**
     - The name of the user[s] to be given access (full name or login name). If you plan to store and analyze data in a CUBIC project, you should use **your project username**, not personal CUBIC username.
     - The full path to the project you need access to, `/cbica/projects/<project_name>`.
-2. Submit the DUA (if required) and Dr. Satterthwaite’s approval (PDF) — specifying access level, requesting users/project users, and the full project path — to <span style="color: blue;">help@cbica.upenn.edu</span>.
+2. Submit the DUA (if required) and Dr. Satterthwaite’s approval (PDF) — specifying access level, requesting users/project users, and the full project path — to <span style="color: blue;">**help@cbica.upenn.edu**</span>.
 
 
 <span style="color: #7556b7;">🌟 **Once you have access to the project, check the `BABS` section on the dataset-specific page to determine whether the dataset was processed with [BABS]({{  site.baseurl }}/docs/imaging/image_babs)** (Dataset-specific links listed [here]({{ site.baseurl }}/docs/datasets)).</span>
@@ -68,7 +68,7 @@ This section provides instructions in case you prefer NOT to use DataLad and ins
 
 ### 3.1.1. Prerequisites
 
-<span style="color: #7556b7;">🌟 **Check the Dataset Page for the paths of the ephemeral clones** ([list of available datasets]({{ site.baseurl }}/docs/datasets)).</span>
+<span style="color: #7556b7;">🌟 **Check the dataset-specific page for the paths of the ephemeral clones** (Dataset-specific links listed [here]({{ site.baseurl }}/docs/datasets)).</span>
 
 <span style="color: #7556b7;">🌟 **Download the extraction script:** [unzip_files.sh]({{ site.baseurl }}/scripts/unzip_files.sh).</span> The script supports:
 - Extracting all files from zip archives
@@ -133,7 +133,7 @@ This section provides instructions in case you prefer to use [DataLad](https://h
 
 ### 3.2.1. Prerequisites
 
-<span style="color: #7556b7;">🌟 **Check the Dataset Page for the paths of the datalad datasets** ([list of available datasets]({{ site.baseurl }}/docs/datasets)).</span>
+<span style="color: #7556b7;">🌟 **Check the dataset-specific page for the paths of the datalad datasets** (Dataset-specific links listed [here]({{ site.baseurl }}/docs/datasets)).</span>
 
 <span style="color: #7556b7;">🌟 **Install DataLad**</span>
 

@@ -17,7 +17,6 @@ Zhao, C., Chen, Y., Jarecka, D., Ghosh, S., Cieslak, M., & Satterthwaite, T. D. 
 
 
 <br>
-Most of the AI2D datasets were processed using **[BABS](https://pennlinc-babs.readthedocs.io/en/stable/)**. Knowing whether BABS was used for a dataset is important for determining how to access the data (see example: [CCNP]({{ site.baseurl }}/docs/datasets/dCCNP/#dataset-summary)).
+**[BABS](https://pennlinc-babs.readthedocs.io/en/stable/)** implements the [“FAIRly-big” framework](https://www.nature.com/articles/s41597-022-01163-2) (Wagner et al., 2021) for reproducible and scalable image processing, ensuring all data analyses were accompanied by a full audit trail in [Datalad](https://www.datalad.org/) (Halchenko et al., 2021). 
 
-
-**BABS** implements the [“FAIRly-big” framework](https://www.nature.com/articles/s41597-022-01163-2) (Wagner et al., 2021) for reproducible image processing, ensuring all data analyses were accompanied by a full audit trail in [Datalad](https://www.datalad.org/) (Halchenko et al., 2021). For AI2D datasets, if `BABS == true` in the Dataset Summary, all BIDS-apps (e.g., fMRIPrep, XCP-D) were run using BABS.
+Several AI2D datasets were processed using **[BABS](https://pennlinc-babs.readthedocs.io/en/stable/)**. This is noted in the `BABS` section of each dataset-specific page (dataset links listed [here]({{ site.baseurl }}/docs/datasets)). If `BABS is not false` in the dataset-specific page, all BIDS-apps (e.g., fMRIPrep, XCP-D) were run using BABS. Knowing whether BABS was used for a dataset is important, as it affects how the data can be accessed (see [Get Data]({{ site.baseurl }}/docs/get_data/#1-request-access-to-a-cubic-project)).

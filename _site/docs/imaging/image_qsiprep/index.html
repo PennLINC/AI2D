@@ -283,30 +283,13 @@ Veraart, Jelle, Dmitry S Novikov, Daan Christiaens, Benjamin Ades-Aron, Jan Sijb
 </details>
 
 <p><br />
-Diffusion data were processed using <strong><a href="https://qsiprep.readthedocs.io/en/latest/">QSIPrep</a></strong>.</p>
+Diffusion data were preprocessed using <strong><a href="https://qsiprep.readthedocs.io/en/latest/">QSIPrep</a></strong>.</p>
 
-<p>DWI data were denoised using the Marchenko-Pastur PCA (MP-PCA) method, followed by Gibbs ringing removal, and correction for field inhomogeneity (N4 algorithm). Motion and Eddy current distortions were corrected with FSL’s eddy. Final DWI data were resampled to ACPC space.</p>
+<p>Diffusion data were denoised using the Marchenko-Pastur PCA (MP-PCA) method, followed by Gibbs ringing removal, and correction for field inhomogeneity (N4). Motion and Eddy current distortions were corrected with FSL’s eddy. Final DWI data were resampled to ACPC space.</p>
 
 <h2 id="quality-control">Quality Control</h2>
 
-<p>(coming soon/need finalize)</p>
-
-<p>QSIPrep outputs several quality assurance metrics, including:</p>
-<ul>
-  <li><code class="language-plaintext highlighter-rouge">t1_neighbor_corr</code>: Neighboring DWI Correlation (NDC) of preprocessed images; a measure of signal consistency between adjacent diffusion volumes</li>
-  <li><code class="language-plaintext highlighter-rouge">t1_dwi_contrast</code>: The contrast measure for preprocessed diffusion-weighted images (indicates image intensity variability post-preprocessing).</li>
-  <li><code class="language-plaintext highlighter-rouge">t1_num_bad_slices</code>:  Number of bad slices found in the preprocessed images</li>
-  <li><code class="language-plaintext highlighter-rouge">t1_dice_distance</code>: Dice score between the T1-weighted brain mask and the b=0 reference brain mask (measuring spatial overlap)</li>
-  <li><code class="language-plaintext highlighter-rouge">mean_fd</code>: Mean framewise displacement (FD) reflecting average head motion during the scan</li>
-</ul>
-
-<p>Outliers detections (for exclusion):</p>
-<ul>
-  <li>greater than <code class="language-plaintext highlighter-rouge">Q3+3*IQR</code> (for <code class="language-plaintext highlighter-rouge">t1_num_bad_slices</code>, <code class="language-plaintext highlighter-rouge">mean_fd</code>)</li>
-  <li>less than <code class="language-plaintext highlighter-rouge">Q1-3*IQR</code>(for <code class="language-plaintext highlighter-rouge">t1_neighbor_corr</code>, <code class="language-plaintext highlighter-rouge">t1_dwi_contrast</code>, <code class="language-plaintext highlighter-rouge">t1_dice_distance</code>)</li>
-  <li>For each dMRI run, count the number of metrics flagged as outliers (<code class="language-plaintext highlighter-rouge">outliers_sum</code>, possible range: 0–5).</li>
-  <li>All AI2D data processed with QSIPrep include this dMRI QC, and users may filter low-quality data using <code class="language-plaintext highlighter-rouge">outliers_sum</code>.</li>
-</ul>
+<p><strong>QSIPrep</strong> produces <code class="language-plaintext highlighter-rouge">*desc-image_qc.tsv</code> files for QC dMRI data, more details <a href="https://qsiprep.readthedocs.io/en/latest/preprocessing.html#quality-control-data">here</a>.</p>
 
         
       </section>

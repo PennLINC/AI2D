@@ -12,7 +12,7 @@ var store = [{
         "teaser": null
       },{
         "title": "Data Curation",
-        "excerpt":"Citation Covitz, S., Tapera, T. M., Adebimpe, A., Alexander-Bloch, A. F., Bertolero, M. A., Feczko, E., … &amp; Satterthwaite, T. D. (2022). Curation of BIDS (CuBIDS): A workflow and software package for streamlining reproducible curation of large BIDS datasets. NeuroImage, 263, 119609. doi:10.1016/j.neuroimage.2022.119609. CuBIDS (Covitz et al., 2022) CuBIDS is...","categories": ["docs","imaging"],
+        "excerpt":"Citation Covitz, S., Tapera, T. M., Adebimpe, A., Alexander-Bloch, A. F., Bertolero, M. A., Feczko, E., … &amp; Satterthwaite, T. D. (2022). Curation of BIDS (CuBIDS): A workflow and software package for streamlining reproducible curation of large BIDS datasets. NeuroImage, 263, 119609. doi:10.1016/j.neuroimage.2022.119609. CuBIDS (Covitz et al., 2022) is a...","categories": ["docs","imaging"],
         "tags": [],
         "url": "/AI2D/docs/imaging/image_curation/",
         "teaser": null
@@ -96,19 +96,19 @@ var store = [{
         "teaser": null
       },{
         "title": "Neural Modelling",
-        "excerpt":"About the dataset https://www.cneuromod.ca/ https://www.cneuromod.ca/gallery/datasets/ https://docs.cneuromod.ca/en/latest/index.htm PI Lune Bellec CUBIC Path/cbica/projects/open-datasets/datasets/cneuromod Sample Sizevariable Number of Sessionsvariable CuBIDSfalse BABSfalse Average age Available preprocessed dataFor the following datasets: • friends • harrypotter • hcptrt • movie10 • shinobi Click here for information on each dataset sMRIPrep/cbica/projects/open-datasets/datasets/cneuromod/cneuromod.processed/smriprep fMRIPrep/cbica/projects/open-datasets/datasets/cneuromod/cneuromod.processed/fmriprep Funding The Courtois NeuroMod project...","categories": ["docs","datasets"],
+        "excerpt":"About the dataset The Courtois project on Neural Modelling (cneuromod) aims at training artificial neural networks using extensive experimental data on individual human brain activity and behaviour. Six subjects (three women, three men) were scanned weekly for five years (2018-23), with more sporadic scanning sessions still ongoing. The cneuromod dataset...","categories": ["docs","datasets"],
         "tags": [],
         "url": "/AI2D/docs/datasets/cneuromod/",
         "teaser": null
       },{
         "title": "Midnight Scan Club",
-        "excerpt":"About the dataset https://openneuro.org/datasets/ds000224/versions/1.0.1 PI Nico U.F. Dosenbach CUBIC Path/cbica/projects/pennlinc_rbc/datasets/midnight_scan_club Sample Size10 Number of Sessions10 CuBIDSfalse BABSfalse Age % Female50 % Right Handed100 fMRIPrep/cbica/projects/open-datasets/datasets/midnight_scan_club/derivatives/fmriprep-24.0.0 XCP-D/cbica/projects/open-datasets/datasets/midnight_scan_club/derivatives/xcp_d-0.7.5 Funding NIH, NSF Citations Gordon, E. M., Laumann, T. O., Gilmore, A. W., Newbold, D. J., Greene, D. J., Berg, J. J., … &amp; Dosenbach,...","categories": ["docs","datasets"],
+        "excerpt":"About the dataset This dataset contains the Midnight Scanning Club (MSC) data, a dataset focused on the precise characterization of ten individual subjects via collection of large amounts of per-individual data. Each subject underwent twelve separate two-hour scanning sessions. In the first two sessions we collected four T1 images, four...","categories": ["docs","datasets"],
         "tags": [],
         "url": "/AI2D/docs/datasets/midnight_scan_club/",
         "teaser": null
       },{
         "title": "Single-echo/multi-echo comparison pilot",
-        "excerpt":"About the dataset https://openneuro.org/datasets/ds005250/versions/1.1.5 PI Theodore D. Satterthwaite CUBIC Path/cbica/projects/pennlinc_rbc/datasets/mobile_phenomics_pilot Sample Size8 Number of Sessions17 CuBIDSfalse BABSfalse Average age % Female50 % Right Handed??? fMRIPrep/cbica/projects/open-datasets/datasets/mobile_phenomics_pilot/derivatives/fmriprep-24.0.1 Funding AE Foundation Penn-CHOP Lifespan Brain Institute NIMH R01MH113550 Citations Taylor Salo and M. Dylan Tisdall and Lia Brodrick and Adam Czernuszenko and David R....","categories": ["docs","datasets"],
+        "excerpt":"About the dataset This dataset contains ABCD-protocol single-echo BOLD scans, along with complex-valued, multi-echo BOLD scans for comparison. The multi-echo BOLD protocol uses the CMRR MB-EPI sequence, and comes from collaborators at UMinn. These scans include five echoes with both magnitude and phase reconstruction. The primary goal of this dataset...","categories": ["docs","datasets"],
         "tags": [],
         "url": "/AI2D/docs/datasets/mobile_phenomics_pilot/",
         "teaser": null

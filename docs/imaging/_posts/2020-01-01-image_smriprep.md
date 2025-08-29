@@ -50,12 +50,9 @@ Zhang, Y., M. Brady, and S. Smith. 2001. "Segmentation of Brain MR Images Throug
 </details>
 
 <br>
-Structural MRI data were processed using **[fMRIPrep](https://fmriprep.org/en/stable/)** with the `--anat-only` flag, which run the following steps: correction for intensity non-uniformity, skull-stripping with ANTs’ brain extraction workflow, and reconstruction of cortical surfaces using [FreeSurfer](https://surfer.nmr.mgh.harvard.edu/).
+Structural MRI data were processed using **[fMRIPrep](https://fmriprep.org/en/stable/)** with the `--anat-only` flag, which run the following steps: correction for intensity non-uniformity, skull-stripping with ANTs’ brain extraction workflow, and reconstruction of cortical surfaces using [**FreeSurfer**](https://surfer.nmr.mgh.harvard.edu/).
 
 
-The **AI2D sMRI pipeline** provides full FreeSurfer outputs as well as tabulated data (outputs from **[freesurfer-post](https://github.com/PennLINC/freesurfer-post/tree/main)**) parcellated using 35 anatomical, functional, and multimodal atlases such as Desikan Killiany, Glasser, Gordon, and multiple resolutions of the Schaefer parcellation among others. **Specific features** include commonly used measures of brain structure such as regional surface area, cortical thickness, gray matter volume, and folding and curvature indices. Moreover, summary brain measures such as total intracranial volume, ventricle size, and mean and standard deviation of various measures (e.g., cortical thickness, surface area) are provided for the whole brain and per hemisphere. Tabulated data are also accompanied by .json files describing each structural feature in detail.
-
-## Quality Control
-Coming soon.
+The **AI2D sMRI pipeline** provides full FreeSurfer outputs as well as tabulated data (outputs from **[freesurfer-post](https://github.com/PennLINC/freesurfer-post/tree/main)**) parcellated using 35 anatomical, functional, and multimodal atlases such as Desikan Killiany, Glasser, Gordon, and multiple resolutions of the Schaefer parcellation, among others. **Specific features** include commonly used measures of brain structure such as regional surface area, cortical thickness, gray matter volume, and folding and curvature indices. Moreover, summary brain measures such as total intracranial volume, ventricle size, and mean and standard deviation of various measures (e.g., cortical thickness, surface area) are provided for the whole brain and per hemisphere. Tabulated data are also accompanied by .json files describing each structural feature in detail.
 
 

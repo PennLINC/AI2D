@@ -11,7 +11,7 @@ details div { line-height: 1.6; }
 </style>
 
 <div style="text-align: center;">
-     <img src="{{ site.baseurl }}/assets/images/misc/xcpd_workflow.png" width="50%" height="auto" />
+     <img src="{{ site.baseurl }}/assets/images/misc/xcpd_workflow.png" width="70%" height="auto" />
 </div>
 
 <br/>
@@ -87,13 +87,113 @@ Zou, Qi-Hong, Chao-Zhe Zhu, Yihong Yang, Xi-Nian Zuo, Xiang-Yu Long, Qing-Jiu Ca
 
 
 <br>
-Functional data were processed using **[XCP-D](https://xcp-d.readthedocs.io/en/latest/index.html)**.
+Functional data were processed using **[XCP-D](https://xcp-d.readthedocs.io/en/latest/index.html)** with `--mode linc` flag (see more details [here](https://xcp-d.readthedocs.io/en/latest/workflows.html#linc-mode)).
 
-Preprocessed BOLD data ([fMRIPrep outputs]({{ site.baseurl }}/docs/imaging/image_fmriprep/)) underwent nuisance regression following the removal of non-steady-state volumes. The data were then despiked, band-pass filtered, and smoothed. For each atlas (e.g., Glasser, Gordon, and multiple resolutions of the Schaefer parcellation), parcellated time series were extracted from the residual BOLD signal. From these, pairwise functional connectivity (Pearson’s correlation) was computed between parcels, along with regional homogeneity (ReHo), and amplitude of low-frequency fluctuation (ALFF).
+Preprocessed BOLD data ([**fMRIPrep outputs**]({{ site.baseurl }}/docs/imaging/image_fmriprep/)) underwent nuisance regression following the removal of non-steady-state volumes. The data were then despiked, band-pass filtered, and smoothed. For each atlas (e.g., Glasser, Gordon, and multiple resolutions of the Schaefer parcellation), <span style="color: #7556b7;">parcellated time series</span> were extracted from the residual BOLD signal. From these, <span style="color: #7556b7;">pairwise functional connectivity (Pearson’s correlation)</span> was computed between parcels, along with <span style="color: #7556b7;">regional homogeneity</span> ([**ReHo**](https://xcp-d.readthedocs.io/en/latest/workflows.html#reho)), and <span style="color: #7556b7;">amplitude of low-frequency fluctuation</span> ([**ALFF**](https://xcp-d.readthedocs.io/en/latest/workflows.html#alff)).
 
 ## Quality Control
 
-(coming soon/need finalize)
+XCP-D produces files for QC fMRI data:
 
-Functional data quality assurance included measures of in-scanner motion (framewise displacement, FD) and atlas-dependent coverage (the percentage of each parcel containing valid data). fMRI runs were excluded if their median FD exceeded `Q3+3*IQR` across the sample. In addition, parcels with less than 50% coverage were excluded from analyses, and runs with more than XXX excluded parcels were excluded. We provide FD, coverage, and many other quality metrics for all scans.
+<details style="background-color: #f0f0ff; border: 1px solid #d0d0ff; border-radius: 8px; padding: 15px; margin: 10px 0;">
+<summary style="cursor: pointer; font-weight: bold; color: #4a4a8a;"><strong>File:</strong> <code>*linc_qc.tsv</code></summary>
 
+<table style="width: 100%; border-collapse: collapse; margin-top: 15px;">
+<thead>
+<tr style="background-color: #e8e8ff;">
+<th style="border: 1px solid #d0d0ff; padding: 8px; text-align: left; font-weight: bold;">Metric</th>
+<th style="border: 1px solid #d0d0ff; padding: 8px; text-align: left; font-weight: bold;">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="border: 1px solid #d0d0ff; padding: 8px;"><code>mean_fd</code></td>
+<td style="border: 1px solid #d0d0ff; padding: 8px;">Mean framewise displacement</td>
+</tr>
+<tr style="background-color: #f8f8ff;">
+<td style="border: 1px solid #d0d0ff; padding: 8px;"><code>mean_fd_post_censoring</code></td>
+<td style="border: 1px solid #d0d0ff; padding: 8px;">Mean framewise displacement after censoring</td>
+</tr>
+<tr>
+<td style="border: 1px solid #d0d0ff; padding: 8px;"><code>mean_relative_rms</code></td>
+<td style="border: 1px solid #d0d0ff; padding: 8px;">Mean relative root mean square</td>
+</tr>
+<tr style="background-color: #f8f8ff;">
+<td style="border: 1px solid #d0d0ff; padding: 8px;"><code>max_relative_rms</code></td>
+<td style="border: 1px solid #d0d0ff; padding: 8px;">Maximum relative root mean square</td>
+</tr>
+<tr>
+<td style="border: 1px solid #d0d0ff; padding: 8px;"><code>mean_dvars_initial</code></td>
+<td style="border: 1px solid #d0d0ff; padding: 8px;">Mean DVARS before processing</td>
+</tr>
+<tr style="background-color: #f8f8ff;">
+<td style="border: 1px solid #d0d0ff; padding: 8px;"><code>mean_dvars_final</code></td>
+<td style="border: 1px solid #d0d0ff; padding: 8px;">Mean DVARS after processing</td>
+</tr>
+<tr>
+<td style="border: 1px solid #d0d0ff; padding: 8px;"><code>num_dummy_volumes</code></td>
+<td style="border: 1px solid #d0d0ff; padding: 8px;">Number of dummy volumes</td>
+</tr>
+<tr style="background-color: #f8f8ff;">
+<td style="border: 1px solid #d0d0ff; padding: 8px;"><code>num_censored_volumes</code></td>
+<td style="border: 1px solid #d0d0ff; padding: 8px;">Number of censored volumes</td>
+</tr>
+<tr>
+<td style="border: 1px solid #d0d0ff; padding: 8px;"><code>num_retained_volumes</code></td>
+<td style="border: 1px solid #d0d0ff; padding: 8px;">Number of retained volumes</td>
+</tr>
+<tr style="background-color: #f8f8ff;">
+<td style="border: 1px solid #d0d0ff; padding: 8px;"><code>fd_dvars_correlation_initial</code></td>
+<td style="border: 1px solid #d0d0ff; padding: 8px;">Correlation between FD and DVARS before processing</td>
+</tr>
+<tr>
+<td style="border: 1px solid #d0d0ff; padding: 8px;"><code>fd_dvars_correlation_final</code></td>
+<td style="border: 1px solid #d0d0ff; padding: 8px;">Correlation between FD and DVARS after processing</td>
+</tr>
+</tbody>
+</table>
+
+</details>
+
+<details style="background-color: #f0f0ff; border: 1px solid #d0d0ff; border-radius: 8px; padding: 15px; margin: 10px 0;">
+<summary style="cursor: pointer; color: #4a4a8a;"><strong>File:</strong> <code>*_motion.json</code> (fMRIPrep confounds output)</summary>
+
+<pre style="background-color: #f8f8ff; border: 1px solid #d0d0ff; border-radius: 4px; padding: 15px; overflow-x: auto; font-size: 14px; line-height: 1.4;">
+{
+  "Sources": [
+    "bids:preprocessed:sub-NDARAC853CR6/ses-1/func/sub-NDARAC853CR6_ses-1_task-movieDM_acq-VARIANTPlumb_desc-confounds_timeseries.tsv"
+  ],
+  "framewise_displacement": {
+    "Description": "Framewise displacement calculated according to Power et al. (2012).",
+    "HeadRadius": 50.0,
+    "Units": "mm"
+  },
+  "rmsd": {},
+  "rot_x": {
+    "Description": "Rotation about left-right axis. Also known as \"pitch\".",
+    "Units": "rad"
+  },
+  "rot_y": {
+    "Description": "Rotation about anterior-posterior axis. Also known as \"roll\".",
+    "Units": "rad"
+  },
+  "rot_z": {
+    "Description": "Rotation about superior-inferior axis. Also known as \"yaw\".",
+    "Units": "rad"
+  },
+  "trans_x": {
+    "Description": "Translation along left-right axis.",
+    "Units": "mm"
+  },
+  "trans_y": {
+    "Description": "Translation along anterior-posterior axis.",
+    "Units": "mm"
+  },
+  "trans_z": {
+    "Description": "Translation along superior-inferior axis.",
+    "Units": "mm"
+  }
+}
+</pre>
+
+</details>
