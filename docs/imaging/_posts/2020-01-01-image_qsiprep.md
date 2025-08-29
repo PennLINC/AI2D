@@ -63,6 +63,8 @@ Diffusion data were preprocessed using **[QSIPrep](https://qsiprep.readthedocs.i
 
 Diffusion data were denoised using the Marchenko-Pastur PCA (MP-PCA) method, followed by Gibbs ringing removal, and correction for field inhomogeneity (N4). Motion and Eddy current distortions were corrected with FSL’s eddy. Final DWI data were resampled to ACPC space.
 
+The exact **QSIPrep** pipeline is documented in the *boilerplate* located at `<qsiprep_output>/logs/CITATION.html`. If the data were processed with [BABS]({{ site.baseurl }}/docs/imaging/image_babs/), refer to [Get Data]({{ site.baseurl }}/docs/get_data#312-explore-the-data-structure) for details on unzipping `<qsiprep_output>` to access the boilerplate file.
+
 ## Quality Control
 
 **QSIPrep** produces `*desc-image_qc.tsv` files for QC dMRI data, more details [here](https://qsiprep.readthedocs.io/en/latest/preprocessing.html#quality-control-data).

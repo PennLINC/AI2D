@@ -125,10 +125,10 @@
                     
                 
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" id="navbarDropdown-Imaging" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                Imaging
+                            <a class="nav-link dropdown-toggle" id="navbarDropdown-Tools" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Tools
                             </a>
-                            <div class="dropdown-menu" aria-labelledby="navbarDropdown-Imaging">
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown-Tools">
                                 
                                     <a class="nav-link dropdown-item" href="/AI2D/docs/imaging/image_curation">Data Curation: CuBIDS</a>
                                 
@@ -286,6 +286,8 @@ Veraart, Jelle, Dmitry S Novikov, Daan Christiaens, Benjamin Ades-Aron, Jan Sijb
 Diffusion data were preprocessed using <strong><a href="https://qsiprep.readthedocs.io/en/latest/">QSIPrep</a></strong>.</p>
 
 <p>Diffusion data were denoised using the Marchenko-Pastur PCA (MP-PCA) method, followed by Gibbs ringing removal, and correction for field inhomogeneity (N4). Motion and Eddy current distortions were corrected with FSL’s eddy. Final DWI data were resampled to ACPC space.</p>
+
+<p>The exact <strong>QSIPrep</strong> pipeline is documented in the <em>boilerplate</em> located at <code class="language-plaintext highlighter-rouge">&lt;qsiprep_output&gt;/logs/CITATION.html</code>. If the data were processed with <a href="/AI2D/docs/imaging/image_babs/">BABS</a>, refer to <a href="/AI2D/docs/get_data#312-explore-the-data-structure">Get Data</a> for details on unzipping <code class="language-plaintext highlighter-rouge">&lt;qsiprep_output&gt;</code> to access the boilerplate file.</p>
 
 <h2 id="quality-control">Quality Control</h2>
 

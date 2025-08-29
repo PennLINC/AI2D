@@ -36,7 +36,7 @@ var store = [{
         "teaser": null
       },{
         "title": "Structural Data Analysis",
-        "excerpt":"Citation Esteban, Oscar, Christopher Markiewicz, Ross W Blair, Craig Moodie, Ayse Ilkay Isik, Asier Erramuzpe Aliaga, James Kent, et al. 2019. \"fMRIPrep: A Robust Preprocessing Pipeline for Functional MRI.\" Nature Methods 16: 111–16. https://doi.org/10.1038/s41592-018-0235-4. More citations (Click to expand/minimize) Abraham, Alexandre, Fabian Pedregosa, Michael Eickenberg, Philippe Gervais, Andreas Mueller, Jean...","categories": ["docs","imaging"],
+        "excerpt":"Citation Esteban, Oscar, Christopher Markiewicz, Ross W Blair, Craig Moodie, Ayse Ilkay Isik, Asier Erramuzpe Aliaga, James Kent, et al. 2019. \"fMRIPrep: A Robust Preprocessing Pipeline for Functional MRI.\" Nature Methods 16: 111–16. https://doi.org/10.1038/s41592-018-0235-4. Fischl, B. (2012). FreeSurfer. Neuroimage, 62(2), 774-781. Dale, Anders M., Bruce Fischl, and Martin I. Sereno....","categories": ["docs","imaging"],
         "tags": [],
         "url": "/AI2D/docs/imaging/image_smriprep/",
         "teaser": null

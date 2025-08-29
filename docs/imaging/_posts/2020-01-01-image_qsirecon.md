@@ -51,23 +51,26 @@ Yeh, Fang-Cheng, Van Jay Wedeen, and Wen-Yih Isaac Tseng. 2010. “Generalized q
 
 
 <br>
-Diffusion data were processed using **[QSIRecon](https://qsirecon.readthedocs.io/en/latest/)**.
+Preprocessed diffusion data (QSIPrep outputs) were further analyzed using **[QSIRecon](https://qsirecon.readthedocs.io/en/latest/)**, which executes reconstruction workflows defined in a `recon-spec` YAML file. This file specifies reconstruction steps, parameter settings, post-processing tools, and software dependencies. We used two `recon-spec` files: one for AutoTrack bundle reconstruction and bundle-wise statistics ([Bundle Stats](#bundle-stats)), and another for whole-brain connectivity matrices and tractometry profiles ([Inter-regional tractography and tractometry](#inter-regional-tractography-and-tractometry)).
 
 ## Bundle Stats
 
 Diffusion tensors were estimated with TORTOISE, and diffusion orientation distribution functions (ODFs) were reconstructed using two approaches: generalized q-sampling imaging (GQI) in DSI Studio and single-shell three-tissue constrained spherical deconvolution (SS3T-CSD) in MRtrix3. AutoTrack tractography was applied to both [**GQI**](https://qsirecon.readthedocs.io/en/latest/builtin_workflows.html#dsi-studio-autotrack) and [**SS3T**](https://qsirecon.readthedocs.io/en/latest/builtin_workflows.html#ss3t-fod-autotrack) reconstructions to delineate major white matter tracks. For each method, bundle-wise mean values were computed for [GQI and tensor scalars](https://qsirecon.readthedocs.io/en/latest/builtin_workflows.html#id36).
 
- * `--recon-spec` for [single-shell data](https://github.com/PennLINC/AI2D/blob/main/_data/reconspec_singleshell_bundle-stats_v1.yaml)
- * `--recon-spec` for [multi-shell data](https://github.com/PennLINC/AI2D/blob/main/_data/reconspec_multishell_bundle-stats_v1.yaml)
+ * `recon-spec` for [single-shell data](https://github.com/PennLINC/AI2D/blob/main/_data/reconspec_singleshell_bundle-stats_v1.yaml)
+ * `recon-spec` for [multi-shell data](https://github.com/PennLINC/AI2D/blob/main/_data/reconspec_multishell_bundle-stats_v1.yaml)
 
 ## Inter-regional tractography and tractometry
 
 Coming soon
 
- * `--recon-spec` for [single-shell data](https://github.com/PennLINC/AI2D/blob/main/_data/reconspec_singleshell_whole-brain_v1.yaml)
- * `--recon-spec` for [multi-shell data](https://github.com/PennLINC/AI2D/blob/main/_data/reconspec_multishell_whole-brain_v1.yaml)
+ * `recon-spec` for [single-shell data](https://github.com/PennLINC/AI2D/blob/main/_data/reconspec_singleshell_whole-brain_v1.yaml)
+ * `recon-spec` for [multi-shell data](https://github.com/PennLINC/AI2D/blob/main/_data/reconspec_multishell_whole-brain_v1.yaml)
 
 **Inter-regional tractography**: Streamlines were generated using Anatomically-Constrained Tractography (ACT) with Hybrid Surface/Volume Segmentation (HSVS), and connectivity matrices were computed with `tck2connectome`.
 
 **Tractometry**: tractometry was run using [pyAFQ](https://qsirecon.readthedocs.io/en/latest/builtin_workflows.html#pyafq-tractometry).
 
+## Boilerplate
+
+The exact **QSIRecon** pipeline is documented in the *boilerplate* located at `<qsirecon_output>/logs/CITATION.html`. If the data were processed with [BABS]({{ site.baseurl }}/docs/imaging/image_babs/), refer to [Get Data]({{ site.baseurl }}/docs/get_data#312-explore-the-data-structure) for details on unzipping `<qsirecon_output>` to access the boilerplate file.

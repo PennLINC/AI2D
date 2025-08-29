@@ -22,7 +22,7 @@ data_release_use:
 num_site: 1
 age_avg: 29.1
 age_range: 24-34
-number_of_sessions: 12
+number_of_sessions: 123
 sample_size: 10
 cubic_project: open-datasets
 cubic_path: /cbica/projects/pennlinc_rbc/datasets/midnight_scan_club
@@ -42,16 +42,16 @@ data_paper: http://www.cell.com/neuron/fulltext/S0896-6273(17)30613-X
 demo_data: https://openneuro.org/datasets/ds000224/versions/1.0.4/file-display/participants.json
 p_female: 50
 p_right: 100
-smriprep_session: 2
-freesurfer_session: 2
-fmriprep_session: 10
-xcpd_session: 10
-mriqc_session: 12
-smriprep_complete: 2
-freesurfer_complete: 2
-fmriprep_complete: 10
-xcpd_complete: 10
-mriqc_complete: 12
+smriprep_session: 21
+freesurfer_session: 21
+fmriprep_session: 102
+xcpd_session: 102
+mriqc_session: 123
+smriprep_complete:
+freesurfer_complete:
+fmriprep_complete: 102
+xcpd_complete: 102
+mriqc_complete: 123
 smriprep_version: 
 freesurfer_version: v7.3.2
 fmriprep_version: v24-0-0

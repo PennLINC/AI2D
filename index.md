@@ -45,7 +45,7 @@ author_profile: false
           </b>
      </p>
      <p>
-          Many labs at Penn use the same large, publicly available neuroimaging datasets. Historically, each lab downloaded, processed, and maintained their own version of the data – resulting in duplicated efforts, wasted computational resources, and inefficient use of storage. The shared neuroimaging data resources provided by AI2D addresses these challenges by providing centralized access to many of the largest and most commonly used neuroimaging datasets. All datasets are curated, processed, and shared using a standardized workflow that includes widely-used tools developed by AI2D labs including <a href="https://www.pennlinc.io/">PennLINC</a> and <a href="https://aibil.med.upenn.edu/">AIBIL</a>. The result? Larger scale, lower cost, and faster progress.
+          Many labs at Penn use the same large, publicly available neuroimaging datasets. Historically, each lab downloaded, processed, and maintained their own version of the data – resulting in duplicated efforts, wasted computational resources, and inefficient use of storage. The shared neuroimaging data resources provided by AI2D addresses these challenges by providing centralized access to many of the largest and most commonly used neuroimaging datasets. All datasets are curated, processed, and shared using a standardized workflow that includes widely-used tools developed by AI2D labs including <a href="https://www.pennlinc.io/">PennLINC</a> and <a href="https://www.med.upenn.edu/cbica/aibil.html">AIBIL</a>. The result? Larger scale, lower cost, and faster progress.
      </p>
 </p>
 

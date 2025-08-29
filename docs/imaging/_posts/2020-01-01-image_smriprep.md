@@ -18,6 +18,10 @@ details div { line-height: 1.6; }
 <div style="margin: 10px 0;">
 <strong>Citation</strong><br/>
 Esteban, Oscar, Christopher Markiewicz, Ross W Blair, Craig Moodie, Ayse Ilkay Isik, Asier Erramuzpe Aliaga, James Kent, et al. 2019. "fMRIPrep: A Robust Preprocessing Pipeline for Functional MRI." Nature Methods 16: 111–16. https://doi.org/10.1038/s41592-018-0235-4.
+<br><br>
+Fischl, B. (2012). FreeSurfer. Neuroimage, 62(2), 774-781.
+<br><br>
+Dale, Anders M., Bruce Fischl, and Martin I. Sereno. 1999. "Cortical Surface-Based Analysis: I. Segmentation and Surface Reconstruction." NeuroImage 9 (2): 179–94. https://doi.org/10.1006/nimg.1998.0395.
 </div>
 
 <details style="margin: 10px 0;">
@@ -28,8 +32,6 @@ Abraham, Alexandre, Fabian Pedregosa, Michael Eickenberg, Philippe Gervais, Andr
 Avants, B. B., C. L. Epstein, M. Grossman, and J. C. Gee. 2008. "Symmetric Diffeomorphic Image Registration with Cross-Correlation: Evaluating Automated Labeling of Elderly and Neurodegenerative Brain." Medical Image Analysis 12 (1): 26–41. https://doi.org/10.1016/j.media.2007.06.004.
 <p style="margin: 2px 0;"></p>
 Ciric, R., William H. Thompson, R. Lorenz, M. Goncalves, E. MacNicol, C. J. Markiewicz, Y. O. Halchenko, et al. 2022. "TemplateFlow: FAIR-Sharing of Multi-Scale, Multi-Species Brain Models." Nature Methods 19: 1568–71. https://doi.org/10.1038/s41592-022-01681-2.
-<p style="margin: 2px 0;"></p>
-Dale, Anders M., Bruce Fischl, and Martin I. Sereno. 1999. "Cortical Surface-Based Analysis: I. Segmentation and Surface Reconstruction." NeuroImage 9 (2): 179–94. https://doi.org/10.1006/nimg.1998.0395.
 <p style="margin: 2px 0;"></p>
 Evans, AC, AL Janke, DL Collins, and S Baillet. 2012. "Brain Templates and Atlases." NeuroImage 62 (2): 911–22. https://doi.org/10.1016/j.neuroimage.2012.01.024.
 <p style="margin: 2px 0;"></p>
@@ -50,9 +52,9 @@ Zhang, Y., M. Brady, and S. Smith. 2001. "Segmentation of Brain MR Images Throug
 </details>
 
 <br>
-Structural MRI data were processed using **[fMRIPrep](https://fmriprep.org/en/stable/)** with the `--anat-only` flag, which run the following steps: correction for intensity non-uniformity, skull-stripping with ANTs’ brain extraction workflow, and reconstruction of cortical surfaces using [**FreeSurfer**](https://surfer.nmr.mgh.harvard.edu/).
+Structural MRI data were processed using **sMRIPrep** by calling **[fMRIPrep](https://fmriprep.org/en/stable/)** with the `--anat-only` flag, which run the following steps: correction for intensity non-uniformity, skull-stripping with ANTs’ brain extraction workflow, and reconstruction of cortical surfaces using [**FreeSurfer**](https://surfer.nmr.mgh.harvard.edu/). The exact **sMRIPrep** pipeline is documented in the *boilerplate* located at `<fmriprep_anat_output>/logs/CITATION.html`. If the data were processed with [BABS]({{ site.baseurl }}/docs/imaging/image_babs/), refer to [Get Data]({{ site.baseurl }}/docs/get_data#312-explore-the-data-structure) for details on unzipping `<fmriprep_anat_output>` to access the boilerplate file.
 
+**FreeSurfer** outputs were further processed using [**FreeSurfer-Post**](https://github.com/PennLINC/freesurfer-post/tree/main) which produced tabulated FreeSurfer data that were parcellated using 27 anatomical, functional, and multimodal atlases such as Desikan Killiany, Glasser, Gordon, and multiple resolutions of the Schaefer parcellation, among others. 
 
-The **AI2D sMRI pipeline** provides full FreeSurfer outputs as well as tabulated data (outputs from **[freesurfer-post](https://github.com/PennLINC/freesurfer-post/tree/main)**) parcellated using 35 anatomical, functional, and multimodal atlases such as Desikan Killiany, Glasser, Gordon, and multiple resolutions of the Schaefer parcellation, among others. **Specific features** include commonly used measures of brain structure such as regional surface area, cortical thickness, gray matter volume, and folding and curvature indices. Moreover, summary brain measures such as total intracranial volume, ventricle size, and mean and standard deviation of various measures (e.g., cortical thickness, surface area) are provided for the whole brain and per hemisphere. Tabulated data are also accompanied by .json files describing each structural feature in detail.
-
+Outputs from this pipeline include commonly used measures of brain structure such as regional surface area, cortical thickness, gray matter volume, and folding and curvature indices. Moreover, summary brain measures such as total intracranial volume, ventricle size, and mean and standard deviation of various measures (e.g., cortical thickness, surface area) are provided for the whole brain and per hemisphere. Tabulated data are also accompanied by .json files describing each structural feature in detail.
 

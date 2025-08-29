@@ -1,7 +1,7 @@
 main:
 - title: Datasets
   url: /docs/datasets
-- title: Imaging
+- title: Tools
   url: /docs/imaging
   sublinks:
     - title: "Data Curation: CuBIDS"

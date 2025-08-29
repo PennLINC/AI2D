@@ -35,9 +35,9 @@ t1w: Yes
 fmri: Yes
 dmri: No
 fmap: Yes
-dua: https://docs.cneuromod.ca/en/latest/ACCESS.html
+dua: None
 dua_restrict:
-data_license: https://docs.cneuromod.ca/en/latest/ACCESS.html#complete-cneuromod-databank-via-data-transfer-agreement-dta
+data_license: CC BY-NC-SA, see more <a href="https://docs.cneuromod.ca/en/latest/ACCESS.html">here</a>
 data_paper_1: https://docs.cneuromod.ca/en/latest/DATASETS.html
 data_paper_2: https://www.cneuromod.ca/gallery/datasets/
 demo_data: sex, age
