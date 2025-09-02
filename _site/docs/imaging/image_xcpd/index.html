@@ -218,7 +218,7 @@
       <span class="page__meta-readtime">
         <i class="far fa-clock" aria-hidden="true"></i>
         
-          6 minute read
+          7 minute read
         
       </span>
     
@@ -315,7 +315,9 @@ Functional data were processed using <strong><a href="https://xcp-d.readthedocs.
 
 <p>Preprocessed BOLD data (<a href="/AI2D/docs/imaging/image_fmriprep/"><strong>fMRIPrep outputs</strong></a>) underwent nuisance regression following the removal of non-steady-state volumes. The data were then despiked, band-pass filtered, and smoothed. For each atlas (e.g., Glasser, Gordon, and multiple resolutions of the Schaefer parcellation), <span style="color: #7556b7;">parcellated time series</span> were extracted from the residual BOLD signal. From these, <span style="color: #7556b7;">pairwise functional connectivity (Pearson’s correlation)</span> was computed between parcels, along with <span style="color: #7556b7;">regional homogeneity</span> (<a href="https://xcp-d.readthedocs.io/en/latest/workflows.html#reho"><strong>ReHo</strong></a>), and <span style="color: #7556b7;">amplitude of low-frequency fluctuation</span> (<a href="https://xcp-d.readthedocs.io/en/latest/workflows.html#alff"><strong>ALFF</strong></a>).</p>
 
-<p>The exact <strong>XCP-D</strong> pipeline is documented in the <em>boilerplate</em> located at <code class="language-plaintext highlighter-rouge">&lt;xcpd_output&gt;/logs/CITATION.html</code>. If the data were processed with <a href="/AI2D/docs/imaging/image_babs/">BABS</a>, refer to <a href="/AI2D/docs/get_data#312-explore-the-data-structure">Get Data</a> for details on unzipping <code class="language-plaintext highlighter-rouge">&lt;xcpd_output&gt;</code> to access the boilerplate file.</p>
+<div class="alert alert-primary" role="alert">
+  <strong>IMPORTANT:</strong> The exact <strong>XCP-D</strong> pipeline is documented in the <em>boilerplate</em> located at <code>&lt;xcpd_output&gt;/logs/CITATION.html</code>. If the data were processed with <a href="/AI2D/docs/imaging/image_babs/"><strong>BABS</strong></a> (i.e., were zipped), refer to <a href="/AI2D/docs/get_data#312-explore-the-data-structure"><strong>Get Data</strong></a> for details on unzipping <code>&lt;xcpd_output&gt;</code> to access the boilerplate file.
+</div>
 
 <h2 id="quality-control">Quality Control</h2>
 

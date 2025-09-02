@@ -52,7 +52,11 @@ Zhang, Y., M. Brady, and S. Smith. 2001. "Segmentation of Brain MR Images Throug
 </details>
 
 <br>
-Structural MRI data were processed using **sMRIPrep** by calling **[fMRIPrep](https://fmriprep.org/en/stable/)** with the `--anat-only` flag, which run the following steps: correction for intensity non-uniformity, skull-stripping with ANTs’ brain extraction workflow, and reconstruction of cortical surfaces using [**FreeSurfer**](https://surfer.nmr.mgh.harvard.edu/). The exact **sMRIPrep** pipeline is documented in the *boilerplate* located at `<fmriprep_anat_output>/logs/CITATION.html`. If the data were processed with [BABS]({{ site.baseurl }}/docs/imaging/image_babs/), refer to [Get Data]({{ site.baseurl }}/docs/get_data#312-explore-the-data-structure) for details on unzipping `<fmriprep_anat_output>` to access the boilerplate file.
+Structural MRI data were processed using **sMRIPrep** by calling **[fMRIPrep](https://fmriprep.org/en/stable/)** with the `--anat-only` flag, which run the following steps: correction for intensity non-uniformity, skull-stripping with ANTs’ brain extraction workflow, and reconstruction of cortical surfaces using [**FreeSurfer**](https://surfer.nmr.mgh.harvard.edu/). 
+
+<div class="alert alert-primary" role="alert">
+  <strong>IMPORTANT:</strong> The exact <strong>sMRIPrep</strong> pipeline is documented in the <em>boilerplate</em> located at <code>&lt;fmriprep_anat_output&gt;/logs/CITATION.html</code>. If the data were processed with <a href="{{ site.baseurl }}/docs/imaging/image_babs/"><strong>BABS</strong></a> (i.e., were zipped), refer to <a href="{{ site.baseurl }}/docs/get_data#312-explore-the-data-structure"><strong>Get Data</strong></a> for details on unzipping <code>&lt;fmriprep_anat_output&gt;</code> to access the boilerplate file.
+</div>
 
 **FreeSurfer** outputs were further processed using [**FreeSurfer-Post**](https://github.com/PennLINC/freesurfer-post/tree/main) which produced tabulated FreeSurfer data that were parcellated using 27 anatomical, functional, and multimodal atlases such as Desikan Killiany, Glasser, Gordon, and multiple resolutions of the Schaefer parcellation, among others. 
 

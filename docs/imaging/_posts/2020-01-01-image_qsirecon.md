@@ -73,4 +73,6 @@ Coming soon
 
 ## Boilerplate
 
-The exact **QSIRecon** pipeline is documented in the *boilerplate* located at `<qsirecon_output>/logs/CITATION.html`. If the data were processed with [BABS]({{ site.baseurl }}/docs/imaging/image_babs/), refer to [Get Data]({{ site.baseurl }}/docs/get_data#312-explore-the-data-structure) for details on unzipping `<qsirecon_output>` to access the boilerplate file.
+<div class="alert alert-primary" role="alert">
+  <strong>IMPORTANT:</strong> The exact <strong>QSIRecon</strong> pipeline is documented in the <em>boilerplate</em> located at <code>&lt;QSIRecon_output&gt;/logs/CITATION.html</code>. If the data were processed with <a href="{{ site.baseurl }}/docs/imaging/image_babs/"><strong>BABS</strong></a> (i.e., were zipped), refer to <a href="{{ site.baseurl }}/docs/get_data#312-explore-the-data-structure"><strong>Get Data</strong></a> for details on unzipping <code>&lt;QSIRecon_output&gt;</code> to access the boilerplate file.
+</div>

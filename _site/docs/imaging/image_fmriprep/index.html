@@ -291,8 +291,9 @@ Zhang, Y., M. Brady, and S. Smith. 2001. “Segmentation of Brain MR Images Thro
 <p><br />
 Functional MRI data were preprocessed using <strong><a href="https://fmriprep.org/en/stable/">fMRIPrep</a></strong>, which included motion correction, slice-timing correction (if <code class="language-plaintext highlighter-rouge">SliceTiming</code> metadata is available), aligning the estimated fieldmap (if available) to fMRI data with rigid-registration, and registration to T1w. Confound timeseries included FD, DVARS, and global CSF/WM/whole-brain signals. Physiological regressors were derived with CompCor, retaining enough components to explain 50% of variance, with tCompCor from the top 2% most variable voxels and aCompCor from CSF and WM masks. Data were registered to MNI152NLin6Asym, as well as resampled into fsLR space with 91k grayordinates. All transformations were combined in a single cubic B-spline interpolation step.</p>
 
-<p>The exact <strong>fMRIPrep</strong> pipeline is documented in the <em>boilerplate</em> located at <code class="language-plaintext highlighter-rouge">&lt;fMRIPrep_output&gt;/logs/CITATION.html</code>. If the data were processed with <a href="/AI2D/docs/imaging/image_babs/">BABS</a>, refer to <a href="/AI2D/docs/get_data#312-explore-the-data-structure">Get Data</a> for details on unzipping <code class="language-plaintext highlighter-rouge">&lt;fMRIPrep_output&gt;</code> to access the boilerplate file.</p>
-
+<div class="alert alert-primary" role="alert">
+  <strong>IMPORTANT:</strong> The exact <strong>fMRIPrep</strong> pipeline is documented in the <em>boilerplate</em> located at <code>&lt;fMRIPrep_output&gt;/logs/CITATION.html</code>. If the data were processed with <a href="/AI2D/docs/imaging/image_babs/"><strong>BABS</strong></a> (i.e., were zipped), refer to <a href="/AI2D/docs/get_data#312-explore-the-data-structure"><strong>Get Data</strong></a> for details on unzipping <code>&lt;fMRIPrep_output&gt;</code> to access the boilerplate file.
+</div>
 
         
       </section>

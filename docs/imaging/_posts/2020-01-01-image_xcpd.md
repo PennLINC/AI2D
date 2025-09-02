@@ -91,7 +91,9 @@ Functional data were processed using **[XCP-D](https://xcp-d.readthedocs.io/en/l
 
 Preprocessed BOLD data ([**fMRIPrep outputs**]({{ site.baseurl }}/docs/imaging/image_fmriprep/)) underwent nuisance regression following the removal of non-steady-state volumes. The data were then despiked, band-pass filtered, and smoothed. For each atlas (e.g., Glasser, Gordon, and multiple resolutions of the Schaefer parcellation), <span style="color: #7556b7;">parcellated time series</span> were extracted from the residual BOLD signal. From these, <span style="color: #7556b7;">pairwise functional connectivity (Pearson’s correlation)</span> was computed between parcels, along with <span style="color: #7556b7;">regional homogeneity</span> ([**ReHo**](https://xcp-d.readthedocs.io/en/latest/workflows.html#reho)), and <span style="color: #7556b7;">amplitude of low-frequency fluctuation</span> ([**ALFF**](https://xcp-d.readthedocs.io/en/latest/workflows.html#alff)).
 
-The exact **XCP-D** pipeline is documented in the *boilerplate* located at `<xcpd_output>/logs/CITATION.html`. If the data were processed with [BABS]({{ site.baseurl }}/docs/imaging/image_babs/), refer to [Get Data]({{ site.baseurl }}/docs/get_data#312-explore-the-data-structure) for details on unzipping `<xcpd_output>` to access the boilerplate file.
+<div class="alert alert-primary" role="alert">
+  <strong>IMPORTANT:</strong> The exact <strong>XCP-D</strong> pipeline is documented in the <em>boilerplate</em> located at <code>&lt;xcpd_output&gt;/logs/CITATION.html</code>. If the data were processed with <a href="{{ site.baseurl }}/docs/imaging/image_babs/"><strong>BABS</strong></a> (i.e., were zipped), refer to <a href="{{ site.baseurl }}/docs/get_data#312-explore-the-data-structure"><strong>Get Data</strong></a> for details on unzipping <code>&lt;xcpd_output&gt;</code> to access the boilerplate file.
+</div>
 
 
 ## Quality Control
