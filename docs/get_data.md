@@ -41,13 +41,22 @@ Then, follow these steps:
 
 <span style="color: #7556b7;">🌟 **Once you have access to the project, check the `BABS` section on the dataset-specific page to determine whether the dataset was processed with [BABS]({{  site.baseurl }}/docs/imaging/image_babs)** (Dataset-specific links listed [here]({{ site.baseurl }}/docs/datasets)).</span>
 
+<div class="alert alert-danger" role="alert">
+  <b>IMPORTANT: Minimizing Data Duplication</b><br><br>
+  
+  AI2D shared data resources are designed for centralized access and sharing. To avoid unnecessary duplication, we strongly discourage keeping local copies of shared datasets within your own CUBIC project.<br><br>
+  
+  <b>Best Practice:</b> Once you have read access to the dataset’s CUBIC project, you can read and work with the data directly. For example, from your own CUBIC project you can run:<br><br>
+  
+  <pre style="background-color: #f8f9fa; border: 1px solid #dee2e6; border-radius: 4px; padding: 10px; font-family: 'Courier New', monospace; font-size: 14px;"><code>pandas.read_csv("/path/to/AI2D_dataset/data.tsv", sep='\t')</code></pre>
+  
+  If you <i>need</i> to copy a small subset of the data (for example, to review the full output path for a single subject), place it in <code>/cbica/comp_space/&lt;your_project&gt;</code>. This location is scheduled for automatic deletion, but you should still check and remove unnecessary files regularly.
+
+</div>
+
 ## 2. Dataset processed without BABS
 
-If the dataset was NOT processed with BABS, you can copy the data as follows:
-
-```bash
-$ cp -r /path/to/AI2D/dataset /path/to/your/project
-```
+If the dataset was NOT processed with BABS, you can read and work with the data directly.
 
 ## 3. Dataset processed with BABS
 

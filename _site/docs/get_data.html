@@ -248,12 +248,22 @@
 
 <p><span style="color: #7556b7;">🌟 <strong>Once you have access to the project, check the <code class="language-plaintext highlighter-rouge">BABS</code> section on the dataset-specific page to determine whether the dataset was processed with <a href="/AI2D/docs/imaging/image_babs">BABS</a></strong> (Dataset-specific links listed <a href="/AI2D/docs/datasets">here</a>).</span></p>
 
+<div class="alert alert-danger" role="alert">
+  <b>IMPORTANT: Minimizing Data Duplication</b><br /><br />
+  
+  AI2D shared data resources are designed for centralized access and sharing. To avoid unnecessary duplication, we strongly discourage keeping local copies of shared datasets within your own CUBIC project.<br /><br />
+  
+  <b>Best Practice:</b> Once you have read access to the dataset’s CUBIC project, you can read and work with the data directly. For example, from your own CUBIC project you can run:<br /><br />
+  
+  <pre style="background-color: #f8f9fa; border: 1px solid #dee2e6; border-radius: 4px; padding: 10px; font-family: 'Courier New', monospace; font-size: 14px;"><code>pandas.read_csv("/path/to/AI2D_dataset/data.tsv", sep='\t')</code></pre>
+  
+  If you <i>need</i> to copy a small subset of the data (for example, to review the full output path for a single subject), place it in <code>/cbica/comp_space/&lt;your_project&gt;</code>. This location is scheduled for automatic deletion, but you should still check and remove unnecessary files regularly.
+
+</div>
+
 <h2 id="2-dataset-processed-without-babs">2. Dataset processed without BABS</h2>
 
-<p>If the dataset was NOT processed with BABS, you can copy the data as follows:</p>
-
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span><span class="nb">cp</span> <span class="nt">-r</span> /path/to/AI2D/dataset /path/to/your/project
-</code></pre></div></div>
+<p>If the dataset was NOT processed with BABS, you can read and work with the data directly.</p>
 
 <h2 id="3-dataset-processed-with-babs">3. Dataset processed with BABS</h2>
 
