@@ -50,7 +50,9 @@ Then, follow these steps:
   
   <pre style="background-color: #f8f9fa; border: 1px solid #dee2e6; border-radius: 4px; padding: 10px; font-family: 'Courier New', monospace; font-size: 14px;"><code>pandas.read_csv("/path/to/AI2D_dataset/data.tsv", sep='\t')</code></pre>
   
-  If you <i>need</i> to copy a small subset of the data (for example, to review the full output path for a single subject), place it in <code>/cbica/comp_space/&lt;your_project&gt;</code>. This location is scheduled for automatic deletion, but you should still check and remove unnecessary files regularly.
+  If you <i>need</i> to copy a small subset of the data (for example, to review the full output path for a single subject), place it in <code>/cbica/comp_space/&lt;your_project&gt;</code>. This location is scheduled for automatic deletion, but you should still check and remove unnecessary files regularly.<br><br>
+
+  If you <a href="#32-get-data-with-datalad">get data using DataLad</a>, run <code>datalad drop</code> to remove your local copy once you no longer need it.
 
 </div>
 
