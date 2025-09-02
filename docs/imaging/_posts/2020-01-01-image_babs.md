@@ -12,8 +12,6 @@ layout: single
 **Citation**
 <br>
 Zhao, C., Jarecka, D., Covitz, S., Chen, Y., Eickhoff, S. B., Fair, D. A., ... & Satterthwaite, T. D. (2024). A reproducible and generalizable software workflow for analysis of large-scale neuroimaging data collections using BIDS Apps. Imaging Neuroscience, 2, 1-19. doi:10.1162/imag_a_00074.
-<p style="margin: 2px 0;"></p>
-Zhao, C., Chen, Y., Jarecka, D., Ghosh, S., Cieslak, M., & Satterthwaite, T. D. (2024). BABS in Action: Merging Reproducibility and Scalability for Large-Scale Neuroimaging Analysis With BIDS Apps. Biological Psychiatry, 95(10), S21-S22. doi:10.1016/j.biopsych.2024.02.056.
 
 
 <br>

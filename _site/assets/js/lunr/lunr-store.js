@@ -6,7 +6,7 @@ var store = [{
         "teaser": null
       },{
         "title": "BABS: BIDS App Bootstrap",
-        "excerpt":"Citation Zhao, C., Jarecka, D., Covitz, S., Chen, Y., Eickhoff, S. B., Fair, D. A., … &amp; Satterthwaite, T. D. (2024). A reproducible and generalizable software workflow for analysis of large-scale neuroimaging data collections using BIDS Apps. Imaging Neuroscience, 2, 1-19. doi:10.1162/imag_a_00074. Zhao, C., Chen, Y., Jarecka, D., Ghosh, S.,...","categories": ["docs","imaging"],
+        "excerpt":"Citation Zhao, C., Jarecka, D., Covitz, S., Chen, Y., Eickhoff, S. B., Fair, D. A., … &amp; Satterthwaite, T. D. (2024). A reproducible and generalizable software workflow for analysis of large-scale neuroimaging data collections using BIDS Apps. Imaging Neuroscience, 2, 1-19. doi:10.1162/imag_a_00074. BABS implements the “FAIRly-big” framework (Wagner et al.,...","categories": ["docs","imaging"],
         "tags": [],
         "url": "/AI2D/docs/imaging/image_babs/",
         "teaser": null
