@@ -8,6 +8,8 @@ main:
       url: /docs/imaging/image_curation
     - title: "Data Processing: BABS"
       url: /docs/imaging/image_babs
+    - title: "NiChart_DLMUSE"
+      url: /docs/imaging/image_ncdlmuse
     - title: "sMRIPrep"
       url: /docs/imaging/image_smriprep
     - title: "fMRIPrep"

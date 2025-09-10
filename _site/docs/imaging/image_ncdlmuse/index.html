@@ -9,25 +9,27 @@
   <head>
     <meta charset="utf-8">
 
-<!-- begin _includes/seo.html --><title>Neuroimaging</title>
-<meta name="description" content="Imaging">
+<!-- begin _includes/seo.html --><title>NiChart_DLMUSE</title>
+<meta name="description" content="NiChart_DLMUSE">
 
 
 
-<meta property="og:type" content="website">
+<meta property="og:type" content="article">
 <meta property="og:locale" content="en_US">
 <meta property="og:site_name" content="AI2D | PennLINC | Shared Data Resources">
-<meta property="og:title" content="Neuroimaging">
-<meta property="og:url" content="http://localhost:4000/AI2D/docs/imaging/">
+<meta property="og:title" content="NiChart_DLMUSE">
+<meta property="og:url" content="http://localhost:4000/AI2D/docs/imaging/image_ncdlmuse/">
 
 
-  <meta property="og:description" content="Imaging">
-
-
-
+  <meta property="og:description" content="NiChart_DLMUSE">
 
 
 
+
+
+
+
+  <meta property="article:published_time" content="2020-01-01T00:00:00-05:00">
 
 
 
@@ -38,7 +40,7 @@
   
 
 
-<link rel="canonical" href="http://localhost:4000/AI2D/docs/imaging/">
+<link rel="canonical" href="http://localhost:4000/AI2D/docs/imaging/image_ncdlmuse/">
 
 
 
@@ -179,21 +181,50 @@
   
 
   <article class="page h-entry" itemscope itemtype="https://schema.org/CreativeWork">
-    <meta itemprop="headline" content="Neuroimaging">
-    <meta itemprop="description" content="Imaging">
-    
+    <meta itemprop="headline" content="NiChart_DLMUSE">
+    <meta itemprop="description" content="NiChart_DLMUSE">
+    <meta itemprop="datePublished" content="2020-01-01T00:00:00-05:00">
     
 
     <div class="page__inner-wrap">
       
         <header>
           <br/><h1 id="page-title" class="page__title p-name" itemprop="headline">
-            <a href="http://localhost:4000/AI2D/docs/imaging/" class="u-url" itemprop="url">Neuroimaging
+            <a href="http://localhost:4000/AI2D/docs/imaging/image_ncdlmuse/" class="u-url" itemprop="url">NiChart_DLMUSE
 </a>
           </h1>
           
           <!--
 
+
+  <p class="page__meta">
+    
+
+    <span class="page__meta-sep"></span>
+
+    
+      
+      <span class="page__meta-date">
+        <i class="far fa-calendar-alt" aria-hidden="true"></i>
+        
+        <time datetime="2020-01-01T00:00:00-05:00">January 1, 2020</time>
+      </span>
+    
+
+    <span class="page__meta-sep"></span>
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          less than 1 minute read
+        
+      </span>
+    
+  </p>
 
 -->
         </header>
@@ -201,11 +232,43 @@
 
       <section class="page__content e-content" itemprop="text">
         
-        <p>All raw imaging data and meta-data were carefully curated to conform with the <a href="https://bids.neuroimaging.io/">Brain Imaging Data Structure (BIDS)</a> in a fully-reproducible fashion using <a href="https://cubids.readthedocs.io/en/latest/">CuBIDS</a> (Covitz et al., 2022).
-Next, we adopted the <a href="https://www.nature.com/articles/s41597-022-01163-2">“FAIRly-big” framework</a> (Wagner et al., 2022) for reproducible image processing, ensuring all preparation and analysis were accompanied by a full audit trail in <a href="https://www.datalad.org/">DataLad</a> (Halchenko et al., 2021).
-Structural MRI data were processed using <a href="https://surfer.nmr.mgh.harvard.edu/">FreeSurfer</a> and <a href="https://www.nipreps.org/smriprep/">sMRIPrep</a>, yielding commonly-used measures of brain structure.
-Functional MRI data were preprocessed using <a href="https://www.nipreps.org/fmriprep/">fMRIPrep</a> and <a href="https://xcp-d.readthedocs.io/en/latest/usage.html">XCP-D</a> (Mehta et al., 2024) and a dedicated configuration that was rigorously quality controlled on all datasets, eventually yielding measures such as functional connectivity matrices, ReHo, and ALFF.
-Processed structural and functional data were parcellated with 16 commonly-used atlases.</p>
+        <style>
+details p { margin: 8px 0 !important; }
+details div { line-height: 1.6; }
+</style>
+
+<p><br /></p>
+<div style="margin: 10px 0;">
+<strong>Citation</strong><br />
+Doshi, Jimit, Guray Erus, Yangming Ou, Susan M Resnick, Ruben C Gur, Raquel E Gur, Theodore D Satterthwaite, Susan Furth, Christos Davatzikos, and Alzheimer’s Neuroimaging Initiative. 2016. “MUSE: MUlti-Atlas Region Segmentation Utilizing Ensembles of Registration Algorithms and Parameters, and Locally Optimal Atlas Selection.” NeuroImage 127: 186–95. https://doi.org/10.1016/j.neuroimage.2015.11.073.
+</div>
+
+<p><br />
+<a href="https://github.com/CBICA/NiChart_DLMUSE"><strong>NiChart_DLMUSE</strong></a> performs deep-learning based brain extraction and segmentation on T1-weighted images. This is based on the MUSE framework (MUlti-atlas region Segmentation utilizing Ensembles of registration algorithms and parameters, and locally optimal atlas selection; Doshi et al. 2016). All shared AI2D data were processed with a <strong><a href="https://github.com/CBICA/BIDS_NiChart_DLMUSE">BIDS-app wrapper of NiChart_DLMUSE</a></strong>:</p>
+
+<p>Brain extraction is done using <a href="https://github.com/CBICA/DLICV"><strong>DLICV</strong></a>.</p>
+<div style="text-align: center;">
+     <img src="/AI2D/assets/images/misc/dlicv.png" width="80%" height="auto" />
+</div>
+
+<p><br /><br />
+Brain segmentation is done using <a href="https://github.com/CBICA/DLMUSE"><strong>DLMUSE</strong></a>.</p>
+<div style="text-align: center;">
+     <img src="/AI2D/assets/images/misc/dlmuse.png" width="80%" height="auto" />
+</div>
+
+<p><br /><br />
+The outputs include:</p>
+
+<ul>
+  <li>ICV mask.</li>
+  <li>Segmented T1w in native space.</li>
+  <li>JSON files containing ROIs’ volumes.</li>
+  <li>HTML summary for visual quality control of DLICV and DLMUSE outputs.</li>
+</ul>
+
+<p>This package uses <a href="https://github.com/MIC-DKFZ/nnUNet">nnU-Net v2</a> as a basis model architecture for the deep learning parts.</p>
+
 
         
       </section>
@@ -214,14 +277,44 @@ Processed structural and functional data were parcellated with 16 commonly-used 
         
         <!--
 
+
+  
+
+
+  
+
+  <p class="page__taxonomy">
+    <strong><i class="fas fa-fw fa-folder-open" aria-hidden="true"></i> Categories: </strong>
+    <span itemprop="keywords">
+    
+      <a href="/AI2D/categories/#docs" class="page__taxonomy-item p-category" rel="tag">docs</a><span class="sep">, </span>
+    
+      <a href="/AI2D/categories/#imaging" class="page__taxonomy-item p-category" rel="tag">imaging</a>
+    
+    </span>
+  </p>
+
 -->
         <!--
+
+  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Updated:</strong> <time class="dt-published" datetime="2020-01-01T00:00:00-05:00">January 1, 2020</time></p>
 -->
       </footer>
 
       
 
-      <!---->
+      <!--
+  <nav class="pagination">
+    
+      <a href="/AI2D/docs/imaging/image_fmriprep/" class="pagination--pager" title="Functional Data Preprocessing
+">Previous</a>
+    
+    
+      <a href="/AI2D/docs/imaging/image_qsiprep/" class="pagination--pager" title="Diffusion Data Preprocessing
+">Next</a>
+    
+  </nav>
+-->
     </div>
 
     

@@ -23,6 +23,12 @@ var store = [{
         "url": "/AI2D/docs/imaging/image_fmriprep/",
         "teaser": null
       },{
+        "title": "NiChart_DLMUSE",
+        "excerpt":"Citation Doshi, Jimit, Guray Erus, Yangming Ou, Susan M Resnick, Ruben C Gur, Raquel E Gur, Theodore D Satterthwaite, Susan Furth, Christos Davatzikos, and Alzheimer’s Neuroimaging Initiative. 2016. “MUSE: MUlti-Atlas Region Segmentation Utilizing Ensembles of Registration Algorithms and Parameters, and Locally Optimal Atlas Selection.” NeuroImage 127: 186–95. https://doi.org/10.1016/j.neuroimage.2015.11.073. NiChart_DLMUSE performs...","categories": ["docs","imaging"],
+        "tags": [],
+        "url": "/AI2D/docs/imaging/image_ncdlmuse/",
+        "teaser": null
+      },{
         "title": "Diffusion Data Preprocessing",
         "excerpt":"Citation Cieslak, Matthew, Philip A Cook, Xiaosong He, Fang-Cheng Yeh, Thijs Dhollander, Azeez Adebimpe, Geoffrey K Aguirre, et al. 2021. “QSIPrep: An Integrative Platform for Preprocessing and Reconstructing Diffusion Mri Data.” Nature Methods 18 (7). Nature Publishing Group US New York: 775–78. https://doi.org/10.1038/s41592-021-01185-5. More citations (Click to expand/minimize) Abraham, Alexandre,...","categories": ["docs","imaging"],
         "tags": [],
