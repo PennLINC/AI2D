@@ -1,4 +1,4 @@
-name: mrtrix_multishell_ss3t_HSVS_tractometry_matrices
+name: mrtrix_multishell_ss3t_HSVS_matrices
 anatomical:
 - mrtrix_5tt_hsvs
 nodes:
