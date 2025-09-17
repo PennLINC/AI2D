@@ -277,7 +277,7 @@ Yeh, Fang-Cheng, Van Jay Wedeen, and Wen-Yih Isaac Tseng. 2010. “Generalized q
 </details>
 
 <p><br />
-Preprocessed diffusion data (QSIPrep outputs) were further analyzed using <strong><a href="https://qsirecon.readthedocs.io/en/latest/">QSIRecon</a></strong>, which executes reconstruction workflows defined in a <code class="language-plaintext highlighter-rouge">recon-spec</code> YAML file. This file specifies reconstruction steps, parameter settings, post-processing tools, and software dependencies. We used two <code class="language-plaintext highlighter-rouge">recon-spec</code> files: one for AutoTrack bundle reconstruction and bundle-wise statistics (<a href="#bundle-stats">Bundle Stats</a>), and another for whole-brain connectivity matrices and tractometry profiles (<a href="#inter-regional-tractography-and-tractometry">Inter-regional tractography and tractometry</a>).</p>
+Preprocessed diffusion data (QSIPrep outputs) were further analyzed using <strong><a href="https://qsirecon.readthedocs.io/en/latest/">QSIRecon</a></strong>, which executes reconstruction workflows defined in a <code class="language-plaintext highlighter-rouge">recon-spec</code> YAML file. This file specifies reconstruction steps, parameter settings, post-processing tools, and software dependencies. We used two <code class="language-plaintext highlighter-rouge">recon-spec</code> files: one for AutoTrack bundle reconstruction and bundle-wise statistics (<a href="#bundle-stats">Bundle Stats</a>), and another for whole-brain connectivity matrices (<a href="#inter-regional-tractography">Inter-regional tractography</a>).</p>
 
 <h2 id="bundle-stats">Bundle Stats</h2>
 
@@ -288,7 +288,7 @@ Preprocessed diffusion data (QSIPrep outputs) were further analyzed using <stron
   <li><code class="language-plaintext highlighter-rouge">recon-spec</code> for <a href="https://github.com/PennLINC/AI2D/blob/main/_data/reconspec_multishell_bundle-stats_v1.yaml">multi-shell data</a></li>
 </ul>
 
-<h2 id="inter-regional-tractography-and-tractometry">Inter-regional tractography and tractometry</h2>
+<h2 id="inter-regional-tractography">Inter-regional tractography</h2>
 
 <p>Coming soon</p>
 
@@ -298,8 +298,6 @@ Preprocessed diffusion data (QSIPrep outputs) were further analyzed using <stron
 </ul>
 
 <p><strong>Inter-regional tractography</strong>: Streamlines were generated using Anatomically-Constrained Tractography (ACT) with Hybrid Surface/Volume Segmentation (HSVS), and connectivity matrices were computed with <code class="language-plaintext highlighter-rouge">tck2connectome</code>.</p>
-
-<p><strong>Tractometry</strong>: tractometry was run using <a href="https://qsirecon.readthedocs.io/en/latest/builtin_workflows.html#pyafq-tractometry">pyAFQ</a>.</p>
 
 <h2 id="boilerplate">Boilerplate</h2>
 
