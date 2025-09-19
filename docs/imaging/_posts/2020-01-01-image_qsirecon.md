@@ -62,12 +62,11 @@ Diffusion tensors were estimated with TORTOISE, and diffusion orientation distri
 
 ## Inter-regional tractography
 
-Coming soon
+Streamlines were generated using [**Anatomically-Constrained Tractography (ACT) with Hybrid Surface/Volume Segmentation (HSVS)**](https://qsirecon.readthedocs.io/en/latest/builtin_workflows.html#mrtrix-multishell-msmt-act-hsvs), and connectivity matrices were computed with `tck2connectome`.
 
  * `recon-spec` for [single-shell data](https://github.com/PennLINC/AI2D/blob/main/_data/reconspec_singleshell_whole-brain_v1.yaml)
  * `recon-spec` for [multi-shell data](https://github.com/PennLINC/AI2D/blob/main/_data/reconspec_multishell_whole-brain_v1.yaml)
 
-**Inter-regional tractography**: Streamlines were generated using Anatomically-Constrained Tractography (ACT) with Hybrid Surface/Volume Segmentation (HSVS), and connectivity matrices were computed with `tck2connectome`.
 
 ## Boilerplate
 
