@@ -204,7 +204,7 @@ XCP-D produces files for QC fMRI data:
 </details>
 
 <br>
-We recommend using a **median Framewise Displacement (FD) threshold of `> 0.2` for run-level exclusion**, as implemented in [the Reproducible Brain Chart study](https://doi.org/10.1101/2025.02.24.639850). Check the `XCP-D` section on the dataset-specific page (dataset-specific links listed [here]({{ site.baseurl }}/docs/datasets)) for the path to our recommended **XCP-D fMRI QC file**.
+We recommend using a **median Framewise Displacement (FD) threshold of `> 0.2` for run-level exclusion**, as implemented in [the Reproducible Brain Chart study](https://doi.org/10.1016/j.neuron.2025.08.026). Check the `XCP-D` section on the dataset-specific page (dataset-specific links listed [here]({{ site.baseurl }}/docs/datasets)) for the path to our recommended **XCP-D fMRI QC file**.
 
 <div class="alert alert-warning" role="alert">
   <strong>⚠️ WARNING:</strong> Please note that our general recommendation is to use a run-level threshold of <strong>median FD > 0.2</strong>. However, depending on the characteristics of a given dataset, higher or lower thresholds may be more appropriate. To determine the most suitable threshold for a specific dataset (and assess the percentage of retained data), we encourage you to review the <strong>XCP-D fMRI QC file</strong> listed in the <code>XCP-D</code> section of the dataset-specific page. Dataset-specific links are listed <a href="{{ site.baseurl }}/docs/datasets">here</a>.
