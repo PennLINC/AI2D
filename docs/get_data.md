@@ -30,14 +30,16 @@ The following instruction are intended specifically to get data on CUBIC.
 
 <span style="color: #7556b7;">🌟 **Check the `DUA` section on the dataset-specific page and obtain the appropriate DUA** (Dataset-specific links listed [here]({{ site.baseurl }}/docs/datasets)).</span> 
 
-Then, follow these steps:
+**If `DUA` is `None`**, all CUBIC users have read-access to that `CUBIC Project`.
 
-1. Send Dr. Satterthwaite a request including the following:
+**If `DUA` is NOT `None`**, follow these steps:
+
+1. Send Tien Tong (<span style="color: blue;">**Tien.Tong@PennMedicine.upenn.edu**</span>) a request including the following:
     - The level of access, in this case, you will need **read-only access**
     - The name of the user[s] to be given access (full name or login name). If you plan to store and analyze data in a CUBIC project, you should use **your project username**, not personal CUBIC username.
     - The full path to the project you need access to, `/cbica/projects/<project_name>`.
-2. Submit the DUA (if required) and Dr. Satterthwaite’s approval (PDF) — specifying access level, requesting users/project users, and the full project path — to <span style="color: blue;">**help@cbica.upenn.edu**</span>.
-
+    - Any DUA requirements.
+2. Tien will forward your request to the CUBIC admins and notify you when access is granted.
 
 <span style="color: #7556b7;">🌟 **Once you have access to the project, check the `BABS` section on the dataset-specific page to determine whether the dataset was processed with [BABS]({{  site.baseurl }}/docs/imaging/image_babs)** (Dataset-specific links listed [here]({{ site.baseurl }}/docs/datasets)).</span>
 
