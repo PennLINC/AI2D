@@ -34,7 +34,7 @@ The following instruction are intended specifically to get data on CUBIC.
 
 **If `DUA` is NOT `None`**, follow these steps:
 
-1. Send Tien Tong (<span style="color: blue;">**Tien.Tong@PennMedicine.upenn.edu**</span>) a request including the following:
+1. Email [Tien Tong](mailto:Tien.Tong@PennMedicine.upenn.edu) a data request that includes the following:
     - The level of access, in this case, you will need **read-only access**
     - The name of the user[s] to be given access (full name or login name). If you plan to store and analyze data in a CUBIC project, you should use **your project username**, not personal CUBIC username.
     - The full path to the project you need access to, `/cbica/projects/<project_name>`.
