@@ -60,11 +60,11 @@ The following instruction are intended specifically to get data on CUBIC.
 
 ## 2. Dataset processed without BABS
 
-If the dataset was NOT processed with BABS, you can read and work with the data directly.
+If the dataset was NOT processed with [BABS]({{  site.baseurl }}/docs/imaging/image_babs), you can read and work with the data directly.
 
 ## 3. Dataset processed with BABS
 
-If the dataset WAS processed with BABS, you can either [get data WITHOUT `datalad`](#31-get-data-without-datalad), or [get data USING `datalad`](#32-get-data-with-datalad).
+If the dataset WAS processed with [BABS]({{  site.baseurl }}/docs/imaging/image_babs), you can either [get data WITHOUT `datalad`](#31-get-data-without-datalad), or [get data USING `datalad`](#32-get-data-with-datalad).
 
 ### 3.1. Get data without DataLad
 
