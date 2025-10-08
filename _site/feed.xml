@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.3">Jekyll</generator><link href="http://localhost:4000/AI2D/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/AI2D/" rel="alternate" type="text/html" /><updated>2025-09-29T13:52:02-04:00</updated><id>http://localhost:4000/AI2D/feed.xml</id><title type="html">AI2D | PennLINC | Shared Data Resources</title><subtitle>AI2D Shared Data Resources</subtitle><author><name>{&quot;links&quot;=&gt;[{&quot;label&quot;=&gt;&quot;Email&quot;, &quot;icon&quot;=&gt;&quot;fas fa-fw fa-envelope-square&quot;}, {&quot;label&quot;=&gt;&quot;Website&quot;, &quot;icon&quot;=&gt;&quot;fas fa-fw fa-link&quot;}, {&quot;label&quot;=&gt;&quot;Twitter&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-twitter-square&quot;}, {&quot;label&quot;=&gt;&quot;Facebook&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-facebook-square&quot;}, {&quot;label&quot;=&gt;&quot;GitHub&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-github&quot;}, {&quot;label&quot;=&gt;&quot;Instagram&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-instagram&quot;}]}</name></author><entry><title type="html">Midnight Scan Club</title><link href="http://localhost:4000/AI2D/docs/datasets/midnight_scan_club/" rel="alternate" type="text/html" title="Midnight Scan Club" /><published>2025-08-16T00:00:00-04:00</published><updated>2025-08-16T00:00:00-04:00</updated><id>http://localhost:4000/AI2D/docs/datasets/midnight_scan_club</id><content type="html" xml:base="http://localhost:4000/AI2D/docs/datasets/midnight_scan_club/"><![CDATA[<div style="text-align: left;">
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.3">Jekyll</generator><link href="http://localhost:4000/AI2D/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/AI2D/" rel="alternate" type="text/html" /><updated>2025-10-08T16:33:43-04:00</updated><id>http://localhost:4000/AI2D/feed.xml</id><title type="html">AI2D | PennLINC | Shared Data Resources</title><subtitle>AI2D Shared Data Resources</subtitle><author><name>{&quot;links&quot;=&gt;[{&quot;label&quot;=&gt;&quot;Email&quot;, &quot;icon&quot;=&gt;&quot;fas fa-fw fa-envelope-square&quot;}, {&quot;label&quot;=&gt;&quot;Website&quot;, &quot;icon&quot;=&gt;&quot;fas fa-fw fa-link&quot;}, {&quot;label&quot;=&gt;&quot;Twitter&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-twitter-square&quot;}, {&quot;label&quot;=&gt;&quot;Facebook&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-facebook-square&quot;}, {&quot;label&quot;=&gt;&quot;GitHub&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-github&quot;}, {&quot;label&quot;=&gt;&quot;Instagram&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-instagram&quot;}]}</name></author><entry><title type="html">Midnight Scan Club</title><link href="http://localhost:4000/AI2D/docs/datasets/midnight_scan_club/" rel="alternate" type="text/html" title="Midnight Scan Club" /><published>2025-08-16T00:00:00-04:00</published><updated>2025-08-16T00:00:00-04:00</updated><id>http://localhost:4000/AI2D/docs/datasets/midnight_scan_club</id><content type="html" xml:base="http://localhost:4000/AI2D/docs/datasets/midnight_scan_club/"><![CDATA[<div style="text-align: left;">
      <img src="/AI2D/assets/images/logos/WashU.png" style="width: auto; height: 10vw;" />
 </div>
 
@@ -59,14 +59,18 @@
       <th style="font-weight:bold; width:250px;"><a href="/AI2D/docs/imaging/image_curation/">CuBIDS</a></th>
       <th style="font-weight:normal">
         
-          false
+          No
         
       </th>
       <th style="font-weight:normal"></th>
     </tr>
     <tr>
       <th style="font-weight:bold; width:250px;"><a href="/AI2D/docs/imaging/image_babs/">BABS</a></th>
-      <th style="font-weight:normal">false</th>
+      <th style="font-weight:normal">
+        
+          No
+        
+      </th>
       <th style="font-weight:normal"></th>
     </tr>
     <tr>
@@ -310,14 +314,18 @@ Gordon, E. M., Laumann, T. O., Gilmore, A. W., Newbold, D. J., Greene, D. J., Be
       <th style="font-weight:bold; width:250px;"><a href="/AI2D/docs/imaging/image_curation/">CuBIDS</a></th>
       <th style="font-weight:normal">
         
-          false
+          No
         
       </th>
       <th style="font-weight:normal"></th>
     </tr>
     <tr>
       <th style="font-weight:bold; width:250px;"><a href="/AI2D/docs/imaging/image_babs/">BABS</a></th>
-      <th style="font-weight:normal">false</th>
+      <th style="font-weight:normal">
+        
+          No
+        
+      </th>
       <th style="font-weight:normal"></th>
     </tr>
     <tr>
@@ -555,7 +563,7 @@ width:100%; font-size: 18px; border: 1px solid black">
 <tr><th style="font-weight:bold; width: 250px;">Data Use Restriction</th><th style="font-weight:normal"><a href="https://www.humanconnectome.org/study/hcp-young-adult/document/wu-minn-hcp-consortium-open-access-data-use-terms">HCP-YA Data Use Restriction</a></th><th style="font-weight:normal"></th></tr>
 <tr><th style="font-weight:bold; width: 250px;">Sample Size</th><th style="font-weight:normal">1206</th><th style="font-weight:normal"></th></tr>
 <tr><th style="font-weight:bold; width: 250px;">Number of Sessions</th><th style="font-weight:normal">1206</th><th style="font-weight:normal"></th></tr>
-<tr><th style="font-weight:bold; width: 250px;"><a href="/AI2D/docs/imaging/image_curation/">CuBIDS</a></th><th style="font-weight:normal">false</th><th style="font-weight:normal"></th></tr>
+<tr><th style="font-weight:bold; width: 250px;"><a href="/AI2D/docs/imaging/image_curation/">CuBIDS</a></th><th style="font-weight:normal">No</th><th style="font-weight:normal"></th></tr>
 <tr><th style="font-weight:bold; width: 250px;"><a href="/AI2D/docs/imaging/image_babs/">BABS</a></th><th style="font-weight:normal">Yes (<a href="https://www.nature.com/articles/s41597-022-01163-2">FAIRly-big</a>)</th><th style="font-weight:normal"></th></tr>
 <tr><th style="font-weight:bold; width: 250px;">Demographics</th><th style="font-weight:normal">Restricted data. Request access <a href="https://www.humanconnectome.org/study/hcp-young-adult/document/quick-reference-open-access-vs-restricted-data">here</a></th><th style="font-weight:normal"></th></tr>
 <tr><th style="font-weight:bold; width: 250px;">Average Age (y)</th><th style="font-weight:normal">28.8</th><th style="font-weight:normal"></th></tr>
@@ -838,14 +846,18 @@ Van Essen, D. C., Smith, S. M., Barch, D. M., Behrens, T. E., Yacoub, E., Ugurbi
       <th style="font-weight:bold; width:250px;"><a href="/AI2D/docs/imaging/image_curation/">CuBIDS</a></th>
       <th style="font-weight:normal">
         
-          false
+          No
         
       </th>
       <th style="font-weight:normal"></th>
     </tr>
     <tr>
       <th style="font-weight:bold; width:250px;"><a href="/AI2D/docs/imaging/image_babs/">BABS</a></th>
-      <th style="font-weight:normal">false</th>
+      <th style="font-weight:normal">
+        
+          No
+        
+      </th>
       <th style="font-weight:normal"></th>
     </tr>
     <tr>
@@ -1078,14 +1090,18 @@ Pritschet L., Santander T., Taylor C., Layher E., Yu S., Miller M.B., Grafton S.
       <th style="font-weight:bold; width:250px;"><a href="/AI2D/docs/imaging/image_curation/">CuBIDS</a></th>
       <th style="font-weight:normal">
         
-          false
+          No
         
       </th>
       <th style="font-weight:normal"></th>
     </tr>
     <tr>
       <th style="font-weight:bold; width:250px;"><a href="/AI2D/docs/imaging/image_babs/">BABS</a></th>
-      <th style="font-weight:normal">false</th>
+      <th style="font-weight:normal">
+        
+          No
+        
+      </th>
       <th style="font-weight:normal"></th>
     </tr>
     <tr>
@@ -1323,14 +1339,18 @@ This dataset includes 8 participants, each with between 1 and 3 sessions. MR dat
       <th style="font-weight:bold; width:250px;"><a href="/AI2D/docs/imaging/image_curation/">CuBIDS</a></th>
       <th style="font-weight:normal">
         
-          false
+          No
         
       </th>
       <th style="font-weight:normal"></th>
     </tr>
     <tr>
       <th style="font-weight:bold; width:250px;"><a href="/AI2D/docs/imaging/image_babs/">BABS</a></th>
-      <th style="font-weight:normal">false</th>
+      <th style="font-weight:normal">
+        
+          No
+        
+      </th>
       <th style="font-weight:normal"></th>
     </tr>
     <tr>
@@ -1557,14 +1577,20 @@ Taylor Salo and M. Dylan Tisdall and Lia Brodrick and Adam Czernuszenko and Davi
       <th style="font-weight:bold; width:250px;"><a href="/AI2D/docs/imaging/image_curation/">CuBIDS</a></th>
       <th style="font-weight:normal">
         
-          <a href="https://github.com/PennLINC/AI2D/blob/main/_data/study-HBN_desc-CuBIDS_summary.tsv">v1.2.1.dev5+g0be1b9a</a>
+          
+            <a href="https://github.com/PennLINC/AI2D/blob/main/_data/study-HBN_desc-CuBIDS_summary.tsv">Yes (v1.2.1.dev5+g0be1b9a)</a>
+          
         
       </th>
       <th style="font-weight:normal"></th>
     </tr>
     <tr>
       <th style="font-weight:bold; width:250px;"><a href="/AI2D/docs/imaging/image_babs/">BABS</a></th>
-      <th style="font-weight:normal">v0.0.9.dev30+gfa8f813</th>
+      <th style="font-weight:normal">
+        
+          Yes (v0.0.9.dev30+gfa8f813)
+        
+      </th>
       <th style="font-weight:normal"></th>
     </tr>
     <tr>
@@ -2056,14 +2082,20 @@ Alexander LM, Escalera J, Ai L, Andreotti C, Febre K, Mangone A, Vega-Potler N, 
       <th style="font-weight:bold; width:250px;"><a href="/AI2D/docs/imaging/image_curation/">CuBIDS</a></th>
       <th style="font-weight:normal">
         
-          <a href="https://github.com/ReproBrainChart/NKI_BIDS/blob/main/study-NKI_desc-CuBIDS_summary.tsv">v1.0.5</a>
+          
+            <a href="https://github.com/ReproBrainChart/NKI_BIDS/blob/main/study-NKI_desc-CuBIDS_summary.tsv">Yes (v1.0.5)</a>
+          
         
       </th>
       <th style="font-weight:normal"></th>
     </tr>
     <tr>
       <th style="font-weight:bold; width:250px;"><a href="/AI2D/docs/imaging/image_babs/">BABS</a></th>
-      <th style="font-weight:normal">v0.0.9.dev30+gfa8f813</th>
+      <th style="font-weight:normal">
+        
+          Yes (v0.0.9.dev30+gfa8f813)
+        
+      </th>
       <th style="font-weight:normal"></th>
     </tr>
     <tr>
@@ -2571,14 +2603,20 @@ Tobe RH, MacKay-Brandt A, Lim R, Kramer M, Breland MM, Tu L, Tian Y, Trautman KD
       <th style="font-weight:bold; width:250px;"><a href="/AI2D/docs/imaging/image_curation/">CuBIDS</a></th>
       <th style="font-weight:normal">
         
-          <a href="https://github.com/ReproBrainChart/PNC_BIDS/blob/main/study-PNC_desc-CuBIDS_summary.tsv">v1.0.5</a>
+          
+            <a href="https://github.com/ReproBrainChart/PNC_BIDS/blob/main/study-PNC_desc-CuBIDS_summary.tsv">Yes (v1.0.5)</a>
+          
         
       </th>
       <th style="font-weight:normal"></th>
     </tr>
     <tr>
       <th style="font-weight:bold; width:250px;"><a href="/AI2D/docs/imaging/image_babs/">BABS</a></th>
-      <th style="font-weight:normal">v0.0.9.dev30+gfa8f813</th>
+      <th style="font-weight:normal">
+        
+          Yes (v0.0.9.dev30+gfa8f813)
+        
+      </th>
       <th style="font-weight:normal"></th>
     </tr>
     <tr>
@@ -3092,14 +3130,20 @@ RC2MH089983, RC2MH089924, <a href="https://reporter.nih.gov/search/e9_-eAc68EOR6
       <th style="font-weight:bold; width:250px;"><a href="/AI2D/docs/imaging/image_curation/">CuBIDS</a></th>
       <th style="font-weight:normal">
         
-          <a href="https://github.com/ReproBrainChart/CCNP_BIDS/blob/main/study-CCNP_desc-CuBIDS_summary.tsv">v1.0.5</a>
+          
+            <a href="https://github.com/ReproBrainChart/CCNP_BIDS/blob/main/study-CCNP_desc-CuBIDS_summary.tsv">Yes (v1.0.5)</a>
+          
         
       </th>
       <th style="font-weight:normal"></th>
     </tr>
     <tr>
       <th style="font-weight:bold; width:250px;"><a href="/AI2D/docs/imaging/image_babs/">BABS</a></th>
-      <th style="font-weight:normal">v0.0.9.dev30+gfa8f813</th>
+      <th style="font-weight:normal">
+        
+          Yes (v0.0.9.dev30+gfa8f813)
+        
+      </th>
       <th style="font-weight:normal"></th>
     </tr>
     <tr>

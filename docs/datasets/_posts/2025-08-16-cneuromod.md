@@ -26,11 +26,11 @@ number_of_sessions: variable
 sample_size: variable
 cubic_project: open-datasets
 cubic_path: /cbica/projects/open-datasets/datasets/cneuromod
-cubids: No
-cubids_version: No
+cubids: "No"
+cubids_version:
 cubids_url: 
-babs: No
-babs_version: No
+babs: "No"
+babs_version:
 t1w: Yes
 fmri: Yes
 dmri: No
@@ -134,17 +134,27 @@ An overview of the project is available on the [cneuromod website](https://www.c
     <tr>
       <th style="font-weight:bold; width:250px;"><a href="{{ site.baseurl }}/docs/imaging/image_curation/">CuBIDS</a></th>
       <th style="font-weight:normal">
-        {% if page.cubids_url %}
-          <a href="{{ page.cubids_url }}">{{ page.cubids_version }}</a>
+        {% if page.cubids == "Yes" %}
+          {% if page.cubids_url %}
+            <a href="{{ page.cubids_url }}">{{ page.cubids }} ({{ page.cubids_version }})</a>
+          {% else %}
+            {{ page.cubids }} ({{ page.cubids_version }})
+          {% endif %}
         {% else %}
-          {{ page.cubids_version }}
+          {{ page.cubids }}
         {% endif %}
       </th>
       <th style="font-weight:normal"></th>
     </tr>
     <tr>
       <th style="font-weight:bold; width:250px;"><a href="{{ site.baseurl }}/docs/imaging/image_babs/">BABS</a></th>
-      <th style="font-weight:normal">{{ page.babs_version }}</th>
+      <th style="font-weight:normal">
+        {% if page.babs == "Yes" %}
+          {{ page.babs }} ({{ page.babs_version }})
+        {% else %}
+          {{ page.babs }}
+        {% endif %}
+      </th>
       <th style="font-weight:normal"></th>
     </tr>
     <tr>

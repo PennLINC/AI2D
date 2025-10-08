@@ -26,11 +26,11 @@ number_of_sessions: 123
 sample_size: 10
 cubic_project: open-datasets
 cubic_path: /cbica/projects/pennlinc_rbc/datasets/midnight_scan_club
-cubids: No
-cubids_version: No
+cubids: "No"
+cubids_version:
 cubids_url: 
-babs: No
-babs_version: No
+babs: "No"
+babs_version:
 t1w: Yes
 fmri: Yes
 dmri: No
@@ -127,17 +127,27 @@ In addition to the raw data, we also provide several derivatives processed using
     <tr>
       <th style="font-weight:bold; width:250px;"><a href="{{ site.baseurl }}/docs/imaging/image_curation/">CuBIDS</a></th>
       <th style="font-weight:normal">
-        {% if page.cubids_url %}
-          <a href="{{ page.cubids_url }}">{{ page.cubids_version }}</a>
+        {% if page.cubids == "Yes" %}
+          {% if page.cubids_url %}
+            <a href="{{ page.cubids_url }}">{{ page.cubids }} ({{ page.cubids_version }})</a>
+          {% else %}
+            {{ page.cubids }} ({{ page.cubids_version }})
+          {% endif %}
         {% else %}
-          {{ page.cubids_version }}
+          {{ page.cubids }}
         {% endif %}
       </th>
       <th style="font-weight:normal"></th>
     </tr>
     <tr>
       <th style="font-weight:bold; width:250px;"><a href="{{ site.baseurl }}/docs/imaging/image_babs/">BABS</a></th>
-      <th style="font-weight:normal">{{ page.babs_version }}</th>
+      <th style="font-weight:normal">
+        {% if page.babs == "Yes" %}
+          {{ page.babs }} ({{ page.babs_version }})
+        {% else %}
+          {{ page.babs }}
+        {% endif %}
+      </th>
       <th style="font-weight:normal"></th>
     </tr>
     <tr>
