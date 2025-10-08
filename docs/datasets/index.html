@@ -67,6 +67,23 @@ Many labs at Penn use the same large, publicly available neuroimaging datasets. 
   word-wrap: break-word;
 }
 
+/* Header color groups */
+.datasets-table th.structural {
+  background: linear-gradient(135deg, #a8b5ff 0%, #8b9cff 100%);
+}
+
+.datasets-table th.functional {
+  background: linear-gradient(135deg, #9c88ff 0%, #8b5fff 100%);
+}
+
+.datasets-table th.diffusion {
+  background: linear-gradient(135deg, #7c3aed 0%, #6d28d9 100%);
+}
+
+.datasets-table th.fieldmap {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
 .datasets-table th:first-child {
   text-align: left;
   position: sticky;
@@ -153,6 +170,7 @@ Many labs at Penn use the same large, publicly available neuroimaging datasets. 
 .datasets-table .status-error {
   background-color: #f8d7da;
   color: #721c24;
+  font-size: 14px;
 }
 
 .datasets-table .status-na {
@@ -185,15 +203,15 @@ Many labs at Penn use the same large, publicly available neuroimaging datasets. 
           <th colspan="5">Processed</th>
         </tr>
         <tr>
-          <th>T1w</th>
-          <th>fMRI</th>
-          <th>dMRI</th>
-          <th>fmap</th>
-          <th><a href="{{ site.baseurl }}/docs/imaging/image_smriprep/"><u>FreeSurfer</u></a></th>
-          <th><a href="{{ site.baseurl }}/docs/imaging/image_fmriprep/"><u>fMRIPrep</u></a></th>
-          <th><a href="{{ site.baseurl }}/docs/imaging/image_xcpd/"><u>XCP&#8209;D</u></a></th>
-          <th><a href="{{ site.baseurl }}/docs/imaging/image_qsiprep/"><u>QSIPrep</u></a></th>
-          <th><a href="{{ site.baseurl }}/docs/imaging/image_qsirecon/"><u>QSIRecon</u></a></th>
+          <th class="structural">T1w</th>
+          <th class="functional">fMRI</th>
+          <th class="diffusion">dMRI</th>
+          <th class="fieldmap">fmap</th>
+          <th class="structural"><a href="{{ site.baseurl }}/docs/imaging/image_smriprep/"><u>FreeSurfer</u></a></th>
+          <th class="functional"><a href="{{ site.baseurl }}/docs/imaging/image_fmriprep/"><u>fMRIPrep</u></a></th>
+          <th class="functional"><a href="{{ site.baseurl }}/docs/imaging/image_xcpd/"><u>XCP&#8209;D</u></a></th>
+          <th class="diffusion"><a href="{{ site.baseurl }}/docs/imaging/image_qsiprep/"><u>QSIPrep</u></a></th>
+          <th class="diffusion"><a href="{{ site.baseurl }}/docs/imaging/image_qsirecon/"><u>QSIRecon</u></a></th>
         </tr>
       </thead>
       <tbody>
@@ -226,7 +244,7 @@ Many labs at Penn use the same large, publicly available neuroimaging datasets. 
               {% if dataset.t1w == true %}
                 <span class="status-icon status-success">✅</span>
               {% elsif dataset.t1w == false %}
-                <span class="status-icon status-error">❌</span>
+                <span class="status-icon status-error">NA</span>
               {% else %}
                 <span class="status-icon status-na">—</span>
               {% endif %}
@@ -235,7 +253,7 @@ Many labs at Penn use the same large, publicly available neuroimaging datasets. 
               {% if dataset.fmri == true %}
                 <span class="status-icon status-success">✅</span>
               {% elsif dataset.fmri == false %}
-                <span class="status-icon status-error">❌</span>
+                <span class="status-icon status-error">NA</span>
               {% else %}
                 <span class="status-icon status-na">—</span>
               {% endif %}
@@ -244,7 +262,7 @@ Many labs at Penn use the same large, publicly available neuroimaging datasets. 
               {% if dataset.dmri == true %}
                 <span class="status-icon status-success">✅</span>
               {% elsif dataset.dmri == false %}
-                <span class="status-icon status-error">❌</span>
+                <span class="status-icon status-error">NA</span>
               {% else %}
                 <span class="status-icon status-na">—</span>
               {% endif %}
@@ -253,7 +271,7 @@ Many labs at Penn use the same large, publicly available neuroimaging datasets. 
               {% if dataset.fmap == true %}
                 <span class="status-icon status-success">✅</span>
               {% elsif dataset.fmap == false %}
-                <span class="status-icon status-error">❌</span>
+                <span class="status-icon status-error">NA</span>
               {% else %}
                 <span class="status-icon status-na">—</span>
               {% endif %}
@@ -269,28 +287,28 @@ Many labs at Penn use the same large, publicly available neuroimaging datasets. 
               {% if freesurfer_available %}
                 <span class="status-icon status-success">✅</span>
               {% else %}
-                <span class="status-icon status-error">❌</span>
+                <span class="status-icon status-error">NA</span>
               {% endif %}
             </td>
             <td>
               {% if dataset.fmriprep_session and dataset.fmriprep_session != "n/a" and dataset.fmriprep_session != "" %}
                 <span class="status-icon status-success">✅</span>
               {% else %}
-                <span class="status-icon status-error">❌</span>
+                <span class="status-icon status-error">NA</span>
               {% endif %}
             </td>
             <td>
               {% if dataset.xcpd_session and dataset.xcpd_session != "n/a" and dataset.xcpd_session != "" %}
                 <span class="status-icon status-success">✅</span>
               {% else %}
-                <span class="status-icon status-error">❌</span>
+                <span class="status-icon status-error">NA</span>
               {% endif %}
             </td>
             <td>
               {% if dataset.qsiprep_session and dataset.qsiprep_session != "n/a" and dataset.qsiprep_session != "" %}
                 <span class="status-icon status-success">✅</span>
               {% else %}
-                <span class="status-icon status-error">❌</span>
+                <span class="status-icon status-error">NA</span>
               {% endif %}
             </td>
             <td>
@@ -304,7 +322,7 @@ Many labs at Penn use the same large, publicly available neuroimaging datasets. 
               {% if qsirecon_available %}
                 <span class="status-icon status-success">✅</span>
               {% else %}
-                <span class="status-icon status-error">❌</span>
+                <span class="status-icon status-error">NA</span>
               {% endif %}
             </td>
           </tr>
@@ -313,3 +331,10 @@ Many labs at Penn use the same large, publicly available neuroimaging datasets. 
     </table>
   </div>
 </div>
+
+<br>
+<p>
+NA = Not Available
+<br>
+✅ = Available
+</p>
