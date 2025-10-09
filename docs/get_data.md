@@ -81,7 +81,7 @@ This section provides instructions in case you prefer NOT to use DataLad and ins
 
 ### 3.1.1. Prerequisites
 
-<span style="color: #7556b7;">🌟 **Check the dataset-specific page for the paths of the ephemeral clones** (Dataset-specific links listed [here]({{ site.baseurl }}/docs/datasets)).</span>
+<span style="color: #7556b7;">🌟 **Check the dataset-specific page for the paths of the <span style="color: red;">ephemeral clones</span>** (Dataset-specific links listed [here]({{ site.baseurl }}/docs/datasets)).</span>
 
 <span style="color: #7556b7;">🌟 **Download the extraction script:** [unzip_files.sh]({{ site.baseurl }}/scripts/unzip_files.sh).</span> The script supports:
 - Extracting all files from zip archives
@@ -146,7 +146,7 @@ This section provides instructions in case you prefer to use [DataLad](https://h
 
 ### 3.2.1. Prerequisites
 
-<span style="color: #7556b7;">🌟 **Check the dataset-specific page for the paths of the datalad datasets** (Dataset-specific links listed [here]({{ site.baseurl }}/docs/datasets)).</span>
+<span style="color: #7556b7;">🌟 **Check the dataset-specific page for the paths of the <span style="color: red;">datalad datasets</span>** (Dataset-specific links listed [here]({{ site.baseurl }}/docs/datasets)).</span>
 
 <span style="color: #7556b7;">🌟 **Install DataLad**</span>
 
