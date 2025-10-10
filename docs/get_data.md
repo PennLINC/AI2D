@@ -73,6 +73,7 @@ Outputs from our processing pipelines were most of the time zipped to save inode
 This section provides instructions in case you prefer NOT to use DataLad and instead want to unzip the output files directly into your CUBIC project directory.
 
 **Pros:**
+- Much faster than getting data using `datalad`
 - Simple and requires no additional software
 - Lightweight — you extract only the files you need
 
