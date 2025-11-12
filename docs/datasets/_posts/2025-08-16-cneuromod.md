@@ -260,7 +260,7 @@ An overview of the project is available on the [cneuromod website](https://www.c
           {% if pipe == "smriprep" %}
             <a href="{{ site.baseurl }}/docs/imaging/image_smriprep/">sMRIPrep</a>
           {% elsif pipe == "fmriprep" %}
-            <a href="{{ site.baseurl }}/docs/imaging/image_fmriprep/">fMRIprep</a>
+            <a href="{{ site.baseurl }}/docs/imaging/image_fmriprep/">fMRIPrep</a>
           {% endif %}
           {{ page[version_key] }}
         </th>

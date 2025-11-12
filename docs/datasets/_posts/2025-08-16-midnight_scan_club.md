@@ -213,7 +213,7 @@ In addition to the raw data, we also provide several derivatives processed using
           {% if pipe == "freesurfer" %}
             FreeSurfer
           {% elsif pipe == "fmriprep" %}
-            <a href="{{ site.baseurl }}/docs/imaging/image_fmriprep/">fMRIprep</a>
+            <a href="{{ site.baseurl }}/docs/imaging/image_fmriprep/">fMRIPrep</a>
           {% endif %}
           {{ page[version_key] }}
           {% if page[complete_key] and page[session_key] %}
