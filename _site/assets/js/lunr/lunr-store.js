@@ -118,4 +118,10 @@ var store = [{
         "tags": [],
         "url": "/AI2D/docs/datasets/mobile_phenomics_pilot/",
         "teaser": null
+      },{
+        "title": "New AI2D data resource: Shared brain imaging data available on CUBIC",
+        "excerpt":"We are delighted to announce the release of the AI2D shared brain imaging data resource – now openly available to all on CUBIC. The initial release includes 10 studies with over 9,000 sessions. This includes BIDS-curated raw data as well as fully processed sMRI, fMRI, and dMRI data. Check it...","categories": ["docs","blog"],
+        "tags": [],
+        "url": "/AI2D/docs/blog/news/",
+        "teaser": null
       }]
