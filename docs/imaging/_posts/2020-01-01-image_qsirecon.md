@@ -51,7 +51,7 @@ Yeh, Fang-Cheng, Van Jay Wedeen, and Wen-Yih Isaac Tseng. 2010. “Generalized q
 
 
 <br>
-Preprocessed diffusion data (QSIPrep outputs) were further analyzed using **[QSIRecon](https://qsirecon.readthedocs.io/en/latest/)**, which executes reconstruction workflows defined in a `recon-spec` YAML file. This file specifies reconstruction steps, parameter settings, post-processing tools, and software dependencies. We used two `recon-spec` files: one for AutoTrack bundle reconstruction and bundle-wise statistics ([Bundle Stats](#bundle-stats)), and another for whole-brain connectivity matrices ([Inter-regional tractography](#inter-regional-tractography)).
+Preprocessed diffusion data (QSIPrep outputs) were further analyzed using **[QSIRecon](https://qsirecon.readthedocs.io/en/latest/)**, which executes reconstruction workflows defined in a `recon-spec` YAML file. This file specifies reconstruction steps, parameter settings, post-processing tools, and software dependencies. We used a `recon-spec` file for AutoTrack bundle reconstruction and bundle-wise statistics ([Bundle Stats](#bundle-stats)).
 
 ## Bundle Stats
 
@@ -59,14 +59,6 @@ Diffusion tensors were estimated with TORTOISE, and diffusion orientation distri
 
  * `recon-spec` for [single-shell data](https://github.com/PennLINC/AI2D/blob/main/_data/reconspec_singleshell_bundle-stats_v1.yaml)
  * `recon-spec` for [multi-shell data](https://github.com/PennLINC/AI2D/blob/main/_data/reconspec_multishell_bundle-stats_v1.yaml)
-
-## Inter-regional tractography
-
-Streamlines were generated using [**Anatomically-Constrained Tractography (ACT) with Hybrid Surface/Volume Segmentation (HSVS)**](https://qsirecon.readthedocs.io/en/latest/builtin_workflows.html#mrtrix-multishell-msmt-act-hsvs), and connectivity matrices were computed with `tck2connectome`.
-
- * `recon-spec` for [single-shell data](https://github.com/PennLINC/AI2D/blob/main/_data/reconspec_singleshell_whole-brain_v1.yaml)
- * `recon-spec` for [multi-shell data](https://github.com/PennLINC/AI2D/blob/main/_data/reconspec_multishell_whole-brain_v1.yaml)
-
 
 ## Boilerplate
 
