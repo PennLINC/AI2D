@@ -29,7 +29,7 @@
 
 
 
-  <meta property="article:published_time" content="2020-01-01T00:00:00-05:00">
+  <meta property="article:published_time" content="2020-01-01T00:00:00-06:00">
 
 
 
@@ -183,7 +183,7 @@
   <article class="page h-entry" itemscope itemtype="https://schema.org/CreativeWork">
     <meta itemprop="headline" content="Diffusion Data Reconstruction">
     <meta itemprop="description" content="Diffusion Data Reconstruction">
-    <meta itemprop="datePublished" content="2020-01-01T00:00:00-05:00">
+    <meta itemprop="datePublished" content="2020-01-01T00:00:00-06:00">
     
 
     <div class="page__inner-wrap">
@@ -207,7 +207,7 @@
       <span class="page__meta-date">
         <i class="far fa-calendar-alt" aria-hidden="true"></i>
         
-        <time datetime="2020-01-01T00:00:00-05:00">January 1, 2020</time>
+        <time datetime="2020-01-01T00:00:00-06:00">January 1, 2020</time>
       </span>
     
 
@@ -220,7 +220,7 @@
       <span class="page__meta-readtime">
         <i class="far fa-clock" aria-hidden="true"></i>
         
-          3 minute read
+          2 minute read
         
       </span>
     
@@ -277,7 +277,7 @@ Yeh, Fang-Cheng, Van Jay Wedeen, and Wen-Yih Isaac Tseng. 2010. “Generalized q
 </details>
 
 <p><br />
-Preprocessed diffusion data (QSIPrep outputs) were further analyzed using <strong><a href="https://qsirecon.readthedocs.io/en/latest/">QSIRecon</a></strong>, which executes reconstruction workflows defined in a <code class="language-plaintext highlighter-rouge">recon-spec</code> YAML file. This file specifies reconstruction steps, parameter settings, post-processing tools, and software dependencies. We used two <code class="language-plaintext highlighter-rouge">recon-spec</code> files: one for AutoTrack bundle reconstruction and bundle-wise statistics (<a href="#bundle-stats">Bundle Stats</a>), and another for whole-brain connectivity matrices (<a href="#inter-regional-tractography">Inter-regional tractography</a>).</p>
+Preprocessed diffusion data (QSIPrep outputs) were further analyzed using <strong><a href="https://qsirecon.readthedocs.io/en/latest/">QSIRecon</a></strong>, which executes reconstruction workflows defined in a <code class="language-plaintext highlighter-rouge">recon-spec</code> YAML file. This file specifies reconstruction steps, parameter settings, post-processing tools, and software dependencies. We used a <code class="language-plaintext highlighter-rouge">recon-spec</code> file for AutoTrack bundle reconstruction and bundle-wise statistics (<a href="#bundle-stats">Bundle Stats</a>).</p>
 
 <h2 id="bundle-stats">Bundle Stats</h2>
 
@@ -286,15 +286,6 @@ Preprocessed diffusion data (QSIPrep outputs) were further analyzed using <stron
 <ul>
   <li><code class="language-plaintext highlighter-rouge">recon-spec</code> for <a href="https://github.com/PennLINC/AI2D/blob/main/_data/reconspec_singleshell_bundle-stats_v1.yaml">single-shell data</a></li>
   <li><code class="language-plaintext highlighter-rouge">recon-spec</code> for <a href="https://github.com/PennLINC/AI2D/blob/main/_data/reconspec_multishell_bundle-stats_v1.yaml">multi-shell data</a></li>
-</ul>
-
-<h2 id="inter-regional-tractography">Inter-regional tractography</h2>
-
-<p>Streamlines were generated using <a href="https://qsirecon.readthedocs.io/en/latest/builtin_workflows.html#mrtrix-multishell-msmt-act-hsvs"><strong>Anatomically-Constrained Tractography (ACT) with Hybrid Surface/Volume Segmentation (HSVS)</strong></a>, and connectivity matrices were computed with <code class="language-plaintext highlighter-rouge">tck2connectome</code>.</p>
-
-<ul>
-  <li><code class="language-plaintext highlighter-rouge">recon-spec</code> for <a href="https://github.com/PennLINC/AI2D/blob/main/_data/reconspec_singleshell_whole-brain_v1.yaml">single-shell data</a></li>
-  <li><code class="language-plaintext highlighter-rouge">recon-spec</code> for <a href="https://github.com/PennLINC/AI2D/blob/main/_data/reconspec_multishell_whole-brain_v1.yaml">multi-shell data</a></li>
 </ul>
 
 <h2 id="boilerplate">Boilerplate</h2>
@@ -330,7 +321,7 @@ Preprocessed diffusion data (QSIPrep outputs) were further analyzed using <stron
 -->
         <!--
 
-  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Updated:</strong> <time class="dt-published" datetime="2020-01-01T00:00:00-05:00">January 1, 2020</time></p>
+  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Updated:</strong> <time class="dt-published" datetime="2020-01-01T00:00:00-06:00">January 1, 2020</time></p>
 -->
       </footer>
 

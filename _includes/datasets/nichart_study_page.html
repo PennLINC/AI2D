@@ -1,0 +1,227 @@
+{% comment %}
+Reusable dataset/study page renderer that pulls values from `_data/nichart_data_overview.csv`.
+
+Usage in a dataset post/page:
+
+---
+title: "OASIS"
+layout: single
+categories: datasets
+study_abbr: OASIS
+---
+{% include datasets/nichart_study_page.html %}
+
+Optionally override lookup key:
+{% include datasets/nichart_study_page.html study_abbr="OASIS" %}
+{% endcomment %}
+
+{% assign study_abbr = include.study_abbr | default: page.study_abbr | default: page.excerpt | default: page.title %}
+{% assign rows = site.data.nichart_data_overview | where: "Study_abbr", study_abbr %}
+{% assign row = rows | first %}
+
+{% if row == nil %}
+<div class="notice--warning">
+  <strong>Dataset metadata not found.</strong>
+  No row in <code>_data/nichart_data_overview.csv</code> matched <code>Study_abbr={{ study_abbr }}</code>.
+</div>
+{% else %}
+{% assign website_url = row["Website"] | default: page.study_website %}
+{% assign manuscript_url = row["Manuscript"] | default: page.data_paper %}
+{% assign dua_url = row["DUA"] | default: page.dua %}
+{% assign primary_desc = row["Primary_Description"] %}
+{% assign disease_tags = row["Disease_Tags"] %}
+{% assign study_full = row["Study_full"] %}
+{% assign study_overview = row["Study_Overview"] %}
+{% assign country_region = row["Country/Region"] %}
+{% assign pct_female = row["% Female"] | default: page.p_female %}
+{% assign age_mean_sd = row["Age (mean ± SD)"] | default: page.age_avg %}
+
+### About the dataset
+
+{% if primary_desc and primary_desc != "" %}
+**Primary description:** {{ primary_desc }}
+{% endif %}
+
+{% if study_overview and study_overview != "" %}
+{{ study_overview }}
+{% endif %}
+
+<div class="table" align="center">
+  <table style="text-align:center; width:100%; font-size:18px; border:1px solid black">
+    <tr>
+      <th style="font-weight:bold; width:250px;">Study</th>
+      <th style="font-weight:normal">{{ study_full | default: page.title }}</th>
+      <th style="font-weight:normal"></th>
+    </tr>
+
+    {% if website_url and website_url != "" %}
+    <tr>
+      <th style="font-weight:bold; width:250px;">Study Website</th>
+      <th style="font-weight:normal"><a href="{{ website_url }}">{{ study_abbr }}</a></th>
+      <th style="font-weight:normal"></th>
+    </tr>
+    {% endif %}
+
+    {% if manuscript_url and manuscript_url != "" %}
+    <tr>
+      <th style="font-weight:bold; width:250px;">Manuscript</th>
+      <th style="font-weight:normal"><a href="{{ manuscript_url }}">{{ manuscript_url }}</a></th>
+      <th style="font-weight:normal"></th>
+    </tr>
+    {% endif %}
+
+    {% if dua_url and dua_url != "" %}
+    <tr>
+      <th style="font-weight:bold; width:250px;">DUA</th>
+      <th style="font-weight:normal">
+        {% if dua_url contains "http" %}
+          <a href="{{ dua_url }}">{{ dua_url }}</a>
+        {% else %}
+          {{ dua_url }}
+        {% endif %}
+      </th>
+      <th style="font-weight:normal"></th>
+    </tr>
+    {% endif %}
+
+    {% if country_region and country_region != "" %}
+    <tr>
+      <th style="font-weight:bold; width:250px;">Country/Region</th>
+      <th style="font-weight:normal">{{ country_region }}</th>
+      <th style="font-weight:normal"></th>
+    </tr>
+    {% endif %}
+
+    {% if disease_tags and disease_tags != "" %}
+    <tr>
+      <th style="font-weight:bold; width:250px;">Disease Tags</th>
+      <th style="font-weight:normal">{{ disease_tags }}</th>
+      <th style="font-weight:normal"></th>
+    </tr>
+    {% endif %}
+
+    {% if age_mean_sd and age_mean_sd != "" %}
+    <tr>
+      <th style="font-weight:bold; width:250px;">Age (mean ± SD)</th>
+      <th style="font-weight:normal">{{ age_mean_sd }}</th>
+      <th style="font-weight:normal"></th>
+    </tr>
+    {% endif %}
+
+    {% if pct_female and pct_female != "" %}
+    <tr>
+      <th style="font-weight:bold; width:250px;">% Female</th>
+      <th style="font-weight:normal">{{ pct_female }}</th>
+      <th style="font-weight:normal"></th>
+    </tr>
+    {% endif %}
+
+    {% comment %}=== Standard rendering for all datasets (single-row values) ==={% endcomment %}
+    {% assign age_range = row["age_range"] | default: page.age_range %}
+    {% assign n_subject = row["N_subject"] | default: page.sample_size %}
+    {% assign n_mr_session = row["N_MR_session"] | default: page.number_of_sessions %}
+    {% assign cubic_path = row["CUBIC"] | default: page.cubic_path %}
+
+    {% if age_range and age_range != "" %}
+    <tr>
+      <th style="font-weight:bold; width:250px;">Age Range</th>
+      <th style="font-weight:normal">{{ age_range }}</th>
+      <th style="font-weight:normal"></th>
+    </tr>
+    {% endif %}
+
+    {% if n_subject and n_subject != "" %}
+    <tr>
+      <th style="font-weight:bold; width:250px;">N Subjects</th>
+      <th style="font-weight:normal">{{ n_subject }}</th>
+      <th style="font-weight:normal"></th>
+    </tr>
+    {% endif %}
+
+    {% if n_mr_session and n_mr_session != "" %}
+    <tr>
+      <th style="font-weight:bold; width:250px;">N MR Sessions</th>
+      <th style="font-weight:normal">{{ n_mr_session }}</th>
+      <th style="font-weight:normal"></th>
+    </tr>
+    {% endif %}
+
+    {% if cubic_path and cubic_path != "" %}
+    <tr>
+      <th style="font-weight:bold; width:250px;">CUBIC</th>
+      <th style="font-weight:normal">
+        <div id="{{ study_abbr | downcase }}-cubic" class="copy-container" style="border: 1px solid #6c6edc; border-radius: 3px; padding: 6px; background-color: #f8f9fa;">
+          <span class="copy-text"><code>{{ cubic_path }}</code></span>
+          <button class="copy-button" onclick="copyToClipboard('{{ study_abbr | downcase }}-cubic')">Copy</button>
+        </div>
+      </th>
+      <th style="font-weight:normal"></th>
+    </tr>
+    {% endif %}
+
+    {% assign dlmuse_path = row["DLMUSE"] %}
+    {% assign dlmuse_version = row["DLMUSE_version"] %}
+    {% assign dlmuse_complete = row["DLMUSE_N_ses_completed"] %}
+    {% assign dlwmls_path = row["DLWMLS"] %}
+    {% assign dlwmls_version = row["DLWMLS_version"] %}
+    {% assign dlwmls_complete = row["DLWMLS_N_ses_completed"] %}
+    {% assign fmriprep_path = row["fMRIPrep"] %}
+    {% assign fmriprep_version = row["fMRIPrep_version"] %}
+    {% assign fmriprep_complete = row["fMRIPrep_N_ses_completed"] %}
+    {% assign xcpd_path = row["XCP-D"] %}
+    {% assign xcpd_version = row["XCP-D_version"] %}
+    {% assign xcpd_complete = row["XCP-D_N_ses_completed"] %}
+
+    {% assign pipelines = "" | split: "," %}
+    {% if dlmuse_path and dlmuse_path != "" %}{% assign pipelines = pipelines | push: "DLMUSE" %}{% endif %}
+    {% if dlwmls_path and dlwmls_path != "" %}{% assign pipelines = pipelines | push: "DLWMLS" %}{% endif %}
+    {% if fmriprep_path and fmriprep_path != "" %}{% assign pipelines = pipelines | push: "fMRIPrep" %}{% endif %}
+    {% if xcpd_path and xcpd_path != "" %}{% assign pipelines = pipelines | push: "XCP-D" %}{% endif %}
+
+    {% for p in pipelines %}
+      {% assign p_key = p %}
+      {% assign p_id = p | downcase | replace: ".", "-" | replace: " ", "-" %}
+      {% if p == "DLMUSE" %}
+        {% assign p_path = dlmuse_path %}
+        {% assign p_version = dlmuse_version %}
+        {% assign p_complete = dlmuse_complete %}
+      {% elsif p == "DLWMLS" %}
+        {% assign p_path = dlwmls_path %}
+        {% assign p_version = dlwmls_version %}
+        {% assign p_complete = dlwmls_complete %}
+      {% elsif p == "fMRIPrep" %}
+        {% assign p_path = fmriprep_path %}
+        {% assign p_version = fmriprep_version %}
+        {% assign p_complete = fmriprep_complete %}
+      {% elsif p == "XCP-D" %}
+        {% assign p_path = xcpd_path %}
+        {% assign p_version = xcpd_version %}
+        {% assign p_complete = xcpd_complete %}
+      {% endif %}
+
+      <tr>
+        <th style="font-weight:bold; width:250px;">
+          {{ p_key }}
+          {% if p_version and p_version != "" %}
+            <span style="font-weight:normal;">({{ p_version }})</span>
+          {% endif %}
+          {% if p_complete and p_complete != "" and n_mr_session and n_mr_session != "" %}
+            <br>
+            <span style="font-weight:normal;">({{ p_complete }}/{{ n_mr_session }} complete)</span>
+          {% endif %}
+        </th>
+        <th style="font-weight:normal">
+          <div id="{{ study_abbr | downcase }}-{{ p_id }}-path" class="copy-container" style="border: 1px solid #6c6edc; border-radius: 3px; padding: 6px; background-color: #f8f9fa;">
+            <span class="copy-text"><code>{{ p_path }}</code></span>
+            <button class="copy-button" onclick="copyToClipboard('{{ study_abbr | downcase }}-{{ p_id }}-path')">Copy</button>
+          </div>
+        </th>
+        <th style="font-weight:normal"></th>
+      </tr>
+    {% endfor %}
+  </table>
+</div>
+
+{% include datasets/copy_widgets.html %}
+{% endif %}
+

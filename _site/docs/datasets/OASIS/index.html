@@ -1,0 +1,838 @@
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.24.0 by Michael Rose
+  Copyright 2013-2020 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
+-->
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8">
+
+<!-- begin _includes/seo.html --><title>Open Access Series of Imaging Studies</title>
+<meta name="description" content="OASIS">
+
+
+
+<meta property="og:type" content="article">
+<meta property="og:locale" content="en_US">
+<meta property="og:site_name" content="AI2D | PennLINC | Shared Data Resources">
+<meta property="og:title" content="Open Access Series of Imaging Studies">
+<meta property="og:url" content="http://localhost:4000/AI2D/docs/datasets/OASIS/">
+
+
+  <meta property="og:description" content="OASIS">
+
+
+
+
+
+
+
+  <meta property="article:published_time" content="2025-12-16T00:00:00-06:00">
+
+
+
+
+
+  
+
+  
+
+
+<link rel="canonical" href="http://localhost:4000/AI2D/docs/datasets/OASIS/">
+
+
+
+
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    
+      "@type": "Person",
+      "name": "AI2D",
+      "url": "http://localhost:4000/AI2D/"
+    
+  }
+</script>
+
+
+
+
+
+
+
+<!-- end _includes/seo.html -->
+
+
+
+  <link href="/AI2D/feed.xml" type="application/atom+xml" rel="alternate" title="AI2D | PennLINC | Shared Data Resources Feed">
+
+
+<!-- https://t.co/dKP3o1e -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<link rel="stylesheet" href="/AI2D/assets/css/main.css">
+<link rel="stylesheet" href="/AI2D/assets/css/custom.css">
+<link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css">
+<!-- Fonts via Google -->
+<link href="https://fonts.googleapis.com/css?family=Lato:300italic,700italic,300,700" rel="stylesheet" type="text/css"/>
+
+
+
+    <!-- start custom head snippets -->
+
+<!-- insert favicons. use https://realfavicongenerator.net/ -->
+
+<!-- end custom head snippets -->
+
+  </head>
+
+  <body class="layout--single">
+    <nav class="skip-links">
+  <ul>
+    <li><a href="#site-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
+    <li><a href="#main" class="screen-reader-shortcut">Skip to content</a></li>
+    <li><a href="#footer" class="screen-reader-shortcut">Skip to footer</a></li>
+  </ul>
+</nav>
+
+    
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top" role="navigation">
+    <div class="container d-flex justify-content-between">
+        <a class="navbar-brand" href="/AI2D/">
+            
+                <a class="site-logo" href="/AI2D/"><img src="/AI2D/assets/images/logos/ai2d_pennlinc_logo.png" alt="AI2D | PennLINC | Shared Data Resources"></a>
+            
+        </a>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarToggler">
+            <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="/AI2D/docs/datasets">Datasets</a>
+                        </li>
+                    
+                
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" id="navbarDropdown-Tools" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Tools
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown-Tools">
+                                
+                                    <a class="nav-link dropdown-item" href="/AI2D/docs/imaging/image_curation">Data Curation: CuBIDS</a>
+                                
+                                    <a class="nav-link dropdown-item" href="/AI2D/docs/imaging/image_babs">Data Processing: BABS</a>
+                                
+                                    <a class="nav-link dropdown-item" href="/AI2D/docs/imaging/image_ncdlmuse">NiChart_DLMUSE</a>
+                                
+                                    <a class="nav-link dropdown-item" href="/AI2D/docs/imaging/image_smriprep">sMRIPrep</a>
+                                
+                                    <a class="nav-link dropdown-item" href="/AI2D/docs/imaging/image_fmriprep">fMRIPrep</a>
+                                
+                                    <a class="nav-link dropdown-item" href="/AI2D/docs/imaging/image_xcpd">XCP-D</a>
+                                
+                                    <a class="nav-link dropdown-item" href="/AI2D/docs/imaging/image_qsiprep">QSIPrep</a>
+                                
+                                    <a class="nav-link dropdown-item" href="/AI2D/docs/imaging/image_qsirecon">QSIRecon</a>
+                                
+                            </div>
+                        </li>
+                    
+                
+                        <li class="nav-item">
+                            <a class="nav-link" href="/AI2D/docs/team">Team</a>
+                        </li>
+                    
+                
+                        <li class="nav-item">
+                            <a class="nav-link" href="/AI2D/docs/blog/index">News</a>
+                        </li>
+                    
+                
+                        <li class="nav-item">
+                            <a class="nav-link" href="/AI2D/docs/get_data"><em style="font-style:normal; font-weight:bold; color:#a594d1;"> Get Data </em></a>
+                        </li>
+                    
+                
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+    <div class="initial-content">
+      
+
+
+
+
+<div id="main" role="main">
+  
+
+  <article class="page h-entry" itemscope itemtype="https://schema.org/CreativeWork">
+    <meta itemprop="headline" content="Open Access Series of Imaging Studies">
+    <meta itemprop="description" content="OASIS">
+    <meta itemprop="datePublished" content="2025-12-16T00:00:00-06:00">
+    
+
+    <div class="page__inner-wrap">
+      
+        <header>
+          <br/><h1 id="page-title" class="page__title p-name" itemprop="headline">
+            <a href="http://localhost:4000/AI2D/docs/datasets/OASIS/" class="u-url" itemprop="url">Open Access Series of Imaging Studies
+</a>
+          </h1>
+          
+          <!--
+
+
+  <p class="page__meta">
+    
+
+    <span class="page__meta-sep"></span>
+
+    
+      
+      <span class="page__meta-date">
+        <i class="far fa-calendar-alt" aria-hidden="true"></i>
+        
+        <time datetime="2025-12-16T00:00:00-06:00">December 16, 2025</time>
+      </span>
+    
+
+    <span class="page__meta-sep"></span>
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          1 minute read
+        
+      </span>
+    
+  </p>
+
+-->
+        </header>
+      
+
+      <section class="page__content e-content" itemprop="text">
+        
+        
+<h3 id="about-the-dataset">About the dataset</h3>
+
+<p><strong>Primary description:</strong> Aging and Alzheimer’s neuroimaging</p>
+
+<p>OASIS-3 is a longitudinal neuroimaging, clinical, cognitive, and biomarker dataset for normal aging and Alzheimer’s Disease. OASIS-3 is a retrospective compilation of data for 1378 participants that were collected across several ongoing projects through the WUSTL Knight ADRC over the course of 30years. OASIS-4 consists of a clinical cohort who was evaluated for memory disorders and dementia. OASIS-4 is a unique dataset and not an update to the OASIS-3. The OASIS datasets hosted by central.xnat.org provide the community with open access to a significant database of neuroimaging and processed imaging data across a broad demographic, cognitive, and genetic spectrum an easily accessible platform for use in neuroimaging, clinical, and cognitive research on normal aging and cognitive decline. All data is available via [www.oasis-brains.org].</p>
+
+<div class="table" align="center">
+  <table style="text-align:center; width:100%; font-size:18px; border:1px solid black">
+    <tr>
+      <th style="font-weight:bold; width:250px;">Study</th>
+      <th style="font-weight:normal">Open Access Series of Imaging Studies</th>
+      <th style="font-weight:normal"></th>
+    </tr>
+
+    
+    <tr>
+      <th style="font-weight:bold; width:250px;">Study Website</th>
+      <th style="font-weight:normal"><a href="https://www.oasis-brains.org/">OASIS</a></th>
+      <th style="font-weight:normal"></th>
+    </tr>
+    
+
+    
+    <tr>
+      <th style="font-weight:bold; width:250px;">Manuscript</th>
+      <th style="font-weight:normal"><a href="https://doi.org/10.1162/jocn.2007.19.9.1498">https://doi.org/10.1162/jocn.2007.19.9.1498</a></th>
+      <th style="font-weight:normal"></th>
+    </tr>
+    
+
+    
+    <tr>
+      <th style="font-weight:bold; width:250px;">DUA</th>
+      <th style="font-weight:normal">
+        
+          <a href="https://sites.wustl.edu/oasisbrains/home/access/">https://sites.wustl.edu/oasisbrains/home/access/</a>
+        
+      </th>
+      <th style="font-weight:normal"></th>
+    </tr>
+    
+
+    
+    <tr>x
+      <th style="font-weight:bold; width:250px;">Country/Region</th>
+      <th style="font-weight:normal">USA</th>
+      <th style="font-weight:normal"></th>
+    </tr>
+    
+
+    
+    <tr>
+      <th style="font-weight:bold; width:250px;">Disease Tags</th>
+      <th style="font-weight:normal">alzheimers</th>
+      <th style="font-weight:normal"></th>
+    </tr>
+    
+
+    
+    <tr>
+      <th style="font-weight:bold; width:250px;">Age (mean ± SD)</th>
+      <th style="font-weight:normal">74.4 ± 11.0</th>
+      <th style="font-weight:normal"></th>
+    </tr>
+    
+
+    
+    <tr>
+      <th style="font-weight:bold; width:250px;">% Female</th>
+      <th style="font-weight:normal">53.9</th>
+      <th style="font-weight:normal"></th>
+    </tr>
+    
+
+    
+    
+    
+      
+      
+      
+      
+
+      <tr>
+        <th colspan="3" style="font-weight:bold; background-color: #e8eaf6; padding: 10px;">OASIS3</th>
+      </tr>
+
+      
+      
+      
+        
+        
+          
+            
+            <tr>
+              <th style="font-weight:bold; width:250px;">Age Range</th>
+              <th style="font-weight:normal">42-95</th>
+              <th style="font-weight:normal"></th>
+            </tr>
+          
+        
+          
+        
+      
+
+      
+      
+      
+        
+        
+          
+            
+            <tr>
+              <th style="font-weight:bold; width:250px;">N Subjects</th>
+              <th style="font-weight:normal">1379</th>
+              <th style="font-weight:normal"></th>
+            </tr>
+          
+        
+          
+        
+      
+
+      
+      
+      <tr>
+        <th style="font-weight:bold; width:250px;">N MR Sessions</th>
+        <th style="font-weight:normal">2842</th>
+        <th style="font-weight:normal"></th>
+      </tr>
+      
+
+      
+      
+      
+
+      
+      
+      
+        
+        
+        
+
+        
+        
+        
+
+        
+          
+          
+            
+              
+              
+
+              
+              
+              
+
+              
+              
+              
+
+              <tr>
+                <th style="font-weight:bold; width:250px;">
+                  DLMUSE
+                  
+                    <span style="font-weight:normal;">(version ???)</span>
+                  
+                  
+                    <br />
+                    <span style="font-weight:normal;">(2162/2842 complete)</span>
+                  
+                </th>
+                <th style="font-weight:normal">
+                  <div id="oasis3-dlmuse" class="copy-container" style="border: 1px solid #6c6edc; border-radius: 3px; padding: 6px; background-color: #f8f9fa;">
+                    <span class="copy-text"><code>/cbica/projects/OASIS/OASIS3/Pipelines/OASIS3_DLMUSE_2025/Results/DLMUSE_Volumes.csv</code></span>
+                    <button class="copy-button" onclick="copyToClipboard('oasis3-dlmuse')">Copy</button>
+                  </div>
+                </th>
+                <th style="font-weight:normal"></th>
+              </tr>
+            
+          
+            
+          
+        
+      
+        
+        
+        
+
+        
+        
+        
+
+        
+          
+          
+            
+              
+              
+
+              
+              
+              
+
+              
+              
+              
+
+              <tr>
+                <th style="font-weight:bold; width:250px;">
+                  DLWMLS
+                  
+                    <span style="font-weight:normal;">(version ???)</span>
+                  
+                  
+                    <br />
+                    <span style="font-weight:normal;">(736/2842 complete)</span>
+                  
+                </th>
+                <th style="font-weight:normal">
+                  <div id="oasis3-dlwmls" class="copy-container" style="border: 1px solid #6c6edc; border-radius: 3px; padding: 6px; background-color: #f8f9fa;">
+                    <span class="copy-text"><code>/cbica/projects/OASIS/OASIS3/Pipelines/OASIS3_DLWMLS_2025/Results/OASIS3_DLWMLS_DLMUSE_Segmented_Volumes.csv</code></span>
+                    <button class="copy-button" onclick="copyToClipboard('oasis3-dlwmls')">Copy</button>
+                  </div>
+                </th>
+                <th style="font-weight:normal"></th>
+              </tr>
+            
+          
+        
+      
+        
+        
+        
+
+        
+        
+        
+
+        
+          
+          
+            
+              
+              
+
+              
+              
+              
+
+              
+              
+              
+
+              <tr>
+                <th style="font-weight:bold; width:250px;">
+                  fMRIPrep
+                  
+                    <span style="font-weight:normal;">(23.1.3)</span>
+                  
+                  
+                    <br />
+                    <span style="font-weight:normal;">(2406/2842 complete)</span>
+                  
+                </th>
+                <th style="font-weight:normal">
+                  <div id="oasis3-fmriprep" class="copy-container" style="border: 1px solid #6c6edc; border-radius: 3px; padding: 6px; background-color: #f8f9fa;">
+                    <span class="copy-text"><code>/cbica/projects/OASIS/OASIS3/Pipelines/OASIS3_fMRI_Sep2023/Protocols</code></span>
+                    <button class="copy-button" onclick="copyToClipboard('oasis3-fmriprep')">Copy</button>
+                  </div>
+                </th>
+                <th style="font-weight:normal"></th>
+              </tr>
+            
+          
+        
+      
+        
+        
+        
+
+        
+        
+        
+
+        
+          
+          
+            
+              
+              
+
+              
+              
+              
+
+              
+              
+              
+
+              <tr>
+                <th style="font-weight:bold; width:250px;">
+                  XCP-D
+                  
+                    <span style="font-weight:normal;">(0.7.1rc6)</span>
+                  
+                  
+                    <br />
+                    <span style="font-weight:normal;">(1789/2842 complete)</span>
+                  
+                </th>
+                <th style="font-weight:normal">
+                  <div id="oasis3-xcp-d" class="copy-container" style="border: 1px solid #6c6edc; border-radius: 3px; padding: 6px; background-color: #f8f9fa;">
+                    <span class="copy-text"><code>/cbica/projects/OASIS/OASIS3/Pipelines/OASIS3_fMRI_Sep2023/Protocols/XCP</code></span>
+                    <button class="copy-button" onclick="copyToClipboard('oasis3-xcp-d')">Copy</button>
+                  </div>
+                </th>
+                <th style="font-weight:normal"></th>
+              </tr>
+            
+          
+        
+      
+    
+      
+      
+      
+      
+
+      <tr>
+        <th colspan="3" style="font-weight:bold; background-color: #e8eaf6; padding: 10px;">OASIS4</th>
+      </tr>
+
+      
+      
+      
+        
+        
+          
+        
+          
+            
+            <tr>
+              <th style="font-weight:bold; width:250px;">Age Range</th>
+              <th style="font-weight:normal">21-94</th>
+              <th style="font-weight:normal"></th>
+            </tr>
+          
+        
+      
+
+      
+      
+      
+        
+        
+          
+        
+          
+            
+            <tr>
+              <th style="font-weight:bold; width:250px;">N Subjects</th>
+              <th style="font-weight:normal">663</th>
+              <th style="font-weight:normal"></th>
+            </tr>
+          
+        
+      
+
+      
+      
+      <tr>
+        <th style="font-weight:bold; width:250px;">N MR Sessions</th>
+        <th style="font-weight:normal">676</th>
+        <th style="font-weight:normal"></th>
+      </tr>
+      
+
+      
+      
+      
+
+      
+      
+      
+        
+        
+        
+
+        
+        
+        
+
+        
+          
+          
+            
+          
+            
+              
+              
+
+              
+              
+              
+
+              
+              
+              
+
+              <tr>
+                <th style="font-weight:bold; width:250px;">
+                  DLMUSE
+                  
+                    <span style="font-weight:normal;">(version ???)</span>
+                  
+                  
+                    <br />
+                    <span style="font-weight:normal;">(671/676 complete)</span>
+                  
+                </th>
+                <th style="font-weight:normal">
+                  <div id="oasis4-dlmuse" class="copy-container" style="border: 1px solid #6c6edc; border-radius: 3px; padding: 6px; background-color: #f8f9fa;">
+                    <span class="copy-text"><code>/cbica/projects/OASIS/OASIS4/Pipelines/OASIS4_DLMUSE_2025/Results/DLMUSE_Volumes.csv</code></span>
+                    <button class="copy-button" onclick="copyToClipboard('oasis4-dlmuse')">Copy</button>
+                  </div>
+                </th>
+                <th style="font-weight:normal"></th>
+              </tr>
+            
+          
+        
+      
+        
+        
+        
+
+        
+        
+        
+
+        
+      
+        
+        
+        
+
+        
+        
+        
+
+        
+      
+        
+        
+        
+
+        
+        
+        
+
+        
+      
+    
+  </table>
+</div>
+
+<style>
+.copy-container { display: flex; align-items: center; justify-content: space-between; gap: 10px; }
+.copy-text { flex: 1; word-break: break-all; }
+.copy-button {
+  background-color: rgb(108, 110, 220);
+  color: white;
+  border: none;
+  padding: 4px 8px;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 18px;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.copy-button:hover { background-color: rgb(104, 106, 235); }
+.copy-button:active { background-color: rgb(84, 86, 215); }
+</style>
+
+<script>
+function copyToClipboard(elementId) {
+  var element = document.getElementById(elementId);
+  if (!element) return;
+  var textToCopy = element.querySelector('.copy-text').textContent;
+  var textarea = document.createElement('textarea');
+  textarea.value = textToCopy;
+  document.body.appendChild(textarea);
+  textarea.select();
+  document.execCommand('copy');
+  document.body.removeChild(textarea);
+  var button = element.querySelector('.copy-button');
+  if (!button) return;
+  var originalText = button.textContent;
+  button.textContent = 'Copied!';
+  button.style.backgroundColor = '#28a745';
+  setTimeout(function() {
+    button.textContent = originalText;
+    button.style.backgroundColor = 'rgb(108, 110, 220)';
+  }, 1000);
+}
+</script>
+
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        <!--
+
+
+  
+
+
+  
+
+  <p class="page__taxonomy">
+    <strong><i class="fas fa-fw fa-folder-open" aria-hidden="true"></i> Categories: </strong>
+    <span itemprop="keywords">
+    
+      <a href="/AI2D/categories/#datasets" class="page__taxonomy-item p-category" rel="tag">datasets</a><span class="sep">, </span>
+    
+      <a href="/AI2D/categories/#docs" class="page__taxonomy-item p-category" rel="tag">docs</a>
+    
+    </span>
+  </p>
+
+-->
+        <!--
+
+  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Updated:</strong> <time class="dt-published" datetime="2025-12-16T00:00:00-06:00">December 16, 2025</time></p>
+-->
+      </footer>
+
+      
+
+      <!--
+  <nav class="pagination">
+    
+      <a href="/AI2D/docs/blog/news/" class="pagination--pager" title="New AI2D data resource: Shared brain imaging data available on CUBIC
+">Previous</a>
+    
+    
+      <a href="#" class="pagination--pager disabled">Next</a>
+    
+  </nav>
+-->
+    </div>
+
+    
+  </article>
+
+  
+  
+</div>
+
+    </div>
+
+    
+
+    <div id="footer" class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+<div class="page__footer fixed-bottom">
+  <div class="container">
+      <div class="row">
+          <div class="col-12 text-right">
+              <a href="/AI2D/docs/community/get_support/">Get Support</a>
+          </div>
+      </div>
+  </div>
+</div>
+
+      </footer>
+    </div>
+
+    
+  <script src="/AI2D/assets/js/main.min.js"></script>
+
+
+
+
+
+
+
+
+
+
+  </body>
+</html>
