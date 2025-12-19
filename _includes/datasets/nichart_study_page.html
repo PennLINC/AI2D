@@ -148,7 +148,7 @@ Optionally override lookup key:
 
     {% if cubic_path and cubic_path != "" %}
     <tr>
-      <th style="font-weight:bold; width:250px;">CUBIC</th>
+      <th style="font-weight:bold; width:250px;">CUBIC Project</th>
       <th style="font-weight:normal">
         <div id="{{ study_abbr | downcase }}-cubic" class="copy-container" style="border: 1px solid #6c6edc; border-radius: 3px; padding: 6px; background-color: #f8f9fa;">
           <span class="copy-text"><code>{{ cubic_path }}</code></span>
@@ -223,5 +223,15 @@ Optionally override lookup key:
 </div>
 
 {% include datasets/copy_widgets.html %}
+
+{% assign grants = row["Grants"] %}
+{% if grants and grants != "" %}
+<br>
+
+*Funding*
+<br>
+{{ grants }}
+{% endif %}
+
 {% endif %}
 

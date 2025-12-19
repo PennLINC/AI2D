@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.3">Jekyll</generator><link href="http://localhost:4000/AI2D/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/AI2D/" rel="alternate" type="text/html" /><updated>2025-12-17T02:17:06-06:00</updated><id>http://localhost:4000/AI2D/feed.xml</id><title type="html">AI2D | PennLINC | Shared Data Resources</title><subtitle>AI2D Shared Data Resources</subtitle><author><name>{&quot;links&quot;=&gt;[{&quot;label&quot;=&gt;&quot;Email&quot;, &quot;icon&quot;=&gt;&quot;fas fa-fw fa-envelope-square&quot;}, {&quot;label&quot;=&gt;&quot;Website&quot;, &quot;icon&quot;=&gt;&quot;fas fa-fw fa-link&quot;}, {&quot;label&quot;=&gt;&quot;Twitter&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-twitter-square&quot;}, {&quot;label&quot;=&gt;&quot;Facebook&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-facebook-square&quot;}, {&quot;label&quot;=&gt;&quot;GitHub&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-github&quot;}, {&quot;label&quot;=&gt;&quot;Instagram&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-instagram&quot;}]}</name></author><entry><title type="html">Open Access Series of Imaging Studies</title><link href="http://localhost:4000/AI2D/docs/datasets/OASIS/" rel="alternate" type="text/html" title="Open Access Series of Imaging Studies" /><published>2025-12-16T00:00:00-06:00</published><updated>2025-12-16T00:00:00-06:00</updated><id>http://localhost:4000/AI2D/docs/datasets/OASIS</id><content type="html" xml:base="http://localhost:4000/AI2D/docs/datasets/OASIS/"><![CDATA[<h3 id="about-the-dataset">About the dataset</h3>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.3">Jekyll</generator><link href="http://localhost:4000/AI2D/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/AI2D/" rel="alternate" type="text/html" /><updated>2025-12-19T16:24:57-06:00</updated><id>http://localhost:4000/AI2D/feed.xml</id><title type="html">AI2D | PennLINC | Shared Data Resources</title><subtitle>AI2D Shared Data Resources</subtitle><author><name>{&quot;links&quot;=&gt;[{&quot;label&quot;=&gt;&quot;Email&quot;, &quot;icon&quot;=&gt;&quot;fas fa-fw fa-envelope-square&quot;}, {&quot;label&quot;=&gt;&quot;Website&quot;, &quot;icon&quot;=&gt;&quot;fas fa-fw fa-link&quot;}, {&quot;label&quot;=&gt;&quot;Twitter&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-twitter-square&quot;}, {&quot;label&quot;=&gt;&quot;Facebook&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-facebook-square&quot;}, {&quot;label&quot;=&gt;&quot;GitHub&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-github&quot;}, {&quot;label&quot;=&gt;&quot;Instagram&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-instagram&quot;}]}</name></author><entry><title type="html">Open Access Series of Imaging Studies</title><link href="http://localhost:4000/AI2D/docs/datasets/OASIS/" rel="alternate" type="text/html" title="Open Access Series of Imaging Studies" /><published>2025-12-16T00:00:00-06:00</published><updated>2025-12-16T00:00:00-06:00</updated><id>http://localhost:4000/AI2D/docs/datasets/OASIS</id><content type="html" xml:base="http://localhost:4000/AI2D/docs/datasets/OASIS/"><![CDATA[<h3 id="about-the-dataset">About the dataset</h3>
 
 <p><strong>Primary description:</strong> Aging and Alzheimer’s neuroimaging</p>
 
@@ -41,7 +41,7 @@
     
 
     
-    <tr>x
+    <tr>
       <th style="font-weight:bold; width:250px;">Country/Region</th>
       <th style="font-weight:normal">USA</th>
       <th style="font-weight:normal"></th>
@@ -68,6 +68,14 @@
     <tr>
       <th style="font-weight:bold; width:250px;">% Female</th>
       <th style="font-weight:normal">53.9</th>
+      <th style="font-weight:normal"></th>
+    </tr>
+    
+
+    
+    <tr>
+      <th style="font-weight:bold; width:250px;">CUBIC Project</th>
+      <th style="font-weight:normal">/cbica/projects/OASIS</th>
       <th style="font-weight:normal"></th>
     </tr>
     
@@ -505,7 +513,13 @@ function copyToClipboard(elementId) {
     button.style.backgroundColor = 'rgb(108, 110, 220)';
   }, 1000);
 }
-</script>]]></content><author><name>{&quot;links&quot;=&gt;[{&quot;label&quot;=&gt;&quot;Email&quot;, &quot;icon&quot;=&gt;&quot;fas fa-fw fa-envelope-square&quot;}, {&quot;label&quot;=&gt;&quot;Website&quot;, &quot;icon&quot;=&gt;&quot;fas fa-fw fa-link&quot;}, {&quot;label&quot;=&gt;&quot;Twitter&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-twitter-square&quot;}, {&quot;label&quot;=&gt;&quot;Facebook&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-facebook-square&quot;}, {&quot;label&quot;=&gt;&quot;GitHub&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-github&quot;}, {&quot;label&quot;=&gt;&quot;Instagram&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-instagram&quot;}]}</name></author><category term="docs" /><category term="datasets" /><summary type="html"><![CDATA[OASIS]]></summary></entry><entry><title type="html">New AI2D data resource: Shared brain imaging data available on CUBIC</title><link href="http://localhost:4000/AI2D/docs/blog/news/" rel="alternate" type="text/html" title="New AI2D data resource: Shared brain imaging data available on CUBIC" /><published>2025-11-18T00:00:00-06:00</published><updated>2025-11-18T00:00:00-06:00</updated><id>http://localhost:4000/AI2D/docs/blog/news</id><content type="html" xml:base="http://localhost:4000/AI2D/docs/blog/news/"><![CDATA[<p>We are delighted to announce the release of the AI2D shared brain imaging data resource – now openly available to all on CUBIC.  The initial release includes 10 studies with over 9,000 sessions. This includes BIDS-curated raw data as well as fully processed sMRI, fMRI, and dMRI data.</p>
+</script>
+
+<p><br /></p>
+
+<p><em>Funding</em>
+<br />
+Data were provided [in part] by OASIS OASIS-3: Principal Investigators: T. Benzinger, D. Marcus, J. Morris; NIH P50 AG00561, P30 NS09857781, P01 AG026276, P01 AG003991, R01 AG043434, UL1 TR000448, R01 EB009352. AA was funded through grants 191026.</p>]]></content><author><name>{&quot;links&quot;=&gt;[{&quot;label&quot;=&gt;&quot;Email&quot;, &quot;icon&quot;=&gt;&quot;fas fa-fw fa-envelope-square&quot;}, {&quot;label&quot;=&gt;&quot;Website&quot;, &quot;icon&quot;=&gt;&quot;fas fa-fw fa-link&quot;}, {&quot;label&quot;=&gt;&quot;Twitter&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-twitter-square&quot;}, {&quot;label&quot;=&gt;&quot;Facebook&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-facebook-square&quot;}, {&quot;label&quot;=&gt;&quot;GitHub&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-github&quot;}, {&quot;label&quot;=&gt;&quot;Instagram&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-instagram&quot;}]}</name></author><category term="docs" /><category term="datasets" /><summary type="html"><![CDATA[OASIS]]></summary></entry><entry><title type="html">New AI2D data resource: Shared brain imaging data available on CUBIC</title><link href="http://localhost:4000/AI2D/docs/blog/news/" rel="alternate" type="text/html" title="New AI2D data resource: Shared brain imaging data available on CUBIC" /><published>2025-11-18T00:00:00-06:00</published><updated>2025-11-18T00:00:00-06:00</updated><id>http://localhost:4000/AI2D/docs/blog/news</id><content type="html" xml:base="http://localhost:4000/AI2D/docs/blog/news/"><![CDATA[<p>We are delighted to announce the release of the AI2D shared brain imaging data resource – now openly available to all on CUBIC.  The initial release includes 10 studies with over 9,000 sessions. This includes BIDS-curated raw data as well as fully processed sMRI, fMRI, and dMRI data.</p>
 
 <p>Check it out here: <a href="https://pennlinc.github.io/AI2D">https://pennlinc.github.io/AI2D</a></p>
 

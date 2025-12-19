@@ -224,6 +224,7 @@ Many labs at Penn use the same large, publicly available neuroimaging datasets. 
           <th rowspan="2">Age Range (y)</th>
           <th rowspan="2">Sample Size</th>
           <th rowspan="2">Number of Sessions</th>
+          <th rowspan="2">CUBIC Project</th>
           <th colspan="4">Raw</th>
           <th colspan="7">Processed</th>
         </tr>
@@ -334,6 +335,31 @@ Many labs at Penn use the same large, publicly available neuroimaging datasets. 
               {% endif %}
               {% if sessions_display != "" %}
                 {{ sessions_display }}
+              {% else %}
+                n/a
+              {% endif %}
+            </td>
+            <td>
+              {% assign cubic_display = "" %}
+              {% if csv_data and csv_data.CUBIC %}
+                {% if csv_data.CUBIC contains ";" %}
+                  {% assign cubic_parts = csv_data.CUBIC | split: ";" %}
+                  {% assign cubic_values = "" | split: "," %}
+                  {% for part in cubic_parts %}
+                    {% if part contains "=" %}
+                      {% assign cubic_val = part | split: "=" | last %}
+                      {% assign cubic_values = cubic_values | push: cubic_val %}
+                    {% else %}
+                      {% assign cubic_values = cubic_values | push: part %}
+                    {% endif %}
+                  {% endfor %}
+                  {% assign cubic_display = cubic_values | join: ", " %}
+                {% else %}
+                  {% assign cubic_display = csv_data.CUBIC %}
+                {% endif %}
+              {% endif %}
+              {% if cubic_display != "" %}
+                <code style="font-size: 12px;">{{ cubic_display }}</code>
               {% else %}
                 n/a
               {% endif %}
