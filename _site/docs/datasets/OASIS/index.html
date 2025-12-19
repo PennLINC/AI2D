@@ -382,7 +382,9 @@
         
         
         
+        
 
+        
         
         
         
@@ -398,6 +400,11 @@
               
               
 
+              
+              
+              
+
+              
               
               
               
@@ -414,10 +421,13 @@
                   
                 </th>
                 <th style="font-weight:normal">
-                  <div id="oasis3-dlmuse" class="copy-container" style="border: 1px solid #6c6edc; border-radius: 3px; padding: 6px; background-color: #f8f9fa;">
-                    <span class="copy-text"><code>/cbica/projects/OASIS/OASIS3/Pipelines/OASIS3_DLMUSE_2025/Results/DLMUSE_Volumes.csv</code></span>
-                    <button class="copy-button" onclick="copyToClipboard('oasis3-dlmuse')">Copy</button>
-                  </div>
+                  
+                    
+                    <div id="oasis3-dlmuse" class="copy-container" style="border: 1px solid #6c6edc; border-radius: 3px; padding: 6px; background-color: #f8f9fa;">
+                      <span class="copy-text"><code>/cbica/projects/OASIS/OASIS3/Pipelines/OASIS3_DLMUSE_2025/Results/DLMUSE_Volumes.csv</code></span>
+                      <button class="copy-button" onclick="copyToClipboard('oasis3-dlmuse')">Copy</button>
+                    </div>
+                  
                 </th>
                 <th style="font-weight:normal"></th>
               </tr>
@@ -430,7 +440,9 @@
         
         
         
+        
 
+        
         
         
         
@@ -446,6 +458,11 @@
               
               
 
+              
+              
+              
+
+              
               
               
               
@@ -462,10 +479,13 @@
                   
                 </th>
                 <th style="font-weight:normal">
-                  <div id="oasis3-dlwmls" class="copy-container" style="border: 1px solid #6c6edc; border-radius: 3px; padding: 6px; background-color: #f8f9fa;">
-                    <span class="copy-text"><code>/cbica/projects/OASIS/OASIS3/Pipelines/OASIS3_DLWMLS_2025/Results/OASIS3_DLWMLS_DLMUSE_Segmented_Volumes.csv</code></span>
-                    <button class="copy-button" onclick="copyToClipboard('oasis3-dlwmls')">Copy</button>
-                  </div>
+                  
+                    
+                    <div id="oasis3-dlwmls" class="copy-container" style="border: 1px solid #6c6edc; border-radius: 3px; padding: 6px; background-color: #f8f9fa;">
+                      <span class="copy-text"><code>/cbica/projects/OASIS/OASIS3/Pipelines/OASIS3_DLWMLS_2025/Results/OASIS3_DLWMLS_DLMUSE_Segmented_Volumes.csv</code></span>
+                      <button class="copy-button" onclick="copyToClipboard('oasis3-dlwmls')">Copy</button>
+                    </div>
+                  
                 </th>
                 <th style="font-weight:normal"></th>
               </tr>
@@ -476,7 +496,9 @@
         
         
         
+        
 
+        
         
         
         
@@ -492,6 +514,11 @@
               
               
 
+              
+              
+              
+
+              
               
               
               
@@ -508,10 +535,38 @@
                   
                 </th>
                 <th style="font-weight:normal">
-                  <div id="oasis3-fmriprep" class="copy-container" style="border: 1px solid #6c6edc; border-radius: 3px; padding: 6px; background-color: #f8f9fa;">
-                    <span class="copy-text"><code>/cbica/projects/OASIS/OASIS3/Pipelines/OASIS3_fMRI_Sep2023/Protocols</code></span>
-                    <button class="copy-button" onclick="copyToClipboard('oasis3-fmriprep')">Copy</button>
-                  </div>
+                  
+                    
+                    <div class="tab-container">
+                      <div class="tab-buttons">
+                        <button class="tab-button active" onclick="showTab('oasis3-fmriprep-path-tab')">Path</button>
+                        <button class="tab-button" onclick="showTab('oasis3-fmriprep-command-tab')">Command</button>
+                      </div>
+                      <div id="oasis3-fmriprep-path-tab" class="tab-content active">
+                        <div id="oasis3-fmriprep-path" class="copy-container" style="border: 1px solid #6c6edc; border-radius: 3px; padding: 6px; background-color: #f8f9fa;">
+                          <span class="copy-text"><code>/cbica/projects/OASIS/OASIS3/Pipelines/OASIS3_fMRI_Sep2023/Protocols</code></span>
+                          <button class="copy-button" onclick="copyToClipboard('oasis3-fmriprep-path')">Copy</button>
+                        </div>
+                      </div>
+                      <div id="oasis3-fmriprep-command-tab" class="tab-content">
+                        <div id="oasis3-fmriprep-command" class="copy-container" style="border: 1px solid #6c6edc; border-radius: 3px; padding: 6px; background-color: #f8f9fa; flex-direction: column; align-items: stretch;">
+                          <div class="copy-text" style="flex: 1; overflow-x: auto; margin: 0; padding: 8px; background-color: #ffffff; border: 1px solid #ddd; border-radius: 3px;">
+                            <code style="display: block; white-space: pre-wrap; word-break: break-all; font-family: 'Courier New', monospace; font-size: 14px; line-height: 1.4; color: #333;">/opt/conda/envs/fmriprep/bin/fmriprep \
+  /cbica/home/srinivad/Projects/2023_OASIS_BIDS/Data/Init_Downloaded/scans/All/batch_&lt;batch_number&gt;/ \
+  /cbica/home/srinivad/Projects/2023_OASIS_BIDS/Protocols/ \
+  participant \
+  --participant_label &lt;subid&gt; \
+  --fs-license-file /cbica/home/srinivad/Projects/2023_OASIS_BIDS/license.txt \
+  --fs-no-reconall \
+  --output-spaces MNI152NLin2009cAsym:res-2 \
+  --bids-filter-file /cbica/home/srinivad/Projects/2023_OASIS_BIDS/bids_filter.json \
+  --debug all</code>
+                          </div>
+                          <button class="copy-button" onclick="copyToClipboard('oasis3-fmriprep-command')" style="align-self: flex-end; margin-top: 8px;">Copy</button>
+                        </div>
+                      </div>
+                    </div>
+                  
                 </th>
                 <th style="font-weight:normal"></th>
               </tr>
@@ -522,7 +577,9 @@
         
         
         
+        
 
+        
         
         
         
@@ -538,6 +595,11 @@
               
               
 
+              
+              
+              
+
+              
               
               
               
@@ -554,10 +616,50 @@
                   
                 </th>
                 <th style="font-weight:normal">
-                  <div id="oasis3-xcp-d" class="copy-container" style="border: 1px solid #6c6edc; border-radius: 3px; padding: 6px; background-color: #f8f9fa;">
-                    <span class="copy-text"><code>/cbica/projects/OASIS/OASIS3/Pipelines/OASIS3_fMRI_Sep2023/Protocols/XCP</code></span>
-                    <button class="copy-button" onclick="copyToClipboard('oasis3-xcp-d')">Copy</button>
-                  </div>
+                  
+                    
+                    <div class="tab-container">
+                      <div class="tab-buttons">
+                        <button class="tab-button active" onclick="showTab('oasis3-xcp-d-path-tab')">Path</button>
+                        <button class="tab-button" onclick="showTab('oasis3-xcp-d-command-tab')">Command</button>
+                      </div>
+                      <div id="oasis3-xcp-d-path-tab" class="tab-content active">
+                        <div id="oasis3-xcp-d-path" class="copy-container" style="border: 1px solid #6c6edc; border-radius: 3px; padding: 6px; background-color: #f8f9fa;">
+                          <span class="copy-text"><code>/cbica/projects/OASIS/OASIS3/Pipelines/OASIS3_fMRI_Sep2023/Protocols/XCP</code></span>
+                          <button class="copy-button" onclick="copyToClipboard('oasis3-xcp-d-path')">Copy</button>
+                        </div>
+                      </div>
+                      <div id="oasis3-xcp-d-command-tab" class="tab-content">
+                        <div id="oasis3-xcp-d-command" class="copy-container" style="border: 1px solid #6c6edc; border-radius: 3px; padding: 6px; background-color: #f8f9fa; flex-direction: column; align-items: stretch;">
+                          <div class="copy-text" style="flex: 1; overflow-x: auto; margin: 0; padding: 8px; background-color: #ffffff; border: 1px solid #ddd; border-radius: 3px;">
+                            <code style="display: block; white-space: pre-wrap; word-break: break-all; font-family: 'Courier New', monospace; font-size: 14px; line-height: 1.4; color: #333;">/usr/local/miniconda/bin/xcp_d \
+  /cbica/home/srinivad/Projects/2023_OASIS_BIDS/Protocols/batch_&lt;batch_number&gt; \
+  /cbica/home/srinivad/Projects/2023_OASIS_BIDS/Protocols/XCP/batch_&lt;batch_number&gt; \
+  participant \
+  --participant_label &lt;subid&gt; \
+  --bids-filter-file /cbica/home/srinivad/Projects/2023_OASIS_BIDS/bids_filter.json \
+  --input-type fmriprep \
+  -p 36P \
+  --work-dir /cbica/home/srinivad/Projects/2023_OASIS_BIDS/ \
+  --motion-filter-type lp \
+  --band-stop-min 6 \
+  --motion-filter-order 4 \
+  --despike \
+  --fd-thresh 0 \
+  --lower-bpf 0.01 \
+  --upper-bpf 0.08 \
+  --bpf-order 2 \
+  --head-radius auto \
+  --dummy-scans auto \
+  --min-coverage 0.5 \
+  --smoothing 0 \
+  --fs-license-file /cbica/home/srinivad/Projects/2023_OASIS_BIDS/license.txt</code>
+                          </div>
+                          <button class="copy-button" onclick="copyToClipboard('oasis3-xcp-d-command')" style="align-self: flex-end; margin-top: 8px;">Copy</button>
+                        </div>
+                      </div>
+                    </div>
+                  
                 </th>
                 <th style="font-weight:normal"></th>
               </tr>
@@ -630,7 +732,9 @@
         
         
         
+        
 
+        
         
         
         
@@ -648,6 +752,11 @@
               
               
 
+              
+              
+              
+
+              
               
               
               
@@ -664,10 +773,13 @@
                   
                 </th>
                 <th style="font-weight:normal">
-                  <div id="oasis4-dlmuse" class="copy-container" style="border: 1px solid #6c6edc; border-radius: 3px; padding: 6px; background-color: #f8f9fa;">
-                    <span class="copy-text"><code>/cbica/projects/OASIS/OASIS4/Pipelines/OASIS4_DLMUSE_2025/Results/DLMUSE_Volumes.csv</code></span>
-                    <button class="copy-button" onclick="copyToClipboard('oasis4-dlmuse')">Copy</button>
-                  </div>
+                  
+                    
+                    <div id="oasis4-dlmuse" class="copy-container" style="border: 1px solid #6c6edc; border-radius: 3px; padding: 6px; background-color: #f8f9fa;">
+                      <span class="copy-text"><code>/cbica/projects/OASIS/OASIS4/Pipelines/OASIS4_DLMUSE_2025/Results/DLMUSE_Volumes.csv</code></span>
+                      <button class="copy-button" onclick="copyToClipboard('oasis4-dlmuse')">Copy</button>
+                    </div>
+                  
                 </th>
                 <th style="font-weight:normal"></th>
               </tr>
@@ -678,17 +790,9 @@
         
         
         
-
-        
-        
         
 
         
-      
-        
-        
-        
-
         
         
         
@@ -698,7 +802,21 @@
         
         
         
+        
 
+        
+        
+        
+        
+
+        
+      
+        
+        
+        
+        
+
+        
         
         
         
@@ -725,19 +843,120 @@
 }
 .copy-button:hover { background-color: rgb(104, 106, 235); }
 .copy-button:active { background-color: rgb(84, 86, 215); }
+
+/* Tab styles */
+.tab-container {
+  width: 100%;
+}
+.tab-buttons {
+  display: flex;
+  gap: 2px;
+  margin-bottom: 5px;
+}
+.tab-button {
+  padding: 6px 12px;
+  background-color: #f0f0f0;
+  border: 1px solid #ddd;
+  border-bottom: none;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 3px 3px 0 0;
+  transition: background-color 0.2s;
+}
+.tab-button:hover {
+  background-color: #e0e0e0;
+}
+.tab-button.active {
+  background-color: rgb(108, 110, 220);
+  color: white;
+  border-color: rgb(108, 110, 220);
+}
+.tab-content {
+  display: none;
+  padding: 5px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  word-break: break-all;
+}
+.tab-content.active {
+  display: block;
+}
 </style>
 
 <script>
+function showTab(tabName) {
+  // Find the tab container that contains this tab
+  var targetTab = document.getElementById(tabName);
+  if (!targetTab) return;
+  
+  var tabContainer = targetTab.closest('.tab-container');
+  if (!tabContainer) return;
+  
+  // Hide all tab contents within this container
+  var tabContents = tabContainer.querySelectorAll('.tab-content');
+  for (var i = 0; i < tabContents.length; i++) {
+    tabContents[i].classList.remove('active');
+  }
+  
+  // Remove active class from all tab buttons within this container
+  var tabButtons = tabContainer.querySelectorAll('.tab-button');
+  for (var i = 0; i < tabButtons.length; i++) {
+    tabButtons[i].classList.remove('active');
+  }
+  
+  // Show the clicked tab content
+  targetTab.classList.add('active');
+  
+  // Activate the clicked button
+  var clickedButton = event.target;
+  if (clickedButton && clickedButton.classList.contains('tab-button')) {
+    clickedButton.classList.add('active');
+  }
+}
+
 function copyToClipboard(elementId) {
   var element = document.getElementById(elementId);
   if (!element) return;
-  var textToCopy = element.querySelector('.copy-text').textContent;
+  
+  // Find the actual text element to copy from
+  var textElement = null;
+  
+  // First, try to find a code element (for command tabs)
+  var codeElement = element.querySelector('code');
+  if (codeElement) {
+    textElement = codeElement;
+  } else {
+    // Fallback: look for .copy-text (for path tabs)
+    var copyTextElement = element.querySelector('.copy-text');
+    if (copyTextElement) {
+      // If it's a div, look for code inside it
+      if (copyTextElement.tagName === 'DIV') {
+        var codeInside = copyTextElement.querySelector('code');
+        textElement = codeInside || copyTextElement;
+      } else {
+        textElement = copyTextElement;
+      }
+    } else {
+      // Last resort: try pre element
+      textElement = element.querySelector('pre');
+    }
+  }
+  
+  if (!textElement) return;
+  
+  // Get only the text content, not any HTML
+  var textToCopy = textElement.textContent || textElement.innerText || '';
+  
+  // Clean up any extra whitespace but preserve line breaks
+  textToCopy = textToCopy.trim();
+  
   var textarea = document.createElement('textarea');
   textarea.value = textToCopy;
   document.body.appendChild(textarea);
   textarea.select();
   document.execCommand('copy');
   document.body.removeChild(textarea);
+  
   var button = element.querySelector('.copy-button');
   if (!button) return;
   var originalText = button.textContent;
