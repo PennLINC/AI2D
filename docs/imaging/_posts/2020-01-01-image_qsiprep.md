@@ -65,6 +65,9 @@ Diffusion data were denoised using the Marchenko-Pastur PCA (MP-PCA) method, fol
 
 <div class="alert alert-primary" role="alert">
   <strong>IMPORTANT:</strong> The exact <strong>QSIPrep</strong> pipeline is documented in the <em>boilerplate</em> located at <code>&lt;QSIPrep_output&gt;/logs/CITATION.html</code>. If the data were processed with <a href="{{ site.baseurl }}/docs/imaging/image_babs/"><strong>BABS</strong></a> (i.e., were zipped), refer to <a href="{{ site.baseurl }}/docs/get_data#312-explore-the-data-structure"><strong>Get Data</strong></a> for details on unzipping <code>&lt;QSIPrep_output&gt;</code> to access the boilerplate file.
+  <br>
+  <br>
+  The exact <code>singularity run</code> or <code>apptainer run</code> command can be found in the <code>report.html</code> file. We typically use the same CLI arguments across studies. If a study uses different arguments, they will be listed in the <strong>Command</strong> tab of the pipeline on the study-specific page.
 </div>
 
 ## Quality Control

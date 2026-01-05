@@ -56,6 +56,9 @@ Structural MRI data were processed using **sMRIPrep** by calling **[fMRIPrep](ht
 
 <div class="alert alert-primary" role="alert">
   <strong>IMPORTANT:</strong> The exact <strong>sMRIPrep</strong> pipeline is documented in the <em>boilerplate</em> located at <code>&lt;fmriprep_anat_output&gt;/logs/CITATION.html</code>. If the data were processed with <a href="{{ site.baseurl }}/docs/imaging/image_babs/"><strong>BABS</strong></a> (i.e., were zipped), refer to <a href="{{ site.baseurl }}/docs/get_data#312-explore-the-data-structure"><strong>Get Data</strong></a> for details on unzipping <code>&lt;fmriprep_anat_output&gt;</code> to access the boilerplate file.
+  <br>
+  <br>
+  The exact <code>singularity run</code> or <code>apptainer run</code> command can be found in the <code>report.html</code> file. We typically use the same CLI arguments across studies. If a study uses different arguments, they will be listed in the <strong>Command</strong> tab of the pipeline on the study-specific page.
 </div>
 
 **FreeSurfer** outputs were further processed using [**FreeSurfer-Post**](https://github.com/PennLINC/freesurfer-post/tree/main) which produced tabulated FreeSurfer data that were parcellated using 27 anatomical, functional, and multimodal atlases such as Desikan Killiany, Glasser, Gordon, and multiple resolutions of the Schaefer parcellation, among others. 
