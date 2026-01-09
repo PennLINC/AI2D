@@ -8,6 +8,7 @@ layout: single
 <style>
 details p { margin: 8px 0 !important; }
 details div { line-height: 1.6; }
+.page__content { text-align: left !important; }
 </style>
 
 <br>
@@ -17,7 +18,11 @@ Doshi, Jimit, Guray Erus, Yangming Ou, Susan M Resnick, Ruben C Gur, Raquel E Gu
 </div>
 
 <br>
-[**NiChart_DLMUSE**](https://github.com/CBICA/NiChart_DLMUSE) performs deep-learning based brain extraction and segmentation on T1-weighted images. This is based on the MUSE framework (MUlti-atlas region Segmentation utilizing Ensembles of registration algorithms and parameters, and locally optimal atlas selection; Doshi et al. 2016). All shared AI2D data were processed with a **[BIDS-app wrapper of NiChart_DLMUSE](https://github.com/CBICA/BIDS_NiChart_DLMUSE)**:
+[**NiChart_DLMUSE**](https://github.com/CBICA/NiChart_DLMUSE) performs deep-learning based brain extraction and segmentation on T1-weighted images. This is based on the MUSE framework (MUlti-atlas region Segmentation utilizing Ensembles of registration algorithms and parameters, and locally optimal atlas selection; Doshi et al. 2016). 
+
+Shared AI2D data were either processed with [**NiChart_DLMUSE**](https://github.com/CBICA/NiChart_DLMUSE), or with a **[BIDS-app wrapper of NiChart_DLMUSE](https://github.com/CBICA/BIDS_NiChart_DLMUSE)**. 
+
+ROI labels: [**MUSE_ROI_complete_list.csv**](https://github.com/CBICA/NiChart_DLMUSE/blob/main/NiChart_DLMUSE/shared/dicts/MUSE_ROI_complete_list.csv)
 
 Brain extraction is done using [**DLICV**](https://github.com/CBICA/DLICV).
  <div style="text-align: center;">
@@ -30,13 +35,6 @@ Brain segmentation is done using [**DLMUSE**](https://github.com/CBICA/DLMUSE).
      <img src="{{ site.baseurl }}/assets/images/misc/dlmuse.png" width="80%" height="auto" />
 </div>
 
-<br><br>
-The outputs include:
-
-* ICV mask.
-* Segmented T1w in native space.
-* JSON files containing ROIs' volumes.
-* HTML summary for visual quality control of DLICV and DLMUSE outputs.
+<br>
 
 This package uses [nnU-Net v2](https://github.com/MIC-DKFZ/nnUNet) as a basis model architecture for the deep learning parts.
-

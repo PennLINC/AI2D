@@ -235,6 +235,7 @@
         <style>
 details p { margin: 8px 0 !important; }
 details div { line-height: 1.6; }
+.page__content { text-align: left !important; }
 </style>
 
 <p><br /></p>
@@ -244,7 +245,11 @@ Doshi, Jimit, Guray Erus, Yangming Ou, Susan M Resnick, Ruben C Gur, Raquel E Gu
 </div>
 
 <p><br />
-<a href="https://github.com/CBICA/NiChart_DLMUSE"><strong>NiChart_DLMUSE</strong></a> performs deep-learning based brain extraction and segmentation on T1-weighted images. This is based on the MUSE framework (MUlti-atlas region Segmentation utilizing Ensembles of registration algorithms and parameters, and locally optimal atlas selection; Doshi et al. 2016). All shared AI2D data were processed with a <strong><a href="https://github.com/CBICA/BIDS_NiChart_DLMUSE">BIDS-app wrapper of NiChart_DLMUSE</a></strong>:</p>
+<a href="https://github.com/CBICA/NiChart_DLMUSE"><strong>NiChart_DLMUSE</strong></a> performs deep-learning based brain extraction and segmentation on T1-weighted images. This is based on the MUSE framework (MUlti-atlas region Segmentation utilizing Ensembles of registration algorithms and parameters, and locally optimal atlas selection; Doshi et al. 2016).</p>
+
+<p>Shared AI2D data were either processed with <a href="https://github.com/CBICA/NiChart_DLMUSE"><strong>NiChart_DLMUSE</strong></a>, or with a <strong><a href="https://github.com/CBICA/BIDS_NiChart_DLMUSE">BIDS-app wrapper of NiChart_DLMUSE</a></strong>.</p>
+
+<p>ROI labels: <a href="https://github.com/CBICA/NiChart_DLMUSE/blob/main/NiChart_DLMUSE/shared/dicts/MUSE_ROI_complete_list.csv"><strong>MUSE_ROI_complete_list.csv</strong></a></p>
 
 <p>Brain extraction is done using <a href="https://github.com/CBICA/DLICV"><strong>DLICV</strong></a>.</p>
 <div style="text-align: center;">
@@ -257,18 +262,9 @@ Brain segmentation is done using <a href="https://github.com/CBICA/DLMUSE"><stro
      <img src="/AI2D/assets/images/misc/dlmuse.png" width="80%" height="auto" />
 </div>
 
-<p><br /><br />
-The outputs include:</p>
-
-<ul>
-  <li>ICV mask.</li>
-  <li>Segmented T1w in native space.</li>
-  <li>JSON files containing ROIs’ volumes.</li>
-  <li>HTML summary for visual quality control of DLICV and DLMUSE outputs.</li>
-</ul>
+<p><br /></p>
 
 <p>This package uses <a href="https://github.com/MIC-DKFZ/nnUNet">nnU-Net v2</a> as a basis model architecture for the deep learning parts.</p>
-
 
         
       </section>
