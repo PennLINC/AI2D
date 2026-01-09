@@ -233,7 +233,7 @@ Many labs at Penn use the same large, publicly available neuroimaging datasets. 
           <th class="diffusion">dMRI</th>
           <th class="fieldmap">fmap</th>
           <th class="structural"><a href="{{ site.baseurl }}/docs/imaging/image_smriprep/"><u>FreeSurfer</u></a></th>
-          <th class="structural"><u>DLMUSE</u></th>
+          <th class="structural"><a href="{{ site.baseurl }}/docs/imaging/image_ncdlmuse/"><u>DLMUSE</u></a></th>
           <th class="structural"><u>DLWMLS</u></th>
           <th class="functional"><a href="{{ site.baseurl }}/docs/imaging/image_fmriprep/"><u>fMRIPrep</u></a></th>
           <th class="functional"><a href="{{ site.baseurl }}/docs/imaging/image_xcpd/"><u>XCP&#8209;D</u></a></th>
@@ -438,6 +438,8 @@ Many labs at Penn use the same large, publicly available neuroimaging datasets. 
                   {% assign count = csv_data.DLMUSE_N_ses_completed | plus: 0 %}
                   {% if count > 0 %}{% assign dlmuse_available = true %}{% endif %}
                 {% endif %}
+              {% elsif dataset.ncdlmuse_session and dataset.ncdlmuse_session != "n/a" and dataset.ncdlmuse_session != "" %}
+                {% assign dlmuse_available = true %}
               {% endif %}
               {% if dlmuse_available %}
                 <span class="status-icon status-success">✅</span>
