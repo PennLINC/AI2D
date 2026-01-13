@@ -1,4 +1,364 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.3">Jekyll</generator><link href="http://localhost:4000/AI2D/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/AI2D/" rel="alternate" type="text/html" /><updated>2026-01-09T15:33:44-05:00</updated><id>http://localhost:4000/AI2D/feed.xml</id><title type="html">AI2D | PennLINC | Shared Data Resources</title><subtitle>AI2D Shared Data Resources</subtitle><author><name>{&quot;links&quot;=&gt;[{&quot;label&quot;=&gt;&quot;Email&quot;, &quot;icon&quot;=&gt;&quot;fas fa-fw fa-envelope-square&quot;}, {&quot;label&quot;=&gt;&quot;Website&quot;, &quot;icon&quot;=&gt;&quot;fas fa-fw fa-link&quot;}, {&quot;label&quot;=&gt;&quot;Twitter&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-twitter-square&quot;}, {&quot;label&quot;=&gt;&quot;Facebook&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-facebook-square&quot;}, {&quot;label&quot;=&gt;&quot;GitHub&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-github&quot;}, {&quot;label&quot;=&gt;&quot;Instagram&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-instagram&quot;}]}</name></author><entry><title type="html">Open Access Series of Imaging Studies</title><link href="http://localhost:4000/AI2D/docs/datasets/OASIS/" rel="alternate" type="text/html" title="Open Access Series of Imaging Studies" /><published>2025-12-16T00:00:00-05:00</published><updated>2025-12-16T00:00:00-05:00</updated><id>http://localhost:4000/AI2D/docs/datasets/OASIS</id><content type="html" xml:base="http://localhost:4000/AI2D/docs/datasets/OASIS/"><![CDATA[<h3 id="about-the-dataset">About the dataset</h3>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.3">Jekyll</generator><link href="http://localhost:4000/AI2D/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/AI2D/" rel="alternate" type="text/html" /><updated>2026-01-13T15:37:32-05:00</updated><id>http://localhost:4000/AI2D/feed.xml</id><title type="html">AI2D | PennLINC | Shared Data Resources</title><subtitle>AI2D Shared Data Resources</subtitle><author><name>{&quot;links&quot;=&gt;[{&quot;label&quot;=&gt;&quot;Email&quot;, &quot;icon&quot;=&gt;&quot;fas fa-fw fa-envelope-square&quot;}, {&quot;label&quot;=&gt;&quot;Website&quot;, &quot;icon&quot;=&gt;&quot;fas fa-fw fa-link&quot;}, {&quot;label&quot;=&gt;&quot;Twitter&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-twitter-square&quot;}, {&quot;label&quot;=&gt;&quot;Facebook&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-facebook-square&quot;}, {&quot;label&quot;=&gt;&quot;GitHub&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-github&quot;}, {&quot;label&quot;=&gt;&quot;Instagram&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-instagram&quot;}]}</name></author><entry><title type="html">Action to Control Cardiovascular Risk in Diabetes</title><link href="http://localhost:4000/AI2D/docs/datasets/ACCORD/" rel="alternate" type="text/html" title="Action to Control Cardiovascular Risk in Diabetes" /><published>2026-01-13T00:00:00-05:00</published><updated>2026-01-13T00:00:00-05:00</updated><id>http://localhost:4000/AI2D/docs/datasets/ACCORD</id><content type="html" xml:base="http://localhost:4000/AI2D/docs/datasets/ACCORD/"><![CDATA[<h3 id="about-the-dataset">About the dataset</h3>
+
+<p><strong>Primary description:</strong> Type 2 diabetes and cardiovascular outcomes</p>
+
+<p>The Action to Control Cardiovascular Risk in Diabetes (ACCORD)  clinical trial evaluated intensive glycemic control on a cohort of participants with type 2 diabetes. The Memory in Diabetes (MIND) sub-study further evaluated cognitive and structural brain outcomes in a subset of participants from the two randomized groups of ACCORD study.</p>
+
+<div class="table" align="center">
+  <table style="text-align:center; width:100%; font-size:18px; border:1px solid black">
+    <tr>
+      <th style="font-weight:bold; width:250px;">Study</th>
+      <th style="font-weight:normal">Action to Control Cardiovascular Risk in Diabetes</th>
+      <th style="font-weight:normal"></th>
+    </tr>
+
+    
+    <tr>
+      <th style="font-weight:bold; width:250px;">Study Website</th>
+      <th style="font-weight:normal"><a href="https://biolincc.nhlbi.nih.gov/studies/accord/?q=accord">ACCORD</a></th>
+      <th style="font-weight:normal"></th>
+    </tr>
+    
+
+    
+    <tr>
+      <th style="font-weight:bold; width:250px;">Data Descriptor Paper</th>
+      <th style="font-weight:normal">
+        
+        
+          
+          
+            <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC5633725/">https://pmc.ncbi.nlm.nih.gov/articles/PMC5633725/</a>
+            <br />
+          
+        
+          
+          
+            <a href="https://pubmed.ncbi.nlm.nih.gov/21958949/">https://pubmed.ncbi.nlm.nih.gov/21958949/</a>
+            
+          
+        
+      </th>
+      <th style="font-weight:normal"></th>
+    </tr>
+    
+
+    
+    <tr>
+      <th style="font-weight:bold; width:250px;">DUA</th>
+      <th style="font-weight:normal">
+        
+          <a href="https://biolincc.nhlbi.nih.gov/faq/">https://biolincc.nhlbi.nih.gov/faq/</a>
+        
+      </th>
+      <th style="font-weight:normal"></th>
+    </tr>
+    
+
+    
+    <tr>
+      <th style="font-weight:bold; width:250px;">Country/Region</th>
+      <th style="font-weight:normal">USA</th>
+      <th style="font-weight:normal"></th>
+    </tr>
+    
+
+    
+    <tr>
+      <th style="font-weight:bold; width:250px;">Disease Tags</th>
+      <th style="font-weight:normal">diabetes</th>
+      <th style="font-weight:normal"></th>
+    </tr>
+    
+
+    
+    <tr>
+      <th style="font-weight:bold; width:250px;">Age (mean ± SD)</th>
+      <th style="font-weight:normal">62.9 ± 5.8</th>
+      <th style="font-weight:normal"></th>
+    </tr>
+    
+
+    
+    <tr>
+      <th style="font-weight:bold; width:250px;">% Female</th>
+      <th style="font-weight:normal">44.6</th>
+      <th style="font-weight:normal"></th>
+    </tr>
+    
+
+    
+    
+    
+    
+    
+
+    
+    <tr>
+      <th style="font-weight:bold; width:250px;">Age Range</th>
+      <th style="font-weight:normal">40-79</th>
+      <th style="font-weight:normal"></th>
+    </tr>
+    
+
+    
+    <tr>
+      <th style="font-weight:bold; width:250px;">N Subjects</th>
+      <th style="font-weight:normal">629</th>
+      <th style="font-weight:normal"></th>
+    </tr>
+    
+
+    
+    <tr>
+      <th style="font-weight:bold; width:250px;">N MR Sessions</th>
+      <th style="font-weight:normal">1414</th>
+      <th style="font-weight:normal"></th>
+    </tr>
+    
+
+    
+    <tr>
+      <th style="font-weight:bold; width:250px;">CUBIC Project</th>
+      <th style="font-weight:normal">/cbica/projects/accord</th>
+      <th style="font-weight:normal"></th>
+    </tr>
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+
+    
+      
+      
+      
+      
+      
+      
+      
+
+      <tr>
+        <th style="font-weight:bold; width:250px;">
+          DLMUSE
+          
+            <span style="font-weight:normal;">(version ???)</span>
+          
+          
+            <br />
+            <span style="font-weight:normal;">(1411/1414 complete)</span>
+          
+        </th>
+        <th style="font-weight:normal">
+          
+            
+            <div id="accord-dlmuse-path" class="copy-container" style="border: 1px solid #6c6edc; border-radius: 3px; padding: 6px; background-color: #f8f9fa;">
+              <span class="copy-text"><code>/cbica/projects/accord/Pipelines/ACCORD_DLMUSE_2025/Results/DLMUSE_Volumes.csv</code></span>
+              <button class="copy-button" onclick="copyToClipboard('accord-dlmuse-path')">Copy</button>
+            </div>
+          
+        </th>
+        <th style="font-weight:normal"></th>
+      </tr>
+    
+      
+      
+      
+      
+      
+      
+      
+
+      <tr>
+        <th style="font-weight:bold; width:250px;">
+          DLWMLS
+          
+            <span style="font-weight:normal;">(version ???)</span>
+          
+          
+            <br />
+            <span style="font-weight:normal;">(1308/1414 complete)</span>
+          
+        </th>
+        <th style="font-weight:normal">
+          
+            
+            <div id="accord-dlwmls-path" class="copy-container" style="border: 1px solid #6c6edc; border-radius: 3px; padding: 6px; background-color: #f8f9fa;">
+              <span class="copy-text"><code>/cbica/projects/accord/Pipelines/ACCORD_DLWMLS_2025/Results/ACCORD_DLWMLS_DLMUSE_Segmented_Volumes.csv</code></span>
+              <button class="copy-button" onclick="copyToClipboard('accord-dlwmls-path')">Copy</button>
+            </div>
+          
+        </th>
+        <th style="font-weight:normal"></th>
+      </tr>
+    
+  </table>
+</div>
+
+<style>
+.copy-container { display: flex; align-items: center; justify-content: space-between; gap: 10px; }
+.copy-text { flex: 1; word-break: break-all; }
+.copy-button {
+  background-color: rgb(108, 110, 220);
+  color: white;
+  border: none;
+  padding: 4px 8px;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 18px;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.copy-button:hover { background-color: rgb(104, 106, 235); }
+.copy-button:active { background-color: rgb(84, 86, 215); }
+
+/* Tab styles */
+.tab-container {
+  width: 100%;
+}
+.tab-buttons {
+  display: flex;
+  gap: 2px;
+  margin-bottom: 5px;
+}
+.tab-button {
+  padding: 6px 12px;
+  background-color: #f0f0f0;
+  border: 1px solid #ddd;
+  border-bottom: none;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 3px 3px 0 0;
+  transition: background-color 0.2s;
+}
+.tab-button:hover {
+  background-color: #e0e0e0;
+}
+.tab-button.active {
+  background-color: rgb(108, 110, 220);
+  color: white;
+  border-color: rgb(108, 110, 220);
+}
+.tab-content {
+  display: none;
+  padding: 5px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  word-break: break-all;
+}
+.tab-content.active {
+  display: block;
+}
+</style>
+
+<script>
+function showTab(tabName) {
+  // Find the tab container that contains this tab
+  var targetTab = document.getElementById(tabName);
+  if (!targetTab) return;
+  
+  var tabContainer = targetTab.closest('.tab-container');
+  if (!tabContainer) return;
+  
+  // Hide all tab contents within this container
+  var tabContents = tabContainer.querySelectorAll('.tab-content');
+  for (var i = 0; i < tabContents.length; i++) {
+    tabContents[i].classList.remove('active');
+  }
+  
+  // Remove active class from all tab buttons within this container
+  var tabButtons = tabContainer.querySelectorAll('.tab-button');
+  for (var i = 0; i < tabButtons.length; i++) {
+    tabButtons[i].classList.remove('active');
+  }
+  
+  // Show the clicked tab content
+  targetTab.classList.add('active');
+  
+  // Activate the clicked button
+  var clickedButton = event.target;
+  if (clickedButton && clickedButton.classList.contains('tab-button')) {
+    clickedButton.classList.add('active');
+  }
+}
+
+function copyToClipboard(elementId) {
+  var element = document.getElementById(elementId);
+  if (!element) return;
+  
+  // Find the actual text element to copy from
+  var textElement = null;
+  
+  // First, try to find a code element (for command tabs)
+  var codeElement = element.querySelector('code');
+  if (codeElement) {
+    textElement = codeElement;
+  } else {
+    // Fallback: look for .copy-text (for path tabs)
+    var copyTextElement = element.querySelector('.copy-text');
+    if (copyTextElement) {
+      // If it's a div, look for code inside it
+      if (copyTextElement.tagName === 'DIV') {
+        var codeInside = copyTextElement.querySelector('code');
+        textElement = codeInside || copyTextElement;
+      } else {
+        textElement = copyTextElement;
+      }
+    } else {
+      // Last resort: try pre element
+      textElement = element.querySelector('pre');
+    }
+  }
+  
+  if (!textElement) return;
+  
+  // Get only the text content, not any HTML
+  var textToCopy = textElement.textContent || textElement.innerText || '';
+  
+  // Clean up any extra whitespace but preserve line breaks
+  textToCopy = textToCopy.trim();
+  
+  var textarea = document.createElement('textarea');
+  textarea.value = textToCopy;
+  document.body.appendChild(textarea);
+  textarea.select();
+  document.execCommand('copy');
+  document.body.removeChild(textarea);
+  
+  var button = element.querySelector('.copy-button');
+  if (!button) return;
+  var originalText = button.textContent;
+  button.textContent = 'Copied!';
+  button.style.backgroundColor = '#28a745';
+  setTimeout(function() {
+    button.textContent = originalText;
+    button.style.backgroundColor = 'rgb(108, 110, 220)';
+  }, 1000);
+}
+</script>
+
+<p><br /></p>
+
+<p><em>Funding</em>
+<br />
+???</p>]]></content><author><name>{&quot;links&quot;=&gt;[{&quot;label&quot;=&gt;&quot;Email&quot;, &quot;icon&quot;=&gt;&quot;fas fa-fw fa-envelope-square&quot;}, {&quot;label&quot;=&gt;&quot;Website&quot;, &quot;icon&quot;=&gt;&quot;fas fa-fw fa-link&quot;}, {&quot;label&quot;=&gt;&quot;Twitter&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-twitter-square&quot;}, {&quot;label&quot;=&gt;&quot;Facebook&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-facebook-square&quot;}, {&quot;label&quot;=&gt;&quot;GitHub&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-github&quot;}, {&quot;label&quot;=&gt;&quot;Instagram&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-instagram&quot;}]}</name></author><category term="docs" /><category term="datasets" /><summary type="html"><![CDATA[ACCORD]]></summary></entry><entry><title type="html">Open Access Series of Imaging Studies</title><link href="http://localhost:4000/AI2D/docs/datasets/OASIS/" rel="alternate" type="text/html" title="Open Access Series of Imaging Studies" /><published>2025-12-16T00:00:00-05:00</published><updated>2025-12-16T00:00:00-05:00</updated><id>http://localhost:4000/AI2D/docs/datasets/OASIS</id><content type="html" xml:base="http://localhost:4000/AI2D/docs/datasets/OASIS/"><![CDATA[<h3 id="about-the-dataset">About the dataset</h3>
 
 <p><strong>Primary description:</strong> Aging and Alzheimer’s neuroimaging</p>
 
@@ -22,7 +382,7 @@
 
     
     <tr>
-      <th style="font-weight:bold; width:250px;">Manuscript</th>
+      <th style="font-weight:bold; width:250px;">Data Descriptor Paper</th>
       <th style="font-weight:normal"><a href="https://doi.org/10.1162/jocn.2007.19.9.1498">https://doi.org/10.1162/jocn.2007.19.9.1498</a></th>
       <th style="font-weight:normal"></th>
     </tr>
@@ -754,7 +1114,249 @@ Data were provided [in part] by OASIS OASIS-3: Principal Investigators: T. Benzi
 
 <p>Please don’t hesitate to reach out to Tien Tong if you have any questions about the data, access, or anything else.</p>
 
-<p>The AI2D Neuroimaging Data Team</p>]]></content><author><name>Tien Tong</name></author><category term="docs" /><category term="blog" /><summary type="html"><![CDATA[We are delighted to announce the release of the AI2D shared brain imaging data resource – now openly available to all on CUBIC. The initial release includes 10 studies with over 9,000 sessions. This includes BIDS-curated raw data as well as fully processed sMRI, fMRI, and dMRI data.]]></summary></entry><entry><title type="html">Midnight Scan Club</title><link href="http://localhost:4000/AI2D/docs/datasets/midnight_scan_club/" rel="alternate" type="text/html" title="Midnight Scan Club" /><published>2025-08-16T00:00:00-04:00</published><updated>2025-08-16T00:00:00-04:00</updated><id>http://localhost:4000/AI2D/docs/datasets/midnight_scan_club</id><content type="html" xml:base="http://localhost:4000/AI2D/docs/datasets/midnight_scan_club/"><![CDATA[<div style="text-align: left;">
+<p>The AI2D Neuroimaging Data Team</p>]]></content><author><name>Tien Tong</name></author><category term="docs" /><category term="blog" /><summary type="html"><![CDATA[We are delighted to announce the release of the AI2D shared brain imaging data resource – now openly available to all on CUBIC. The initial release includes 10 studies with over 9,000 sessions. This includes BIDS-curated raw data as well as fully processed sMRI, fMRI, and dMRI data.]]></summary></entry><entry><title type="html">Single-echo/multi-echo comparison pilot</title><link href="http://localhost:4000/AI2D/docs/datasets/mobile_phenomics_pilot/" rel="alternate" type="text/html" title="Single-echo/multi-echo comparison pilot" /><published>2025-08-16T00:00:00-04:00</published><updated>2025-08-16T00:00:00-04:00</updated><id>http://localhost:4000/AI2D/docs/datasets/mobile_phenomics_pilot</id><content type="html" xml:base="http://localhost:4000/AI2D/docs/datasets/mobile_phenomics_pilot/"><![CDATA[<div style="text-align: left;">
+     <img src="/AI2D/assets/images/logos/university_of_pennsylvania.png" style="width: auto; height: 10vw;" />
+</div>
+
+<h3 id="about-the-dataset">About the dataset</h3>
+
+<p>This dataset contains ABCD-protocol single-echo BOLD scans, along with complex-valued, multi-echo BOLD scans for comparison. The multi-echo BOLD protocol uses the CMRR MB-EPI sequence, and comes from collaborators at UMinn. These scans include five echoes with both magnitude and phase reconstruction.</p>
+
+<p>The primary goal of this dataset was to evaluate the usability of the multi-echo fMRI protocol in a larger study, via direct comparison to the ABCD fMRI protocol, as well as via test-retest reliability analyses. However, these data may be useful to others (e.g., for testing complex-valued models, applying phase regression to multi-echo data, testing multi-echo denoising methods).</p>
+
+<p>Dataset contents
+This dataset includes 8 participants, each with between 1 and 3 sessions. MR data were acquired using a 3-Tesla Siemens Prisma MRI scanner. More information about the dataset <a href="https://openneuro.org/datasets/ds005250/versions/1.1.5">here</a>.</p>
+
+<div class="table" align="center">
+  <table style="text-align:center; width:100%; font-size:18px; border:1px solid black">
+    <tr>
+      <th style="font-weight:bold; width:250px;">PI</th>
+      <th style="font-weight:normal">Theodore D. Satterthwaite</th>
+      <th style="font-weight:normal"></th>
+    </tr>
+    <tr>
+      <th style="font-weight:bold; width:250px;">Institution</th>
+      <th style="font-weight:normal">University of Pennsylvania</th>
+      <th style="font-weight:normal"></th>
+    </tr>
+    <tr>
+      <th style="font-weight:bold; width:250px;">Study Website</th>
+      <th style="font-weight:normal"><a href="https://openneuro.org/datasets/ds005250/versions/1.1.5">Single-echo/multi-echo comparison pilot</a></th>
+      <th style="font-weight:normal"></th>
+    </tr>
+    <tr>
+      <th style="font-weight:bold; width:250px;">Data Descriptor</th>
+      <th style="font-weight:normal"><a href="https://openneuro.org/datasets/ds005250/versions/1.1.5">https://openneuro.org/datasets/ds005250/versions/1.1.5</a></th>
+      <th style="font-weight:normal"></th>
+    </tr>
+    <tr>
+      <th style="font-weight:bold; width:250px;">CUBIC Project</th>
+      <th style="font-weight:normal"><span style="color:blue;">open-datasets</span></th>
+      <th style="font-weight:normal"></th>
+    </tr>
+    <tr>
+      <th style="font-weight:bold; width:250px;">DUA</th>
+      <th style="font-weight:normal">None</th>
+      <th style="font-weight:normal"></th>
+    </tr>
+    <tr>
+      <th style="font-weight:bold; width:250px;">License</th>
+      <th style="font-weight:normal">CC BY-NC-SA</th>
+      <th style="font-weight:normal"></th>
+    </tr>
+    <tr>
+      <th style="font-weight:bold; width:250px;">Sample Size</th>
+      <th style="font-weight:normal">8</th>
+      <th style="font-weight:normal"></th>
+    </tr>
+    <tr>
+      <th style="font-weight:bold; width:250px;">Number of Sessions</th>
+      <th style="font-weight:normal">17</th>
+      <th style="font-weight:normal"></th>
+    </tr>
+    <tr>
+      <th style="font-weight:bold; width:250px;"><a href="/AI2D/docs/imaging/image_curation/">CuBIDS</a></th>
+      <th style="font-weight:normal">
+        
+          No
+        
+      </th>
+      <th style="font-weight:normal"></th>
+    </tr>
+    <tr>
+      <th style="font-weight:bold; width:250px;"><a href="/AI2D/docs/imaging/image_babs/">BABS</a></th>
+      <th style="font-weight:normal">
+        
+          No
+        
+      </th>
+      <th style="font-weight:normal"></th>
+    </tr>
+    <tr>
+      <th style="font-weight:bold; width:250px;">Demographics</th>
+      <th style="font-weight:normal">
+        
+          <a href="https://openneuro.org/datasets/ds005250/versions/1.1.5/file-display/participants.json">View available demographics data</a>
+        
+      </th>
+      <th style="font-weight:normal"></th>
+    </tr>
+    <tr>
+      <th style="font-weight:bold; width:250px;">Average Age (y)</th>
+      <th style="font-weight:normal">24.5</th>
+      <th style="font-weight:normal"></th>
+    </tr>
+    <tr>
+      <th style="font-weight:bold; width:250px;">% Female</th>
+      <th style="font-weight:normal">50</th>
+      <th style="font-weight:normal"></th>
+    </tr>
+    <tr>
+      <th style="font-weight:bold; width:250px;">% Right Handed</th>
+      <th style="font-weight:normal"></th>
+      <th style="font-weight:normal"></th>
+    </tr>
+    <tr>
+      <th style="font-weight:bold; width:250px;">BIDS Dataset</th>
+      <th style="font-weight:normal">
+        <div id="bids-dataset-copy" class="copy-container" style="border: 1px solid #6c6edc; border-radius: 3px; padding: 6px; background-color: #f8f9fa;">
+          <span class="copy-text"><code>/cbica/projects/open-datasets/datasets/mobile_phenomics_pilot/ds005250</code></span>
+          <button class="copy-button" onclick="copyToClipboard('bids-dataset-copy')">Copy</button>
+        </div>
+      </th>
+      <th style="font-weight:normal"></th>
+    </tr>
+
+
+         
+     
+       
+       
+       
+       
+      <tr>
+        <th style="font-weight:bold; width:250px;">
+          
+            FreeSurfer
+          
+          v7.3.2
+          
+          
+          <br />
+          <span style="font-weight:normal;"><a href="https://fmriprep.org/en/24.0.0/workflows.html#longitudinal-processing">Longitudinal pipeline</a> run by fMRIPrep</span>
+          
+          
+        </th>
+                 <th style="font-weight:normal">
+           <div id="freesurfer-path" class="copy-container" style="border: 1px solid #6c6edc; border-radius: 3px; padding: 6px; background-color: #f8f9fa;">
+             <span class="copy-text"><code>/cbica/projects/open-datasets/datasets/mobile_phenomics_pilot/derivatives/fmriprep-24.0.1/sourcedata</code></span>
+             <button class="copy-button" onclick="copyToClipboard('freesurfer-path')">Copy</button>
+           </div>
+         </th>
+        <th style="font-weight:normal"></th>
+      </tr>
+    
+       
+       
+       
+       
+      <tr>
+        <th style="font-weight:bold; width:250px;">
+          
+            <a href="/AI2D/docs/imaging/image_fmriprep/">fMRIPrep</a>
+          
+          v24.0.1
+          
+          
+          <br />
+          <span style="font-weight:normal;">(17/17 complete)</span>
+          
+          
+        </th>
+                 <th style="font-weight:normal">
+           <div id="fmriprep-path" class="copy-container" style="border: 1px solid #6c6edc; border-radius: 3px; padding: 6px; background-color: #f8f9fa;">
+             <span class="copy-text"><code>/cbica/projects/open-datasets/datasets/mobile_phenomics_pilot/derivatives/fmriprep-24.0.1</code></span>
+             <button class="copy-button" onclick="copyToClipboard('fmriprep-path')">Copy</button>
+           </div>
+         </th>
+        <th style="font-weight:normal"></th>
+      </tr>
+    
+  </table>
+</div>
+
+<style>
+.copy-container { display: flex; align-items: center; justify-content: space-between; gap: 10px; }
+.copy-text { flex: 1; word-break: break-all; }
+.copy-button {
+  background-color: rgb(108, 110, 220);
+  color: white;
+  border: none;
+  padding: 4px 8px;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 18px;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.copy-button:hover { background-color: rgb(104, 106, 235); }
+.copy-button:active { background-color: rgb(84, 86, 215); }
+</style>
+
+<script>
+function showTab(tabName) {
+  var tabType = tabName.indexOf('-dl') !== -1 ? 'datalad' : 'ephemeral';
+  var tabContents = document.getElementsByClassName('tab-content');
+  for (var i = 0; i < tabContents.length; i++) {
+    tabContents[i].classList.remove('active');
+  }
+  var tabButtons = document.getElementsByClassName('tab-button');
+  for (var j = 0; j < tabButtons.length; j++) {
+    tabButtons[j].classList.remove('active');
+  }
+  if (tabType === 'datalad') {
+    var dls = document.querySelectorAll('[id$="-dl"]');
+    var dlButtons = document.querySelectorAll('[onclick*="-dl"]');
+    dls.forEach(function(c) { c.classList.add('active'); });
+    dlButtons.forEach(function(b) { b.classList.add('active'); });
+  } else {
+    var eph = document.querySelectorAll('[id$="-ephe"]');
+    var epheButtons = document.querySelectorAll('[onclick*="-ephe"]');
+    eph.forEach(function(c) { c.classList.add('active'); });
+    epheButtons.forEach(function(b) { b.classList.add('active'); });
+  }
+}
+function copyToClipboard(elementId) {
+  var element = document.getElementById(elementId);
+  var textToCopy = element.querySelector('.copy-text').textContent;
+  var textarea = document.createElement('textarea');
+  textarea.value = textToCopy;
+  document.body.appendChild(textarea);
+  textarea.select();
+  document.execCommand('copy');
+  document.body.removeChild(textarea);
+  var button = element.querySelector('.copy-button');
+  var originalText = button.textContent;
+  button.textContent = 'Copied!';
+  button.style.backgroundColor = '#28a745';
+  setTimeout(function() {
+    button.textContent = originalText;
+    button.style.backgroundColor = 'rgb(108, 110, 220)';
+  }, 1000);
+}
+</script>
+
+<p><br /></p>
+
+<p><em>Funding</em>
+<br />
+AE Foundation<br />
+Penn-CHOP Lifespan Brain Institute<br />
+NIMH R01MH113550</p>
+
+<p><em>Citations</em>
+<br />
+Taylor Salo and M. Dylan Tisdall and Lia Brodrick and Adam Czernuszenko and David R. Roalf and Sage Rush-Goebel and Nicholas Wellman and Matthew Cieslak and Theodore D. Satterthwaite (2024). Single-echo/multi-echo comparison pilot. OpenNeuro. [Dataset] doi: doi:10.18112/openneuro.ds005250.v1.1.5</p>]]></content><author><name>{&quot;links&quot;=&gt;[{&quot;label&quot;=&gt;&quot;Email&quot;, &quot;icon&quot;=&gt;&quot;fas fa-fw fa-envelope-square&quot;}, {&quot;label&quot;=&gt;&quot;Website&quot;, &quot;icon&quot;=&gt;&quot;fas fa-fw fa-link&quot;}, {&quot;label&quot;=&gt;&quot;Twitter&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-twitter-square&quot;}, {&quot;label&quot;=&gt;&quot;Facebook&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-facebook-square&quot;}, {&quot;label&quot;=&gt;&quot;GitHub&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-github&quot;}, {&quot;label&quot;=&gt;&quot;Instagram&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-instagram&quot;}]}</name></author><category term="docs" /><category term="datasets" /><summary type="html"><![CDATA[Mobile Phenomics Pilot]]></summary></entry><entry><title type="html">Midnight Scan Club</title><link href="http://localhost:4000/AI2D/docs/datasets/midnight_scan_club/" rel="alternate" type="text/html" title="Midnight Scan Club" /><published>2025-08-16T00:00:00-04:00</published><updated>2025-08-16T00:00:00-04:00</updated><id>http://localhost:4000/AI2D/docs/datasets/midnight_scan_club</id><content type="html" xml:base="http://localhost:4000/AI2D/docs/datasets/midnight_scan_club/"><![CDATA[<div style="text-align: left;">
      <img src="/AI2D/assets/images/logos/WashU.png" style="width: auto; height: 10vw;" />
 </div>
 
@@ -2031,751 +2633,11 @@ National Institutes of Health AG063843</p>
   <li>
     <p>Murata, E. M., Pritschet, L., Grotzinger, H., Taylor, C. M., &amp; Jacobs, E. G. (2024). Circadian Rhythms Tied to Changes in Brain Morphology in a Densely Sampled Male. Journal of Neuroscience, 44(38).</p>
   </li>
-</ol>]]></content><author><name>{&quot;links&quot;=&gt;[{&quot;label&quot;=&gt;&quot;Email&quot;, &quot;icon&quot;=&gt;&quot;fas fa-fw fa-envelope-square&quot;}, {&quot;label&quot;=&gt;&quot;Website&quot;, &quot;icon&quot;=&gt;&quot;fas fa-fw fa-link&quot;}, {&quot;label&quot;=&gt;&quot;Twitter&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-twitter-square&quot;}, {&quot;label&quot;=&gt;&quot;Facebook&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-facebook-square&quot;}, {&quot;label&quot;=&gt;&quot;GitHub&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-github&quot;}, {&quot;label&quot;=&gt;&quot;Instagram&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-instagram&quot;}]}</name></author><category term="docs" /><category term="datasets" /><summary type="html"><![CDATA[28andHe]]></summary></entry><entry><title type="html">Single-echo/multi-echo comparison pilot</title><link href="http://localhost:4000/AI2D/docs/datasets/mobile_phenomics_pilot/" rel="alternate" type="text/html" title="Single-echo/multi-echo comparison pilot" /><published>2025-08-16T00:00:00-04:00</published><updated>2025-08-16T00:00:00-04:00</updated><id>http://localhost:4000/AI2D/docs/datasets/mobile_phenomics_pilot</id><content type="html" xml:base="http://localhost:4000/AI2D/docs/datasets/mobile_phenomics_pilot/"><![CDATA[<div style="text-align: left;">
-     <img src="/AI2D/assets/images/logos/university_of_pennsylvania.png" style="width: auto; height: 10vw;" />
-</div>
-
-<h3 id="about-the-dataset">About the dataset</h3>
-
-<p>This dataset contains ABCD-protocol single-echo BOLD scans, along with complex-valued, multi-echo BOLD scans for comparison. The multi-echo BOLD protocol uses the CMRR MB-EPI sequence, and comes from collaborators at UMinn. These scans include five echoes with both magnitude and phase reconstruction.</p>
-
-<p>The primary goal of this dataset was to evaluate the usability of the multi-echo fMRI protocol in a larger study, via direct comparison to the ABCD fMRI protocol, as well as via test-retest reliability analyses. However, these data may be useful to others (e.g., for testing complex-valued models, applying phase regression to multi-echo data, testing multi-echo denoising methods).</p>
-
-<p>Dataset contents
-This dataset includes 8 participants, each with between 1 and 3 sessions. MR data were acquired using a 3-Tesla Siemens Prisma MRI scanner. More information about the dataset <a href="https://openneuro.org/datasets/ds005250/versions/1.1.5">here</a>.</p>
-
-<div class="table" align="center">
-  <table style="text-align:center; width:100%; font-size:18px; border:1px solid black">
-    <tr>
-      <th style="font-weight:bold; width:250px;">PI</th>
-      <th style="font-weight:normal">Theodore D. Satterthwaite</th>
-      <th style="font-weight:normal"></th>
-    </tr>
-    <tr>
-      <th style="font-weight:bold; width:250px;">Institution</th>
-      <th style="font-weight:normal">University of Pennsylvania</th>
-      <th style="font-weight:normal"></th>
-    </tr>
-    <tr>
-      <th style="font-weight:bold; width:250px;">Study Website</th>
-      <th style="font-weight:normal"><a href="https://openneuro.org/datasets/ds005250/versions/1.1.5">Single-echo/multi-echo comparison pilot</a></th>
-      <th style="font-weight:normal"></th>
-    </tr>
-    <tr>
-      <th style="font-weight:bold; width:250px;">Data Descriptor</th>
-      <th style="font-weight:normal"><a href="https://openneuro.org/datasets/ds005250/versions/1.1.5">https://openneuro.org/datasets/ds005250/versions/1.1.5</a></th>
-      <th style="font-weight:normal"></th>
-    </tr>
-    <tr>
-      <th style="font-weight:bold; width:250px;">CUBIC Project</th>
-      <th style="font-weight:normal"><span style="color:blue;">open-datasets</span></th>
-      <th style="font-weight:normal"></th>
-    </tr>
-    <tr>
-      <th style="font-weight:bold; width:250px;">DUA</th>
-      <th style="font-weight:normal">None</th>
-      <th style="font-weight:normal"></th>
-    </tr>
-    <tr>
-      <th style="font-weight:bold; width:250px;">License</th>
-      <th style="font-weight:normal">CC BY-NC-SA</th>
-      <th style="font-weight:normal"></th>
-    </tr>
-    <tr>
-      <th style="font-weight:bold; width:250px;">Sample Size</th>
-      <th style="font-weight:normal">8</th>
-      <th style="font-weight:normal"></th>
-    </tr>
-    <tr>
-      <th style="font-weight:bold; width:250px;">Number of Sessions</th>
-      <th style="font-weight:normal">17</th>
-      <th style="font-weight:normal"></th>
-    </tr>
-    <tr>
-      <th style="font-weight:bold; width:250px;"><a href="/AI2D/docs/imaging/image_curation/">CuBIDS</a></th>
-      <th style="font-weight:normal">
-        
-          No
-        
-      </th>
-      <th style="font-weight:normal"></th>
-    </tr>
-    <tr>
-      <th style="font-weight:bold; width:250px;"><a href="/AI2D/docs/imaging/image_babs/">BABS</a></th>
-      <th style="font-weight:normal">
-        
-          No
-        
-      </th>
-      <th style="font-weight:normal"></th>
-    </tr>
-    <tr>
-      <th style="font-weight:bold; width:250px;">Demographics</th>
-      <th style="font-weight:normal">
-        
-          <a href="https://openneuro.org/datasets/ds005250/versions/1.1.5/file-display/participants.json">View available demographics data</a>
-        
-      </th>
-      <th style="font-weight:normal"></th>
-    </tr>
-    <tr>
-      <th style="font-weight:bold; width:250px;">Average Age (y)</th>
-      <th style="font-weight:normal">24.5</th>
-      <th style="font-weight:normal"></th>
-    </tr>
-    <tr>
-      <th style="font-weight:bold; width:250px;">% Female</th>
-      <th style="font-weight:normal">50</th>
-      <th style="font-weight:normal"></th>
-    </tr>
-    <tr>
-      <th style="font-weight:bold; width:250px;">% Right Handed</th>
-      <th style="font-weight:normal"></th>
-      <th style="font-weight:normal"></th>
-    </tr>
-    <tr>
-      <th style="font-weight:bold; width:250px;">BIDS Dataset</th>
-      <th style="font-weight:normal">
-        <div id="bids-dataset-copy" class="copy-container" style="border: 1px solid #6c6edc; border-radius: 3px; padding: 6px; background-color: #f8f9fa;">
-          <span class="copy-text"><code>/cbica/projects/open-datasets/datasets/mobile_phenomics_pilot/ds005250</code></span>
-          <button class="copy-button" onclick="copyToClipboard('bids-dataset-copy')">Copy</button>
-        </div>
-      </th>
-      <th style="font-weight:normal"></th>
-    </tr>
-
-
-         
-     
-       
-       
-       
-       
-      <tr>
-        <th style="font-weight:bold; width:250px;">
-          
-            FreeSurfer
-          
-          v7.3.2
-          
-          
-          <br />
-          <span style="font-weight:normal;"><a href="https://fmriprep.org/en/24.0.0/workflows.html#longitudinal-processing">Longitudinal pipeline</a> run by fMRIPrep</span>
-          
-          
-        </th>
-                 <th style="font-weight:normal">
-           <div id="freesurfer-path" class="copy-container" style="border: 1px solid #6c6edc; border-radius: 3px; padding: 6px; background-color: #f8f9fa;">
-             <span class="copy-text"><code>/cbica/projects/open-datasets/datasets/mobile_phenomics_pilot/derivatives/fmriprep-24.0.1/sourcedata</code></span>
-             <button class="copy-button" onclick="copyToClipboard('freesurfer-path')">Copy</button>
-           </div>
-         </th>
-        <th style="font-weight:normal"></th>
-      </tr>
-    
-       
-       
-       
-       
-      <tr>
-        <th style="font-weight:bold; width:250px;">
-          
-            <a href="/AI2D/docs/imaging/image_fmriprep/">fMRIPrep</a>
-          
-          v24.0.1
-          
-          
-          <br />
-          <span style="font-weight:normal;">(17/17 complete)</span>
-          
-          
-        </th>
-                 <th style="font-weight:normal">
-           <div id="fmriprep-path" class="copy-container" style="border: 1px solid #6c6edc; border-radius: 3px; padding: 6px; background-color: #f8f9fa;">
-             <span class="copy-text"><code>/cbica/projects/open-datasets/datasets/mobile_phenomics_pilot/derivatives/fmriprep-24.0.1</code></span>
-             <button class="copy-button" onclick="copyToClipboard('fmriprep-path')">Copy</button>
-           </div>
-         </th>
-        <th style="font-weight:normal"></th>
-      </tr>
-    
-  </table>
-</div>
-
-<style>
-.copy-container { display: flex; align-items: center; justify-content: space-between; gap: 10px; }
-.copy-text { flex: 1; word-break: break-all; }
-.copy-button {
-  background-color: rgb(108, 110, 220);
-  color: white;
-  border: none;
-  padding: 4px 8px;
-  border-radius: 3px;
-  cursor: pointer;
-  font-size: 18px;
-  white-space: nowrap;
-  flex-shrink: 0;
-}
-.copy-button:hover { background-color: rgb(104, 106, 235); }
-.copy-button:active { background-color: rgb(84, 86, 215); }
-</style>
-
-<script>
-function showTab(tabName) {
-  var tabType = tabName.indexOf('-dl') !== -1 ? 'datalad' : 'ephemeral';
-  var tabContents = document.getElementsByClassName('tab-content');
-  for (var i = 0; i < tabContents.length; i++) {
-    tabContents[i].classList.remove('active');
-  }
-  var tabButtons = document.getElementsByClassName('tab-button');
-  for (var j = 0; j < tabButtons.length; j++) {
-    tabButtons[j].classList.remove('active');
-  }
-  if (tabType === 'datalad') {
-    var dls = document.querySelectorAll('[id$="-dl"]');
-    var dlButtons = document.querySelectorAll('[onclick*="-dl"]');
-    dls.forEach(function(c) { c.classList.add('active'); });
-    dlButtons.forEach(function(b) { b.classList.add('active'); });
-  } else {
-    var eph = document.querySelectorAll('[id$="-ephe"]');
-    var epheButtons = document.querySelectorAll('[onclick*="-ephe"]');
-    eph.forEach(function(c) { c.classList.add('active'); });
-    epheButtons.forEach(function(b) { b.classList.add('active'); });
-  }
-}
-function copyToClipboard(elementId) {
-  var element = document.getElementById(elementId);
-  var textToCopy = element.querySelector('.copy-text').textContent;
-  var textarea = document.createElement('textarea');
-  textarea.value = textToCopy;
-  document.body.appendChild(textarea);
-  textarea.select();
-  document.execCommand('copy');
-  document.body.removeChild(textarea);
-  var button = element.querySelector('.copy-button');
-  var originalText = button.textContent;
-  button.textContent = 'Copied!';
-  button.style.backgroundColor = '#28a745';
-  setTimeout(function() {
-    button.textContent = originalText;
-    button.style.backgroundColor = 'rgb(108, 110, 220)';
-  }, 1000);
-}
-</script>
-
-<p><br /></p>
-
-<p><em>Funding</em>
-<br />
-AE Foundation<br />
-Penn-CHOP Lifespan Brain Institute<br />
-NIMH R01MH113550</p>
-
-<p><em>Citations</em>
-<br />
-Taylor Salo and M. Dylan Tisdall and Lia Brodrick and Adam Czernuszenko and David R. Roalf and Sage Rush-Goebel and Nicholas Wellman and Matthew Cieslak and Theodore D. Satterthwaite (2024). Single-echo/multi-echo comparison pilot. OpenNeuro. [Dataset] doi: doi:10.18112/openneuro.ds005250.v1.1.5</p>]]></content><author><name>{&quot;links&quot;=&gt;[{&quot;label&quot;=&gt;&quot;Email&quot;, &quot;icon&quot;=&gt;&quot;fas fa-fw fa-envelope-square&quot;}, {&quot;label&quot;=&gt;&quot;Website&quot;, &quot;icon&quot;=&gt;&quot;fas fa-fw fa-link&quot;}, {&quot;label&quot;=&gt;&quot;Twitter&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-twitter-square&quot;}, {&quot;label&quot;=&gt;&quot;Facebook&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-facebook-square&quot;}, {&quot;label&quot;=&gt;&quot;GitHub&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-github&quot;}, {&quot;label&quot;=&gt;&quot;Instagram&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-instagram&quot;}]}</name></author><category term="docs" /><category term="datasets" /><summary type="html"><![CDATA[Mobile Phenomics Pilot]]></summary></entry><entry><title type="html">Get Support</title><link href="http://localhost:4000/AI2D/docs/community/get_support/" rel="alternate" type="text/html" title="Get Support" /><published>2025-08-15T00:00:00-04:00</published><updated>2025-08-15T00:00:00-04:00</updated><id>http://localhost:4000/AI2D/docs/community/get_support</id><content type="html" xml:base="http://localhost:4000/AI2D/docs/community/get_support/"><![CDATA[<p>If you have a question about working with AI2D data,
+</ol>]]></content><author><name>{&quot;links&quot;=&gt;[{&quot;label&quot;=&gt;&quot;Email&quot;, &quot;icon&quot;=&gt;&quot;fas fa-fw fa-envelope-square&quot;}, {&quot;label&quot;=&gt;&quot;Website&quot;, &quot;icon&quot;=&gt;&quot;fas fa-fw fa-link&quot;}, {&quot;label&quot;=&gt;&quot;Twitter&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-twitter-square&quot;}, {&quot;label&quot;=&gt;&quot;Facebook&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-facebook-square&quot;}, {&quot;label&quot;=&gt;&quot;GitHub&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-github&quot;}, {&quot;label&quot;=&gt;&quot;Instagram&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-instagram&quot;}]}</name></author><category term="docs" /><category term="datasets" /><summary type="html"><![CDATA[28andHe]]></summary></entry><entry><title type="html">Get Support</title><link href="http://localhost:4000/AI2D/docs/community/get_support/" rel="alternate" type="text/html" title="Get Support" /><published>2025-08-15T00:00:00-04:00</published><updated>2025-08-15T00:00:00-04:00</updated><id>http://localhost:4000/AI2D/docs/community/get_support</id><content type="html" xml:base="http://localhost:4000/AI2D/docs/community/get_support/"><![CDATA[<p>If you have a question about working with AI2D data,
 please <a href="https://github.com/PennLINC/AI2D/issues/new">open an issue</a>.
 The AI2D maintainers will be notified about the new post and will respond when they’re able.</p>
 
 <p>If you have used AI2D data for your research,
 and would like to share a summary of your work as a blog post on the this website,
 please <a href="https://github.com/PennLINC/AI2D/issues/new">open an issue</a>,
-and the AI2D maintainers will work with you to create the blog post.</p>]]></content><author><name>{&quot;links&quot;=&gt;[{&quot;label&quot;=&gt;&quot;Email&quot;, &quot;icon&quot;=&gt;&quot;fas fa-fw fa-envelope-square&quot;}, {&quot;label&quot;=&gt;&quot;Website&quot;, &quot;icon&quot;=&gt;&quot;fas fa-fw fa-link&quot;}, {&quot;label&quot;=&gt;&quot;Twitter&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-twitter-square&quot;}, {&quot;label&quot;=&gt;&quot;Facebook&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-facebook-square&quot;}, {&quot;label&quot;=&gt;&quot;GitHub&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-github&quot;}, {&quot;label&quot;=&gt;&quot;Instagram&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-instagram&quot;}]}</name></author><category term="docs" /><category term="community" /><summary type="html"><![CDATA[Get Support]]></summary></entry><entry><title type="html">NKI Rockland Sample</title><link href="http://localhost:4000/AI2D/docs/datasets/NKI/" rel="alternate" type="text/html" title="NKI Rockland Sample" /><published>2025-08-15T00:00:00-04:00</published><updated>2025-08-15T00:00:00-04:00</updated><id>http://localhost:4000/AI2D/docs/datasets/NKI</id><content type="html" xml:base="http://localhost:4000/AI2D/docs/datasets/NKI/"><![CDATA[<div style="text-align: left;">
-     <img src="/AI2D/assets/images/logos/NKI.png" style="width: auto; height: 10vw;" />
-</div>
-
-<h3 id="about-the-dataset">About the dataset</h3>
-
-<p>This is the neuroimaging dataset for the <a href="https://doi.org/10.3389/fnins.2012.00152">Nathan Klein Institue Rockland Sample</a>. The NKI Rockland Sample Initiative is a landmark research program aiming to map the brain, understand how it develops and changes over the course of life, and explore the connections between our brain and behavior. Studies like this have the potential to change how we treat diseases from depression to Alzheimer’s.The NKI Rockland Sample is funded by the US National Institutes of Health and the NY State Office of Mental Health.</p>
-
-<p>This version of the dataset was curated at the University of Pennsylvania by the Lifespan Informatics and Neuroimaging Center (PennLINC) as part of the <a href="https://reprobrainchart.github.io/">Reproducible Brain Chart (RBC)</a> Initiative.</p>
-
-<div class="table" align="center">
-  <table style="text-align:center; width:100%; font-size:18px; border:1px solid black">
-    <tr>
-      <th style="font-weight:bold; width:250px;">PI</th>
-      <th style="font-weight:normal">Michael Milham<br />Stan Colcombe</th>
-      <th style="font-weight:normal"></th>
-    </tr>
-    <tr>
-      <th style="font-weight:bold; width:250px;">Institution</th>
-      <th style="font-weight:normal">Nathan Kline Institute</th>
-      <th style="font-weight:normal"></th>
-    </tr>
-    <tr>
-      <th style="font-weight:bold; width:250px;">Study Website</th>
-      <th style="font-weight:normal"><a href="https://rocklandsample.org/">NKI Rockland Sample</a></th>
-      <th style="font-weight:normal"></th>
-    </tr>
-    <tr>
-      <th style="font-weight:bold; width:250px;">Data Descriptor Paper</th>
-      <th style="font-weight:normal"><a href="https://doi.org/10.3389/fnins.2012.00152">https://doi.org/10.3389/fnins.2012.00152</a></th>
-      <th style="font-weight:normal"></th>
-    </tr>
-    <tr>
-      <th style="font-weight:bold; width:250px;">CUBIC Project</th>
-      <th style="font-weight:normal"><span style="color:blue;">pennlinc_rbc</span></th>
-      <th style="font-weight:normal"></th>
-    </tr>
-    <tr>
-      <th style="font-weight:bold; width:250px;">DUA</th>
-      <th style="font-weight:normal">None</th>
-      <th style="font-weight:normal"></th>
-    </tr>
-    <tr>
-      <th style="font-weight:bold; width:250px;">License</th>
-      <th style="font-weight:normal">CC BY-NC-SA</th>
-      <th style="font-weight:normal"></th>
-    </tr>
-    <tr>
-      <th style="font-weight:bold; width:250px;">Sample Size</th>
-      <th style="font-weight:normal">1329</th>
-      <th style="font-weight:normal"></th>
-    </tr>
-    <tr>
-      <th style="font-weight:bold; width:250px;">Number of Sessions</th>
-      <th style="font-weight:normal">2306</th>
-      <th style="font-weight:normal"></th>
-    </tr>
-    <tr>
-      <th style="font-weight:bold; width:250px;"><a href="/AI2D/docs/imaging/image_curation/">CuBIDS</a></th>
-      <th style="font-weight:normal">
-        
-          
-            <a href="https://github.com/ReproBrainChart/NKI_BIDS/blob/main/study-NKI_desc-CuBIDS_summary.tsv">Yes (v1.0.5)</a>
-          
-        
-      </th>
-      <th style="font-weight:normal"></th>
-    </tr>
-    <tr>
-      <th style="font-weight:bold; width:250px;"><a href="/AI2D/docs/imaging/image_babs/">BABS</a></th>
-      <th style="font-weight:normal">
-        
-          Yes (v0.0.9.dev30+gfa8f813)
-        
-      </th>
-      <th style="font-weight:normal"></th>
-    </tr>
-    <tr>
-      <th style="font-weight:bold; width:250px;">Demographics</th>
-      <th style="font-weight:normal">
-        
-          <a href="https://github.com/ReproBrainChart/NKI_BIDS/blob/main/study-NKI_desc-participants.json">View available demographics data</a>
-        
-      </th>
-      <th style="font-weight:normal"></th>
-    </tr>
-    <tr>
-      <th style="font-weight:bold; width:250px;">Average Age (y)</th>
-      <th style="font-weight:normal">36.6</th>
-      <th style="font-weight:normal"></th>
-    </tr>
-    <tr>
-      <th style="font-weight:bold; width:250px;">% Female</th>
-      <th style="font-weight:normal">59</th>
-      <th style="font-weight:normal"></th>
-    </tr>
-    <tr>
-      <th style="font-weight:bold; width:250px;">% Right Handed</th>
-      <th style="font-weight:normal">87</th>
-      <th style="font-weight:normal"></th>
-    </tr>
-    <tr>
-      <th style="font-weight:bold; width:250px;">T1w QC</th>
-      <th style="font-weight:normal">
-        
-          <a href="https://github.com/ReproBrainChart/NKI_BIDS/blob/main/study-NKI_desc-T1_qc.tsv">View T1w QC</a>
-        
-        
-          <a href="https://github.com/ReproBrainChart/NKI_BIDS/blob/main/study-NKI_desc-T1_qc.json">, View T1w QC Variables</a>
-        
-        
-          <a href="https://doi.org/10.1016/j.neuron.2025.08.026">, View RBC Paper for T1w QC Method</a>
-        
-      </th>
-      <th style="font-weight:normal"></th>
-    </tr>
-    <tr>
-      <th style="font-weight:bold; width:250px;">BIDS Datalad Dataset</th>
-      <th style="font-weight:normal">
-        <div id="bids-dataset-copy" class="copy-container" style="border: 1px solid #6c6edc; border-radius: 3px; padding: 6px; background-color: #f8f9fa;">
-          <span class="copy-text"><code>/cbica/projects/pennlinc_rbc/datasets/LINC_NKI/BIDS</code></span>
-          <button class="copy-button" onclick="copyToClipboard('bids-dataset-copy')">Copy</button>
-        </div>
-      </th>
-      <th style="font-weight:normal"></th>
-    </tr>
-
-    
-    
-      
-      
-      
-      
-      
-      <tr>
-        <th style="font-weight:bold; width:250px;">
-          
-            <a href="/AI2D/docs/imaging/image_smriprep/">sMRIPrep</a>
-          
-          v24-1-1
-          
-          <br />
-          <span style="font-weight:normal;">(2263/2271 complete)</span>
-          
-        </th>
-        <th style="font-weight:normal">
-          
-            <div class="tab-container">
-              <div class="tab-buttons">
-                <button class="tab-button active" onclick="showTab('smriprep-dl')">Datalad Dataset</button>
-                <button class="tab-button" onclick="showTab('smriprep-ephe')">Ephemeral Clone</button>
-              </div>
-              <div id="smriprep-dl" class="tab-content active">
-                <div class="copy-container">
-                  <span class="copy-text"><code>ria+file:///cbica/projects/pennlinc_rbc/datasets/LINC_NKI/derivatives/fmriprep_anat-24-1-1-babs/output_ria#~data</code></span>
-                  <button class="copy-button" onclick="copyToClipboard('smriprep-dl')">Copy</button>
-                </div>
-              </div>
-              <div id="smriprep-ephe" class="tab-content">
-                <div class="copy-container">
-                  <span class="copy-text"><code>/cbica/projects/pennlinc_rbc/datasets/LINC_NKI/derivatives/FMRIPREP_ANAT-24-1-1_zipped</code></span>
-                  <button class="copy-button" onclick="copyToClipboard('smriprep-ephe')">Copy</button>
-                </div>
-              </div>
-            </div>
-          
-        </th>
-        <th style="font-weight:normal"></th>
-      </tr>
-    
-      
-      
-      
-      
-      
-      <tr>
-        <th style="font-weight:bold; width:250px;">
-          
-            <a href="/AI2D/docs/imaging/image_smriprep/">FreeSurfer-Post</a>
-          
-          v0-1-2
-          
-          <br />
-          <span style="font-weight:normal;">(2263/2271 complete)</span>
-          
-        </th>
-        <th style="font-weight:normal">
-          
-            <div class="tab-container">
-              <div class="tab-buttons">
-                <button class="tab-button active" onclick="showTab('freesurferpost-dl')">Datalad Dataset</button>
-                <button class="tab-button" onclick="showTab('freesurferpost-ephe')">Ephemeral Clone</button>
-              </div>
-              <div id="freesurferpost-dl" class="tab-content active">
-                <div class="copy-container">
-                  <span class="copy-text"><code>ria+file:///cbica/projects/pennlinc_rbc/datasets/LINC_NKI/derivatives/freesurferpost-0-1-2-babs/output_ria#~data</code></span>
-                  <button class="copy-button" onclick="copyToClipboard('freesurferpost-dl')">Copy</button>
-                </div>
-              </div>
-              <div id="freesurferpost-ephe" class="tab-content">
-                <div class="copy-container">
-                  <span class="copy-text"><code>/cbica/projects/pennlinc_rbc/datasets/LINC_NKI/derivatives/FREESURFERPOST-0-1-2_zipped</code></span>
-                  <button class="copy-button" onclick="copyToClipboard('freesurferpost-ephe')">Copy</button>
-                </div>
-              </div>
-            </div>
-          
-        </th>
-        <th style="font-weight:normal"></th>
-      </tr>
-    
-      
-      
-      
-      
-      
-      <tr>
-        <th style="font-weight:bold; width:250px;">
-          
-            <a href="/AI2D/docs/imaging/image_fmriprep/">fMRIPrep</a>
-          
-          v24-1-1
-          
-          <br />
-          <span style="font-weight:normal;">(2260/2268 complete)</span>
-          
-        </th>
-        <th style="font-weight:normal">
-          
-            <div class="tab-container">
-              <div class="tab-buttons">
-                <button class="tab-button active" onclick="showTab('fmriprep-dl')">Datalad Dataset</button>
-                <button class="tab-button" onclick="showTab('fmriprep-ephe')">Ephemeral Clone</button>
-              </div>
-              <div id="fmriprep-dl" class="tab-content active">
-                <div class="copy-container">
-                  <span class="copy-text"><code>ria+file:///cbica/projects/pennlinc_rbc/datasets/LINC_NKI/derivatives/fmriprep_func-24-1-1-babs/output_ria#~data</code></span>
-                  <button class="copy-button" onclick="copyToClipboard('fmriprep-dl')">Copy</button>
-                </div>
-              </div>
-              <div id="fmriprep-ephe" class="tab-content">
-                <div class="copy-container">
-                  <span class="copy-text"><code>/cbica/projects/pennlinc_rbc/datasets/LINC_NKI/derivatives/FMRIPREP_FUNC-24-1-1_zipped</code></span>
-                  <button class="copy-button" onclick="copyToClipboard('fmriprep-ephe')">Copy</button>
-                </div>
-              </div>
-            </div>
-          
-        </th>
-        <th style="font-weight:normal"></th>
-      </tr>
-    
-      
-      
-      
-      
-      
-      <tr>
-        <th style="font-weight:bold; width:250px;">
-          
-            <a href="/AI2D/docs/imaging/image_xcpd/">XCP-D</a>
-          
-          v0-10-6
-          
-          <br />
-          <span style="font-weight:normal;">(2260/2268 complete)</span>
-          
-        </th>
-        <th style="font-weight:normal">
-          
-            <div class="tab-container">
-              <div class="tab-buttons">
-                <button class="tab-button active" onclick="showTab('xcpd-dl')">Datalad Dataset</button>
-                <button class="tab-button" onclick="showTab('xcpd-ephe')">Ephemeral Clone</button>
-                <button class="tab-button" onclick="showTab('xcpd-qc')">fMRI QC</button>
-              </div>
-              <div id="xcpd-dl" class="tab-content active">
-                <div class="copy-container">
-                  <span class="copy-text"><code>ria+file:///cbica/projects/pennlinc_rbc/datasets/LINC_NKI/derivatives/xcpd-0-10-6-babs/output_ria#~data</code></span>
-                  <button class="copy-button" onclick="copyToClipboard('xcpd-dl')">Copy</button>
-                </div>
-              </div>
-              <div id="xcpd-ephe" class="tab-content">
-                <div class="copy-container">
-                  <span class="copy-text"><code>/cbica/projects/pennlinc_rbc/datasets/LINC_NKI/derivatives/XCPD-0-10-6_zipped</code></span>
-                  <button class="copy-button" onclick="copyToClipboard('xcpd-ephe')">Copy</button>
-                </div>
-              </div>
-              <div id="xcpd-qc" class="tab-content">
-                <div id="xcpd-qc-copy" class="copy-container" style="border: 1px solid #6c6edc; border-radius: 3px; padding: 6px; background-color: #f8f9fa;">
-                  <span class="copy-text"><code>/cbica/projects/pennlinc_rbc/datasets/LINC_NKI/derivatives/QC/func/xcpd_qc/all_xcpd_qc_metrics.tsv</code></span>
-                  <button class="copy-button" onclick="copyToClipboard('xcpd-qc-copy')">Copy</button>
-                </div>
-              </div>
-            </div>
-          
-        </th>
-        <th style="font-weight:normal"></th>
-      </tr>
-    
-      
-      
-      
-      
-      
-      <tr>
-        <th style="font-weight:bold; width:250px;">
-          
-            <a href="/AI2D/docs/imaging/image_qsiprep/">QSIPrep</a>
-          
-          v1-0-0
-          
-          <br />
-          <span style="font-weight:normal;">(2148/2149 complete)</span>
-          
-        </th>
-        <th style="font-weight:normal">
-          
-            <div class="tab-container">
-              <div class="tab-buttons">
-                <button class="tab-button active" onclick="showTab('qsiprep-dl')">Datalad Dataset</button>
-                <button class="tab-button" onclick="showTab('qsiprep-ephe')">Ephemeral Clone</button>
-              </div>
-              <div id="qsiprep-dl" class="tab-content active">
-                <div class="copy-container">
-                  <span class="copy-text"><code>ria+file:///cbica/projects/pennlinc_rbc/datasets/LINC_NKI/derivatives/qsiprep-1-0-0-babs/output_ria#~data</code></span>
-                  <button class="copy-button" onclick="copyToClipboard('qsiprep-dl')">Copy</button>
-                </div>
-              </div>
-              <div id="qsiprep-ephe" class="tab-content">
-                <div class="copy-container">
-                  <span class="copy-text"><code>/cbica/projects/pennlinc_rbc/datasets/LINC_NKI/derivatives/QSIPREP-1-0-0_zipped</code></span>
-                  <button class="copy-button" onclick="copyToClipboard('qsiprep-ephe')">Copy</button>
-                </div>
-              </div>
-            </div>
-          
-        </th>
-        <th style="font-weight:normal"></th>
-      </tr>
-    
-      
-      
-      
-      
-      
-      <tr>
-        <th style="font-weight:bold; width:250px;">
-          
-            <a href="/AI2D/docs/imaging/image_qsirecon/#bundle-stats">QSIRecon (Bundle Stats)</a>
-          
-          v1-1-0
-          
-          <br />
-          <span style="font-weight:normal;">(2143/2148 complete)</span>
-          
-        </th>
-        <th style="font-weight:normal">
-          
-            <div class="tab-container">
-              <div class="tab-buttons">
-                <button class="tab-button active" onclick="showTab('qsirecon_bundle-dl')">Datalad Dataset</button>
-                <button class="tab-button" onclick="showTab('qsirecon_bundle-ephe')">Ephemeral Clone</button>
-              </div>
-              <div id="qsirecon_bundle-dl" class="tab-content active">
-                <div class="copy-container">
-                  <span class="copy-text"><code>ria+file:///cbica/projects/pennlinc_rbc/datasets/LINC_NKI/derivatives/qsirecon-1-1-0_bundle-stats_babs/output_ria#~data</code></span>
-                  <button class="copy-button" onclick="copyToClipboard('qsirecon_bundle-dl')">Copy</button>
-                </div>
-              </div>
-              <div id="qsirecon_bundle-ephe" class="tab-content">
-                <div class="copy-container">
-                  <span class="copy-text"><code>/cbica/projects/pennlinc_rbc/datasets/LINC_NKI/derivatives/QSIRECON-1-1-0_BUNDLE-STATS_zipped</code></span>
-                  <button class="copy-button" onclick="copyToClipboard('qsirecon_bundle-ephe')">Copy</button>
-                </div>
-              </div>
-            </div>
-          
-        </th>
-        <th style="font-weight:normal"></th>
-      </tr>
-    
-
-    <!-- ncdlmuse row -->
-    <tr>
-      <th style="font-weight:bold; width:250px;">
-        <a href="/AI2D/docs/imaging/image_ncdlmuse/">NiChart_DLMUSE</a> v1.0.7
-        <br />
-        <span style="font-weight:normal;">(2271/2271 complete)</span>
-      </th>
-      <th style="font-weight:normal">
-        <div id="ncdlmuse-path" class="copy-container" style="border: 1px solid #6c6edc; border-radius: 3px; padding: 6px; background-color: #f8f9fa;">
-          <span class="copy-text"><code>/cbica/projects/pennlinc_rbc/datasets/LINC_NKI/derivatives/NCDLMUSE-0-1-4_volumes/group_ncdlmuse_volumes.tsv</code></span>
-          <button class="copy-button" onclick="copyToClipboard('ncdlmuse-path')">Copy</button>
-        </div>
-      </th>
-      <th style="font-weight:normal"></th>
-    </tr>
-  </table>
-</div>
-
-<style>
-.tab-container { width: 100%; }
-.tab-buttons { display: flex; margin-bottom: 5px; }
-.tab-button {
-  background-color: #f1f1f1;
-  border: 1px solid #ccc;
-  padding: 5px 10px;
-  cursor: pointer;
-  font-size: 18px;
-  margin-right: 2px;
-}
-.tab-button.active {
-  background-color: rgb(108, 110, 220);
-  color: white;
-  border-color: rgb(108, 110, 220);
-}
-.tab-content {
-  display: none;
-  padding: 5px;
-  background-color: #f9f9f9;
-  border: 1px solid #ddd;
-  word-break: break-all;
-}
-.tab-content.active { display: block; }
-.copy-container { display: flex; align-items: center; justify-content: space-between; gap: 10px; }
-.copy-text { flex: 1; word-break: break-all; }
-.copy-button {
-  background-color: rgb(108, 110, 220);
-  color: white;
-  border: none;
-  padding: 4px 8px;
-  border-radius: 3px;
-  cursor: pointer;
-  font-size: 18px;
-  white-space: nowrap;
-  flex-shrink: 0;
-}
-.copy-button:hover { background-color: rgb(104, 106, 235); }
-.copy-button:active { background-color: rgb(84, 86, 215); }
-</style>
-
-<script>
-function showTab(tabName) {
-  var tabType = tabName.indexOf('-dl') !== -1 ? 'datalad' : (tabName.indexOf('-qc') !== -1 ? 'qc' : 'ephemeral');
-  var tabContents = document.getElementsByClassName('tab-content');
-  for (var i = 0; i < tabContents.length; i++) {
-    tabContents[i].classList.remove('active');
-  }
-  var tabButtons = document.getElementsByClassName('tab-button');
-  for (var j = 0; j < tabButtons.length; j++) {
-    tabButtons[j].classList.remove('active');
-  }
-  if (tabType === 'datalad') {
-    var dls = document.querySelectorAll('[id$="-dl"]');
-    var dlButtons = document.querySelectorAll('[onclick*="-dl"]');
-    dls.forEach(function(c) { c.classList.add('active'); });
-    dlButtons.forEach(function(b) { b.classList.add('active'); });
-  } else if (tabType === 'qc') {
-    var qcs = document.querySelectorAll('[id$="-qc"]');
-    var qcButtons = document.querySelectorAll('[onclick*="-qc"]');
-    qcs.forEach(function(c) { c.classList.add('active'); });
-    qcButtons.forEach(function(b) { b.classList.add('active'); });
-  } else {
-    var eph = document.querySelectorAll('[id$="-ephe"]');
-    var epheButtons = document.querySelectorAll('[onclick*="-ephe"]');
-    eph.forEach(function(c) { c.classList.add('active'); });
-    epheButtons.forEach(function(b) { b.classList.add('active'); });
-  }
-}
-function copyToClipboard(elementId) {
-  var element = document.getElementById(elementId);
-  var textToCopy = element.querySelector('.copy-text').textContent;
-  var textarea = document.createElement('textarea');
-  textarea.value = textToCopy;
-  document.body.appendChild(textarea);
-  textarea.select();
-  document.execCommand('copy');
-  document.body.removeChild(textarea);
-  var button = element.querySelector('.copy-button');
-  var originalText = button.textContent;
-  button.textContent = 'Copied!';
-  button.style.backgroundColor = '#28a745';
-  setTimeout(function() {
-    button.textContent = originalText;
-    button.style.backgroundColor = 'rgb(108, 110, 220)';
-  }, 1000);
-}
-</script>
-
-<p><br /></p>
-
-<p><em>Funding</em>
-<br />
-R01MH094639-01, New York State Office of Mental Health and Research Foundation for Mental Hygiene, 1FDN2012-1, Center for the Developing Brain at the Child Mind Institute, R01MH081218, R01MH083246, R21MH084126, NKI Center for Advanced Brain Imaging (CABI), Brain Research Foundation (Chicago, IL), Stavros Niarchos Foundation, <a href="https://reporter.nih.gov/search/e9_-eAc68EOR6N2XajbTiQ/project-details/10626901">NIMH R01MH120482</a>.</p>
-
-<p><em>Citation</em>
-<br />
-Tobe RH, MacKay-Brandt A, Lim R, Kramer M, Breland MM, Tu L, Tian Y, Trautman KD, Hu C, Sangoi R, Alexander L, Gabbay V, Castellanos FX, Leventhal BL, Craddock RC, Colcombe SJ, Franco AR, Milham MP. A longitudinal resource for studying connectome development and its psychiatric associations during childhood. Sci Data. 2022 Jun 14;9(1):300. doi: 10.1038/s41597-022-01329-y. PMID: 35701428; PMCID: PMC9197863.</p>]]></content><author><name>{&quot;links&quot;=&gt;[{&quot;label&quot;=&gt;&quot;Email&quot;, &quot;icon&quot;=&gt;&quot;fas fa-fw fa-envelope-square&quot;}, {&quot;label&quot;=&gt;&quot;Website&quot;, &quot;icon&quot;=&gt;&quot;fas fa-fw fa-link&quot;}, {&quot;label&quot;=&gt;&quot;Twitter&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-twitter-square&quot;}, {&quot;label&quot;=&gt;&quot;Facebook&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-facebook-square&quot;}, {&quot;label&quot;=&gt;&quot;GitHub&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-github&quot;}, {&quot;label&quot;=&gt;&quot;Instagram&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-instagram&quot;}]}</name></author><category term="docs" /><category term="datasets" /><summary type="html"><![CDATA[NKI Rockland Sample]]></summary></entry></feed>
+and the AI2D maintainers will work with you to create the blog post.</p>]]></content><author><name>{&quot;links&quot;=&gt;[{&quot;label&quot;=&gt;&quot;Email&quot;, &quot;icon&quot;=&gt;&quot;fas fa-fw fa-envelope-square&quot;}, {&quot;label&quot;=&gt;&quot;Website&quot;, &quot;icon&quot;=&gt;&quot;fas fa-fw fa-link&quot;}, {&quot;label&quot;=&gt;&quot;Twitter&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-twitter-square&quot;}, {&quot;label&quot;=&gt;&quot;Facebook&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-facebook-square&quot;}, {&quot;label&quot;=&gt;&quot;GitHub&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-github&quot;}, {&quot;label&quot;=&gt;&quot;Instagram&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-instagram&quot;}]}</name></author><category term="docs" /><category term="community" /><summary type="html"><![CDATA[Get Support]]></summary></entry></feed>

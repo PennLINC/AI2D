@@ -130,4 +130,10 @@ var store = [{
         "tags": [],
         "url": "/AI2D/docs/datasets/OASIS/",
         "teaser": null
+      },{
+        "title": "Action to Control Cardiovascular Risk in Diabetes",
+        "excerpt":"About the dataset Primary description: Type 2 diabetes and cardiovascular outcomes The Action to Control Cardiovascular Risk in Diabetes (ACCORD) clinical trial evaluated intensive glycemic control on a cohort of participants with type 2 diabetes. The Memory in Diabetes (MIND) sub-study further evaluated cognitive and structural brain outcomes in a...","categories": ["docs","datasets"],
+        "tags": [],
+        "url": "/AI2D/docs/datasets/ACCORD/",
+        "teaser": null
       }]
