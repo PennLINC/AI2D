@@ -3,12 +3,14 @@
 # Function to display help message
 show_help() {
 cat <<'EOF'
-Usage: unzip_files.sh [--add_ses_freesurfer] <input_dir> <output_dir> [sub_list|file_pattern] [file_pattern]
+Usage: unzip_files.sh [--add_ses_freesurfer] [--preserve-paths] <input_dir> <output_dir> [sub_list|file_pattern] [file_pattern]
 
 Extract all .zip files from the specified input directory to the output directory using 7z.
 Options:
   --add_ses_freesurfer  After extracting, rename sourcedata/freesurfer/sub-<id> to
                         sourcedata/freesurfer/sub-<id>_ses-<ses> using the ses from the zip filename.
+  --preserve-paths      When extracting with a file pattern, preserve the paths from inside the archive
+                        (i.e., keep the folder structure). By default, patterned extraction flattens files.
   sub_list              Path to a text file with subject IDs (one per line).
   file_pattern          A pattern to extract specific files from each archive (using 7z's -r flag).
 
@@ -22,6 +24,8 @@ Important notes:
 Examples:
   unzip_files.sh /path/to/input /path/to/output
   unzip_files.sh --add_ses_freesurfer /path/to/input /path/to/output
+  unzip_files.sh --preserve-paths /path/to/input /path/to/output "*/sub-*/anat/*.nii.gz"
+  unzip_files.sh --preserve-paths /path/to/input /path/to/output subject_list.txt "*/sub-*/anat/*.nii.gz"
   unzip_files.sh /path/to/input /path/to/output subject_list.txt
   unzip_files.sh /path/to/input /path/to/output "*/sub-*/anat/*_space-MNI152NLin6Asym_res-2_desc-preproc_T1w.nii.gz"
   unzip_files.sh /path/to/input /path/to/output subject_list.txt "*/sub-*/anat/*_space-MNI152NLin6Asym_res-2_desc-preproc_T1w.nii.gz"
@@ -36,10 +40,15 @@ fi
 
 # Optional flag parsing
 add_ses_freesurfer=false
+preserve_paths=false
 while true; do
     case "$1" in
         --add_ses_freesurfer)
             add_ses_freesurfer=true
+            shift
+            ;;
+        --preserve-paths)
+            preserve_paths=true
             shift
             ;;
         *)
@@ -136,8 +145,13 @@ if [ -n "$file_pattern" ]; then
             7z x "$zip_file" -aoa -o"$output_dir" -r "$file_pattern"
             post_extract_fix "$zip_file"
         else
-            # Default: flatten when not renaming freesurfer
-            7z e "$zip_file" -aoa -o"$output_dir" -r "$file_pattern"
+            if [ "$preserve_paths" = true ]; then
+                # Preserve paths/folder structure within the archive
+                7z x "$zip_file" -aoa -o"$output_dir" -r "$file_pattern"
+            else
+                # Default: flatten when not renaming freesurfer
+                7z e "$zip_file" -aoa -o"$output_dir" -r "$file_pattern"
+            fi
         fi
     }
 else

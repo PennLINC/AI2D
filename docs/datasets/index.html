@@ -244,6 +244,7 @@ Many labs at Penn use the same large, publicly available neuroimaging datasets. 
       <tbody>
         {% assign dataset_posts = site.posts | where_exp: "post", "post.path contains 'datasets/_posts'" | sort: "title" %}
         {% for dataset in dataset_posts %}
+          {% comment %}Get CSV data as fallback only if front matter doesn't have the data{% endcomment %}
           {% assign csv_data = nil %}
           {% if dataset.study_abbr %}
             {% assign csv_rows = site.data.nichart_data_overview | where: "Study_abbr", dataset.study_abbr %}
@@ -253,8 +254,11 @@ Many labs at Penn use the same large, publicly available neuroimaging datasets. 
           <tr>
             <td><a href="{{ dataset.website }}">{{ dataset.title }}</a></td>
             <td>
+              {% comment %}Prioritize front matter over CSV{% endcomment %}
               {% assign age_range_display = "" %}
-              {% if csv_data and csv_data.age_range %}
+              {% if dataset.age_range and dataset.age_range != "" %}
+                {% assign age_range_display = dataset.age_range %}
+              {% elsif csv_data and csv_data.age_range %}
                 {% if csv_data.age_range contains ";" %}
                   {% assign age_parts = csv_data.age_range | split: ";" %}
                   {% assign min_age = 999 %}
@@ -275,8 +279,6 @@ Many labs at Penn use the same large, publicly available neuroimaging datasets. 
                 {% else %}
                   {% assign age_range_display = csv_data.age_range %}
                 {% endif %}
-              {% elsif dataset.age_range %}
-                {% assign age_range_display = dataset.age_range %}
               {% endif %}
               {% if age_range_display != "" %}
                 {{ age_range_display }}
@@ -285,8 +287,11 @@ Many labs at Penn use the same large, publicly available neuroimaging datasets. 
               {% endif %}
             </td>
             <td>
+              {% comment %}Prioritize front matter over CSV{% endcomment %}
               {% assign sample_size_display = "" %}
-              {% if csv_data and csv_data.N_subject %}
+              {% if dataset.sample_size and dataset.sample_size != "" %}
+                {% assign sample_size_display = dataset.sample_size %}
+              {% elsif csv_data and csv_data.N_subject %}
                 {% if csv_data.N_subject contains ";" %}
                   {% assign subj_parts = csv_data.N_subject | split: ";" %}
                   {% assign total_subjects = 0 %}
@@ -302,8 +307,6 @@ Many labs at Penn use the same large, publicly available neuroimaging datasets. 
                 {% else %}
                   {% assign sample_size_display = csv_data.N_subject %}
                 {% endif %}
-              {% elsif dataset.sample_size %}
-                {% assign sample_size_display = dataset.sample_size %}
               {% endif %}
               {% if sample_size_display != "" %}
                 {{ sample_size_display }}
@@ -312,8 +315,11 @@ Many labs at Penn use the same large, publicly available neuroimaging datasets. 
               {% endif %}
             </td>
             <td>
+              {% comment %}Prioritize front matter over CSV{% endcomment %}
               {% assign sessions_display = "" %}
-              {% if csv_data and csv_data.N_MR_session %}
+              {% if dataset.number_of_sessions and dataset.number_of_sessions != "" %}
+                {% assign sessions_display = dataset.number_of_sessions %}
+              {% elsif csv_data and csv_data.N_MR_session %}
                 {% if csv_data.N_MR_session contains ";" %}
                   {% assign sess_parts = csv_data.N_MR_session | split: ";" %}
                   {% assign total_sessions = 0 %}
@@ -329,8 +335,6 @@ Many labs at Penn use the same large, publicly available neuroimaging datasets. 
                 {% else %}
                   {% assign sessions_display = csv_data.N_MR_session %}
                 {% endif %}
-              {% elsif dataset.number_of_sessions %}
-                {% assign sessions_display = dataset.number_of_sessions %}
               {% endif %}
               {% if sessions_display != "" %}
                 {{ sessions_display }}
@@ -339,80 +343,85 @@ Many labs at Penn use the same large, publicly available neuroimaging datasets. 
               {% endif %}
             </td>
             <td>
-              {% if csv_data and csv_data.T1w_avai %}
+              {% comment %}Prioritize front matter over CSV - handle both "Yes"/"No" strings and true/false booleans{% endcomment %}
+              {% assign t1w_available = false %}
+              {% if dataset.t1w == true or dataset.t1w == "Yes" or dataset.t1w == "yes" %}
+                {% assign t1w_available = true %}
+              {% elsif dataset.t1w == false or dataset.t1w == "No" or dataset.t1w == "no" %}
+                {% assign t1w_available = false %}
+              {% elsif csv_data and csv_data.T1w_avai %}
                 {% if csv_data.T1w_avai == "Yes" %}
-                  <span class="status-icon status-success">✅</span>
-                {% elsif csv_data.T1w_avai == "No" %}
-                  <span class="status-icon status-error">NA</span>
-                {% else %}
-                  <span class="status-icon status-na">—</span>
+                  {% assign t1w_available = true %}
                 {% endif %}
-              {% elsif dataset.t1w == true %}
+              {% endif %}
+              {% if t1w_available %}
                 <span class="status-icon status-success">✅</span>
-              {% elsif dataset.t1w == false %}
-                <span class="status-icon status-error">NA</span>
               {% else %}
-                <span class="status-icon status-na">—</span>
+                <span class="status-icon status-error">NA</span>
               {% endif %}
             </td>
             <td>
-              {% if csv_data and csv_data.fmri_avai %}
+              {% comment %}Prioritize front matter over CSV{% endcomment %}
+              {% assign fmri_available = false %}
+              {% if dataset.fmri == true or dataset.fmri == "Yes" or dataset.fmri == "yes" %}
+                {% assign fmri_available = true %}
+              {% elsif dataset.fmri == false or dataset.fmri == "No" or dataset.fmri == "no" %}
+                {% assign fmri_available = false %}
+              {% elsif csv_data and csv_data.fmri_avai %}
                 {% if csv_data.fmri_avai == "Yes" %}
-                  <span class="status-icon status-success">✅</span>
-                {% elsif csv_data.fmri_avai == "No" %}
-                  <span class="status-icon status-error">NA</span>
-                {% else %}
-                  <span class="status-icon status-na">—</span>
+                  {% assign fmri_available = true %}
                 {% endif %}
-              {% elsif dataset.fmri == true %}
+              {% endif %}
+              {% if fmri_available %}
                 <span class="status-icon status-success">✅</span>
-              {% elsif dataset.fmri == false %}
-                <span class="status-icon status-error">NA</span>
               {% else %}
-                <span class="status-icon status-na">—</span>
+                <span class="status-icon status-error">NA</span>
               {% endif %}
             </td>
             <td>
-              {% if csv_data and csv_data.dmri_avai %}
+              {% comment %}Prioritize front matter over CSV{% endcomment %}
+              {% assign dmri_available = false %}
+              {% if dataset.dmri == true or dataset.dmri == "Yes" or dataset.dmri == "yes" %}
+                {% assign dmri_available = true %}
+              {% elsif dataset.dmri == false or dataset.dmri == "No" or dataset.dmri == "no" %}
+                {% assign dmri_available = false %}
+              {% elsif csv_data and csv_data.dmri_avai %}
                 {% if csv_data.dmri_avai == "Yes" %}
-                  <span class="status-icon status-success">✅</span>
-                {% elsif csv_data.dmri_avai == "No" %}
-                  <span class="status-icon status-error">NA</span>
-                {% else %}
-                  <span class="status-icon status-na">—</span>
+                  {% assign dmri_available = true %}
                 {% endif %}
-              {% elsif dataset.dmri == true %}
+              {% endif %}
+              {% if dmri_available %}
                 <span class="status-icon status-success">✅</span>
-              {% elsif dataset.dmri == false %}
-                <span class="status-icon status-error">NA</span>
               {% else %}
-                <span class="status-icon status-na">—</span>
+                <span class="status-icon status-error">NA</span>
               {% endif %}
             </td>
             <td>
-              {% if csv_data and csv_data.fmap_avai %}
+              {% comment %}Prioritize front matter over CSV{% endcomment %}
+              {% assign fmap_available = false %}
+              {% if dataset.fmap == true or dataset.fmap == "Yes" or dataset.fmap == "yes" %}
+                {% assign fmap_available = true %}
+              {% elsif dataset.fmap == false or dataset.fmap == "No" or dataset.fmap == "no" %}
+                {% assign fmap_available = false %}
+              {% elsif csv_data and csv_data.fmap_avai %}
                 {% if csv_data.fmap_avai == "Yes" %}
-                  <span class="status-icon status-success">✅</span>
-                {% elsif csv_data.fmap_avai == "No" %}
-                  <span class="status-icon status-error">NA</span>
-                {% else %}
-                  <span class="status-icon status-na">—</span>
+                  {% assign fmap_available = true %}
                 {% endif %}
-              {% elsif dataset.fmap == true %}
+              {% endif %}
+              {% if fmap_available %}
                 <span class="status-icon status-success">✅</span>
-              {% elsif dataset.fmap == false %}
-                <span class="status-icon status-error">NA</span>
               {% else %}
-                <span class="status-icon status-na">—</span>
+                <span class="status-icon status-error">NA</span>
               {% endif %}
             </td>
             <td>
+              {% comment %}Check for FreeSurfer availability from front matter{% endcomment %}
               {% assign freesurfer_available = false %}
-              {% if dataset.smriprep_session and dataset.smriprep_session != "n/a" and dataset.smriprep_session != "" %}
+              {% if dataset.smriprep_session and dataset.smriprep_session != "n/a" and dataset.smriprep_session != "" and dataset.smriprep_session != nil %}
                 {% assign freesurfer_available = true %}
-              {% elsif dataset.freesurfer_session and dataset.freesurfer_session != "n/a" and dataset.freesurfer_session != "" %}
+              {% elsif dataset.freesurfer_session and dataset.freesurfer_session != "n/a" and dataset.freesurfer_session != "" and dataset.freesurfer_session != nil %}
                 {% assign freesurfer_available = true %}
-              {% elsif dataset.freesurferpost_session and dataset.freesurferpost_session != "n/a" and dataset.freesurferpost_session != "" %}
+              {% elsif dataset.freesurferpost_session and dataset.freesurferpost_session != "n/a" and dataset.freesurferpost_session != "" and dataset.freesurferpost_session != nil %}
                 {% assign freesurfer_available = true %}
               {% endif %}
               {% if freesurfer_available %}
@@ -422,8 +431,13 @@ Many labs at Penn use the same large, publicly available neuroimaging datasets. 
               {% endif %}
             </td>
             <td>
+              {% comment %}Check for DLMUSE availability from front matter first{% endcomment %}
               {% assign dlmuse_available = false %}
-              {% if csv_data and csv_data.DLMUSE and csv_data.DLMUSE != "" %}
+              {% if dataset.ncdlmuse_session and dataset.ncdlmuse_session != "n/a" and dataset.ncdlmuse_session != "" and dataset.ncdlmuse_session != nil %}
+                {% assign dlmuse_available = true %}
+              {% elsif dataset.dlmuse_session and dataset.dlmuse_session != "n/a" and dataset.dlmuse_session != "" and dataset.dlmuse_session != nil %}
+                {% assign dlmuse_available = true %}
+              {% elsif csv_data and csv_data.DLMUSE and csv_data.DLMUSE != "" %}
                 {% assign dlmuse_available = true %}
               {% elsif csv_data and csv_data.DLMUSE_N_ses_completed and csv_data.DLMUSE_N_ses_completed != "" %}
                 {% if csv_data.DLMUSE_N_ses_completed contains ";" %}
@@ -438,8 +452,6 @@ Many labs at Penn use the same large, publicly available neuroimaging datasets. 
                   {% assign count = csv_data.DLMUSE_N_ses_completed | plus: 0 %}
                   {% if count > 0 %}{% assign dlmuse_available = true %}{% endif %}
                 {% endif %}
-              {% elsif dataset.ncdlmuse_session and dataset.ncdlmuse_session != "n/a" and dataset.ncdlmuse_session != "" %}
-                {% assign dlmuse_available = true %}
               {% endif %}
               {% if dlmuse_available %}
                 <span class="status-icon status-success">✅</span>
@@ -448,8 +460,11 @@ Many labs at Penn use the same large, publicly available neuroimaging datasets. 
               {% endif %}
             </td>
             <td>
+              {% comment %}Check for DLWMLS availability from front matter first{% endcomment %}
               {% assign dlwmls_available = false %}
-              {% if csv_data and csv_data.DLWMLS and csv_data.DLWMLS != "" %}
+              {% if dataset.dlwmls_session and dataset.dlwmls_session != "n/a" and dataset.dlwmls_session != "" and dataset.dlwmls_session != nil %}
+                {% assign dlwmls_available = true %}
+              {% elsif csv_data and csv_data.DLWMLS and csv_data.DLWMLS != "" %}
                 {% assign dlwmls_available = true %}
               {% elsif csv_data and csv_data.DLWMLS_N_ses_completed and csv_data.DLWMLS_N_ses_completed != "" %}
                 {% if csv_data.DLWMLS_N_ses_completed contains ";" %}
@@ -472,8 +487,11 @@ Many labs at Penn use the same large, publicly available neuroimaging datasets. 
               {% endif %}
             </td>
             <td>
+              {% comment %}Check for fMRIPrep availability from front matter first{% endcomment %}
               {% assign fmriprep_available = false %}
-              {% if csv_data and csv_data.fMRIPrep and csv_data.fMRIPrep != "" %}
+              {% if dataset.fmriprep_session and dataset.fmriprep_session != "n/a" and dataset.fmriprep_session != "" and dataset.fmriprep_session != nil %}
+                {% assign fmriprep_available = true %}
+              {% elsif csv_data and csv_data.fMRIPrep and csv_data.fMRIPrep != "" %}
                 {% assign fmriprep_available = true %}
               {% elsif csv_data and csv_data.fMRIPrep_N_ses_completed and csv_data.fMRIPrep_N_ses_completed != "" %}
                 {% if csv_data.fMRIPrep_N_ses_completed contains ";" %}
@@ -488,8 +506,6 @@ Many labs at Penn use the same large, publicly available neuroimaging datasets. 
                   {% assign count = csv_data.fMRIPrep_N_ses_completed | plus: 0 %}
                   {% if count > 0 %}{% assign fmriprep_available = true %}{% endif %}
                 {% endif %}
-              {% elsif dataset.fmriprep_session and dataset.fmriprep_session != "n/a" and dataset.fmriprep_session != "" %}
-                {% assign fmriprep_available = true %}
               {% endif %}
               {% if fmriprep_available %}
                 <span class="status-icon status-success">✅</span>
@@ -498,8 +514,11 @@ Many labs at Penn use the same large, publicly available neuroimaging datasets. 
               {% endif %}
             </td>
             <td>
+              {% comment %}Check for XCP-D availability from front matter first{% endcomment %}
               {% assign xcpd_available = false %}
-              {% if csv_data and csv_data["XCP-D"] and csv_data["XCP-D"] != "" %}
+              {% if dataset.xcpd_session and dataset.xcpd_session != "n/a" and dataset.xcpd_session != "" and dataset.xcpd_session != nil %}
+                {% assign xcpd_available = true %}
+              {% elsif csv_data and csv_data["XCP-D"] and csv_data["XCP-D"] != "" %}
                 {% assign xcpd_available = true %}
               {% elsif csv_data and csv_data["XCP-D_N_ses_completed"] and csv_data["XCP-D_N_ses_completed"] != "" %}
                 {% if csv_data["XCP-D_N_ses_completed"] contains ";" %}
@@ -514,8 +533,6 @@ Many labs at Penn use the same large, publicly available neuroimaging datasets. 
                   {% assign count = csv_data["XCP-D_N_ses_completed"] | plus: 0 %}
                   {% if count > 0 %}{% assign xcpd_available = true %}{% endif %}
                 {% endif %}
-              {% elsif dataset.xcpd_session and dataset.xcpd_session != "n/a" and dataset.xcpd_session != "" %}
-                {% assign xcpd_available = true %}
               {% endif %}
               {% if xcpd_available %}
                 <span class="status-icon status-success">✅</span>
@@ -524,8 +541,9 @@ Many labs at Penn use the same large, publicly available neuroimaging datasets. 
               {% endif %}
             </td>
             <td>
+              {% comment %}Check for QSIPrep availability from front matter{% endcomment %}
               {% assign qsiprep_available = false %}
-              {% if dataset.qsiprep_session and dataset.qsiprep_session != "n/a" and dataset.qsiprep_session != "" %}
+              {% if dataset.qsiprep_session and dataset.qsiprep_session != "n/a" and dataset.qsiprep_session != "" and dataset.qsiprep_session != nil %}
                 {% assign qsiprep_available = true %}
               {% endif %}
               {% if qsiprep_available %}
@@ -535,11 +553,12 @@ Many labs at Penn use the same large, publicly available neuroimaging datasets. 
               {% endif %}
             </td>
             <td>
+              {% comment %}Check for QSIRecon availability from front matter{% endcomment %}
               {% assign qsirecon_available = false %}
-              {% if dataset.qsirecon_session and dataset.qsirecon_session != "n/a" and dataset.qsirecon_session != "" %}
+              {% if dataset.qsirecon_session and dataset.qsirecon_session != "n/a" and dataset.qsirecon_session != "" and dataset.qsirecon_session != nil %}
                 {% assign qsirecon_available = true %}
               {% endif %}
-              {% if dataset.qsirecon_bundle_session and dataset.qsirecon_bundle_session != "n/a" and dataset.qsirecon_bundle_session != "" %}
+              {% if dataset.qsirecon_bundle_session and dataset.qsirecon_bundle_session != "n/a" and dataset.qsirecon_bundle_session != "" and dataset.qsirecon_bundle_session != nil %}
                 {% assign qsirecon_available = true %}
               {% endif %}
               {% if qsirecon_available %}
