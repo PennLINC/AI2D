@@ -136,4 +136,10 @@ var store = [{
         "tags": [],
         "url": "/AI2D/docs/datasets/ACCORD/",
         "teaser": null
+      },{
+        "title": "Alzheimer's Disease Neuroimaging Initiative",
+        "excerpt":"About the dataset Primary description: Alzheimer’s biomarkers and progression The Alzheimer’s Disease Neuroimaging Initiative (ADNI) is a public–private partnership coordinated by the Alzheimer’s Therapeutic Research Institute at the University of Southern California. Since its launch in 2003 under the leadership of Principal Investigator Michael W. Weiner, MD, 63 sites across...","categories": ["docs","datasets"],
+        "tags": [],
+        "url": "/AI2D/docs/datasets/ADNI/",
+        "teaser": null
       }]
