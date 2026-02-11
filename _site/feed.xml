@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.3">Jekyll</generator><link href="http://localhost:4000/AI2D/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/AI2D/" rel="alternate" type="text/html" /><updated>2026-02-11T14:32:16-05:00</updated><id>http://localhost:4000/AI2D/feed.xml</id><title type="html">AI2D | PennLINC | Shared Data Resources</title><subtitle>AI2D Shared Data Resources</subtitle><author><name>{&quot;links&quot;=&gt;[{&quot;label&quot;=&gt;&quot;Email&quot;, &quot;icon&quot;=&gt;&quot;fas fa-fw fa-envelope-square&quot;}, {&quot;label&quot;=&gt;&quot;Website&quot;, &quot;icon&quot;=&gt;&quot;fas fa-fw fa-link&quot;}, {&quot;label&quot;=&gt;&quot;Twitter&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-twitter-square&quot;}, {&quot;label&quot;=&gt;&quot;Facebook&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-facebook-square&quot;}, {&quot;label&quot;=&gt;&quot;GitHub&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-github&quot;}, {&quot;label&quot;=&gt;&quot;Instagram&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-instagram&quot;}]}</name></author><entry><title type="html">Alzheimer’s Disease Neuroimaging Initiative</title><link href="http://localhost:4000/AI2D/docs/datasets/ADNI/" rel="alternate" type="text/html" title="Alzheimer’s Disease Neuroimaging Initiative" /><published>2026-01-16T00:00:00-05:00</published><updated>2026-01-16T00:00:00-05:00</updated><id>http://localhost:4000/AI2D/docs/datasets/ADNI</id><content type="html" xml:base="http://localhost:4000/AI2D/docs/datasets/ADNI/"><![CDATA[<h3 id="about-the-dataset">About the dataset</h3>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.3">Jekyll</generator><link href="http://localhost:4000/AI2D/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/AI2D/" rel="alternate" type="text/html" /><updated>2026-02-11T15:39:01-05:00</updated><id>http://localhost:4000/AI2D/feed.xml</id><title type="html">AI2D | PennLINC | Shared Data Resources</title><subtitle>AI2D Shared Data Resources</subtitle><author><name>{&quot;links&quot;=&gt;[{&quot;label&quot;=&gt;&quot;Email&quot;, &quot;icon&quot;=&gt;&quot;fas fa-fw fa-envelope-square&quot;}, {&quot;label&quot;=&gt;&quot;Website&quot;, &quot;icon&quot;=&gt;&quot;fas fa-fw fa-link&quot;}, {&quot;label&quot;=&gt;&quot;Twitter&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-twitter-square&quot;}, {&quot;label&quot;=&gt;&quot;Facebook&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-facebook-square&quot;}, {&quot;label&quot;=&gt;&quot;GitHub&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-github&quot;}, {&quot;label&quot;=&gt;&quot;Instagram&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-instagram&quot;}]}</name></author><entry><title type="html">Alzheimer’s Disease Neuroimaging Initiative</title><link href="http://localhost:4000/AI2D/docs/datasets/ADNI/" rel="alternate" type="text/html" title="Alzheimer’s Disease Neuroimaging Initiative" /><published>2026-01-16T00:00:00-05:00</published><updated>2026-01-16T00:00:00-05:00</updated><id>http://localhost:4000/AI2D/docs/datasets/ADNI</id><content type="html" xml:base="http://localhost:4000/AI2D/docs/datasets/ADNI/"><![CDATA[<h3 id="about-the-dataset">About the dataset</h3>
 
 <p><strong>Primary description:</strong> Alzheimer’s biomarkers and progression</p>
 
@@ -77,8 +77,22 @@
     
 
     
+    
+    
+    
+    
+    
+    
+    
+
+    
     <tr>
-      <th style="font-weight:bold; width:250px;">Age (mean ± SD)</th>
+      <th style="font-weight:bold; width:250px;">Age (mean ± SD)
+            
+              <br />
+              <span style="font-weight:normal;">(Baseline)</span>
+            
+          </th>
       <th style="font-weight:normal">73.1 ± 7.3</th>
       <th style="font-weight:normal"></th>
     </tr>
@@ -86,7 +100,12 @@
 
     
     <tr>
-      <th style="font-weight:bold; width:250px;">Age Range</th>
+      <th style="font-weight:bold; width:250px;">Age Range
+            
+              <br />
+              <span style="font-weight:normal;">(Baseline)</span>
+            
+          </th>
       <th style="font-weight:normal">55-90</th>
       <th style="font-weight:normal"></th>
     </tr>
@@ -100,8 +119,6 @@
     </tr>
     
 
-    
-    
     
     
 
@@ -118,11 +135,6 @@
       <th style="font-weight:normal">Christos Davatzikos</th>
       <th style="font-weight:normal"></th>
     </tr>
-
-    
-    
-    
-    
 
     
     <tr>
@@ -168,6 +180,8 @@
     
     
     
+    
+    
 
     
     
@@ -182,6 +196,8 @@
 
       
 
+      
+      
       
 
       
@@ -202,6 +218,10 @@
         
         
         
+        
+        
+        
+
         
         
         
@@ -239,6 +259,10 @@
         
         
 
+        
+        
+        
+
         <tr>
           <th style="font-weight:bold; width:250px;">
             
@@ -265,6 +289,10 @@
         
         
         
+        
+        
+        
+
         
         
         
@@ -334,7 +362,7 @@
                   <span class="copy-text"><code>/cbica/projects/ISTAGING/Pipelines/ISTAGING_Data_Consolidation_2020/v2.0/istaging.csv</code></span>
                   <button class="copy-button" onclick="copyToClipboard('adni-default-nonimg-v2-path')">Copy</button>
                 </div>
-                <p style="margin-top: 12px; margin-bottom: 8px; font-size: 14px; color: #444;">Data consolidated and harmonized 2020.</p>
+                <p style="margin-top: 12px; margin-bottom: 8px; font-size: 14px; color: #444;">Data consolidated and harmonized in 2020.</p>
                 
                 <p style="margin: 6px 0 4px; font-size: 14px; color: #444;">README: <code>/cbica/projects/ISTAGING/Pipelines/ISTAGING_Data_Consolidation_2020/v2.0/README.md</code></p>
                 <p style="margin: 6px 0 0; font-size: 14px; color: #444;">Release Notes: <code>/cbica/projects/ISTAGING/Pipelines/ISTAGING_Data_Consolidation_2020/v2.0/Release_Notes.md</code></p>
@@ -589,8 +617,22 @@ ADNI (National Institutes of Health Grant U01 AG024904, U01 AG072177) and DOD AD
     
 
     
+    
+    
+    
+    
+    
+    
+    
+
+    
     <tr>
-      <th style="font-weight:bold; width:250px;">Age (mean ± SD)</th>
+      <th style="font-weight:bold; width:250px;">Age (mean ± SD)
+            
+              <br />
+              <span style="font-weight:normal;">(Baseline)</span>
+            
+          </th>
       <th style="font-weight:normal">62.9 ± 5.8</th>
       <th style="font-weight:normal"></th>
     </tr>
@@ -598,8 +640,13 @@ ADNI (National Institutes of Health Grant U01 AG024904, U01 AG072177) and DOD AD
 
     
     <tr>
-      <th style="font-weight:bold; width:250px;">Age Range</th>
-      <th style="font-weight:normal">40-79</th>
+      <th style="font-weight:bold; width:250px;">Age Range
+            
+              <br />
+              <span style="font-weight:normal;">(Baseline)</span>
+            
+          </th>
+      <th style="font-weight:normal">54.7-79.3</th>
       <th style="font-weight:normal"></th>
     </tr>
     
@@ -612,8 +659,6 @@ ADNI (National Institutes of Health Grant U01 AG024904, U01 AG072177) and DOD AD
     </tr>
     
 
-    
-    
     
     
 
@@ -630,11 +675,6 @@ ADNI (National Institutes of Health Grant U01 AG024904, U01 AG072177) and DOD AD
       <th style="font-weight:normal">Christos Davatzikos</th>
       <th style="font-weight:normal"></th>
     </tr>
-
-    
-    
-    
-    
 
     
     <tr>
@@ -924,6 +964,8 @@ ADNI (National Institutes of Health Grant U01 AG024904, U01 AG072177) and DOD AD
     
     
     
+    
+    
 
     
     
@@ -938,6 +980,8 @@ ADNI (National Institutes of Health Grant U01 AG024904, U01 AG072177) and DOD AD
 
       
 
+      
+      
       
 
       
@@ -958,6 +1002,10 @@ ADNI (National Institutes of Health Grant U01 AG024904, U01 AG072177) and DOD AD
         
         
         
+        
+        
+        
+
         
         
         
@@ -995,6 +1043,10 @@ ADNI (National Institutes of Health Grant U01 AG024904, U01 AG072177) and DOD AD
         
         
 
+        
+        
+        
+
         <tr>
           <th style="font-weight:bold; width:250px;">
             
@@ -1028,6 +1080,10 @@ ADNI (National Institutes of Health Grant U01 AG024904, U01 AG072177) and DOD AD
         
         
 
+        
+        
+        
+
         <tr>
           <th style="font-weight:bold; width:250px;">
             
@@ -1038,7 +1094,7 @@ ADNI (National Institutes of Health Grant U01 AG024904, U01 AG072177) and DOD AD
             
             
               <br />
-              <span style="font-weight:normal;">(1308/1414 complete)</span>
+              <span style="font-weight:normal;">(1308/1389 complete)</span>
             
           </th>
           <th style="font-weight:normal">
@@ -1102,7 +1158,7 @@ ADNI (National Institutes of Health Grant U01 AG024904, U01 AG072177) and DOD AD
                   <span class="copy-text"><code>/cbica/projects/ISTAGING/Pipelines/ISTAGING_Data_Consolidation_2020/v2.0/istaging.csv</code></span>
                   <button class="copy-button" onclick="copyToClipboard('accord-default-nonimg-v2-path')">Copy</button>
                 </div>
-                <p style="margin-top: 12px; margin-bottom: 8px; font-size: 14px; color: #444;">Data consolidated and harmonized 2020.</p>
+                <p style="margin-top: 12px; margin-bottom: 8px; font-size: 14px; color: #444;">Data consolidated and harmonized in 2020.</p>
                 
                   <p style="margin-top: 0; margin-bottom: 4px; font-size: 14px; color: #444;"><strong>This study:</strong> subset with <code>df[df.Study == 'ACCORD']</code></p>
                 

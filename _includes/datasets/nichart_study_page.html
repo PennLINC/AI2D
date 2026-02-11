@@ -122,9 +122,33 @@ Optionally override lookup key:
       {% assign age_range_has_semicolon = true %}
     {% endif %}
 
+    {% assign n_subject = row["N_subject"] | default: page.sample_size %}
+    {% assign n_mr_session = row["N_MR_session"] | default: page.number_of_sessions %}
+    {% assign n_subject_has_semicolon = false %}
+    {% if n_subject and n_subject != "" and n_subject contains ";" %}
+      {% assign n_subject_has_semicolon = true %}
+    {% endif %}
+    {% assign n_mr_session_has_semicolon = false %}
+    {% if n_mr_session and n_mr_session != "" and n_mr_session contains ";" %}
+      {% assign n_mr_session_has_semicolon = true %}
+    {% endif %}
+    {% assign age_show_complete_note = false %}
+    {% if n_subject_has_semicolon == false and n_mr_session_has_semicolon == false and n_subject != "" and n_mr_session != "" %}
+      {% assign n_subject_num = n_subject | plus: 0 %}
+      {% assign n_mr_session_num = n_mr_session | plus: 0 %}
+      {% if n_subject_num < n_mr_session_num %}
+        {% assign age_show_complete_note = true %}
+      {% endif %}
+    {% endif %}
+
     {% if age_mean_sd and age_mean_sd != "" %}
     <tr>
-      <th style="font-weight:bold; width:250px;">Age (mean ± SD)</th>
+      <th style="font-weight:bold; width:250px;">Age (mean ± SD)
+            {% if age_show_complete_note %}
+              <br>
+              <span style="font-weight:normal;">(Baseline)</span>
+            {% endif %}
+          </th>
       <th style="font-weight:normal">{{ age_mean_sd }}</th>
       <th style="font-weight:normal"></th>
     </tr>
@@ -132,7 +156,12 @@ Optionally override lookup key:
 
     {% if age_range and age_range != "" and age_range_has_semicolon == false %}
     <tr>
-      <th style="font-weight:bold; width:250px;">Age Range</th>
+      <th style="font-weight:bold; width:250px;">Age Range
+            {% if age_show_complete_note %}
+              <br>
+              <span style="font-weight:normal;">(Baseline)</span>
+            {% endif %}
+          </th>
       <th style="font-weight:normal">{{ age_range }}</th>
       <th style="font-weight:normal"></th>
     </tr>
@@ -147,8 +176,6 @@ Optionally override lookup key:
     {% endif %}
 
     {% comment %}=== Standard rendering for all datasets (single-row values) ==={% endcomment %}
-    {% assign n_subject = row["N_subject"] | default: page.sample_size %}
-    {% assign n_mr_session = row["N_MR_session"] | default: page.number_of_sessions %}
     {% assign cubic_path = row["CUBIC"] | default: page.cubic_path %}
 
     {% if cubic_path and cubic_path != "" %}
@@ -164,15 +191,6 @@ Optionally override lookup key:
       <th style="font-weight:normal">Christos Davatzikos</th>
       <th style="font-weight:normal"></th>
     </tr>
-
-    {% assign n_subject_has_semicolon = false %}
-    {% if n_subject and n_subject != "" and n_subject contains ";" %}
-      {% assign n_subject_has_semicolon = true %}
-    {% endif %}
-    {% assign n_mr_session_has_semicolon = false %}
-    {% if n_mr_session and n_mr_session != "" and n_mr_session contains ";" %}
-      {% assign n_mr_session_has_semicolon = true %}
-    {% endif %}
 
     {% if n_subject and n_subject != "" and n_subject_has_semicolon == false %}
     <tr>
@@ -292,6 +310,8 @@ Optionally override lookup key:
     {% assign xcpd_version = row["XCP-D_version"] %}
     {% assign xcpd_complete = row["XCP-D_N_ses_completed"] %}
     {% assign xcpd_command = row["XCP-D_command"] %}
+    {% assign t1_n_ses = row["T1_N_ses"] %}
+    {% assign fl_n_ses = row["FL_N_ses"] %}
     {% assign nonimaging_raw = row["nonimaging_raw"] %}
     {% assign nonimaging_data_dictionary = row["Data_Dictionary"] %}
     {% assign nonimaging_consolidated_v2 = "/cbica/projects/ISTAGING/Pipelines/ISTAGING_Data_Consolidation_2020/v2.0/istaging.csv" %}
@@ -374,15 +394,54 @@ Optionally override lookup key:
             {% endif %}
           {% endfor %}
         {% endif %}
+
+        {% assign section_t1_n_ses = t1_n_ses %}
+        {% if t1_n_ses and t1_n_ses contains "=" %}
+          {% assign section_t1_n_ses = "" %}
+          {% assign t1_n_ses_parts = t1_n_ses | split: ";" %}
+          {% for part in t1_n_ses_parts %}
+            {% assign part_stripped = part | strip %}
+            {% if part_stripped contains key_prefix %}
+              {% assign section_t1_n_ses = part_stripped | replace_first: key_prefix, "" | strip %}
+            {% endif %}
+          {% endfor %}
+        {% endif %}
+
+        {% assign section_fl_n_ses = fl_n_ses %}
+        {% if fl_n_ses and fl_n_ses contains "=" %}
+          {% assign section_fl_n_ses = "" %}
+          {% assign fl_n_ses_parts = fl_n_ses | split: ";" %}
+          {% for part in fl_n_ses_parts %}
+            {% assign part_stripped = part | strip %}
+            {% if part_stripped contains key_prefix %}
+              {% assign section_fl_n_ses = part_stripped | replace_first: key_prefix, "" | strip %}
+            {% endif %}
+          {% endfor %}
+        {% endif %}
       {% else %}
         {% assign section_age_range = age_range %}
         {% assign section_n_subject = n_subject %}
         {% assign section_n_mr_session = n_mr_session %}
+        {% assign section_t1_n_ses = t1_n_ses %}
+        {% assign section_fl_n_ses = fl_n_ses %}
       {% endif %}
 
+      {% assign section_age_show_complete_note = false %}
+      {% if section_n_subject != "" and section_n_mr_session != "" %}
+        {% assign section_n_subject_num = section_n_subject | plus: 0 %}
+        {% assign section_n_mr_session_num = section_n_mr_session | plus: 0 %}
+        {% if section_n_subject_num < section_n_mr_session_num %}
+          {% assign section_age_show_complete_note = true %}
+        {% endif %}
+      {% endif %}
       {% if section_age_range and section_age_range != "" and age_range_has_semicolon %}
       <tr>
-        <th style="font-weight:bold; width:250px;">Age Range</th>
+        <th style="font-weight:bold; width:250px;">Age Range
+            {% if section_age_show_complete_note %}
+              <br>
+              <span style="font-weight:normal;">(Baseline)</span>
+            {% endif %}
+          </th>
         <th style="font-weight:normal">{{ section_age_range }}</th>
         <th style="font-weight:normal"></th>
       </tr>
@@ -672,6 +731,18 @@ Optionally override lookup key:
           {% endif %}
         {% endif %}
 
+        {% comment %}Denominator for complete note: DLMUSE/RAVENS use T1_N_ses, DLWMLS uses FL_N_ses, others use N_MR_session{% endcomment %}
+        {% assign p_n_ses = section_n_mr_session %}
+        {% if p_key == "DLMUSE" or p_key == "RAVENS" %}
+          {% if section_t1_n_ses and section_t1_n_ses != "" %}
+            {% assign p_n_ses = section_t1_n_ses %}
+          {% endif %}
+        {% elsif p_key == "DLWMLS" %}
+          {% if section_fl_n_ses and section_fl_n_ses != "" %}
+            {% assign p_n_ses = section_fl_n_ses %}
+          {% endif %}
+        {% endif %}
+
         <tr>
           <th style="font-weight:bold; width:250px;">
             {% if p_key == "DLMUSE" %}
@@ -684,9 +755,9 @@ Optionally override lookup key:
             {% if p_version and p_version != "" %}
               <span style="font-weight:normal;">({{ p_version }})</span>
             {% endif %}
-            {% if p_complete and p_complete != "" and section_n_mr_session and section_n_mr_session != "" %}
+            {% if p_complete and p_complete != "" and p_n_ses and p_n_ses != "" %}
               <br>
-              <span style="font-weight:normal;">({{ p_complete }}/{{ section_n_mr_session }} complete)</span>
+              <span style="font-weight:normal;">({{ p_complete }}/{{ p_n_ses }} complete)</span>
             {% endif %}
           </th>
           <th style="font-weight:normal">
