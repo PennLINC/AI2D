@@ -373,8 +373,8 @@ Many labs at Penn use the same large, publicly available neuroimaging datasets. 
                 {% assign t1w_available = true %}
               {% elsif dataset.t1w == false or dataset.t1w == "No" or dataset.t1w == "no" %}
                 {% assign t1w_available = false %}
-              {% elsif csv_data and csv_data.T1w_avai %}
-                {% if csv_data.T1w_avai == "Yes" %}
+              {% elsif csv_data and csv_data.t1w_avai %}
+                {% if csv_data.t1w_avai == "Yes" %}
                   {% assign t1w_available = true %}
                 {% endif %}
               {% endif %}
