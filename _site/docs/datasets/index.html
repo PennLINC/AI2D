@@ -202,6 +202,7 @@ Many labs at Penn use the same large, publicly available neuroimaging datasets. 
   background: white;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
   position: relative;
+  --sticky-top-offset: 70px;
 }
 
 .datasets-table-container {
@@ -219,7 +220,6 @@ Many labs at Penn use the same large, publicly available neuroimaging datasets. 
   table-layout: auto;
   border: 2px solid #e8eaff;
   border-radius: 10px;
-  overflow: hidden;
   margin: 0;
   padding: 0;
 }
@@ -227,9 +227,6 @@ Many labs at Penn use the same large, publicly available neuroimaging datasets. 
 .datasets-table thead {
   background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
   color: white;
-  position: sticky;
-  top: 0;
-  z-index: 10;
 }
 
 .datasets-table th {
@@ -239,8 +236,29 @@ Many labs at Penn use the same large, publicly available neuroimaging datasets. 
   font-size: 14px;
   border: 1px solid #e8eaff;
   position: relative;
+  background: inherit;
   white-space: normal;
   word-wrap: break-word;
+}
+
+.datasets-table-sticky {
+  position: fixed;
+  top: var(--sticky-top-offset);
+  left: 0;
+  z-index: 50;
+  pointer-events: none;
+  visibility: hidden;
+  overflow: hidden;
+}
+
+.datasets-table-sticky table {
+  margin: 0;
+  border-collapse: separate;
+  border-spacing: 0;
+}
+
+.datasets-table-sticky thead {
+  box-shadow: 0 6px 12px rgba(102, 126, 234, 0.35);
 }
 
 /* Header color groups */
@@ -264,7 +282,12 @@ Many labs at Penn use the same large, publicly available neuroimaging datasets. 
   text-align: left;
   position: sticky;
   left: 0;
-  z-index: 20;
+  z-index: 25;
+  background: inherit;
+}
+
+.datasets-table thead tr:nth-child(2) th:first-child {
+  z-index: 24;
 }
 
 .datasets-table th a {
@@ -401,7 +424,7 @@ Many labs at Penn use the same large, publicly available neuroimaging datasets. 
           <th rowspan="2">Sample Size</th>
           <th rowspan="2">Number of Sessions</th>
           <th colspan="4">Raw</th>
-          <th colspan="7">Processed</th>
+          <th colspan="8">Processed</th>
         </tr>
         <tr>
           <th class="structural">T1w</th>
@@ -410,7 +433,8 @@ Many labs at Penn use the same large, publicly available neuroimaging datasets. 
           <th class="fieldmap">fmap</th>
           <th class="structural"><a href="/AI2D/docs/imaging/image_smriprep/"><u>FreeSurfer</u></a></th>
           <th class="structural"><a href="/AI2D/docs/imaging/image_ncdlmuse/"><u>DLMUSE</u></a></th>
-          <th class="structural"><u>DLWMLS</u></th>
+          <th class="structural"><u>RAVENS</u></th>
+          <th class="structural"><a href="https://github.com/CBICA/NiChart_DLWMLS"><u>DLWMLS</u></a></th>
           <th class="functional"><a href="/AI2D/docs/imaging/image_fmriprep/"><u>fMRIPrep</u></a></th>
           <th class="functional"><a href="/AI2D/docs/imaging/image_xcpd/"><u>XCP&#8209;D</u></a></th>
           <th class="diffusion"><a href="/AI2D/docs/imaging/image_qsiprep/"><u>QSIPrep</u></a></th>
@@ -425,7 +449,7 @@ Many labs at Penn use the same large, publicly available neuroimaging datasets. 
           
           
           <tr>
-            <td><a href="/AI2D/docs/datasets/28andHe">28andHe</a></td>
+            <td><a href="/AI2D/docs/datasets/28andHe">28andHe </a></td>
             <td>
               
               
@@ -511,6 +535,14 @@ Many labs at Penn use the same large, publicly available neuroimaging datasets. 
               
               
               
+                <span class="status-icon status-error">NA</span>
+              
+            </td>
+            <td>
+              
+              
+              
+              
                 <span class="status-icon status-success">✅</span>
               
             </td>
@@ -546,7 +578,7 @@ Many labs at Penn use the same large, publicly available neuroimaging datasets. 
           
           
           <tr>
-            <td><a href="/AI2D/docs/datasets/28andMe">28andMe</a></td>
+            <td><a href="/AI2D/docs/datasets/28andMe">28andMe </a></td>
             <td>
               
               
@@ -632,6 +664,14 @@ Many labs at Penn use the same large, publicly available neuroimaging datasets. 
               
               
               
+                <span class="status-icon status-error">NA</span>
+              
+            </td>
+            <td>
+              
+              
+              
+              
                 <span class="status-icon status-success">✅</span>
               
             </td>
@@ -667,7 +707,7 @@ Many labs at Penn use the same large, publicly available neuroimaging datasets. 
           
           
           <tr>
-            <td><a href="/AI2D/docs/datasets/ACCORD">Action to Control Cardiovascular Risk in Diabetes</a></td>
+            <td><a href="/AI2D/docs/datasets/ACCORD">Action to Control Cardiovascular Risk in Diabetes (ACCORD)</a></td>
             <td>
               
               
@@ -697,6 +737,22 @@ Many labs at Penn use the same large, publicly available neuroimaging datasets. 
               
               
               
+                <span class="status-icon status-error">NA</span>
+              
+            </td>
+            <td>
+              
+              
+              
+              
+                <span class="status-icon status-error">NA</span>
+              
+            </td>
+            <td>
+              
+              
+              
+              
                 <span class="status-icon status-success">✅</span>
               
             </td>
@@ -713,23 +769,15 @@ Many labs at Penn use the same large, publicly available neuroimaging datasets. 
               
               
               
+                <span class="status-icon status-error">NA</span>
+              
+            </td>
+            <td>
+              
+              
+              
+              
                 <span class="status-icon status-success">✅</span>
-              
-            </td>
-            <td>
-              
-              
-              
-              
-                <span class="status-icon status-error">NA</span>
-              
-            </td>
-            <td>
-              
-              
-              
-              
-                <span class="status-icon status-error">NA</span>
               
             </td>
             <td>
@@ -788,7 +836,7 @@ Many labs at Penn use the same large, publicly available neuroimaging datasets. 
           
           
           <tr>
-            <td><a href="/AI2D/docs/datasets/ADNI">Alzheimer's Disease Neuroimaging Initiative</a></td>
+            <td><a href="/AI2D/docs/datasets/ADNI">Alzheimer's Disease Neuroimaging Initiative (ADNI)</a></td>
             <td>
               
               
@@ -818,39 +866,47 @@ Many labs at Penn use the same large, publicly available neuroimaging datasets. 
               
               
               
+                <span class="status-icon status-error">NA</span>
+              
+            </td>
+            <td>
+              
+              
+              
+              
+                <span class="status-icon status-error">NA</span>
+              
+            </td>
+            <td>
+              
+              
+              
+              
+                <span class="status-icon status-error">NA</span>
+              
+            </td>
+            <td>
+              
+              
+              
+              
+                <span class="status-icon status-error">NA</span>
+              
+            </td>
+            <td>
+              
+              
+              
+              
+                <span class="status-icon status-error">NA</span>
+              
+            </td>
+            <td>
+              
+              
+              
+              
                 <span class="status-icon status-success">✅</span>
-              
-            </td>
-            <td>
-              
-              
-              
-              
-                <span class="status-icon status-error">NA</span>
-              
-            </td>
-            <td>
-              
-              
-              
-              
-                <span class="status-icon status-error">NA</span>
-              
-            </td>
-            <td>
-              
-              
-              
-              
-                <span class="status-icon status-error">NA</span>
-              
-            </td>
-            <td>
-              
-              
-              
-              
-                <span class="status-icon status-error">NA</span>
               
             </td>
             <td>
@@ -909,7 +965,7 @@ Many labs at Penn use the same large, publicly available neuroimaging datasets. 
           
           
           <tr>
-            <td><a href="/AI2D/docs/datasets/dCCNP">Developmental Chinese Color Nest Project</a></td>
+            <td><a href="/AI2D/docs/datasets/dCCNP">Developmental Chinese Color Nest Project (dCCNP)</a></td>
             <td>
               
               
@@ -995,6 +1051,14 @@ Many labs at Penn use the same large, publicly available neuroimaging datasets. 
               
               
               
+                <span class="status-icon status-error">NA</span>
+              
+            </td>
+            <td>
+              
+              
+              
+              
                 <span class="status-icon status-success">✅</span>
               
             </td>
@@ -1030,7 +1094,7 @@ Many labs at Penn use the same large, publicly available neuroimaging datasets. 
           
           
           <tr>
-            <td><a href="/AI2D/docs/datasets/HBN">Healthy Brain Network</a></td>
+            <td><a href="/AI2D/docs/datasets/HBN">Healthy Brain Network (HBN)</a></td>
             <td>
               
               
@@ -1116,6 +1180,14 @@ Many labs at Penn use the same large, publicly available neuroimaging datasets. 
               
               
               
+                <span class="status-icon status-error">NA</span>
+              
+            </td>
+            <td>
+              
+              
+              
+              
                 <span class="status-icon status-success">✅</span>
               
             </td>
@@ -1151,7 +1223,7 @@ Many labs at Penn use the same large, publicly available neuroimaging datasets. 
           
           
           <tr>
-            <td><a href="/AI2D/docs/datasets/HCP-YA">Human Connectome Project - Young Adult</a></td>
+            <td><a href="/AI2D/docs/datasets/HCP-YA">Human Connectome Project - Young Adult (HCP-YA)</a></td>
             <td>
               
               
@@ -1245,6 +1317,14 @@ Many labs at Penn use the same large, publicly available neuroimaging datasets. 
               
               
               
+                <span class="status-icon status-error">NA</span>
+              
+            </td>
+            <td>
+              
+              
+              
+              
                 <span class="status-icon status-success">✅</span>
               
             </td>
@@ -1272,7 +1352,7 @@ Many labs at Penn use the same large, publicly available neuroimaging datasets. 
           
           
           <tr>
-            <td><a href="/AI2D/docs/datasets/midnight_scan_club">Midnight Scan Club</a></td>
+            <td><a href="/AI2D/docs/datasets/midnight_scan_club">Midnight Scan Club </a></td>
             <td>
               
               
@@ -1358,6 +1438,14 @@ Many labs at Penn use the same large, publicly available neuroimaging datasets. 
               
               
               
+                <span class="status-icon status-error">NA</span>
+              
+            </td>
+            <td>
+              
+              
+              
+              
                 <span class="status-icon status-success">✅</span>
               
             </td>
@@ -1393,7 +1481,7 @@ Many labs at Penn use the same large, publicly available neuroimaging datasets. 
           
           
           <tr>
-            <td><a href="/AI2D/docs/datasets/NKI">NKI Rockland Sample</a></td>
+            <td><a href="/AI2D/docs/datasets/NKI">NKI Rockland Sample </a></td>
             <td>
               
               
@@ -1479,6 +1567,14 @@ Many labs at Penn use the same large, publicly available neuroimaging datasets. 
               
               
               
+                <span class="status-icon status-error">NA</span>
+              
+            </td>
+            <td>
+              
+              
+              
+              
                 <span class="status-icon status-success">✅</span>
               
             </td>
@@ -1514,7 +1610,7 @@ Many labs at Penn use the same large, publicly available neuroimaging datasets. 
           
           
           <tr>
-            <td><a href="/AI2D/docs/datasets/cneuromod">Neural Modelling</a></td>
+            <td><a href="/AI2D/docs/datasets/cneuromod">Neural Modelling (cneuromod)</a></td>
             <td>
               
               
@@ -1577,6 +1673,14 @@ Many labs at Penn use the same large, publicly available neuroimaging datasets. 
               
               
                 <span class="status-icon status-success">✅</span>
+              
+            </td>
+            <td>
+              
+              
+              
+              
+                <span class="status-icon status-error">NA</span>
               
             </td>
             <td>
@@ -1635,7 +1739,7 @@ Many labs at Penn use the same large, publicly available neuroimaging datasets. 
           
           
           <tr>
-            <td><a href="/AI2D/docs/datasets/OASIS">Open Access Series of Imaging Studies</a></td>
+            <td><a href="/AI2D/docs/datasets/OASIS">Open Access Series of Imaging Studies (OASIS)</a></td>
             <td>
               
               
@@ -1665,7 +1769,7 @@ Many labs at Penn use the same large, publicly available neuroimaging datasets. 
               
               
               
-                <span class="status-icon status-success">✅</span>
+                <span class="status-icon status-error">NA</span>
               
             </td>
             <td>
@@ -1698,6 +1802,14 @@ Many labs at Penn use the same large, publicly available neuroimaging datasets. 
               
               
                 <span class="status-icon status-error">NA</span>
+              
+            </td>
+            <td>
+              
+              
+              
+              
+                <span class="status-icon status-success">✅</span>
               
             </td>
             <td>
@@ -1756,7 +1868,7 @@ Many labs at Penn use the same large, publicly available neuroimaging datasets. 
           
           
           <tr>
-            <td><a href="/AI2D/docs/datasets/PNC">Philadelphia Neurodevelopmental Cohort</a></td>
+            <td><a href="/AI2D/docs/datasets/PNC">Philadelphia Neurodevelopmental Cohort (PNC)</a></td>
             <td>
               
               
@@ -1842,6 +1954,14 @@ Many labs at Penn use the same large, publicly available neuroimaging datasets. 
               
               
               
+                <span class="status-icon status-error">NA</span>
+              
+            </td>
+            <td>
+              
+              
+              
+              
                 <span class="status-icon status-success">✅</span>
               
             </td>
@@ -1877,7 +1997,7 @@ Many labs at Penn use the same large, publicly available neuroimaging datasets. 
           
           
           <tr>
-            <td><a href="/AI2D/docs/datasets/mobile_phenomics_pilot">Single-echo/multi-echo comparison pilot</a></td>
+            <td><a href="/AI2D/docs/datasets/mobile_phenomics_pilot">Single-echo/multi-echo comparison pilot (Mobile Phenomics Pilot)</a></td>
             <td>
               
               
@@ -1940,6 +2060,14 @@ Many labs at Penn use the same large, publicly available neuroimaging datasets. 
               
               
                 <span class="status-icon status-success">✅</span>
+              
+            </td>
+            <td>
+              
+              
+              
+              
+                <span class="status-icon status-error">NA</span>
               
             </td>
             <td>
@@ -2039,6 +2167,87 @@ document.addEventListener('DOMContentLoaded', function() {
       });
     });
   });
+
+  const container = document.querySelector('.datasets-table-container');
+  const thead = table.querySelector('thead');
+  if (!container || !thead) return;
+
+  const stickyWrap = document.createElement('div');
+  stickyWrap.className = 'datasets-table datasets-table-sticky';
+  const stickyTable = document.createElement('table');
+  stickyTable.appendChild(thead.cloneNode(true));
+  stickyWrap.appendChild(stickyTable);
+  document.body.appendChild(stickyWrap);
+
+  const stickyTopOffset = () => {
+    const raw = getComputedStyle(table.closest('.datasets-table')).getPropertyValue('--sticky-top-offset');
+    const val = parseFloat(raw);
+    return Number.isFinite(val) ? val : 0;
+  };
+
+  const syncSticky = () => {
+    const tableRect = table.getBoundingClientRect();
+    const containerRect = container.getBoundingClientRect();
+    const headHeight = thead.getBoundingClientRect().height;
+    const offset = stickyTopOffset();
+
+    const show = tableRect.top < offset && tableRect.bottom > offset + headHeight;
+    stickyWrap.style.visibility = show ? 'visible' : 'hidden';
+    if (!show) return;
+
+    stickyWrap.style.left = `${containerRect.left}px`;
+    stickyWrap.style.width = `${containerRect.width}px`;
+    stickyTable.style.width = `${tableRect.width}px`;
+    stickyTable.style.transform = `translateX(${-container.scrollLeft}px)`;
+
+    const sourceHeaders = table.querySelectorAll('thead th');
+    const stickyHeaders = stickyTable.querySelectorAll('thead th');
+    const theadStyles = getComputedStyle(thead);
+    const theadBgImage = theadStyles.backgroundImage;
+    const theadBgColor = theadStyles.backgroundColor;
+    sourceHeaders.forEach((th, idx) => {
+      if (!stickyHeaders[idx]) return;
+      const rect = th.getBoundingClientRect();
+      const styles = getComputedStyle(th);
+      const bgImage = styles.backgroundImage;
+      const bgColor = styles.backgroundColor;
+      const isTransparent =
+        bgColor === 'transparent' ||
+        bgColor === 'rgba(0, 0, 0, 0)' ||
+        bgColor === 'rgba(0,0,0,0)';
+
+      stickyHeaders[idx].style.width = `${rect.width}px`;
+
+      if (bgImage && bgImage !== 'none') {
+        stickyHeaders[idx].style.backgroundImage = bgImage;
+        stickyHeaders[idx].style.backgroundColor = bgColor;
+        stickyHeaders[idx].style.backgroundSize = styles.backgroundSize;
+        stickyHeaders[idx].style.backgroundPosition = styles.backgroundPosition;
+        stickyHeaders[idx].style.backgroundRepeat = styles.backgroundRepeat;
+      } else if (!isTransparent) {
+        stickyHeaders[idx].style.backgroundImage = 'none';
+        stickyHeaders[idx].style.backgroundColor = bgColor;
+        stickyHeaders[idx].style.backgroundSize = '';
+        stickyHeaders[idx].style.backgroundPosition = '';
+        stickyHeaders[idx].style.backgroundRepeat = '';
+      } else {
+        stickyHeaders[idx].style.backgroundImage = theadBgImage;
+        stickyHeaders[idx].style.backgroundColor = theadBgColor;
+        stickyHeaders[idx].style.backgroundSize = '';
+        stickyHeaders[idx].style.backgroundPosition = '';
+        stickyHeaders[idx].style.backgroundRepeat = '';
+      }
+
+      stickyHeaders[idx].style.color = styles.color;
+      stickyHeaders[idx].style.borderColor = styles.borderColor;
+    });
+  };
+
+  const scheduleSync = () => window.requestAnimationFrame(syncSticky);
+  window.addEventListener('scroll', scheduleSync, { passive: true });
+  window.addEventListener('resize', scheduleSync);
+  container.addEventListener('scroll', scheduleSync, { passive: true });
+  scheduleSync();
 });
 </script>
   </div>

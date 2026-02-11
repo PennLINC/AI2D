@@ -248,7 +248,7 @@ Many labs at Penn use the same large, publicly available neuroimaging datasets. 
           <th rowspan="2">Sample Size</th>
           <th rowspan="2">Number of Sessions</th>
           <th colspan="4">Raw</th>
-          <th colspan="7">Processed</th>
+          <th colspan="8">Processed</th>
         </tr>
         <tr>
           <th class="structural">T1w</th>
@@ -257,7 +257,8 @@ Many labs at Penn use the same large, publicly available neuroimaging datasets. 
           <th class="fieldmap">fmap</th>
           <th class="structural"><a href="{{ site.baseurl }}/docs/imaging/image_smriprep/"><u>FreeSurfer</u></a></th>
           <th class="structural"><a href="{{ site.baseurl }}/docs/imaging/image_ncdlmuse/"><u>DLMUSE</u></a></th>
-          <th class="structural"><u>DLWMLS</u></th>
+          <th class="structural"><u>RAVENS</u></th>
+          <th class="structural"><a href="https://github.com/CBICA/NiChart_DLWMLS"><u>DLWMLS</u></a></th>
           <th class="functional"><a href="{{ site.baseurl }}/docs/imaging/image_fmriprep/"><u>fMRIPrep</u></a></th>
           <th class="functional"><a href="{{ site.baseurl }}/docs/imaging/image_xcpd/"><u>XCP&#8209;D</u></a></th>
           <th class="diffusion"><a href="{{ site.baseurl }}/docs/imaging/image_qsiprep/"><u>QSIPrep</u></a></th>
@@ -477,6 +478,33 @@ Many labs at Penn use the same large, publicly available neuroimaging datasets. 
                 {% endif %}
               {% endif %}
               {% if dlmuse_available %}
+                <span class="status-icon status-success">✅</span>
+              {% else %}
+                <span class="status-icon status-error">NA</span>
+              {% endif %}
+            </td>
+            <td>
+              {% comment %}Check for RAVENS availability from front matter first{% endcomment %}
+              {% assign ravens_available = false %}
+              {% if dataset.ravens_session and dataset.ravens_session != "n/a" and dataset.ravens_session != "" and dataset.ravens_session != nil %}
+                {% assign ravens_available = true %}
+              {% elsif csv_data and csv_data.RAVENS and csv_data.RAVENS != "" %}
+                {% assign ravens_available = true %}
+              {% elsif csv_data and csv_data.RAVENS_N_ses_completed and csv_data.RAVENS_N_ses_completed != "" %}
+                {% if csv_data.RAVENS_N_ses_completed contains ";" %}
+                  {% assign parts = csv_data.RAVENS_N_ses_completed | split: ";" %}
+                  {% for part in parts %}
+                    {% if part contains "=" %}
+                      {% assign count = part | split: "=" | last | plus: 0 %}
+                      {% if count > 0 %}{% assign ravens_available = true %}{% endif %}
+                    {% endif %}
+                  {% endfor %}
+                {% else %}
+                  {% assign count = csv_data.RAVENS_N_ses_completed | plus: 0 %}
+                  {% if count > 0 %}{% assign ravens_available = true %}{% endif %}
+                {% endif %}
+              {% endif %}
+              {% if ravens_available %}
                 <span class="status-icon status-success">✅</span>
               {% else %}
                 <span class="status-icon status-error">NA</span>

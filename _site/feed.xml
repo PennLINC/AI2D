@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.3">Jekyll</generator><link href="http://localhost:4000/AI2D/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/AI2D/" rel="alternate" type="text/html" /><updated>2026-01-16T11:18:15-05:00</updated><id>http://localhost:4000/AI2D/feed.xml</id><title type="html">AI2D | PennLINC | Shared Data Resources</title><subtitle>AI2D Shared Data Resources</subtitle><author><name>{&quot;links&quot;=&gt;[{&quot;label&quot;=&gt;&quot;Email&quot;, &quot;icon&quot;=&gt;&quot;fas fa-fw fa-envelope-square&quot;}, {&quot;label&quot;=&gt;&quot;Website&quot;, &quot;icon&quot;=&gt;&quot;fas fa-fw fa-link&quot;}, {&quot;label&quot;=&gt;&quot;Twitter&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-twitter-square&quot;}, {&quot;label&quot;=&gt;&quot;Facebook&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-facebook-square&quot;}, {&quot;label&quot;=&gt;&quot;GitHub&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-github&quot;}, {&quot;label&quot;=&gt;&quot;Instagram&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-instagram&quot;}]}</name></author><entry><title type="html">Alzheimer’s Disease Neuroimaging Initiative</title><link href="http://localhost:4000/AI2D/docs/datasets/ADNI/" rel="alternate" type="text/html" title="Alzheimer’s Disease Neuroimaging Initiative" /><published>2026-01-16T00:00:00-05:00</published><updated>2026-01-16T00:00:00-05:00</updated><id>http://localhost:4000/AI2D/docs/datasets/ADNI</id><content type="html" xml:base="http://localhost:4000/AI2D/docs/datasets/ADNI/"><![CDATA[<h3 id="about-the-dataset">About the dataset</h3>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.3">Jekyll</generator><link href="http://localhost:4000/AI2D/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/AI2D/" rel="alternate" type="text/html" /><updated>2026-02-11T14:15:49-05:00</updated><id>http://localhost:4000/AI2D/feed.xml</id><title type="html">AI2D | PennLINC | Shared Data Resources</title><subtitle>AI2D Shared Data Resources</subtitle><author><name>{&quot;links&quot;=&gt;[{&quot;label&quot;=&gt;&quot;Email&quot;, &quot;icon&quot;=&gt;&quot;fas fa-fw fa-envelope-square&quot;}, {&quot;label&quot;=&gt;&quot;Website&quot;, &quot;icon&quot;=&gt;&quot;fas fa-fw fa-link&quot;}, {&quot;label&quot;=&gt;&quot;Twitter&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-twitter-square&quot;}, {&quot;label&quot;=&gt;&quot;Facebook&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-facebook-square&quot;}, {&quot;label&quot;=&gt;&quot;GitHub&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-github&quot;}, {&quot;label&quot;=&gt;&quot;Instagram&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-instagram&quot;}]}</name></author><entry><title type="html">Alzheimer’s Disease Neuroimaging Initiative</title><link href="http://localhost:4000/AI2D/docs/datasets/ADNI/" rel="alternate" type="text/html" title="Alzheimer’s Disease Neuroimaging Initiative" /><published>2026-01-16T00:00:00-05:00</published><updated>2026-01-16T00:00:00-05:00</updated><id>http://localhost:4000/AI2D/docs/datasets/ADNI</id><content type="html" xml:base="http://localhost:4000/AI2D/docs/datasets/ADNI/"><![CDATA[<h3 id="about-the-dataset">About the dataset</h3>
 
 <p><strong>Primary description:</strong> Alzheimer’s biomarkers and progression</p>
 
@@ -42,7 +42,14 @@
       <th style="font-weight:bold; width:250px;">DUA</th>
       <th style="font-weight:normal">
         
-          <a href="https://adni.loni.usc.edu/wp-content/themes/adni_2023/documents/ADNI_Data_Use_Agreement.pdf">https://adni.loni.usc.edu/wp-content/themes/adni_2023/documents/ADNI_Data_Use_Agreement.pdf</a>
+        
+          
+          
+            
+              <a href="https://adni.loni.usc.edu/wp-content/themes/adni_2023/documents/ADNI_Data_Use_Agreement.pdf">https://adni.loni.usc.edu/wp-content/themes/adni_2023/documents/ADNI_Data_Use_Agreement.pdf</a>
+            
+            
+          
         
       </th>
       <th style="font-weight:normal"></th>
@@ -66,9 +73,21 @@
     
 
     
+    
+    
+
+    
     <tr>
       <th style="font-weight:bold; width:250px;">Age (mean ± SD)</th>
       <th style="font-weight:normal">73.1 ± 7.3</th>
+      <th style="font-weight:normal"></th>
+    </tr>
+    
+
+    
+    <tr>
+      <th style="font-weight:bold; width:250px;">Age Range</th>
+      <th style="font-weight:normal">55-90</th>
       <th style="font-weight:normal"></th>
     </tr>
     
@@ -85,14 +104,24 @@
     
     
     
-    
 
     
     <tr>
-      <th style="font-weight:bold; width:250px;">Age Range</th>
-      <th style="font-weight:normal">55-90</th>
+      <th style="font-weight:bold; width:250px;">CUBIC Project</th>
+      <th style="font-weight:normal">/cbica/projects/ADNI</th>
       <th style="font-weight:normal"></th>
     </tr>
+    
+
+    <tr>
+      <th style="font-weight:bold; width:250px;">PI for Access Approval</th>
+      <th style="font-weight:normal">Christos Davatzikos</th>
+      <th style="font-weight:normal"></th>
+    </tr>
+
+    
+    
+    
     
 
     
@@ -112,24 +141,6 @@
     
 
     
-    <tr>
-      <th style="font-weight:bold; width:250px;">CUBIC Project</th>
-      <th style="font-weight:normal">/cbica/projects/ADNI</th>
-      <th style="font-weight:normal"></th>
-    </tr>
-    
-
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
     
     
     
@@ -139,9 +150,46 @@
     
     
     
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+
+    
+    
 
     
       
+
+      
+
+      
+
+      
+
+      
+
+      
+
       
       
       
@@ -149,59 +197,162 @@
       
       
 
-      <tr>
-        <th style="font-weight:bold; width:250px;">
-          DLMUSE
-          
-            <span style="font-weight:normal;">(version ???)</span>
-          
-          
-            <br />
-            <span style="font-weight:normal;">(10858/10913 complete)</span>
-          
-        </th>
-        <th style="font-weight:normal">
-          
+      
+        
+        
+        
+        
+        
+        
+        
+
+        <tr>
+          <th style="font-weight:bold; width:250px;">
             
-            <div id="adni-dlmuse-path" class="copy-container" style="border: 1px solid #6c6edc; border-radius: 3px; padding: 6px; background-color: #f8f9fa;">
-              <span class="copy-text"><code>/cbica/projects/ADNI/Pipelines/ADNI_DLMUSE_2025/Results/DLMUSE_Volumes.csv</code></span>
-              <button class="copy-button" onclick="copyToClipboard('adni-dlmuse-path')">Copy</button>
-            </div>
-          
-        </th>
-        <th style="font-weight:normal"></th>
-      </tr>
-    
+              <a href="https://github.com/CBICA/NiChart_DLMUSE">DLMUSE</a>
+            
+            
+              <span style="font-weight:normal;">(v1.0.7)</span>
+            
+            
+              <br />
+              <span style="font-weight:normal;">(10858/10913 complete)</span>
+            
+          </th>
+          <th style="font-weight:normal">
+            
+              
+              <div id="adni-default-dlmuse-path" class="copy-container" style="border: 1px solid #6c6edc; border-radius: 3px; padding: 6px; background-color: #f8f9fa;">
+                <span class="copy-text"><code>/cbica/projects/ADNI/Pipelines/ADNI_DLMUSE_2025/Results/DLMUSE_Volumes.csv</code></span>
+                <button class="copy-button" onclick="copyToClipboard('adni-default-dlmuse-path')">Copy</button>
+              </div>
+            
+          </th>
+          <th style="font-weight:normal"></th>
+        </tr>
       
+        
+        
+        
+        
+        
+        
+        
+
+        <tr>
+          <th style="font-weight:bold; width:250px;">
+            
+              RAVENS
+            
+            
+              <span style="font-weight:normal;">(version ???)</span>
+            
+            
+          </th>
+          <th style="font-weight:normal">
+            
+              
+              <div id="adni-default-ravens-path" class="copy-container" style="border: 1px solid #6c6edc; border-radius: 3px; padding: 6px; background-color: #f8f9fa;">
+                <span class="copy-text"><code>/cbica/projects/ADNI/Pipelines/ADNI_3.5D_2020/Protocols/RAVENS</code></span>
+                <button class="copy-button" onclick="copyToClipboard('adni-default-ravens-path')">Copy</button>
+              </div>
+            
+          </th>
+          <th style="font-weight:normal"></th>
+        </tr>
       
-      
-      
-      
-      
+        
+        
+        
+        
+        
+        
+        
+
+        <tr>
+          <th style="font-weight:bold; width:250px;">
+            
+              <a href="https://github.com/CBICA/NiChart_DLWMLS">DLWMLS</a>
+            
+            
+              <span style="font-weight:normal;">(v0.1.0)</span>
+            
+            
+              <br />
+              <span style="font-weight:normal;">(6075/10913 complete)</span>
+            
+          </th>
+          <th style="font-weight:normal">
+            
+              
+              <div id="adni-default-dlwmls-path" class="copy-container" style="border: 1px solid #6c6edc; border-radius: 3px; padding: 6px; background-color: #f8f9fa;">
+                <span class="copy-text"><code>/cbica/projects/ADNI/Pipelines/ADNI_DLWMLS_2025/Results/ADNI_DLWMLS_DLMUSE_Segmented_Volumes.csv</code></span>
+                <button class="copy-button" onclick="copyToClipboard('adni-default-dlwmls-path')">Copy</button>
+              </div>
+            
+          </th>
+          <th style="font-weight:normal"></th>
+        </tr>
       
 
-      <tr>
-        <th style="font-weight:bold; width:250px;">
-          DLWMLS
-          
-            <span style="font-weight:normal;">(version ???)</span>
-          
-          
-            <br />
-            <span style="font-weight:normal;">(6075/10913 complete)</span>
-          
-        </th>
-        <th style="font-weight:normal">
-          
+      
+      
+        <tr>
+          <th style="font-weight:bold; width:250px;">Non-Imaging Data</th>
+          <th style="font-weight:normal">
             
-            <div id="adni-dlwmls-path" class="copy-container" style="border: 1px solid #6c6edc; border-radius: 3px; padding: 6px; background-color: #f8f9fa;">
-              <span class="copy-text"><code>/cbica/projects/ADNI/Pipelines/ADNI_DLWMLS_2025/Results/ADNI_DLWMLS_DLMUSE_Segmented_Volumes.csv</code></span>
-              <button class="copy-button" onclick="copyToClipboard('adni-dlwmls-path')">Copy</button>
+            <div class="tab-container">
+              <div class="tab-buttons">
+                <button class="tab-button active" onclick="showTab('adni-default-nonimg-raw-tab')">Raw</button>
+                <button class="tab-button" onclick="showTab('adni-default-nonimg-data-dictionary-tab')">Data Dictionary</button>
+                <button class="tab-button" onclick="showTab('adni-default-nonimg-consolidated-v2-tab')">Consolidated v2.0</button>
+                <button class="tab-button" onclick="showTab('adni-default-nonimg-consolidated-latest-tab')">Consolidated Latest</button>
+              </div>
+              <div id="adni-default-nonimg-raw-tab" class="tab-content active">
+                
+                  <p style="color:#666;">—</p>
+                  <p style="margin-top: 12px; margin-bottom: 0; font-size: 14px; color: #444;">Raw data downloaded from source.</p>
+                
+              </div>
+              <div id="adni-default-nonimg-data-dictionary-tab" class="tab-content">
+                
+                  
+                  
+                    
+                    
+                      <div id="adni-default-nonimg-dd-1" class="copy-container" style="border: 1px solid #6c6edc; border-radius: 3px; padding: 6px; background-color: #f8f9fa; margin-bottom: 15px;">
+                        <span class="copy-text"><code>https://adni.loni.usc.edu/data-samples/data-dictionary-search/</code></span>
+                        <button class="copy-button" onclick="copyToClipboard('adni-default-nonimg-dd-1')">Copy</button>
+                      </div>
+                    
+                  
+                
+              </div>
+              <div id="adni-default-nonimg-consolidated-v2-tab" class="tab-content">
+                <div id="adni-default-nonimg-v2-path" class="copy-container" style="border: 1px solid #6c6edc; border-radius: 3px; padding: 6px; background-color: #f8f9fa; margin-bottom: 15px;">
+                  <span class="copy-text"><code>/cbica/projects/ISTAGING/Pipelines/ISTAGING_Data_Consolidation_2020/v2.0/istaging.csv</code></span>
+                  <button class="copy-button" onclick="copyToClipboard('adni-default-nonimg-v2-path')">Copy</button>
+                </div>
+                <p style="margin-top: 12px; margin-bottom: 8px; font-size: 14px; color: #444;">Data consolidated in 2020 across NiChart datasets (same variables, harmonized).</p>
+                
+                <p style="margin: 6px 0 4px; font-size: 14px; color: #444;">README: <code>/cbica/projects/ISTAGING/Pipelines/ISTAGING_Data_Consolidation_2020/v2.0/README.md</code></p>
+                <p style="margin: 6px 0 0; font-size: 14px; color: #444;">Release Notes: <code>/cbica/projects/ISTAGING/Pipelines/ISTAGING_Data_Consolidation_2020/v2.0/Release_Notes.md</code></p>
+              </div>
+              <div id="adni-default-nonimg-consolidated-latest-tab" class="tab-content">
+                <div id="adni-default-nonimg-latest-path" class="copy-container" style="border: 1px solid #6c6edc; border-radius: 3px; padding: 6px; background-color: #f8f9fa; margin-bottom: 15px;">
+                  <span class="copy-text"><code>Coming Soon</code></span>
+                  <button class="copy-button" onclick="copyToClipboard('adni-default-nonimg-latest-path')">Copy</button>
+                </div>
+                <p style="margin-top: 12px; margin-bottom: 8px; font-size: 14px; color: #444;">Data consolidated in 2026 across NiChart datasets (same variables, harmonized).</p>
+                
+                <p style="margin: 6px 0 4px; font-size: 14px; color: #444;">README: <code>Coming Soon</code></p>
+                <p style="margin: 6px 0 0; font-size: 14px; color: #444;">Release Notes: <code>Coming Soon</code></p>
+              </div>
             </div>
-          
-        </th>
-        <th style="font-weight:normal"></th>
-      </tr>
+          </th>
+          <th style="font-weight:normal"></th>
+        </tr>
+      
     
   </table>
 </div>
@@ -356,7 +507,7 @@ ADNI (National Institutes of Health Grant U01 AG024904, U01 AG072177) and DOD AD
 
 <p><strong>Primary description:</strong> Type 2 diabetes and cardiovascular outcomes</p>
 
-<p>The Action to Control Cardiovascular Risk in Diabetes (ACCORD)  clinical trial evaluated intensive glycemic control on a cohort of participants with type 2 diabetes. The Memory in Diabetes (MIND) sub-study further evaluated cognitive and structural brain outcomes in a subset of participants from the two randomized groups of ACCORD study.</p>
+<p>The Action to Control Cardiovascular Risk in Diabetes (ACCORD) is a clinical trial evaluated intensive glycemic control on a cohort of participants with type 2 diabetes. The Memory in Diabetes (MIND) sub-study further evaluated cognitive and structural brain outcomes in a subset of participants from the two randomized groups of ACCORD study.</p>
 
 <div class="table" align="center">
   <table style="text-align:center; width:100%; font-size:18px; border:1px solid black">
@@ -402,7 +553,14 @@ ADNI (National Institutes of Health Grant U01 AG024904, U01 AG072177) and DOD AD
       <th style="font-weight:bold; width:250px;">DUA</th>
       <th style="font-weight:normal">
         
-          <a href="https://biolincc.nhlbi.nih.gov/faq/">https://biolincc.nhlbi.nih.gov/faq/</a>
+        
+          
+          
+            
+              <a href="https://biolincc.nhlbi.nih.gov/studies/accord/">https://biolincc.nhlbi.nih.gov/studies/accord/</a>
+            
+            
+          
         
       </th>
       <th style="font-weight:normal"></th>
@@ -426,9 +584,21 @@ ADNI (National Institutes of Health Grant U01 AG024904, U01 AG072177) and DOD AD
     
 
     
+    
+    
+
+    
     <tr>
       <th style="font-weight:bold; width:250px;">Age (mean ± SD)</th>
       <th style="font-weight:normal">62.9 ± 5.8</th>
+      <th style="font-weight:normal"></th>
+    </tr>
+    
+
+    
+    <tr>
+      <th style="font-weight:bold; width:250px;">Age Range</th>
+      <th style="font-weight:normal">40-79</th>
       <th style="font-weight:normal"></th>
     </tr>
     
@@ -445,14 +615,24 @@ ADNI (National Institutes of Health Grant U01 AG024904, U01 AG072177) and DOD AD
     
     
     
-    
 
     
     <tr>
-      <th style="font-weight:bold; width:250px;">Age Range</th>
-      <th style="font-weight:normal">40-79</th>
+      <th style="font-weight:bold; width:250px;">CUBIC Project</th>
+      <th style="font-weight:normal">/cbica/projects/accord</th>
       <th style="font-weight:normal"></th>
     </tr>
+    
+
+    <tr>
+      <th style="font-weight:bold; width:250px;">PI for Access Approval</th>
+      <th style="font-weight:normal">Christos Davatzikos</th>
+      <th style="font-weight:normal"></th>
+    </tr>
+
+    
+    
+    
     
 
     
@@ -472,9 +652,250 @@ ADNI (National Institutes of Health Grant U01 AG024904, U01 AG072177) and DOD AD
     
 
     
+    
+    
+    
     <tr>
-      <th style="font-weight:bold; width:250px;">CUBIC Project</th>
-      <th style="font-weight:normal">/cbica/projects/accord</th>
+      <th style="font-weight:bold; width:250px;">Diagnoses</th>
+      <th style="font-weight:normal">
+        <div style="font-size: 14px; display: flex; flex-wrap: wrap; gap: 16px; align-items: flex-start;">
+          
+            
+            
+              
+              
+              
+              
+              
+              
+            
+          
+            
+            
+              
+              
+              
+              
+              
+              
+                
+                <div style="margin: 0;">
+                  <div style="text-align: left; font-weight: bold; padding: 4px 0 8px 0;">Hypertension</div>
+                  <table style="margin: 0; border-collapse: collapse; border: 1px solid #ddd;">
+                  <thead>
+                    <tr style="background: #f5f5f5;">
+                      <th style="border: 1px solid #ddd; padding: 6px 10px; text-align: left;">Value</th>
+                      <th style="border: 1px solid #ddd; padding: 6px 10px; text-align: right;">N</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    
+                      
+                      
+                        
+                        
+                        
+                        
+                        <tr>
+                          <td style="border: 1px solid #ddd; padding: 6px 10px;">Stage2</td>
+                          <td style="border: 1px solid #ddd; padding: 6px 10px; text-align: right;">596</td>
+                        </tr>
+                      
+                    
+                      
+                      
+                        
+                        
+                        
+                        
+                        <tr>
+                          <td style="border: 1px solid #ddd; padding: 6px 10px;">Normal</td>
+                          <td style="border: 1px solid #ddd; padding: 6px 10px; text-align: right;">334</td>
+                        </tr>
+                      
+                    
+                      
+                      
+                        
+                        
+                        
+                        
+                        <tr>
+                          <td style="border: 1px solid #ddd; padding: 6px 10px;">NaN</td>
+                          <td style="border: 1px solid #ddd; padding: 6px 10px; text-align: right;">279</td>
+                        </tr>
+                      
+                    
+                      
+                      
+                        
+                        
+                        
+                        
+                        <tr>
+                          <td style="border: 1px solid #ddd; padding: 6px 10px;">Stage1</td>
+                          <td style="border: 1px solid #ddd; padding: 6px 10px; text-align: right;">156</td>
+                        </tr>
+                      
+                    
+                  </tbody>
+                </table>
+                </div>
+              
+            
+          
+            
+            
+              
+              
+              
+              
+              
+              
+                
+                <div style="margin: 0;">
+                  <div style="text-align: left; font-weight: bold; padding: 4px 0 8px 0;">Diabetes</div>
+                  <table style="margin: 0; border-collapse: collapse; border: 1px solid #ddd;">
+                  <thead>
+                    <tr style="background: #f5f5f5;">
+                      <th style="border: 1px solid #ddd; padding: 6px 10px; text-align: left;">Value</th>
+                      <th style="border: 1px solid #ddd; padding: 6px 10px; text-align: right;">N</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    
+                      
+                      
+                        
+                        
+                        
+                        
+                        <tr>
+                          <td style="border: 1px solid #ddd; padding: 6px 10px;">Diabetic</td>
+                          <td style="border: 1px solid #ddd; padding: 6px 10px; text-align: right;">1086</td>
+                        </tr>
+                      
+                    
+                      
+                      
+                        
+                        
+                        
+                        
+                        <tr>
+                          <td style="border: 1px solid #ddd; padding: 6px 10px;">NaN</td>
+                          <td style="border: 1px solid #ddd; padding: 6px 10px; text-align: right;">279</td>
+                        </tr>
+                      
+                    
+                  </tbody>
+                </table>
+                </div>
+              
+            
+          
+            
+            
+              
+              
+              
+              
+              
+              
+            
+          
+            
+            
+              
+              
+              
+              
+              
+              
+            
+          
+            
+            
+              
+              
+              
+              
+              
+              
+            
+          
+            
+            
+              
+              
+              
+              
+              
+              
+            
+          
+            
+            
+              
+              
+              
+              
+              
+              
+            
+          
+            
+            
+              
+              
+              
+              
+              
+              
+            
+          
+            
+            
+              
+              
+              
+              
+              
+              
+            
+          
+            
+            
+              
+              
+              
+              
+              
+              
+            
+          
+            
+            
+              
+              
+              
+              
+              
+              
+            
+          
+            
+            
+              
+              
+              
+              
+              
+              
+            
+          
+        </div>
+      </th>
       <th style="font-weight:normal"></th>
     </tr>
     
@@ -493,15 +914,37 @@ ADNI (National Institutes of Health Grant U01 AG024904, U01 AG072177) and DOD AD
     
     
     
+    
+    
+    
+    
+    
+    
+    
+    
+    
 
     
     
     
     
+
+    
     
 
     
       
+
+      
+
+      
+
+      
+
+      
+
+      
+
       
       
       
@@ -509,59 +952,178 @@ ADNI (National Institutes of Health Grant U01 AG024904, U01 AG072177) and DOD AD
       
       
 
-      <tr>
-        <th style="font-weight:bold; width:250px;">
-          DLMUSE
-          
-            <span style="font-weight:normal;">(version ???)</span>
-          
-          
-            <br />
-            <span style="font-weight:normal;">(1411/1414 complete)</span>
-          
-        </th>
-        <th style="font-weight:normal">
-          
+      
+        
+        
+        
+        
+        
+        
+        
+
+        <tr>
+          <th style="font-weight:bold; width:250px;">
             
-            <div id="accord-dlmuse-path" class="copy-container" style="border: 1px solid #6c6edc; border-radius: 3px; padding: 6px; background-color: #f8f9fa;">
-              <span class="copy-text"><code>/cbica/projects/accord/Pipelines/ACCORD_DLMUSE_2025/Results/DLMUSE_Volumes.csv</code></span>
-              <button class="copy-button" onclick="copyToClipboard('accord-dlmuse-path')">Copy</button>
-            </div>
-          
-        </th>
-        <th style="font-weight:normal"></th>
-      </tr>
-    
+              <a href="https://github.com/CBICA/NiChart_DLMUSE">DLMUSE</a>
+            
+            
+              <span style="font-weight:normal;">(v1.0.7)</span>
+            
+            
+              <br />
+              <span style="font-weight:normal;">(1411/1414 complete)</span>
+            
+          </th>
+          <th style="font-weight:normal">
+            
+              
+              <div id="accord-default-dlmuse-path" class="copy-container" style="border: 1px solid #6c6edc; border-radius: 3px; padding: 6px; background-color: #f8f9fa;">
+                <span class="copy-text"><code>/cbica/projects/accord/Pipelines/ACCORD_DLMUSE_2025/Results/DLMUSE_Volumes.csv</code></span>
+                <button class="copy-button" onclick="copyToClipboard('accord-default-dlmuse-path')">Copy</button>
+              </div>
+            
+          </th>
+          <th style="font-weight:normal"></th>
+        </tr>
       
+        
+        
+        
+        
+        
+        
+        
+
+        <tr>
+          <th style="font-weight:bold; width:250px;">
+            
+              RAVENS
+            
+            
+              <span style="font-weight:normal;">(version ???)</span>
+            
+            
+              <br />
+              <span style="font-weight:normal;">(1408/1414 complete)</span>
+            
+          </th>
+          <th style="font-weight:normal">
+            
+              
+              <div id="accord-default-ravens-path" class="copy-container" style="border: 1px solid #6c6edc; border-radius: 3px; padding: 6px; background-color: #f8f9fa;">
+                <span class="copy-text"><code>/cbica/projects/accord/Pipelines/ACCORD_3.5D_2020/Protocols/RAVENS</code></span>
+                <button class="copy-button" onclick="copyToClipboard('accord-default-ravens-path')">Copy</button>
+              </div>
+            
+          </th>
+          <th style="font-weight:normal"></th>
+        </tr>
       
-      
-      
-      
-      
+        
+        
+        
+        
+        
+        
+        
+
+        <tr>
+          <th style="font-weight:bold; width:250px;">
+            
+              <a href="https://github.com/CBICA/NiChart_DLWMLS">DLWMLS</a>
+            
+            
+              <span style="font-weight:normal;">(v0.1.0)</span>
+            
+            
+              <br />
+              <span style="font-weight:normal;">(1308/1414 complete)</span>
+            
+          </th>
+          <th style="font-weight:normal">
+            
+              
+              <div id="accord-default-dlwmls-path" class="copy-container" style="border: 1px solid #6c6edc; border-radius: 3px; padding: 6px; background-color: #f8f9fa;">
+                <span class="copy-text"><code>/cbica/projects/accord/Pipelines/ACCORD_DLWMLS_2025/Results/ACCORD_DLWMLS_DLMUSE_Segmented_Volumes.csv</code></span>
+                <button class="copy-button" onclick="copyToClipboard('accord-default-dlwmls-path')">Copy</button>
+              </div>
+            
+          </th>
+          <th style="font-weight:normal"></th>
+        </tr>
       
 
-      <tr>
-        <th style="font-weight:bold; width:250px;">
-          DLWMLS
-          
-            <span style="font-weight:normal;">(version ???)</span>
-          
-          
-            <br />
-            <span style="font-weight:normal;">(1308/1414 complete)</span>
-          
-        </th>
-        <th style="font-weight:normal">
-          
+      
+      
+        <tr>
+          <th style="font-weight:bold; width:250px;">Non-Imaging Data</th>
+          <th style="font-weight:normal">
             
-            <div id="accord-dlwmls-path" class="copy-container" style="border: 1px solid #6c6edc; border-radius: 3px; padding: 6px; background-color: #f8f9fa;">
-              <span class="copy-text"><code>/cbica/projects/accord/Pipelines/ACCORD_DLWMLS_2025/Results/ACCORD_DLWMLS_DLMUSE_Segmented_Volumes.csv</code></span>
-              <button class="copy-button" onclick="copyToClipboard('accord-dlwmls-path')">Copy</button>
+            <div class="tab-container">
+              <div class="tab-buttons">
+                <button class="tab-button active" onclick="showTab('accord-default-nonimg-raw-tab')">Raw</button>
+                <button class="tab-button" onclick="showTab('accord-default-nonimg-data-dictionary-tab')">Data Dictionary</button>
+                <button class="tab-button" onclick="showTab('accord-default-nonimg-consolidated-v2-tab')">Consolidated v2.0</button>
+                <button class="tab-button" onclick="showTab('accord-default-nonimg-consolidated-latest-tab')">Consolidated Latest</button>
+              </div>
+              <div id="accord-default-nonimg-raw-tab" class="tab-content active">
+                
+                  
+                  
+                    
+                    
+                      <div id="accord-default-nonimg-raw-1" class="copy-container" style="border: 1px solid #6c6edc; border-radius: 3px; padding: 6px; background-color: #f8f9fa; margin-bottom: 15px;">
+                        <span class="copy-text"><code>/cbica/projects/ISTAGING/Pipelines/ClinicalDataConsolidation_201911/Data/External_Data/ACCORD</code></span>
+                        <button class="copy-button" onclick="copyToClipboard('accord-default-nonimg-raw-1')">Copy</button>
+                      </div>
+                    
+                  
+                  <p style="margin-top: 12px; margin-bottom: 0; font-size: 14px; color: #444;">Raw data downloaded from source.</p>
+                
+              </div>
+              <div id="accord-default-nonimg-data-dictionary-tab" class="tab-content">
+                
+                  
+                  
+                    
+                    
+                      <div id="accord-default-nonimg-dd-1" class="copy-container" style="border: 1px solid #6c6edc; border-radius: 3px; padding: 6px; background-color: #f8f9fa; margin-bottom: 15px;">
+                        <span class="copy-text"><code>/cbica/projects/ISTAGING/Pipelines/ClinicalDataConsolidation_201911/dictionaries/ACCORD/ACCORD Data Dictionary.pdf</code></span>
+                        <button class="copy-button" onclick="copyToClipboard('accord-default-nonimg-dd-1')">Copy</button>
+                      </div>
+                    
+                  
+                
+              </div>
+              <div id="accord-default-nonimg-consolidated-v2-tab" class="tab-content">
+                <div id="accord-default-nonimg-v2-path" class="copy-container" style="border: 1px solid #6c6edc; border-radius: 3px; padding: 6px; background-color: #f8f9fa; margin-bottom: 15px;">
+                  <span class="copy-text"><code>/cbica/projects/ISTAGING/Pipelines/ISTAGING_Data_Consolidation_2020/v2.0/istaging.csv</code></span>
+                  <button class="copy-button" onclick="copyToClipboard('accord-default-nonimg-v2-path')">Copy</button>
+                </div>
+                <p style="margin-top: 12px; margin-bottom: 8px; font-size: 14px; color: #444;">Data consolidated in 2020 across NiChart datasets (same variables, harmonized).</p>
+                
+                  <p style="margin-top: 0; margin-bottom: 4px; font-size: 14px; color: #444;"><strong>This study:</strong> subset with <code>df[df.Study == 'ACCORD']</code></p>
+                
+                <p style="margin: 6px 0 4px; font-size: 14px; color: #444;">README: <code>/cbica/projects/ISTAGING/Pipelines/ISTAGING_Data_Consolidation_2020/v2.0/README.md</code></p>
+                <p style="margin: 6px 0 0; font-size: 14px; color: #444;">Release Notes: <code>/cbica/projects/ISTAGING/Pipelines/ISTAGING_Data_Consolidation_2020/v2.0/Release_Notes.md</code></p>
+              </div>
+              <div id="accord-default-nonimg-consolidated-latest-tab" class="tab-content">
+                <div id="accord-default-nonimg-latest-path" class="copy-container" style="border: 1px solid #6c6edc; border-radius: 3px; padding: 6px; background-color: #f8f9fa; margin-bottom: 15px;">
+                  <span class="copy-text"><code>Coming Soon</code></span>
+                  <button class="copy-button" onclick="copyToClipboard('accord-default-nonimg-latest-path')">Copy</button>
+                </div>
+                <p style="margin-top: 12px; margin-bottom: 8px; font-size: 14px; color: #444;">Data consolidated in 2026 across NiChart datasets (same variables, harmonized).</p>
+                
+                  <p style="margin-top: 0; margin-bottom: 4px; font-size: 14px; color: #444;"><strong>This study:</strong> subset with <code>df[df.Study == 'ACCORD']</code></p>
+                
+                <p style="margin: 6px 0 4px; font-size: 14px; color: #444;">README: <code>Coming Soon</code></p>
+                <p style="margin: 6px 0 0; font-size: 14px; color: #444;">Release Notes: <code>Coming Soon</code></p>
+              </div>
             </div>
-          
-        </th>
-        <th style="font-weight:normal"></th>
-      </tr>
+          </th>
+          <th style="font-weight:normal"></th>
+        </tr>
+      
     
   </table>
 </div>
@@ -712,7 +1274,7 @@ function copyToClipboard(elementId) {
 
 <p><em>Funding</em>
 <br />
-???</p>]]></content><author><name>{&quot;links&quot;=&gt;[{&quot;label&quot;=&gt;&quot;Email&quot;, &quot;icon&quot;=&gt;&quot;fas fa-fw fa-envelope-square&quot;}, {&quot;label&quot;=&gt;&quot;Website&quot;, &quot;icon&quot;=&gt;&quot;fas fa-fw fa-link&quot;}, {&quot;label&quot;=&gt;&quot;Twitter&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-twitter-square&quot;}, {&quot;label&quot;=&gt;&quot;Facebook&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-facebook-square&quot;}, {&quot;label&quot;=&gt;&quot;GitHub&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-github&quot;}, {&quot;label&quot;=&gt;&quot;Instagram&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-instagram&quot;}]}</name></author><category term="docs" /><category term="datasets" /><summary type="html"><![CDATA[ACCORD]]></summary></entry><entry><title type="html">Open Access Series of Imaging Studies</title><link href="http://localhost:4000/AI2D/docs/datasets/OASIS/" rel="alternate" type="text/html" title="Open Access Series of Imaging Studies" /><published>2025-12-16T00:00:00-05:00</published><updated>2025-12-16T00:00:00-05:00</updated><id>http://localhost:4000/AI2D/docs/datasets/OASIS</id><content type="html" xml:base="http://localhost:4000/AI2D/docs/datasets/OASIS/"><![CDATA[<h3 id="about-the-dataset">About the dataset</h3>
+National Institute of Aging and the National Heart, Lung, and Blood Institute of the National Institutes of Health</p>]]></content><author><name>{&quot;links&quot;=&gt;[{&quot;label&quot;=&gt;&quot;Email&quot;, &quot;icon&quot;=&gt;&quot;fas fa-fw fa-envelope-square&quot;}, {&quot;label&quot;=&gt;&quot;Website&quot;, &quot;icon&quot;=&gt;&quot;fas fa-fw fa-link&quot;}, {&quot;label&quot;=&gt;&quot;Twitter&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-twitter-square&quot;}, {&quot;label&quot;=&gt;&quot;Facebook&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-facebook-square&quot;}, {&quot;label&quot;=&gt;&quot;GitHub&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-github&quot;}, {&quot;label&quot;=&gt;&quot;Instagram&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-instagram&quot;}]}</name></author><category term="docs" /><category term="datasets" /><summary type="html"><![CDATA[ACCORD]]></summary></entry><entry><title type="html">Open Access Series of Imaging Studies</title><link href="http://localhost:4000/AI2D/docs/datasets/OASIS/" rel="alternate" type="text/html" title="Open Access Series of Imaging Studies" /><published>2025-12-16T00:00:00-05:00</published><updated>2025-12-16T00:00:00-05:00</updated><id>http://localhost:4000/AI2D/docs/datasets/OASIS</id><content type="html" xml:base="http://localhost:4000/AI2D/docs/datasets/OASIS/"><![CDATA[<h3 id="about-the-dataset">About the dataset</h3>
 
 <p><strong>Primary description:</strong> Aging and Alzheimer’s neuroimaging</p>
 
@@ -950,7 +1512,7 @@ function copyToClipboard(elementId) {
                 <th style="font-weight:bold; width:250px;">
                   DLWMLS
                   
-                    <span style="font-weight:normal;">(version ???)</span>
+                    <span style="font-weight:normal;">(v0.1.0)</span>
                   
                   
                     <br />

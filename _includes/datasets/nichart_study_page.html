@@ -83,11 +83,18 @@ Optionally override lookup key:
     <tr>
       <th style="font-weight:bold; width:250px;">DUA</th>
       <th style="font-weight:normal">
-        {% if dua_url contains "http" %}
-          <a href="{{ dua_url }}">{{ dua_url }}</a>
-        {% else %}
-          {{ dua_url }}
-        {% endif %}
+        {% assign duas = dua_url | split: ";" %}
+        {% for dua in duas %}
+          {% assign dua_trimmed = dua | strip %}
+          {% if dua_trimmed != "" %}
+            {% if dua_trimmed contains "http" %}
+              <a href="{{ dua_trimmed }}">{{ dua_trimmed }}</a>
+            {% else %}
+              {{ dua_trimmed }}
+            {% endif %}
+            {% unless forloop.last %}<br>{% endunless %}
+          {% endif %}
+        {% endfor %}
       </th>
       <th style="font-weight:normal"></th>
     </tr>
@@ -109,10 +116,24 @@ Optionally override lookup key:
     </tr>
     {% endif %}
 
+    {% assign age_range = row["age_range"] | default: page.age_range %}
+    {% assign age_range_has_semicolon = false %}
+    {% if age_range and age_range != "" and age_range contains ";" %}
+      {% assign age_range_has_semicolon = true %}
+    {% endif %}
+
     {% if age_mean_sd and age_mean_sd != "" %}
     <tr>
       <th style="font-weight:bold; width:250px;">Age (mean ± SD)</th>
       <th style="font-weight:normal">{{ age_mean_sd }}</th>
+      <th style="font-weight:normal"></th>
+    </tr>
+    {% endif %}
+
+    {% if age_range and age_range != "" and age_range_has_semicolon == false %}
+    <tr>
+      <th style="font-weight:bold; width:250px;">Age Range</th>
+      <th style="font-weight:normal">{{ age_range }}</th>
       <th style="font-weight:normal"></th>
     </tr>
     {% endif %}
@@ -126,34 +147,9 @@ Optionally override lookup key:
     {% endif %}
 
     {% comment %}=== Standard rendering for all datasets (single-row values) ==={% endcomment %}
-    {% assign age_range = row["age_range"] | default: page.age_range %}
     {% assign n_subject = row["N_subject"] | default: page.sample_size %}
     {% assign n_mr_session = row["N_MR_session"] | default: page.number_of_sessions %}
     {% assign cubic_path = row["CUBIC"] | default: page.cubic_path %}
-
-    {% if age_range and age_range != "" %}
-    <tr>
-      <th style="font-weight:bold; width:250px;">Age Range</th>
-      <th style="font-weight:normal">{{ age_range }}</th>
-      <th style="font-weight:normal"></th>
-    </tr>
-    {% endif %}
-
-    {% if n_subject and n_subject != "" %}
-    <tr>
-      <th style="font-weight:bold; width:250px;">N Subjects</th>
-      <th style="font-weight:normal">{{ n_subject }}</th>
-      <th style="font-weight:normal"></th>
-    </tr>
-    {% endif %}
-
-    {% if n_mr_session and n_mr_session != "" %}
-    <tr>
-      <th style="font-weight:bold; width:250px;">N MR Sessions</th>
-      <th style="font-weight:normal">{{ n_mr_session }}</th>
-      <th style="font-weight:normal"></th>
-    </tr>
-    {% endif %}
 
     {% if cubic_path and cubic_path != "" %}
     <tr>
@@ -163,9 +159,128 @@ Optionally override lookup key:
     </tr>
     {% endif %}
 
+    <tr>
+      <th style="font-weight:bold; width:250px;">PI for Access Approval</th>
+      <th style="font-weight:normal">Christos Davatzikos</th>
+      <th style="font-weight:normal"></th>
+    </tr>
+
+    {% assign n_subject_has_semicolon = false %}
+    {% if n_subject and n_subject != "" and n_subject contains ";" %}
+      {% assign n_subject_has_semicolon = true %}
+    {% endif %}
+    {% assign n_mr_session_has_semicolon = false %}
+    {% if n_mr_session and n_mr_session != "" and n_mr_session contains ";" %}
+      {% assign n_mr_session_has_semicolon = true %}
+    {% endif %}
+
+    {% if n_subject and n_subject != "" and n_subject_has_semicolon == false %}
+    <tr>
+      <th style="font-weight:bold; width:250px;">N Subjects</th>
+      <th style="font-weight:normal">{{ n_subject }}</th>
+      <th style="font-weight:normal"></th>
+    </tr>
+    {% endif %}
+
+    {% if n_mr_session and n_mr_session != "" and n_mr_session_has_semicolon == false %}
+    <tr>
+      <th style="font-weight:bold; width:250px;">N MR Sessions</th>
+      <th style="font-weight:normal">{{ n_mr_session }}</th>
+      <th style="font-weight:normal"></th>
+    </tr>
+    {% endif %}
+
+    {% assign dx_cols = "DX_AD,DX_Hypertension,DX_Diabetes,DX_Heart,DX_Stroke,DX_Psychosis,DX_Schizophrenia,DX_Depression,DX_Bipolar,DX_Hyperlipidemia,DX_TBI,DX_Anxiety,DX_Psychological_Disorder" | split: "," %}
+    {% assign dx_has_any = false %}
+    {% for dx_col in dx_cols %}
+      {% assign dx_val = row[dx_col] | strip %}
+      {% if dx_val != "" %}
+        {% assign dx_lines = dx_val | newline_to_br | split: "<br />" %}
+        {% assign dx_non_empty = "" | split: "," %}
+        {% for dx_line in dx_lines %}
+          {% assign dx_trimmed = dx_line | strip %}
+          {% if dx_trimmed != "" %}
+            {% assign dx_non_empty = dx_non_empty | push: dx_trimmed %}
+          {% endif %}
+        {% endfor %}
+        {% assign only_nan = false %}
+        {% if dx_non_empty.size == 1 %}
+          {% assign first_part = dx_non_empty[0] | slice: 0, 3 %}
+          {% if first_part == "NaN" or first_part == "nan" %}
+            {% assign only_nan = true %}
+          {% endif %}
+        {% endif %}
+        {% unless only_nan %}
+          {% assign dx_has_any = true %}
+        {% endunless %}
+      {% endif %}
+    {% endfor %}
+    {% if dx_has_any %}
+    <tr>
+      <th style="font-weight:bold; width:250px;">Diagnoses</th>
+      <th style="font-weight:normal">
+        <div style="font-size: 14px; display: flex; flex-wrap: wrap; gap: 16px; align-items: flex-start;">
+          {% for dx_col in dx_cols %}
+            {% assign dx_val = row[dx_col] | strip %}
+            {% if dx_val != "" %}
+              {% assign dx_lines = dx_val | newline_to_br | split: "<br />" %}
+              {% assign dx_non_empty = "" | split: "," %}
+              {% for dx_line in dx_lines %}
+                {% assign dx_trimmed = dx_line | strip %}
+                {% if dx_trimmed != "" %}
+                  {% assign dx_non_empty = dx_non_empty | push: dx_trimmed %}
+                {% endif %}
+              {% endfor %}
+              {% assign only_nan = false %}
+              {% if dx_non_empty.size == 1 %}
+                {% assign first_part = dx_non_empty[0] | slice: 0, 3 %}
+                {% if first_part == "NaN" or first_part == "nan" %}
+                  {% assign only_nan = true %}
+                {% endif %}
+              {% endif %}
+              {% unless only_nan %}
+                {% assign dx_label = dx_col | replace: "DX_", "" | replace: "_", " " %}
+                <div style="margin: 0;">
+                  <div style="text-align: left; font-weight: bold; padding: 4px 0 8px 0;">{{ dx_label }}</div>
+                  <table style="margin: 0; border-collapse: collapse; border: 1px solid #ddd;">
+                  <thead>
+                    <tr style="background: #f5f5f5;">
+                      <th style="border: 1px solid #ddd; padding: 6px 10px; text-align: left;">Value</th>
+                      <th style="border: 1px solid #ddd; padding: 6px 10px; text-align: right;">N</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {% for dx_line in dx_non_empty %}
+                      {% assign dx_line_trimmed = dx_line | strip %}
+                      {% if dx_line_trimmed != "" %}
+                        {% assign line_parts = dx_line_trimmed | split: " " %}
+                        {% assign dx_count = line_parts | last %}
+                        {% capture dx_value_str %}{% for p in line_parts %}{% unless forloop.last %}{% if p != "" %}{{ p }} {% endif %}{% endunless %}{% endfor %}{% endcapture %}
+                        {% assign dx_value = dx_value_str | strip %}
+                        <tr>
+                          <td style="border: 1px solid #ddd; padding: 6px 10px;">{{ dx_value }}</td>
+                          <td style="border: 1px solid #ddd; padding: 6px 10px; text-align: right;">{{ dx_count }}</td>
+                        </tr>
+                      {% endif %}
+                    {% endfor %}
+                  </tbody>
+                </table>
+                </div>
+              {% endunless %}
+            {% endif %}
+          {% endfor %}
+        </div>
+      </th>
+      <th style="font-weight:normal"></th>
+    </tr>
+    {% endif %}
+
     {% assign dlmuse_path = row["DLMUSE"] %}
     {% assign dlmuse_version = row["DLMUSE_version"] %}
     {% assign dlmuse_complete = row["DLMUSE_N_ses_completed"] %}
+    {% assign ravens_path = row["RAVENS"] %}
+    {% assign ravens_version = row["RAVENS_version"] %}
+    {% assign ravens_complete = row["RAVENS_N_ses_completed"] %}
     {% assign dlwmls_path = row["DLWMLS"] %}
     {% assign dlwmls_version = row["DLWMLS_version"] %}
     {% assign dlwmls_complete = row["DLWMLS_N_ses_completed"] %}
@@ -177,128 +292,526 @@ Optionally override lookup key:
     {% assign xcpd_version = row["XCP-D_version"] %}
     {% assign xcpd_complete = row["XCP-D_N_ses_completed"] %}
     {% assign xcpd_command = row["XCP-D_command"] %}
+    {% assign nonimaging_raw = row["nonimaging_raw"] %}
+    {% assign nonimaging_data_dictionary = row["Data_Dictionary"] %}
+    {% assign nonimaging_consolidated_v2 = "/cbica/projects/ISTAGING/Pipelines/ISTAGING_Data_Consolidation_2020/v2.0/istaging.csv" %}
+    {% assign nonimaging_consolidated_latest = "Coming Soon" %}
+    {% assign nonimaging_consolidated_v2_study = row["nonimaging_consolidated_latest_study"] %}
+    {% assign nonimaging_consolidation_base = "/cbica/projects/ISTAGING/Pipelines/ISTAGING_Data_Consolidation_2020/v2.0" %}
 
-    {% assign pipelines = "" | split: "," %}
-    {% if dlmuse_path and dlmuse_path != "" %}{% assign pipelines = pipelines | push: "DLMUSE" %}{% endif %}
-    {% if dlwmls_path and dlwmls_path != "" %}{% assign pipelines = pipelines | push: "DLWMLS" %}{% endif %}
-    {% if fmriprep_path and fmriprep_path != "" %}{% assign pipelines = pipelines | push: "fMRIPrep" %}{% endif %}
-    {% if xcpd_path and xcpd_path != "" %}{% assign pipelines = pipelines | push: "XCP-D" %}{% endif %}
+    {% assign section_keys = "" | split: "," %}
+    {% assign section_fields = "" | split: "," %}
+    {% assign section_fields = section_fields | push: age_range | push: n_subject | push: n_mr_session | push: dlmuse_path | push: dlmuse_version | push: dlmuse_complete | push: ravens_path | push: ravens_version | push: ravens_complete | push: dlwmls_path | push: dlwmls_version | push: dlwmls_complete | push: fmriprep_path | push: fmriprep_version | push: fmriprep_complete | push: fmriprep_command | push: xcpd_path | push: xcpd_version | push: xcpd_complete | push: xcpd_command %}
+    {% for field_value in section_fields %}
+      {% if field_value and field_value != "" %}
+        {% assign field_parts = field_value | split: ";" %}
+        {% for part in field_parts %}
+          {% assign part_stripped = part | strip %}
+          {% if part_stripped contains "=" %}
+            {% assign kv = part_stripped | split: "=" %}
+            {% assign key = kv[0] | strip %}
+            {% assign first_char = key | slice: 0 %}
+            {% if key != "" and first_char != "/" and first_char != "-" %}
+              {% unless key contains " " %}
+                {% unless section_keys contains key %}
+                  {% assign section_keys = section_keys | push: key %}
+                {% endunless %}
+              {% endunless %}
+            {% endif %}
+          {% endif %}
+        {% endfor %}
+      {% endif %}
+    {% endfor %}
 
-    {% for p in pipelines %}
-      {% assign p_key = p %}
-      {% assign p_id = p | downcase | replace: ".", "-" | replace: " ", "-" %}
-      {% assign p_command_col = p_key | append: "_command" %}
-      {% assign p_has_command = false %}
-      {% assign p_command_raw = row[p_command_col] %}
-      
-      {% if p == "DLMUSE" %}
-        {% assign p_path = dlmuse_path %}
-        {% assign p_version = dlmuse_version %}
-        {% assign p_complete = dlmuse_complete %}
-      {% elsif p == "DLWMLS" %}
-        {% assign p_path = dlwmls_path %}
-        {% assign p_version = dlwmls_version %}
-        {% assign p_complete = dlwmls_complete %}
-      {% elsif p == "fMRIPrep" %}
-        {% assign p_path = fmriprep_path %}
-        {% assign p_version = fmriprep_version %}
-        {% assign p_complete = fmriprep_complete %}
-        {% if fmriprep_command and fmriprep_command != "" %}
-          {% assign p_has_command = true %}
-          {% assign p_command_raw = fmriprep_command %}
-        {% endif %}
-      {% elsif p == "XCP-D" %}
-        {% assign p_path = xcpd_path %}
-        {% assign p_version = xcpd_version %}
-        {% assign p_complete = xcpd_complete %}
-        {% if xcpd_command and xcpd_command != "" %}
-          {% assign p_has_command = true %}
-          {% assign p_command_raw = xcpd_command %}
-        {% endif %}
+    {% assign has_sections = true %}
+    {% if section_keys.size == 0 %}
+      {% assign section_keys = "default" | split: "," %}
+      {% assign has_sections = false %}
+    {% endif %}
+
+    {% for section_key in section_keys %}
+      {% if has_sections %}
+      <tr>
+        <th colspan="3" style="font-weight:bold; text-align:left; background:#f2f4ff; border-top:2px solid #d7dcff;">{{ section_key }}</th>
+      </tr>
       {% endif %}
 
+      {% if has_sections %}
+        {% assign key_prefix = section_key | append: "=" %}
+
+        {% assign section_age_range = age_range %}
+        {% if age_range and age_range contains "=" %}
+          {% assign section_age_range = "" %}
+          {% assign age_parts = age_range | split: ";" %}
+          {% for part in age_parts %}
+            {% assign part_stripped = part | strip %}
+            {% if part_stripped contains key_prefix %}
+              {% assign section_age_range = part_stripped | replace_first: key_prefix, "" | strip %}
+            {% endif %}
+          {% endfor %}
+        {% endif %}
+
+        {% assign section_n_subject = n_subject %}
+        {% if n_subject and n_subject contains "=" %}
+          {% assign section_n_subject = "" %}
+          {% assign n_subject_parts = n_subject | split: ";" %}
+          {% for part in n_subject_parts %}
+            {% assign part_stripped = part | strip %}
+            {% if part_stripped contains key_prefix %}
+              {% assign section_n_subject = part_stripped | replace_first: key_prefix, "" | strip %}
+            {% endif %}
+          {% endfor %}
+        {% endif %}
+
+        {% assign section_n_mr_session = n_mr_session %}
+        {% if n_mr_session and n_mr_session contains "=" %}
+          {% assign section_n_mr_session = "" %}
+          {% assign n_mr_parts = n_mr_session | split: ";" %}
+          {% for part in n_mr_parts %}
+            {% assign part_stripped = part | strip %}
+            {% if part_stripped contains key_prefix %}
+              {% assign section_n_mr_session = part_stripped | replace_first: key_prefix, "" | strip %}
+            {% endif %}
+          {% endfor %}
+        {% endif %}
+      {% else %}
+        {% assign section_age_range = age_range %}
+        {% assign section_n_subject = n_subject %}
+        {% assign section_n_mr_session = n_mr_session %}
+      {% endif %}
+
+      {% if section_age_range and section_age_range != "" and age_range_has_semicolon %}
       <tr>
-        <th style="font-weight:bold; width:250px;">
-          {{ p_key }}
-          {% if p_version and p_version != "" %}
-            <span style="font-weight:normal;">({{ p_version }})</span>
+        <th style="font-weight:bold; width:250px;">Age Range</th>
+        <th style="font-weight:normal">{{ section_age_range }}</th>
+        <th style="font-weight:normal"></th>
+      </tr>
+      {% endif %}
+
+      {% if section_n_subject and section_n_subject != "" and n_subject_has_semicolon %}
+      <tr>
+        <th style="font-weight:bold; width:250px;">N Subjects</th>
+        <th style="font-weight:normal">{{ section_n_subject }}</th>
+        <th style="font-weight:normal"></th>
+      </tr>
+      {% endif %}
+
+      {% if section_n_mr_session and section_n_mr_session != "" and n_mr_session_has_semicolon %}
+      <tr>
+        <th style="font-weight:bold; width:250px;">N MR Sessions</th>
+        <th style="font-weight:normal">{{ section_n_mr_session }}</th>
+        <th style="font-weight:normal"></th>
+      </tr>
+      {% endif %}
+
+      {% if has_sections %}
+        {% assign section_dlmuse_path = dlmuse_path %}
+        {% if dlmuse_path and dlmuse_path contains "=" %}
+          {% assign section_dlmuse_path = "" %}
+          {% assign dlmuse_parts = dlmuse_path | split: ";" %}
+          {% for part in dlmuse_parts %}
+            {% assign part_stripped = part | strip %}
+            {% if part_stripped contains key_prefix %}
+              {% assign section_dlmuse_path = part_stripped | replace_first: key_prefix, "" | strip %}
+            {% endif %}
+          {% endfor %}
+        {% endif %}
+
+        {% assign section_dlmuse_version = dlmuse_version %}
+        {% if dlmuse_version and dlmuse_version contains "=" %}
+          {% assign section_dlmuse_version = "" %}
+          {% assign dlmuse_version_parts = dlmuse_version | split: ";" %}
+          {% for part in dlmuse_version_parts %}
+            {% assign part_stripped = part | strip %}
+            {% if part_stripped contains key_prefix %}
+              {% assign section_dlmuse_version = part_stripped | replace_first: key_prefix, "" | strip %}
+            {% endif %}
+          {% endfor %}
+        {% endif %}
+
+        {% assign section_dlmuse_complete = dlmuse_complete %}
+        {% if dlmuse_complete and dlmuse_complete contains "=" %}
+          {% assign section_dlmuse_complete = "" %}
+          {% assign dlmuse_complete_parts = dlmuse_complete | split: ";" %}
+          {% for part in dlmuse_complete_parts %}
+            {% assign part_stripped = part | strip %}
+            {% if part_stripped contains key_prefix %}
+              {% assign section_dlmuse_complete = part_stripped | replace_first: key_prefix, "" | strip %}
+            {% endif %}
+          {% endfor %}
+        {% endif %}
+
+        {% assign section_ravens_path = ravens_path %}
+        {% if ravens_path and ravens_path contains "=" %}
+          {% assign section_ravens_path = "" %}
+          {% assign ravens_parts = ravens_path | split: ";" %}
+          {% for part in ravens_parts %}
+            {% assign part_stripped = part | strip %}
+            {% if part_stripped contains key_prefix %}
+              {% assign section_ravens_path = part_stripped | replace_first: key_prefix, "" | strip %}
+            {% endif %}
+          {% endfor %}
+        {% endif %}
+
+        {% assign section_ravens_version = ravens_version %}
+        {% if ravens_version and ravens_version contains "=" %}
+          {% assign section_ravens_version = "" %}
+          {% assign ravens_version_parts = ravens_version | split: ";" %}
+          {% for part in ravens_version_parts %}
+            {% assign part_stripped = part | strip %}
+            {% if part_stripped contains key_prefix %}
+              {% assign section_ravens_version = part_stripped | replace_first: key_prefix, "" | strip %}
+            {% endif %}
+          {% endfor %}
+        {% endif %}
+
+        {% assign section_ravens_complete = ravens_complete %}
+        {% if ravens_complete and ravens_complete contains "=" %}
+          {% assign section_ravens_complete = "" %}
+          {% assign ravens_complete_parts = ravens_complete | split: ";" %}
+          {% for part in ravens_complete_parts %}
+            {% assign part_stripped = part | strip %}
+            {% if part_stripped contains key_prefix %}
+              {% assign section_ravens_complete = part_stripped | replace_first: key_prefix, "" | strip %}
+            {% endif %}
+          {% endfor %}
+        {% endif %}
+
+        {% assign section_dlwmls_path = dlwmls_path %}
+        {% if dlwmls_path and dlwmls_path contains "=" %}
+          {% assign section_dlwmls_path = "" %}
+          {% assign dlwmls_parts = dlwmls_path | split: ";" %}
+          {% for part in dlwmls_parts %}
+            {% assign part_stripped = part | strip %}
+            {% if part_stripped contains key_prefix %}
+              {% assign section_dlwmls_path = part_stripped | replace_first: key_prefix, "" | strip %}
+            {% endif %}
+          {% endfor %}
+        {% endif %}
+
+        {% assign section_dlwmls_version = dlwmls_version %}
+        {% if dlwmls_version and dlwmls_version contains "=" %}
+          {% assign section_dlwmls_version = "" %}
+          {% assign dlwmls_version_parts = dlwmls_version | split: ";" %}
+          {% for part in dlwmls_version_parts %}
+            {% assign part_stripped = part | strip %}
+            {% if part_stripped contains key_prefix %}
+              {% assign section_dlwmls_version = part_stripped | replace_first: key_prefix, "" | strip %}
+            {% endif %}
+          {% endfor %}
+        {% endif %}
+
+        {% assign section_dlwmls_complete = dlwmls_complete %}
+        {% if dlwmls_complete and dlwmls_complete contains "=" %}
+          {% assign section_dlwmls_complete = "" %}
+          {% assign dlwmls_complete_parts = dlwmls_complete | split: ";" %}
+          {% for part in dlwmls_complete_parts %}
+            {% assign part_stripped = part | strip %}
+            {% if part_stripped contains key_prefix %}
+              {% assign section_dlwmls_complete = part_stripped | replace_first: key_prefix, "" | strip %}
+            {% endif %}
+          {% endfor %}
+        {% endif %}
+
+        {% assign section_fmriprep_path = fmriprep_path %}
+        {% if fmriprep_path and fmriprep_path contains "=" %}
+          {% assign section_fmriprep_path = "" %}
+          {% assign fmriprep_parts = fmriprep_path | split: ";" %}
+          {% for part in fmriprep_parts %}
+            {% assign part_stripped = part | strip %}
+            {% if part_stripped contains key_prefix %}
+              {% assign section_fmriprep_path = part_stripped | replace_first: key_prefix, "" | strip %}
+            {% endif %}
+          {% endfor %}
+        {% endif %}
+
+        {% assign section_fmriprep_version = fmriprep_version %}
+        {% if fmriprep_version and fmriprep_version contains "=" %}
+          {% assign section_fmriprep_version = "" %}
+          {% assign fmriprep_version_parts = fmriprep_version | split: ";" %}
+          {% for part in fmriprep_version_parts %}
+            {% assign part_stripped = part | strip %}
+            {% if part_stripped contains key_prefix %}
+              {% assign section_fmriprep_version = part_stripped | replace_first: key_prefix, "" | strip %}
+            {% endif %}
+          {% endfor %}
+        {% endif %}
+
+        {% assign section_fmriprep_complete = fmriprep_complete %}
+        {% if fmriprep_complete and fmriprep_complete contains "=" %}
+          {% assign section_fmriprep_complete = "" %}
+          {% assign fmriprep_complete_parts = fmriprep_complete | split: ";" %}
+          {% for part in fmriprep_complete_parts %}
+            {% assign part_stripped = part | strip %}
+            {% if part_stripped contains key_prefix %}
+              {% assign section_fmriprep_complete = part_stripped | replace_first: key_prefix, "" | strip %}
+            {% endif %}
+          {% endfor %}
+        {% endif %}
+
+        {% assign section_fmriprep_command = fmriprep_command %}
+        {% if fmriprep_command and fmriprep_command contains "=" %}
+          {% assign section_fmriprep_command = "" %}
+          {% assign fmriprep_command_parts = fmriprep_command | split: ";" %}
+          {% for part in fmriprep_command_parts %}
+            {% assign part_stripped = part | strip %}
+            {% if part_stripped contains key_prefix %}
+              {% assign section_fmriprep_command = part_stripped | replace_first: key_prefix, "" | strip %}
+            {% endif %}
+          {% endfor %}
+        {% endif %}
+
+        {% assign section_xcpd_path = xcpd_path %}
+        {% if xcpd_path and xcpd_path contains "=" %}
+          {% assign section_xcpd_path = "" %}
+          {% assign xcpd_parts = xcpd_path | split: ";" %}
+          {% for part in xcpd_parts %}
+            {% assign part_stripped = part | strip %}
+            {% if part_stripped contains key_prefix %}
+              {% assign section_xcpd_path = part_stripped | replace_first: key_prefix, "" | strip %}
+            {% endif %}
+          {% endfor %}
+        {% endif %}
+
+        {% assign section_xcpd_version = xcpd_version %}
+        {% if xcpd_version and xcpd_version contains "=" %}
+          {% assign section_xcpd_version = "" %}
+          {% assign xcpd_version_parts = xcpd_version | split: ";" %}
+          {% for part in xcpd_version_parts %}
+            {% assign part_stripped = part | strip %}
+            {% if part_stripped contains key_prefix %}
+              {% assign section_xcpd_version = part_stripped | replace_first: key_prefix, "" | strip %}
+            {% endif %}
+          {% endfor %}
+        {% endif %}
+
+        {% assign section_xcpd_complete = xcpd_complete %}
+        {% if xcpd_complete and xcpd_complete contains "=" %}
+          {% assign section_xcpd_complete = "" %}
+          {% assign xcpd_complete_parts = xcpd_complete | split: ";" %}
+          {% for part in xcpd_complete_parts %}
+            {% assign part_stripped = part | strip %}
+            {% if part_stripped contains key_prefix %}
+              {% assign section_xcpd_complete = part_stripped | replace_first: key_prefix, "" | strip %}
+            {% endif %}
+          {% endfor %}
+        {% endif %}
+
+        {% assign section_xcpd_command = xcpd_command %}
+        {% if xcpd_command and xcpd_command contains "=" %}
+          {% assign section_xcpd_command = "" %}
+          {% assign xcpd_command_parts = xcpd_command | split: ";" %}
+          {% for part in xcpd_command_parts %}
+            {% assign part_stripped = part | strip %}
+            {% if part_stripped contains key_prefix %}
+              {% assign section_xcpd_command = part_stripped | replace_first: key_prefix, "" | strip %}
+            {% endif %}
+          {% endfor %}
+        {% endif %}
+      {% else %}
+        {% assign section_dlmuse_path = dlmuse_path %}
+        {% assign section_dlmuse_version = dlmuse_version %}
+        {% assign section_dlmuse_complete = dlmuse_complete %}
+        {% assign section_ravens_path = ravens_path %}
+        {% assign section_ravens_version = ravens_version %}
+        {% assign section_ravens_complete = ravens_complete %}
+        {% assign section_dlwmls_path = dlwmls_path %}
+        {% assign section_dlwmls_version = dlwmls_version %}
+        {% assign section_dlwmls_complete = dlwmls_complete %}
+        {% assign section_fmriprep_path = fmriprep_path %}
+        {% assign section_fmriprep_version = fmriprep_version %}
+        {% assign section_fmriprep_complete = fmriprep_complete %}
+        {% assign section_fmriprep_command = fmriprep_command %}
+        {% assign section_xcpd_path = xcpd_path %}
+        {% assign section_xcpd_version = xcpd_version %}
+        {% assign section_xcpd_complete = xcpd_complete %}
+        {% assign section_xcpd_command = xcpd_command %}
+      {% endif %}
+
+      {% assign pipelines = "" | split: "," %}
+      {% if section_dlmuse_path and section_dlmuse_path != "" %}{% assign pipelines = pipelines | push: "DLMUSE" %}{% endif %}
+      {% if section_ravens_path and section_ravens_path != "" %}{% assign pipelines = pipelines | push: "RAVENS" %}{% endif %}
+      {% if section_dlwmls_path and section_dlwmls_path != "" %}{% assign pipelines = pipelines | push: "DLWMLS" %}{% endif %}
+      {% if section_fmriprep_path and section_fmriprep_path != "" %}{% assign pipelines = pipelines | push: "fMRIPrep" %}{% endif %}
+      {% if section_xcpd_path and section_xcpd_path != "" %}{% assign pipelines = pipelines | push: "XCP-D" %}{% endif %}
+
+      {% for p in pipelines %}
+        {% assign p_key = p %}
+        {% assign p_id = p | downcase | replace: ".", "-" | replace: " ", "-" %}
+        {% assign p_command_col = p_key | append: "_command" %}
+        {% assign p_has_command = false %}
+        {% assign p_command_raw = "" %}
+        
+        {% if p == "DLMUSE" %}
+          {% assign p_path = section_dlmuse_path %}
+          {% assign p_version = section_dlmuse_version %}
+          {% assign p_complete = section_dlmuse_complete %}
+        {% elsif p == "RAVENS" %}
+          {% assign p_path = section_ravens_path %}
+          {% assign p_version = section_ravens_version %}
+          {% assign p_complete = section_ravens_complete %}
+        {% elsif p == "DLWMLS" %}
+          {% assign p_path = section_dlwmls_path %}
+          {% assign p_version = section_dlwmls_version %}
+          {% assign p_complete = section_dlwmls_complete %}
+        {% elsif p == "fMRIPrep" %}
+          {% assign p_path = section_fmriprep_path %}
+          {% assign p_version = section_fmriprep_version %}
+          {% assign p_complete = section_fmriprep_complete %}
+          {% if section_fmriprep_command and section_fmriprep_command != "" %}
+            {% assign p_has_command = true %}
+            {% assign p_command_raw = section_fmriprep_command %}
           {% endif %}
-          {% if p_complete and p_complete != "" and n_mr_session and n_mr_session != "" %}
-            <br>
-            <span style="font-weight:normal;">({{ p_complete }}/{{ n_mr_session }} complete)</span>
+        {% elsif p == "XCP-D" %}
+          {% assign p_path = section_xcpd_path %}
+          {% assign p_version = section_xcpd_version %}
+          {% assign p_complete = section_xcpd_complete %}
+          {% if section_xcpd_command and section_xcpd_command != "" %}
+            {% assign p_has_command = true %}
+            {% assign p_command_raw = section_xcpd_command %}
           {% endif %}
-        </th>
-        <th style="font-weight:normal">
-          {% if p_has_command %}
-            {% comment %}Show tabs for Path and Command{% endcomment %}
-            <div class="tab-container">
-              <div class="tab-buttons">
-                <button class="tab-button active" onclick="showTab('{{ study_abbr | downcase }}-{{ p_id }}-path-tab')">Path</button>
-                <button class="tab-button" onclick="showTab('{{ study_abbr | downcase }}-{{ p_id }}-command-tab')">Command</button>
-              </div>
-              <div id="{{ study_abbr | downcase }}-{{ p_id }}-path-tab" class="tab-content active">
-                <div id="{{ study_abbr | downcase }}-{{ p_id }}-path" class="copy-container" style="border: 1px solid #6c6edc; border-radius: 3px; padding: 6px; background-color: #f8f9fa;">
-                  <span class="copy-text"><code>{{ p_path }}</code></span>
-                  <button class="copy-button" onclick="copyToClipboard('{{ study_abbr | downcase }}-{{ p_id }}-path')">Copy</button>
+        {% endif %}
+
+        <tr>
+          <th style="font-weight:bold; width:250px;">
+            {% if p_key == "DLMUSE" %}
+              <a href="https://github.com/CBICA/NiChart_DLMUSE">{{ p_key }}</a>
+            {% elsif p_key == "DLWMLS" %}
+              <a href="https://github.com/CBICA/NiChart_DLWMLS">{{ p_key }}</a>
+            {% else %}
+              {{ p_key }}
+            {% endif %}
+            {% if p_version and p_version != "" %}
+              <span style="font-weight:normal;">({{ p_version }})</span>
+            {% endif %}
+            {% if p_complete and p_complete != "" and section_n_mr_session and section_n_mr_session != "" %}
+              <br>
+              <span style="font-weight:normal;">({{ p_complete }}/{{ section_n_mr_session }} complete)</span>
+            {% endif %}
+          </th>
+          <th style="font-weight:normal">
+            {% if p_has_command %}
+              {% comment %}Show tabs for Path and Command{% endcomment %}
+              <div class="tab-container">
+                <div class="tab-buttons">
+                  <button class="tab-button active" onclick="showTab('{{ study_abbr | downcase }}-{{ section_key | downcase }}-{{ p_id }}-path-tab')">Path</button>
+                  <button class="tab-button" onclick="showTab('{{ study_abbr | downcase }}-{{ section_key | downcase }}-{{ p_id }}-command-tab')">Command</button>
+                </div>
+                <div id="{{ study_abbr | downcase }}-{{ section_key | downcase }}-{{ p_id }}-path-tab" class="tab-content active">
+                  {% assign path_parts = p_path | split: ";" %}
+                  {% for part in path_parts %}
+                    {% assign part_stripped = part | strip %}
+                    {% if part_stripped != "" %}
+                       <div id="{{ study_abbr | downcase }}-{{ section_key | downcase }}-{{ p_id }}-path-{{ forloop.index }}" class="copy-container" style="border: 1px solid #6c6edc; border-radius: 3px; padding: 6px; background-color: #f8f9fa; margin-bottom: 15px;">
+                          <span class="copy-text"><code>{{ part_stripped }}</code></span>
+                          <button class="copy-button" onclick="copyToClipboard('{{ study_abbr | downcase }}-{{ section_key | downcase }}-{{ p_id }}-path-{{ forloop.index }}')">Copy</button>
+                        </div>
+                    {% endif %}
+                  {% endfor %}
+                </div>
+                <div id="{{ study_abbr | downcase }}-{{ section_key | downcase }}-{{ p_id }}-command-tab" class="tab-content">
+                  {% assign command_parts = p_command_raw | split: ";" %}
+                  {% for part in command_parts %}
+                    {% assign part_stripped = part | strip %}
+                    {% if part_stripped != "" %}
+                      <div id="{{ study_abbr | downcase }}-{{ section_key | downcase }}-{{ p_id }}-command-{{ forloop.index }}" class="copy-container" style="border: 1px solid #6c6edc; border-radius: 3px; padding: 6px; background-color: #f8f9fa; margin-bottom: 15px; flex-direction: column; align-items: stretch;">
+                        <div class="copy-text" style="flex: 1; overflow-x: auto; margin: 0; padding: 8px; background-color: #ffffff; border: 1px solid #ddd; border-radius: 3px;">
+                          <code style="display: block; white-space: pre-wrap; word-break: break-all; font-family: 'Courier New', monospace; font-size: 14px; line-height: 1.4; color: #333;">{{ part_stripped | replace: "<", "&lt;" | replace: ">", "&gt;" }}</code>
+                        </div>
+                        <button class="copy-button" onclick="copyToClipboard('{{ study_abbr | downcase }}-{{ section_key | downcase }}-{{ p_id }}-command-{{ forloop.index }}')" style="align-self: flex-end; margin-top: 8px;">Copy</button>
+                      </div>
+                    {% endif %}
+                  {% endfor %}
                 </div>
               </div>
-              <div id="{{ study_abbr | downcase }}-{{ p_id }}-command-tab" class="tab-content">
-                {% comment %}Handle OASIS3/OASIS4 splitting for commands{% endcomment %}
-                {% if study_abbr == "OASIS" and p_command_raw contains "OASIS3=" %}
-                  {% assign command_parts = p_command_raw | split: ";" %}
-                  {% for cmd_part in command_parts %}
-                    {% if cmd_part contains "OASIS3=" %}
-                      {% assign oasis3_parts = cmd_part | split: "OASIS3=" %}
-                      {% if oasis3_parts.size >= 2 %}
-                        {% assign cmd_value = oasis3_parts[1] | strip %}
-                        <div style="margin-bottom: 15px;">
-                          <strong>OASIS3:</strong>
-                          <div id="{{ study_abbr | downcase }}-{{ p_id }}-oasis3-command" class="copy-container" style="border: 1px solid #6c6edc; border-radius: 3px; padding: 6px; background-color: #f8f9fa; margin-top: 5px; flex-direction: column; align-items: stretch;">
-                            <div class="copy-text" style="flex: 1; overflow-x: auto; margin: 0; padding: 8px; background-color: #ffffff; border: 1px solid #ddd; border-radius: 3px;">
-                              <code style="display: block; white-space: pre-wrap; word-break: break-all; font-family: 'Courier New', monospace; font-size: 14px; line-height: 1.4; color: #333;">{{ cmd_value | replace: "<", "&lt;" | replace: ">", "&gt;" }}</code>
-                            </div>
-                            <button class="copy-button" onclick="copyToClipboard('{{ study_abbr | downcase }}-{{ p_id }}-oasis3-command')" style="align-self: flex-end; margin-top: 8px;">Copy</button>
-                          </div>
-                        </div>
-                      {% endif %}
+            {% else %}
+              {% comment %}No command, just show path{% endcomment %}
+              <div id="{{ study_abbr | downcase }}-{{ section_key | downcase }}-{{ p_id }}-path" class="copy-container" style="border: 1px solid #6c6edc; border-radius: 3px; padding: 6px; background-color: #f8f9fa;">
+                <span class="copy-text"><code>{{ p_path }}</code></span>
+                <button class="copy-button" onclick="copyToClipboard('{{ study_abbr | downcase }}-{{ section_key | downcase }}-{{ p_id }}-path')">Copy</button>
+              </div>
+            {% endif %}
+          </th>
+          <th style="font-weight:normal"></th>
+        </tr>
+      {% endfor %}
+
+      {% assign has_nonimaging = true %}
+      {% if has_nonimaging %}
+        <tr>
+          <th style="font-weight:bold; width:250px;">Non-Imaging Data</th>
+          <th style="font-weight:normal">
+            {% assign nonimg_id = study_abbr | downcase | append: "-" | append: section_key | downcase | append: "-nonimg" %}
+            <div class="tab-container">
+              <div class="tab-buttons">
+                <button class="tab-button active" onclick="showTab('{{ nonimg_id }}-raw-tab')">Raw</button>
+                <button class="tab-button" onclick="showTab('{{ nonimg_id }}-data-dictionary-tab')">Data Dictionary</button>
+                <button class="tab-button" onclick="showTab('{{ nonimg_id }}-consolidated-v2-tab')">Consolidated v2.0</button>
+                <button class="tab-button" onclick="showTab('{{ nonimg_id }}-consolidated-latest-tab')">Consolidated Latest</button>
+              </div>
+              <div id="{{ nonimg_id }}-raw-tab" class="tab-content active">
+                {% if nonimaging_raw and nonimaging_raw != "" %}
+                  {% assign raw_parts = nonimaging_raw | split: ";" %}
+                  {% for part in raw_parts %}
+                    {% assign part_stripped = part | strip %}
+                    {% if part_stripped != "" %}
+                      <div id="{{ nonimg_id }}-raw-{{ forloop.index }}" class="copy-container" style="border: 1px solid #6c6edc; border-radius: 3px; padding: 6px; background-color: #f8f9fa; margin-bottom: 15px;">
+                        <span class="copy-text"><code>{{ part_stripped }}</code></span>
+                        <button class="copy-button" onclick="copyToClipboard('{{ nonimg_id }}-raw-{{ forloop.index }}')">Copy</button>
+                      </div>
                     {% endif %}
-                    {% if cmd_part contains "OASIS4=" %}
-                      {% assign oasis4_parts = cmd_part | split: "OASIS4=" %}
-                      {% if oasis4_parts.size >= 2 %}
-                        {% assign cmd_value = oasis4_parts[1] | strip %}
-                        <div style="margin-bottom: 15px;">
-                          <strong>OASIS4:</strong>
-                          <div id="{{ study_abbr | downcase }}-{{ p_id }}-oasis4-command" class="copy-container" style="border: 1px solid #6c6edc; border-radius: 3px; padding: 6px; background-color: #f8f9fa; margin-top: 5px; flex-direction: column; align-items: stretch;">
-                            <div class="copy-text" style="flex: 1; overflow-x: auto; margin: 0; padding: 8px; background-color: #ffffff; border: 1px solid #ddd; border-radius: 3px;">
-                              <code style="display: block; white-space: pre-wrap; word-break: break-all; font-family: 'Courier New', monospace; font-size: 14px; line-height: 1.4; color: #333;">{{ cmd_value | replace: "<", "&lt;" | replace: ">", "&gt;" }}</code>
-                            </div>
-                            <button class="copy-button" onclick="copyToClipboard('{{ study_abbr | downcase }}-{{ p_id }}-oasis4-command')" style="align-self: flex-end; margin-top: 8px;">Copy</button>
-                          </div>
-                        </div>
-                      {% endif %}
+                  {% endfor %}
+                  <p style="margin-top: 12px; margin-bottom: 0; font-size: 14px; color: #444;">Raw data downloaded from source.</p>
+                {% else %}
+                  <p style="color:#666;">—</p>
+                  <p style="margin-top: 12px; margin-bottom: 0; font-size: 14px; color: #444;">Raw data downloaded from source.</p>
+                {% endif %}
+              </div>
+              <div id="{{ nonimg_id }}-data-dictionary-tab" class="tab-content">
+                {% if nonimaging_data_dictionary and nonimaging_data_dictionary != "" %}
+                  {% assign dd_parts = nonimaging_data_dictionary | split: ";" %}
+                  {% for part in dd_parts %}
+                    {% assign part_stripped = part | strip %}
+                    {% if part_stripped != "" %}
+                      <div id="{{ nonimg_id }}-dd-{{ forloop.index }}" class="copy-container" style="border: 1px solid #6c6edc; border-radius: 3px; padding: 6px; background-color: #f8f9fa; margin-bottom: 15px;">
+                        <span class="copy-text"><code>{{ part_stripped }}</code></span>
+                        <button class="copy-button" onclick="copyToClipboard('{{ nonimg_id }}-dd-{{ forloop.index }}')">Copy</button>
+                      </div>
                     {% endif %}
                   {% endfor %}
                 {% else %}
-                  {% comment %}Single command (non-OASIS or no OASIS3/OASIS4 pattern){% endcomment %}
-                  <div id="{{ study_abbr | downcase }}-{{ p_id }}-command" class="copy-container" style="border: 1px solid #6c6edc; border-radius: 3px; padding: 6px; background-color: #f8f9fa; flex-direction: column; align-items: stretch;">
-                    <div class="copy-text" style="flex: 1; overflow-x: auto; margin: 0; padding: 8px; background-color: #ffffff; border: 1px solid #ddd; border-radius: 3px;">
-                      <code style="display: block; white-space: pre-wrap; word-break: break-all; font-family: 'Courier New', monospace; font-size: 14px; line-height: 1.4; color: #333;">{{ p_command_raw | replace: "<", "&lt;" | replace: ">", "&gt;" }}</code>
-                    </div>
-                    <button class="copy-button" onclick="copyToClipboard('{{ study_abbr | downcase }}-{{ p_id }}-command')" style="align-self: flex-end; margin-top: 8px;">Copy</button>
-                  </div>
+                  <p style="color:#666;">—</p>
                 {% endif %}
               </div>
+              <div id="{{ nonimg_id }}-consolidated-v2-tab" class="tab-content">
+                <div id="{{ nonimg_id }}-v2-path" class="copy-container" style="border: 1px solid #6c6edc; border-radius: 3px; padding: 6px; background-color: #f8f9fa; margin-bottom: 15px;">
+                  <span class="copy-text"><code>{{ nonimaging_consolidated_v2 }}</code></span>
+                  <button class="copy-button" onclick="copyToClipboard('{{ nonimg_id }}-v2-path')">Copy</button>
+                </div>
+                <p style="margin-top: 12px; margin-bottom: 8px; font-size: 14px; color: #444;">Data consolidated in 2020 across NiChart datasets (same variables, harmonized).</p>
+                {% if nonimaging_consolidated_v2_study and nonimaging_consolidated_v2_study != "" %}
+                  <p style="margin-top: 0; margin-bottom: 4px; font-size: 14px; color: #444;"><strong>This study:</strong> subset with <code>df[df.Study == '{{ nonimaging_consolidated_v2_study }}']</code></p>
+                {% endif %}
+                <p style="margin: 6px 0 4px; font-size: 14px; color: #444;">README: <code>{{ nonimaging_consolidation_base }}/README.md</code></p>
+                <p style="margin: 6px 0 0; font-size: 14px; color: #444;">Release Notes: <code>{{ nonimaging_consolidation_base }}/Release_Notes.md</code></p>
+              </div>
+              <div id="{{ nonimg_id }}-consolidated-latest-tab" class="tab-content">
+                <div id="{{ nonimg_id }}-latest-path" class="copy-container" style="border: 1px solid #6c6edc; border-radius: 3px; padding: 6px; background-color: #f8f9fa; margin-bottom: 15px;">
+                  <span class="copy-text"><code>{{ nonimaging_consolidated_latest }}</code></span>
+                  <button class="copy-button" onclick="copyToClipboard('{{ nonimg_id }}-latest-path')">Copy</button>
+                </div>
+                <p style="margin-top: 12px; margin-bottom: 8px; font-size: 14px; color: #444;">Data consolidated in 2026 across NiChart datasets (same variables, harmonized).</p>
+                {% if nonimaging_consolidated_v2_study and nonimaging_consolidated_v2_study != "" %}
+                  <p style="margin-top: 0; margin-bottom: 4px; font-size: 14px; color: #444;"><strong>This study:</strong> subset with <code>df[df.Study == '{{ nonimaging_consolidated_v2_study }}']</code></p>
+                {% endif %}
+                <p style="margin: 6px 0 4px; font-size: 14px; color: #444;">README: <code>Coming Soon</code></p>
+                <p style="margin: 6px 0 0; font-size: 14px; color: #444;">Release Notes: <code>Coming Soon</code></p>
+              </div>
             </div>
-          {% else %}
-            {% comment %}No command, just show path{% endcomment %}
-            <div id="{{ study_abbr | downcase }}-{{ p_id }}-path" class="copy-container" style="border: 1px solid #6c6edc; border-radius: 3px; padding: 6px; background-color: #f8f9fa;">
-              <span class="copy-text"><code>{{ p_path }}</code></span>
-              <button class="copy-button" onclick="copyToClipboard('{{ study_abbr | downcase }}-{{ p_id }}-path')">Copy</button>
-            </div>
-          {% endif %}
-        </th>
-        <th style="font-weight:normal"></th>
-      </tr>
+          </th>
+          <th style="font-weight:normal"></th>
+        </tr>
+      {% endif %}
     {% endfor %}
   </table>
 </div>
