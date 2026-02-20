@@ -16,6 +16,14 @@ Many labs at Penn use the same large, publicly available neuroimaging datasets. 
 
 <p><strong>Note</strong>: The Sample Size and Number of Sessions shown in the table below represent the full dataset. The number of completed sessions for each processing pipeline can be found on each study-specific page.</p>
 
+<div class="datasets-filter" style="margin-bottom: 1rem;">
+  <label for="disease-tag-filter" style="font-weight: 600; margin-right: 0.5rem;">Filter by Tag:</label>
+  <select id="disease-tag-filter" class="datasets-filter-select" style="padding: 6px 12px; border-radius: 6px; border: 1px solid #e8eaff; font-size: 14px; min-width: 180px;">
+    <option value="">All</option>
+    <!-- Options populated by JavaScript from table data-disease-tags -->
+  </select>
+</div>
+
 <style>
 .datasets-table {
   width: 100%;
@@ -274,8 +282,12 @@ Many labs at Penn use the same large, publicly available neuroimaging datasets. 
             {% assign csv_rows = site.data.nichart_data_overview | where: "Study_abbr", dataset.study_abbr %}
             {% assign csv_data = csv_rows | first %}
           {% endif %}
+          {% assign row_disease_tags = "" %}
+          {% if csv_data and csv_data.Disease_Tags and csv_data.Disease_Tags != "" %}
+            {% assign row_disease_tags = csv_data.Disease_Tags | strip %}
+          {% endif %}
           
-          <tr>
+          <tr data-disease-tags="{{ row_disease_tags }}">
             <td><a href="{{ dataset.website }}">{{ dataset.title }} {% if dataset.excerpt and dataset.excerpt != dataset.title %}({{ dataset.excerpt }}){% endif %}</a></td>
             <td>
               {% comment %}Prioritize front matter over CSV{% endcomment %}
@@ -636,6 +648,49 @@ NA = Not Available
 document.addEventListener('DOMContentLoaded', function() {
   const table = document.querySelector('.datasets-table table');
   if (!table) return;
+
+  // Disease Tag filter: populate dropdown and filter rows
+  (function() {
+    const select = document.getElementById('disease-tag-filter');
+    const tbody = table.querySelector('tbody');
+    if (!select || !tbody) return;
+
+    var tagSet = new Set();
+    tbody.querySelectorAll('tr[data-disease-tags]').forEach(function(tr) {
+      var raw = (tr.getAttribute('data-disease-tags') || '').trim();
+      if (!raw) return;
+      raw.split(/[,;]/).forEach(function(s) {
+        var t = s.trim();
+        if (t) tagSet.add(t);
+      });
+    });
+    var tags = Array.from(tagSet).sort();
+    tags.forEach(function(tag) {
+      var opt = document.createElement('option');
+      opt.value = tag;
+      opt.textContent = tag;
+      select.appendChild(opt);
+    });
+
+    function rowTags(row) {
+      var raw = (row.getAttribute('data-disease-tags') || '').trim();
+      return raw ? raw.split(/[,;]/).map(function(s) { return s.trim(); }).filter(Boolean) : [];
+    }
+
+    function filterRows() {
+      var value = (select.value || '').trim();
+      tbody.querySelectorAll('tr[data-disease-tags]').forEach(function(tr) {
+        if (!value) {
+          tr.style.display = '';
+          return;
+        }
+        var tags = rowTags(tr);
+        tr.style.display = tags.indexOf(value) !== -1 ? '' : 'none';
+      });
+    }
+
+    select.addEventListener('change', filterRows);
+  })();
   
   const cells = table.querySelectorAll('td, th');
   

@@ -256,11 +256,95 @@ Optionally override lookup key:
                   {% assign only_nan = true %}
                 {% endif %}
               {% endif %}
-              {% unless only_nan %}
+              {% assign dx_visit_format = false %}
+              {% if dx_val contains " | " and dx_val contains "[" %}
+                {% assign dx_visit_format = true %}
+              {% endif %}
+              {% assign dx_visit_only_nan = false %}
+              {% if dx_visit_format %}
+                {% comment %}Parse visit format to compute dx_visit_only_nan and arrays for table{% endcomment %}
+                {% assign dx_blocks = dx_val | split: " | " %}
+                {% assign dx_visits_delim = "|" %}
+                {% assign dx_values_delim = "|" %}
+                {% assign dx_lookup = "" %}
+                {% for dx_b in dx_blocks %}
+                  {% assign dx_block_trimmed = dx_b | strip %}
+                  {% if dx_block_trimmed != "" and dx_block_trimmed contains " [" %}
+                    {% assign dx_b_parts = dx_block_trimmed | split: " [" %}
+                    {% assign dx_visit = dx_b_parts[0] | strip %}
+                    {% assign dx_content = dx_b_parts[1] | remove: "]" | strip %}
+                    {% assign dx_check_visit = "|" | append: dx_visit | append: "|" %}
+                    {% unless dx_visits_delim contains dx_check_visit %}
+                      {% assign dx_visits_delim = dx_visits_delim | append: dx_visit | append: "|" %}
+                    {% endunless %}
+                    {% assign dx_pairs = dx_content | split: "," %}
+                    {% for dx_pair in dx_pairs %}
+                      {% assign dx_pair_trimmed = dx_pair | strip %}
+                      {% if dx_pair_trimmed != "" %}
+                        {% assign dx_vn = dx_pair_trimmed | split: ":" %}
+                        {% assign dx_v = dx_vn[0] | strip %}
+                        {% assign dx_n = dx_vn[1] | strip %}
+                        {% assign dx_check_val = "|" | append: dx_v | append: "|" %}
+                        {% unless dx_values_delim contains dx_check_val %}
+                          {% assign dx_values_delim = dx_values_delim | append: dx_v | append: "|" %}
+                        {% endunless %}
+                        {% assign dx_lookup = dx_lookup | append: dx_visit | append: "_" | append: dx_v | append: ":" | append: dx_n | append: "," %}
+                      {% endif %}
+                    {% endfor %}
+                  {% endif %}
+                {% endfor %}
+                {% assign dx_visits_arr = dx_visits_delim | split: "|" %}
+                {% assign dx_values_arr = dx_values_delim | split: "|" %}
+                {% assign dx_visit_only_nan = true %}
+                {% for dx_vv in dx_values_arr %}
+                  {% if dx_vv != "" %}
+                    {% assign dx_vv_lower = dx_vv | downcase %}
+                    {% if dx_vv_lower != "nan" %}
+                      {% assign dx_visit_only_nan = false %}
+                    {% endif %}
+                  {% endif %}
+                {% endfor %}
+              {% endif %}
+              {% unless only_nan or dx_visit_only_nan %}
                 {% assign dx_label = dx_col | replace: "DX_", "" | replace: "_", " " %}
                 <div style="margin: 0;">
                   <div style="text-align: left; font-weight: bold; padding: 4px 0 8px 0;">{{ dx_label }}</div>
                   <table style="margin: 0; border-collapse: collapse; border: 1px solid #ddd;">
+                  {% if dx_visit_format %}
+                  <thead>
+                    <tr style="background: #f5f5f5;">
+                      <th style="border: 1px solid #ddd; padding: 6px 10px; text-align: left;">Value</th>
+                      {% for dx_visit in dx_visits_arr %}
+                        {% if dx_visit != "" %}
+                      <th style="border: 1px solid #ddd; padding: 6px 10px; text-align: right;">{{ dx_visit }}</th>
+                        {% endif %}
+                      {% endfor %}
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {% for dx_val_row in dx_values_arr %}
+                      {% if dx_val_row != "" %}
+                        <tr>
+                          <td style="border: 1px solid #ddd; padding: 6px 10px;">{{ dx_val_row }}</td>
+                          {% for dx_visit in dx_visits_arr %}
+                            {% if dx_visit != "" %}
+                              {% assign dx_cell_key = dx_visit | append: "_" | append: dx_val_row | append: ":" %}
+                              {% assign dx_lookup_entries = dx_lookup | split: "," %}
+                              {% assign dx_cell_n = "" %}
+                              {% for dx_entry in dx_lookup_entries %}
+                                {% if dx_entry contains dx_cell_key %}
+                                  {% assign dx_cell_n = dx_entry | replace: dx_cell_key, "" %}
+                                {% endif %}
+                              {% endfor %}
+                          <td style="border: 1px solid #ddd; padding: 6px 10px; text-align: right;">{{ dx_cell_n }}</td>
+                            {% endif %}
+                          {% endfor %}
+                        </tr>
+                      {% endif %}
+                    {% endfor %}
+                  </tbody>
+                  {% else %}
+                    {% comment %}Legacy: single Value / N table{% endcomment %}
                   <thead>
                     <tr style="background: #f5f5f5;">
                       <th style="border: 1px solid #ddd; padding: 6px 10px; text-align: left;">Value</th>
@@ -282,6 +366,7 @@ Optionally override lookup key:
                       {% endif %}
                     {% endfor %}
                   </tbody>
+                  {% endif %}
                 </table>
                 </div>
               {% endunless %}
@@ -747,6 +832,8 @@ Optionally override lookup key:
           <th style="font-weight:bold; width:250px;">
             {% if p_key == "DLMUSE" %}
               <a href="https://github.com/CBICA/NiChart_DLMUSE">{{ p_key }}</a>
+            {% elsif p_key == "RAVENS" %}
+              <a href="https://doi.org/10.1006/nimg.2001.0937">{{ p_key }}</a>
             {% elsif p_key == "DLWMLS" %}
               <a href="https://github.com/CBICA/NiChart_DLWMLS">{{ p_key }}</a>
             {% else %}
