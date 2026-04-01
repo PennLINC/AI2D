@@ -88,7 +88,14 @@ Optionally override lookup key:
           {% assign dua_trimmed = dua | strip %}
           {% if dua_trimmed != "" %}
             {% if dua_trimmed contains "http" %}
-              <a href="{{ dua_trimmed }}">{{ dua_trimmed }}</a>
+              {% assign dua_link = dua_trimmed %}
+              {% assign dua_suffix = "" %}
+              {% if dua_trimmed contains ". If " %}
+                {% assign dua_parts = dua_trimmed | split: ". If " %}
+                {% assign dua_link = dua_parts[0] | strip %}
+                {% assign dua_suffix = dua_trimmed | remove_first: dua_link | remove_first: ". " | strip %}
+              {% endif %}
+              <a href="{{ dua_link }}">{{ dua_link }}</a>{% if dua_suffix != "" %}. {{ dua_suffix }}{% endif %}
             {% else %}
               {{ dua_trimmed }}
             {% endif %}
@@ -181,7 +188,7 @@ Optionally override lookup key:
     {% if cubic_path and cubic_path != "" %}
     <tr>
       <th style="font-weight:bold; width:250px;">CUBIC Project</th>
-      <th style="font-weight:normal">{{ cubic_path }}</th>
+      <th style="font-weight:normal"><code>{{ cubic_path }}</code></th>
       <th style="font-weight:normal"></th>
     </tr>
     {% endif %}
@@ -213,24 +220,106 @@ Optionally override lookup key:
     {% for dx_col in dx_cols %}
       {% assign dx_val = row[dx_col] | strip %}
       {% if dx_val != "" %}
-        {% assign dx_lines = dx_val | newline_to_br | split: "<br />" %}
-        {% assign dx_non_empty = "" | split: "," %}
-        {% for dx_line in dx_lines %}
-          {% assign dx_trimmed = dx_line | strip %}
-          {% if dx_trimmed != "" %}
-            {% assign dx_non_empty = dx_non_empty | push: dx_trimmed %}
-          {% endif %}
-        {% endfor %}
-        {% assign only_nan = false %}
-        {% if dx_non_empty.size == 1 %}
-          {% assign first_part = dx_non_empty[0] | slice: 0, 3 %}
-          {% if first_part == "NaN" or first_part == "nan" %}
-            {% assign only_nan = true %}
-          {% endif %}
+        {% assign dx_visit_format = false %}
+        {% if dx_val contains "[" and dx_val contains "]" and dx_val contains ":" %}
+          {% assign dx_visit_format = true %}
         {% endif %}
-        {% unless only_nan %}
-          {% assign dx_has_any = true %}
-        {% endunless %}
+        {% assign dx_visit_only_nan = false %}
+        {% assign dx_visit_only_zero = false %}
+        {% if dx_visit_format %}
+          {% assign dx_blocks = dx_val | split: " | " %}
+          {% assign dx_values_delim = "|" %}
+          {% for dx_b in dx_blocks %}
+            {% assign dx_block_trimmed = dx_b | strip %}
+            {% if dx_block_trimmed != "" and dx_block_trimmed contains " [" %}
+              {% assign dx_b_parts = dx_block_trimmed | split: " [" %}
+              {% assign dx_content = dx_b_parts[1] | remove: "]" | strip %}
+              {% assign dx_pairs = dx_content | split: "," %}
+              {% if dx_content contains " ; " %}
+                {% assign dx_pairs = dx_content | split: " ; " %}
+              {% endif %}
+              {% for dx_pair in dx_pairs %}
+                {% assign dx_pair_trimmed = dx_pair | strip %}
+                {% if dx_pair_trimmed != "" %}
+                  {% assign dx_vn = dx_pair_trimmed | split: ":" %}
+                  {% if dx_vn.size > 1 %}
+                    {% capture dx_v_joined %}{% for dx_part in dx_vn %}{% unless forloop.last %}{% if forloop.first %}{{ dx_part }}{% else %}:{{ dx_part }}{% endif %}{% endunless %}{% endfor %}{% endcapture %}
+                    {% assign dx_v = dx_v_joined | strip | remove: '"' %}
+                    {% assign dx_check_val = "|" | append: dx_v | append: "|" %}
+                    {% unless dx_values_delim contains dx_check_val %}
+                      {% assign dx_values_delim = dx_values_delim | append: dx_v | append: "|" %}
+                    {% endunless %}
+                  {% endif %}
+                {% endif %}
+              {% endfor %}
+            {% endif %}
+          {% endfor %}
+          {% assign dx_values_arr = dx_values_delim | split: "|" %}
+          {% assign dx_visit_only_nan = true %}
+          {% assign dx_non_nan_values_delim = "|" %}
+          {% for dx_vv in dx_values_arr %}
+            {% if dx_vv != "" %}
+              {% assign dx_vv_lower = dx_vv | downcase %}
+              {% if dx_vv_lower != "nan" %}
+                {% assign dx_visit_only_nan = false %}
+                {% assign dx_non_nan_values_delim = dx_non_nan_values_delim | append: dx_vv | append: "|" %}
+              {% endif %}
+            {% endif %}
+          {% endfor %}
+          {% assign dx_non_nan_values_arr = dx_non_nan_values_delim | split: "|" %}
+          {% assign dx_non_nan_count = 0 %}
+          {% assign dx_non_nan_single = "" %}
+          {% for dx_nnv in dx_non_nan_values_arr %}
+            {% if dx_nnv != "" %}
+              {% assign dx_non_nan_count = dx_non_nan_count | plus: 1 %}
+              {% assign dx_non_nan_single = dx_nnv | strip %}
+            {% endif %}
+          {% endfor %}
+          {% if dx_non_nan_count == 1 %}
+            {% assign dx_non_nan_single_norm = dx_non_nan_single | strip | remove: '"' | downcase %}
+            {% assign dx_zero_values = "|0|0.0|0.00|0.000|0.0000|" %}
+            {% assign dx_zero_probe = "|" | append: dx_non_nan_single_norm | append: "|" %}
+            {% if dx_zero_values contains dx_zero_probe %}
+              {% assign dx_visit_only_zero = true %}
+            {% endif %}
+          {% endif %}
+          {% unless dx_visit_only_nan or dx_visit_only_zero %}
+            {% assign dx_has_any = true %}
+          {% endunless %}
+        {% else %}
+          {% assign dx_lines = dx_val | newline_to_br | split: "<br />" %}
+          {% assign dx_non_empty = "" | split: "," %}
+          {% for dx_line in dx_lines %}
+            {% assign dx_trimmed = dx_line | strip %}
+            {% if dx_trimmed != "" %}
+              {% assign dx_non_empty = dx_non_empty | push: dx_trimmed %}
+            {% endif %}
+          {% endfor %}
+          {% assign only_nan = false %}
+          {% assign only_zero = false %}
+          {% if dx_non_empty.size == 1 %}
+            {% assign first_part = dx_non_empty[0] | slice: 0, 3 %}
+            {% if first_part == "NaN" or first_part == "nan" %}
+              {% assign only_nan = true %}
+            {% endif %}
+            {% assign dx_single_line = dx_non_empty[0] | strip %}
+            {% assign dx_single_parts = dx_single_line | split: " " %}
+            {% assign dx_single_value = dx_single_line %}
+            {% if dx_single_parts.size > 1 %}
+              {% capture dx_single_value_str %}{% for p in dx_single_parts %}{% unless forloop.last %}{% if p != "" %}{{ p }} {% endif %}{% endunless %}{% endfor %}{% endcapture %}
+              {% assign dx_single_value = dx_single_value_str | strip %}
+            {% endif %}
+            {% assign dx_single_value_norm = dx_single_value | strip | remove: '"' | downcase %}
+            {% assign dx_zero_values = "|0|0.0|0.00|0.000|0.0000|" %}
+            {% assign dx_zero_probe = "|" | append: dx_single_value_norm | append: "|" %}
+            {% if dx_zero_values contains dx_zero_probe %}
+              {% assign only_zero = true %}
+            {% endif %}
+          {% endif %}
+          {% unless only_nan or only_zero %}
+            {% assign dx_has_any = true %}
+          {% endunless %}
+        {% endif %}
       {% endif %}
     {% endfor %}
     {% if dx_has_any %}
@@ -250,22 +339,38 @@ Optionally override lookup key:
                 {% endif %}
               {% endfor %}
               {% assign only_nan = false %}
+              {% assign only_zero = false %}
               {% if dx_non_empty.size == 1 %}
                 {% assign first_part = dx_non_empty[0] | slice: 0, 3 %}
                 {% if first_part == "NaN" or first_part == "nan" %}
                   {% assign only_nan = true %}
                 {% endif %}
+                {% assign dx_single_line = dx_non_empty[0] | strip %}
+                {% assign dx_single_parts = dx_single_line | split: " " %}
+                {% assign dx_single_value = dx_single_line %}
+                {% if dx_single_parts.size > 1 %}
+                  {% capture dx_single_value_str %}{% for p in dx_single_parts %}{% unless forloop.last %}{% if p != "" %}{{ p }} {% endif %}{% endunless %}{% endfor %}{% endcapture %}
+                  {% assign dx_single_value = dx_single_value_str | strip %}
+                {% endif %}
+                {% assign dx_single_value_norm = dx_single_value | strip | remove: '"' | downcase %}
+                {% assign dx_zero_values = "|0|0.0|0.00|0.000|0.0000|" %}
+                {% assign dx_zero_probe = "|" | append: dx_single_value_norm | append: "|" %}
+                {% if dx_zero_values contains dx_zero_probe %}
+                  {% assign only_zero = true %}
+                {% endif %}
               {% endif %}
               {% assign dx_visit_format = false %}
-              {% if dx_val contains " | " and dx_val contains "[" %}
+              {% if dx_val contains "[" and dx_val contains "]" and dx_val contains ":" %}
                 {% assign dx_visit_format = true %}
               {% endif %}
               {% assign dx_visit_only_nan = false %}
+              {% assign dx_visit_only_zero = false %}
               {% if dx_visit_format %}
                 {% comment %}Parse visit format to compute dx_visit_only_nan and arrays for table{% endcomment %}
                 {% assign dx_blocks = dx_val | split: " | " %}
                 {% assign dx_visits_delim = "|" %}
                 {% assign dx_values_delim = "|" %}
+                {% assign dx_lookup_delim = "<<<DX_ENTRY>>>" %}
                 {% assign dx_lookup = "" %}
                 {% for dx_b in dx_blocks %}
                   {% assign dx_block_trimmed = dx_b | strip %}
@@ -278,17 +383,23 @@ Optionally override lookup key:
                       {% assign dx_visits_delim = dx_visits_delim | append: dx_visit | append: "|" %}
                     {% endunless %}
                     {% assign dx_pairs = dx_content | split: "," %}
+                    {% if dx_content contains " ; " %}
+                      {% assign dx_pairs = dx_content | split: " ; " %}
+                    {% endif %}
                     {% for dx_pair in dx_pairs %}
                       {% assign dx_pair_trimmed = dx_pair | strip %}
                       {% if dx_pair_trimmed != "" %}
                         {% assign dx_vn = dx_pair_trimmed | split: ":" %}
-                        {% assign dx_v = dx_vn[0] | strip %}
-                        {% assign dx_n = dx_vn[1] | strip %}
-                        {% assign dx_check_val = "|" | append: dx_v | append: "|" %}
-                        {% unless dx_values_delim contains dx_check_val %}
-                          {% assign dx_values_delim = dx_values_delim | append: dx_v | append: "|" %}
-                        {% endunless %}
-                        {% assign dx_lookup = dx_lookup | append: dx_visit | append: "_" | append: dx_v | append: ":" | append: dx_n | append: "," %}
+                        {% if dx_vn.size > 1 %}
+                          {% assign dx_n = dx_vn | last | strip %}
+                          {% capture dx_v_joined %}{% for dx_part in dx_vn %}{% unless forloop.last %}{% if forloop.first %}{{ dx_part }}{% else %}:{{ dx_part }}{% endif %}{% endunless %}{% endfor %}{% endcapture %}
+                          {% assign dx_v = dx_v_joined | strip | remove: '"' %}
+                          {% assign dx_check_val = "|" | append: dx_v | append: "|" %}
+                          {% unless dx_values_delim contains dx_check_val %}
+                            {% assign dx_values_delim = dx_values_delim | append: dx_v | append: "|" %}
+                          {% endunless %}
+                          {% assign dx_lookup = dx_lookup | append: dx_visit | append: "_" | append: dx_v | append: ":" | append: dx_n | append: dx_lookup_delim %}
+                        {% endif %}
                       {% endif %}
                     {% endfor %}
                   {% endif %}
@@ -296,16 +407,35 @@ Optionally override lookup key:
                 {% assign dx_visits_arr = dx_visits_delim | split: "|" %}
                 {% assign dx_values_arr = dx_values_delim | split: "|" %}
                 {% assign dx_visit_only_nan = true %}
+                {% assign dx_non_nan_values_delim = "|" %}
                 {% for dx_vv in dx_values_arr %}
                   {% if dx_vv != "" %}
                     {% assign dx_vv_lower = dx_vv | downcase %}
                     {% if dx_vv_lower != "nan" %}
                       {% assign dx_visit_only_nan = false %}
+                      {% assign dx_non_nan_values_delim = dx_non_nan_values_delim | append: dx_vv | append: "|" %}
                     {% endif %}
                   {% endif %}
                 {% endfor %}
+                {% assign dx_non_nan_values_arr = dx_non_nan_values_delim | split: "|" %}
+                {% assign dx_non_nan_count = 0 %}
+                {% assign dx_non_nan_single = "" %}
+                {% for dx_nnv in dx_non_nan_values_arr %}
+                  {% if dx_nnv != "" %}
+                    {% assign dx_non_nan_count = dx_non_nan_count | plus: 1 %}
+                    {% assign dx_non_nan_single = dx_nnv | strip %}
+                  {% endif %}
+                {% endfor %}
+                {% if dx_non_nan_count == 1 %}
+                  {% assign dx_non_nan_single_norm = dx_non_nan_single | strip | remove: '"' | downcase %}
+                  {% assign dx_zero_values = "|0|0.0|0.00|0.000|0.0000|" %}
+                  {% assign dx_zero_probe = "|" | append: dx_non_nan_single_norm | append: "|" %}
+                  {% if dx_zero_values contains dx_zero_probe %}
+                    {% assign dx_visit_only_zero = true %}
+                  {% endif %}
+                {% endif %}
               {% endif %}
-              {% unless only_nan or dx_visit_only_nan %}
+              {% unless only_nan or only_zero or dx_visit_only_nan or dx_visit_only_zero %}
                 {% assign dx_label = dx_col | replace: "DX_", "" | replace: "_", " " %}
                 <div style="margin: 0;">
                   <div style="text-align: left; font-weight: bold; padding: 4px 0 8px 0;">{{ dx_label }}</div>
@@ -329,7 +459,7 @@ Optionally override lookup key:
                           {% for dx_visit in dx_visits_arr %}
                             {% if dx_visit != "" %}
                               {% assign dx_cell_key = dx_visit | append: "_" | append: dx_val_row | append: ":" %}
-                              {% assign dx_lookup_entries = dx_lookup | split: "," %}
+                              {% assign dx_lookup_entries = dx_lookup | split: dx_lookup_delim %}
                               {% assign dx_cell_n = "" %}
                               {% for dx_entry in dx_lookup_entries %}
                                 {% if dx_entry contains dx_cell_key %}
@@ -399,8 +529,8 @@ Optionally override lookup key:
     {% assign fl_n_ses = row["FL_N_ses"] %}
     {% assign nonimaging_raw = row["nonimaging_raw"] %}
     {% assign nonimaging_data_dictionary = row["Data_Dictionary"] %}
-    {% assign nonimaging_consolidated_v2 = "/cbica/projects/ISTAGING/Pipelines/ISTAGING_Data_Consolidation_2020/v2.0/istaging.csv" %}
-    {% assign nonimaging_consolidated_latest = "Coming Soon" %}
+    {% assign nonimaging_consolidated_v2 = row["nonimaging_consolidated_v2"] %}
+    {% assign nonimaging_consolidated_latest = row["nonimaging_consolidated_latest"] %}
     {% assign nonimaging_consolidated_v2_study = row["nonimaging_consolidated_latest_study"] %}
     {% assign nonimaging_consolidation_base = "/cbica/projects/ISTAGING/Pipelines/ISTAGING_Data_Consolidation_2020/v2.0" %}
 
@@ -818,13 +948,23 @@ Optionally override lookup key:
 
         {% comment %}Denominator for complete note: DLMUSE/RAVENS use T1_N_ses, DLWMLS uses FL_N_ses, others use N_MR_session{% endcomment %}
         {% assign p_n_ses = section_n_mr_session %}
+        {% assign p_use_structural_total = false %}
         {% if p_key == "DLMUSE" or p_key == "RAVENS" %}
+          {% assign p_use_structural_total = true %}
           {% if section_t1_n_ses and section_t1_n_ses != "" %}
             {% assign p_n_ses = section_t1_n_ses %}
           {% endif %}
         {% elsif p_key == "DLWMLS" %}
+          {% assign p_use_structural_total = true %}
           {% if section_fl_n_ses and section_fl_n_ses != "" %}
             {% assign p_n_ses = section_fl_n_ses %}
+          {% endif %}
+        {% endif %}
+        {% if p_use_structural_total and p_complete and p_complete != "" and p_n_ses and p_n_ses != "" %}
+          {% assign p_complete_num = p_complete | remove: "," | plus: 0 %}
+          {% assign p_n_ses_num = p_n_ses | remove: "," | plus: 0 %}
+          {% if p_complete_num > 0 and p_n_ses_num > 0 and p_complete_num != p_n_ses_num %}
+            {% assign p_n_ses = p_complete %}
           {% endif %}
         {% endif %}
 
@@ -894,7 +1034,38 @@ Optionally override lookup key:
         </tr>
       {% endfor %}
 
-      {% assign has_nonimaging = true %}
+      {% assign show_nonimg_raw = false %}
+      {% if nonimaging_raw and nonimaging_raw != "" %}
+        {% assign show_nonimg_raw = true %}
+      {% endif %}
+      {% assign show_nonimg_dd = false %}
+      {% if nonimaging_data_dictionary and nonimaging_data_dictionary != "" %}
+        {% assign show_nonimg_dd = true %}
+      {% endif %}
+      {% assign show_nonimg_v2 = false %}
+      {% if nonimaging_consolidated_v2 and nonimaging_consolidated_v2 != "" %}
+        {% assign show_nonimg_v2 = true %}
+      {% endif %}
+      {% assign show_nonimg_latest = false %}
+      {% if nonimaging_consolidated_latest and nonimaging_consolidated_latest != "" %}
+        {% assign show_nonimg_latest = true %}
+      {% endif %}
+
+      {% assign nonimg_first_tab = "" %}
+      {% if show_nonimg_raw %}
+        {% assign nonimg_first_tab = "raw" %}
+      {% elsif show_nonimg_dd %}
+        {% assign nonimg_first_tab = "dd" %}
+      {% elsif show_nonimg_v2 %}
+        {% assign nonimg_first_tab = "v2" %}
+      {% elsif show_nonimg_latest %}
+        {% assign nonimg_first_tab = "latest" %}
+      {% endif %}
+
+      {% assign has_nonimaging = false %}
+      {% if show_nonimg_raw or show_nonimg_dd or show_nonimg_v2 or show_nonimg_latest %}
+        {% assign has_nonimaging = true %}
+      {% endif %}
       {% if has_nonimaging %}
         <tr>
           <th style="font-weight:bold; width:250px;">Non-Imaging Data</th>
@@ -902,12 +1073,21 @@ Optionally override lookup key:
             {% assign nonimg_id = study_abbr | downcase | append: "-" | append: section_key | downcase | append: "-nonimg" %}
             <div class="tab-container">
               <div class="tab-buttons">
-                <button class="tab-button active" onclick="showTab('{{ nonimg_id }}-raw-tab')">Raw</button>
-                <button class="tab-button" onclick="showTab('{{ nonimg_id }}-data-dictionary-tab')">Data Dictionary</button>
-                <button class="tab-button" onclick="showTab('{{ nonimg_id }}-consolidated-v2-tab')">Consolidated v2.0</button>
-                <button class="tab-button" onclick="showTab('{{ nonimg_id }}-consolidated-latest-tab')">Consolidated Latest</button>
+                {% if show_nonimg_raw %}
+                <button class="tab-button{% if nonimg_first_tab == 'raw' %} active{% endif %}" onclick="showTab('{{ nonimg_id }}-raw-tab')">Raw</button>
+                {% endif %}
+                {% if show_nonimg_dd %}
+                <button class="tab-button{% if nonimg_first_tab == 'dd' %} active{% endif %}" onclick="showTab('{{ nonimg_id }}-data-dictionary-tab')">Data Dictionary</button>
+                {% endif %}
+                {% if show_nonimg_v2 %}
+                <button class="tab-button{% if nonimg_first_tab == 'v2' %} active{% endif %}" onclick="showTab('{{ nonimg_id }}-consolidated-v2-tab')">Consolidated v2.0</button>
+                {% endif %}
+                {% if show_nonimg_latest %}
+                <button class="tab-button{% if nonimg_first_tab == 'latest' %} active{% endif %}" onclick="showTab('{{ nonimg_id }}-consolidated-latest-tab')">Consolidated Latest</button>
+                {% endif %}
               </div>
-              <div id="{{ nonimg_id }}-raw-tab" class="tab-content active">
+              {% if show_nonimg_raw %}
+              <div id="{{ nonimg_id }}-raw-tab" class="tab-content{% if nonimg_first_tab == 'raw' %} active{% endif %}">
                 {% if nonimaging_raw and nonimaging_raw != "" %}
                   {% assign raw_parts = nonimaging_raw | split: ";" %}
                   {% for part in raw_parts %}
@@ -925,25 +1105,24 @@ Optionally override lookup key:
                   <p style="margin-top: 12px; margin-bottom: 0; font-size: 14px; color: #444;">Raw data downloaded from source.</p>
                 {% endif %}
               </div>
-              <div id="{{ nonimg_id }}-data-dictionary-tab" class="tab-content">
-                {% if nonimaging_data_dictionary and nonimaging_data_dictionary != "" %}
-                  {% assign dd_parts = nonimaging_data_dictionary | split: ";" %}
-                  {% for part in dd_parts %}
-                    {% assign part_stripped = part | strip %}
-                    {% if part_stripped != "" %}
-                      <div id="{{ nonimg_id }}-dd-{{ forloop.index }}" class="copy-container" style="border: 1px solid #6c6edc; border-radius: 3px; padding: 6px; background-color: #f8f9fa; margin-bottom: 15px;">
-                        <span class="copy-text"><code>{{ part_stripped }}</code></span>
-                        <button class="copy-button" onclick="copyToClipboard('{{ nonimg_id }}-dd-{{ forloop.index }}')">Copy</button>
-                      </div>
-                    {% endif %}
-                  {% endfor %}
-                  <p style="margin-top: 12px; margin-bottom: 0; font-size: 14px; color: #444;">Data dictionary of raw data downloaded from source.</p>
-                {% else %}
-                  <p style="color:#666;">—</p>
-                  <p style="margin-top: 12px; margin-bottom: 0; font-size: 14px; color: #444;">Data dictionary of raw data downloaded from source.</p>
-                {% endif %}
+              {% endif %}
+              {% if show_nonimg_dd %}
+              <div id="{{ nonimg_id }}-data-dictionary-tab" class="tab-content{% if nonimg_first_tab == 'dd' %} active{% endif %}">
+                {% assign dd_parts = nonimaging_data_dictionary | split: ";" %}
+                {% for part in dd_parts %}
+                  {% assign part_stripped = part | strip %}
+                  {% if part_stripped != "" %}
+                    <div id="{{ nonimg_id }}-dd-{{ forloop.index }}" class="copy-container" style="border: 1px solid #6c6edc; border-radius: 3px; padding: 6px; background-color: #f8f9fa; margin-bottom: 15px;">
+                      <span class="copy-text"><code>{{ part_stripped }}</code></span>
+                      <button class="copy-button" onclick="copyToClipboard('{{ nonimg_id }}-dd-{{ forloop.index }}')">Copy</button>
+                    </div>
+                  {% endif %}
+                {% endfor %}
+                <p style="margin-top: 12px; margin-bottom: 0; font-size: 14px; color: #444;">Data dictionary of raw data downloaded from source.</p>
               </div>
-              <div id="{{ nonimg_id }}-consolidated-v2-tab" class="tab-content">
+              {% endif %}
+              {% if show_nonimg_v2 %}
+              <div id="{{ nonimg_id }}-consolidated-v2-tab" class="tab-content{% if nonimg_first_tab == 'v2' %} active{% endif %}">
                 <div id="{{ nonimg_id }}-v2-path" class="copy-container" style="border: 1px solid #6c6edc; border-radius: 3px; padding: 6px; background-color: #f8f9fa; margin-bottom: 15px;">
                   <span class="copy-text"><code>{{ nonimaging_consolidated_v2 }}</code></span>
                   <button class="copy-button" onclick="copyToClipboard('{{ nonimg_id }}-v2-path')">Copy</button>
@@ -955,7 +1134,9 @@ Optionally override lookup key:
                 <p style="margin: 6px 0 4px; font-size: 14px; color: #444;">README: <code>{{ nonimaging_consolidation_base }}/README.md</code></p>
                 <p style="margin: 6px 0 0; font-size: 14px; color: #444;">Release Notes: <code>{{ nonimaging_consolidation_base }}/Release_Notes.md</code></p>
               </div>
-              <div id="{{ nonimg_id }}-consolidated-latest-tab" class="tab-content">
+              {% endif %}
+              {% if show_nonimg_latest %}
+              <div id="{{ nonimg_id }}-consolidated-latest-tab" class="tab-content{% if nonimg_first_tab == 'latest' %} active{% endif %}">
                 <div id="{{ nonimg_id }}-latest-path" class="copy-container" style="border: 1px solid #6c6edc; border-radius: 3px; padding: 6px; background-color: #f8f9fa; margin-bottom: 15px;">
                   <span class="copy-text"><code>{{ nonimaging_consolidated_latest }}</code></span>
                   <button class="copy-button" onclick="copyToClipboard('{{ nonimg_id }}-latest-path')">Copy</button>
@@ -967,6 +1148,7 @@ Optionally override lookup key:
                 <p style="margin: 6px 0 4px; font-size: 14px; color: #444;">README: <code>Coming Soon</code></p>
                 <p style="margin: 6px 0 0; font-size: 14px; color: #444;">Release Notes: <code>Coming Soon</code></p>
               </div>
+              {% endif %}
             </div>
           </th>
           <th style="font-weight:normal"></th>
