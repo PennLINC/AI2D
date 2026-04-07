@@ -1,0 +1,1025 @@
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.24.0 by Michael Rose
+  Copyright 2013-2020 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
+-->
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8">
+
+<!-- begin _includes/seo.html --><title>Stanford Neurodevelopment Affect and Pyschopathology Laboratory</title>
+<meta name="description" content="Standford SNAP">
+
+
+
+<meta property="og:type" content="article">
+<meta property="og:locale" content="en_US">
+<meta property="og:site_name" content="AI2D | PennLINC | Shared Data Resources">
+<meta property="og:title" content="Stanford Neurodevelopment Affect and Pyschopathology Laboratory">
+<meta property="og:url" content="http://localhost:4000/AI2D/docs/datasets/SNAP/">
+
+
+  <meta property="og:description" content="Standford SNAP">
+
+
+
+
+
+
+
+  <meta property="article:published_time" content="2026-01-17T00:00:00-05:00">
+
+
+
+
+
+  
+
+  
+
+
+<link rel="canonical" href="http://localhost:4000/AI2D/docs/datasets/SNAP/">
+
+
+
+
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    
+      "@type": "Person",
+      "name": "AI2D",
+      "url": "http://localhost:4000/AI2D/"
+    
+  }
+</script>
+
+
+
+
+
+
+
+<!-- end _includes/seo.html -->
+
+
+
+  <link href="/AI2D/feed.xml" type="application/atom+xml" rel="alternate" title="AI2D | PennLINC | Shared Data Resources Feed">
+
+
+<!-- https://t.co/dKP3o1e -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<link rel="stylesheet" href="/AI2D/assets/css/main.css">
+<link rel="stylesheet" href="/AI2D/assets/css/custom.css">
+<link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css">
+<!-- Fonts via Google -->
+<link href="https://fonts.googleapis.com/css?family=Lato:300italic,700italic,300,700" rel="stylesheet" type="text/css"/>
+
+
+
+    <!-- start custom head snippets -->
+
+<!-- insert favicons. use https://realfavicongenerator.net/ -->
+
+<!-- end custom head snippets -->
+
+  </head>
+
+  <body class="layout--single">
+    <nav class="skip-links">
+  <ul>
+    <li><a href="#site-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
+    <li><a href="#main" class="screen-reader-shortcut">Skip to content</a></li>
+    <li><a href="#footer" class="screen-reader-shortcut">Skip to footer</a></li>
+  </ul>
+</nav>
+
+    
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top" role="navigation">
+    <div class="container d-flex justify-content-between">
+        <a class="navbar-brand" href="/AI2D/">
+            
+                <a class="site-logo" href="/AI2D/"><img src="/AI2D/assets/images/logos/ai2d_pennlinc_logo.png" alt="AI2D | PennLINC | Shared Data Resources"></a>
+            
+        </a>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarToggler">
+            <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="/AI2D/docs/datasets">Datasets</a>
+                        </li>
+                    
+                
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" id="navbarDropdown-Tools" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Tools
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown-Tools">
+                                
+                                    <a class="nav-link dropdown-item" href="/AI2D/docs/imaging/image_curation">Data Curation: CuBIDS</a>
+                                
+                                    <a class="nav-link dropdown-item" href="/AI2D/docs/imaging/image_babs">Data Processing: BABS</a>
+                                
+                                    <a class="nav-link dropdown-item" href="/AI2D/docs/imaging/image_ncdlmuse">NiChart_DLMUSE</a>
+                                
+                                    <a class="nav-link dropdown-item" href="/AI2D/docs/imaging/image_smriprep">sMRIPrep</a>
+                                
+                                    <a class="nav-link dropdown-item" href="/AI2D/docs/imaging/image_fmriprep">fMRIPrep</a>
+                                
+                                    <a class="nav-link dropdown-item" href="/AI2D/docs/imaging/image_xcpd">XCP-D</a>
+                                
+                                    <a class="nav-link dropdown-item" href="/AI2D/docs/imaging/image_qsiprep">QSIPrep</a>
+                                
+                                    <a class="nav-link dropdown-item" href="/AI2D/docs/imaging/image_qsirecon">QSIRecon</a>
+                                
+                            </div>
+                        </li>
+                    
+                
+                        <li class="nav-item">
+                            <a class="nav-link" href="/AI2D/docs/team">Team</a>
+                        </li>
+                    
+                
+                        <li class="nav-item">
+                            <a class="nav-link" href="/AI2D/docs/blog/index">News</a>
+                        </li>
+                    
+                
+                        <li class="nav-item">
+                            <a class="nav-link" href="/AI2D/docs/get_data"><em style="font-style:normal; font-weight:bold; color:#a594d1;"> Get Data </em></a>
+                        </li>
+                    
+                
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+    <div class="initial-content">
+      
+
+
+
+
+<div id="main" role="main">
+  
+
+  <article class="page h-entry" itemscope itemtype="https://schema.org/CreativeWork">
+    <meta itemprop="headline" content="Stanford Neurodevelopment Affect and Pyschopathology Laboratory">
+    <meta itemprop="description" content="Standford SNAP">
+    <meta itemprop="datePublished" content="2026-01-17T00:00:00-05:00">
+    
+
+    <div class="page__inner-wrap">
+      
+        <header>
+          <br/><h1 id="page-title" class="page__title p-name" itemprop="headline">
+            <a href="http://localhost:4000/AI2D/docs/datasets/SNAP/" class="u-url" itemprop="url">Stanford Neurodevelopment Affect and Pyschopathology Laboratory
+</a>
+          </h1>
+          
+          <!--
+
+
+  <p class="page__meta">
+    
+
+    <span class="page__meta-sep"></span>
+
+    
+      
+      <span class="page__meta-date">
+        <i class="far fa-calendar-alt" aria-hidden="true"></i>
+        
+        <time datetime="2026-01-17T00:00:00-05:00">January 17, 2026</time>
+      </span>
+    
+
+    <span class="page__meta-sep"></span>
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          1 minute read
+        
+      </span>
+    
+  </p>
+
+-->
+        </header>
+      
+
+      <section class="page__content e-content" itemprop="text">
+        
+        
+<h3 id="about-the-dataset">About the dataset</h3>
+
+<div class="study-overview">
+  
+    Stanford (SNAP) cohort consists of first episode and recurrent MDD and healthy participants (Sacchet &amp; Gotlib, 2017; Sacchet et al., 2019).<br />
+<br />
+The study is part of the COORDINATE-MDD consortium. For more information, see: <a href="https://doi.org/10.1038/s44220-023-00187-w">https://doi.org/10.1038/s44220-023-00187-w</a>.
+</div>
+
+<div class="table" align="center">
+  <table style="text-align:center; width:100%; font-size:18px; border:1px solid black">
+    <tr>
+      <th style="font-weight:bold; width:250px;">Study</th>
+      <th style="font-weight:normal">Stanford Neurodevelopment Affect and Pyschopathology Laboratory</th>
+      <th style="font-weight:normal"></th>
+    </tr>
+
+    
+
+    
+    <tr>
+      <th style="font-weight:bold; width:250px;">Data Descriptor Paper</th>
+      <th style="font-weight:normal">
+        
+        
+          
+          
+            <a href="https://doi.org/10.1038/s41598-017-02062-y">https://doi.org/10.1038/s41598-017-02062-y</a>
+            <br />
+          
+        
+          
+          
+            <a href="https://doi.org/10.1016/j.jpsychires.2015.06.002">https://doi.org/10.1016/j.jpsychires.2015.06.002</a>
+            
+          
+        
+      </th>
+      <th style="font-weight:normal"></th>
+    </tr>
+    
+
+    
+    <tr>
+      <th style="font-weight:bold; width:250px;">DUA</th>
+      <th style="font-weight:normal">
+        
+        
+          
+          
+            
+              Please contact Dr. Christos Davatzikos to obtain the DUA for the derived data and request an introduction to the study PI to obtain the DUA for the raw data.
+            
+            
+          
+        
+      </th>
+      <th style="font-weight:normal"></th>
+    </tr>
+    
+
+    
+    <tr>
+      <th style="font-weight:bold; width:250px;">Country/Region</th>
+      <th style="font-weight:normal">USA</th>
+      <th style="font-weight:normal"></th>
+    </tr>
+    
+
+    
+    <tr>
+      <th style="font-weight:bold; width:250px;">Disease Tag</th>
+      <th style="font-weight:normal">depression</th>
+      <th style="font-weight:normal"></th>
+    </tr>
+    
+
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    <tr>
+      <th style="font-weight:bold; width:250px;">Age (mean ± SD)
+            
+          </th>
+      <th style="font-weight:normal">32.6 ± 11.2</th>
+      <th style="font-weight:normal"></th>
+    </tr>
+    
+
+    
+    <tr>
+      <th style="font-weight:bold; width:250px;">Age Range
+            
+          </th>
+      <th style="font-weight:normal">19-58</th>
+      <th style="font-weight:normal"></th>
+    </tr>
+    
+
+    
+    <tr>
+      <th style="font-weight:bold; width:250px;">% Female</th>
+      <th style="font-weight:normal">64.5</th>
+      <th style="font-weight:normal"></th>
+    </tr>
+    
+
+    
+    
+
+    
+    <tr>
+      <th style="font-weight:bold; width:250px;">CUBIC Project</th>
+      <th style="font-weight:normal"><code>/cbica/projects/MultisiteMD</code></th>
+      <th style="font-weight:normal"></th>
+    </tr>
+    
+
+    <tr>
+      <th style="font-weight:bold; width:250px;">PI for CUBIC Access Approval</th>
+      <th style="font-weight:normal">Christos Davatzikos</th>
+      <th style="font-weight:normal"></th>
+    </tr>
+
+    
+    <tr>
+      <th style="font-weight:bold; width:250px;">N Subjects</th>
+      <th style="font-weight:normal">110</th>
+      <th style="font-weight:normal"></th>
+    </tr>
+    
+
+    
+    <tr>
+      <th style="font-weight:bold; width:250px;">N MR Sessions</th>
+      <th style="font-weight:normal">110</th>
+      <th style="font-weight:normal"></th>
+    </tr>
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+      
+        
+          
+          
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+    
+
+    
+      
+      
+
+      
+
+      
+
+      
+      
+      
+
+      
+
+      
+
+      
+
+      
+      
+      
+      
+      
+      
+
+      
+        
+        
+        
+        
+        
+        
+        
+
+        
+        
+        
+        
+        
+
+        <tr>
+          <th style="font-weight:bold; width:250px;">
+            
+              <a href="https://github.com/CBICA/NiChart_DLMUSE">DLMUSE</a>
+            
+            
+            
+              <br />
+              <span style="font-weight:normal;">(110/110 complete)</span>
+            
+          </th>
+          <th style="font-weight:normal">
+            
+              
+              <div id="standford-snap-default-dlmuse-path" class="copy-container" style="border: 1px solid #6c6edc; border-radius: 3px; padding: 6px; background-color: #f8f9fa;">
+                <span class="copy-text"><code>/cbica/projects/MultisiteMD/Pipelines/MultisiteMD_DLMUSE_2025/SNAP/Results/SNAP_DLMUSE_Volumes.csv</code></span>
+                <button class="copy-button" onclick="copyToClipboard('standford-snap-default-dlmuse-path')">Copy</button>
+              </div>
+            
+          </th>
+          <th style="font-weight:normal"></th>
+        </tr>
+      
+        
+        
+        
+        
+        
+        
+        
+
+        
+        
+        
+        
+        
+
+        <tr>
+          <th style="font-weight:bold; width:250px;">
+            
+              <a href="https://doi.org/10.1006/nimg.2001.0937">RAVENS</a>
+            
+            
+              <span style="font-weight:normal;">(DRAMMS-1.4.1)</span>
+            
+            
+              <br />
+              <span style="font-weight:normal;">(110/110 complete)</span>
+            
+          </th>
+          <th style="font-weight:normal">
+            
+              
+              <div id="standford-snap-default-ravens-path" class="copy-container" style="border: 1px solid #6c6edc; border-radius: 3px; padding: 6px; background-color: #f8f9fa;">
+                <span class="copy-text"><code>/cbica/projects/MultisiteMD/Pipelines/CoordinateMD_3.5D_2020/Protocols/RAVENS/SNAP</code></span>
+                <button class="copy-button" onclick="copyToClipboard('standford-snap-default-ravens-path')">Copy</button>
+              </div>
+            
+          </th>
+          <th style="font-weight:normal"></th>
+        </tr>
+      
+        
+        
+        
+        
+        
+        
+        
+
+        
+        
+        
+        
+        
+
+        <tr>
+          <th style="font-weight:bold; width:250px;">
+            
+              fMRIPrep
+            
+            
+              <span style="font-weight:normal;">(23.1.3)</span>
+            
+            
+              <br />
+              <span style="font-weight:normal;">(110/110 complete)</span>
+            
+          </th>
+          <th style="font-weight:normal">
+            
+              
+              <div class="tab-container">
+                <div class="tab-buttons">
+                  <button class="tab-button active" onclick="showTab('standford-snap-default-fmriprep-path-tab')">Path</button>
+                  <button class="tab-button" onclick="showTab('standford-snap-default-fmriprep-command-tab')">Command</button>
+                </div>
+                <div id="standford-snap-default-fmriprep-path-tab" class="tab-content active">
+                  
+                  
+                    
+                    
+                       <div id="standford-snap-default-fmriprep-path-1" class="copy-container" style="border: 1px solid #6c6edc; border-radius: 3px; padding: 6px; background-color: #f8f9fa; margin-bottom: 15px;">
+                          <span class="copy-text"><code>/cbica/projects/MultisiteMD/CoordinateMD_Studies/SNAP/Pipelines/SNAP_fMRI_2024/Protocols</code></span>
+                          <button class="copy-button" onclick="copyToClipboard('standford-snap-default-fmriprep-path-1')">Copy</button>
+                        </div>
+                    
+                  
+                </div>
+                <div id="standford-snap-default-fmriprep-command-tab" class="tab-content">
+                  
+                  
+                    
+                    
+                      <div id="standford-snap-default-fmriprep-command-1" class="copy-container" style="border: 1px solid #6c6edc; border-radius: 3px; padding: 6px; background-color: #f8f9fa; margin-bottom: 15px; flex-direction: column; align-items: stretch;">
+                        <div class="copy-text" style="flex: 1; overflow-x: auto; margin: 0; padding: 8px; background-color: #ffffff; border: 1px solid #ddd; border-radius: 3px;">
+                          <code style="display: block; white-space: pre-wrap; word-break: break-all; font-family: 'Courier New', monospace; font-size: 14px; line-height: 1.4; color: #333;">/opt/conda/envs/fmriprep/bin/fmriprep \
+  /cbica/projects/MultisiteMD/CoordinateMD_Studies/SNAP/Pipelines/SNAP_fMRI_2024/Data/ \
+  /cbica/projects/MultisiteMD/CoordinateMD_Studies/SNAP/Pipelines/SNAP_fMRI_2024/Protocols/ \
+  participant \
+  --participant_label 2614 \
+  --fs-license-file /cbica/projects/MultisiteMD/CoordinateMD_Studies/SNAP/Pipelines/SNAP_fMRI_2024/license.txt \
+  --fs-no-reconall \
+  --use-syn-sdc warn \
+  --output-spaces MNI152NLin2009cAsym:res-2 \
+  --debug all</code>
+                        </div>
+                        <button class="copy-button" onclick="copyToClipboard('standford-snap-default-fmriprep-command-1')" style="align-self: flex-end; margin-top: 8px;">Copy</button>
+                      </div>
+                    
+                  
+                </div>
+              </div>
+            
+          </th>
+          <th style="font-weight:normal"></th>
+        </tr>
+      
+        
+        
+        
+        
+        
+        
+        
+
+        
+        
+        
+        
+        
+
+        <tr>
+          <th style="font-weight:bold; width:250px;">
+            
+              XCP-D
+            
+            
+              <span style="font-weight:normal;">(0.7.1rc6)</span>
+            
+            
+              <br />
+              <span style="font-weight:normal;">(110/110 complete)</span>
+            
+          </th>
+          <th style="font-weight:normal">
+            
+              
+              <div class="tab-container">
+                <div class="tab-buttons">
+                  <button class="tab-button active" onclick="showTab('standford-snap-default-xcp-d-path-tab')">Path</button>
+                  <button class="tab-button" onclick="showTab('standford-snap-default-xcp-d-command-tab')">Command</button>
+                </div>
+                <div id="standford-snap-default-xcp-d-path-tab" class="tab-content active">
+                  
+                  
+                    
+                    
+                       <div id="standford-snap-default-xcp-d-path-1" class="copy-container" style="border: 1px solid #6c6edc; border-radius: 3px; padding: 6px; background-color: #f8f9fa; margin-bottom: 15px;">
+                          <span class="copy-text"><code>/cbica/projects/MultisiteMD/CoordinateMD_Studies/SNAP/Pipelines/SNAP_fMRI_2024/Protocols/XCP</code></span>
+                          <button class="copy-button" onclick="copyToClipboard('standford-snap-default-xcp-d-path-1')">Copy</button>
+                        </div>
+                    
+                  
+                </div>
+                <div id="standford-snap-default-xcp-d-command-tab" class="tab-content">
+                  
+                  
+                    
+                    
+                      <div id="standford-snap-default-xcp-d-command-1" class="copy-container" style="border: 1px solid #6c6edc; border-radius: 3px; padding: 6px; background-color: #f8f9fa; margin-bottom: 15px; flex-direction: column; align-items: stretch;">
+                        <div class="copy-text" style="flex: 1; overflow-x: auto; margin: 0; padding: 8px; background-color: #ffffff; border: 1px solid #ddd; border-radius: 3px;">
+                          <code style="display: block; white-space: pre-wrap; word-break: break-all; font-family: 'Courier New', monospace; font-size: 14px; line-height: 1.4; color: #333;">/usr/local/miniconda/bin/xcp_d \
+  /cbica/projects/MultisiteMD/CoordinateMD_Studies/SNAP/Pipelines/SNAP_fMRI_2024/Protocols/ \
+  /cbica/projects/MultisiteMD/CoordinateMD_Studies/SNAP/Pipelines/SNAP_fMRI_2024/Protocols/XCP/ \
+  participant \
+  --participant_label 2614 \
+  --input-type fmriprep \
+  -p 36P \
+  --work-dir /cbica/projects/MultisiteMD/CoordinateMD_Studies/SNAP/Pipelines/SNAP_fMRI_2024/Protocols/ \
+  --motion-filter-type lp \
+  --band-stop-min 6 \
+  --motion-filter-order 4 \
+  --despike \
+  --fd-thresh 0 \
+  --lower-bpf 0.01 \
+  --upper-bpf 0.08 \
+  --bpf-order 2 \
+  --head-radius auto \
+  --dummy-scans auto \
+  --min-coverage 0.5 \
+  --smoothing 0 \
+  --fs-license-file /cbica/projects/MultisiteMD/CoordinateMD_Studies/SNAP/Pipelines/SNAP_fMRI_2024/license.txt</code>
+                        </div>
+                        <button class="copy-button" onclick="copyToClipboard('standford-snap-default-xcp-d-command-1')" style="align-self: flex-end; margin-top: 8px;">Copy</button>
+                      </div>
+                    
+                  
+                </div>
+              </div>
+            
+          </th>
+          <th style="font-weight:normal"></th>
+        </tr>
+      
+
+      
+      
+
+      
+      
+      
+      
+      
+      
+      
+      
+
+      
+      
+
+      
+      
+      
+        <tr>
+          <th style="font-weight:bold; width:250px;">Non-Imaging Data</th>
+          <th style="font-weight:normal">
+            
+            <div class="tab-container">
+              <div class="tab-buttons">
+                
+                <button class="tab-button active" onclick="showTab('standford-snap-default-nonimg-raw-tab')">Raw</button>
+                
+                
+                
+                
+                <button class="tab-button" onclick="showTab('standford-snap-default-nonimg-consolidated-latest-tab')">Consolidated Latest</button>
+                
+              </div>
+              
+              <div id="standford-snap-default-nonimg-raw-tab" class="tab-content active">
+                
+                  
+                  
+                  
+                  <p>Contact Mathilde Antoniades to request access to the non-imaging data.</p>
+                  
+                
+              </div>
+              
+              
+              
+              
+              <div id="standford-snap-default-nonimg-consolidated-latest-tab" class="tab-content">
+                <div id="standford-snap-default-nonimg-latest-path" class="copy-container" style="border: 1px solid #6c6edc; border-radius: 3px; padding: 6px; background-color: #f8f9fa; margin-bottom: 15px;">
+                  <span class="copy-text"><code>/cbica/home/harmang/for_others/final_combined_istaging_withMUSE.csv</code></span>
+                  <button class="copy-button" onclick="copyToClipboard('standford-snap-default-nonimg-latest-path')">Copy</button>
+                </div>
+                <p style="margin-top: 12px; margin-bottom: 8px; font-size: 14px; color: #444;">Data consolidated and harmonized in 2026.</p>
+                
+                  
+                  
+                  
+                  
+                    
+                    
+                      
+                      
+                      
+                  <p style="margin-top: 0; margin-bottom: 4px; font-size: 14px; color: #444;"><strong>This study:</strong> subset with <code>df[df.Study == 'SNAP']</code></p>
+                      
+                    
+                  
+                
+              </div>
+              
+            </div>
+          </th>
+          <th style="font-weight:normal"></th>
+        </tr>
+      
+    
+  </table>
+</div>
+
+<style>
+.copy-container { display: flex; align-items: center; justify-content: space-between; gap: 10px; }
+.copy-text { flex: 1; word-break: break-all; }
+.copy-button {
+  background-color: rgb(108, 110, 220);
+  color: white;
+  border: none;
+  padding: 4px 8px;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 18px;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.copy-button:hover { background-color: rgb(104, 106, 235); }
+.copy-button:active { background-color: rgb(84, 86, 215); }
+
+/* Tab styles */
+.tab-container {
+  width: 100%;
+}
+.tab-buttons {
+  display: flex;
+  gap: 2px;
+  margin-bottom: 5px;
+}
+.tab-button {
+  padding: 6px 12px;
+  background-color: #f0f0f0;
+  border: 1px solid #ddd;
+  border-bottom: none;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 3px 3px 0 0;
+  transition: background-color 0.2s;
+}
+.tab-button:hover {
+  background-color: #e0e0e0;
+}
+.tab-button.active {
+  background-color: rgb(108, 110, 220);
+  color: white;
+  border-color: rgb(108, 110, 220);
+}
+.tab-content {
+  display: none;
+  padding: 5px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  word-break: break-all;
+}
+.tab-content.active {
+  display: block;
+}
+</style>
+
+<script>
+function showTab(tabName) {
+  // Find the tab container that contains this tab
+  var targetTab = document.getElementById(tabName);
+  if (!targetTab) return;
+  
+  var tabContainer = targetTab.closest('.tab-container');
+  if (!tabContainer) return;
+  
+  // Hide all tab contents within this container
+  var tabContents = tabContainer.querySelectorAll('.tab-content');
+  for (var i = 0; i < tabContents.length; i++) {
+    tabContents[i].classList.remove('active');
+  }
+  
+  // Remove active class from all tab buttons within this container
+  var tabButtons = tabContainer.querySelectorAll('.tab-button');
+  for (var i = 0; i < tabButtons.length; i++) {
+    tabButtons[i].classList.remove('active');
+  }
+  
+  // Show the clicked tab content
+  targetTab.classList.add('active');
+  
+  // Activate the clicked button
+  var clickedButton = event.target;
+  if (clickedButton && clickedButton.classList.contains('tab-button')) {
+    clickedButton.classList.add('active');
+  }
+}
+
+function copyToClipboard(elementId) {
+  var element = document.getElementById(elementId);
+  if (!element) return;
+  
+  // Find the actual text element to copy from
+  var textElement = null;
+  
+  // First, try to find a code element (for command tabs)
+  var codeElement = element.querySelector('code');
+  if (codeElement) {
+    textElement = codeElement;
+  } else {
+    // Fallback: look for .copy-text (for path tabs)
+    var copyTextElement = element.querySelector('.copy-text');
+    if (copyTextElement) {
+      // If it's a div, look for code inside it
+      if (copyTextElement.tagName === 'DIV') {
+        var codeInside = copyTextElement.querySelector('code');
+        textElement = codeInside || copyTextElement;
+      } else {
+        textElement = copyTextElement;
+      }
+    } else {
+      // Last resort: try pre element
+      textElement = element.querySelector('pre');
+    }
+  }
+  
+  if (!textElement) return;
+  
+  // Get only the text content, not any HTML
+  var textToCopy = textElement.textContent || textElement.innerText || '';
+  
+  // Clean up any extra whitespace but preserve line breaks
+  textToCopy = textToCopy.trim();
+  
+  var textarea = document.createElement('textarea');
+  textarea.value = textToCopy;
+  document.body.appendChild(textarea);
+  textarea.select();
+  document.execCommand('copy');
+  document.body.removeChild(textarea);
+  
+  var button = element.querySelector('.copy-button');
+  if (!button) return;
+  var originalText = button.textContent;
+  button.textContent = 'Copied!';
+  button.style.backgroundColor = '#28a745';
+  setTimeout(function() {
+    button.textContent = originalText;
+    button.style.backgroundColor = 'rgb(108, 110, 220)';
+  }, 1000);
+}
+</script>
+
+<p><br /></p>
+
+<p><em>Funding</em>
+<br />
+This study was supported by NIMH grant MH59259 to Dr. Gotlib, a grant from the Gipuzkoako Foru Aldundia (Fellows Gipuzkoa Program) to Dr. Iglesias. The funding sources had no involvement in the study design; data collection, analysis and interpretation of data; in the writing of the report; and in the decision to submit the article for publication.</p>
+
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        <!--
+
+
+  
+
+
+  
+
+  <p class="page__taxonomy">
+    <strong><i class="fas fa-fw fa-folder-open" aria-hidden="true"></i> Categories: </strong>
+    <span itemprop="keywords">
+    
+      <a href="/AI2D/categories/#datasets" class="page__taxonomy-item p-category" rel="tag">datasets</a><span class="sep">, </span>
+    
+      <a href="/AI2D/categories/#docs" class="page__taxonomy-item p-category" rel="tag">docs</a>
+    
+    </span>
+  </p>
+
+-->
+        <!--
+
+  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Updated:</strong> <time class="dt-published" datetime="2026-01-17T00:00:00-05:00">January 17, 2026</time></p>
+-->
+      </footer>
+
+      
+
+      <!--
+  <nav class="pagination">
+    
+      <a href="/AI2D/docs/datasets/SHIP/" class="pagination--pager" title="Study of Health in Pomerania
+">Previous</a>
+    
+    
+      <a href="/AI2D/docs/datasets/SPRINT/" class="pagination--pager" title="Systolic Blood Pressure Intervention Trial
+">Next</a>
+    
+  </nav>
+-->
+    </div>
+
+    
+  </article>
+
+  
+  
+</div>
+
+    </div>
+
+    
+
+    <div id="footer" class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+<div class="page__footer fixed-bottom">
+  <div class="container">
+      <div class="row">
+          <div class="col-12 text-right">
+              <a href="/AI2D/docs/community/get_support/">Get Support</a>
+          </div>
+      </div>
+  </div>
+</div>
+
+      </footer>
+    </div>
+
+    
+  <script src="/AI2D/assets/js/main.min.js"></script>
+
+
+
+
+
+
+
+
+
+
+  </body>
+</html>

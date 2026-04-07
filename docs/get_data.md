@@ -34,12 +34,15 @@ The following instruction are intended specifically to get data on CUBIC.
 
 **If `DUA` is NOT `None`**, follow these steps:
 
-1. Email [Tien Tong](mailto:Tien.Tong@PennMedicine.upenn.edu) a data request that includes the following:
-    - The level of access, in this case, you will need **read-only access**
-    - The name of the user[s] to be given access (full name or login name). If you plan to store and analyze data in a CUBIC project, you should use **your project username**, not personal CUBIC username.
-    - The full path to the project you need access to, `/cbica/projects/<project_name>`.
-    - Any DUA requirements.
-2. Tien will forward your request to the CUBIC admins and notify you when access is granted.
+Email the [CBICA HelpDesk](mailto:help@cbica.upenn.edu) with a data access request that includes:
+
+- The access level (for this case, **read-only access**)
+- The name(s) of the user(s) to be granted access (full name or login name). If you plan to store and analyze data in a CUBIC project, use **your project username**, not your personal CUBIC username.
+- The full project path: `/cbica/projects/<project_name>`
+- Any DUA requirements
+- The PI’s approval to grant access
+
+**Exception:** For `/cbica/projects/pennlinc_hcpya`, email [Tien Tong](mailto:Tien.Tong@PennMedicine.upenn.edu) your DUA and the login name of the user to be granted access. Tien will submit the access request on your behalf.
 
 <span style="color: #7556b7;">🌟 **Once you have access to the project, check the `BABS` section on the dataset-specific page to determine whether the dataset was processed with [BABS]({{  site.baseurl }}/docs/imaging/image_babs)** (Dataset-specific links listed [here]({{ site.baseurl }}/docs/datasets)).</span>
 

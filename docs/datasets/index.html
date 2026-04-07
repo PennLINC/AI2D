@@ -283,10 +283,43 @@ Many labs at Penn use the same large, publicly available neuroimaging datasets. 
             {% assign csv_data = csv_rows | first %}
           {% endif %}
           {% assign row_disease_tags = "" %}
+          {% comment %}Disease_Tags in CSV may list multiple tokens separated by ";". Normalize to trimmed tokens joined by ";".{% endcomment %}
           {% if csv_data and csv_data.Disease_Tags and csv_data.Disease_Tags != "" %}
-            {% assign row_disease_tags = csv_data.Disease_Tags | strip %}
+            {% assign _dt_parts = csv_data.Disease_Tags | split: ";" %}
+            {% for _p in _dt_parts %}
+              {% assign _t = _p | strip %}
+              {% if _t != "" %}
+                {% if row_disease_tags != "" %}
+                  {% assign row_disease_tags = row_disease_tags | append: ";" | append: _t %}
+                {% else %}
+                  {% assign row_disease_tags = _t %}
+                {% endif %}
+              {% endif %}
+            {% endfor %}
           {% endif %}
-          
+          {% comment %}Optional post front matter: disease_tags and/or tags (merged with CSV; join with ; for filter JS){% endcomment %}
+          {% assign fm_tag_string = "" %}
+          {% if dataset.disease_tags and dataset.disease_tags != "" %}
+            {% assign fm_tag_string = dataset.disease_tags | strip %}
+          {% endif %}
+          {% if dataset.tags %}
+            {% assign fm_tags_joined = dataset.tags | join: ";" | strip %}
+            {% if fm_tags_joined != "" %}
+              {% if fm_tag_string != "" %}
+                {% assign fm_tag_string = fm_tag_string | append: ";" | append: fm_tags_joined %}
+              {% else %}
+                {% assign fm_tag_string = fm_tags_joined %}
+              {% endif %}
+            {% endif %}
+          {% endif %}
+          {% if fm_tag_string != "" %}
+            {% if row_disease_tags != "" %}
+              {% assign row_disease_tags = row_disease_tags | append: ";" | append: fm_tag_string %}
+            {% else %}
+              {% assign row_disease_tags = fm_tag_string %}
+            {% endif %}
+          {% endif %}
+
           <tr data-disease-tags="{{ row_disease_tags }}">
             <td><a href="{{ dataset.website }}">{{ dataset.title }} {% if dataset.excerpt and dataset.excerpt != dataset.title %}({{ dataset.excerpt }}){% endif %}</a></td>
             <td>
@@ -655,16 +688,32 @@ document.addEventListener('DOMContentLoaded', function() {
     const tbody = table.querySelector('tbody');
     if (!select || !tbody) return;
 
+    /* Disease_Tags may be multiple values per cell, separated by ";" (optional comma for legacy rows). */
+    function parseDiseaseTags(raw) {
+      var s = (raw || '').trim();
+      if (!s) return [];
+      return s.split(/[;,]/).map(function(part) { return part.trim(); }).filter(Boolean);
+    }
+
+    function tagsMatchSelection(rowTags, selected) {
+      if (!selected) return true;
+      var want = selected.toLowerCase();
+      for (var i = 0; i < rowTags.length; i++) {
+        if (rowTags[i].toLowerCase() === want) return true;
+      }
+      return false;
+    }
+
     var tagSet = new Set();
-    tbody.querySelectorAll('tr[data-disease-tags]').forEach(function(tr) {
-      var raw = (tr.getAttribute('data-disease-tags') || '').trim();
-      if (!raw) return;
-      raw.split(/[,;]/).forEach(function(s) {
-        var t = s.trim();
-        if (t) tagSet.add(t);
+    tbody.querySelectorAll('tr').forEach(function(tr) {
+      if (!tr.hasAttribute('data-disease-tags')) return;
+      parseDiseaseTags(tr.getAttribute('data-disease-tags')).forEach(function(t) {
+        tagSet.add(t);
       });
     });
-    var tags = Array.from(tagSet).sort();
+    var tags = Array.from(tagSet).sort(function(a, b) {
+      return a.toLowerCase().localeCompare(b.toLowerCase());
+    });
     tags.forEach(function(tag) {
       var opt = document.createElement('option');
       opt.value = tag;
@@ -673,19 +722,18 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
     function rowTags(row) {
-      var raw = (row.getAttribute('data-disease-tags') || '').trim();
-      return raw ? raw.split(/[,;]/).map(function(s) { return s.trim(); }).filter(Boolean) : [];
+      return parseDiseaseTags(row.getAttribute('data-disease-tags'));
     }
 
     function filterRows() {
       var value = (select.value || '').trim();
-      tbody.querySelectorAll('tr[data-disease-tags]').forEach(function(tr) {
+      tbody.querySelectorAll('tr').forEach(function(tr) {
+        if (!tr.hasAttribute('data-disease-tags')) return;
         if (!value) {
           tr.style.display = '';
           return;
         }
-        var tags = rowTags(tr);
-        tr.style.display = tags.indexOf(value) !== -1 ? '' : 'none';
+        tr.style.display = tagsMatchSelection(rowTags(tr), value) ? '' : 'none';
       });
     }
 

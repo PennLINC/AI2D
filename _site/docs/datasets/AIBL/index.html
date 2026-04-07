@@ -1,0 +1,3197 @@
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.24.0 by Michael Rose
+  Copyright 2013-2020 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
+-->
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8">
+
+<!-- begin _includes/seo.html --><title>Australian Imaging, Biomarker &amp; Lifestyle Flagship Study of Ageing</title>
+<meta name="description" content="AIBL">
+
+
+
+<meta property="og:type" content="article">
+<meta property="og:locale" content="en_US">
+<meta property="og:site_name" content="AI2D | PennLINC | Shared Data Resources">
+<meta property="og:title" content="Australian Imaging, Biomarker &amp; Lifestyle Flagship Study of Ageing">
+<meta property="og:url" content="http://localhost:4000/AI2D/docs/datasets/AIBL/">
+
+
+  <meta property="og:description" content="AIBL">
+
+
+
+
+
+
+
+  <meta property="article:published_time" content="2026-01-17T00:00:00-05:00">
+
+
+
+
+
+  
+
+  
+
+
+<link rel="canonical" href="http://localhost:4000/AI2D/docs/datasets/AIBL/">
+
+
+
+
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    
+      "@type": "Person",
+      "name": "AI2D",
+      "url": "http://localhost:4000/AI2D/"
+    
+  }
+</script>
+
+
+
+
+
+
+
+<!-- end _includes/seo.html -->
+
+
+
+  <link href="/AI2D/feed.xml" type="application/atom+xml" rel="alternate" title="AI2D | PennLINC | Shared Data Resources Feed">
+
+
+<!-- https://t.co/dKP3o1e -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<link rel="stylesheet" href="/AI2D/assets/css/main.css">
+<link rel="stylesheet" href="/AI2D/assets/css/custom.css">
+<link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css">
+<!-- Fonts via Google -->
+<link href="https://fonts.googleapis.com/css?family=Lato:300italic,700italic,300,700" rel="stylesheet" type="text/css"/>
+
+
+
+    <!-- start custom head snippets -->
+
+<!-- insert favicons. use https://realfavicongenerator.net/ -->
+
+<!-- end custom head snippets -->
+
+  </head>
+
+  <body class="layout--single">
+    <nav class="skip-links">
+  <ul>
+    <li><a href="#site-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
+    <li><a href="#main" class="screen-reader-shortcut">Skip to content</a></li>
+    <li><a href="#footer" class="screen-reader-shortcut">Skip to footer</a></li>
+  </ul>
+</nav>
+
+    
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top" role="navigation">
+    <div class="container d-flex justify-content-between">
+        <a class="navbar-brand" href="/AI2D/">
+            
+                <a class="site-logo" href="/AI2D/"><img src="/AI2D/assets/images/logos/ai2d_pennlinc_logo.png" alt="AI2D | PennLINC | Shared Data Resources"></a>
+            
+        </a>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarToggler">
+            <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="/AI2D/docs/datasets">Datasets</a>
+                        </li>
+                    
+                
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" id="navbarDropdown-Tools" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Tools
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown-Tools">
+                                
+                                    <a class="nav-link dropdown-item" href="/AI2D/docs/imaging/image_curation">Data Curation: CuBIDS</a>
+                                
+                                    <a class="nav-link dropdown-item" href="/AI2D/docs/imaging/image_babs">Data Processing: BABS</a>
+                                
+                                    <a class="nav-link dropdown-item" href="/AI2D/docs/imaging/image_ncdlmuse">NiChart_DLMUSE</a>
+                                
+                                    <a class="nav-link dropdown-item" href="/AI2D/docs/imaging/image_smriprep">sMRIPrep</a>
+                                
+                                    <a class="nav-link dropdown-item" href="/AI2D/docs/imaging/image_fmriprep">fMRIPrep</a>
+                                
+                                    <a class="nav-link dropdown-item" href="/AI2D/docs/imaging/image_xcpd">XCP-D</a>
+                                
+                                    <a class="nav-link dropdown-item" href="/AI2D/docs/imaging/image_qsiprep">QSIPrep</a>
+                                
+                                    <a class="nav-link dropdown-item" href="/AI2D/docs/imaging/image_qsirecon">QSIRecon</a>
+                                
+                            </div>
+                        </li>
+                    
+                
+                        <li class="nav-item">
+                            <a class="nav-link" href="/AI2D/docs/team">Team</a>
+                        </li>
+                    
+                
+                        <li class="nav-item">
+                            <a class="nav-link" href="/AI2D/docs/blog/index">News</a>
+                        </li>
+                    
+                
+                        <li class="nav-item">
+                            <a class="nav-link" href="/AI2D/docs/get_data"><em style="font-style:normal; font-weight:bold; color:#a594d1;"> Get Data </em></a>
+                        </li>
+                    
+                
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+    <div class="initial-content">
+      
+
+
+
+
+<div id="main" role="main">
+  
+
+  <article class="page h-entry" itemscope itemtype="https://schema.org/CreativeWork">
+    <meta itemprop="headline" content="Australian Imaging, Biomarker &amp; Lifestyle Flagship Study of Ageing">
+    <meta itemprop="description" content="AIBL">
+    <meta itemprop="datePublished" content="2026-01-17T00:00:00-05:00">
+    
+
+    <div class="page__inner-wrap">
+      
+        <header>
+          <br/><h1 id="page-title" class="page__title p-name" itemprop="headline">
+            <a href="http://localhost:4000/AI2D/docs/datasets/AIBL/" class="u-url" itemprop="url">Australian Imaging, Biomarker &amp; Lifestyle Flagship Study of Ageing
+</a>
+          </h1>
+          
+          <!--
+
+
+  <p class="page__meta">
+    
+
+    <span class="page__meta-sep"></span>
+
+    
+      
+      <span class="page__meta-date">
+        <i class="far fa-calendar-alt" aria-hidden="true"></i>
+        
+        <time datetime="2026-01-17T00:00:00-05:00">January 17, 2026</time>
+      </span>
+    
+
+    <span class="page__meta-sep"></span>
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          3 minute read
+        
+      </span>
+    
+  </p>
+
+-->
+        </header>
+      
+
+      <section class="page__content e-content" itemprop="text">
+        
+        
+<h3 id="about-the-dataset">About the dataset</h3>
+
+<p><strong>Primary description:</strong> Alzheimer’s disease and aging</p>
+
+<div class="study-overview">
+  
+    The Australian Imaging, Biomarker, and Lifestyle (AIBL) study began in Perth and Melbourne, Australia between 2006-2008, as a longitudinal prospective research study of Alzheimer’s Disease led by the Australian Commonwealth Scientific Industrial and Research Organization (CSIRO). AIBL study enrolled 1,112 participants above the age of 60, with Alzheimer’s Disease (20%), Mild Cognitive Impairment (10%), and healthy controls (70%). The first assessment included cognitive testing, blood collection, and health and lifestyle questionnaires. MRI and PET neuroimaging using the Pittsburgh Compound B (PiB) tracer were initially acquired in only 287 AIBL participants. Following longitudinal assessments, occurring at 18-month intervals, have added neuroimaging to all participants and CSF collection for analysis of biomarkers. The cognitive assessment in AIBL was designed to cover main domains of cognition affected by Alzheimer’s disease. This 90-minute assessment was conducted in-clinic by trained staff, most of whom were neuropsychologists. A part of the data has been made publicly available via [<a href="https://aibl.csiro.au/adni/index.html">https://aibl.csiro.au/adni/index.html</a>].
+</div>
+
+<div class="table" align="center">
+  <table style="text-align:center; width:100%; font-size:18px; border:1px solid black">
+    <tr>
+      <th style="font-weight:bold; width:250px;">Study</th>
+      <th style="font-weight:normal">Australian Imaging, Biomarkers &amp; Lifestyle Study of Ageing</th>
+      <th style="font-weight:normal"></th>
+    </tr>
+
+    
+    <tr>
+      <th style="font-weight:bold; width:250px;">Study Website</th>
+      <th style="font-weight:normal"><a href="https://aibl.org.au/">AIBL</a></th>
+      <th style="font-weight:normal"></th>
+    </tr>
+    
+
+    
+    <tr>
+      <th style="font-weight:bold; width:250px;">Data Descriptor Paper</th>
+      <th style="font-weight:normal">
+        
+        
+          
+          
+            <a href="https://pubmed.ncbi.nlm.nih.gov/19470201/">https://pubmed.ncbi.nlm.nih.gov/19470201/</a>
+            
+          
+        
+      </th>
+      <th style="font-weight:normal"></th>
+    </tr>
+    
+
+    
+    <tr>
+      <th style="font-weight:bold; width:250px;">DUA</th>
+      <th style="font-weight:normal">
+        
+        
+          
+          
+            
+              
+              
+              
+              <a href="https://ida.loni.usc.edu/collaboration/access/appApply.jsp?project=AIBL">https://ida.loni.usc.edu/collaboration/access/appApply.jsp?project=AIBL</a>. If the link doesn't work, search Google for "AIBL Data Use Agreement".
+            
+            
+          
+        
+      </th>
+      <th style="font-weight:normal"></th>
+    </tr>
+    
+
+    
+    <tr>
+      <th style="font-weight:bold; width:250px;">Country/Region</th>
+      <th style="font-weight:normal">Australia</th>
+      <th style="font-weight:normal"></th>
+    </tr>
+    
+
+    
+    <tr>
+      <th style="font-weight:bold; width:250px;">Disease Tag</th>
+      <th style="font-weight:normal">alzheimers;aging</th>
+      <th style="font-weight:normal"></th>
+    </tr>
+    
+
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    <tr>
+      <th style="font-weight:bold; width:250px;">Age (mean ± SD)
+            
+              <br />
+              <span style="font-weight:normal;">(Baseline)</span>
+            
+          </th>
+      <th style="font-weight:normal">73.0 ± 6.7</th>
+      <th style="font-weight:normal"></th>
+    </tr>
+    
+
+    
+    <tr>
+      <th style="font-weight:bold; width:250px;">Age Range
+            
+              <br />
+              <span style="font-weight:normal;">(Baseline)</span>
+            
+          </th>
+      <th style="font-weight:normal">41.6-96</th>
+      <th style="font-weight:normal"></th>
+    </tr>
+    
+
+    
+    <tr>
+      <th style="font-weight:bold; width:250px;">% Female</th>
+      <th style="font-weight:normal">56.1</th>
+      <th style="font-weight:normal"></th>
+    </tr>
+    
+
+    
+    
+
+    
+    <tr>
+      <th style="font-weight:bold; width:250px;">CUBIC Project</th>
+      <th style="font-weight:normal"><code>/cbica/projects/AIBL</code></th>
+      <th style="font-weight:normal"></th>
+    </tr>
+    
+
+    <tr>
+      <th style="font-weight:bold; width:250px;">PI for CUBIC Access Approval</th>
+      <th style="font-weight:normal">Christos Davatzikos</th>
+      <th style="font-weight:normal"></th>
+    </tr>
+
+    
+    <tr>
+      <th style="font-weight:bold; width:250px;">N Subjects</th>
+      <th style="font-weight:normal">976</th>
+      <th style="font-weight:normal"></th>
+    </tr>
+    
+
+    
+    <tr>
+      <th style="font-weight:bold; width:250px;">N MR Sessions</th>
+      <th style="font-weight:normal">1981</th>
+      <th style="font-weight:normal"></th>
+    </tr>
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+      
+        
+          
+          
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+    
+
+    
+      
+      
+
+      
+    <tr>
+      <th style="font-weight:bold; width:250px;">Diagnoses</th>
+      <th style="font-weight:normal">
+        <div style="font-size: 14px; display: flex; flex-wrap: wrap; gap: 16px; align-items: flex-start;">
+          
+            
+            
+            
+            
+            
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+                
+                <div style="margin: 0;">
+                  <div style="text-align: left; font-weight: bold; padding: 4px 0 8px 0;">AD</div>
+                  <table style="margin: 0; border-collapse: collapse; border: 1px solid #ddd;">
+                  
+                  <thead>
+                    <tr style="background: #f5f5f5;">
+                      <th style="border: 1px solid #ddd; padding: 6px 10px; text-align: left;">Value</th>
+                      
+                        
+                      
+                        
+                      <th style="border: 1px solid #ddd; padding: 6px 10px; text-align: right;">V01</th>
+                        
+                      
+                        
+                      <th style="border: 1px solid #ddd; padding: 6px 10px; text-align: right;">V02</th>
+                        
+                      
+                        
+                      <th style="border: 1px solid #ddd; padding: 6px 10px; text-align: right;">V03</th>
+                        
+                      
+                        
+                      <th style="border: 1px solid #ddd; padding: 6px 10px; text-align: right;">V04</th>
+                        
+                      
+                        
+                      <th style="border: 1px solid #ddd; padding: 6px 10px; text-align: right;">V05</th>
+                        
+                      
+                        
+                      <th style="border: 1px solid #ddd; padding: 6px 10px; text-align: right;">V06</th>
+                        
+                      
+                        
+                      <th style="border: 1px solid #ddd; padding: 6px 10px; text-align: right;">V07</th>
+                        
+                      
+                    </tr>
+                  </thead>
+                  <tbody>
+                    
+                      
+                    
+                      
+                        <tr>
+                          <td style="border: 1px solid #ddd; padding: 6px 10px;">CN</td>
+                          
+                            
+                          
+                            
+                              
+                              
+                              
+                              
+                          <td style="border: 1px solid #ddd; padding: 6px 10px; text-align: right;">712</td>
+                            
+                          
+                            
+                              
+                              
+                              
+                              
+                          <td style="border: 1px solid #ddd; padding: 6px 10px; text-align: right;">371</td>
+                            
+                          
+                            
+                              
+                              
+                              
+                              
+                          <td style="border: 1px solid #ddd; padding: 6px 10px; text-align: right;">200</td>
+                            
+                          
+                            
+                              
+                              
+                              
+                              
+                          <td style="border: 1px solid #ddd; padding: 6px 10px; text-align: right;">104</td>
+                            
+                          
+                            
+                              
+                              
+                              
+                              
+                          <td style="border: 1px solid #ddd; padding: 6px 10px; text-align: right;">72</td>
+                            
+                          
+                            
+                              
+                              
+                              
+                              
+                          <td style="border: 1px solid #ddd; padding: 6px 10px; text-align: right;">48</td>
+                            
+                          
+                            
+                              
+                              
+                              
+                              
+                          <td style="border: 1px solid #ddd; padding: 6px 10px; text-align: right;">15</td>
+                            
+                          
+                        </tr>
+                      
+                    
+                      
+                        <tr>
+                          <td style="border: 1px solid #ddd; padding: 6px 10px;">MCI</td>
+                          
+                            
+                          
+                            
+                              
+                              
+                              
+                              
+                          <td style="border: 1px solid #ddd; padding: 6px 10px; text-align: right;">128</td>
+                            
+                          
+                            
+                              
+                              
+                              
+                              
+                          <td style="border: 1px solid #ddd; padding: 6px 10px; text-align: right;">46</td>
+                            
+                          
+                            
+                              
+                              
+                              
+                              
+                          <td style="border: 1px solid #ddd; padding: 6px 10px; text-align: right;">31</td>
+                            
+                          
+                            
+                              
+                              
+                              
+                              
+                          <td style="border: 1px solid #ddd; padding: 6px 10px; text-align: right;">14</td>
+                            
+                          
+                            
+                              
+                              
+                              
+                              
+                          <td style="border: 1px solid #ddd; padding: 6px 10px; text-align: right;">10</td>
+                            
+                          
+                            
+                              
+                              
+                              
+                              
+                          <td style="border: 1px solid #ddd; padding: 6px 10px; text-align: right;">3</td>
+                            
+                          
+                            
+                              
+                              
+                              
+                              
+                          <td style="border: 1px solid #ddd; padding: 6px 10px; text-align: right;"></td>
+                            
+                          
+                        </tr>
+                      
+                    
+                      
+                        <tr>
+                          <td style="border: 1px solid #ddd; padding: 6px 10px;">AD</td>
+                          
+                            
+                          
+                            
+                              
+                              
+                              
+                              
+                          <td style="border: 1px solid #ddd; padding: 6px 10px; text-align: right;">92</td>
+                            
+                          
+                            
+                              
+                              
+                              
+                              
+                          <td style="border: 1px solid #ddd; padding: 6px 10px; text-align: right;">36</td>
+                            
+                          
+                            
+                              
+                              
+                              
+                              
+                          <td style="border: 1px solid #ddd; padding: 6px 10px; text-align: right;">20</td>
+                            
+                          
+                            
+                              
+                              
+                              
+                              
+                          <td style="border: 1px solid #ddd; padding: 6px 10px; text-align: right;">9</td>
+                            
+                          
+                            
+                              
+                              
+                              
+                              
+                          <td style="border: 1px solid #ddd; padding: 6px 10px; text-align: right;">6</td>
+                            
+                          
+                            
+                              
+                              
+                              
+                              
+                          <td style="border: 1px solid #ddd; padding: 6px 10px; text-align: right;">2</td>
+                            
+                          
+                            
+                              
+                              
+                              
+                              
+                          <td style="border: 1px solid #ddd; padding: 6px 10px; text-align: right;"></td>
+                            
+                          
+                        </tr>
+                      
+                    
+                      
+                        <tr>
+                          <td style="border: 1px solid #ddd; padding: 6px 10px;">nan</td>
+                          
+                            
+                          
+                            
+                              
+                              
+                              
+                              
+                          <td style="border: 1px solid #ddd; padding: 6px 10px; text-align: right;">41</td>
+                            
+                          
+                            
+                              
+                              
+                              
+                              
+                          <td style="border: 1px solid #ddd; padding: 6px 10px; text-align: right;">7</td>
+                            
+                          
+                            
+                              
+                              
+                              
+                              
+                          <td style="border: 1px solid #ddd; padding: 6px 10px; text-align: right;">3</td>
+                            
+                          
+                            
+                              
+                              
+                              
+                              
+                          <td style="border: 1px solid #ddd; padding: 6px 10px; text-align: right;"></td>
+                            
+                          
+                            
+                              
+                              
+                              
+                              
+                          <td style="border: 1px solid #ddd; padding: 6px 10px; text-align: right;"></td>
+                            
+                          
+                            
+                              
+                              
+                              
+                              
+                          <td style="border: 1px solid #ddd; padding: 6px 10px; text-align: right;">1</td>
+                            
+                          
+                            
+                              
+                              
+                              
+                              
+                          <td style="border: 1px solid #ddd; padding: 6px 10px; text-align: right;"></td>
+                            
+                          
+                        </tr>
+                      
+                    
+                      
+                        <tr>
+                          <td style="border: 1px solid #ddd; padding: 6px 10px;">dementia</td>
+                          
+                            
+                          
+                            
+                              
+                              
+                              
+                              
+                          <td style="border: 1px solid #ddd; padding: 6px 10px; text-align: right;"></td>
+                            
+                          
+                            
+                              
+                              
+                              
+                              
+                          <td style="border: 1px solid #ddd; padding: 6px 10px; text-align: right;">1</td>
+                            
+                          
+                            
+                              
+                              
+                              
+                              
+                          <td style="border: 1px solid #ddd; padding: 6px 10px; text-align: right;">1</td>
+                            
+                          
+                            
+                              
+                              
+                              
+                              
+                          <td style="border: 1px solid #ddd; padding: 6px 10px; text-align: right;"></td>
+                            
+                          
+                            
+                              
+                              
+                              
+                              
+                          <td style="border: 1px solid #ddd; padding: 6px 10px; text-align: right;"></td>
+                            
+                          
+                            
+                              
+                              
+                              
+                              
+                          <td style="border: 1px solid #ddd; padding: 6px 10px; text-align: right;"></td>
+                            
+                          
+                            
+                              
+                              
+                              
+                              
+                          <td style="border: 1px solid #ddd; padding: 6px 10px; text-align: right;"></td>
+                            
+                          
+                        </tr>
+                      
+                    
+                      
+                        <tr>
+                          <td style="border: 1px solid #ddd; padding: 6px 10px;">Vascular Dementia</td>
+                          
+                            
+                          
+                            
+                              
+                              
+                              
+                              
+                          <td style="border: 1px solid #ddd; padding: 6px 10px; text-align: right;"></td>
+                            
+                          
+                            
+                              
+                              
+                              
+                              
+                          <td style="border: 1px solid #ddd; padding: 6px 10px; text-align: right;"></td>
+                            
+                          
+                            
+                              
+                              
+                              
+                              
+                          <td style="border: 1px solid #ddd; padding: 6px 10px; text-align: right;">1</td>
+                            
+                          
+                            
+                              
+                              
+                              
+                              
+                          <td style="border: 1px solid #ddd; padding: 6px 10px; text-align: right;">1</td>
+                            
+                          
+                            
+                              
+                              
+                              
+                              
+                          <td style="border: 1px solid #ddd; padding: 6px 10px; text-align: right;"></td>
+                            
+                          
+                            
+                              
+                              
+                              
+                              
+                          <td style="border: 1px solid #ddd; padding: 6px 10px; text-align: right;">1</td>
+                            
+                          
+                            
+                              
+                              
+                              
+                              
+                          <td style="border: 1px solid #ddd; padding: 6px 10px; text-align: right;"></td>
+                            
+                          
+                        </tr>
+                      
+                    
+                  </tbody>
+                  
+                </table>
+                </div>
+              
+            
+          
+            
+            
+            
+            
+            
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+                
+                <div style="margin: 0;">
+                  <div style="text-align: left; font-weight: bold; padding: 4px 0 8px 0;">Hypertension</div>
+                  <table style="margin: 0; border-collapse: collapse; border: 1px solid #ddd;">
+                  
+                  <thead>
+                    <tr style="background: #f5f5f5;">
+                      <th style="border: 1px solid #ddd; padding: 6px 10px; text-align: left;">Value</th>
+                      
+                        
+                      
+                        
+                      <th style="border: 1px solid #ddd; padding: 6px 10px; text-align: right;">V01</th>
+                        
+                      
+                        
+                      <th style="border: 1px solid #ddd; padding: 6px 10px; text-align: right;">V02</th>
+                        
+                      
+                        
+                      <th style="border: 1px solid #ddd; padding: 6px 10px; text-align: right;">V03</th>
+                        
+                      
+                        
+                      <th style="border: 1px solid #ddd; padding: 6px 10px; text-align: right;">V04</th>
+                        
+                      
+                        
+                      <th style="border: 1px solid #ddd; padding: 6px 10px; text-align: right;">V05</th>
+                        
+                      
+                        
+                      <th style="border: 1px solid #ddd; padding: 6px 10px; text-align: right;">V06</th>
+                        
+                      
+                        
+                      <th style="border: 1px solid #ddd; padding: 6px 10px; text-align: right;">V07</th>
+                        
+                      
+                    </tr>
+                  </thead>
+                  <tbody>
+                    
+                      
+                    
+                      
+                        <tr>
+                          <td style="border: 1px solid #ddd; padding: 6px 10px;">Stage2</td>
+                          
+                            
+                          
+                            
+                              
+                              
+                              
+                              
+                          <td style="border: 1px solid #ddd; padding: 6px 10px; text-align: right;">476</td>
+                            
+                          
+                            
+                              
+                              
+                              
+                              
+                          <td style="border: 1px solid #ddd; padding: 6px 10px; text-align: right;">260</td>
+                            
+                          
+                            
+                              
+                              
+                              
+                              
+                          <td style="border: 1px solid #ddd; padding: 6px 10px; text-align: right;">145</td>
+                            
+                          
+                            
+                              
+                              
+                              
+                              
+                          <td style="border: 1px solid #ddd; padding: 6px 10px; text-align: right;">68</td>
+                            
+                          
+                            
+                              
+                              
+                              
+                              
+                          <td style="border: 1px solid #ddd; padding: 6px 10px; text-align: right;">52</td>
+                            
+                          
+                            
+                              
+                              
+                              
+                              
+                          <td style="border: 1px solid #ddd; padding: 6px 10px; text-align: right;">38</td>
+                            
+                          
+                            
+                              
+                              
+                              
+                              
+                          <td style="border: 1px solid #ddd; padding: 6px 10px; text-align: right;">13</td>
+                            
+                          
+                        </tr>
+                      
+                    
+                      
+                        <tr>
+                          <td style="border: 1px solid #ddd; padding: 6px 10px;">nan</td>
+                          
+                            
+                          
+                            
+                              
+                              
+                              
+                              
+                          <td style="border: 1px solid #ddd; padding: 6px 10px; text-align: right;">195</td>
+                            
+                          
+                            
+                              
+                              
+                              
+                              
+                          <td style="border: 1px solid #ddd; padding: 6px 10px; text-align: right;">64</td>
+                            
+                          
+                            
+                              
+                              
+                              
+                              
+                          <td style="border: 1px solid #ddd; padding: 6px 10px; text-align: right;">31</td>
+                            
+                          
+                            
+                              
+                              
+                              
+                              
+                          <td style="border: 1px solid #ddd; padding: 6px 10px; text-align: right;">14</td>
+                            
+                          
+                            
+                              
+                              
+                              
+                              
+                          <td style="border: 1px solid #ddd; padding: 6px 10px; text-align: right;">7</td>
+                            
+                          
+                            
+                              
+                              
+                              
+                              
+                          <td style="border: 1px solid #ddd; padding: 6px 10px; text-align: right;">1</td>
+                            
+                          
+                            
+                              
+                              
+                              
+                              
+                          <td style="border: 1px solid #ddd; padding: 6px 10px; text-align: right;"></td>
+                            
+                          
+                        </tr>
+                      
+                    
+                      
+                        <tr>
+                          <td style="border: 1px solid #ddd; padding: 6px 10px;">Normal</td>
+                          
+                            
+                          
+                            
+                              
+                              
+                              
+                              
+                          <td style="border: 1px solid #ddd; padding: 6px 10px; text-align: right;">169</td>
+                            
+                          
+                            
+                              
+                              
+                              
+                              
+                          <td style="border: 1px solid #ddd; padding: 6px 10px; text-align: right;">68</td>
+                            
+                          
+                            
+                              
+                              
+                              
+                              
+                          <td style="border: 1px solid #ddd; padding: 6px 10px; text-align: right;">37</td>
+                            
+                          
+                            
+                              
+                              
+                              
+                              
+                          <td style="border: 1px solid #ddd; padding: 6px 10px; text-align: right;">25</td>
+                            
+                          
+                            
+                              
+                              
+                              
+                              
+                          <td style="border: 1px solid #ddd; padding: 6px 10px; text-align: right;">21</td>
+                            
+                          
+                            
+                              
+                              
+                              
+                              
+                          <td style="border: 1px solid #ddd; padding: 6px 10px; text-align: right;">12</td>
+                            
+                          
+                            
+                              
+                              
+                              
+                              
+                          <td style="border: 1px solid #ddd; padding: 6px 10px; text-align: right;">1</td>
+                            
+                          
+                        </tr>
+                      
+                    
+                      
+                        <tr>
+                          <td style="border: 1px solid #ddd; padding: 6px 10px;">Stage1</td>
+                          
+                            
+                          
+                            
+                              
+                              
+                              
+                              
+                          <td style="border: 1px solid #ddd; padding: 6px 10px; text-align: right;">133</td>
+                            
+                          
+                            
+                              
+                              
+                              
+                              
+                          <td style="border: 1px solid #ddd; padding: 6px 10px; text-align: right;">69</td>
+                            
+                          
+                            
+                              
+                              
+                              
+                              
+                          <td style="border: 1px solid #ddd; padding: 6px 10px; text-align: right;">43</td>
+                            
+                          
+                            
+                              
+                              
+                              
+                              
+                          <td style="border: 1px solid #ddd; padding: 6px 10px; text-align: right;">21</td>
+                            
+                          
+                            
+                              
+                              
+                              
+                              
+                          <td style="border: 1px solid #ddd; padding: 6px 10px; text-align: right;">8</td>
+                            
+                          
+                            
+                              
+                              
+                              
+                              
+                          <td style="border: 1px solid #ddd; padding: 6px 10px; text-align: right;">4</td>
+                            
+                          
+                            
+                              
+                              
+                              
+                              
+                          <td style="border: 1px solid #ddd; padding: 6px 10px; text-align: right;">1</td>
+                            
+                          
+                        </tr>
+                      
+                    
+                  </tbody>
+                  
+                </table>
+                </div>
+              
+            
+          
+            
+            
+            
+            
+            
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+                
+                <div style="margin: 0;">
+                  <div style="text-align: left; font-weight: bold; padding: 4px 0 8px 0;">Diabetes</div>
+                  <table style="margin: 0; border-collapse: collapse; border: 1px solid #ddd;">
+                  
+                  <thead>
+                    <tr style="background: #f5f5f5;">
+                      <th style="border: 1px solid #ddd; padding: 6px 10px; text-align: left;">Value</th>
+                      
+                        
+                      
+                        
+                      <th style="border: 1px solid #ddd; padding: 6px 10px; text-align: right;">V01</th>
+                        
+                      
+                        
+                      <th style="border: 1px solid #ddd; padding: 6px 10px; text-align: right;">V02</th>
+                        
+                      
+                        
+                      <th style="border: 1px solid #ddd; padding: 6px 10px; text-align: right;">V03</th>
+                        
+                      
+                        
+                      <th style="border: 1px solid #ddd; padding: 6px 10px; text-align: right;">V04</th>
+                        
+                      
+                        
+                      <th style="border: 1px solid #ddd; padding: 6px 10px; text-align: right;">V05</th>
+                        
+                      
+                        
+                      <th style="border: 1px solid #ddd; padding: 6px 10px; text-align: right;">V06</th>
+                        
+                      
+                        
+                      <th style="border: 1px solid #ddd; padding: 6px 10px; text-align: right;">V07</th>
+                        
+                      
+                    </tr>
+                  </thead>
+                  <tbody>
+                    
+                      
+                    
+                      
+                        <tr>
+                          <td style="border: 1px solid #ddd; padding: 6px 10px;">Normal</td>
+                          
+                            
+                          
+                            
+                              
+                              
+                              
+                              
+                          <td style="border: 1px solid #ddd; padding: 6px 10px; text-align: right;">801</td>
+                            
+                          
+                            
+                              
+                              
+                              
+                              
+                          <td style="border: 1px solid #ddd; padding: 6px 10px; text-align: right;">401</td>
+                            
+                          
+                            
+                              
+                              
+                              
+                              
+                          <td style="border: 1px solid #ddd; padding: 6px 10px; text-align: right;">216</td>
+                            
+                          
+                            
+                              
+                              
+                              
+                              
+                          <td style="border: 1px solid #ddd; padding: 6px 10px; text-align: right;">106</td>
+                            
+                          
+                            
+                              
+                              
+                              
+                              
+                          <td style="border: 1px solid #ddd; padding: 6px 10px; text-align: right;">78</td>
+                            
+                          
+                            
+                              
+                              
+                              
+                              
+                          <td style="border: 1px solid #ddd; padding: 6px 10px; text-align: right;">47</td>
+                            
+                          
+                            
+                              
+                              
+                              
+                              
+                          <td style="border: 1px solid #ddd; padding: 6px 10px; text-align: right;">15</td>
+                            
+                          
+                        </tr>
+                      
+                    
+                      
+                        <tr>
+                          <td style="border: 1px solid #ddd; padding: 6px 10px;">Prediabetic</td>
+                          
+                            
+                          
+                            
+                              
+                              
+                              
+                              
+                          <td style="border: 1px solid #ddd; padding: 6px 10px; text-align: right;">76</td>
+                            
+                          
+                            
+                              
+                              
+                              
+                              
+                          <td style="border: 1px solid #ddd; padding: 6px 10px; text-align: right;">23</td>
+                            
+                          
+                            
+                              
+                              
+                              
+                              
+                          <td style="border: 1px solid #ddd; padding: 6px 10px; text-align: right;">19</td>
+                            
+                          
+                            
+                              
+                              
+                              
+                              
+                          <td style="border: 1px solid #ddd; padding: 6px 10px; text-align: right;">9</td>
+                            
+                          
+                            
+                              
+                              
+                              
+                              
+                          <td style="border: 1px solid #ddd; padding: 6px 10px; text-align: right;">4</td>
+                            
+                          
+                            
+                              
+                              
+                              
+                              
+                          <td style="border: 1px solid #ddd; padding: 6px 10px; text-align: right;"></td>
+                            
+                          
+                            
+                              
+                              
+                              
+                              
+                          <td style="border: 1px solid #ddd; padding: 6px 10px; text-align: right;"></td>
+                            
+                          
+                        </tr>
+                      
+                    
+                      
+                        <tr>
+                          <td style="border: 1px solid #ddd; padding: 6px 10px;">Diabetic</td>
+                          
+                            
+                          
+                            
+                              
+                              
+                              
+                              
+                          <td style="border: 1px solid #ddd; padding: 6px 10px; text-align: right;">69</td>
+                            
+                          
+                            
+                              
+                              
+                              
+                              
+                          <td style="border: 1px solid #ddd; padding: 6px 10px; text-align: right;">29</td>
+                            
+                          
+                            
+                              
+                              
+                              
+                              
+                          <td style="border: 1px solid #ddd; padding: 6px 10px; text-align: right;">13</td>
+                            
+                          
+                            
+                              
+                              
+                              
+                              
+                          <td style="border: 1px solid #ddd; padding: 6px 10px; text-align: right;">9</td>
+                            
+                          
+                            
+                              
+                              
+                              
+                              
+                          <td style="border: 1px solid #ddd; padding: 6px 10px; text-align: right;">3</td>
+                            
+                          
+                            
+                              
+                              
+                              
+                              
+                          <td style="border: 1px solid #ddd; padding: 6px 10px; text-align: right;">6</td>
+                            
+                          
+                            
+                              
+                              
+                              
+                              
+                          <td style="border: 1px solid #ddd; padding: 6px 10px; text-align: right;"></td>
+                            
+                          
+                        </tr>
+                      
+                    
+                      
+                        <tr>
+                          <td style="border: 1px solid #ddd; padding: 6px 10px;">nan</td>
+                          
+                            
+                          
+                            
+                              
+                              
+                              
+                              
+                          <td style="border: 1px solid #ddd; padding: 6px 10px; text-align: right;">27</td>
+                            
+                          
+                            
+                              
+                              
+                              
+                              
+                          <td style="border: 1px solid #ddd; padding: 6px 10px; text-align: right;">8</td>
+                            
+                          
+                            
+                              
+                              
+                              
+                              
+                          <td style="border: 1px solid #ddd; padding: 6px 10px; text-align: right;">8</td>
+                            
+                          
+                            
+                              
+                              
+                              
+                              
+                          <td style="border: 1px solid #ddd; padding: 6px 10px; text-align: right;">4</td>
+                            
+                          
+                            
+                              
+                              
+                              
+                              
+                          <td style="border: 1px solid #ddd; padding: 6px 10px; text-align: right;">3</td>
+                            
+                          
+                            
+                              
+                              
+                              
+                              
+                          <td style="border: 1px solid #ddd; padding: 6px 10px; text-align: right;">2</td>
+                            
+                          
+                            
+                              
+                              
+                              
+                              
+                          <td style="border: 1px solid #ddd; padding: 6px 10px; text-align: right;"></td>
+                            
+                          
+                        </tr>
+                      
+                    
+                  </tbody>
+                  
+                </table>
+                </div>
+              
+            
+          
+            
+            
+            
+            
+            
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+            
+          
+            
+            
+            
+            
+            
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+            
+          
+            
+            
+            
+            
+            
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+            
+          
+            
+            
+            
+            
+            
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+            
+          
+            
+            
+            
+            
+            
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+                
+                <div style="margin: 0;">
+                  <div style="text-align: left; font-weight: bold; padding: 4px 0 8px 0;">Depression</div>
+                  <table style="margin: 0; border-collapse: collapse; border: 1px solid #ddd;">
+                  
+                  <thead>
+                    <tr style="background: #f5f5f5;">
+                      <th style="border: 1px solid #ddd; padding: 6px 10px; text-align: left;">Value</th>
+                      
+                        
+                      
+                        
+                      <th style="border: 1px solid #ddd; padding: 6px 10px; text-align: right;">V01</th>
+                        
+                      
+                        
+                      <th style="border: 1px solid #ddd; padding: 6px 10px; text-align: right;">V02</th>
+                        
+                      
+                        
+                      <th style="border: 1px solid #ddd; padding: 6px 10px; text-align: right;">V03</th>
+                        
+                      
+                        
+                      <th style="border: 1px solid #ddd; padding: 6px 10px; text-align: right;">V04</th>
+                        
+                      
+                        
+                      <th style="border: 1px solid #ddd; padding: 6px 10px; text-align: right;">V05</th>
+                        
+                      
+                        
+                      <th style="border: 1px solid #ddd; padding: 6px 10px; text-align: right;">V06</th>
+                        
+                      
+                        
+                      <th style="border: 1px solid #ddd; padding: 6px 10px; text-align: right;">V07</th>
+                        
+                      
+                    </tr>
+                  </thead>
+                  <tbody>
+                    
+                      
+                    
+                      
+                        <tr>
+                          <td style="border: 1px solid #ddd; padding: 6px 10px;">nan</td>
+                          
+                            
+                          
+                            
+                              
+                              
+                              
+                              
+                          <td style="border: 1px solid #ddd; padding: 6px 10px; text-align: right;">965</td>
+                            
+                          
+                            
+                              
+                              
+                              
+                              
+                          <td style="border: 1px solid #ddd; padding: 6px 10px; text-align: right;">451</td>
+                            
+                          
+                            
+                              
+                              
+                              
+                              
+                          <td style="border: 1px solid #ddd; padding: 6px 10px; text-align: right;">244</td>
+                            
+                          
+                            
+                              
+                              
+                              
+                              
+                          <td style="border: 1px solid #ddd; padding: 6px 10px; text-align: right;">111</td>
+                            
+                          
+                            
+                              
+                              
+                              
+                              
+                          <td style="border: 1px solid #ddd; padding: 6px 10px; text-align: right;">75</td>
+                            
+                          
+                            
+                              
+                              
+                              
+                              
+                          <td style="border: 1px solid #ddd; padding: 6px 10px; text-align: right;">44</td>
+                            
+                          
+                            
+                              
+                              
+                              
+                              
+                          <td style="border: 1px solid #ddd; padding: 6px 10px; text-align: right;">11</td>
+                            
+                          
+                        </tr>
+                      
+                    
+                      
+                        <tr>
+                          <td style="border: 1px solid #ddd; padding: 6px 10px;">Negative/absent</td>
+                          
+                            
+                          
+                            
+                              
+                              
+                              
+                              
+                          <td style="border: 1px solid #ddd; padding: 6px 10px; text-align: right;">8</td>
+                            
+                          
+                            
+                              
+                              
+                              
+                              
+                          <td style="border: 1px solid #ddd; padding: 6px 10px; text-align: right;">9</td>
+                            
+                          
+                            
+                              
+                              
+                              
+                              
+                          <td style="border: 1px solid #ddd; padding: 6px 10px; text-align: right;">11</td>
+                            
+                          
+                            
+                              
+                              
+                              
+                              
+                          <td style="border: 1px solid #ddd; padding: 6px 10px; text-align: right;">14</td>
+                            
+                          
+                            
+                              
+                              
+                              
+                              
+                          <td style="border: 1px solid #ddd; padding: 6px 10px; text-align: right;">11</td>
+                            
+                          
+                            
+                              
+                              
+                              
+                              
+                          <td style="border: 1px solid #ddd; padding: 6px 10px; text-align: right;">11</td>
+                            
+                          
+                            
+                              
+                              
+                              
+                              
+                          <td style="border: 1px solid #ddd; padding: 6px 10px; text-align: right;">4</td>
+                            
+                          
+                        </tr>
+                      
+                    
+                      
+                        <tr>
+                          <td style="border: 1px solid #ddd; padding: 6px 10px;">Positive/present</td>
+                          
+                            
+                          
+                            
+                              
+                              
+                              
+                              
+                          <td style="border: 1px solid #ddd; padding: 6px 10px; text-align: right;"></td>
+                            
+                          
+                            
+                              
+                              
+                              
+                              
+                          <td style="border: 1px solid #ddd; padding: 6px 10px; text-align: right;">1</td>
+                            
+                          
+                            
+                              
+                              
+                              
+                              
+                          <td style="border: 1px solid #ddd; padding: 6px 10px; text-align: right;">1</td>
+                            
+                          
+                            
+                              
+                              
+                              
+                              
+                          <td style="border: 1px solid #ddd; padding: 6px 10px; text-align: right;">3</td>
+                            
+                          
+                            
+                              
+                              
+                              
+                              
+                          <td style="border: 1px solid #ddd; padding: 6px 10px; text-align: right;">2</td>
+                            
+                          
+                            
+                              
+                              
+                              
+                              
+                          <td style="border: 1px solid #ddd; padding: 6px 10px; text-align: right;"></td>
+                            
+                          
+                            
+                              
+                              
+                              
+                              
+                          <td style="border: 1px solid #ddd; padding: 6px 10px; text-align: right;"></td>
+                            
+                          
+                        </tr>
+                      
+                    
+                  </tbody>
+                  
+                </table>
+                </div>
+              
+            
+          
+            
+            
+            
+            
+            
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+            
+          
+            
+            
+            
+            
+            
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+                
+                <div style="margin: 0;">
+                  <div style="text-align: left; font-weight: bold; padding: 4px 0 8px 0;">Hyperlipidemia</div>
+                  <table style="margin: 0; border-collapse: collapse; border: 1px solid #ddd;">
+                  
+                  <thead>
+                    <tr style="background: #f5f5f5;">
+                      <th style="border: 1px solid #ddd; padding: 6px 10px; text-align: left;">Value</th>
+                      
+                        
+                      
+                        
+                      <th style="border: 1px solid #ddd; padding: 6px 10px; text-align: right;">V01</th>
+                        
+                      
+                        
+                      <th style="border: 1px solid #ddd; padding: 6px 10px; text-align: right;">V02</th>
+                        
+                      
+                        
+                      <th style="border: 1px solid #ddd; padding: 6px 10px; text-align: right;">V03</th>
+                        
+                      
+                        
+                      <th style="border: 1px solid #ddd; padding: 6px 10px; text-align: right;">V04</th>
+                        
+                      
+                        
+                      <th style="border: 1px solid #ddd; padding: 6px 10px; text-align: right;">V05</th>
+                        
+                      
+                        
+                      <th style="border: 1px solid #ddd; padding: 6px 10px; text-align: right;">V06</th>
+                        
+                      
+                        
+                      <th style="border: 1px solid #ddd; padding: 6px 10px; text-align: right;">V07</th>
+                        
+                      
+                    </tr>
+                  </thead>
+                  <tbody>
+                    
+                      
+                    
+                      
+                        <tr>
+                          <td style="border: 1px solid #ddd; padding: 6px 10px;">nan</td>
+                          
+                            
+                          
+                            
+                              
+                              
+                              
+                              
+                          <td style="border: 1px solid #ddd; padding: 6px 10px; text-align: right;">970</td>
+                            
+                          
+                            
+                              
+                              
+                              
+                              
+                          <td style="border: 1px solid #ddd; padding: 6px 10px; text-align: right;">458</td>
+                            
+                          
+                            
+                              
+                              
+                              
+                              
+                          <td style="border: 1px solid #ddd; padding: 6px 10px; text-align: right;">252</td>
+                            
+                          
+                            
+                              
+                              
+                              
+                              
+                          <td style="border: 1px solid #ddd; padding: 6px 10px; text-align: right;">111</td>
+                            
+                          
+                            
+                              
+                              
+                              
+                              
+                          <td style="border: 1px solid #ddd; padding: 6px 10px; text-align: right;">75</td>
+                            
+                          
+                            
+                              
+                              
+                              
+                              
+                          <td style="border: 1px solid #ddd; padding: 6px 10px; text-align: right;">44</td>
+                            
+                          
+                            
+                              
+                              
+                              
+                              
+                          <td style="border: 1px solid #ddd; padding: 6px 10px; text-align: right;">11</td>
+                            
+                          
+                        </tr>
+                      
+                    
+                      
+                        <tr>
+                          <td style="border: 1px solid #ddd; padding: 6px 10px;">Positive/present</td>
+                          
+                            
+                          
+                            
+                              
+                              
+                              
+                              
+                          <td style="border: 1px solid #ddd; padding: 6px 10px; text-align: right;">3</td>
+                            
+                          
+                            
+                              
+                              
+                              
+                              
+                          <td style="border: 1px solid #ddd; padding: 6px 10px; text-align: right;">1</td>
+                            
+                          
+                            
+                              
+                              
+                              
+                              
+                          <td style="border: 1px solid #ddd; padding: 6px 10px; text-align: right;">2</td>
+                            
+                          
+                            
+                              
+                              
+                              
+                              
+                          <td style="border: 1px solid #ddd; padding: 6px 10px; text-align: right;">9</td>
+                            
+                          
+                            
+                              
+                              
+                              
+                              
+                          <td style="border: 1px solid #ddd; padding: 6px 10px; text-align: right;">6</td>
+                            
+                          
+                            
+                              
+                              
+                              
+                              
+                          <td style="border: 1px solid #ddd; padding: 6px 10px; text-align: right;">7</td>
+                            
+                          
+                            
+                              
+                              
+                              
+                              
+                          <td style="border: 1px solid #ddd; padding: 6px 10px; text-align: right;">2</td>
+                            
+                          
+                        </tr>
+                      
+                    
+                      
+                        <tr>
+                          <td style="border: 1px solid #ddd; padding: 6px 10px;">Negative/absent</td>
+                          
+                            
+                          
+                            
+                              
+                              
+                              
+                              
+                          <td style="border: 1px solid #ddd; padding: 6px 10px; text-align: right;"></td>
+                            
+                          
+                            
+                              
+                              
+                              
+                              
+                          <td style="border: 1px solid #ddd; padding: 6px 10px; text-align: right;">2</td>
+                            
+                          
+                            
+                              
+                              
+                              
+                              
+                          <td style="border: 1px solid #ddd; padding: 6px 10px; text-align: right;">2</td>
+                            
+                          
+                            
+                              
+                              
+                              
+                              
+                          <td style="border: 1px solid #ddd; padding: 6px 10px; text-align: right;">8</td>
+                            
+                          
+                            
+                              
+                              
+                              
+                              
+                          <td style="border: 1px solid #ddd; padding: 6px 10px; text-align: right;">7</td>
+                            
+                          
+                            
+                              
+                              
+                              
+                              
+                          <td style="border: 1px solid #ddd; padding: 6px 10px; text-align: right;">4</td>
+                            
+                          
+                            
+                              
+                              
+                              
+                              
+                          <td style="border: 1px solid #ddd; padding: 6px 10px; text-align: right;">2</td>
+                            
+                          
+                        </tr>
+                      
+                    
+                  </tbody>
+                  
+                </table>
+                </div>
+              
+            
+          
+            
+            
+            
+            
+            
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+                
+                <div style="margin: 0;">
+                  <div style="text-align: left; font-weight: bold; padding: 4px 0 8px 0;">TBI</div>
+                  <table style="margin: 0; border-collapse: collapse; border: 1px solid #ddd;">
+                  
+                  <thead>
+                    <tr style="background: #f5f5f5;">
+                      <th style="border: 1px solid #ddd; padding: 6px 10px; text-align: left;">Value</th>
+                      
+                        
+                      
+                        
+                      <th style="border: 1px solid #ddd; padding: 6px 10px; text-align: right;">V01</th>
+                        
+                      
+                        
+                      <th style="border: 1px solid #ddd; padding: 6px 10px; text-align: right;">V02</th>
+                        
+                      
+                        
+                      <th style="border: 1px solid #ddd; padding: 6px 10px; text-align: right;">V03</th>
+                        
+                      
+                        
+                      <th style="border: 1px solid #ddd; padding: 6px 10px; text-align: right;">V04</th>
+                        
+                      
+                        
+                      <th style="border: 1px solid #ddd; padding: 6px 10px; text-align: right;">V05</th>
+                        
+                      
+                        
+                      <th style="border: 1px solid #ddd; padding: 6px 10px; text-align: right;">V06</th>
+                        
+                      
+                        
+                      <th style="border: 1px solid #ddd; padding: 6px 10px; text-align: right;">V07</th>
+                        
+                      
+                    </tr>
+                  </thead>
+                  <tbody>
+                    
+                      
+                    
+                      
+                        <tr>
+                          <td style="border: 1px solid #ddd; padding: 6px 10px;">nan</td>
+                          
+                            
+                          
+                            
+                              
+                              
+                              
+                              
+                          <td style="border: 1px solid #ddd; padding: 6px 10px; text-align: right;">972</td>
+                            
+                          
+                            
+                              
+                              
+                              
+                              
+                          <td style="border: 1px solid #ddd; padding: 6px 10px; text-align: right;">461</td>
+                            
+                          
+                            
+                              
+                              
+                              
+                              
+                          <td style="border: 1px solid #ddd; padding: 6px 10px; text-align: right;">255</td>
+                            
+                          
+                            
+                              
+                              
+                              
+                              
+                          <td style="border: 1px solid #ddd; padding: 6px 10px; text-align: right;">125</td>
+                            
+                          
+                            
+                              
+                              
+                              
+                              
+                          <td style="border: 1px solid #ddd; padding: 6px 10px; text-align: right;">88</td>
+                            
+                          
+                            
+                              
+                              
+                              
+                              
+                          <td style="border: 1px solid #ddd; padding: 6px 10px; text-align: right;">54</td>
+                            
+                          
+                            
+                              
+                              
+                              
+                              
+                          <td style="border: 1px solid #ddd; padding: 6px 10px; text-align: right;">15</td>
+                            
+                          
+                        </tr>
+                      
+                    
+                      
+                        <tr>
+                          <td style="border: 1px solid #ddd; padding: 6px 10px;">serious head injury</td>
+                          
+                            
+                          
+                            
+                              
+                              
+                              
+                              
+                          <td style="border: 1px solid #ddd; padding: 6px 10px; text-align: right;">1</td>
+                            
+                          
+                            
+                              
+                              
+                              
+                              
+                          <td style="border: 1px solid #ddd; padding: 6px 10px; text-align: right;"></td>
+                            
+                          
+                            
+                              
+                              
+                              
+                              
+                          <td style="border: 1px solid #ddd; padding: 6px 10px; text-align: right;">1</td>
+                            
+                          
+                            
+                              
+                              
+                              
+                              
+                          <td style="border: 1px solid #ddd; padding: 6px 10px; text-align: right;">3</td>
+                            
+                          
+                            
+                              
+                              
+                              
+                              
+                          <td style="border: 1px solid #ddd; padding: 6px 10px; text-align: right;"></td>
+                            
+                          
+                            
+                              
+                              
+                              
+                              
+                          <td style="border: 1px solid #ddd; padding: 6px 10px; text-align: right;">1</td>
+                            
+                          
+                            
+                              
+                              
+                              
+                              
+                          <td style="border: 1px solid #ddd; padding: 6px 10px; text-align: right;"></td>
+                            
+                          
+                        </tr>
+                      
+                    
+                  </tbody>
+                  
+                </table>
+                </div>
+              
+            
+          
+            
+            
+            
+            
+            
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+                
+                <div style="margin: 0;">
+                  <div style="text-align: left; font-weight: bold; padding: 4px 0 8px 0;">Anxiety</div>
+                  <table style="margin: 0; border-collapse: collapse; border: 1px solid #ddd;">
+                  
+                  <thead>
+                    <tr style="background: #f5f5f5;">
+                      <th style="border: 1px solid #ddd; padding: 6px 10px; text-align: left;">Value</th>
+                      
+                        
+                      
+                        
+                      <th style="border: 1px solid #ddd; padding: 6px 10px; text-align: right;">V01</th>
+                        
+                      
+                        
+                      <th style="border: 1px solid #ddd; padding: 6px 10px; text-align: right;">V02</th>
+                        
+                      
+                        
+                      <th style="border: 1px solid #ddd; padding: 6px 10px; text-align: right;">V03</th>
+                        
+                      
+                        
+                      <th style="border: 1px solid #ddd; padding: 6px 10px; text-align: right;">V04</th>
+                        
+                      
+                        
+                      <th style="border: 1px solid #ddd; padding: 6px 10px; text-align: right;">V05</th>
+                        
+                      
+                        
+                      <th style="border: 1px solid #ddd; padding: 6px 10px; text-align: right;">V06</th>
+                        
+                      
+                        
+                      <th style="border: 1px solid #ddd; padding: 6px 10px; text-align: right;">V07</th>
+                        
+                      
+                    </tr>
+                  </thead>
+                  <tbody>
+                    
+                      
+                    
+                      
+                        <tr>
+                          <td style="border: 1px solid #ddd; padding: 6px 10px;">nan</td>
+                          
+                            
+                          
+                            
+                              
+                              
+                              
+                              
+                          <td style="border: 1px solid #ddd; padding: 6px 10px; text-align: right;">965</td>
+                            
+                          
+                            
+                              
+                              
+                              
+                              
+                          <td style="border: 1px solid #ddd; padding: 6px 10px; text-align: right;">451</td>
+                            
+                          
+                            
+                              
+                              
+                              
+                              
+                          <td style="border: 1px solid #ddd; padding: 6px 10px; text-align: right;">244</td>
+                            
+                          
+                            
+                              
+                              
+                              
+                              
+                          <td style="border: 1px solid #ddd; padding: 6px 10px; text-align: right;">111</td>
+                            
+                          
+                            
+                              
+                              
+                              
+                              
+                          <td style="border: 1px solid #ddd; padding: 6px 10px; text-align: right;">75</td>
+                            
+                          
+                            
+                              
+                              
+                              
+                              
+                          <td style="border: 1px solid #ddd; padding: 6px 10px; text-align: right;">44</td>
+                            
+                          
+                            
+                              
+                              
+                              
+                              
+                          <td style="border: 1px solid #ddd; padding: 6px 10px; text-align: right;">11</td>
+                            
+                          
+                        </tr>
+                      
+                    
+                      
+                        <tr>
+                          <td style="border: 1px solid #ddd; padding: 6px 10px;">Negative/absent</td>
+                          
+                            
+                          
+                            
+                              
+                              
+                              
+                              
+                          <td style="border: 1px solid #ddd; padding: 6px 10px; text-align: right;">7</td>
+                            
+                          
+                            
+                              
+                              
+                              
+                              
+                          <td style="border: 1px solid #ddd; padding: 6px 10px; text-align: right;">9</td>
+                            
+                          
+                            
+                              
+                              
+                              
+                              
+                          <td style="border: 1px solid #ddd; padding: 6px 10px; text-align: right;">12</td>
+                            
+                          
+                            
+                              
+                              
+                              
+                              
+                          <td style="border: 1px solid #ddd; padding: 6px 10px; text-align: right;">16</td>
+                            
+                          
+                            
+                              
+                              
+                              
+                              
+                          <td style="border: 1px solid #ddd; padding: 6px 10px; text-align: right;">12</td>
+                            
+                          
+                            
+                              
+                              
+                              
+                              
+                          <td style="border: 1px solid #ddd; padding: 6px 10px; text-align: right;">11</td>
+                            
+                          
+                            
+                              
+                              
+                              
+                              
+                          <td style="border: 1px solid #ddd; padding: 6px 10px; text-align: right;">4</td>
+                            
+                          
+                        </tr>
+                      
+                    
+                      
+                        <tr>
+                          <td style="border: 1px solid #ddd; padding: 6px 10px;">Positive/present</td>
+                          
+                            
+                          
+                            
+                              
+                              
+                              
+                              
+                          <td style="border: 1px solid #ddd; padding: 6px 10px; text-align: right;">1</td>
+                            
+                          
+                            
+                              
+                              
+                              
+                              
+                          <td style="border: 1px solid #ddd; padding: 6px 10px; text-align: right;">1</td>
+                            
+                          
+                            
+                              
+                              
+                              
+                              
+                          <td style="border: 1px solid #ddd; padding: 6px 10px; text-align: right;"></td>
+                            
+                          
+                            
+                              
+                              
+                              
+                              
+                          <td style="border: 1px solid #ddd; padding: 6px 10px; text-align: right;">1</td>
+                            
+                          
+                            
+                              
+                              
+                              
+                              
+                          <td style="border: 1px solid #ddd; padding: 6px 10px; text-align: right;">1</td>
+                            
+                          
+                            
+                              
+                              
+                              
+                              
+                          <td style="border: 1px solid #ddd; padding: 6px 10px; text-align: right;"></td>
+                            
+                          
+                            
+                              
+                              
+                              
+                              
+                          <td style="border: 1px solid #ddd; padding: 6px 10px; text-align: right;"></td>
+                            
+                          
+                        </tr>
+                      
+                    
+                  </tbody>
+                  
+                </table>
+                </div>
+              
+            
+          
+            
+            
+            
+            
+            
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+            
+          
+        </div>
+      </th>
+      <th style="font-weight:normal"></th>
+    </tr>
+      
+
+      
+
+      
+      
+      
+
+      
+
+      
+
+      
+
+      
+      
+      
+      
+      
+      
+
+      
+        
+        
+        
+        
+        
+        
+        
+
+        
+        
+        
+        
+        
+
+        <tr>
+          <th style="font-weight:bold; width:250px;">
+            
+              <a href="https://github.com/CBICA/NiChart_DLMUSE">DLMUSE</a>
+            
+            
+              <span style="font-weight:normal;">(v1.0.7)</span>
+            
+            
+              <br />
+              <span style="font-weight:normal;">(1979/1979 complete)</span>
+            
+          </th>
+          <th style="font-weight:normal">
+            
+              
+              <div id="aibl-default-dlmuse-path" class="copy-container" style="border: 1px solid #6c6edc; border-radius: 3px; padding: 6px; background-color: #f8f9fa;">
+                <span class="copy-text"><code>/cbica/projects/AIBL/Pipelines/AIBL_DLMUSE_2025/Results/DLMUSE_Volumes.csv</code></span>
+                <button class="copy-button" onclick="copyToClipboard('aibl-default-dlmuse-path')">Copy</button>
+              </div>
+            
+          </th>
+          <th style="font-weight:normal"></th>
+        </tr>
+      
+        
+        
+        
+        
+        
+        
+        
+
+        
+        
+        
+        
+        
+
+        <tr>
+          <th style="font-weight:bold; width:250px;">
+            
+              <a href="https://doi.org/10.1006/nimg.2001.0937">RAVENS</a>
+            
+            
+              <span style="font-weight:normal;">(DRAMMS-1.4.1)</span>
+            
+            
+              <br />
+              <span style="font-weight:normal;">(1979/1979 complete)</span>
+            
+          </th>
+          <th style="font-weight:normal">
+            
+              
+              <div id="aibl-default-ravens-path" class="copy-container" style="border: 1px solid #6c6edc; border-radius: 3px; padding: 6px; background-color: #f8f9fa;">
+                <span class="copy-text"><code>/cbica/projects/AIBL/Pipelines/AIBL_3.5D_DLICV_MASK_2022/Protocols/RAVENS</code></span>
+                <button class="copy-button" onclick="copyToClipboard('aibl-default-ravens-path')">Copy</button>
+              </div>
+            
+          </th>
+          <th style="font-weight:normal"></th>
+        </tr>
+      
+        
+        
+        
+        
+        
+        
+        
+
+        
+        
+        
+        
+        
+
+        <tr>
+          <th style="font-weight:bold; width:250px;">
+            
+              <a href="https://github.com/CBICA/NiChart_DLWMLS">DLWMLS</a>
+            
+            
+              <span style="font-weight:normal;">(v0.1.0)</span>
+            
+            
+              <br />
+              <span style="font-weight:normal;">(1265/1265 complete)</span>
+            
+          </th>
+          <th style="font-weight:normal">
+            
+              
+              <div id="aibl-default-dlwmls-path" class="copy-container" style="border: 1px solid #6c6edc; border-radius: 3px; padding: 6px; background-color: #f8f9fa;">
+                <span class="copy-text"><code>/cbica/projects/AIBL/Pipelines/AIBL_DLWMLS_2025/Results/AIBL_DLWMLS_DLMUSE_Segmented_Volumes.csv</code></span>
+                <button class="copy-button" onclick="copyToClipboard('aibl-default-dlwmls-path')">Copy</button>
+              </div>
+            
+          </th>
+          <th style="font-weight:normal"></th>
+        </tr>
+      
+
+      
+      
+
+      
+      
+      
+      
+      
+      
+      
+      
+
+      
+      
+
+      
+      
+      
+        <tr>
+          <th style="font-weight:bold; width:250px;">Non-Imaging Data</th>
+          <th style="font-weight:normal">
+            
+            <div class="tab-container">
+              <div class="tab-buttons">
+                
+                <button class="tab-button active" onclick="showTab('aibl-default-nonimg-raw-tab')">Raw</button>
+                
+                
+                <button class="tab-button" onclick="showTab('aibl-default-nonimg-data-dictionary-tab')">Data Dictionary</button>
+                
+                
+                <button class="tab-button" onclick="showTab('aibl-default-nonimg-consolidated-v2-tab')">Consolidated v2.0</button>
+                
+                
+                <button class="tab-button" onclick="showTab('aibl-default-nonimg-consolidated-latest-tab')">Consolidated Latest</button>
+                
+              </div>
+              
+              <div id="aibl-default-nonimg-raw-tab" class="tab-content active">
+                
+                  
+                  
+                  
+                  
+                  
+                    
+                    
+                      <div id="aibl-default-nonimg-raw-1" class="copy-container" style="border: 1px solid #6c6edc; border-radius: 3px; padding: 6px; background-color: #f8f9fa; margin-bottom: 15px;">
+                        <span class="copy-text"><code>/cbica/projects/ISTAGING/Pipelines/ClinicalDataConsolidation_201911/Data/External_Data/AIBL</code></span>
+                        <button class="copy-button" onclick="copyToClipboard('aibl-default-nonimg-raw-1')">Copy</button>
+                      </div>
+                    
+                  
+                  <p style="margin-top: 12px; margin-bottom: 0; font-size: 14px; color: #444;">Raw data downloaded from source.</p>
+                  
+                
+              </div>
+              
+              
+              <div id="aibl-default-nonimg-data-dictionary-tab" class="tab-content">
+                
+                
+                  
+                  
+                    <div id="aibl-default-nonimg-dd-1" class="copy-container" style="border: 1px solid #6c6edc; border-radius: 3px; padding: 6px; background-color: #f8f9fa; margin-bottom: 15px;">
+                      <span class="copy-text"><code>/cbica/projects/ISTAGING/Pipelines/ClinicalDataConsolidation_201911/dictionaries/AIBL/PAC_AIBL_Data_Dictionary_Reorganized_20200901.csv</code></span>
+                      <button class="copy-button" onclick="copyToClipboard('aibl-default-nonimg-dd-1')">Copy</button>
+                    </div>
+                  
+                
+                <p style="margin-top: 12px; margin-bottom: 0; font-size: 14px; color: #444;">Data dictionary of raw data downloaded from source.</p>
+              </div>
+              
+              
+              <div id="aibl-default-nonimg-consolidated-v2-tab" class="tab-content">
+                <div id="aibl-default-nonimg-v2-path" class="copy-container" style="border: 1px solid #6c6edc; border-radius: 3px; padding: 6px; background-color: #f8f9fa; margin-bottom: 15px;">
+                  <span class="copy-text"><code>/cbica/projects/ISTAGING/Pipelines/ISTAGING_Data_Consolidation_2020/v2.0/istaging.csv</code></span>
+                  <button class="copy-button" onclick="copyToClipboard('aibl-default-nonimg-v2-path')">Copy</button>
+                </div>
+                <p style="margin-top: 12px; margin-bottom: 8px; font-size: 14px; color: #444;">Data consolidated and harmonized in 2020.</p>
+                
+                  
+                  
+                  
+                  
+                    
+                    
+                      
+                      
+                      
+                  <p style="margin-top: 0; margin-bottom: 4px; font-size: 14px; color: #444;"><strong>This study:</strong> subset with <code>df[df.Study == 'AIBL']</code></p>
+                      
+                    
+                  
+                
+                <p style="margin: 6px 0 4px; font-size: 14px; color: #444;">README: <code>/cbica/projects/ISTAGING/Pipelines/ISTAGING_Data_Consolidation_2020/v2.0/README.md</code></p>
+                <p style="margin: 6px 0 0; font-size: 14px; color: #444;">Release Notes: <code>/cbica/projects/ISTAGING/Pipelines/ISTAGING_Data_Consolidation_2020/v2.0/Release_Notes.md</code></p>
+              </div>
+              
+              
+              <div id="aibl-default-nonimg-consolidated-latest-tab" class="tab-content">
+                <div id="aibl-default-nonimg-latest-path" class="copy-container" style="border: 1px solid #6c6edc; border-radius: 3px; padding: 6px; background-color: #f8f9fa; margin-bottom: 15px;">
+                  <span class="copy-text"><code>/cbica/home/harmang/for_others/final_combined_istaging_withMUSE.csv</code></span>
+                  <button class="copy-button" onclick="copyToClipboard('aibl-default-nonimg-latest-path')">Copy</button>
+                </div>
+                <p style="margin-top: 12px; margin-bottom: 8px; font-size: 14px; color: #444;">Data consolidated and harmonized in 2026.</p>
+                
+                  
+                  
+                  
+                  
+                    
+                    
+                      
+                      
+                      
+                  <p style="margin-top: 0; margin-bottom: 4px; font-size: 14px; color: #444;"><strong>This study:</strong> subset with <code>df[df.Study == 'AIBL']</code></p>
+                      
+                    
+                  
+                
+              </div>
+              
+            </div>
+          </th>
+          <th style="font-weight:normal"></th>
+        </tr>
+      
+    
+  </table>
+</div>
+
+<style>
+.copy-container { display: flex; align-items: center; justify-content: space-between; gap: 10px; }
+.copy-text { flex: 1; word-break: break-all; }
+.copy-button {
+  background-color: rgb(108, 110, 220);
+  color: white;
+  border: none;
+  padding: 4px 8px;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 18px;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.copy-button:hover { background-color: rgb(104, 106, 235); }
+.copy-button:active { background-color: rgb(84, 86, 215); }
+
+/* Tab styles */
+.tab-container {
+  width: 100%;
+}
+.tab-buttons {
+  display: flex;
+  gap: 2px;
+  margin-bottom: 5px;
+}
+.tab-button {
+  padding: 6px 12px;
+  background-color: #f0f0f0;
+  border: 1px solid #ddd;
+  border-bottom: none;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 3px 3px 0 0;
+  transition: background-color 0.2s;
+}
+.tab-button:hover {
+  background-color: #e0e0e0;
+}
+.tab-button.active {
+  background-color: rgb(108, 110, 220);
+  color: white;
+  border-color: rgb(108, 110, 220);
+}
+.tab-content {
+  display: none;
+  padding: 5px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  word-break: break-all;
+}
+.tab-content.active {
+  display: block;
+}
+</style>
+
+<script>
+function showTab(tabName) {
+  // Find the tab container that contains this tab
+  var targetTab = document.getElementById(tabName);
+  if (!targetTab) return;
+  
+  var tabContainer = targetTab.closest('.tab-container');
+  if (!tabContainer) return;
+  
+  // Hide all tab contents within this container
+  var tabContents = tabContainer.querySelectorAll('.tab-content');
+  for (var i = 0; i < tabContents.length; i++) {
+    tabContents[i].classList.remove('active');
+  }
+  
+  // Remove active class from all tab buttons within this container
+  var tabButtons = tabContainer.querySelectorAll('.tab-button');
+  for (var i = 0; i < tabButtons.length; i++) {
+    tabButtons[i].classList.remove('active');
+  }
+  
+  // Show the clicked tab content
+  targetTab.classList.add('active');
+  
+  // Activate the clicked button
+  var clickedButton = event.target;
+  if (clickedButton && clickedButton.classList.contains('tab-button')) {
+    clickedButton.classList.add('active');
+  }
+}
+
+function copyToClipboard(elementId) {
+  var element = document.getElementById(elementId);
+  if (!element) return;
+  
+  // Find the actual text element to copy from
+  var textElement = null;
+  
+  // First, try to find a code element (for command tabs)
+  var codeElement = element.querySelector('code');
+  if (codeElement) {
+    textElement = codeElement;
+  } else {
+    // Fallback: look for .copy-text (for path tabs)
+    var copyTextElement = element.querySelector('.copy-text');
+    if (copyTextElement) {
+      // If it's a div, look for code inside it
+      if (copyTextElement.tagName === 'DIV') {
+        var codeInside = copyTextElement.querySelector('code');
+        textElement = codeInside || copyTextElement;
+      } else {
+        textElement = copyTextElement;
+      }
+    } else {
+      // Last resort: try pre element
+      textElement = element.querySelector('pre');
+    }
+  }
+  
+  if (!textElement) return;
+  
+  // Get only the text content, not any HTML
+  var textToCopy = textElement.textContent || textElement.innerText || '';
+  
+  // Clean up any extra whitespace but preserve line breaks
+  textToCopy = textToCopy.trim();
+  
+  var textarea = document.createElement('textarea');
+  textarea.value = textToCopy;
+  document.body.appendChild(textarea);
+  textarea.select();
+  document.execCommand('copy');
+  document.body.removeChild(textarea);
+  
+  var button = element.querySelector('.copy-button');
+  if (!button) return;
+  var originalText = button.textContent;
+  button.textContent = 'Copied!';
+  button.style.backgroundColor = '#28a745';
+  setTimeout(function() {
+    button.textContent = originalText;
+    button.style.backgroundColor = 'rgb(108, 110, 220)';
+  }, 1000);
+}
+</script>
+
+<p><br /></p>
+
+<p><em>Funding</em>
+<br />
+Core funding for the study was provided by CSIRO, which was supplemented by “in kind” contributions from the study partners. The AIBL investigators thank Richard Head of CSIRO for initiating and facilitating the AIBL collaboration. The study also received support from the National Health and Medical Research Council via the Dementia Collaborative Research Centres program (DCRC2). Pfizer International has contributed financial support to assist with analysis of blood samples and to further the AIBL research program. Ashley Bush is supported by a Federation Fellowship from the Australian Research Council. Cassandra Szoeke is partially supported by a research fellowship funded by Alzheimer’s Australia. Alzheimer’s Australia (Victoria and Western Australia) assisted with promotion of the study and the screening of telephone calls from volunteers. The AIBL team wishes to thank the following clinicians who referred patients with AD and/or MCI to the study: Professor David Ames, Associate Professor Brian Chambers, Professor Edmond Chiu, Dr Roger Clarnette, Associate Professor David Darby, Dr Mary Davison, Dr John Drago, Dr Peter Drysdale, Dr Jacqui Gilbert, Dr Kwang Lim, Professor Nicola Lautenschlager, Dr Dina LoGiudice, Dr Peter McCardle, Dr Steve McFarlane, Dr Alastair Mander, Dr John Merory, Professor Daniel O’Connor, Professor Christopher Rowe, Dr Ron Scholes, Dr Mathew Samuel, Dr Darshan Trivedi, and Associate Professor Michael Woodward. We thank all those who participated in the study for their commitment and dedication to helping advance research into the early detection and causation of AD.</p>
+
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        <!--
+
+
+  
+
+
+  
+
+  <p class="page__taxonomy">
+    <strong><i class="fas fa-fw fa-folder-open" aria-hidden="true"></i> Categories: </strong>
+    <span itemprop="keywords">
+    
+      <a href="/AI2D/categories/#datasets" class="page__taxonomy-item p-category" rel="tag">datasets</a><span class="sep">, </span>
+    
+      <a href="/AI2D/categories/#docs" class="page__taxonomy-item p-category" rel="tag">docs</a>
+    
+    </span>
+  </p>
+
+-->
+        <!--
+
+  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Updated:</strong> <time class="dt-published" datetime="2026-01-17T00:00:00-05:00">January 17, 2026</time></p>
+-->
+      </footer>
+
+      
+
+      <!--
+  <nav class="pagination">
+    
+      <a href="/AI2D/docs/datasets/ADNI-DOD/" class="pagination--pager" title="Alzheimer’s Disease Neuroimaging Initiative - Department of Defense
+">Previous</a>
+    
+    
+      <a href="/AI2D/docs/datasets/BIOCARD/" class="pagination--pager" title="Biomarkers of Cognitive Decline Among Normal Individuals
+">Next</a>
+    
+  </nav>
+-->
+    </div>
+
+    
+  </article>
+
+  
+  
+</div>
+
+    </div>
+
+    
+
+    <div id="footer" class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+<div class="page__footer fixed-bottom">
+  <div class="container">
+      <div class="row">
+          <div class="col-12 text-right">
+              <a href="/AI2D/docs/community/get_support/">Get Support</a>
+          </div>
+      </div>
+  </div>
+</div>
+
+      </footer>
+    </div>
+
+    
+  <script src="/AI2D/assets/js/main.min.js"></script>
+
+
+
+
+
+
+
+
+
+
+  </body>
+</html>

@@ -43,7 +43,68 @@ Optionally override lookup key:
 {% endif %}
 
 {% if study_overview and study_overview != "" %}
-{{ study_overview }}
+<div class="study-overview">
+  {% if study_overview contains "https://" %}
+    {% assign so_chunks = study_overview | split: "https://" %}
+    {%- for so_chunk in so_chunks -%}
+      {%- if forloop.first -%}
+        {%- assign so_pre1 = so_chunk -%}
+        {%- assign so_pre1s = so_chunk | rstrip -%}
+        {%- if so_pre1s != "" -%}
+          {%- assign so_pre1_last = so_pre1s | slice: -1, 1 -%}
+          {%- if so_pre1_last == "(" -%}
+            {%- assign so_pre1 = so_pre1s -%}
+          {%- endif -%}
+        {%- endif -%}
+        {{- so_pre1 | escape | newline_to_br -}}
+      {%- else -%}
+        {%- comment -%}lstrip only: strip would remove trailing space after e.g. "and " before the next https:// chunk, collapsing "and" and the following link.{%- endcomment -%}
+        {%- assign so_rest = so_chunk | lstrip -%}
+        {%- assign so_u = so_rest -%}
+        {%- assign so_u = so_u | split: "
+" | first -%}
+        {%- assign so_u = so_u | split: " " | first -%}
+        {%- assign so_u = so_u | split: "	" | first -%}
+        {%- assign so_u = so_u | split: '"' | first -%}
+        {%- assign so_u = so_u | split: "'" | first -%}
+        {%- assign so_u = so_u | split: "<" | first -%}
+        {%- assign so_u = so_u | split: "]" | first -%}
+        {%- assign so_u = so_u | split: ")" | first -%}
+        {%- assign so_u = so_u | split: "}" | first -%}
+        {%- assign so_u = so_u | split: "," | first -%}
+        {%- assign so_u = so_u | split: ";" | first -%}
+        {%- assign so_u = so_u | strip -%}
+        {%- comment -%}Drop trailing sentence punctuation so href is correct; punctuation stays in remainder after remove_first{%- endcomment -%}
+        {%- for so_strip_pass in (1..4) -%}
+          {%- assign so_n = so_u | size -%}
+          {%- if so_n > 0 -%}
+            {%- assign so_tail = so_u | slice: -1, 1 -%}
+            {%- if so_tail == "." or so_tail == "," or so_tail == ";" or so_tail == ":" -%}
+              {%- assign so_chop = so_n | minus: 1 -%}
+              {%- assign so_u = so_u | slice: 0, so_chop -%}
+            {%- endif -%}
+          {%- endif -%}
+        {%- endfor -%}
+        {%- assign so_u = so_u | strip -%}
+        {%- assign so_after = so_rest | remove_first: so_u -%}
+        {%- assign so_afters = so_after | rstrip -%}
+        {%- if so_afters != "" -%}
+          {%- assign so_after_last = so_afters | slice: -1, 1 -%}
+          {%- if so_after_last == "(" -%}
+            {%- assign so_after = so_afters -%}
+          {%- endif -%}
+        {%- endif -%}
+        {%- if so_u != "" -%}
+          <a href="https://{{ so_u | escape }}">https://{{ so_u | escape }}</a>{{- so_after | escape | newline_to_br -}}
+        {%- else -%}
+          https://{{- so_rest | escape | newline_to_br -}}
+        {%- endif -%}
+      {%- endif -%}
+    {%- endfor -%}
+  {% else %}
+    {{ study_overview | escape | newline_to_br }}
+  {% endif %}
+</div>
 {% endif %}
 
 <div class="table" align="center">
@@ -215,11 +276,147 @@ Optionally override lookup key:
     </tr>
     {% endif %}
 
+    {% assign dlmuse_path = row["DLMUSE"] %}
+    {% assign dlmuse_version = row["DLMUSE_version"] %}
+    {% assign dlmuse_complete = row["DLMUSE_N_ses_completed"] %}
+    {% assign ravens_path = row["RAVENS"] %}
+    {% assign ravens_version = row["RAVENS_version"] %}
+    {% assign ravens_complete = row["RAVENS_N_ses_completed"] %}
+    {% assign dlwmls_path = row["DLWMLS"] %}
+    {% assign dlwmls_version = row["DLWMLS_version"] %}
+    {% assign dlwmls_complete = row["DLWMLS_N_ses_completed"] %}
+    {% assign fmriprep_path = row["fMRIPrep"] %}
+    {% assign fmriprep_version = row["fMRIPrep_version"] %}
+    {% assign fmriprep_complete = row["fMRIPrep_N_ses_completed"] %}
+    {% assign fmriprep_command = row["fMRIPrep_command"] %}
+    {% assign xcpd_path = row["XCP-D"] %}
+    {% assign xcpd_version = row["XCP-D_version"] %}
+    {% assign xcpd_complete = row["XCP-D_N_ses_completed"] %}
+    {% assign xcpd_command = row["XCP-D_command"] %}
+    {% assign t1_n_ses = row["T1_N_ses"] %}
+    {% assign fl_n_ses = row["FL_N_ses"] %}
+    {% assign nonimaging_raw = row["nonimaging_raw"] %}
+    {% assign overview_project = row["Project"] | default: "" | strip %}
+    {% comment %}CSV with UTF-8 BOM uses header "\uFEFFProject", so row["Project"] is nil; recover from any key containing "Project".{% endcomment %}
+    {% if overview_project == "" %}
+      {% for so_proj_pair in row %}
+        {% if so_proj_pair[0] contains "Project" %}
+          {% assign overview_project = so_proj_pair[1] | default: "" | strip %}
+          {% break %}
+        {% endif %}
+      {% endfor %}
+    {% endif %}
+    {% comment %}MDD/PHENOM: use nonimaging_mdd_phenom for the Raw tab when present (not nonimaging_raw).{% endcomment %}
+    {% if overview_project == "Coordinate-MDD" or overview_project == "PHENOM" %}
+      {% assign nonimaging_mdd_phenom_val = row["nonimaging_mdd_phenom"] | strip %}
+      {% if nonimaging_mdd_phenom_val != "" %}
+        {% assign nonimaging_raw = nonimaging_mdd_phenom_val %}
+      {% endif %}
+    {% endif %}
+    {% assign nonimaging_data_dictionary = row["Data_Dictionary"] %}
+    {% assign nonimaging_consolidated_v2 = row["nonimaging_consolidated_v2"] %}
+    {% assign nonimaging_consolidated_latest = row["nonimaging_consolidated_latest"] %}
+    {% assign nonimaging_consolidated_v2_study = row["nonimaging_consolidated_latest_study"] %}
+    {% assign nonimaging_consolidation_base = "/cbica/projects/ISTAGING/Pipelines/ISTAGING_Data_Consolidation_2020/v2.0" %}
+
+    {% assign section_keys = "" | split: "," %}
+    {% assign section_fields = "" | split: "," %}
+    {% assign section_fields = section_fields | push: age_range | push: n_subject | push: n_mr_session | push: dlmuse_path | push: dlmuse_version | push: dlmuse_complete | push: ravens_path | push: ravens_version | push: ravens_complete | push: dlwmls_path | push: dlwmls_version | push: dlwmls_complete | push: fmriprep_path | push: fmriprep_version | push: fmriprep_complete | push: fmriprep_command | push: xcpd_path | push: xcpd_version | push: xcpd_complete | push: xcpd_command %}
+    {% for field_value in section_fields %}
+      {% if field_value and field_value != "" %}
+        {% assign field_parts = field_value | split: ";" %}
+        {% for part in field_parts %}
+          {% assign part_stripped = part | strip %}
+          {% if part_stripped contains "=" %}
+            {% assign kv = part_stripped | split: "=" %}
+            {% assign key = kv[0] | strip %}
+            {% assign first_char = key | slice: 0 %}
+            {% if key != "" and first_char != "/" and first_char != "-" %}
+              {% unless key contains " " %}
+                {% unless section_keys contains key %}
+                  {% assign section_keys = section_keys | push: key %}
+                {% endunless %}
+              {% endunless %}
+            {% endif %}
+          {% endif %}
+        {% endfor %}
+      {% endif %}
+    {% endfor %}
+
+    {% assign has_sections = true %}
+    {% if section_keys.size == 0 %}
+      {% assign section_keys = "default" | split: "," %}
+      {% assign has_sections = false %}
+    {% endif %}
+
+    {% comment %}Stable section order for known multi-cohort rows (CSV discovery order can differ).{% endcomment %}
+    {% if has_sections %}
+      {% if study_abbr == "OASIS" %}
+        {% assign section_keys = "OASIS3,OASIS4" | split: "," %}
+      {% elsif study_abbr == "PENN" %}
+        {% assign section_keys = "PENN-ADC,PENN-PMC" | split: "," %}
+      {% elsif study_abbr == "LIBR" %}
+        {% assign section_keys = "LIBR-BodurkaR01,LIBR-Svitz" | split: "," %}
+      {% elsif study_abbr == "UMC-Utrecht" %}
+        {% assign section_keys = "UMC_Utrecht_T13Dsch,UMC_Utrecht_ffe" | split: "," %}
+      {% endif %}
+    {% endif %}
+
     {% assign dx_cols = "DX_AD,DX_Hypertension,DX_Diabetes,DX_Heart,DX_Stroke,DX_Psychosis,DX_Schizophrenia,DX_Depression,DX_Bipolar,DX_Hyperlipidemia,DX_TBI,DX_Anxiety,DX_Psychological_Disorder" | split: "," %}
     {% assign dx_has_any = false %}
     {% for dx_col in dx_cols %}
-      {% assign dx_val = row[dx_col] | strip %}
-      {% if dx_val != "" %}
+      {% assign dx_val_raw = row[dx_col] | strip %}
+      {% if dx_val_raw != "" %}
+        {% comment %}Multi-section: split on ";StudyAbbr-SectionKey=" (e.g. ";PENN-PENN-PMC=") and fall back to ";SectionKey=" (e.g. ";OASIS4="). Strip leading cohort prefix from each chunk for parsing (PENN-PENN-ADC= vs OASIS3=).{% endcomment %}
+        {% assign dx_scan_units = "" | split: "," %}
+        {% if has_sections %}
+          {% assign dx_work = dx_val_raw %}
+          {% for sk in section_keys %}
+            {% unless forloop.first %}
+              {% assign dx_bound_compound = ";" | append: study_abbr | append: "-" | append: sk | append: "=" %}
+              {% assign dx_bound_simple = ";" | append: sk | append: "=" %}
+              {% assign dx_work = dx_work | replace: dx_bound_compound, "<<<DX_SEC>>>" %}
+              {% assign dx_work = dx_work | replace: dx_bound_simple, "<<<DX_SEC>>>" %}
+            {% endunless %}
+          {% endfor %}
+          {% assign dx_top_parts = dx_work | split: "<<<DX_SEC>>>" %}
+          {% for tp in dx_top_parts %}
+            {% assign tp_r = tp | strip %}
+            {% assign sk_strip = section_keys | slice: forloop.index0, 1 | first %}
+            {% assign dx_pref_long = study_abbr | append: "-" | append: sk_strip | append: "=" %}
+            {% assign dx_pref_short = sk_strip | append: "=" %}
+            {% if tp_r.size >= dx_pref_long.size %}
+              {% assign dx_ph = tp_r | slice: 0, dx_pref_long.size %}
+              {% if dx_ph == dx_pref_long %}
+                {% assign dx_pn = tp_r.size | minus: dx_pref_long.size %}
+                {% if dx_pn > 0 %}
+                  {% assign tp_r = tp_r | slice: dx_pref_long.size, dx_pn | strip %}
+                {% else %}
+                  {% assign tp_r = "" %}
+                {% endif %}
+              {% endif %}
+            {% endif %}
+            {% if tp_r != "" and tp_r.size >= dx_pref_short.size %}
+              {% assign dx_ph2 = tp_r | slice: 0, dx_pref_short.size %}
+              {% if dx_ph2 == dx_pref_short %}
+                {% assign dx_pn2 = tp_r.size | minus: dx_pref_short.size %}
+                {% if dx_pn2 > 0 %}
+                  {% assign tp_r = tp_r | slice: dx_pref_short.size, dx_pn2 | strip %}
+                {% else %}
+                  {% assign tp_r = "" %}
+                {% endif %}
+              {% endif %}
+            {% endif %}
+            {% if tp_r != "" %}
+              {% assign dx_scan_units = dx_scan_units | push: tp_r %}
+            {% endif %}
+          {% endfor %}
+        {% else %}
+          {% assign dx_scan_units = dx_scan_units | push: dx_val_raw %}
+        {% endif %}
+        {% for dx_scan_val in dx_scan_units %}
+        {% assign dx_val = dx_scan_val | strip %}
+        {% if dx_val != "" %}
         {% assign dx_visit_format = false %}
         {% if dx_val contains "[" and dx_val contains "]" and dx_val contains ":" %}
           {% assign dx_visit_format = true %}
@@ -320,15 +517,76 @@ Optionally override lookup key:
             {% assign dx_has_any = true %}
           {% endunless %}
         {% endif %}
+        {% endif %}
+      {% endfor %}
       {% endif %}
     {% endfor %}
-    {% if dx_has_any %}
+
+    {% for section_key in section_keys %}
+      {% assign section_dx_index = forloop.index0 %}
+      {% if has_sections %}
+      <tr>
+        <th colspan="3" style="font-weight:bold; text-align:left; background:#f2f4ff; border-top:2px solid #d7dcff;">{{ section_key }}</th>
+      </tr>
+      {% endif %}
+
+      {% if dx_has_any %}
     <tr>
       <th style="font-weight:bold; width:250px;">Diagnoses</th>
       <th style="font-weight:normal">
         <div style="font-size: 14px; display: flex; flex-wrap: wrap; gap: 16px; align-items: flex-start;">
           {% for dx_col in dx_cols %}
-            {% assign dx_val = row[dx_col] | strip %}
+            {% assign dx_val_raw = row[dx_col] | strip %}
+            {% assign dx_val = dx_val_raw %}
+            {% if has_sections %}
+              {% assign dx_work = dx_val_raw %}
+              {% for sk in section_keys %}
+                {% unless forloop.first %}
+                  {% assign dx_bound_compound = ";" | append: study_abbr | append: "-" | append: sk | append: "=" %}
+                  {% assign dx_bound_simple = ";" | append: sk | append: "=" %}
+                  {% assign dx_work = dx_work | replace: dx_bound_compound, "<<<DX_SEC>>>" %}
+                  {% assign dx_work = dx_work | replace: dx_bound_simple, "<<<DX_SEC>>>" %}
+                {% endunless %}
+              {% endfor %}
+              {% assign dx_top_parts = dx_work | split: "<<<DX_SEC>>>" %}
+              {% assign dx_val = "" %}
+              {% assign dx_sec_i = 0 %}
+              {% for tp in dx_top_parts %}
+                {% assign tp_r = tp | strip %}
+                {% if tp_r != "" %}
+                  {% if dx_sec_i == section_dx_index %}
+                    {% assign dx_val = tp_r %}
+                  {% endif %}
+                  {% assign dx_sec_i = dx_sec_i | plus: 1 %}
+                {% endif %}
+              {% endfor %}
+            {% endif %}
+            {% if has_sections %}
+              {% assign dx_pref_long = study_abbr | append: "-" | append: section_key | append: "=" %}
+              {% assign dx_pref_short = section_key | append: "=" %}
+              {% if dx_val.size >= dx_pref_long.size %}
+                {% assign dx_ph = dx_val | slice: 0, dx_pref_long.size %}
+                {% if dx_ph == dx_pref_long %}
+                  {% assign dx_pn = dx_val.size | minus: dx_pref_long.size %}
+                  {% if dx_pn > 0 %}
+                    {% assign dx_val = dx_val | slice: dx_pref_long.size, dx_pn | strip %}
+                  {% else %}
+                    {% assign dx_val = "" %}
+                  {% endif %}
+                {% endif %}
+              {% endif %}
+              {% if dx_val != "" and dx_val.size >= dx_pref_short.size %}
+                {% assign dx_ph2 = dx_val | slice: 0, dx_pref_short.size %}
+                {% if dx_ph2 == dx_pref_short %}
+                  {% assign dx_pn2 = dx_val.size | minus: dx_pref_short.size %}
+                  {% if dx_pn2 > 0 %}
+                    {% assign dx_val = dx_val | slice: dx_pref_short.size, dx_pn2 | strip %}
+                  {% else %}
+                    {% assign dx_val = "" %}
+                  {% endif %}
+                {% endif %}
+              {% endif %}
+            {% endif %}
             {% if dx_val != "" %}
               {% assign dx_lines = dx_val | newline_to_br | split: "<br />" %}
               {% assign dx_non_empty = "" | split: "," %}
@@ -506,69 +764,6 @@ Optionally override lookup key:
       </th>
       <th style="font-weight:normal"></th>
     </tr>
-    {% endif %}
-
-    {% assign dlmuse_path = row["DLMUSE"] %}
-    {% assign dlmuse_version = row["DLMUSE_version"] %}
-    {% assign dlmuse_complete = row["DLMUSE_N_ses_completed"] %}
-    {% assign ravens_path = row["RAVENS"] %}
-    {% assign ravens_version = row["RAVENS_version"] %}
-    {% assign ravens_complete = row["RAVENS_N_ses_completed"] %}
-    {% assign dlwmls_path = row["DLWMLS"] %}
-    {% assign dlwmls_version = row["DLWMLS_version"] %}
-    {% assign dlwmls_complete = row["DLWMLS_N_ses_completed"] %}
-    {% assign fmriprep_path = row["fMRIPrep"] %}
-    {% assign fmriprep_version = row["fMRIPrep_version"] %}
-    {% assign fmriprep_complete = row["fMRIPrep_N_ses_completed"] %}
-    {% assign fmriprep_command = row["fMRIPrep_command"] %}
-    {% assign xcpd_path = row["XCP-D"] %}
-    {% assign xcpd_version = row["XCP-D_version"] %}
-    {% assign xcpd_complete = row["XCP-D_N_ses_completed"] %}
-    {% assign xcpd_command = row["XCP-D_command"] %}
-    {% assign t1_n_ses = row["T1_N_ses"] %}
-    {% assign fl_n_ses = row["FL_N_ses"] %}
-    {% assign nonimaging_raw = row["nonimaging_raw"] %}
-    {% assign nonimaging_data_dictionary = row["Data_Dictionary"] %}
-    {% assign nonimaging_consolidated_v2 = row["nonimaging_consolidated_v2"] %}
-    {% assign nonimaging_consolidated_latest = row["nonimaging_consolidated_latest"] %}
-    {% assign nonimaging_consolidated_v2_study = row["nonimaging_consolidated_latest_study"] %}
-    {% assign nonimaging_consolidation_base = "/cbica/projects/ISTAGING/Pipelines/ISTAGING_Data_Consolidation_2020/v2.0" %}
-
-    {% assign section_keys = "" | split: "," %}
-    {% assign section_fields = "" | split: "," %}
-    {% assign section_fields = section_fields | push: age_range | push: n_subject | push: n_mr_session | push: dlmuse_path | push: dlmuse_version | push: dlmuse_complete | push: ravens_path | push: ravens_version | push: ravens_complete | push: dlwmls_path | push: dlwmls_version | push: dlwmls_complete | push: fmriprep_path | push: fmriprep_version | push: fmriprep_complete | push: fmriprep_command | push: xcpd_path | push: xcpd_version | push: xcpd_complete | push: xcpd_command %}
-    {% for field_value in section_fields %}
-      {% if field_value and field_value != "" %}
-        {% assign field_parts = field_value | split: ";" %}
-        {% for part in field_parts %}
-          {% assign part_stripped = part | strip %}
-          {% if part_stripped contains "=" %}
-            {% assign kv = part_stripped | split: "=" %}
-            {% assign key = kv[0] | strip %}
-            {% assign first_char = key | slice: 0 %}
-            {% if key != "" and first_char != "/" and first_char != "-" %}
-              {% unless key contains " " %}
-                {% unless section_keys contains key %}
-                  {% assign section_keys = section_keys | push: key %}
-                {% endunless %}
-              {% endunless %}
-            {% endif %}
-          {% endif %}
-        {% endfor %}
-      {% endif %}
-    {% endfor %}
-
-    {% assign has_sections = true %}
-    {% if section_keys.size == 0 %}
-      {% assign section_keys = "default" | split: "," %}
-      {% assign has_sections = false %}
-    {% endif %}
-
-    {% for section_key in section_keys %}
-      {% if has_sections %}
-      <tr>
-        <th colspan="3" style="font-weight:bold; text-align:left; background:#f2f4ff; border-top:2px solid #d7dcff;">{{ section_key }}</th>
-      </tr>
       {% endif %}
 
       {% if has_sections %}
@@ -1034,8 +1229,15 @@ Optionally override lookup key:
         </tr>
       {% endfor %}
 
+      {% assign nonimaging_raw_section = nonimaging_raw %}
+      {% if has_sections and nonimaging_raw and nonimaging_raw != "" and nonimaging_raw contains ";" %}
+        {% assign _ni_raw_split = nonimaging_raw | split: ";" %}
+        {% assign _ni_raw_i = forloop.index0 %}
+        {% assign nonimaging_raw_section = _ni_raw_split[_ni_raw_i] | strip %}
+      {% endif %}
+
       {% assign show_nonimg_raw = false %}
-      {% if nonimaging_raw and nonimaging_raw != "" %}
+      {% if nonimaging_raw_section and nonimaging_raw_section != "" %}
         {% assign show_nonimg_raw = true %}
       {% endif %}
       {% assign show_nonimg_dd = false %}
@@ -1088,8 +1290,13 @@ Optionally override lookup key:
               </div>
               {% if show_nonimg_raw %}
               <div id="{{ nonimg_id }}-raw-tab" class="tab-content{% if nonimg_first_tab == 'raw' %} active{% endif %}">
-                {% if nonimaging_raw and nonimaging_raw != "" %}
-                  {% assign raw_parts = nonimaging_raw | split: ";" %}
+                {% if nonimaging_raw_section and nonimaging_raw_section != "" %}
+                  {% assign nonimaging_raw_trim = nonimaging_raw_section | strip %}
+                  {% assign nonimg_access_notice = "Contact Mathilde Antoniades to request access to the non-imaging data." %}
+                  {% if nonimaging_raw_trim == nonimg_access_notice %}
+                  <p>{{ nonimaging_raw_trim }}</p>
+                  {% else %}
+                  {% assign raw_parts = nonimaging_raw_section | split: ";" %}
                   {% for part in raw_parts %}
                     {% assign part_stripped = part | strip %}
                     {% if part_stripped != "" %}
@@ -1100,6 +1307,7 @@ Optionally override lookup key:
                     {% endif %}
                   {% endfor %}
                   <p style="margin-top: 12px; margin-bottom: 0; font-size: 14px; color: #444;">Raw data downloaded from source.</p>
+                  {% endif %}
                 {% else %}
                   <p style="color:#666;">—</p>
                   <p style="margin-top: 12px; margin-bottom: 0; font-size: 14px; color: #444;">Raw data downloaded from source.</p>
@@ -1129,7 +1337,26 @@ Optionally override lookup key:
                 </div>
                 <p style="margin-top: 12px; margin-bottom: 8px; font-size: 14px; color: #444;">Data consolidated and harmonized in 2020.</p>
                 {% if nonimaging_consolidated_v2_study and nonimaging_consolidated_v2_study != "" %}
-                  <p style="margin-top: 0; margin-bottom: 4px; font-size: 14px; color: #444;"><strong>This study:</strong> subset with <code>df[df.Study == '{{ nonimaging_consolidated_v2_study }}']</code></p>
+                  {% assign ni_study_parts = nonimaging_consolidated_v2_study | split: ";" %}
+                  {% assign ni_study_multi = false %}
+                  {% if nonimaging_consolidated_v2_study contains ";" %}
+                    {% assign ni_study_multi = true %}
+                  {% endif %}
+                  {% for st_part in ni_study_parts %}
+                    {% assign st_stripped = st_part | strip %}
+                    {% if st_stripped != "" %}
+                      {% assign ni_show_study_line = false %}
+                      {% if ni_study_multi %}
+                        {% if st_stripped == section_key %}{% assign ni_show_study_line = true %}{% endif %}
+                      {% else %}
+                        {% if section_key == "default" %}{% assign ni_show_study_line = true %}{% endif %}
+                        {% if st_stripped == section_key %}{% assign ni_show_study_line = true %}{% endif %}
+                      {% endif %}
+                      {% if ni_show_study_line %}
+                  <p style="margin-top: 0; margin-bottom: 4px; font-size: 14px; color: #444;"><strong>This study:</strong> subset with <code>df[df.Study == '{{ st_stripped }}']</code></p>
+                      {% endif %}
+                    {% endif %}
+                  {% endfor %}
                 {% endif %}
                 <p style="margin: 6px 0 4px; font-size: 14px; color: #444;">README: <code>{{ nonimaging_consolidation_base }}/README.md</code></p>
                 <p style="margin: 6px 0 0; font-size: 14px; color: #444;">Release Notes: <code>{{ nonimaging_consolidation_base }}/Release_Notes.md</code></p>
@@ -1143,10 +1370,27 @@ Optionally override lookup key:
                 </div>
                 <p style="margin-top: 12px; margin-bottom: 8px; font-size: 14px; color: #444;">Data consolidated and harmonized in 2026.</p>
                 {% if nonimaging_consolidated_v2_study and nonimaging_consolidated_v2_study != "" %}
-                  <p style="margin-top: 0; margin-bottom: 4px; font-size: 14px; color: #444;"><strong>This study:</strong> subset with <code>df[df.Study == '{{ nonimaging_consolidated_v2_study }}']</code></p>
+                  {% assign ni_study_parts = nonimaging_consolidated_v2_study | split: ";" %}
+                  {% assign ni_study_multi = false %}
+                  {% if nonimaging_consolidated_v2_study contains ";" %}
+                    {% assign ni_study_multi = true %}
+                  {% endif %}
+                  {% for st_part in ni_study_parts %}
+                    {% assign st_stripped = st_part | strip %}
+                    {% if st_stripped != "" %}
+                      {% assign ni_show_study_line = false %}
+                      {% if ni_study_multi %}
+                        {% if st_stripped == section_key %}{% assign ni_show_study_line = true %}{% endif %}
+                      {% else %}
+                        {% if section_key == "default" %}{% assign ni_show_study_line = true %}{% endif %}
+                        {% if st_stripped == section_key %}{% assign ni_show_study_line = true %}{% endif %}
+                      {% endif %}
+                      {% if ni_show_study_line %}
+                  <p style="margin-top: 0; margin-bottom: 4px; font-size: 14px; color: #444;"><strong>This study:</strong> subset with <code>df[df.Study == '{{ st_stripped }}']</code></p>
+                      {% endif %}
+                    {% endif %}
+                  {% endfor %}
                 {% endif %}
-                <p style="margin: 6px 0 4px; font-size: 14px; color: #444;">README: <code>Coming Soon</code></p>
-                <p style="margin: 6px 0 0; font-size: 14px; color: #444;">Release Notes: <code>Coming Soon</code></p>
               </div>
               {% endif %}
             </div>
