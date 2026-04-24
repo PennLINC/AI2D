@@ -366,6 +366,7 @@
       
       
       
+      
       <tr>
         <th style="font-weight:bold; width:250px;">
           
@@ -402,6 +403,7 @@
         <th style="font-weight:normal"></th>
       </tr>
     
+      
       
       
       
@@ -448,6 +450,7 @@
       
       
       
+      
       <tr>
         <th style="font-weight:bold; width:250px;">
           
@@ -489,6 +492,7 @@
       
       
       
+      
       <tr>
         <th style="font-weight:bold; width:250px;">
           
@@ -506,7 +510,9 @@
               <div class="tab-buttons">
                 <button class="tab-button active" onclick="showTab('xcpd-dl')">Datalad Dataset</button>
                 <button class="tab-button" onclick="showTab('xcpd-ephe')">Ephemeral Clone</button>
-                <button class="tab-button" onclick="showTab('xcpd-qc')">fMRI QC</button>
+                
+                  <button class="tab-button" onclick="showTab('xcpd-qc')">fMRI QC</button>
+                
               </div>
               <div id="xcpd-dl" class="tab-content active">
                 <div class="copy-container">
@@ -532,6 +538,7 @@
         <th style="font-weight:normal"></th>
       </tr>
     
+      
       
       
       
@@ -578,6 +585,7 @@
       
       
       
+      
       <tr>
         <th style="font-weight:bold; width:250px;">
           
@@ -619,6 +627,7 @@
       
       
       
+      
       <tr>
         <th style="font-weight:bold; width:250px;">
           
@@ -636,6 +645,9 @@
               <div class="tab-buttons">
                 <button class="tab-button active" onclick="showTab('aslprep-dl')">Datalad Dataset</button>
                 <button class="tab-button" onclick="showTab('aslprep-ephe')">Ephemeral Clone</button>
+                
+                  <button class="tab-button" onclick="showTab('aslprep-qc')">ASLPrep QC</button>
+                
               </div>
               <div id="aslprep-dl" class="tab-content active">
                 <div class="copy-container">
@@ -647,6 +659,12 @@
                 <div class="copy-container">
                   <span class="copy-text"><code>/cbica/projects/pennlinc_rbc/datasets/LINC_NKI/derivatives/ASLPREP-25-2-1_zipped</code></span>
                   <button class="copy-button" onclick="copyToClipboard('aslprep-ephe')">Copy</button>
+                </div>
+              </div>
+              <div id="aslprep-qc" class="tab-content">
+                <div id="aslprep-qc-copy" class="copy-container" style="border: 1px solid #6c6edc; border-radius: 3px; padding: 6px; background-color: #f8f9fa;">
+                  <span class="copy-text"><code>/cbica/projects/pennlinc_rbc/datasets/LINC_NKI/derivatives/QC/perf/all_asl_qc_metrics.tsv</code></span>
+                  <button class="copy-button" onclick="copyToClipboard('aslprep-qc-copy')">Copy</button>
                 </div>
               </div>
             </div>
