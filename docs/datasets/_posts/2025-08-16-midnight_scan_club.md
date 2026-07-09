@@ -202,7 +202,7 @@ In addition to the raw data, we also provide several derivatives processed using
       <th style="font-weight:normal"></th>
     </tr>
 
-         {% assign pipelines = "freesurfer,fmriprep" | split: "," %}
+         {% assign pipelines = "freesurfer,fmriprep,xcpd" | split: "," %}
      {% for pipe in pipelines %}
        {% assign version_key = pipe | append: "_version" %}
        {% assign complete_key = pipe | append: "_complete" %}
@@ -213,13 +213,18 @@ In addition to the raw data, we also provide several derivatives processed using
           {% if pipe == "freesurfer" %}
             FreeSurfer
           {% elsif pipe == "fmriprep" %}
-            <a href="{{ site.baseurl }}/docs/imaging/image_fmriprep/">fMRIPrep</a>
+            <a href="https://fmriprep.org/en/stable/">fMRIPrep</a>
+          {% elsif pipe == "xcpd" %}
+            <a href="https://xcp-d.readthedocs.io/en/latest/">XCP-D</a>
           {% endif %}
           {{ page[version_key] }}
           {% if page[complete_key] and page[session_key] %}
           {% if pipe == "freesurfer" %}
           <br>
           <span style="font-weight:normal;"><a href="https://fmriprep.org/en/24.0.0/workflows.html#longitudinal-processing">Longitudinal pipeline</a> run by fMRIPrep</span>
+          {% elsif pipe == "xcpd" %}
+          <br>
+          <span style="font-weight:normal;">(100/100 complete)</span>
           {% else %}
           <br>
           <span style="font-weight:normal;">({{ page[complete_key] }}/{{ page[session_key] }} complete)</span>
