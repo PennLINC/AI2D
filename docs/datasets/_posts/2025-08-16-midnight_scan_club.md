@@ -60,7 +60,7 @@ mriqc_version: v0.9.6
 qsiprep_version: 
 qsirecon_bundle_version: 
 qsirecon_whole_version: 
-bids_dset: /cbica/projects/open-datasets/datasets/midnight_scan_club/dset
+bids_dset: /cbica/projects/open-datasets/datasets/midnight_scan_club/ds000224
 freesurfer_path: /cbica/projects/open-datasets/datasets/midnight_scan_club/derivatives/fmriprep-24.0.0/sourcedata/freesurfer/
 fmriprep_path: /cbica/projects/open-datasets/datasets/midnight_scan_club/derivatives/fmriprep-24.0.0
 xcpd_path: /cbica/projects/open-datasets/datasets/midnight_scan_club/derivatives/xcp_d-0.7.5
@@ -222,9 +222,6 @@ In addition to the raw data, we also provide several derivatives processed using
           {% if pipe == "freesurfer" %}
           <br>
           <span style="font-weight:normal;"><a href="https://fmriprep.org/en/24.0.0/workflows.html#longitudinal-processing">Longitudinal pipeline</a> run by fMRIPrep</span>
-          {% elsif pipe == "xcpd" %}
-          <br>
-          <span style="font-weight:normal;">(100/100 complete)</span>
           {% else %}
           <br>
           <span style="font-weight:normal;">({{ page[complete_key] }}/{{ page[session_key] }} complete)</span>
